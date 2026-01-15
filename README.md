@@ -1,2 +1,2 @@
-# ML-for-ATLAS-on-FPGA
+# ATLAS-ML-for-FPGA
 Bacheloroppgave i ELE305
