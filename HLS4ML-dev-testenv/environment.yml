@@ -1,0 +1,26 @@
+name: hls4ml-kv260-testenv
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.16
+  - notebook==6.4.12
+  - jupyter_contrib_nbextensions
+  - jupyterhub
+  - jupyter-book
+  - jsonschema-with-format-nongpl
+  - pydot==1.4.2
+  - graphviz==7.1.0
+  - scikit-learn==1.2.2
+  - tensorflow==2.14.0
+  - tensorflow-datasets==4.8.3
+  - webcolors
+  - widgetsnbextension==3.6.0
+  - pip==23.0.1
+  - pip:
+      - git+https://github.com/lolbraa/hls4ml-kv260.git@main
+#      - hls4ml[profiling,optimization,sr,HGQ,qkeras]==1.2.0
+      - conifer==1.5
+      - pysr==0.16.3
+      - xgboost==1.7.5
+      - zstd
+      - tensorflow-model-optimization
