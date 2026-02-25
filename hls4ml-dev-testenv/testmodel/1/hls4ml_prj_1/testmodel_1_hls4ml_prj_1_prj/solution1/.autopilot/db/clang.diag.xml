@@ -1,0 +1,71 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/kristoffer/Nextcloud/02_Programmering/Bacheloroppgave/git-repo_ML-FPGA_Bacheloroppgave/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_1/testmodel_1_hls4ml_prj_1_prj/solution1/.autopilot/db/testmodel_1_hls4ml_prj_1.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>firmware/nnet_utils/nnet_activation.h</string>
+      <key>line</key>
+      <integer>402</integer>
+      <key>column</key>
+      <integer>36</integer>
+      <key>message</key>
+      <string>unexpected pragma argument &apos;softmax&apos;, expects function/operation</string>
+      <key>ID</key>
+      <integer>7036</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>firmware/nnet_utils/nnet_dense_resource.h</string>
+      <key>line</key>
+      <integer>33</integer>
+      <key>column</key>
+      <integer>13</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>6996</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>firmware/nnet_utils/nnet_dense_resource.h</string>
+      <key>line</key>
+      <integer>107</integer>
+      <key>column</key>
+      <integer>13</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>6996</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>firmware/nnet_utils/nnet_dense_resource.h</string>
+      <key>line</key>
+      <integer>189</integer>
+      <key>column</key>
+      <integer>13</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>6996</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

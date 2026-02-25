@@ -1,0 +1,36 @@
+---
+MainSourceFile:  '/home/kristoffer/Nextcloud/02_Programmering/Bacheloroppgave/git-repo_ML-FPGA_Bacheloroppgave/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_1/testmodel_1_hls4ml_prj_1_prj/solution1/.autopilot/db/testmodel_1_hls4ml_prj_1.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '57:68'
+    FilePath:        'firmware/testmodel_1_hls4ml_prj_1.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '57:72'
+    FilePath:        'firmware/testmodel_1_hls4ml_prj_1.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '61:70'
+    FilePath:        'firmware/testmodel_1_hls4ml_prj_1.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '61:74'
+    FilePath:        'firmware/testmodel_1_hls4ml_prj_1.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '65:70'
+    FilePath:        'firmware/testmodel_1_hls4ml_prj_1.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '65:74'
+    FilePath:        'firmware/testmodel_1_hls4ml_prj_1.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '69:75'
+    FilePath:        'firmware/testmodel_1_hls4ml_prj_1.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '69:80'
+    FilePath:        'firmware/testmodel_1_hls4ml_prj_1.cpp'
+...

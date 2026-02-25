@@ -1,0 +1,24 @@
+[
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "myproject",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "myproject"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/kristoffer/Nextcloud/02_Programmering/Bacheloroppgave/git-repo_ML-FPGA_Bacheloroppgave/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_1/build_prj.tcl",
+    "sourceLine": 169,
+    "success": true
+  }
+]
