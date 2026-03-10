@@ -1,0 +1,9 @@
+{
+  "name": "testmodel_1_hls4ml_prj_VitisUnifiedKV260_1",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["/home/ncgadmin/Bachelor/ATLAS-ML-for-FPGA/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/hls_kernel_config.cfg"],
+    "work_dir": "vitis_unified_project"
+  }
+}

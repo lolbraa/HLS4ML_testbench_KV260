@@ -1,0 +1,1593 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date              : Thu Feb 26 21:12:24 2026
+| Host              : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
+| Command           : report_timing_summary -max_paths 10 -file MPSoC_ext_platform_wrapper_timing_summary_routed.rpt -pb MPSoC_ext_platform_wrapper_timing_summary_routed.pb -rpx MPSoC_ext_platform_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design            : MPSoC_ext_platform_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : C
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.375        0.000                      0                86435        0.010        0.000                      0                86435        1.833        0.000                       0                 27310  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                                      Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                                      ------------         ----------      --------------
+clk_pl_0                                   {0.000 5.000}        10.000          100.000         
+  clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {0.000 3.333}        6.667           150.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_pl_0                                                                                                                                                                                     2.000        0.000                       0                     1  
+  clk_out1_MPSoC_ext_platform_clk_wiz_0_0        0.375        0.000                      0                86435        0.010        0.000                      0                86435        1.833        0.000                       0                 27309  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pl_0
+  To Clock:  clk_pl_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        2.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_pl_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0] }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location   Pin
+Min Period        n/a     MMCME4_ADV/CLKIN1  n/a            1.071         10.000      8.929      MMCM_X0Y3  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+Max Period        n/a     MMCME4_ADV/CLKIN1  n/a            100.000       10.000      90.000     MMCM_X0Y3  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME4_ADV/CLKIN1  n/a            3.000         5.000       2.000      MMCM_X0Y3  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+Low Pulse Width   Fast    MMCME4_ADV/CLKIN1  n/a            3.000         5.000       2.000      MMCM_X0Y3  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME4_ADV/CLKIN1  n/a            3.000         5.000       2.000      MMCM_X0Y3  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+High Pulse Width  Fast    MMCME4_ADV/CLKIN1  n/a            3.000         5.000       2.000      MMCM_X0Y3  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  To Clock:  clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.375ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.010ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        1.833ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.375ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config4_U0/select_ln51_4_reg_2928_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U448/tmp_product/DSP_A_B_DATA_INST/A[7]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.442ns  (logic 0.116ns (2.131%)  route 5.326ns (97.869%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.288ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.128ns = ( 11.795 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.932ns
+    Clock Pessimism Removal (CPR):    -0.484ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.765ns (routing 1.241ns, distribution 1.524ns)
+  Clock Net Delay (Destination): 2.369ns (routing 1.133ns, distribution 1.236ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.765     4.932    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config4_U0/ap_clk
+    SLICE_X13Y35         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config4_U0/select_ln51_4_reg_2928_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y35         FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.116     5.048 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config4_U0/select_ln51_4_reg_2928_reg[7]/Q
+                         net (fo=11, routed)          5.326    10.374    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U448/tmp_product/A[7]
+    DSP48E2_X10Y87       DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U448/tmp_product/DSP_A_B_DATA_INST/A[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.369    11.795    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U448/tmp_product/CLK
+    DSP48E2_X10Y87       DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U448/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.484    11.311    
+                         clock uncertainty           -0.064    11.246    
+    DSP48E2_X10Y87       DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[7])
+                                                     -0.497    10.749    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U448/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.749    
+                         arrival time                         -10.374    
+  -------------------------------------------------------------------
+                         slack                                  0.375    
+
+Slack (MET) :             0.378ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/A[15]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.652ns  (logic 1.215ns (21.497%)  route 4.437ns (78.503%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.047ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.231ns = ( 11.898 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.852ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.685ns (routing 1.241ns, distribution 1.444ns)
+  Clock Net Delay (Destination): 2.472ns (routing 1.133ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.685     4.852    MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y19         RAMB36E2                                     r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y19         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[23])
+                                                      1.215     6.067 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/DOUTADOUT[23]
+                         net (fo=406, routed)         4.437    10.504    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/A[15]
+    DSP48E2_X5Y31        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/A[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.472    11.898    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/CLK
+    DSP48E2_X5Y31        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.426    11.472    
+                         clock uncertainty           -0.064    11.407    
+    DSP48E2_X5Y31        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[15])
+                                                     -0.526    10.881    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.881    
+                         arrival time                         -10.504    
+  -------------------------------------------------------------------
+                         slack                                  0.378    
+
+Slack (MET) :             0.398ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U56/tmp_product/DSP_A_B_DATA_INST/A[13]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.442ns  (logic 1.221ns (22.438%)  route 4.221ns (77.562%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.237ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.094ns = ( 11.761 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.850ns
+    Clock Pessimism Removal (CPR):    -0.481ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.683ns (routing 1.241ns, distribution 1.442ns)
+  Clock Net Delay (Destination): 2.335ns (routing 1.133ns, distribution 1.202ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.683     4.850    MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y18         RAMB36E2                                     r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y18         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTBDOUT[13])
+                                                      1.221     6.071 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/DOUTBDOUT[13]
+                         net (fo=36, routed)          4.221    10.291    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U56/tmp_product/A[13]
+    DSP48E2_X11Y21       DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U56/tmp_product/DSP_A_B_DATA_INST/A[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.335    11.761    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U56/tmp_product/CLK
+    DSP48E2_X11Y21       DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U56/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.481    11.280    
+                         clock uncertainty           -0.064    11.215    
+    DSP48E2_X11Y21       DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[13])
+                                                     -0.526    10.689    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U56/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.689    
+                         arrival time                         -10.291    
+  -------------------------------------------------------------------
+                         slack                                  0.398    
+
+Slack (MET) :             0.405ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/A[17]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.657ns  (logic 1.215ns (21.477%)  route 4.442ns (78.523%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.047ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.231ns = ( 11.898 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.852ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.685ns (routing 1.241ns, distribution 1.444ns)
+  Clock Net Delay (Destination): 2.472ns (routing 1.133ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.685     4.852    MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y19         RAMB36E2                                     r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y19         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[23])
+                                                      1.215     6.067 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/DOUTADOUT[23]
+                         net (fo=406, routed)         4.442    10.509    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/A[17]
+    DSP48E2_X5Y31        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/A[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.472    11.898    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/CLK
+    DSP48E2_X5Y31        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.426    11.472    
+                         clock uncertainty           -0.064    11.407    
+    DSP48E2_X5Y31        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[17])
+                                                     -0.493    10.914    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.914    
+                         arrival time                         -10.509    
+  -------------------------------------------------------------------
+                         slack                                  0.405    
+
+Slack (MET) :             0.407ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/A[18]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.641ns  (logic 1.215ns (21.538%)  route 4.426ns (78.462%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.047ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.231ns = ( 11.898 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.852ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.685ns (routing 1.241ns, distribution 1.444ns)
+  Clock Net Delay (Destination): 2.472ns (routing 1.133ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.685     4.852    MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y19         RAMB36E2                                     r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y19         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[23])
+                                                      1.215     6.067 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/DOUTADOUT[23]
+                         net (fo=406, routed)         4.426    10.493    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/A[18]
+    DSP48E2_X5Y31        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/A[18]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.472    11.898    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/CLK
+    DSP48E2_X5Y31        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.426    11.472    
+                         clock uncertainty           -0.064    11.407    
+    DSP48E2_X5Y31        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[18])
+                                                     -0.507    10.900    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.900    
+                         arrival time                         -10.493    
+  -------------------------------------------------------------------
+                         slack                                  0.407    
+
+Slack (MET) :             0.409ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_12s_26_1_1_U217/tmp_product/DSP_A_B_DATA_INST/A[1]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.589ns  (logic 1.225ns (21.916%)  route 4.364ns (78.084%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.088ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.245ns = ( 11.912 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.852ns
+    Clock Pessimism Removal (CPR):    -0.481ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.685ns (routing 1.241ns, distribution 1.444ns)
+  Clock Net Delay (Destination): 2.486ns (routing 1.133ns, distribution 1.353ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.685     4.852    MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y19         RAMB36E2                                     r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y19         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[9])
+                                                      1.225     6.077 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/DOUTADOUT[9]
+                         net (fo=28, routed)          4.364    10.441    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_12s_26_1_1_U217/tmp_product/A[1]
+    DSP48E2_X3Y13        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_12s_26_1_1_U217/tmp_product/DSP_A_B_DATA_INST/A[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.486    11.912    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_12s_26_1_1_U217/tmp_product/CLK
+    DSP48E2_X3Y13        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_12s_26_1_1_U217/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.481    11.431    
+                         clock uncertainty           -0.064    11.366    
+    DSP48E2_X3Y13        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[1])
+                                                     -0.516    10.850    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_12s_26_1_1_U217/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.850    
+                         arrival time                         -10.441    
+  -------------------------------------------------------------------
+                         slack                                  0.409    
+
+Slack (MET) :             0.410ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/A[16]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.651ns  (logic 1.215ns (21.501%)  route 4.436ns (78.499%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.047ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.231ns = ( 11.898 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.852ns
+    Clock Pessimism Removal (CPR):    -0.426ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.685ns (routing 1.241ns, distribution 1.444ns)
+  Clock Net Delay (Destination): 2.472ns (routing 1.133ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.685     4.852    MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y19         RAMB36E2                                     r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y19         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[23])
+                                                      1.215     6.067 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_3/DOUTADOUT[23]
+                         net (fo=406, routed)         4.436    10.503    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/A[16]
+    DSP48E2_X5Y31        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/A[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.472    11.898    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/CLK
+    DSP48E2_X5Y31        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.426    11.472    
+                         clock uncertainty           -0.064    11.407    
+    DSP48E2_X5Y31        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[16])
+                                                     -0.495    10.912    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U58/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.912    
+                         arrival time                         -10.503    
+  -------------------------------------------------------------------
+                         slack                                  0.410    
+
+Slack (MET) :             0.415ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U235/tmp_product/DSP_A_B_DATA_INST/A[1]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.423ns  (logic 1.192ns (21.982%)  route 4.231ns (78.018%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.249ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.082ns = ( 11.749 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.850ns
+    Clock Pessimism Removal (CPR):    -0.481ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.683ns (routing 1.241ns, distribution 1.442ns)
+  Clock Net Delay (Destination): 2.323ns (routing 1.133ns, distribution 1.190ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.683     4.850    MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y18         RAMB36E2                                     r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y18         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTBDOUT[1])
+                                                      1.192     6.042 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/DOUTBDOUT[1]
+                         net (fo=36, routed)          4.231    10.272    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U235/tmp_product/A[1]
+    DSP48E2_X11Y14       DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U235/tmp_product/DSP_A_B_DATA_INST/A[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.323    11.749    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U235/tmp_product/CLK
+    DSP48E2_X11Y14       DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U235/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.481    11.268    
+                         clock uncertainty           -0.064    11.203    
+    DSP48E2_X11Y14       DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[1])
+                                                     -0.516    10.687    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U235/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.687    
+                         arrival time                         -10.272    
+  -------------------------------------------------------------------
+                         slack                                  0.415    
+
+Slack (MET) :             0.436ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config4_U0/select_ln51_4_reg_2928_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U440/tmp_product/DSP_A_B_DATA_INST/A[7]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.373ns  (logic 0.116ns (2.159%)  route 5.257ns (97.841%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.297ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.119ns = ( 11.786 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.932ns
+    Clock Pessimism Removal (CPR):    -0.484ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.765ns (routing 1.241ns, distribution 1.524ns)
+  Clock Net Delay (Destination): 2.360ns (routing 1.133ns, distribution 1.227ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.765     4.932    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config4_U0/ap_clk
+    SLICE_X13Y35         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config4_U0/select_ln51_4_reg_2928_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X13Y35         FDRE (Prop_DFF_SLICEM_C_Q)
+                                                      0.116     5.048 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config4_U0/select_ln51_4_reg_2928_reg[7]/Q
+                         net (fo=11, routed)          5.257    10.304    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U440/tmp_product/A[7]
+    DSP48E2_X7Y87        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U440/tmp_product/DSP_A_B_DATA_INST/A[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.360    11.786    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U440/tmp_product/CLK
+    DSP48E2_X7Y87        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U440/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.484    11.302    
+                         clock uncertainty           -0.064    11.237    
+    DSP48E2_X7Y87        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[7])
+                                                     -0.497    10.740    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config5_s_fu_285/mul_16s_10ns_26_1_1_U440/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.740    
+                         arrival time                         -10.304    
+  -------------------------------------------------------------------
+                         slack                                  0.436    
+
+Slack (MET) :             0.437ns  (required time - arrival time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U43/tmp_product/DSP_A_B_DATA_INST/A[13]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            6.667ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@6.667ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        5.399ns  (logic 1.221ns (22.617%)  route 4.178ns (77.383%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.241ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.090ns = ( 11.757 - 6.667 ) 
+    Source Clock Delay      (SCD):    4.850ns
+    Clock Pessimism Removal (CPR):    -0.481ns
+  Clock Uncertainty:      0.064ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.108ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      2.683ns (routing 1.241ns, distribution 1.442ns)
+  Clock Net Delay (Destination): 2.331ns (routing 1.133ns, distribution 1.198ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.683     4.850    MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y18         RAMB36E2                                     r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y18         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTBDOUT[13])
+                                                      1.221     6.071 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/stream_in0_fc1_input_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/DOUTBDOUT[13]
+                         net (fo=36, routed)          4.178    10.248    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U43/tmp_product/A[13]
+    DSP48E2_X9Y21        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U43/tmp_product/DSP_A_B_DATA_INST/A[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      6.667     6.667 r  
+    PS8_X0Y0             PS8                          0.000     6.667 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     6.848    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     6.883 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     8.341    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     9.080 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     9.387    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     9.426 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.331    11.757    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U43/tmp_product/CLK
+    DSP48E2_X9Y21        DSP_A_B_DATA                                 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U43/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism             -0.481    11.276    
+                         clock uncertainty           -0.064    11.211    
+    DSP48E2_X9Y21        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[13])
+                                                     -0.526    10.685    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_69/mul_16s_10ns_26_1_1_U43/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         10.685    
+                         arrival time                         -10.248    
+  -------------------------------------------------------------------
+                         slack                                  0.437    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/res_20_reg_1556_reg[15]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][335]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.217ns  (logic 0.112ns (51.613%)  route 0.105ns (48.387%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.105ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.955ns
+    Source Clock Delay      (SCD):    5.274ns
+    Clock Pessimism Removal (CPR):    -0.425ns
+  Clock Net Delay (Source):      2.515ns (routing 1.133ns, distribution 1.382ns)
+  Clock Net Delay (Destination): 2.788ns (routing 1.241ns, distribution 1.547ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.515     5.274    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/ap_clk
+    SLICE_X17Y137        FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/res_20_reg_1556_reg[15]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y137        FDRE (Prop_HFF_SLICEM_C_Q)
+                                                      0.112     5.386 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/res_20_reg_1556_reg[15]/Q
+                         net (fo=1, routed)           0.105     5.491    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/D[335]
+    SLICE_X15Y137        FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][335]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.788     4.955    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/ap_clk
+    SLICE_X15Y137        FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][335]/C
+                         clock pessimism              0.425     5.379    
+    SLICE_X15Y137        FDRE (Hold_EFF2_SLICEL_C_D)
+                                                      0.102     5.481    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][335]
+  -------------------------------------------------------------------
+                         required time                         -5.481    
+                         arrival time                           5.491    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_cmd_reg.cmd_reg/m_vector_i_reg[1068]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_98_111/RAMC_D1/I
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.307ns  (logic 0.115ns (37.459%)  route 0.192ns (62.541%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.217ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.026ns
+    Source Clock Delay      (SCD):    5.289ns
+    Clock Pessimism Removal (CPR):    -0.481ns
+  Clock Net Delay (Source):      2.530ns (routing 1.133ns, distribution 1.397ns)
+  Clock Net Delay (Destination): 2.859ns (routing 1.241ns, distribution 1.618ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.530     5.289    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_cmd_reg.cmd_reg/aclk
+    SLICE_X2Y59          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_cmd_reg.cmd_reg/m_vector_i_reg[1068]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y59          FDRE (Prop_DFF2_SLICEM_C_Q)
+                                                      0.115     5.404 r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_cmd_reg.cmd_reg/m_vector_i_reg[1068]/Q
+                         net (fo=1, routed)           0.192     5.596    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_98_111/DIC1
+    SLICE_X1Y66          RAMD32                                       r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_98_111/RAMC_D1/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.859     5.026    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_98_111/WCLK
+    SLICE_X1Y66          RAMD32                                       r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_98_111/RAMC_D1/CLK
+                         clock pessimism              0.481     5.507    
+    SLICE_X1Y66          RAMD32 (Hold_C6LUT_SLICEM_CLK_I)
+                                                      0.080     5.587    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_98_111/RAMC_D1
+  -------------------------------------------------------------------
+                         required time                         -5.587    
+                         arrival time                           5.596    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_reg_stall/m_vector_i_reg[1072]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_cmd_reg.cmd_reg/skid_buffer_reg[1072]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.286ns  (logic 0.113ns (39.569%)  route 0.173ns (60.431%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.173ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.973ns
+    Source Clock Delay      (SCD):    5.280ns
+    Clock Pessimism Removal (CPR):    -0.481ns
+  Clock Net Delay (Source):      2.521ns (routing 1.133ns, distribution 1.388ns)
+  Clock Net Delay (Destination): 2.806ns (routing 1.241ns, distribution 1.565ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.521     5.280    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_reg_stall/aclk
+    SLICE_X9Y58          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_reg_stall/m_vector_i_reg[1072]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X9Y58          FDRE (Prop_BFF2_SLICEL_C_Q)
+                                                      0.113     5.393 r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_reg_stall/m_vector_i_reg[1072]/Q
+                         net (fo=2, routed)           0.173     5.566    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_cmd_reg.cmd_reg/D[25]
+    SLICE_X8Y61          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_cmd_reg.cmd_reg/skid_buffer_reg[1072]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.806     4.973    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_cmd_reg.cmd_reg/aclk
+    SLICE_X8Y61          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_cmd_reg.cmd_reg/skid_buffer_reg[1072]/C
+                         clock pessimism              0.481     5.454    
+    SLICE_X8Y61          FDRE (Hold_EFF2_SLICEM_C_D)
+                                                      0.102     5.556    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_transaction_regulator/inst/gen_endpoint.gen_w_singleorder.w_singleorder/gen_cmd_reg.cmd_reg/skid_buffer_reg[1072]
+  -------------------------------------------------------------------
+                         required time                         -5.556    
+                         arrival time                           5.566    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_config8_U0/res_52_reg_986_reg[14]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][494]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.114ns (44.358%)  route 0.143ns (55.642%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.973ns
+    Source Clock Delay      (SCD):    5.256ns
+    Clock Pessimism Removal (CPR):    -0.428ns
+  Clock Net Delay (Source):      2.497ns (routing 1.133ns, distribution 1.364ns)
+  Clock Net Delay (Destination): 2.806ns (routing 1.241ns, distribution 1.565ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.497     5.256    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_config8_U0/ap_clk
+    SLICE_X0Y119         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_config8_U0/res_52_reg_986_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y119         FDRE (Prop_AFF2_SLICEL_C_Q)
+                                                      0.114     5.370 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_config8_U0/res_52_reg_986_reg[14]/Q
+                         net (fo=1, routed)           0.143     5.513    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/D[350]
+    SLICE_X3Y119         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][494]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.806     4.973    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/ap_clk
+    SLICE_X3Y119         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][494]/C
+                         clock pessimism              0.428     5.401    
+    SLICE_X3Y119         FDRE (Hold_EFF2_SLICEL_C_D)
+                                                      0.102     5.503    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][494]
+  -------------------------------------------------------------------
+                         required time                         -5.503    
+                         arrival time                           5.513    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_mmu/inst/ar_reg_stall/m_vector_i_reg[1036]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_id_reg.s_rid_i_reg[7]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.249ns  (logic 0.112ns (44.980%)  route 0.137ns (55.020%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.138ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    5.036ns
+    Source Clock Delay      (SCD):    5.330ns
+    Clock Pessimism Removal (CPR):    -0.432ns
+  Clock Net Delay (Source):      2.571ns (routing 1.133ns, distribution 1.438ns)
+  Clock Net Delay (Destination): 2.869ns (routing 1.241ns, distribution 1.628ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.571     5.330    MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_mmu/inst/ar_reg_stall/aclk
+    SLICE_X1Y190         FDRE                                         r  MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_mmu/inst/ar_reg_stall/m_vector_i_reg[1036]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y190         FDRE (Prop_CFF_SLICEM_C_Q)
+                                                      0.112     5.442 r  MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_mmu/inst/ar_reg_stall/m_vector_i_reg[1036]/Q
+                         net (fo=2, routed)           0.137     5.579    MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/s_axi_arid[7]
+    SLICE_X2Y190         FDRE                                         r  MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_id_reg.s_rid_i_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.869     5.036    MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/aclk
+    SLICE_X2Y190         FDRE                                         r  MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_id_reg.s_rid_i_reg[7]/C
+                         clock pessimism              0.432     5.468    
+    SLICE_X2Y190         FDRE (Hold_BFF_SLICEM_C_D)
+                                                      0.101     5.569    MPSoC_ext_platform_i/smartconnect_axilite/inst/s00_entry_pipeline/s00_transaction_regulator/inst/gen_endpoint.gen_r_singleorder.r_singleorder/gen_id_reg.s_rid_i_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -5.569    
+                         arrival time                           5.579    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/local_BUS_WSTRB_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/skid_buffer_reg[2050]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.247ns  (logic 0.111ns (44.939%)  route 0.136ns (55.061%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.136ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.967ns
+    Source Clock Delay      (SCD):    5.259ns
+    Clock Pessimism Removal (CPR):    -0.428ns
+  Clock Net Delay (Source):      2.500ns (routing 1.133ns, distribution 1.367ns)
+  Clock Net Delay (Destination): 2.800ns (routing 1.241ns, distribution 1.559ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.500     5.259    MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/ap_clk
+    SLICE_X10Y74         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/local_BUS_WSTRB_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y74         FDRE (Prop_FFF_SLICEM_C_Q)
+                                                      0.111     5.370 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/local_BUS_WSTRB_reg[1]/Q
+                         net (fo=2, routed)           0.136     5.506    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/D[34]
+    SLICE_X9Y75          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/skid_buffer_reg[2050]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.800     4.967    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/aclk
+    SLICE_X9Y75          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/skid_buffer_reg[2050]/C
+                         clock pessimism              0.428     5.395    
+    SLICE_X9Y75          FDRE (Hold_GFF_SLICEL_C_D)
+                                                      0.101     5.496    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/w_sreg/skid_buffer_reg[2050]
+  -------------------------------------------------------------------
+                         required time                         -5.496    
+                         arrival time                           5.506    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/res_29_reg_1601_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][469]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.212ns  (logic 0.111ns (52.358%)  route 0.101ns (47.641%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.098ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.943ns
+    Source Clock Delay      (SCD):    5.269ns
+    Clock Pessimism Removal (CPR):    -0.425ns
+  Clock Net Delay (Source):      2.510ns (routing 1.133ns, distribution 1.377ns)
+  Clock Net Delay (Destination): 2.776ns (routing 1.241ns, distribution 1.535ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.510     5.269    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/ap_clk
+    SLICE_X17Y156        FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/res_29_reg_1601_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X17Y156        FDRE (Prop_FFF_SLICEM_C_Q)
+                                                      0.111     5.380 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_32u_config5_U0/res_29_reg_1601_reg[5]/Q
+                         net (fo=1, routed)           0.101     5.481    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/D[469]
+    SLICE_X15Y156        FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][469]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.776     4.943    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/ap_clk
+    SLICE_X15Y156        FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][469]/C
+                         clock pessimism              0.425     5.367    
+    SLICE_X15Y156        FDRE (Hold_GFF2_SLICEL_C_D)
+                                                      0.103     5.470    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer5_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][469]
+  -------------------------------------------------------------------
+                         required time                         -5.470    
+                         arrival time                           5.481    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_config8_U0/res_4_reg_856_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][76]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.213ns  (logic 0.112ns (52.582%)  route 0.101ns (47.418%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.099ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.982ns
+    Source Clock Delay      (SCD):    5.308ns
+    Clock Pessimism Removal (CPR):    -0.425ns
+  Clock Net Delay (Source):      2.549ns (routing 1.133ns, distribution 1.416ns)
+  Clock Net Delay (Destination): 2.815ns (routing 1.241ns, distribution 1.574ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.549     5.308    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_config8_U0/ap_clk
+    SLICE_X1Y144         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_config8_U0/res_4_reg_856_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y144         FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.112     5.420 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_config8_U0/res_4_reg_856_reg[12]/Q
+                         net (fo=1, routed)           0.101     5.521    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/D[76]
+    SLICE_X0Y144         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][76]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.815     4.982    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/ap_clk
+    SLICE_X0Y144         FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][76]/C
+                         clock pessimism              0.425     5.407    
+    SLICE_X0Y144         FDRE (Hold_FFF2_SLICEL_C_D)
+                                                      0.103     5.510    MPSoC_ext_platform_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/layer8_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0][76]
+  -------------------------------------------------------------------
+                         required time                         -5.510    
+                         arrival time                           5.521    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/fifo_wreq/U_fifo_srl/dout_reg[42]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/tmp_addr_reg[44]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.249ns  (logic 0.113ns (45.382%)  route 0.136ns (54.618%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.135ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.968ns
+    Source Clock Delay      (SCD):    5.268ns
+    Clock Pessimism Removal (CPR):    -0.435ns
+  Clock Net Delay (Source):      2.509ns (routing 1.133ns, distribution 1.376ns)
+  Clock Net Delay (Destination): 2.801ns (routing 1.241ns, distribution 1.560ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.509     5.268    MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/fifo_wreq/U_fifo_srl/ap_clk
+    SLICE_X4Y41          FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/fifo_wreq/U_fifo_srl/dout_reg[42]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y41          FDRE (Prop_CFF2_SLICEM_C_Q)
+                                                      0.113     5.381 r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/fifo_wreq/U_fifo_srl/dout_reg[42]/Q
+                         net (fo=1, routed)           0.136     5.517    MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/wreq_addr_byte[44]
+    SLICE_X3Y41          FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/tmp_addr_reg[44]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.801     4.968    MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/ap_clk
+    SLICE_X3Y41          FDRE                                         r  MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/tmp_addr_reg[44]/C
+                         clock pessimism              0.435     5.403    
+    SLICE_X3Y41          FDRE (Hold_GFF2_SLICEL_C_D)
+                                                      0.103     5.506    MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/tmp_addr_reg[44]
+  -------------------------------------------------------------------
+                         required time                         -5.506    
+                         arrival time                           5.517    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[59]/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Destination:            MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][59]/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_MPSoC_ext_platform_clk_wiz_0_0  {rise@0.000ns fall@3.333ns period=6.667ns})
+  Path Group:             clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns - clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.250ns  (logic 0.111ns (44.400%)  route 0.139ns (55.600%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.138ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    4.977ns
+    Source Clock Delay      (SCD):    5.267ns
+    Clock Pessimism Removal (CPR):    -0.428ns
+  Clock Net Delay (Source):      2.508ns (routing 1.133ns, distribution 1.375ns)
+  Clock Net Delay (Destination): 2.810ns (routing 1.241ns, distribution 1.569ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.458     1.674    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                      0.739     2.413 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.307     2.720    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.039     2.759 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.508     5.267    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/clka
+    SLICE_X1Y85          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[59]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y85          FDRE (Prop_BFF_SLICEM_C_Q)
+                                                      0.111     5.378 r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[59]/Q
+                         net (fo=1, routed)           0.139     5.517    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/s_sc_payld[49]
+    SLICE_X3Y85          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][59]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_MPSoC_ext_platform_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  MPSoC_ext_platform_i/ps_e/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    MPSoC_ext_platform_i/ps_e/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y81        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  MPSoC_ext_platform_i/ps_e/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.611     1.878    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_in1
+    MMCM_X0Y3            MMCME4_ADV (Prop_MMCM_CLKIN1_CLKOUT0)
+                                                     -0.103     1.775 r  MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.348     2.123    MPSoC_ext_platform_i/clk_wiz_0/inst/clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+    BUFGCE_X0Y76         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
+                                                      0.044     2.167 r  MPSoC_ext_platform_i/clk_wiz_0/inst/clkout1_buf/O
+    X1Y1 (CLOCK_ROOT)    net (fo=31715, routed)       2.810     4.977    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/aclk
+    SLICE_X3Y85          FDRE                                         r  MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][59]/C
+                         clock pessimism              0.428     5.405    
+    SLICE_X3Y85          FDRE (Hold_EFF_SLICEL_C_D)
+                                                      0.101     5.506    MPSoC_ext_platform_i/smc_ic_ps_e_S_AXI_HP0_FPD/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][59]
+  -------------------------------------------------------------------
+                         required time                         -5.506    
+                         arrival time                           5.517    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_MPSoC_ext_platform_clk_wiz_0_0
+Waveform(ns):       { 0.000 3.333 }
+Period(ns):         6.667
+Sources:            { MPSoC_ext_platform_i/clk_wiz_0/inst/mmcme4_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     PS8/MAXIGP0ACLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP0ACLK
+Min Period        n/a     PS8/MAXIGP1ACLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP1ACLK
+Min Period        n/a     PS8/MAXIGP2ACLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP2ACLK
+Min Period        n/a     PS8/SAXIGP2RCLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2RCLK
+Min Period        n/a     PS8/SAXIGP2WCLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2WCLK
+Min Period        n/a     PS8/SAXIGP5RCLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP5RCLK
+Min Period        n/a     PS8/SAXIGP5WCLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP5WCLK
+Min Period        n/a     PS8/SAXIGP6RCLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP6RCLK
+Min Period        n/a     PS8/SAXIGP6WCLK     n/a            3.000         6.667       3.667      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP6WCLK
+Min Period        n/a     RAMB18E2/CLKARDCLK  n/a            1.960         6.667       4.707      RAMB18_X0Y32  MPSoC_ext_platform_i/myproject_axi_master_1/inst/gmem_in0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg/CLKARDCLK
+Low Pulse Width   Slow    PS8/MAXIGP0ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP0ACLK
+Low Pulse Width   Fast    PS8/MAXIGP0ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP0ACLK
+Low Pulse Width   Slow    PS8/MAXIGP1ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP1ACLK
+Low Pulse Width   Fast    PS8/MAXIGP1ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP1ACLK
+Low Pulse Width   Slow    PS8/MAXIGP2ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP2ACLK
+Low Pulse Width   Fast    PS8/MAXIGP2ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP2ACLK
+Low Pulse Width   Slow    PS8/SAXIGP2RCLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2RCLK
+Low Pulse Width   Fast    PS8/SAXIGP2RCLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2RCLK
+Low Pulse Width   Slow    PS8/SAXIGP2WCLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2WCLK
+Low Pulse Width   Fast    PS8/SAXIGP2WCLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2WCLK
+High Pulse Width  Slow    PS8/MAXIGP0ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP0ACLK
+High Pulse Width  Fast    PS8/MAXIGP0ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP0ACLK
+High Pulse Width  Slow    PS8/MAXIGP1ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP1ACLK
+High Pulse Width  Fast    PS8/MAXIGP1ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP1ACLK
+High Pulse Width  Slow    PS8/MAXIGP2ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP2ACLK
+High Pulse Width  Fast    PS8/MAXIGP2ACLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/MAXIGP2ACLK
+High Pulse Width  Slow    PS8/SAXIGP2RCLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2RCLK
+High Pulse Width  Fast    PS8/SAXIGP2RCLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2RCLK
+High Pulse Width  Slow    PS8/SAXIGP2WCLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2WCLK
+High Pulse Width  Fast    PS8/SAXIGP2WCLK     n/a            1.500         3.333       1.833      PS8_X0Y0      MPSoC_ext_platform_i/ps_e/inst/PS8_i/SAXIGP2WCLK
+
+
+
