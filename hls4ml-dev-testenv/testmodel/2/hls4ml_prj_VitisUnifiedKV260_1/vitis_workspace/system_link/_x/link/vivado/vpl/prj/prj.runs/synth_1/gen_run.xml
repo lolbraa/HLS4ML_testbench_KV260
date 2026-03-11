@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1773227489">
+<GenRun Id="synth_1" LaunchPart="xck26-sfvc784-2LV-c" LaunchTime="1773232567">
   <File Type="VDS-TIMING-PB" Name="vitis_design_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="vitis_design_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="vitis_design_wrapper.dcp"/>
@@ -14,7 +14,7 @@
     <File Path="$PSRCDIR/sources_1/bd/vitis_design/vitis_design.bd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../.local/hw_platform/prj/project_1.srcs/sources_1/bd/vitis_design/vitis_design.bd"/>
-        <Attr Name="ImportTime" Val="1773227468"/>
+        <Attr Name="ImportTime" Val="1773232544"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -139,13 +139,4 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="vitis_design_myproject_axi_master_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_axi_interconnect_0_imp_m02_regslice_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_axi_interconnect_0_imp_auto_pc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_axi_dma_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_axi_smc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_axi_intc_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_rst_ps8_0_99M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="vitis_design_zynq_ultra_ps_e_0_0"/>
 </GenRun>

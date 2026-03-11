@@ -26,7 +26,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1252 \
+    id 1240 \
     name layer4_out \
     type fifo \
     dir I \
@@ -41,7 +41,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 1253 \
+    id 1241 \
     name stream_out0_layer5_out \
     type fifo \
     dir O \

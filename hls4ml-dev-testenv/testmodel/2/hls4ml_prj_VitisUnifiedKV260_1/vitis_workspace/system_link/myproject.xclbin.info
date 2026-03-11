@@ -11,7 +11,7 @@ xclbin Information
    Kernels:                myproject_axi_master
    Signature:              
    Content:                Bitstream
-   UUID (xclbin):          8e67a90b-d339-5772-66b1-046a92090f23
+   UUID (xclbin):          a601beb4-f93e-d361-a1d4-5e3c0fe31c37
    Sections:               BITSTREAM, MEM_TOPOLOGY, IP_LAYOUT, CONNECTIVITY, 
                            BUILD_METADATA, EMBEDDED_METADATA, SYSTEM_METADATA, 
                            GROUP_CONNECTIVITY, GROUP_TOPOLOGY

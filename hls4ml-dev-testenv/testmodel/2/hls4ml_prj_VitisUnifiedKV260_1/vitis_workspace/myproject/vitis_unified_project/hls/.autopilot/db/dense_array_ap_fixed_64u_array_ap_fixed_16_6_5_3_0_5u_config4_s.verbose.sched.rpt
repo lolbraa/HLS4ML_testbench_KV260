@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s'
 ================================================================
-* Date:           Wed Mar 11 11:09:58 2026
+* Date:           Wed Mar 11 12:35:12 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        vitis_unified_project
@@ -147,8 +147,8 @@ ST_1 : Operation 69 [1/1] (0.00ns)   --->   "%data_62 = partselect i16 @_ssdm_op
 State 2 <SV = 1> <Delay = 4.05>
 ST_2 : Operation 70 [2/2] (4.05ns)   --->   "%call_ret = call i80 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>, i16 %data, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_63, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14, i16 %data_15, i16 %data_16, i16 %data_17, i16 %data_18, i16 %data_19, i16 %data_20, i16 %data_21, i16 %data_22, i16 %data_23, i16 %data_24, i16 %data_25, i16 %data_26, i16 %data_27, i16 %data_28, i16 %data_29, i16 %data_30, i16 %data_31, i16 %data_32, i16 %data_33, i16 %data_34, i16 %data_35, i16 %data_36, i16 %data_37, i16 %data_38, i16 %data_39, i16 %data_40, i16 %data_41, i16 %data_42, i16 %data_43, i16 %data_44, i16 %data_45, i16 %data_46, i16 %data_47, i16 %data_48, i16 %data_49, i16 %data_50, i16 %data_51, i16 %data_52, i16 %data_53, i16 %data_54, i16 %data_55, i16 %data_56, i16 %data_57, i16 %data_58, i16 %data_59, i16 %data_60, i16 %data_61, i16 %data_62" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 70 'call' 'call_ret' <Predicate = true> <Delay = 4.05> <CoreType = "Generic">   --->   Generic Core
 
-State 3 <SV = 2> <Delay = 3.73>
-ST_3 : Operation 71 [1/2] (3.73ns)   --->   "%call_ret = call i80 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>, i16 %data, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_63, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14, i16 %data_15, i16 %data_16, i16 %data_17, i16 %data_18, i16 %data_19, i16 %data_20, i16 %data_21, i16 %data_22, i16 %data_23, i16 %data_24, i16 %data_25, i16 %data_26, i16 %data_27, i16 %data_28, i16 %data_29, i16 %data_30, i16 %data_31, i16 %data_32, i16 %data_33, i16 %data_34, i16 %data_35, i16 %data_36, i16 %data_37, i16 %data_38, i16 %data_39, i16 %data_40, i16 %data_41, i16 %data_42, i16 %data_43, i16 %data_44, i16 %data_45, i16 %data_46, i16 %data_47, i16 %data_48, i16 %data_49, i16 %data_50, i16 %data_51, i16 %data_52, i16 %data_53, i16 %data_54, i16 %data_55, i16 %data_56, i16 %data_57, i16 %data_58, i16 %data_59, i16 %data_60, i16 %data_61, i16 %data_62" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 71 'call' 'call_ret' <Predicate = true> <Delay = 3.73> <CoreType = "Generic">   --->   Generic Core
+State 3 <SV = 2> <Delay = 2.90>
+ST_3 : Operation 71 [1/2] (2.90ns)   --->   "%call_ret = call i80 @dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>, i16 %data, i16 %data_1, i16 %data_2, i16 %data_3, i16 %data_4, i16 %data_5, i16 %data_6, i16 %data_7, i16 %data_8, i16 %data_9, i16 %data_63, i16 %data_10, i16 %data_11, i16 %data_12, i16 %data_13, i16 %data_14, i16 %data_15, i16 %data_16, i16 %data_17, i16 %data_18, i16 %data_19, i16 %data_20, i16 %data_21, i16 %data_22, i16 %data_23, i16 %data_24, i16 %data_25, i16 %data_26, i16 %data_27, i16 %data_28, i16 %data_29, i16 %data_30, i16 %data_31, i16 %data_32, i16 %data_33, i16 %data_34, i16 %data_35, i16 %data_36, i16 %data_37, i16 %data_38, i16 %data_39, i16 %data_40, i16 %data_41, i16 %data_42, i16 %data_43, i16 %data_44, i16 %data_45, i16 %data_46, i16 %data_47, i16 %data_48, i16 %data_49, i16 %data_50, i16 %data_51, i16 %data_52, i16 %data_53, i16 %data_54, i16 %data_55, i16 %data_56, i16 %data_57, i16 %data_58, i16 %data_59, i16 %data_60, i16 %data_61, i16 %data_62" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 71 'call' 'call_ret' <Predicate = true> <Delay = 2.90> <CoreType = "Generic">   --->   Generic Core
 ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%res = extractvalue i80 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 72 'extractvalue' 'res' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%res_1 = extractvalue i80 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 73 'extractvalue' 'res_1' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%res_2 = extractvalue i80 %call_ret" [firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95]   --->   Operation 74 'extractvalue' 'res_2' <Predicate = true> <Delay = 0.00>
@@ -176,9 +176,9 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'call' operation 80 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>' [70]  (4.053 ns)
 
- <State 3>: 3.734ns
+ <State 3>: 2.903ns
 The critical path consists of the following:
-	'call' operation 80 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>' [70]  (3.734 ns)
+	'call' operation 80 bit ('call_ret', firmware/nnet_utils/nnet_dense_stream.h:17->firmware/nnet_utils/nnet_dense_stream.h:95) to 'dense_latency<ap_fixed<16, 6, 5, 3, 0>, ap_fixed<16, 6, 5, 3, 0>, config4>' [70]  (2.903 ns)
 
  <State 4>: 1.838ns
 The critical path consists of the following:

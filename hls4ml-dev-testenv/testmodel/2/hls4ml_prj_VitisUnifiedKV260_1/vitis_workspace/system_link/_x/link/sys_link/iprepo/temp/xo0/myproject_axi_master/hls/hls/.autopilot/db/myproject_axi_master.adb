@@ -2011,15 +2011,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>1120</second>
+              <second>1108</second>
             </item>
             <item>
               <first>FF</first>
-              <second>9842</second>
+              <second>9830</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>40343</second>
+              <second>41029</second>
             </item>
           </second>
         </item>

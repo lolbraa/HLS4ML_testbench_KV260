@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Wed Mar 11 11:18:03 2026
+| Date         : Wed Mar 11 12:42:04 2026
 | Host         : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
 | Command      : report_utilization -file vitis_design_myproject_axi_master_1_0_utilization_synth.rpt -pb vitis_design_myproject_axi_master_1_0_utilization_synth.pb
 | Design       : vitis_design_myproject_axi_master_1_0
@@ -32,15 +32,15 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 27789 |     0 |          0 |    117120 | 23.73 |
-|   LUT as Logic             | 27438 |     0 |          0 |    117120 | 23.43 |
+| CLB LUTs*                  | 27999 |     0 |          0 |    117120 | 23.91 |
+|   LUT as Logic             | 27648 |     0 |          0 |    117120 | 23.61 |
 |   LUT as Memory            |   351 |     0 |          0 |     57600 |  0.61 |
 |     LUT as Distributed RAM |     0 |     0 |            |           |       |
 |     LUT as Shift Register  |   351 |     0 |            |           |       |
-| CLB Registers              | 15023 |     0 |          0 |    234240 |  6.41 |
-|   Register as Flip Flop    | 15023 |     0 |          0 |    234240 |  6.41 |
+| CLB Registers              | 14900 |     0 |          0 |    234240 |  6.36 |
+|   Register as Flip Flop    | 14900 |     0 |          0 |    234240 |  6.36 |
 |   Register as Latch        |     0 |     0 |          0 |    234240 |  0.00 |
-| CARRY8                     |  2294 |     0 |          0 |     14640 | 15.67 |
+| CARRY8                     |  2351 |     0 |          0 |     14640 | 16.06 |
 | F7 Muxes                   |     1 |     0 |          0 |     58560 | <0.01 |
 | F8 Muxes                   |     0 |     0 |          0 |     29280 |  0.00 |
 | F9 Muxes                   |     0 |     0 |          0 |     14640 |  0.00 |
@@ -67,7 +67,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 39    |          Yes |         Set |            - |
-| 14984 |          Yes |       Reset |            - |
+| 14861 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -93,8 +93,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------------+------+-------+------------+-----------+-------+
 |    Site Type   | Used | Fixed | Prohibited | Available | Util% |
 +----------------+------+-------+------------+-----------+-------+
-| DSPs           | 1118 |     0 |          0 |      1248 | 89.58 |
-|   DSP48E2 only | 1118 |       |            |           |       |
+| DSPs           | 1106 |     0 |          0 |      1248 | 88.62 |
+|   DSP48E2 only | 1106 |       |            |           |       |
 +----------------+------+-------+------------+-----------+-------+
 
 
@@ -176,15 +176,15 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| FDRE     | 14984 |            Register |
-| LUT2     |  8595 |                 CLB |
-| LUT3     |  7216 |                 CLB |
-| LUT6     |  5943 |                 CLB |
-| LUT4     |  4832 |                 CLB |
-| LUT5     |  3908 |                 CLB |
-| CARRY8   |  2294 |                 CLB |
-| LUT1     |  1894 |                 CLB |
-| DSP48E2  |  1118 |          Arithmetic |
+| FDRE     | 14861 |            Register |
+| LUT2     |  9079 |                 CLB |
+| LUT3     |  7121 |                 CLB |
+| LUT6     |  5734 |                 CLB |
+| LUT4     |  5038 |                 CLB |
+| LUT5     |  3902 |                 CLB |
+| CARRY8   |  2351 |                 CLB |
+| LUT1     |  1931 |                 CLB |
+| DSP48E2  |  1106 |          Arithmetic |
 | SRL16E   |   315 |                 CLB |
 | FDSE     |    39 |            Register |
 | SRLC32E  |    36 |                 CLB |

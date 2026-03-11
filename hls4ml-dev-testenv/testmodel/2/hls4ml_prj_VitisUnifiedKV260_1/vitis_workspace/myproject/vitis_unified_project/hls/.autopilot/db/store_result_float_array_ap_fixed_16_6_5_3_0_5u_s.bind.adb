@@ -778,7 +778,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>empty_77</name>
+						<name>empty_79</name>
 						<fileName>firmware/myproject_axi_master.cpp</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</fileDirectory>
 						<lineNumber>29</lineNumber>
@@ -897,7 +897,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>empty_78</name>
+						<name>empty_80</name>
 						<fileName>firmware/myproject_axi_master.cpp</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</fileDirectory>
 						<lineNumber>38</lineNumber>
@@ -2141,7 +2141,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_77_writereq_fu_70</first>
+			<first>empty_79_writereq_fu_70</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

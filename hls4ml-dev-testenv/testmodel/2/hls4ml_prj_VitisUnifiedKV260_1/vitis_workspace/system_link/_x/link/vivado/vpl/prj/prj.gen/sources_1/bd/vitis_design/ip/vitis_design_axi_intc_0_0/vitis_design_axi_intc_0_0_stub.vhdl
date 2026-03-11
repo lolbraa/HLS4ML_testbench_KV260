@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
 -- Date        : Wed Mar 11 11:12:21 2026
 -- Host        : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top vitis_design_axi_intc_0_0 -prefix
+--               vitis_design_axi_intc_0_0_ vitis_design_axi_intc_0_0_stub.vhdl
 -- Design      : vitis_design_axi_intc_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xck26-sfvc784-2LV-c

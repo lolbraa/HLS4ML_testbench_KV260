@@ -94,8 +94,8 @@
     "time_stamp": "2025-11-13-01:29:13",
     "options": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
     "xclbin_name": "myproject",
-    "uuid": "2acfd3fd-9124-4080-9bb2-9c5c20bf35db",
-    "link_uuid": "2acfd3fd-9124-4080-9bb2-9c5c20bf35db",
+    "uuid": "3318e45d-2e93-429c-b67f-6adba04f8bdd",
+    "link_uuid": "3318e45d-2e93-429c-b67f-6adba04f8bdd",
     "package_uuid": "",
     "system_compile_flow": false
    },
@@ -205,26 +205,26 @@
        "actual_resources": [
         {
          "design_state": "routed",
-         "LUT": "23398",
-         "REG": "14514",
+         "LUT": "23663",
+         "REG": "14391",
          "BRAM": "8",
-         "DSP": "1118",
+         "DSP": "1106",
          "URAM": "0"
         },
         {
          "design_state": "fully_placed",
-         "LUT": "23398",
-         "REG": "14514",
+         "LUT": "23663",
+         "REG": "14391",
          "BRAM": "8",
-         "DSP": "1118",
+         "DSP": "1106",
          "URAM": "0"
         },
         {
          "design_state": "synthesized",
-         "LUT": "27789",
-         "REG": "15023",
+         "LUT": "27999",
+         "REG": "14900",
          "BRAM": "8",
-         "DSP": "1118",
+         "DSP": "1106",
          "URAM": "0"
         }
        ],

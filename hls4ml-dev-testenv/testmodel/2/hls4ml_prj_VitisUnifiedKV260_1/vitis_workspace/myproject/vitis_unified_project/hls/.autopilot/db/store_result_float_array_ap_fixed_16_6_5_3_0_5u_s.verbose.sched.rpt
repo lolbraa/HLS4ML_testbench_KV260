@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'store_result_float_array_ap_fixed_16_6_5_3_0_5u_s'
 ================================================================
-* Date:           Wed Mar 11 11:09:58 2026
+* Date:           Wed Mar 11 12:35:12 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        vitis_unified_project
@@ -96,7 +96,7 @@ State 2 <SV = 1> <Delay = 4.37>
 ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%sext_ln29 = sext i62 %trunc_ln" [firmware/myproject_axi_master.cpp:29]   --->   Operation 18 'sext' 'sext_ln29' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%gmem_out0_addr = getelementptr i32 %gmem_out0, i64 %sext_ln29" [firmware/myproject_axi_master.cpp:29]   --->   Operation 19 'getelementptr' 'gmem_out0_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%zext_ln29_1 = zext i34 %empty" [firmware/myproject_axi_master.cpp:29]   --->   Operation 20 'zext' 'zext_ln29_1' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] ( I:4.37ns O:4.37ns )   --->   "%empty_77 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %gmem_out0_addr, i64 %zext_ln29_1" [firmware/myproject_axi_master.cpp:29]   --->   Operation 21 'writereq' 'empty_77' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_2 : Operation 21 [1/1] ( I:4.37ns O:4.37ns )   --->   "%empty_79 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %gmem_out0_addr, i64 %zext_ln29_1" [firmware/myproject_axi_master.cpp:29]   --->   Operation 21 'writereq' 'empty_79' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 9> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 3 <SV = 2> <Delay = 1.44>
 ST_3 : Operation 22 [2/2] (1.44ns)   --->   "%call_ln29 = call void @store_result<float,array<ap_fixed,5u>>_Pipeline_VITIS_LOOP_29_1, i32 %batch_size_1, i32 %gmem_out0, i62 %trunc_ln, i80 %stream_out0_layer5_out" [firmware/myproject_axi_master.cpp:29]   --->   Operation 22 'call' 'call_ln29' <Predicate = true> <Delay = 1.44> <CoreType = "Generic">   --->   Generic Core
@@ -105,16 +105,16 @@ State 4 <SV = 3> <Delay = 0.00>
 ST_4 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln29 = call void @store_result<float,array<ap_fixed,5u>>_Pipeline_VITIS_LOOP_29_1, i32 %batch_size_1, i32 %gmem_out0, i62 %trunc_ln, i80 %stream_out0_layer5_out" [firmware/myproject_axi_master.cpp:29]   --->   Operation 23 'call' 'call_ln29' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 24 [5/5] (4.37ns)   --->   "%empty_78 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 24 'writeresp' 'empty_78' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 24 [5/5] (4.37ns)   --->   "%empty_80 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 24 'writeresp' 'empty_80' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 25 [4/5] (4.37ns)   --->   "%empty_78 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 25 'writeresp' 'empty_78' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 25 [4/5] (4.37ns)   --->   "%empty_80 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 25 'writeresp' 'empty_80' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 26 [3/5] (4.37ns)   --->   "%empty_78 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 26 'writeresp' 'empty_78' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 26 [3/5] (4.37ns)   --->   "%empty_80 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 26 'writeresp' 'empty_80' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 27 [2/5] (4.37ns)   --->   "%empty_78 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 27 'writeresp' 'empty_78' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 27 [2/5] (4.37ns)   --->   "%empty_80 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 27 'writeresp' 'empty_80' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 9 <SV = 8> <Delay = 4.37>
 ST_9 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %batch_size, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
@@ -124,7 +124,7 @@ ST_9 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface 
 ST_9 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_9 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_out0, void @empty_18, i32 0, i32 0, void @empty_1, i32 0, i32 5, void @empty_8, void @empty_16, void @empty_1, i32 16, i32 16, i32 16, i32 16, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 4"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_9 : Operation 35 [1/5] ( I:4.37ns O:4.37ns )   --->   "%empty_78 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 35 'writeresp' 'empty_78' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 35 [1/5] ( I:4.37ns O:4.37ns )   --->   "%empty_80 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem_out0_addr" [firmware/myproject_axi_master.cpp:38]   --->   Operation 35 'writeresp' 'empty_80' <Predicate = true> <Delay = 4.37> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 3> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 ST_9 : Operation 36 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 36 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
 
@@ -142,7 +142,7 @@ The critical path consists of the following:
  <State 2>: 4.375ns
 The critical path consists of the following:
 	'getelementptr' operation 32 bit ('gmem_out0_addr', firmware/myproject_axi_master.cpp:29) [20]  (0.000 ns)
-	bus request operation ('empty_77', firmware/myproject_axi_master.cpp:29) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:29) [23]  (4.375 ns)
+	bus request operation ('empty_79', firmware/myproject_axi_master.cpp:29) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:29) [23]  (4.375 ns)
 
  <State 3>: 1.443ns
 The critical path consists of the following:
@@ -165,7 +165,7 @@ The critical path consists of the following:
 
  <State 9>: 4.375ns
 The critical path consists of the following:
-	bus response operation ('empty_78', firmware/myproject_axi_master.cpp:38) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:38) [25]  (4.375 ns)
+	bus response operation ('empty_80', firmware/myproject_axi_master.cpp:38) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:38) [25]  (4.375 ns)
 
 
 ============================================================

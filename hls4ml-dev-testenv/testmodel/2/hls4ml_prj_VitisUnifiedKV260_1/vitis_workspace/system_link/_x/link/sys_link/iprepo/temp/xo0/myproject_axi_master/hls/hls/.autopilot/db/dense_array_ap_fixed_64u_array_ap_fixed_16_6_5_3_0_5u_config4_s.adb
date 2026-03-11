@@ -11439,15 +11439,15 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>262</second>
+              <second>267</second>
             </item>
             <item>
               <first>FF</first>
-              <second>1565</second>
+              <second>1572</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>9184</second>
+              <second>9058</second>
             </item>
           </second>
         </item>

@@ -152,7 +152,7 @@ attribute shreg_extract : string;
     signal trunc_ln66_fu_448_p1 : STD_LOGIC_VECTOR (14 downto 0);
     signal select_ln66_3_fu_452_p3 : STD_LOGIC_VECTOR (14 downto 0);
     signal x_fu_459_p2 : STD_LOGIC_VECTOR (14 downto 0);
-    signal tmp_i_79_fu_484_p4 : STD_LOGIC_VECTOR (9 downto 0);
+    signal tmp_i_81_fu_484_p4 : STD_LOGIC_VECTOR (9 downto 0);
     signal x_1_fu_464_p2 : STD_LOGIC_VECTOR (14 downto 0);
     signal tmp_23_i_fu_499_p4 : STD_LOGIC_VECTOR (9 downto 0);
     signal x_2_fu_469_p2 : STD_LOGIC_VECTOR (14 downto 0);
@@ -288,7 +288,7 @@ begin
         ce0 => invert_table_ce0_local,
         q0 => invert_table_q0);
 
-    mul_18s_11ns_26_1_1_U1244 : component myproject_axi_master_mul_18s_11ns_26_1_1
+    mul_18s_11ns_26_1_1_U1232 : component myproject_axi_master_mul_18s_11ns_26_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -300,7 +300,7 @@ begin
         din1 => mul_ln241_4_fu_181_p1,
         dout => mul_ln241_4_fu_181_p2);
 
-    mul_18s_11ns_26_1_1_U1245 : component myproject_axi_master_mul_18s_11ns_26_1_1
+    mul_18s_11ns_26_1_1_U1233 : component myproject_axi_master_mul_18s_11ns_26_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -312,7 +312,7 @@ begin
         din1 => mul_ln241_fu_182_p1,
         dout => mul_ln241_fu_182_p2);
 
-    mul_18s_11ns_26_1_1_U1246 : component myproject_axi_master_mul_18s_11ns_26_1_1
+    mul_18s_11ns_26_1_1_U1234 : component myproject_axi_master_mul_18s_11ns_26_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -324,7 +324,7 @@ begin
         din1 => mul_ln241_3_fu_183_p1,
         dout => mul_ln241_3_fu_183_p2);
 
-    mul_18s_11ns_26_1_1_U1247 : component myproject_axi_master_mul_18s_11ns_26_1_1
+    mul_18s_11ns_26_1_1_U1235 : component myproject_axi_master_mul_18s_11ns_26_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -336,7 +336,7 @@ begin
         din1 => mul_ln241_2_fu_184_p1,
         dout => mul_ln241_2_fu_184_p2);
 
-    mul_18s_11ns_26_1_1_U1248 : component myproject_axi_master_mul_18s_11ns_26_1_1
+    mul_18s_11ns_26_1_1_U1236 : component myproject_axi_master_mul_18s_11ns_26_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -638,7 +638,7 @@ begin
     tmp_25_i_fu_529_p4 <= x_3_fu_474_p2(14 downto 5);
     tmp_26_i_fu_544_p4 <= x_4_fu_479_p2(14 downto 5);
     tmp_fu_611_p4 <= add_ln51_3_fu_605_p2(12 downto 8);
-    tmp_i_79_fu_484_p4 <= x_fu_459_p2(14 downto 5);
+    tmp_i_81_fu_484_p4 <= x_fu_459_p2(14 downto 5);
     trunc_ln198_4_fu_296_p4 <= layer4_out_dout(31 downto 16);
     trunc_ln198_5_fu_306_p4 <= layer4_out_dout(47 downto 32);
     trunc_ln198_6_fu_316_p4 <= layer4_out_dout(63 downto 48);
@@ -667,7 +667,7 @@ begin
     zext_ln223_2_fu_524_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_24_i_fu_514_p4),64));
     zext_ln223_3_fu_539_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_25_i_fu_529_p4),64));
     zext_ln223_4_fu_554_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_26_i_fu_544_p4),64));
-    zext_ln223_fu_494_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_i_79_fu_484_p4),64));
+    zext_ln223_fu_494_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_i_81_fu_484_p4),64));
     zext_ln232_fu_621_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_611_p4),64));
     zext_ln51_1_fu_591_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln51_1_fu_585_p2),13));
     zext_ln51_2_fu_601_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln51_2_fu_595_p2),13));

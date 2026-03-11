@@ -2063,7 +2063,7 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>tmp_i_79</name>
+						<name>tmp_i_81</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</fileDirectory>
 						<lineNumber>145</lineNumber>
@@ -9386,7 +9386,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_i_79_fu_484</first>
+			<first>tmp_i_81_fu_484</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

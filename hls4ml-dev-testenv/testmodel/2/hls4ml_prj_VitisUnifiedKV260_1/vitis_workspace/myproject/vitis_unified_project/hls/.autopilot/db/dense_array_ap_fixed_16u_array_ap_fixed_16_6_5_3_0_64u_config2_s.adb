@@ -1264,7 +1264,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.20</m_delay>
+          <m_delay>4.05</m_delay>
           <m_topoIndex>18</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -7965,15 +7965,15 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>853</second>
+              <second>836</second>
             </item>
             <item>
               <first>FF</first>
-              <second>5367</second>
+              <second>5348</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>27766</second>
+              <second>28578</second>
             </item>
           </second>
         </item>

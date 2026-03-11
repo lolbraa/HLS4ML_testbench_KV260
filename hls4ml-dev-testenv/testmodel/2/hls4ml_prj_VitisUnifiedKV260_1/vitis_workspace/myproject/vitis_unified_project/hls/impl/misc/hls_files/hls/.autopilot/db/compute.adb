@@ -1708,15 +1708,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>1120</second>
+              <second>1108</second>
             </item>
             <item>
               <first>FF</first>
-              <second>9772</second>
+              <second>9760</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>40206</second>
+              <second>40892</second>
             </item>
           </second>
         </item>

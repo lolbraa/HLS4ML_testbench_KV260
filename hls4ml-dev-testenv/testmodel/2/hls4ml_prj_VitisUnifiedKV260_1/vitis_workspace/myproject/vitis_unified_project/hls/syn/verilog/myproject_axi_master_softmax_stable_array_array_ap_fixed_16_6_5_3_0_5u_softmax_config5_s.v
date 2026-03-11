@@ -133,7 +133,7 @@ wire   [0:0] xor_ln66_3_fu_442_p2;
 wire   [14:0] trunc_ln66_fu_448_p1;
 wire   [14:0] select_ln66_3_fu_452_p3;
 wire   [14:0] x_fu_459_p2;
-wire   [9:0] tmp_i_79_fu_484_p4;
+wire   [9:0] tmp_i_81_fu_484_p4;
 wire   [14:0] x_1_fu_464_p2;
 wire   [9:0] tmp_23_i_fu_499_p4;
 wire   [14:0] x_2_fu_469_p2;
@@ -224,7 +224,7 @@ myproject_axi_master_mul_18s_11ns_26_1_1 #(
     .din0_WIDTH( 18 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 26 ))
-mul_18s_11ns_26_1_1_U1244(
+mul_18s_11ns_26_1_1_U1232(
     .din0(mul_ln241_4_fu_181_p0),
     .din1(mul_ln241_4_fu_181_p1),
     .dout(mul_ln241_4_fu_181_p2)
@@ -236,7 +236,7 @@ myproject_axi_master_mul_18s_11ns_26_1_1 #(
     .din0_WIDTH( 18 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 26 ))
-mul_18s_11ns_26_1_1_U1245(
+mul_18s_11ns_26_1_1_U1233(
     .din0(mul_ln241_fu_182_p0),
     .din1(mul_ln241_fu_182_p1),
     .dout(mul_ln241_fu_182_p2)
@@ -248,7 +248,7 @@ myproject_axi_master_mul_18s_11ns_26_1_1 #(
     .din0_WIDTH( 18 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 26 ))
-mul_18s_11ns_26_1_1_U1246(
+mul_18s_11ns_26_1_1_U1234(
     .din0(mul_ln241_3_fu_183_p0),
     .din1(mul_ln241_3_fu_183_p1),
     .dout(mul_ln241_3_fu_183_p2)
@@ -260,7 +260,7 @@ myproject_axi_master_mul_18s_11ns_26_1_1 #(
     .din0_WIDTH( 18 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 26 ))
-mul_18s_11ns_26_1_1_U1247(
+mul_18s_11ns_26_1_1_U1235(
     .din0(mul_ln241_2_fu_184_p0),
     .din1(mul_ln241_2_fu_184_p1),
     .dout(mul_ln241_2_fu_184_p2)
@@ -272,7 +272,7 @@ myproject_axi_master_mul_18s_11ns_26_1_1 #(
     .din0_WIDTH( 18 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 26 ))
-mul_18s_11ns_26_1_1_U1248(
+mul_18s_11ns_26_1_1_U1236(
     .din0(mul_ln241_1_fu_185_p0),
     .din1(mul_ln241_1_fu_185_p1),
     .dout(mul_ln241_1_fu_185_p2)
@@ -567,7 +567,7 @@ assign tmp_26_i_fu_544_p4 = {{x_4_fu_479_p2[14:5]}};
 
 assign tmp_fu_611_p4 = {{add_ln51_3_fu_605_p2[12:8]}};
 
-assign tmp_i_79_fu_484_p4 = {{x_fu_459_p2[14:5]}};
+assign tmp_i_81_fu_484_p4 = {{x_fu_459_p2[14:5]}};
 
 assign trunc_ln198_4_fu_296_p4 = {{layer4_out_dout[31:16]}};
 
@@ -625,7 +625,7 @@ assign zext_ln223_3_fu_539_p1 = tmp_25_i_fu_529_p4;
 
 assign zext_ln223_4_fu_554_p1 = tmp_26_i_fu_544_p4;
 
-assign zext_ln223_fu_494_p1 = tmp_i_79_fu_484_p4;
+assign zext_ln223_fu_494_p1 = tmp_i_81_fu_484_p4;
 
 assign zext_ln232_fu_621_p1 = tmp_fu_611_p4;
 

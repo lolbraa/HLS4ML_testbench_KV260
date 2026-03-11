@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'myproject'
 ================================================================
-* Date:           Wed Mar 11 11:09:58 2026
+* Date:           Wed Mar 11 12:35:12 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        vitis_unified_project
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  4.209 ns|     0.62 ns|
+    |ap_clk  |  5.00 ns|  4.152 ns|     0.62 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -116,9 +116,9 @@ ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface 
 ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln14 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1" [firmware/myproject.cpp:14]   --->   Operation 25 'specdataflowpipeline' 'specdataflowpipeline_ln14' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @layer2_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer2_out, i1024 %layer2_out"   --->   Operation 26 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer2_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%empty_84 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out, i1024 %layer3_out"   --->   Operation 28 'specchannel' 'empty_84' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%empty_86 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out, i1024 %layer3_out"   --->   Operation 28 'specchannel' 'empty_86' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer3_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_85 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer4_out, i80 %layer4_out"   --->   Operation 30 'specchannel' 'empty_85' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_87 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer4_out, i80 %layer4_out"   --->   Operation 30 'specchannel' 'empty_87' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer4_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [firmware/myproject.cpp:47]   --->   Operation 32 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln14 = ret" [firmware/myproject.cpp:14]   --->   Operation 33 'ret' 'ret_ln14' <Predicate = true> <Delay = 0.00>

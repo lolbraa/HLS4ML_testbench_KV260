@@ -1500,15 +1500,15 @@
             <item_version>0</item_version>
             <item class_id="48" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>853</second>
+              <second>836</second>
             </item>
             <item>
               <first>FF</first>
-              <second>5629</second>
+              <second>5610</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>27824</second>
+              <second>28636</second>
             </item>
           </second>
         </item>
@@ -1519,15 +1519,15 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>262</second>
+              <second>267</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2676</second>
+              <second>2683</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>9248</second>
+              <second>9122</second>
             </item>
           </second>
         </item>

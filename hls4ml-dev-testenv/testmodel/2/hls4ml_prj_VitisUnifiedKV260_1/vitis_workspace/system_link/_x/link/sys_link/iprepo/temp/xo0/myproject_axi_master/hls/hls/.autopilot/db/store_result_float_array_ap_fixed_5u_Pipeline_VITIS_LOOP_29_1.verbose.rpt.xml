@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1'" level="0">
-<item name = "Date">Wed Mar 11 11:10:00 2026
+<item name = "Date">Wed Mar 11 12:35:15 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">vitis_unified_project</item>
@@ -62,11 +62,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="ctlz_16_16_1_1_U1268">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
-<column name="ctlz_16_16_1_1_U1269">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
-<column name="ctlz_16_16_1_1_U1270">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
-<column name="ctlz_16_16_1_1_U1271">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
-<column name="ctlz_16_16_1_1_U1272">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="ctlz_16_16_1_1_U1256">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="ctlz_16_16_1_1_U1257">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="ctlz_16_16_1_1_U1258">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="ctlz_16_16_1_1_U1259">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="ctlz_16_16_1_1_U1260">ctlz_16_16_1_1, 0, 0, 0, 20, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -123,10 +123,10 @@
 <column name="icmp_ln33_4_fu_765_p2">icmp, 0, 0, 23, 16, 1</column>
 <column name="icmp_ln33_fu_217_p2">icmp, 0, 0, 23, 16, 1</column>
 <column name="ap_block_pp0_stage1_subdone">or, 0, 0, 2, 1, 1</column>
-<column name="empty_73_fu_506_p3">select, 0, 0, 32, 1, 1</column>
-<column name="empty_74_fu_632_p3">select, 0, 0, 32, 1, 1</column>
-<column name="empty_75_fu_758_p3">select, 0, 0, 32, 1, 1</column>
-<column name="empty_76_fu_880_p3">select, 0, 0, 32, 1, 1</column>
+<column name="empty_75_fu_506_p3">select, 0, 0, 32, 1, 1</column>
+<column name="empty_76_fu_632_p3">select, 0, 0, 32, 1, 1</column>
+<column name="empty_77_fu_758_p3">select, 0, 0, 32, 1, 1</column>
+<column name="empty_78_fu_880_p3">select, 0, 0, 32, 1, 1</column>
 <column name="empty_fu_380_p3">select, 0, 0, 32, 1, 1</column>
 <column name="select_ln33_1_fu_333_p3">select, 0, 0, 7, 1, 7</column>
 <column name="select_ln33_2_fu_397_p3">select, 0, 0, 16, 1, 16</column>
@@ -173,10 +173,10 @@
 <column name="ap_done_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
-<column name="empty_73_reg_987">32, 0, 32, 0</column>
-<column name="empty_74_reg_1003">32, 0, 32, 0</column>
-<column name="empty_75_reg_1019">32, 0, 32, 0</column>
-<column name="empty_76_reg_1035">32, 0, 32, 0</column>
+<column name="empty_75_reg_987">32, 0, 32, 0</column>
+<column name="empty_76_reg_1003">32, 0, 32, 0</column>
+<column name="empty_77_reg_1019">32, 0, 32, 0</column>
+<column name="empty_78_reg_1035">32, 0, 32, 0</column>
 <column name="empty_reg_971">32, 0, 32, 0</column>
 <column name="icmp_ln29_reg_894">1, 0, 1, 0</column>
 <column name="icmp_ln33_1_reg_976">1, 0, 1, 0</column>
