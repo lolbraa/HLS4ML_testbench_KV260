@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:component xmlns:xd="http://www.xilinx.com/xd" xd:vendor="xilinx.com" xd:library="xd" xd:name="dr" xd:version="1.00" xd:type="design">
+  <xd:repository>
+    <xd:file xd:name="xd_ip_db.xml"/>
+  </xd:repository>
+  <xd:instance xd:componentVdr="vendor" xd:componentLib="kv260_som_som240_1_connector_kv260_carrier_som240_1_connector" xd:componentVer="0.0" xd:componentType="platform" xd:name="kv260pf" xd:componentRef="kv260pf">
+    <xd:parameter xd:name="NUM_SI" xd:value="1" xd:instanceRef="axi_interconnect_0"/>
+    <xd:parameter xd:name="NUM_MI" xd:value="3" xd:instanceRef="axi_interconnect_0"/>
+    <xd:parameter xd:name="M02_HAS_REGSLICE" xd:value="1" xd:instanceRef="axi_interconnect_0"/>
+    <xd:parameter xd:name="PSU__USE__S_AXI_GP2" xd:value="1" xd:instanceRef="zynq_ultra_ps_e_0"/>
+  </xd:instance>
+  <xd:instance xd:componentVdr="xilinx.com" xd:componentLib="hls" xd:componentVer="1.0" xd:componentType="accelerator" xd:name="myproject_axi_master_1" xd:componentRef="myproject_axi_master"/>
+  <xd:instance xd:componentVdr="xilinx.com" xd:componentLib="ip" xd:componentVer="2.1" xd:componentType="interconnect" xd:name="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD" xd:componentRef="axi_interconnect">
+    <xd:parameter xd:name="NUM_MI" xd:value="1"/>
+    <xd:parameter xd:name="NUM_SI" xd:value="2"/>
+    <xd:parameter xd:name="STRATEGY" xd:value="2"/>
+    <xd:parameter xd:name="M00_HAS_REGSLICE" xd:value="1"/>
+    <xd:parameter xd:name="M00_HAS_DATA_FIFO" xd:value="2"/>
+    <xd:parameter xd:name="S00_HAS_REGSLICE" xd:value="1"/>
+    <xd:parameter xd:name="S00_HAS_DATA_FIFO" xd:value="2"/>
+    <xd:parameter xd:name="S01_HAS_REGSLICE" xd:value="1"/>
+    <xd:parameter xd:name="S01_HAS_DATA_FIFO" xd:value="2"/>
+  </xd:instance>
+  <xd:connection>
+    <xd:busInterface xd:name="M00_AXI" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+    <xd:busInterface xd:name="zynq_ultra_ps_e_0_S_AXI_HP0_FPD" xd:instanceRef="kv260pf" xd:componentRef="zynq_ultra_ps_e"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:port xd:name="zynq_ultra_ps_e_0_pl_clk0" xd:instanceRef="kv260pf"/>
+    <xd:port xd:name="ap_clk" xd:instanceRef="myproject_axi_master_1"/>
+    <xd:port xd:name="S00_ACLK" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+    <xd:port xd:name="S01_ACLK" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+    <xd:port xd:name="axi_interconnect_0_M02_ACLK" xd:instanceRef="kv260pf"/>
+    <xd:port xd:name="zynq_ultra_ps_e_0_saxihp0_fpd_aclk" xd:instanceRef="kv260pf"/>
+    <xd:port xd:name="ACLK" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+    <xd:port xd:name="M00_ACLK" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:port xd:name="rst_ps8_0_99M_interconnect_aresetn" xd:instanceRef="kv260pf"/>
+    <xd:port xd:name="axi_interconnect_0_M02_ARESETN" xd:instanceRef="kv260pf"/>
+    <xd:port xd:name="ARESETN" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+    <xd:port xd:name="M00_ARESETN" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+    <xd:port xd:name="S00_ARESETN" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+    <xd:port xd:name="S01_ARESETN" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:port xd:name="rst_ps8_0_99M_peripheral_aresetn" xd:instanceRef="kv260pf"/>
+    <xd:port xd:name="ap_rst_n" xd:instanceRef="myproject_axi_master_1"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:busInterface xd:name="axi_interconnect_0_M02_AXI" xd:instanceRef="kv260pf" xd:componentRef="axi_interconnect"/>
+    <xd:busInterface xd:name="s_axi_control" xd:instanceRef="myproject_axi_master_1"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:busInterface xd:name="m_axi_gmem_in0" xd:instanceRef="myproject_axi_master_1"/>
+    <xd:busInterface xd:name="S00_AXI" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:busInterface xd:name="m_axi_gmem_out0" xd:instanceRef="myproject_axi_master_1"/>
+    <xd:busInterface xd:name="S01_AXI" xd:instanceRef="axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:port xd:name="interrupt" xd:instanceRef="myproject_axi_master_1"/>
+    <xd:port xd:name="customIntr_0_In1" xd:instanceRef="kv260pf"/>
+  </xd:connection>
+</xd:component>

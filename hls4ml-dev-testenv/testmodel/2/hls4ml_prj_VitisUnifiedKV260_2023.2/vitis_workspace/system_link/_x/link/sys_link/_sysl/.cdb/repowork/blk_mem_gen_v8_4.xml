@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xmlns:xd="http://www.xilinx.com/xd" xd:vendor="xilinx.com" xd:library="ip" xd:name="blk_mem_gen" xd:version="8.4">
+    <xd:component xd:vendor="xilinx.com" xd:library="ip" xd:name="blk_mem_gen" xd:version="8.4">
+        <xd:busInterface xd:name="BRAM_PORTA" xd:busTypeRef="bram" xd:mode="slave" xd:direction="in"/>
+        <xd:busInterface xd:name="BRAM_PORTB" xd:busTypeRef="bram" xd:mode="slave" xd:direction="in"/>
+    </xd:component>
+</xd:repository>

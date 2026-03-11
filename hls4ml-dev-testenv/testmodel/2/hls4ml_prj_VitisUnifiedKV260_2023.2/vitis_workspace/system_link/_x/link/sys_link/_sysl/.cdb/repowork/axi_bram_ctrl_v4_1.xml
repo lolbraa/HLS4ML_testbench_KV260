@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xmlns:xd="http://www.xilinx.com/xd" xd:vendor="xilinx.com" xd:library="ip" xd:name="axi_bram_ctrl" xd:version="4.1">
+    <xd:component xd:vendor="xilinx.com" xd:library="ip" xd:name="axi_bram_ctrl" xd:version="4.1">
+        <xd:busInterface xd:name="S_AXI" xd:busTypeRef="aximm" xd:mode="slave" xd:regionSize="0x1000" xd:clockRef="CLKIF" xd:resetRef="RSTIF"/>
+        <xd:busInterface xd:name="RSTIF" xd:busTypeRef="reset" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="s_axi_aresetn" xd:activeLevel="low" xd:clockRef="CLKIF"/>
+        <xd:busInterface xd:name="CLKIF" xd:busTypeRef="clock" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="s_axi_aclk"/>
+        <xd:busInterface xd:name="BRAM_PORTA" xd:busTypeRef="bram" xd:mode="master" xd:direction="out"/>
+        <xd:busInterface xd:name="BRAM_PORTB" xd:busTypeRef="bram" xd:mode="master" xd:direction="out"/>
+    </xd:component>
+</xd:repository>

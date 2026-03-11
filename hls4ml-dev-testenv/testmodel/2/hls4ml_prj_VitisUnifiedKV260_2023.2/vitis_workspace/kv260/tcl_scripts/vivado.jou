@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Mar 11 13:26:31 2026
+# Process ID: 153508
+# Current directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts
+# Command line: vivado -mode batch -source create_xsa.tcl
+# Log file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/vivado.log
+# Journal file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/vivado.jou
+# Running On: KrissDEV, OS: Linux, CPU Frequency: 4291.936 MHz, CPU Physical cores: 6, Host memory: 20909 MB
+#-----------------------------------------------------------
+source create_xsa.tcl
