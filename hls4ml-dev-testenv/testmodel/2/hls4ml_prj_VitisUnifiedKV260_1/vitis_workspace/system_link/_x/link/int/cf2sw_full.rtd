@@ -64,7 +64,7 @@
                 "m_clocks": [
                     {
                         "ap_clk": {
-                            "refClockId": "not_specified"
+                            "refClockId": "0"
                         }
                     }
                 ]

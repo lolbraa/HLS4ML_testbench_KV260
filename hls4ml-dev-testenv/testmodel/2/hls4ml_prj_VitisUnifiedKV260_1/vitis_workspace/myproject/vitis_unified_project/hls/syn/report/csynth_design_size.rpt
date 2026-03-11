@@ -3,94 +3,91 @@
 ================================================================
 
 * Total Instructions per Compilation Phase
-+---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Phase         | Step                       | Instructions | Description                                                                            |
-+---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                            |  6,799       | After all functions are compiled and linked into a single design                       |
-|               |                            |              |                                                                                        |
-| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                 | 83,642       | user unroll pragmas are applied                                                        |
-|               | (2) simplification         | 27,486       | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                 | 27,017       | user inline pragmas are applied                                                        |
-|               | (4) simplification         | 25,888       | simplification of applied user inline pragmas                                          |
-|               |                            |              |                                                                                        |
-| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition        | 10,860       | user array partition pragmas are applied                                               |
-|               | (2) simplification         |  7,004       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate |  7,010       | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape          |  8,736       | apply array reshape pragmas                                                            |
-|               | (5) access patterns        |  8,748       | array access pattern optmizations                                                      |
-|               |                            |              |                                                                                        |
-| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification    |  8,510       | loop and instruction simplification                                                    |
-|               | (2) parallelization        |  9,199       | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition        |  9,058       | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification         |  8,954       | simplification of design after performance transformations                             |
-|               |                            |              |                                                                                        |
-| HW Transforms |                            |              | After hardware transfomations                                                          |
-|               | (1) lowering               |  8,587       | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations          |  8,694       | high level synthesis optimizations                                                     |
-+---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             |  7,351       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 89,293       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 27,699       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 27,376       | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 26,270       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 18,968       | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 15,069       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 15,075       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 16,801       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 16,813       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 16,444       | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 17,058       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 17,058       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 17,058       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 16,651       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 16,760       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
-+------------------------------------------+------------------------------+----------------+------------------+-----------------+-------------+---------------+
-| Function                                 | Location                     | Compile/Link   | Unroll/Inline    | Array/Struct    | Performance | HW Transforms |
-+------------------------------------------+------------------------------+----------------+------------------+-----------------+-------------+---------------+
-| + myproject_axi_master                   | myproject_axi_master.cpp:47  | 6,799          | 25,888           | 8,748           | 8,954       | 8,694         |
-|  + load_input<float, nnet::arra...       | myproject_axi_master.cpp:10  |  456           |   118            |  125            |  754        |  769          |
-|     operator[]                           | nnet_types.h:17              |    3           |                  |                 |             |               |
-|  + compute                               | myproject_axi_master.cpp:41  | 6,143          | 25,659           | 8,503           | 7,876       | 7,607         |
-|   + myproject                            | myproject.cpp:7              | 6,132          | 25,649           | 8,493           | 7,867       | 7,598         |
-|    + dense<nnet::array<ap_fixed<1...     | nnet_dense_stream.h:82       |  696           | 19,163           | 5,188           | 4,754       | 4,688         |
-|     + data_prepare<nnet::array<ap_...    | nnet_dense_stream.h:28       |   75           |                  |                 |             |               |
-|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                 |             |               |
-|     + dense_latency_wrapper<ap_fix...    | nnet_dense_stream.h:13       |  530           |                  |                 |             |               |
-|      + dense_latency<ap_fixed<16, 6...   | nnet_dense_latency.h:13      |  528           |                  |                 |             |               |
-|         product                          | nnet_mult.h:70               |  137           |                  |                 |             |               |
-|         cast<ap_fixed<16, 6, (ap_q_m...  | nnet_mult.h:110              |    3           |                  |                 |             |               |
-|     + res_write<nnet::array<ap_fix...    | nnet_dense_stream.h:53       |   71           |                  |                 |             |               |
-|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                 |             |               |
-|     + dense_latency<ap_fixed<16, 6...    | nnet_dense_latency.h:13      |                | 18,914           | 4,495           | 4,093       | 4,094         |
-|        cast<ap_fixed<16, 6, (ap_q_m...   | nnet_mult.h:110              |                |   128 (64 calls) |  128 (64 calls) |             |               |
-|    + relu<nnet::array<ap_fixed<16...     | nnet_activation_stream.h:39  |  215           |   269            | 1,093           | 1,093       |  957          |
-|       operator[]                         | nnet_types.h:17              |   12 (4 calls) |                  |                 |             |               |
-|    + dense<nnet::array<ap_fixed<1...     | nnet_dense_stream.h:82       |  696           | 6,004            | 2,045           | 1,853       | 1,777         |
-|     + data_prepare<nnet::array<ap_...    | nnet_dense_stream.h:28       |   75           |                  |                 |             |               |
-|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                 |             |               |
-|     + dense_latency_wrapper<ap_fix...    | nnet_dense_stream.h:13       |  530           |                  |                 |             |               |
-|      + dense_latency<ap_fixed<16, 6...   | nnet_dense_latency.h:13      |  528           |                  |                 |             |               |
-|         product                          | nnet_mult.h:70               |  137           |                  |                 |             |               |
-|         cast<ap_fixed<16, 6, (ap_q_m...  | nnet_mult.h:110              |    3           |                  |                 |             |               |
-|     + res_write<nnet::array<ap_fix...    | nnet_dense_stream.h:53       |   71           |                  |                 |             |               |
-|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                 |             |               |
-|       dense_latency<ap_fixed<16, 6...    | nnet_dense_latency.h:13      |                | 5,787            | 1,413           | 1,349       | 1,350         |
-|    + softmax<nnet::array<ap_fixed...     | nnet_activation_stream.h:351 | 4,496          |   197            |  153            |  153        |  160          |
-|     + softmax_stable<nnet::array<a...    | nnet_activation_stream.h:169 | 4,493          |   195            |  151            |  151        |  158          |
-|      + init_exp_table<ap_ufixed<15,...   | nnet_activation.h:149        |  982           |                  |                 |             |               |
-|         softmax_real_val_from_idx<ap...  | nnet_activation.h:133        |  231           |                  |                 |             |               |
-|         exp_fcn_float                    | nnet_activation.h:131        |    4           |                  |                 |             |               |
-|      + init_invert_table<ap_fixed<1...   | nnet_activation.h:165        | 1,230          |                  |                 |             |               |
-|         softmax_real_val_from_idx<ap...  | nnet_activation.h:133        |  488           |                  |                 |             |               |
-|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                 |             |               |
-|      + reduce<ap_fixed<16, 6, (ap_q...   | nnet_common.h:37             |  122           |                  |                 |             |               |
-|       + reduce<ap_fixed<16, 6, (ap_q...  | nnet_common.h:37             |   89           |                  |                 |             |               |
-|        + reduce<ap_fixed<16, 6, (ap_q... | nnet_common.h:37             |   60 (2 calls) |                  |                 |             |               |
-|           operator()                     | nnet_common.h:66             |   40 (2 calls) |                  |                 |             |               |
-|          operator()                      | nnet_common.h:66             |   20           |                  |                 |             |               |
-|         reduce<ap_fixed<16, 6, (ap_q...  | nnet_common.h:37             |    4           |                  |                 |             |               |
-|         operator()                       | nnet_common.h:66             |   20           |                  |                 |             |               |
-|        softmax_idx_from_real_val<ap...   | nnet_activation.h:141        |  106           |                  |                 |             |               |
-|      + reduce<ap_fixed<16, 6, (ap_q...   | nnet_common.h:37             |  926           |                  |                 |             |               |
-|       + reduce<ap_fixed<16, 6, (ap_q...  | nnet_common.h:37             |  692           |                  |                 |             |               |
-|        + reduce<ap_fixed<16, 6, (ap_q... | nnet_common.h:37             |  462 (2 calls) |                  |                 |             |               |
-|           operator()                     | nnet_common.h:51             |  442 (2 calls) |                  |                 |             |               |
-|          operator()                      | nnet_common.h:51             |  221           |                  |                 |             |               |
-|         reduce<ap_fixed<16, 6, (ap_q...  | nnet_common.h:37             |    4           |                  |                 |             |               |
-|         operator()                       | nnet_common.h:51             |  221           |                  |                 |             |               |
-|        softmax_idx_from_real_val<ap...   | nnet_activation.h:141        |  106           |                  |                 |             |               |
-|  + store_result<float, nnet::ar...       | myproject_axi_master.cpp:26  |  176           |    97            |  104            |  308        |  295          |
-|     operator[]                           | nnet_types.h:17              |    3           |                  |                 |             |               |
-+------------------------------------------+------------------------------+----------------+------------------+-----------------+-------------+---------------+
++------------------------------------------+------------------------------+----------------+------------------+------------------+-------------+---------------+
+| Function                                 | Location                     | Compile/Link   | Unroll/Inline    | Array/Struct     | Performance | HW Transforms |
++------------------------------------------+------------------------------+----------------+------------------+------------------+-------------+---------------+
+| + myproject_axi_master                   | myproject_axi_master.cpp:47  | 7,351          | 26,270           | 16,813           | 17,058      | 16,760        |
+|  + load_input<float, nnet::arra...       | myproject_axi_master.cpp:10  |  456           |   125            |   132            |   886       |   868         |
+|     operator[]                           | nnet_types.h:17              |    3           |                  |                  |             |               |
+|  + compute                               | myproject_axi_master.cpp:41  | 6,501          | 26,015           | 16,552           | 15,792      | 15,529        |
+|   + myproject                            | myproject.cpp:7              | 6,490          | 26,005           | 16,542           | 15,783      | 15,520        |
+|    + dense<nnet::array<ap_fixed<1...     | nnet_dense_stream.h:82       |  696           | 19,297           | 11,294           | 10,729      | 10,663        |
+|     + data_prepare<nnet::array<ap_...    | nnet_dense_stream.h:28       |   75           |                  |                  |             |               |
+|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                  |             |               |
+|     + dense_latency_wrapper<ap_fix...    | nnet_dense_stream.h:13       |  530           | 19,048           | 10,601           | 10,068      | 10,069        |
+|      + dense_latency<ap_fixed<16, 6...   | nnet_dense_latency.h:13      |  528           | 19,046           | 10,599           |             |               |
+|         product                          | nnet_mult.h:70               |  137           |                  |                  |             |               |
+|         cast<ap_fixed<16, 6, AP_TRN,...  | nnet_mult.h:110              |    3           |   192 (64 calls) |   192 (64 calls) |             |               |
+|     + res_write<nnet::array<ap_fix...    | nnet_dense_stream.h:53       |   71           |                  |                  |             |               |
+|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                  |             |               |
+|    + relu<nnet::array<ap_fixed<16...     | nnet_activation_stream.h:39  |  215           |   453            | 1,093            | 1,093       |   958         |
+|       operator[]                         | nnet_types.h:17              |   12 (4 calls) |                  |                  |             |               |
+|    + dense<nnet::array<ap_fixed<1...     | nnet_dense_stream.h:82       |  696           | 6,001            | 3,953            | 3,759       | 3,684         |
+|     + data_prepare<nnet::array<ap_...    | nnet_dense_stream.h:28       |   75           |                  |                  |             |               |
+|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                  |             |               |
+|     + dense_latency_wrapper<ap_fix...    | nnet_dense_stream.h:13       |  530           | 5,784            | 3,321            | 3,255       | 3,256         |
+|      + dense_latency<ap_fixed<16, 6...   | nnet_dense_latency.h:13      |  528           | 5,782            | 3,319            |             |               |
+|         product                          | nnet_mult.h:70               |  137           |                  |                  |             |               |
+|         cast<ap_fixed<16, 6, AP_TRN,...  | nnet_mult.h:110              |    3           |                  |                  |             |               |
+|     + res_write<nnet::array<ap_fix...    | nnet_dense_stream.h:53       |   71           |                  |                  |             |               |
+|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                  |             |               |
+|    + softmax<nnet::array<ap_fixed...     | nnet_activation_stream.h:351 | 4,840          |   224            |   188            |   188       |   196         |
+|     + softmax_stable<nnet::array<a...    | nnet_activation_stream.h:169 | 4,837          |   222            |   186            |   186       |   194         |
+|      + init_exp_table<ap_ufixed<15,...   | nnet_activation.h:149        | 1,162          |                  |                  |             |               |
+|         softmax_real_val_from_idx<ap...  | nnet_activation.h:133        |  409           |                  |                  |             |               |
+|         exp_fcn_float                    | nnet_activation.h:131        |    4           |                  |                  |             |               |
+|      + init_invert_table<ap_fixed<1...   | nnet_activation.h:165        | 1,410          |                  |                  |             |               |
+|         softmax_real_val_from_idx<ap...  | nnet_activation.h:133        |  666           |                  |                  |             |               |
+|        operator[]                        | nnet_types.h:17              |    6 (2 calls) |                  |                  |             |               |
+|      + reduce<ap_fixed<16, 6, AP_TR...   | nnet_common.h:37             |  122           |                  |                  |             |               |
+|       + reduce<ap_fixed<16, 6, AP_TR...  | nnet_common.h:37             |   89           |                  |                  |             |               |
+|        + reduce<ap_fixed<16, 6, AP_TR... | nnet_common.h:37             |   60 (2 calls) |                  |                  |             |               |
+|           operator()                     | nnet_common.h:66             |   40 (2 calls) |                  |                  |             |               |
+|          operator()                      | nnet_common.h:66             |   20           |                  |                  |             |               |
+|         reduce<ap_fixed<16, 6, AP_TR...  | nnet_common.h:37             |    4           |                  |                  |             |               |
+|         operator()                       | nnet_common.h:66             |   20           |                  |                  |             |               |
+|        softmax_idx_from_real_val<ap...   | nnet_activation.h:141        |   98           |                  |                  |             |               |
+|      + reduce<ap_fixed<16, 6, AP_TR...   | nnet_common.h:37             |  926           |                  |                  |             |               |
+|       + reduce<ap_fixed<16, 6, AP_TR...  | nnet_common.h:37             |  692           |                  |                  |             |               |
+|        + reduce<ap_fixed<16, 6, AP_TR... | nnet_common.h:37             |  462 (2 calls) |                  |                  |             |               |
+|           operator()                     | nnet_common.h:51             |  442 (2 calls) |                  |                  |             |               |
+|          operator()                      | nnet_common.h:51             |  221           |                  |                  |             |               |
+|         reduce<ap_fixed<16, 6, AP_TR...  | nnet_common.h:37             |    4           |                  |                  |             |               |
+|         operator()                       | nnet_common.h:51             |  221           |                  |                  |             |               |
+|        softmax_idx_from_real_val<ap...   | nnet_activation.h:141        |   98           |                  |                  |             |               |
+|  + store_result<float, nnet::ar...       | myproject_axi_master.cpp:26  |  360           |   106            |   113            |   364       |   338         |
+|     operator[]                           | nnet_types.h:17              |    3           |                  |                  |             |               |
++------------------------------------------+------------------------------+----------------+------------------+------------------+-------------+---------------+
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

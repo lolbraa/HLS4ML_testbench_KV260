@@ -26,7 +26,7 @@
 							<count>0</count>
 							<item_version>0</item_version>
 						</inlineStackInfo>
-						<originalName>data</originalName>
+						<originalName></originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1819096179</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>80</bitwidth>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1600941364</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>80</bitwidth>
@@ -93,23 +93,23 @@
 						<type>0</type>
 						<id>9</id>
 						<name>_ln359</name>
-						<fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</fileDirectory>
+						<fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</fileDirectory>
 						<lineNumber>359</lineNumber>
-						<contextFuncName>softmax&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-						<contextNormFuncName>softmax_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+						<contextFuncName>softmax&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+						<contextNormFuncName>softmax_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
-											<first>firmware/nnet_utils/nnet_activation_stream.h</first>
-											<second>softmax&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+											<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+											<second>softmax&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
 										</first>
 										<second>359</second>
 									</item>
@@ -124,7 +124,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1211069039</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -170,7 +170,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1279799154</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -215,7 +215,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
+						<coreId>1869444211</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -249,7 +249,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>4294967295</coreId>
+					<coreId>1668183366</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -564,7 +564,6 @@
 			</second>
 		</item>
 	</node2core>
-	<sched_res class_id="-1"></sched_res>
 </syndb>
 </boost_serialization>
 

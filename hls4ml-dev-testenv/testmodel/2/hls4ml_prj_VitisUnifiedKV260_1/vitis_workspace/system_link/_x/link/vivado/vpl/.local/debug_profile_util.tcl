@@ -580,8 +580,6 @@ namespace eval debug_profile {
     set memoryType "DDR"
     if {[string first "HBM"   $segName] >= 0} {set memoryType "HBM"}
     if {[string first "PLRAM" $segName] >= 0} {set memoryType "PLRAM"}
-    if {[string first "LPDDR" $segName] >= 0} {set memoryType "LPDDR"}
-    if {[string first "lpddr" $segName] >= 0} {set memoryType "LPDDR"}
     if {[string first "HP"    $segName] >= 0} {set memoryType "HP"}
     if {[string first "ACP"   $segName] >= 0} {set memoryType "ACP"}
     if {[string first "MIG"   $segName] >= 0} {set memoryType "MIG"}
@@ -1282,35 +1280,4 @@ namespace eval debug_profile {
       }
     }
   }; # end run_guidance_rules
-
-  #####################################################################
-  # is_hw_platform_type_vek
-  #  Description:
-  #    Checks if the hardware platform type starts with "vek".
-  #  Arguments:
-  #    hw_platform_type    Hardware platform type string
-  #  Return Value:
-  #    true if the platform type starts with "vek", false otherwise
-  #####################################################################
-  proc is_hw_platform_type_vek {hw_platform_type} {
-      # Check if hw_platform_type starts with "vek"
-      if {[string first "vek" $hw_platform_type] == 0} {
-        return true
-      }
-      return false
-  }; # end is_hw_platform_type_vek
-
-  #####################################################################
-  # get_is_cma
-  #  Description:
-  #    Determines if the hardware platform type is CMA (Contiguous Memory Allocator).
-  #  Arguments:
-  #    hw_platform_type    Hardware platform type string
-  #  Return Value:
-  #    true if the platform type is CMA, false otherwise
-  #####################################################################
-  proc get_is_cma {hw_platform_type} {
-    return [is_hw_platform_type_vek $hw_platform_type]
-  }; # end get_is_cma
-
 }; # end namespace

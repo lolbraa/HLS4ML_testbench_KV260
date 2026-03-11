@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'compute'
 ================================================================
-* Date:           Wed Mar 11 12:35:15 2026
+* Date:           Wed Mar 11 13:13:05 2026
 
-* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        vitis_unified_project
 * Solution:       hls (Vivado IP Flow Target)
 * Product family: zynquplus
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  4.152 ns|     0.62 ns|
+    |ap_clk  |  5.00 ns|  4.331 ns|     0.62 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -38,7 +38,7 @@
         |                     |           |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
         |       Instance      |   Module  |   min   |   max   |    min    |    max    | min | max |   Type   |
         +---------------------+-----------+---------+---------+-----------+-----------+-----+-----+----------+
-        |grp_myproject_fu_66  |myproject  |       14|       14|  70.000 ns|  70.000 ns|    6|    6|  dataflow|
+        |grp_myproject_fu_66  |myproject  |       15|       15|  75.000 ns|  75.000 ns|    6|    6|  dataflow|
         +---------------------+-----------+---------+---------+-----------+-----------+-----+-----+----------+
 
         * Loop: 
@@ -46,7 +46,7 @@
         |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_42_1  |        ?|        ?|        16|          -|          -|     ?|        no|
+        |- VITIS_LOOP_42_1  |        ?|        ?|        17|          -|          -|     ?|        no|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -59,29 +59,29 @@
 |       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
 +-----------------+---------+------+--------+--------+-----+
 |DSP              |        -|     -|       -|       -|    -|
-|Expression       |        -|     -|       0|      81|    -|
+|Expression       |        -|     -|       0|      83|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        4|  1108|    9760|   40892|    -|
+|Instance         |        4|  1111|   10639|   40590|    -|
 |Memory           |        -|     -|       -|       -|    -|
-|Multiplexer      |        -|     -|       0|      56|    -|
+|Multiplexer      |        -|     -|       -|      74|    -|
 |Register         |        -|     -|      70|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        4|  1108|    9830|   41029|    0|
+|Total            |        4|  1111|   10709|   40747|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
-|Utilization (%)  |        1|    88|       4|      35|    0|
+|Utilization (%)  |        1|    89|       4|      34|    0|
 +-----------------+---------+------+--------+--------+-----+
 
 + Detail: 
     * Instance: 
-    +---------------------+-----------+---------+------+------+-------+-----+
-    |       Instance      |   Module  | BRAM_18K|  DSP |  FF  |  LUT  | URAM|
-    +---------------------+-----------+---------+------+------+-------+-----+
-    |grp_myproject_fu_66  |myproject  |        4|  1108|  9760|  40892|    0|
-    +---------------------+-----------+---------+------+------+-------+-----+
-    |Total                |           |        4|  1108|  9760|  40892|    0|
-    +---------------------+-----------+---------+------+------+-------+-----+
+    +---------------------+-----------+---------+------+-------+-------+-----+
+    |       Instance      |   Module  | BRAM_18K|  DSP |   FF  |  LUT  | URAM|
+    +---------------------+-----------+---------+------+-------+-------+-----+
+    |grp_myproject_fu_66  |myproject  |        4|  1111|  10639|  40590|    0|
+    +---------------------+-----------+---------+------+-------+-------+-----+
+    |Total                |           |        4|  1111|  10639|  40590|    0|
+    +---------------------+-----------+---------+------+-------+-------+-----+
 
     * DSP: 
     N/A
@@ -99,23 +99,26 @@
     |add_ln42_fu_95_p2                     |         +|   0|  0|  38|          31|           1|
     |icmp_ln42_fu_90_p2                    |      icmp|   0|  0|  39|          32|          32|
     |ap_block_state1                       |        or|   0|  0|   2|           1|           1|
+    |ap_sync_grp_myproject_fu_66_ap_done   |        or|   0|  0|   2|           1|           1|
     |ap_sync_grp_myproject_fu_66_ap_ready  |        or|   0|  0|   2|           1|           1|
     +--------------------------------------+----------+----+---+----+------------+------------+
-    |Total                                 |          |   0|  0|  81|          65|          35|
+    |Total                                 |          |   0|  0|  83|          66|          36|
     +--------------------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
-    +--------------------+----+-----------+-----+-----------+
-    |        Name        | LUT| Input Size| Bits| Total Bits|
-    +--------------------+----+-----------+-----+-----------+
-    |ap_NS_fsm           |  20|          4|    1|          4|
-    |ap_done             |   9|          2|    1|          2|
-    |batch_size_blk_n    |   9|          2|    1|          2|
-    |batch_size_c_blk_n  |   9|          2|    1|          2|
-    |q_fu_48             |   9|          2|   31|         62|
-    +--------------------+----+-----------+-----+-----------+
-    |Total               |  56|         12|   35|         72|
-    +--------------------+----+-----------+-----+-----------+
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  20|          4|    1|          4|
+    |ap_done                       |   9|          2|    1|          2|
+    |batch_size_blk_n              |   9|          2|    1|          2|
+    |batch_size_c_blk_n            |   9|          2|    1|          2|
+    |q_fu_48                       |   9|          2|   31|         62|
+    |stream_in0_linput_read        |   9|          2|    1|          2|
+    |stream_out0_layer5_out_write  |   9|          2|    1|          2|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         |  74|         16|   37|         76|
+    +------------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +------------------------------------------+----+----+-----+-----------+
@@ -149,24 +152,24 @@
 |ap_idle                                |  out|    1|  ap_ctrl_hs|                 compute|  return value|
 |ap_ready                               |  out|    1|  ap_ctrl_hs|                 compute|  return value|
 |batch_size_dout                        |   in|   32|     ap_fifo|              batch_size|       pointer|
-|batch_size_empty_n                     |   in|    1|     ap_fifo|              batch_size|       pointer|
-|batch_size_read                        |  out|    1|     ap_fifo|              batch_size|       pointer|
 |batch_size_num_data_valid              |   in|    3|     ap_fifo|              batch_size|       pointer|
 |batch_size_fifo_cap                    |   in|    3|     ap_fifo|              batch_size|       pointer|
+|batch_size_empty_n                     |   in|    1|     ap_fifo|              batch_size|       pointer|
+|batch_size_read                        |  out|    1|     ap_fifo|              batch_size|       pointer|
 |batch_size_c_din                       |  out|   32|     ap_fifo|            batch_size_c|       pointer|
-|batch_size_c_full_n                    |   in|    1|     ap_fifo|            batch_size_c|       pointer|
-|batch_size_c_write                     |  out|    1|     ap_fifo|            batch_size_c|       pointer|
 |batch_size_c_num_data_valid            |   in|    3|     ap_fifo|            batch_size_c|       pointer|
 |batch_size_c_fifo_cap                  |   in|    3|     ap_fifo|            batch_size_c|       pointer|
+|batch_size_c_full_n                    |   in|    1|     ap_fifo|            batch_size_c|       pointer|
+|batch_size_c_write                     |  out|    1|     ap_fifo|            batch_size_c|       pointer|
 |stream_in0_linput_dout                 |   in|  256|     ap_fifo|       stream_in0_linput|       pointer|
-|stream_in0_linput_empty_n              |   in|    1|     ap_fifo|       stream_in0_linput|       pointer|
-|stream_in0_linput_read                 |  out|    1|     ap_fifo|       stream_in0_linput|       pointer|
 |stream_in0_linput_num_data_valid       |   in|    8|     ap_fifo|       stream_in0_linput|       pointer|
 |stream_in0_linput_fifo_cap             |   in|    8|     ap_fifo|       stream_in0_linput|       pointer|
+|stream_in0_linput_empty_n              |   in|    1|     ap_fifo|       stream_in0_linput|       pointer|
+|stream_in0_linput_read                 |  out|    1|     ap_fifo|       stream_in0_linput|       pointer|
 |stream_out0_layer5_out_din             |  out|   80|     ap_fifo|  stream_out0_layer5_out|       pointer|
-|stream_out0_layer5_out_full_n          |   in|    1|     ap_fifo|  stream_out0_layer5_out|       pointer|
-|stream_out0_layer5_out_write           |  out|    1|     ap_fifo|  stream_out0_layer5_out|       pointer|
 |stream_out0_layer5_out_num_data_valid  |   in|    8|     ap_fifo|  stream_out0_layer5_out|       pointer|
 |stream_out0_layer5_out_fifo_cap        |   in|    8|     ap_fifo|  stream_out0_layer5_out|       pointer|
+|stream_out0_layer5_out_full_n          |   in|    1|     ap_fifo|  stream_out0_layer5_out|       pointer|
+|stream_out0_layer5_out_write           |  out|    1|     ap_fifo|  stream_out0_layer5_out|       pointer|
 +---------------------------------------+-----+-----+------------+------------------------+--------------+
 

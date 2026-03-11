@@ -65,7 +65,7 @@ OPTRACE "ipirun" START { ROLLUP_0 }
 set active_task_log "$vpp_link_root/activetask.json"
 set kernel_ip_dirs [list \
  "$vpp_link_root/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0"]
-set install_ip_cache "/usr/lib/AMD/2025.2/data/cache/xilinx"
+set install_ip_cache "/tools/Xilinx/Vitis/2023.2/data/cache/xilinx"
 
 
 set impl_xdc [dict create \
@@ -139,7 +139,6 @@ set hw_platform_info [dict create \
   hw_platform_bconn_locked      {} \
   hw_platform_bconn_unlocked    {} \
   hw_platform_board_part       "xilinx.com:kv260_som:part0:1.4" \
-  hw_platform_board_id         "kv260_som_som240_1_connector_kv260_carrier_som240_1_connector" \
   link_output_format           "bitstream" \
   xpfm_file                    "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa" \
   is_complete_platform         "false" \
@@ -150,10 +149,6 @@ set hw_platform_info [dict create \
   design_intent_external_host   false \
   design_intent_datacenter      false \
   design_intent_embedded        true \
-  seg_config                    false \
-  seg_config_dynamic_reload     false \
-  noc_solution_ncr             "" \
-  routed_dcp                   "" \
   mem_topology                  $mem_topology_dict \
 ];
 
@@ -241,7 +236,6 @@ set config_info [dict create \
   isNewXSa 0 \
   enable_flow_report       true \
   hierarchy_name           "VitisRegion" \
-  enable_vss_bd_gen        false \
 ];
 
 

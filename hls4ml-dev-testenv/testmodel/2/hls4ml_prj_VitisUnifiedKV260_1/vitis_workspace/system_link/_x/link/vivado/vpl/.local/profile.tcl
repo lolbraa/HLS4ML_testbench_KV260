@@ -68,13 +68,11 @@ namespace eval debug_profile {
     set isVersal [dict_get_default $config_info is_versal false]
     set isDfx [dict_get_default $hw_platform_info hw_platform_uses_pr false]
     set isVersalDfx [expr {$isVersal && $isDfx}]
-    set is_cma [get_is_cma $hw_platform_type]
 
     # Top-level settings
     set topDict {}
     dict set topDict  HW_EMU      $is_hw_emu
     dict set topDict  IS_EMBEDDED $embedded
-    dict set topDict  IS_CMA      $is_cma
     dict set topDict  VERSAL_DFX  $isVersalDfx
     dict set dpa_opts SETTINGS    $topDict
 

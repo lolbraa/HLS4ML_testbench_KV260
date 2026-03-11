@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xd:repository xmlns:xd="http://www.xilinx.com/xd" xd:vendor="xilinx.com" xd:library="hls" xd:name="myproject_axi_master" xd:version="1.0">
-    <xd:component xd:vendor="xilinx.com" xd:library="hls" xd:name="myproject_axi_master" xd:version="1.0" xd:cellType="ip" xd:type="accelerator">
+    <xd:component xd:vendor="xilinx.com" xd:library="hls" xd:name="myproject_axi_master" xd:version="1.0" xd:type="accelerator">
         <xd:busInterface xd:name="s_axi_control" xd:busTypeRef="aximm" xd:mode="slave" xd:clockRef="ap_clk" xd:resetRef="ap_rst_n"/>
         <xd:busInterface xd:name="ap_clk" xd:busTypeRef="clock" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="ap_clk" xd:resetRef="ap_rst_n"/>
         <xd:busInterface xd:name="ap_rst_n" xd:busTypeRef="reset" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="ap_rst_n" xd:clockRef="ap_clk" xd:activeLevel="low"/>

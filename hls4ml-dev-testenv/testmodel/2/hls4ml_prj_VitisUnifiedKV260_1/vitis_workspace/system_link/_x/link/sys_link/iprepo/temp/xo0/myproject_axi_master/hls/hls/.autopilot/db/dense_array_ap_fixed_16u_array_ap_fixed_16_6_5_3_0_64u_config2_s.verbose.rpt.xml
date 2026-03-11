@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s'" level="0">
-<item name = "Date">Wed Mar 11 12:35:14 2026
+<item name = "Date">Wed Mar 11 13:13:04 2026
 </item>
-<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.054 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.331 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2, 2, 10.000 ns, 10.000 ns, 2, 2, no</column>
+<column name="">3, 3, 15.000 ns, 15.000 ns, 3, 3, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97">dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,19 +50,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 836, 5348, 28578, -</column>
+<column name="Instance">-, 856, 5207, 27823, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 56, -</column>
-<column name="Register">-, -, 262, -, -</column>
+<column name="Multiplexer">-, -, -, 62, -</column>
+<column name="Register">-, -, 1286, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
-<specialColumn name="Utilization (%)">0, 66, 2, 24, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 68, 2, 23, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s, 0, 836, 5348, 28578, 0</column>
+<column name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97">dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s, 0, 856, 5207, 27823, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -84,7 +84,7 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">20, 4, 1, 4</column>
+<column name="ap_NS_fsm">26, 5, 1, 5</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="layer2_out_blk_n">9, 2, 1, 2</column>
 <column name="real_start">9, 2, 1, 2</column>
@@ -93,25 +93,88 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="data_10_reg_655">16, 0, 16, 0</column>
-<column name="data_11_reg_660">16, 0, 16, 0</column>
-<column name="data_12_reg_665">16, 0, 16, 0</column>
-<column name="data_13_reg_670">16, 0, 16, 0</column>
-<column name="data_14_reg_675">16, 0, 16, 0</column>
-<column name="data_1_reg_610">16, 0, 16, 0</column>
-<column name="data_2_reg_615">16, 0, 16, 0</column>
-<column name="data_3_reg_620">16, 0, 16, 0</column>
-<column name="data_4_reg_625">16, 0, 16, 0</column>
-<column name="data_5_reg_630">16, 0, 16, 0</column>
-<column name="data_64_reg_605">16, 0, 16, 0</column>
-<column name="data_6_reg_635">16, 0, 16, 0</column>
-<column name="data_7_reg_640">16, 0, 16, 0</column>
-<column name="data_8_reg_645">16, 0, 16, 0</column>
-<column name="data_9_reg_650">16, 0, 16, 0</column>
-<column name="data_reg_600">16, 0, 16, 0</column>
-<column name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67_ap_start_reg">1, 0, 1, 0</column>
+<column name="data_pack_142_reg_601">16, 0, 16, 0</column>
+<column name="data_pack_143_reg_606">16, 0, 16, 0</column>
+<column name="data_pack_144_reg_611">16, 0, 16, 0</column>
+<column name="data_pack_145_reg_616">16, 0, 16, 0</column>
+<column name="data_pack_146_reg_621">16, 0, 16, 0</column>
+<column name="data_pack_147_reg_626">16, 0, 16, 0</column>
+<column name="data_pack_148_reg_631">16, 0, 16, 0</column>
+<column name="data_pack_149_reg_636">16, 0, 16, 0</column>
+<column name="data_pack_150_reg_641">16, 0, 16, 0</column>
+<column name="data_pack_151_reg_646">16, 0, 16, 0</column>
+<column name="data_pack_152_reg_651">16, 0, 16, 0</column>
+<column name="data_pack_153_reg_656">16, 0, 16, 0</column>
+<column name="data_pack_154_reg_661">16, 0, 16, 0</column>
+<column name="data_pack_155_reg_666">16, 0, 16, 0</column>
+<column name="data_pack_156_reg_671">16, 0, 16, 0</column>
+<column name="data_pack_reg_596">16, 0, 16, 0</column>
+<column name="res_100_reg_821">16, 0, 16, 0</column>
+<column name="res_101_reg_826">16, 0, 16, 0</column>
+<column name="res_102_reg_831">16, 0, 16, 0</column>
+<column name="res_103_reg_836">16, 0, 16, 0</column>
+<column name="res_104_reg_841">16, 0, 16, 0</column>
+<column name="res_105_reg_846">16, 0, 16, 0</column>
+<column name="res_106_reg_851">16, 0, 16, 0</column>
+<column name="res_107_reg_856">16, 0, 16, 0</column>
+<column name="res_108_reg_861">16, 0, 16, 0</column>
+<column name="res_109_reg_866">16, 0, 16, 0</column>
+<column name="res_110_reg_871">16, 0, 16, 0</column>
+<column name="res_111_reg_876">16, 0, 16, 0</column>
+<column name="res_112_reg_881">16, 0, 16, 0</column>
+<column name="res_113_reg_886">16, 0, 16, 0</column>
+<column name="res_114_reg_891">16, 0, 16, 0</column>
+<column name="res_115_reg_896">16, 0, 16, 0</column>
+<column name="res_116_reg_901">16, 0, 16, 0</column>
+<column name="res_117_reg_906">16, 0, 16, 0</column>
+<column name="res_118_reg_911">16, 0, 16, 0</column>
+<column name="res_119_reg_916">16, 0, 16, 0</column>
+<column name="res_120_reg_921">16, 0, 16, 0</column>
+<column name="res_121_reg_926">16, 0, 16, 0</column>
+<column name="res_122_reg_931">16, 0, 16, 0</column>
+<column name="res_123_reg_936">16, 0, 16, 0</column>
+<column name="res_124_reg_941">16, 0, 16, 0</column>
+<column name="res_125_reg_946">16, 0, 16, 0</column>
+<column name="res_126_reg_951">16, 0, 16, 0</column>
+<column name="res_127_reg_956">16, 0, 16, 0</column>
+<column name="res_128_reg_961">16, 0, 16, 0</column>
+<column name="res_129_reg_966">16, 0, 16, 0</column>
+<column name="res_130_reg_971">16, 0, 16, 0</column>
+<column name="res_131_reg_976">16, 0, 16, 0</column>
+<column name="res_132_reg_981">16, 0, 16, 0</column>
+<column name="res_133_reg_986">16, 0, 16, 0</column>
+<column name="res_134_reg_991">16, 0, 16, 0</column>
+<column name="res_72_reg_681">16, 0, 16, 0</column>
+<column name="res_73_reg_686">16, 0, 16, 0</column>
+<column name="res_74_reg_691">16, 0, 16, 0</column>
+<column name="res_75_reg_696">16, 0, 16, 0</column>
+<column name="res_76_reg_701">16, 0, 16, 0</column>
+<column name="res_77_reg_706">16, 0, 16, 0</column>
+<column name="res_78_reg_711">16, 0, 16, 0</column>
+<column name="res_79_reg_716">16, 0, 16, 0</column>
+<column name="res_80_reg_721">16, 0, 16, 0</column>
+<column name="res_81_reg_726">16, 0, 16, 0</column>
+<column name="res_82_reg_731">16, 0, 16, 0</column>
+<column name="res_83_reg_736">16, 0, 16, 0</column>
+<column name="res_84_reg_741">16, 0, 16, 0</column>
+<column name="res_85_reg_746">16, 0, 16, 0</column>
+<column name="res_86_reg_751">16, 0, 16, 0</column>
+<column name="res_87_reg_756">16, 0, 16, 0</column>
+<column name="res_88_reg_761">16, 0, 16, 0</column>
+<column name="res_89_reg_766">16, 0, 16, 0</column>
+<column name="res_90_reg_771">16, 0, 16, 0</column>
+<column name="res_91_reg_776">16, 0, 16, 0</column>
+<column name="res_92_reg_781">16, 0, 16, 0</column>
+<column name="res_93_reg_786">16, 0, 16, 0</column>
+<column name="res_94_reg_791">16, 0, 16, 0</column>
+<column name="res_95_reg_796">16, 0, 16, 0</column>
+<column name="res_96_reg_801">16, 0, 16, 0</column>
+<column name="res_97_reg_806">16, 0, 16, 0</column>
+<column name="res_98_reg_811">16, 0, 16, 0</column>
+<column name="res_99_reg_816">16, 0, 16, 0</column>
+<column name="res_reg_676">16, 0, 16, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
 </table>
 </item>
@@ -133,15 +196,15 @@
 <column name="start_out">out, 1, ap_ctrl_hs, dense&lt;array&lt;ap_fixed,16u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,64u&gt;,config2&gt;, return value</column>
 <column name="start_write">out, 1, ap_ctrl_hs, dense&lt;array&lt;ap_fixed,16u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,64u&gt;,config2&gt;, return value</column>
 <column name="layer2_out_din">out, 1024, ap_fifo, layer2_out, pointer</column>
-<column name="layer2_out_full_n">in, 1, ap_fifo, layer2_out, pointer</column>
-<column name="layer2_out_write">out, 1, ap_fifo, layer2_out, pointer</column>
 <column name="layer2_out_num_data_valid">in, 2, ap_fifo, layer2_out, pointer</column>
 <column name="layer2_out_fifo_cap">in, 2, ap_fifo, layer2_out, pointer</column>
+<column name="layer2_out_full_n">in, 1, ap_fifo, layer2_out, pointer</column>
+<column name="layer2_out_write">out, 1, ap_fifo, layer2_out, pointer</column>
 <column name="stream_in0_linput_dout">in, 256, ap_fifo, stream_in0_linput, pointer</column>
-<column name="stream_in0_linput_empty_n">in, 1, ap_fifo, stream_in0_linput, pointer</column>
-<column name="stream_in0_linput_read">out, 1, ap_fifo, stream_in0_linput, pointer</column>
 <column name="stream_in0_linput_num_data_valid">in, 8, ap_fifo, stream_in0_linput, pointer</column>
 <column name="stream_in0_linput_fifo_cap">in, 8, ap_fifo, stream_in0_linput, pointer</column>
+<column name="stream_in0_linput_empty_n">in, 1, ap_fifo, stream_in0_linput, pointer</column>
+<column name="stream_in0_linput_read">out, 1, ap_fifo, stream_in0_linput, pointer</column>
 </table>
 </item>
 </section>

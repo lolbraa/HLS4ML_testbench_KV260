@@ -1,16 +1,5 @@
 # This script segment is generated automatically by AutoPilot
 
-set name myproject_axi_master_fpext_32ns_64_2_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {fpext} IMPL {auto} LATENCY 1 ALLOW_PRAGMA 1
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler myproject_axi_master_sparsemux_9_3_16_1_1 BINDTYPE {op} TYPE {sparsemux} IMPL {onehotencoding_realdef}
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -21,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 22 \
+    id 9 \
     name gmem_in0 \
     type other \
     dir I \
@@ -29,14 +18,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_gmem_in0 \
     op interface \
-    ports { m_axi_gmem_in0_0_AWVALID { O 1 bit } m_axi_gmem_in0_0_AWREADY { I 1 bit } m_axi_gmem_in0_0_AWADDR { O 64 vector } m_axi_gmem_in0_0_AWID { O 1 vector } m_axi_gmem_in0_0_AWLEN { O 32 vector } m_axi_gmem_in0_0_AWSIZE { O 3 vector } m_axi_gmem_in0_0_AWBURST { O 2 vector } m_axi_gmem_in0_0_AWLOCK { O 2 vector } m_axi_gmem_in0_0_AWCACHE { O 4 vector } m_axi_gmem_in0_0_AWPROT { O 3 vector } m_axi_gmem_in0_0_AWQOS { O 4 vector } m_axi_gmem_in0_0_AWREGION { O 4 vector } m_axi_gmem_in0_0_AWUSER { O 1 vector } m_axi_gmem_in0_0_WVALID { O 1 bit } m_axi_gmem_in0_0_WREADY { I 1 bit } m_axi_gmem_in0_0_WDATA { O 32 vector } m_axi_gmem_in0_0_WSTRB { O 4 vector } m_axi_gmem_in0_0_WLAST { O 1 bit } m_axi_gmem_in0_0_WID { O 1 vector } m_axi_gmem_in0_0_WUSER { O 1 vector } m_axi_gmem_in0_0_ARVALID { O 1 bit } m_axi_gmem_in0_0_ARREADY { I 1 bit } m_axi_gmem_in0_0_ARADDR { O 64 vector } m_axi_gmem_in0_0_ARID { O 1 vector } m_axi_gmem_in0_0_ARLEN { O 32 vector } m_axi_gmem_in0_0_ARSIZE { O 3 vector } m_axi_gmem_in0_0_ARBURST { O 2 vector } m_axi_gmem_in0_0_ARLOCK { O 2 vector } m_axi_gmem_in0_0_ARCACHE { O 4 vector } m_axi_gmem_in0_0_ARPROT { O 3 vector } m_axi_gmem_in0_0_ARQOS { O 4 vector } m_axi_gmem_in0_0_ARREGION { O 4 vector } m_axi_gmem_in0_0_ARUSER { O 1 vector } m_axi_gmem_in0_0_RVALID { I 1 bit } m_axi_gmem_in0_0_RREADY { O 1 bit } m_axi_gmem_in0_0_RDATA { I 32 vector } m_axi_gmem_in0_0_RLAST { I 1 bit } m_axi_gmem_in0_0_RID { I 1 vector } m_axi_gmem_in0_0_RFIFONUM { I 9 vector } m_axi_gmem_in0_0_RUSER { I 1 vector } m_axi_gmem_in0_0_RRESP { I 2 vector } m_axi_gmem_in0_0_BVALID { I 1 bit } m_axi_gmem_in0_0_BREADY { O 1 bit } m_axi_gmem_in0_0_BRESP { I 2 vector } m_axi_gmem_in0_0_BID { I 1 vector } m_axi_gmem_in0_0_BUSER { I 1 vector } } \
+    ports { m_axi_gmem_in0_AWVALID { O 1 bit } m_axi_gmem_in0_AWREADY { I 1 bit } m_axi_gmem_in0_AWADDR { O 64 vector } m_axi_gmem_in0_AWID { O 1 vector } m_axi_gmem_in0_AWLEN { O 32 vector } m_axi_gmem_in0_AWSIZE { O 3 vector } m_axi_gmem_in0_AWBURST { O 2 vector } m_axi_gmem_in0_AWLOCK { O 2 vector } m_axi_gmem_in0_AWCACHE { O 4 vector } m_axi_gmem_in0_AWPROT { O 3 vector } m_axi_gmem_in0_AWQOS { O 4 vector } m_axi_gmem_in0_AWREGION { O 4 vector } m_axi_gmem_in0_AWUSER { O 1 vector } m_axi_gmem_in0_WVALID { O 1 bit } m_axi_gmem_in0_WREADY { I 1 bit } m_axi_gmem_in0_WDATA { O 32 vector } m_axi_gmem_in0_WSTRB { O 4 vector } m_axi_gmem_in0_WLAST { O 1 bit } m_axi_gmem_in0_WID { O 1 vector } m_axi_gmem_in0_WUSER { O 1 vector } m_axi_gmem_in0_ARVALID { O 1 bit } m_axi_gmem_in0_ARREADY { I 1 bit } m_axi_gmem_in0_ARADDR { O 64 vector } m_axi_gmem_in0_ARID { O 1 vector } m_axi_gmem_in0_ARLEN { O 32 vector } m_axi_gmem_in0_ARSIZE { O 3 vector } m_axi_gmem_in0_ARBURST { O 2 vector } m_axi_gmem_in0_ARLOCK { O 2 vector } m_axi_gmem_in0_ARCACHE { O 4 vector } m_axi_gmem_in0_ARPROT { O 3 vector } m_axi_gmem_in0_ARQOS { O 4 vector } m_axi_gmem_in0_ARREGION { O 4 vector } m_axi_gmem_in0_ARUSER { O 1 vector } m_axi_gmem_in0_RVALID { I 1 bit } m_axi_gmem_in0_RREADY { O 1 bit } m_axi_gmem_in0_RDATA { I 32 vector } m_axi_gmem_in0_RLAST { I 1 bit } m_axi_gmem_in0_RID { I 1 vector } m_axi_gmem_in0_RFIFONUM { I 9 vector } m_axi_gmem_in0_RUSER { I 1 vector } m_axi_gmem_in0_RRESP { I 2 vector } m_axi_gmem_in0_BVALID { I 1 bit } m_axi_gmem_in0_BREADY { O 1 bit } m_axi_gmem_in0_BRESP { I 2 vector } m_axi_gmem_in0_BID { I 1 vector } m_axi_gmem_in0_BUSER { I 1 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 23 \
+    id 10 \
     name in_r \
     type other \
     dir I \
@@ -51,7 +40,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 24 \
+    id 11 \
     name batch_size \
     type other \
     dir I \
@@ -66,22 +55,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 25 \
-    name batch_size_c1 \
+    id 12 \
+    name batch_size_c9 \
     type fifo \
     dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_batch_size_c1 \
+    corename dc_batch_size_c9 \
     op interface \
-    ports { batch_size_c1_din { O 32 vector } batch_size_c1_full_n { I 1 bit } batch_size_c1_write { O 1 bit } batch_size_c1_num_data_valid { I 3 vector } batch_size_c1_fifo_cap { I 3 vector } } \
+    ports { batch_size_c9_din { O 32 vector } batch_size_c9_num_data_valid { I 3 vector } batch_size_c9_fifo_cap { I 3 vector } batch_size_c9_full_n { I 1 bit } batch_size_c9_write { O 1 bit } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 26 \
+    id 13 \
     name stream_in0_linput \
     type fifo \
     dir O \
@@ -89,7 +78,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_stream_in0_linput \
     op interface \
-    ports { stream_in0_linput_din { O 256 vector } stream_in0_linput_full_n { I 1 bit } stream_in0_linput_write { O 1 bit } stream_in0_linput_num_data_valid { I 8 vector } stream_in0_linput_fifo_cap { I 8 vector } } \
+    ports { stream_in0_linput_din { O 256 vector } stream_in0_linput_num_data_valid { I 8 vector } stream_in0_linput_fifo_cap { I 8 vector } stream_in0_linput_full_n { I 1 bit } stream_in0_linput_write { O 1 bit } } \
 } "
 }
 
@@ -154,27 +143,6 @@ if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_end
     cg_default_interface_gen_bundle_end
     AESL_LIB_XILADAPTER::native_axis_end
-}
-
-
-# flow_control definition:
-set InstName myproject_axi_master_flow_control_loop_pipe_U
-set CompName myproject_axi_master_flow_control_loop_pipe
-set name flow_control_loop_pipe
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control] == "::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control { \
-    name ${name} \
-    prefix myproject_axi_master_ \
-}"
-} else {
-puts "@W \[IMPL-107\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_UPC_flow_control, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $CompName BINDTYPE interface TYPE internal_upc_flow_control INSTNAME $InstName
 }
 
 

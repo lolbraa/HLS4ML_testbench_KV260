@@ -1,16 +1,16 @@
-#!/bin/bash
+#!/bin/sh
 
 # 
 # vpl(TM)
 # runme.sh: a vpl-generated Runs Script for UNIX
 # Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/usr/lib/AMD/2025.2/Vitis/bin:/usr/lib/AMD/2025.2/Vitis/bin:/usr/lib/AMD/2025.2/Vitis/bin
+  PATH=/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin
 else
-  PATH=/usr/lib/AMD/2025.2/Vitis/bin:/usr/lib/AMD/2025.2/Vitis/bin:/usr/lib/AMD/2025.2/Vitis/bin:$PATH
+  PATH=/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin:$PATH
 fi
 export PATH
 

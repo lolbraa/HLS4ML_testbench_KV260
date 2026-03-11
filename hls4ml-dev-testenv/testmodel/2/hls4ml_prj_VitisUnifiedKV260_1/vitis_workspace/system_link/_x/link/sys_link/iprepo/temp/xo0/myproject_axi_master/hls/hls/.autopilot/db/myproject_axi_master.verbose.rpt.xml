@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject_axi_master'" level="0">
-<item name = "Date">Wed Mar 11 12:35:15 2026
+<item name = "Date">Wed Mar 11 13:13:05 2026
 </item>
-<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -32,7 +32,7 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="entry_proc_U0">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0">load_input_float_array_ap_fixed_16_6_5_3_0_16u_s, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0">load_input_float_array_ap_fixed_16_6_5_3_0_16u_s, ?, ?, ?, ?, ?, ?, no</column>
 <column name="compute_U0">compute, ?, ?, ?, ?, ?, ?, no</column>
 <column name="store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0">store_result_float_array_ap_fixed_16_6_5_3_0_5u_s, ?, ?, ?, ?, ?, ?, no</column>
 </table>
@@ -53,25 +53,25 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 12, -</column>
 <column name="FIFO">20, -, 611, 305, -</column>
-<column name="Instance">6, 1108, 13372, 54366, 0</column>
+<column name="Instance">12, 1111, 15404, 58236, 0</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 18, -</column>
+<column name="Multiplexer">-, -, -, 18, -</column>
 <column name="Register">-, -, 2, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
-<specialColumn name="Utilization (%)">9, 88, 5, 46, 0</specialColumn>
+<specialColumn name="Utilization (%)">11, 89, 6, 50, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="compute_U0">compute, 4, 1108, 9830, 41029, 0</column>
+<column name="compute_U0">compute, 4, 1111, 10709, 40747, 0</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 214, 360, 0</column>
 <column name="entry_proc_U0">entry_proc, 0, 0, 3, 29, 0</column>
-<column name="gmem_in0_m_axi_U">gmem_in0_m_axi, 2, 0, 671, 637, 0</column>
-<column name="gmem_out0_m_axi_U">gmem_out0_m_axi, 0, 0, 611, 666, 0</column>
-<column name="load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0">load_input_float_array_ap_fixed_16_6_5_3_0_16u_s, 0, 0, 1543, 9580, 0</column>
-<column name="store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0">store_result_float_array_ap_fixed_16_6_5_3_0_5u_s, 0, 0, 500, 2065, 0</column>
+<column name="gmem_in0_m_axi_U">gmem_in0_m_axi, 4, 0, 830, 694, 0</column>
+<column name="gmem_out0_m_axi_U">gmem_out0_m_axi, 4, 0, 830, 694, 0</column>
+<column name="load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0">load_input_float_array_ap_fixed_16_6_5_3_0_16u_s, 0, 0, 1589, 10326, 0</column>
+<column name="store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0">store_result_float_array_ap_fixed_16_6_5_3_0_5u_s, 0, 0, 1229, 5386, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -84,7 +84,7 @@
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
-<column name="batch_size_c1_U">0, 99, 0, -, 2, 32, 64</column>
+<column name="batch_size_c9_U">0, 99, 0, -, 2, 32, 64</column>
 <column name="batch_size_c_U">0, 99, 0, -, 2, 32, 64</column>
 <column name="gmem_out0_ptr_layer5_out_c_U">0, 99, 0, -, 4, 64, 256</column>
 <column name="stream_in0_linput_U">15, 157, 0, -, 128, 256, 32768</column>

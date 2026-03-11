@@ -24,6 +24,125 @@
           <clock port="DATA_CLK" frequency="99.999001MHz"/>
         </kernelClocks>
         <kernel name="myproject_axi_master" language="c" vlnv="xilinx.com:hls:myproject_axi_master:1.0" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" interrupt="true" hwControlProtocol="ap_ctrl_hs" countedAutoRestart="0" deadlockDetection="local" mailbox="none" swReset="false">
+          <module name="myproject_axi_master">
+            <module name="entry_proc" instName="entry_proc_U0" type="DataflowHS">
+              <rtlPort name="gmem_out0_ptr_layer5_out" object="gmem_out0_ptr_layer5_out" protocol="ap_none"/>
+            </module>
+            <module name="load_input_float_array_ap_fixed_16_6_5_3_0_16u_s" instName="load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0" type="DataflowHS">
+              <rtlPort name="m_axi_gmem_in0_AWVALID" object="gmem_in0" protocol="m_axi"/>
+              <rtlPort name="in_r" object="in_r" protocol="ap_none"/>
+              <rtlPort name="batch_size" object="batch_size" protocol="ap_none"/>
+              <module name="load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1" instName="grp_load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1_fu_80" type="NonDataflowHS">
+                <rtlPort name="m_axi_gmem_in0_AWVALID" object="gmem_in0" protocol="m_axi"/>
+                <rtlPort name="batch_size" object="batch_size" protocol="ap_none"/>
+                <rtlPort name="sext_ln13" object="sext_ln13" protocol="ap_none"/>
+              </module>
+            </module>
+            <module name="compute" instName="compute_U0" type="DataflowHS">
+              <module name="myproject" instName="grp_myproject_fu_66" type="DataflowHS">
+                <module name="dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s" instName="dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0" type="DataflowHS">
+                  <module name="dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s" instName="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97">
+                    <rtlPort name="data_0_val1" object="data_0_val1" protocol="ap_none"/>
+                    <rtlPort name="data_1_val2" object="data_1_val2" protocol="ap_none"/>
+                    <rtlPort name="data_2_val3" object="data_2_val3" protocol="ap_none"/>
+                    <rtlPort name="data_3_val4" object="data_3_val4" protocol="ap_none"/>
+                    <rtlPort name="data_4_val5" object="data_4_val5" protocol="ap_none"/>
+                    <rtlPort name="data_5_val6" object="data_5_val6" protocol="ap_none"/>
+                    <rtlPort name="data_6_val7" object="data_6_val7" protocol="ap_none"/>
+                    <rtlPort name="data_7_val8" object="data_7_val8" protocol="ap_none"/>
+                    <rtlPort name="data_8_val9" object="data_8_val9" protocol="ap_none"/>
+                    <rtlPort name="data_9_val10" object="data_9_val10" protocol="ap_none"/>
+                    <rtlPort name="data_10_val11" object="data_10_val11" protocol="ap_none"/>
+                    <rtlPort name="data_11_val12" object="data_11_val12" protocol="ap_none"/>
+                    <rtlPort name="data_12_val13" object="data_12_val13" protocol="ap_none"/>
+                    <rtlPort name="data_13_val14" object="data_13_val14" protocol="ap_none"/>
+                    <rtlPort name="data_14_val15" object="data_14_val15" protocol="ap_none"/>
+                    <rtlPort name="data_15_val16" object="data_15_val16" protocol="ap_none"/>
+                  </module>
+                </module>
+                <module name="relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s" instName="relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0" type="DataflowHS"/>
+                <module name="dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s" instName="dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0" type="DataflowHS">
+                  <module name="dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s" instName="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s_fu_289">
+                    <rtlPort name="data_0_val1" object="data_0_val1" protocol="ap_none"/>
+                    <rtlPort name="data_1_val2" object="data_1_val2" protocol="ap_none"/>
+                    <rtlPort name="data_2_val3" object="data_2_val3" protocol="ap_none"/>
+                    <rtlPort name="data_3_val4" object="data_3_val4" protocol="ap_none"/>
+                    <rtlPort name="data_4_val5" object="data_4_val5" protocol="ap_none"/>
+                    <rtlPort name="data_5_val6" object="data_5_val6" protocol="ap_none"/>
+                    <rtlPort name="data_6_val7" object="data_6_val7" protocol="ap_none"/>
+                    <rtlPort name="data_7_val8" object="data_7_val8" protocol="ap_none"/>
+                    <rtlPort name="data_8_val9" object="data_8_val9" protocol="ap_none"/>
+                    <rtlPort name="data_9_val10" object="data_9_val10" protocol="ap_none"/>
+                    <rtlPort name="data_10_val11" object="data_10_val11" protocol="ap_none"/>
+                    <rtlPort name="data_11_val12" object="data_11_val12" protocol="ap_none"/>
+                    <rtlPort name="data_12_val13" object="data_12_val13" protocol="ap_none"/>
+                    <rtlPort name="data_13_val14" object="data_13_val14" protocol="ap_none"/>
+                    <rtlPort name="data_14_val15" object="data_14_val15" protocol="ap_none"/>
+                    <rtlPort name="data_15_val16" object="data_15_val16" protocol="ap_none"/>
+                    <rtlPort name="data_16_val17" object="data_16_val17" protocol="ap_none"/>
+                    <rtlPort name="data_17_val18" object="data_17_val18" protocol="ap_none"/>
+                    <rtlPort name="data_18_val19" object="data_18_val19" protocol="ap_none"/>
+                    <rtlPort name="data_19_val20" object="data_19_val20" protocol="ap_none"/>
+                    <rtlPort name="data_20_val21" object="data_20_val21" protocol="ap_none"/>
+                    <rtlPort name="data_21_val22" object="data_21_val22" protocol="ap_none"/>
+                    <rtlPort name="data_22_val23" object="data_22_val23" protocol="ap_none"/>
+                    <rtlPort name="data_23_val24" object="data_23_val24" protocol="ap_none"/>
+                    <rtlPort name="data_24_val25" object="data_24_val25" protocol="ap_none"/>
+                    <rtlPort name="data_25_val26" object="data_25_val26" protocol="ap_none"/>
+                    <rtlPort name="data_26_val27" object="data_26_val27" protocol="ap_none"/>
+                    <rtlPort name="data_27_val28" object="data_27_val28" protocol="ap_none"/>
+                    <rtlPort name="data_28_val29" object="data_28_val29" protocol="ap_none"/>
+                    <rtlPort name="data_29_val30" object="data_29_val30" protocol="ap_none"/>
+                    <rtlPort name="data_30_val31" object="data_30_val31" protocol="ap_none"/>
+                    <rtlPort name="data_31_val32" object="data_31_val32" protocol="ap_none"/>
+                    <rtlPort name="data_32_val33" object="data_32_val33" protocol="ap_none"/>
+                    <rtlPort name="data_33_val34" object="data_33_val34" protocol="ap_none"/>
+                    <rtlPort name="data_34_val35" object="data_34_val35" protocol="ap_none"/>
+                    <rtlPort name="data_35_val36" object="data_35_val36" protocol="ap_none"/>
+                    <rtlPort name="data_36_val37" object="data_36_val37" protocol="ap_none"/>
+                    <rtlPort name="data_37_val38" object="data_37_val38" protocol="ap_none"/>
+                    <rtlPort name="data_38_val39" object="data_38_val39" protocol="ap_none"/>
+                    <rtlPort name="data_39_val40" object="data_39_val40" protocol="ap_none"/>
+                    <rtlPort name="data_40_val41" object="data_40_val41" protocol="ap_none"/>
+                    <rtlPort name="data_41_val42" object="data_41_val42" protocol="ap_none"/>
+                    <rtlPort name="data_42_val43" object="data_42_val43" protocol="ap_none"/>
+                    <rtlPort name="data_43_val44" object="data_43_val44" protocol="ap_none"/>
+                    <rtlPort name="data_44_val45" object="data_44_val45" protocol="ap_none"/>
+                    <rtlPort name="data_45_val46" object="data_45_val46" protocol="ap_none"/>
+                    <rtlPort name="data_46_val47" object="data_46_val47" protocol="ap_none"/>
+                    <rtlPort name="data_47_val48" object="data_47_val48" protocol="ap_none"/>
+                    <rtlPort name="data_48_val49" object="data_48_val49" protocol="ap_none"/>
+                    <rtlPort name="data_49_val50" object="data_49_val50" protocol="ap_none"/>
+                    <rtlPort name="data_50_val51" object="data_50_val51" protocol="ap_none"/>
+                    <rtlPort name="data_51_val52" object="data_51_val52" protocol="ap_none"/>
+                    <rtlPort name="data_52_val53" object="data_52_val53" protocol="ap_none"/>
+                    <rtlPort name="data_53_val54" object="data_53_val54" protocol="ap_none"/>
+                    <rtlPort name="data_54_val55" object="data_54_val55" protocol="ap_none"/>
+                    <rtlPort name="data_55_val56" object="data_55_val56" protocol="ap_none"/>
+                    <rtlPort name="data_56_val57" object="data_56_val57" protocol="ap_none"/>
+                    <rtlPort name="data_57_val58" object="data_57_val58" protocol="ap_none"/>
+                    <rtlPort name="data_58_val59" object="data_58_val59" protocol="ap_none"/>
+                    <rtlPort name="data_59_val60" object="data_59_val60" protocol="ap_none"/>
+                    <rtlPort name="data_60_val61" object="data_60_val61" protocol="ap_none"/>
+                    <rtlPort name="data_61_val62" object="data_61_val62" protocol="ap_none"/>
+                    <rtlPort name="data_62_val63" object="data_62_val63" protocol="ap_none"/>
+                    <rtlPort name="data_63_val64" object="data_63_val64" protocol="ap_none"/>
+                  </module>
+                </module>
+                <module name="softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s" instName="softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0" type="DataflowHS">
+                  <module name="softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s" instName="grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_20" type="NonDataflowHS"/>
+                </module>
+              </module>
+            </module>
+            <module name="store_result_float_array_ap_fixed_16_6_5_3_0_5u_s" instName="store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0" type="DataflowHS">
+              <rtlPort name="m_axi_gmem_out0_AWVALID" object="gmem_out0" protocol="m_axi"/>
+              <module name="store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1" instName="grp_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1_fu_71" type="NonDataflowHS">
+                <rtlPort name="m_axi_gmem_out0_AWVALID" object="gmem_out0" protocol="m_axi"/>
+                <rtlPort name="batch_size_load" object="batch_size_load" protocol="ap_none"/>
+                <rtlPort name="sext_ln29" object="sext_ln29" protocol="ap_none"/>
+              </module>
+            </module>
+          </module>
           <port name="M_AXI_GMEM_IN0" mode="master" range="0xFFFFFFFF" dataWidth="32" portType="addressable" base="0x0"/>
           <port name="M_AXI_GMEM_OUT0" mode="master" range="0xFFFFFFFF" dataWidth="32" portType="addressable" base="0x0"/>
           <port name="S_AXI_CONTROL" mode="slave" range="0x30" dataWidth="32" portType="addressable" base="0x0"/>
@@ -36,6 +155,83 @@
           <instance name="myproject_axi_master_1">
             <addrRemap base="0x0" range="0x0" port="none"/>
           </instance>
+          <FIFOInformation>
+            <FIFOInst>
+              <Name>layer2_out_i_U</Name>
+              <ParentInst>grp_myproject_fu_66</ParentInst>
+              <StaticDepth>1</StaticDepth>
+              <RuntimeDepth>mOutPtr</RuntimeDepth>
+              <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+              </InterfaceList>
+            </FIFOInst>
+            <FIFOInst>
+              <Name>layer3_out_i_U</Name>
+              <ParentInst>grp_myproject_fu_66</ParentInst>
+              <StaticDepth>1</StaticDepth>
+              <RuntimeDepth>mOutPtr</RuntimeDepth>
+              <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+              </InterfaceList>
+            </FIFOInst>
+            <FIFOInst>
+              <Name>layer4_out_i_U</Name>
+              <ParentInst>grp_myproject_fu_66</ParentInst>
+              <StaticDepth>1</StaticDepth>
+              <RuntimeDepth>mOutPtr</RuntimeDepth>
+              <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+              </InterfaceList>
+            </FIFOInst>
+            <FIFOInst>
+              <Name>stream_in0_linput_U</Name>
+              <ParentInst/>
+              <StaticDepth>128</StaticDepth>
+              <RuntimeDepth>mOutPtr</RuntimeDepth>
+              <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+              </InterfaceList>
+            </FIFOInst>
+            <FIFOInst>
+              <Name>stream_out0_layer5_out_U</Name>
+              <ParentInst/>
+              <StaticDepth>128</StaticDepth>
+              <RuntimeDepth>mOutPtr</RuntimeDepth>
+              <InterfaceList>
+                <Interface>clk</Interface>
+                <Interface>reset</Interface>
+                <Interface>if_write</Interface>
+                <Interface>if_din</Interface>
+                <Interface>if_full_n</Interface>
+                <Interface>if_read</Interface>
+                <Interface>if_empty_n</Interface>
+              </InterfaceList>
+            </FIFOInst>
+          </FIFOInformation>
         </kernel>
         <connection srcType="core" srcInst="OCL_REGION_0" srcPort="axi_interconnect_0_M02_AXI" dstType="kernel" dstInst="myproject_axi_master_1" dstPort="S_AXI_CONTROL"/>
         <connection srcType="core" srcInst="OCL_REGION_0" srcPort="zynq_ultra_ps_e_0_S_AXI_HP0_FPD" dstType="kernel" dstInst="myproject_axi_master_1" dstPort="M_AXI_GMEM_IN0"/>

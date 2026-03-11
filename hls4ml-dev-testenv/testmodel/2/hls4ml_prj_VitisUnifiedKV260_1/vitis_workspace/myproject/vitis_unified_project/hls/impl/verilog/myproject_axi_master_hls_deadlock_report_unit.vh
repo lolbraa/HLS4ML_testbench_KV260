@@ -13,34 +13,8 @@
     reg [PROC_NUM - 1:0] origin_reg;
     reg [PROC_NUM - 1:0] dl_in_vec_reg;
     reg [31:0] dl_keep_cnt;
-    reg stop_report_path;
-    reg [PROC_NUM - 1:0] reported_proc;
     integer i;
     integer fp;
-
-    always @ (negedge dl_reset or posedge dl_clock) begin
-        if (~dl_reset) begin
-            reported_proc <= 'b0;
-        end
-        else if (CS_fsm == ST_DL_REPORT) begin
-            reported_proc <= reported_proc | dl_in_vec;
-        end
-        else if (CS_fsm == ST_DL_DETECTED) begin
-            reported_proc <= 'b0;
-        end
-    end
-
-    always @ (negedge dl_reset or posedge dl_clock) begin
-        if (~dl_reset) begin
-            stop_report_path <= 1'b0;
-        end
-        else if (CS_fsm == ST_DL_REPORT && (|(dl_in_vec & reported_proc))) begin
-            stop_report_path <= 1'b1;
-        end
-        else if (CS_fsm == ST_IDLE) begin
-            stop_report_path <= 1'b0;
-        end
-    end
 
     // FSM State machine
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -51,7 +25,6 @@
             CS_fsm <= NS_fsm;
         end
     end
-
     always @ (CS_fsm or dl_in_vec or dl_detect_reg or dl_done_reg or dl_in_vec or origin_reg or dl_keep_cnt) begin
         case (CS_fsm)
             ST_IDLE : begin
@@ -75,7 +48,7 @@
             end
             ST_DL_DETECTED: begin
                 // has unreported deadlock cycle
-                if ((dl_detect_reg != dl_done_reg) && stop_report_path == 1'b0) begin
+                if (dl_detect_reg != dl_done_reg) begin
                     NS_fsm = ST_DL_REPORT;
                 end
                 else begin
@@ -84,10 +57,6 @@
             end
             ST_DL_REPORT: begin
                 if (|(dl_in_vec & origin_reg)) begin
-                    NS_fsm = ST_DL_DETECTED;
-                end
-                // avoid report deadlock ring.
-                else if (|(dl_in_vec & reported_proc)) begin
                     NS_fsm = ST_DL_DETECTED;
                 end
                 else begin
@@ -194,7 +163,7 @@
             find_df_deadlock <= 1'b0;
         end
         else begin
-            if (CS_fsm == ST_DL_DETECTED && ((dl_detect_reg == dl_done_reg) || (stop_report_path == 1'b1))) begin
+            if (CS_fsm == ST_DL_DETECTED && dl_detect_reg == dl_done_reg) begin
                 find_df_deadlock <= 1'b1;
             end
             else if (CS_fsm == ST_IDLE) begin
@@ -305,12 +274,10 @@
             index1 = proc_index(dl_vec1);
             index2 = proc_index(dl_vec2);
             case (index1)
-                0 : begin // for proc 'myproject_axi_master_myproject_axi_master.entry_proc_U0'
+                0 : begin
                     case(index2)
-                    7: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.gmem_out0_ptr_layer5_out_c_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.entry_proc_U0.gmem_out0_ptr_layer5_out_c_blk_n data_FIFO}
-                        if ((~entry_proc_U0.gmem_out0_ptr_layer5_out_c_blk_n)) begin
+                    7: begin
+                        if (~entry_proc_U0.gmem_out0_ptr_layer5_out_c_blk_n) begin
                             if (~gmem_out0_ptr_layer5_out_c_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.gmem_out0_ptr_layer5_out_c_U' written by process 'myproject_axi_master_myproject_axi_master.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.gmem_out0_ptr_layer5_out_c_U");
@@ -322,41 +289,33 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_full_n & myproject_axi_master_myproject_axi_master_inst.entry_proc_U0.ap_start & ~myproject_axi_master_myproject_axi_master_inst.entry_proc_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~myproject_axi_master_myproject_axi_master_inst.start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_read} start_FIFO}
-                        if ((~start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_read)) begin
+                        if (~start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_full_n & entry_proc_U0.ap_start & ~entry_proc_U0.real_start & (trans_in_cnt_4 == trans_out_cnt_4) & ~start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_read) begin
                             $display("//      Blocked by full output start propagation FIFO 'myproject_axi_master_myproject_axi_master.start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U' read by process 'myproject_axi_master_myproject_axi_master.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0',");
                         end
                     end
-                    1: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'
-// for dep channel '' info is :
-// blk sig is {{myproject_axi_master_myproject_axi_master_inst.ap_sync_entry_proc_U0_ap_ready & myproject_axi_master_myproject_axi_master_inst.entry_proc_U0.ap_idle & ~myproject_axi_master_myproject_axi_master_inst.ap_sync_load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0_ap_ready} input_sync}
-                        if ((ap_sync_entry_proc_U0_ap_ready & entry_proc_U0.ap_idle & ~ap_sync_load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0_ap_ready)) begin
+                    1: begin
+                        if (ap_sync_entry_proc_U0_ap_ready & entry_proc_U0.ap_idle & ~ap_sync_load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0_ap_ready) begin
                             $display("//      Blocked by input sync logic with process : 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'");
                         end
                     end
                     endcase
                 end
-                1 : begin // for proc 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'
+                1 : begin
                     case(index2)
-                    2: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.compute_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.batch_size_c1_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.batch_size_c1_blk_n data_FIFO}
-                        if ((~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.batch_size_c1_blk_n)) begin
-                            if (~batch_size_c1_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c1_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c1_U");
+                    2: begin
+                        if (~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.batch_size_c9_blk_n) begin
+                            if (~batch_size_c9_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c9_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c9_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~batch_size_c1_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c1_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c1_U");
+                            else if (~batch_size_c9_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c9_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c9_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.stream_in0_linput_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.stream_in0_linput_blk_n data_FIFO}
-                        if ((~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.stream_in0_linput_blk_n)) begin
+                        if (~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.grp_load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1_fu_80.stream_in0_linput_blk_n) begin
                             if (~stream_in0_linput_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.stream_in0_linput_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.stream_in0_linput_U");
@@ -368,41 +327,33 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.start_for_compute_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.start_for_compute_U0_U.if_full_n & myproject_axi_master_myproject_axi_master_inst.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.ap_start & ~myproject_axi_master_myproject_axi_master_inst.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~myproject_axi_master_myproject_axi_master_inst.start_for_compute_U0_U.if_read} start_FIFO}
-                        if ((~start_for_compute_U0_U.if_full_n & load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.ap_start & ~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_compute_U0_U.if_read)) begin
+                        if (~start_for_compute_U0_U.if_full_n & load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.ap_start & ~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_compute_U0_U.if_read) begin
                             $display("//      Blocked by full output start propagation FIFO 'myproject_axi_master_myproject_axi_master.start_for_compute_U0_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0',");
                         end
                     end
-                    0: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.entry_proc_U0'
-// for dep channel '' info is :
-// blk sig is {{myproject_axi_master_myproject_axi_master_inst.ap_sync_load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0_ap_ready & myproject_axi_master_myproject_axi_master_inst.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.ap_idle & ~myproject_axi_master_myproject_axi_master_inst.ap_sync_entry_proc_U0_ap_ready} input_sync}
-                        if ((ap_sync_load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0_ap_ready & load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.ap_idle & ~ap_sync_entry_proc_U0_ap_ready)) begin
+                    0: begin
+                        if (ap_sync_load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0_ap_ready & load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.ap_idle & ~ap_sync_entry_proc_U0_ap_ready) begin
                             $display("//      Blocked by input sync logic with process : 'myproject_axi_master_myproject_axi_master.entry_proc_U0'");
                         end
                     end
                     endcase
                 end
-                2 : begin // for proc 'myproject_axi_master_myproject_axi_master.compute_U0'
+                2 : begin
                     case(index2)
-                    1: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.batch_size_c1_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.batch_size_blk_n data_FIFO}
-                        if ((~compute_U0.batch_size_blk_n)) begin
-                            if (~batch_size_c1_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c1_U' written by process 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c1_U");
+                    1: begin
+                        if (~compute_U0.batch_size_blk_n) begin
+                            if (~batch_size_c9_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c9_U' written by process 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c9_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~batch_size_c1_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c1_U' read by process 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c1_U");
+                            else if (~batch_size_c9_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c9_U' read by process 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c9_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.stream_in0_linput_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.stream_in0_linput_blk_n data_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.stream_in0_linput_blk_n)) begin
+                        if (~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.stream_in0_linput_blk_n) begin
                             if (~stream_in0_linput_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.stream_in0_linput_U' written by process 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.stream_in0_linput_U");
@@ -414,16 +365,12 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.start_for_compute_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.start_for_compute_U0_U.if_empty_n & myproject_axi_master_myproject_axi_master_inst.compute_U0.ap_idle & ~myproject_axi_master_myproject_axi_master_inst.start_for_compute_U0_U.if_write} start_FIFO}
-                        if ((~start_for_compute_U0_U.if_empty_n & compute_U0.ap_idle & ~start_for_compute_U0_U.if_write)) begin
+                        if (~start_for_compute_U0_U.if_empty_n & compute_U0.ap_idle & ~start_for_compute_U0_U.if_write) begin
                             $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'myproject_axi_master_myproject_axi_master.start_for_compute_U0_U' written by process 'myproject_axi_master_myproject_axi_master.load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0',");
                         end
                     end
-                    7: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.batch_size_c_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.batch_size_c_blk_n data_FIFO}
-                        if ((~compute_U0.batch_size_c_blk_n)) begin
+                    7: begin
+                        if (~compute_U0.batch_size_c_blk_n) begin
                             if (~batch_size_c_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c_U' written by process 'myproject_axi_master_myproject_axi_master.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c_U");
@@ -435,9 +382,7 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.stream_out0_layer5_out_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_20.stream_out0_layer5_out_blk_n data_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_20.stream_out0_layer5_out_blk_n)) begin
+                        if (~compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_20.stream_out0_layer5_out_blk_n) begin
                             if (~stream_out0_layer5_out_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.stream_out0_layer5_out_U' written by process 'myproject_axi_master_myproject_axi_master.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.stream_out0_layer5_out_U");
@@ -452,154 +397,128 @@
                     end
                     endcase
                 end
-                3 : begin // for proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0'
+                3 : begin
                     case(index2)
-                    4: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.layer2_out_blk_n data_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.layer2_out_blk_n)) begin
-                            if (~compute_U0.grp_myproject_fu_66.layer2_out_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U");
+                    4: begin
+                        if (~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.layer2_out_blk_n) begin
+                            if (~compute_U0.grp_myproject_fu_66.layer2_out_i_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_i_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~compute_U0.grp_myproject_fu_66.layer2_out_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U");
+                            else if (~compute_U0.grp_myproject_fu_66.layer2_out_i_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_i_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_full_n & myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.ap_start & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_read} start_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_full_n & compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.ap_start & ~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_read)) begin
+                        if (~compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_full_n & compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.ap_start & ~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_read) begin
                             $display("//      Blocked by full output start propagation FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0',");
                         end
                     end
                     endcase
                 end
-                4 : begin // for proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'
+                4 : begin
                     case(index2)
-                    3: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.layer2_out_blk_n data_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.layer2_out_blk_n)) begin
-                            if (~compute_U0.grp_myproject_fu_66.layer2_out_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U");
+                    3: begin
+                        if (~compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.layer2_out_blk_n) begin
+                            if (~compute_U0.grp_myproject_fu_66.layer2_out_i_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_i_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~compute_U0.grp_myproject_fu_66.layer2_out_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_U");
+                            else if (~compute_U0.grp_myproject_fu_66.layer2_out_i_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_i_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer2_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_empty_n & myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.ap_idle & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_write} start_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_empty_n & compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.ap_idle & ~compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_write)) begin
+                        if (~compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_empty_n & compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.ap_idle & ~compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U.if_write) begin
                             $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0',");
                         end
                     end
-                    5: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.layer3_out_blk_n data_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.layer3_out_blk_n)) begin
-                            if (~compute_U0.grp_myproject_fu_66.layer3_out_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U");
+                    5: begin
+                        if (~compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.layer3_out_blk_n) begin
+                            if (~compute_U0.grp_myproject_fu_66.layer3_out_i_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_i_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~compute_U0.grp_myproject_fu_66.layer3_out_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U");
+                            else if (~compute_U0.grp_myproject_fu_66.layer3_out_i_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_i_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_full_n & myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.ap_start & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_read} start_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_full_n & compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.ap_start & ~compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_read)) begin
+                        if (~compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_full_n & compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.ap_start & ~compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.real_start & (trans_in_cnt_2 == trans_out_cnt_2) & ~compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_read) begin
                             $display("//      Blocked by full output start propagation FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0',");
                         end
                     end
                     endcase
                 end
-                5 : begin // for proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'
+                5 : begin
                     case(index2)
-                    4: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.layer3_out_blk_n data_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.layer3_out_blk_n)) begin
-                            if (~compute_U0.grp_myproject_fu_66.layer3_out_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U");
+                    4: begin
+                        if (~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.layer3_out_blk_n) begin
+                            if (~compute_U0.grp_myproject_fu_66.layer3_out_i_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_i_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~compute_U0.grp_myproject_fu_66.layer3_out_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_U");
+                            else if (~compute_U0.grp_myproject_fu_66.layer3_out_i_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_i_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer3_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_empty_n & myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.ap_idle & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_write} start_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_empty_n & compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.ap_idle & ~compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_write)) begin
+                        if (~compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_empty_n & compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.ap_idle & ~compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U.if_write) begin
                             $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0',");
                         end
                     end
-                    6: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.layer4_out_blk_n data_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.layer4_out_blk_n)) begin
-                            if (~compute_U0.grp_myproject_fu_66.layer4_out_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U");
+                    6: begin
+                        if (~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.layer4_out_blk_n) begin
+                            if (~compute_U0.grp_myproject_fu_66.layer4_out_i_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_i_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~compute_U0.grp_myproject_fu_66.layer4_out_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U");
+                            else if (~compute_U0.grp_myproject_fu_66.layer4_out_i_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_i_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_full_n & myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.ap_start & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_read} start_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_full_n & compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.ap_start & ~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_read)) begin
+                        if (~compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_full_n & compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.ap_start & ~compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.real_start & (trans_in_cnt_3 == trans_out_cnt_3) & ~compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_read) begin
                             $display("//      Blocked by full output start propagation FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0',");
                         end
                     end
                     endcase
                 end
-                6 : begin // for proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0'
+                6 : begin
                     case(index2)
-                    5: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_20.layer4_out_blk_n data_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_20.layer4_out_blk_n)) begin
-                            if (~compute_U0.grp_myproject_fu_66.layer4_out_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U");
+                    5: begin
+                        if (~compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_20.layer4_out_blk_n) begin
+                            if (~compute_U0.grp_myproject_fu_66.layer4_out_i_U.if_empty_n) begin
+                                $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_i_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
-                            else if (~compute_U0.grp_myproject_fu_66.layer4_out_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'");
-                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_U");
+                            else if (~compute_U0.grp_myproject_fu_66.layer4_out_i_U.if_full_n) begin
+                                $display("//      Blocked by full output FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_i_U' read by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0'");
+                                $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.layer4_out_i_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_empty_n & myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.ap_idle & ~myproject_axi_master_myproject_axi_master_inst.compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_write} start_FIFO}
-                        if ((~compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_empty_n & compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.ap_idle & ~compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_write)) begin
+                        if (~compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_empty_n & compute_U0.grp_myproject_fu_66.softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.ap_idle & ~compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U.if_write) begin
                             $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0.grp_myproject_fu_66.dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0',");
                         end
                     end
                     endcase
                 end
-                7 : begin // for proc 'myproject_axi_master_myproject_axi_master.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0'
+                7 : begin
                     case(index2)
-                    0: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.entry_proc_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.gmem_out0_ptr_layer5_out_c_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.out_r_blk_n data_FIFO}
-                        if ((~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.out_r_blk_n)) begin
+                    0: begin
+                        if (~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.out_r_blk_n) begin
                             if (~gmem_out0_ptr_layer5_out_c_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.gmem_out0_ptr_layer5_out_c_U' written by process 'myproject_axi_master_myproject_axi_master.entry_proc_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.gmem_out0_ptr_layer5_out_c_U");
@@ -611,16 +530,12 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U' info is :
-// blk sig is {{~myproject_axi_master_myproject_axi_master_inst.start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_empty_n & myproject_axi_master_myproject_axi_master_inst.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.ap_idle & ~myproject_axi_master_myproject_axi_master_inst.start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_write} start_FIFO}
-                        if ((~start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_empty_n & store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.ap_idle & ~start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_write)) begin
+                        if (~start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_empty_n & store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.ap_idle & ~start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U.if_write) begin
                             $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'myproject_axi_master_myproject_axi_master.start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_U' written by process 'myproject_axi_master_myproject_axi_master.entry_proc_U0',");
                         end
                     end
-                    2: begin //  for dep proc 'myproject_axi_master_myproject_axi_master.compute_U0'
-// for dep channel 'myproject_axi_master_myproject_axi_master.batch_size_c_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.batch_size_blk_n data_FIFO}
-                        if ((~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.batch_size_blk_n)) begin
+                    2: begin
+                        if (~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.batch_size_blk_n) begin
                             if (~batch_size_c_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.batch_size_c_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.batch_size_c_U");
@@ -632,9 +547,7 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'myproject_axi_master_myproject_axi_master.stream_out0_layer5_out_U' info is :
-// blk sig is {~myproject_axi_master_myproject_axi_master_inst.store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.grp_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1_fu_81.stream_out0_layer5_out_blk_n data_FIFO}
-                        if ((~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.grp_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1_fu_81.stream_out0_layer5_out_blk_n)) begin
+                        if (~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.grp_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1_fu_71.stream_out0_layer5_out_blk_n) begin
                             if (~stream_out0_layer5_out_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'myproject_axi_master_myproject_axi_master.stream_out0_layer5_out_U' written by process 'myproject_axi_master_myproject_axi_master.compute_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path myproject_axi_master_myproject_axi_master.stream_out0_layer5_out_U");
@@ -666,7 +579,7 @@
             case (CS_fsm)
                 ST_DL_DETECTED: begin
                     cycle_comp_id = 2;
-                    if (dl_detect_reg != dl_done_reg && stop_report_path == 1'b0) begin
+                    if (dl_detect_reg != dl_done_reg) begin
                         if (dl_done_reg == 'b0) begin
                             print_dl_head;
                             record_time = $time;
@@ -682,7 +595,7 @@
                     end
                 end
                 ST_DL_REPORT: begin
-                    if ((|(dl_in_vec)) & ~(|(dl_in_vec & origin_reg)) & ~(|(reported_proc & dl_in_vec))) begin
+                    if ((|(dl_in_vec)) & ~(|(dl_in_vec & origin_reg))) begin
                         print_cycle_chan_comp(dl_in_vec_reg, dl_in_vec);
                         print_cycle_proc_comp(proc_path(dl_in_vec), cycle_comp_id);
                         cycle_comp_id = cycle_comp_id + 1;

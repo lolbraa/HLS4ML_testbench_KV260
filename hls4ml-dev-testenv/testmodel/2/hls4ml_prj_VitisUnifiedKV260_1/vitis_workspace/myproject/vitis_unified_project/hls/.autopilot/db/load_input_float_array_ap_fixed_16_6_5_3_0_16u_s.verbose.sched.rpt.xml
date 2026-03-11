@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_input_float_array_ap_fixed_16_6_5_3_0_16u_s'" level="0">
-<item name = "Date">Wed Mar 11 12:35:07 2026
+<item name = "Date">Wed Mar 11 13:12:54 2026
 </item>
-<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,6 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_13_1">?, ?, 28, 16, 1, ?, yes</column>
 </table>
 </item>
 </section>

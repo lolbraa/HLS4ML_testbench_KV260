@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="17">
   <syndb class_id="0" tracking_level="0" version="0">
     <userIPLatency>-1</userIPLatency>
-    <userIPName></userIPName>
+    <userIPName/>
     <cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
       <name>softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s</name>
       <module_structure>Sequential</module_structure>
@@ -17,25 +17,25 @@
               <type>1</type>
               <id>1</id>
               <name>layer4_out</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo class_id="6" tracking_level="0" version="0">
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName>data</originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1819096179</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
           </Value>
@@ -53,25 +53,25 @@
               <type>1</type>
               <id>4</id>
               <name>stream_out0_layer5_out</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1600941364</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
           </Value>
@@ -93,39 +93,39 @@
               <type>0</type>
               <id>9</id>
               <name>_ln359</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>359</lineNumber>
-              <contextFuncName>softmax&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>359</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>grp_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_20</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1211069039</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -153,25 +153,25 @@
               <type>0</type>
               <id>10</id>
               <name>_ln0</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1279799154</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -198,25 +198,25 @@
               <type>2</type>
               <id>12</id>
               <name>softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1869444211</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -232,25 +232,25 @@
             <type>3</type>
             <id>11</id>
             <name>softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config5&gt;</name>
-            <fileName></fileName>
-            <fileDirectory></fileDirectory>
+            <fileName/>
+            <fileDirectory/>
             <lineNumber>0</lineNumber>
-            <contextFuncName></contextFuncName>
-            <contextNormFuncName></contextNormFuncName>
+            <contextFuncName/>
+            <contextNormFuncName/>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName></originalName>
-            <rtlName></rtlName>
-            <control></control>
-            <opType></opType>
-            <implIndex></implIndex>
-            <coreName></coreName>
+            <originalName/>
+            <rtlName/>
+            <control/>
+            <opType/>
+            <implIndex/>
+            <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
-            <rtlModuleName></rtlModuleName>
+            <coreId>1668183366</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>2</count>
@@ -324,7 +324,7 @@
         <mMinLatency>5</mMinLatency>
         <mMaxLatency>5</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
-        <mDfPipe class_id="-1"></mDfPipe>
+        <mDfPipe class_id="-1"/>
       </item>
     </cdfg_regions>
     <fsm class_id="24" tracking_level="1" version="0" object_id="_13">
@@ -465,12 +465,12 @@
         <item_version>0</item_version>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>2</count>
+        <count>4</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -483,10 +483,6 @@
             <item>
               <first>(2Count)</first>
               <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -497,7 +493,7 @@
         <item>
           <first>ap_done</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -512,8 +508,50 @@
               <second>2</second>
             </item>
             <item>
-              <first>FF</first>
-              <second>0</second>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>layer4_out_read</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>stream_out0_layer5_out_write</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
             </item>
             <item>
               <first>LUT</first>
@@ -781,6 +819,5 @@
         </second>
       </item>
     </node2core>
-    <sched_res class_id="-1"></sched_res>
   </syndb>
 </boost_serialization>

@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s'" level="0">
-<item name = "Date">Wed Mar 11 12:35:12 2026
+<item name = "Date">Wed Mar 11 13:13:01 2026
 </item>
-<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -31,7 +31,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_fu_289">dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s_fu_289">dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

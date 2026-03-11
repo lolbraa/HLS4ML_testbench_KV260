@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="17">
   <syndb class_id="0" tracking_level="0" version="0">
     <userIPLatency>-1</userIPLatency>
-    <userIPName></userIPName>
+    <userIPName/>
     <cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
       <name>myproject</name>
       <module_structure>Dataflow</module_structure>
@@ -17,25 +17,25 @@
               <type>1</type>
               <id>1</id>
               <name>stream_in0_linput</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo class_id="6" tracking_level="0" version="0">
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1819096179</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>256</bitwidth>
           </Value>
@@ -53,25 +53,25 @@
               <type>1</type>
               <id>4</id>
               <name>stream_out0_layer5_out</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1600941364</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
           </Value>
@@ -92,39 +92,25 @@
             <Obj>
               <type>0</type>
               <id>5</id>
-              <name>layer2_out</name>
-              <fileName>firmware/myproject.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>32</lineNumber>
-              <contextFuncName>myproject</contextFuncName>
-              <contextNormFuncName>myproject</contextNormFuncName>
+              <name>layer2_out_i</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
-                <count>1</count>
+                <count>0</count>
                 <item_version>0</item_version>
-                <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
-                  <second class_id="11" tracking_level="0" version="0">
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item class_id="12" tracking_level="0" version="0">
-                      <first class_id="13" tracking_level="0" version="0">
-                        <first>firmware/myproject.cpp</first>
-                        <second>myproject</second>
-                      </first>
-                      <second>32</second>
-                    </item>
-                  </second>
-                </item>
               </inlineStackInfo>
-              <originalName>layer2_out</originalName>
-              <rtlName>layer2_out_U</rtlName>
+              <originalName/>
+              <rtlName>layer2_out_i_U</rtlName>
               <control>auto</control>
               <opType>fifo</opType>
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
               <storageDepth>1</storageDepth>
-              <coreId>80</coreId>
+              <coreId>81</coreId>
               <rtlModuleName>myproject_axi_master_fifo_w1024_d1_S</rtlModuleName>
             </Obj>
             <bitwidth>1024</bitwidth>
@@ -148,39 +134,25 @@
             <Obj>
               <type>0</type>
               <id>6</id>
-              <name>layer3_out</name>
-              <fileName>firmware/myproject.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>35</lineNumber>
-              <contextFuncName>myproject</contextFuncName>
-              <contextNormFuncName>myproject</contextNormFuncName>
+              <name>layer3_out_i</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
-                <count>1</count>
+                <count>0</count>
                 <item_version>0</item_version>
-                <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>firmware/myproject.cpp</first>
-                        <second>myproject</second>
-                      </first>
-                      <second>35</second>
-                    </item>
-                  </second>
-                </item>
               </inlineStackInfo>
-              <originalName>layer3_out</originalName>
-              <rtlName>layer3_out_U</rtlName>
+              <originalName/>
+              <rtlName>layer3_out_i_U</rtlName>
               <control>auto</control>
               <opType>fifo</opType>
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
               <storageDepth>1</storageDepth>
-              <coreId>80</coreId>
+              <coreId>81</coreId>
               <rtlModuleName>myproject_axi_master_fifo_w1024_d1_S</rtlModuleName>
             </Obj>
             <bitwidth>1024</bitwidth>
@@ -204,39 +176,25 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>layer4_out</name>
-              <fileName>firmware/myproject.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>38</lineNumber>
-              <contextFuncName>myproject</contextFuncName>
-              <contextNormFuncName>myproject</contextNormFuncName>
+              <name>layer4_out_i</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
-                <count>1</count>
+                <count>0</count>
                 <item_version>0</item_version>
-                <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>firmware/myproject.cpp</first>
-                        <second>myproject</second>
-                      </first>
-                      <second>38</second>
-                    </item>
-                  </second>
-                </item>
               </inlineStackInfo>
-              <originalName>layer4_out</originalName>
-              <rtlName>layer4_out_U</rtlName>
+              <originalName/>
+              <rtlName>layer4_out_i_U</rtlName>
               <control>auto</control>
               <opType>fifo</opType>
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
               <storageDepth>1</storageDepth>
-              <coreId>80</coreId>
+              <coreId>81</coreId>
               <rtlModuleName>myproject_axi_master_fifo_w80_d1_S</rtlModuleName>
             </Obj>
             <bitwidth>80</bitwidth>
@@ -261,22 +219,22 @@
               <type>0</type>
               <id>21</id>
               <name>_ln41</name>
-              <fileName>firmware/myproject.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>41</lineNumber>
               <contextFuncName>myproject</contextFuncName>
               <contextNormFuncName>myproject</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
-                <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
-                  <second>
+                <item class_id="11" tracking_level="0" version="0">
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
+                  <second class_id="12" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>firmware/myproject.cpp</first>
+                    <item class_id="13" tracking_level="0" version="0">
+                      <first class_id="14" tracking_level="0" version="0">
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp</first>
                         <second>myproject</second>
                       </first>
                       <second>41</second>
@@ -284,16 +242,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1919904869</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -319,8 +277,8 @@
               <type>0</type>
               <id>22</id>
               <name>_ln43</name>
-              <fileName>firmware/myproject.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>43</lineNumber>
               <contextFuncName>myproject</contextFuncName>
               <contextNormFuncName>myproject</contextNormFuncName>
@@ -328,13 +286,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp</first>
                         <second>myproject</second>
                       </first>
                       <second>43</second>
@@ -342,16 +300,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1211069039</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -361,8 +319,8 @@
             <item>35</item>
             <item>36</item>
             <item>37</item>
-            <item>283</item>
-            <item>284</item>
+            <item>265</item>
+            <item>266</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -379,8 +337,8 @@
               <type>0</type>
               <id>23</id>
               <name>_ln45</name>
-              <fileName>firmware/myproject.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
               <contextFuncName>myproject</contextFuncName>
               <contextNormFuncName>myproject</contextNormFuncName>
@@ -388,13 +346,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp</first>
                         <second>myproject</second>
                       </first>
                       <second>45</second>
@@ -402,16 +360,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1211069039</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -421,8 +379,8 @@
             <item>39</item>
             <item>40</item>
             <item>41</item>
-            <item>282</item>
-            <item>285</item>
+            <item>264</item>
+            <item>267</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -439,8 +397,8 @@
               <type>0</type>
               <id>24</id>
               <name>_ln47</name>
-              <fileName>firmware/myproject.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>myproject</contextFuncName>
               <contextNormFuncName>myproject</contextNormFuncName>
@@ -448,13 +406,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp</first>
                         <second>myproject</second>
                       </first>
                       <second>47</second>
@@ -462,16 +420,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1834971487</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -483,8 +441,8 @@
             <item>46</item>
             <item>47</item>
             <item>48</item>
-            <item>281</item>
-            <item>286</item>
+            <item>263</item>
+            <item>268</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -500,40 +458,26 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>_ln14</name>
-              <fileName>firmware/myproject.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>14</lineNumber>
-              <contextFuncName>myproject</contextFuncName>
-              <contextNormFuncName>myproject</contextNormFuncName>
+              <name>_ln0</name>
+              <fileName/>
+              <fileDirectory/>
+              <lineNumber>0</lineNumber>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
-                <count>1</count>
+                <count>0</count>
                 <item_version>0</item_version>
-                <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
-                  <second>
-                    <count>1</count>
-                    <item_version>0</item_version>
-                    <item>
-                      <first>
-                        <first>firmware/myproject.cpp</first>
-                        <second>myproject</second>
-                      </first>
-                      <second>14</second>
-                    </item>
-                  </second>
-                </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>976909413</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -560,25 +504,25 @@
               <type>2</type>
               <id>27</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1869444211</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -591,25 +535,25 @@
               <type>2</type>
               <id>31</id>
               <name>dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -622,25 +566,25 @@
               <type>2</type>
               <id>34</id>
               <name>relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -653,25 +597,25 @@
               <type>2</type>
               <id>38</id>
               <name>dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1832153964</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -684,25 +628,25 @@
               <type>2</type>
               <id>42</id>
               <name>softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -718,25 +662,25 @@
             <type>3</type>
             <id>26</id>
             <name>myproject</name>
-            <fileName></fileName>
-            <fileDirectory></fileDirectory>
+            <fileName/>
+            <fileDirectory/>
             <lineNumber>0</lineNumber>
-            <contextFuncName></contextFuncName>
-            <contextNormFuncName></contextNormFuncName>
+            <contextFuncName/>
+            <contextNormFuncName/>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName></originalName>
-            <rtlName></rtlName>
-            <control></control>
-            <opType></opType>
-            <implIndex></implIndex>
-            <coreName></coreName>
+            <originalName/>
+            <rtlName/>
+            <control/>
+            <opType/>
+            <implIndex/>
+            <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
-            <rtlModuleName></rtlModuleName>
+            <coreId>844516196</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>8</count>
@@ -875,42 +819,42 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_34">
-          <id>281</id>
+          <id>263</id>
           <edge_type>4</edge_type>
           <source_obj>23</source_obj>
           <sink_obj>24</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_35">
-          <id>282</id>
+          <id>264</id>
           <edge_type>4</edge_type>
           <source_obj>22</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_36">
-          <id>283</id>
+          <id>265</id>
           <edge_type>4</edge_type>
           <source_obj>21</source_obj>
           <sink_obj>22</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_37">
-          <id>284</id>
+          <id>266</id>
           <edge_type>4</edge_type>
           <source_obj>21</source_obj>
           <sink_obj>22</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_38">
-          <id>285</id>
+          <id>267</id>
           <edge_type>4</edge_type>
           <source_obj>22</source_obj>
           <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_39">
-          <id>286</id>
+          <id>268</id>
           <edge_type>4</edge_type>
           <source_obj>23</source_obj>
           <sink_obj>24</sink_obj>
@@ -939,8 +883,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>14</mMinLatency>
-        <mMaxLatency>14</mMaxLatency>
+        <mMinLatency>15</mMinLatency>
+        <mMaxLatency>15</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_41">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -951,16 +895,16 @@
               <dir>0</dir>
               <type>0</type>
               <need_hs>0</need_hs>
-              <top_port class_id="-1"></top_port>
-              <chan class_id="-1"></chan>
+              <top_port class_id="-1"/>
+              <chan class_id="-1"/>
             </item>
             <item class_id_reference="25" object_id="_43">
               <name>stream_out0_layer5_out</name>
               <dir>1</dir>
               <type>0</type>
               <need_hs>0</need_hs>
-              <top_port class_id="-1"></top_port>
-              <chan class_id="-1"></chan>
+              <top_port class_id="-1"/>
+              <chan class_id="-1"/>
             </item>
           </port_list>
           <process_list class_id="27" tracking_level="0" version="0">
@@ -979,8 +923,8 @@
                     <dir>0</dir>
                     <type>0</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_42"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id_reference="25" object_id_reference="_42"/>
+                    <chan class_id="-1"/>
                   </port>
                   <inst class_id="31" tracking_level="1" version="0" object_id="_47">
                     <type>0</type>
@@ -1030,8 +974,8 @@
                     <dir>1</dir>
                     <type>0</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_43"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id_reference="25" object_id_reference="_43"/>
+                    <chan class_id="-1"/>
                   </port>
                   <inst class_id_reference="31" object_id="_53">
                     <type>0</type>
@@ -1050,7 +994,7 @@
             <item_version>0</item_version>
             <item class_id="26" tracking_level="1" version="0" object_id="_54">
               <type>1</type>
-              <name>layer2_out</name>
+              <name>layer2_out_i</name>
               <ssdmobj_id>5</ssdmobj_id>
               <ctype>0</ctype>
               <depth>1</depth>
@@ -1066,10 +1010,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_47"></inst>
+                  <inst class_id_reference="31" object_id_reference="_47"/>
                 </item>
               </source_list>
               <sink_list>
@@ -1081,8 +1025,8 @@
                     <dir>1</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
                   <inst class_id_reference="31" object_id="_59">
                     <type>0</type>
@@ -1097,7 +1041,7 @@
             </item>
             <item class_id_reference="26" object_id="_60">
               <type>1</type>
-              <name>layer3_out</name>
+              <name>layer3_out_i</name>
               <ssdmobj_id>6</ssdmobj_id>
               <ctype>0</ctype>
               <depth>1</depth>
@@ -1113,10 +1057,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_59"></inst>
+                  <inst class_id_reference="31" object_id_reference="_59"/>
                 </item>
               </source_list>
               <sink_list>
@@ -1128,8 +1072,8 @@
                     <dir>1</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
                   <inst class_id_reference="31" object_id="_65">
                     <type>0</type>
@@ -1144,7 +1088,7 @@
             </item>
             <item class_id_reference="26" object_id="_66">
               <type>1</type>
-              <name>layer4_out</name>
+              <name>layer4_out_i</name>
               <ssdmobj_id>7</ssdmobj_id>
               <ctype>0</ctype>
               <depth>1</depth>
@@ -1160,10 +1104,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_65"></inst>
+                  <inst class_id_reference="31" object_id_reference="_65"/>
                 </item>
               </source_list>
               <sink_list>
@@ -1175,10 +1119,10 @@
                     <dir>1</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_53"></inst>
+                  <inst class_id_reference="31" object_id_reference="_53"/>
                 </item>
               </sink_list>
               <bram_cost>0</bram_cost>
@@ -1500,15 +1444,15 @@
             <item_version>0</item_version>
             <item class_id="48" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>836</second>
+              <second>856</second>
             </item>
             <item>
               <first>FF</first>
-              <second>5610</second>
+              <second>6493</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>28636</second>
+              <second>27887</second>
             </item>
           </second>
         </item>
@@ -1519,15 +1463,15 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>267</second>
+              <second>250</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2683</second>
+              <second>2679</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>9122</second>
+              <second>9551</second>
             </item>
           </second>
         </item>
@@ -1565,7 +1509,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>447</second>
+              <second>465</second>
             </item>
           </second>
         </item>
@@ -1622,7 +1566,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>layer2_out_U</first>
+          <first>layer2_out_i_U</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1649,7 +1593,7 @@
           </second>
         </item>
         <item>
-          <first>layer3_out_U</first>
+          <first>layer3_out_i_U</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1676,7 +1620,7 @@
           </second>
         </item>
         <item>
-          <first>layer4_out_U</first>
+          <first>layer4_out_i_U</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1812,7 +1756,7 @@
         <count>3</count>
         <item_version>0</item_version>
         <item>
-          <first>layer2_out_U</first>
+          <first>layer2_out_i_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1820,7 +1764,7 @@
           </second>
         </item>
         <item>
-          <first>layer3_out_U</first>
+          <first>layer3_out_i_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1828,7 +1772,7 @@
           </second>
         </item>
         <item>
-          <first>layer4_out_U</first>
+          <first>layer4_out_i_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2025,7 +1969,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item class_id="64" tracking_level="0" version="0">
-        <first>layer2_out_fu_42</first>
+        <first>layer2_out_i_fu_42</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2033,7 +1977,7 @@
         </second>
       </item>
       <item>
-        <first>layer3_out_fu_46</first>
+        <first>layer3_out_i_fu_46</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2041,7 +1985,7 @@
         </second>
       </item>
       <item>
-        <first>layer4_out_fu_50</first>
+        <first>layer4_out_i_fu_50</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2155,7 +2099,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>layer2_out_reg_84</first>
+        <first>layer2_out_i_reg_84</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2163,7 +2107,7 @@
         </second>
       </item>
       <item>
-        <first>layer3_out_reg_90</first>
+        <first>layer3_out_i_reg_90</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2171,7 +2115,7 @@
         </second>
       </item>
       <item>
-        <first>layer4_out_reg_96</first>
+        <first>layer4_out_i_reg_96</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2278,6 +2222,5 @@
         </second>
       </item>
     </node2core>
-    <sched_res class_id="-1"></sched_res>
   </syndb>
 </boost_serialization>

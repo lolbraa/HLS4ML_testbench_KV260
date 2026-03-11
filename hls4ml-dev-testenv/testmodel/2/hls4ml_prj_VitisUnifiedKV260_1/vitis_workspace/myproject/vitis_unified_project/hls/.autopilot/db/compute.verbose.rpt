@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'compute'
 ================================================================
-* Date:           Wed Mar 11 12:35:15 2026
+* Date:           Wed Mar 11 13:13:05 2026
 
-* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        vitis_unified_project
 * Solution:       hls (Vivado IP Flow Target)
 * Product family: zynquplus
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  4.152 ns|     0.62 ns|
+    |ap_clk  |  5.00 ns|  4.331 ns|     0.62 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -38,7 +38,7 @@
         |                     |           |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
         |       Instance      |   Module  |   min   |   max   |    min    |    max    | min | max |   Type   |
         +---------------------+-----------+---------+---------+-----------+-----------+-----+-----+----------+
-        |grp_myproject_fu_66  |myproject  |       14|       14|  70.000 ns|  70.000 ns|    6|    6|  dataflow|
+        |grp_myproject_fu_66  |myproject  |       15|       15|  75.000 ns|  75.000 ns|    6|    6|  dataflow|
         +---------------------+-----------+---------+---------+-----------+-----------+-----+-----+----------+
 
         * Loop: 
@@ -46,7 +46,7 @@
         |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_42_1  |        ?|        ?|        16|          -|          -|     ?|        no|
+        |- VITIS_LOOP_42_1  |        ?|        ?|        17|          -|          -|     ?|        no|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -59,29 +59,29 @@
 |       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
 +-----------------+---------+------+--------+--------+-----+
 |DSP              |        -|     -|       -|       -|    -|
-|Expression       |        -|     -|       0|      81|    -|
+|Expression       |        -|     -|       0|      83|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        4|  1108|    9760|   40892|    -|
+|Instance         |        4|  1111|   10639|   40590|    -|
 |Memory           |        -|     -|       -|       -|    -|
-|Multiplexer      |        -|     -|       0|      56|    -|
+|Multiplexer      |        -|     -|       -|      74|    -|
 |Register         |        -|     -|      70|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        4|  1108|    9830|   41029|    0|
+|Total            |        4|  1111|   10709|   40747|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
-|Utilization (%)  |        1|    88|       4|      35|    0|
+|Utilization (%)  |        1|    89|       4|      34|    0|
 +-----------------+---------+------+--------+--------+-----+
 
 + Detail: 
     * Instance: 
-    +---------------------+-----------+---------+------+------+-------+-----+
-    |       Instance      |   Module  | BRAM_18K|  DSP |  FF  |  LUT  | URAM|
-    +---------------------+-----------+---------+------+------+-------+-----+
-    |grp_myproject_fu_66  |myproject  |        4|  1108|  9760|  40892|    0|
-    +---------------------+-----------+---------+------+------+-------+-----+
-    |Total                |           |        4|  1108|  9760|  40892|    0|
-    +---------------------+-----------+---------+------+------+-------+-----+
+    +---------------------+-----------+---------+------+-------+-------+-----+
+    |       Instance      |   Module  | BRAM_18K|  DSP |   FF  |  LUT  | URAM|
+    +---------------------+-----------+---------+------+-------+-------+-----+
+    |grp_myproject_fu_66  |myproject  |        4|  1111|  10639|  40590|    0|
+    +---------------------+-----------+---------+------+-------+-------+-----+
+    |Total                |           |        4|  1111|  10639|  40590|    0|
+    +---------------------+-----------+---------+------+-------+-------+-----+
 
     * DSP: 
     N/A
@@ -99,23 +99,26 @@
     |add_ln42_fu_95_p2                     |         +|   0|  0|  38|          31|           1|
     |icmp_ln42_fu_90_p2                    |      icmp|   0|  0|  39|          32|          32|
     |ap_block_state1                       |        or|   0|  0|   2|           1|           1|
+    |ap_sync_grp_myproject_fu_66_ap_done   |        or|   0|  0|   2|           1|           1|
     |ap_sync_grp_myproject_fu_66_ap_ready  |        or|   0|  0|   2|           1|           1|
     +--------------------------------------+----------+----+---+----+------------+------------+
-    |Total                                 |          |   0|  0|  81|          65|          35|
+    |Total                                 |          |   0|  0|  83|          66|          36|
     +--------------------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
-    +--------------------+----+-----------+-----+-----------+
-    |        Name        | LUT| Input Size| Bits| Total Bits|
-    +--------------------+----+-----------+-----+-----------+
-    |ap_NS_fsm           |  20|          4|    1|          4|
-    |ap_done             |   9|          2|    1|          2|
-    |batch_size_blk_n    |   9|          2|    1|          2|
-    |batch_size_c_blk_n  |   9|          2|    1|          2|
-    |q_fu_48             |   9|          2|   31|         62|
-    +--------------------+----+-----------+-----+-----------+
-    |Total               |  56|         12|   35|         72|
-    +--------------------+----+-----------+-----+-----------+
+    +------------------------------+----+-----------+-----+-----------+
+    |             Name             | LUT| Input Size| Bits| Total Bits|
+    +------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                     |  20|          4|    1|          4|
+    |ap_done                       |   9|          2|    1|          2|
+    |batch_size_blk_n              |   9|          2|    1|          2|
+    |batch_size_c_blk_n            |   9|          2|    1|          2|
+    |q_fu_48                       |   9|          2|   31|         62|
+    |stream_in0_linput_read        |   9|          2|    1|          2|
+    |stream_out0_layer5_out_write  |   9|          2|    1|          2|
+    +------------------------------+----+-----------+-----+-----------+
+    |Total                         |  74|         16|   37|         76|
+    +------------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +------------------------------------------+----+----+-----+-----------+
@@ -149,25 +152,25 @@
 |ap_idle                                |  out|    1|  ap_ctrl_hs|                 compute|  return value|
 |ap_ready                               |  out|    1|  ap_ctrl_hs|                 compute|  return value|
 |batch_size_dout                        |   in|   32|     ap_fifo|              batch_size|       pointer|
-|batch_size_empty_n                     |   in|    1|     ap_fifo|              batch_size|       pointer|
-|batch_size_read                        |  out|    1|     ap_fifo|              batch_size|       pointer|
 |batch_size_num_data_valid              |   in|    3|     ap_fifo|              batch_size|       pointer|
 |batch_size_fifo_cap                    |   in|    3|     ap_fifo|              batch_size|       pointer|
+|batch_size_empty_n                     |   in|    1|     ap_fifo|              batch_size|       pointer|
+|batch_size_read                        |  out|    1|     ap_fifo|              batch_size|       pointer|
 |batch_size_c_din                       |  out|   32|     ap_fifo|            batch_size_c|       pointer|
-|batch_size_c_full_n                    |   in|    1|     ap_fifo|            batch_size_c|       pointer|
-|batch_size_c_write                     |  out|    1|     ap_fifo|            batch_size_c|       pointer|
 |batch_size_c_num_data_valid            |   in|    3|     ap_fifo|            batch_size_c|       pointer|
 |batch_size_c_fifo_cap                  |   in|    3|     ap_fifo|            batch_size_c|       pointer|
+|batch_size_c_full_n                    |   in|    1|     ap_fifo|            batch_size_c|       pointer|
+|batch_size_c_write                     |  out|    1|     ap_fifo|            batch_size_c|       pointer|
 |stream_in0_linput_dout                 |   in|  256|     ap_fifo|       stream_in0_linput|       pointer|
-|stream_in0_linput_empty_n              |   in|    1|     ap_fifo|       stream_in0_linput|       pointer|
-|stream_in0_linput_read                 |  out|    1|     ap_fifo|       stream_in0_linput|       pointer|
 |stream_in0_linput_num_data_valid       |   in|    8|     ap_fifo|       stream_in0_linput|       pointer|
 |stream_in0_linput_fifo_cap             |   in|    8|     ap_fifo|       stream_in0_linput|       pointer|
+|stream_in0_linput_empty_n              |   in|    1|     ap_fifo|       stream_in0_linput|       pointer|
+|stream_in0_linput_read                 |  out|    1|     ap_fifo|       stream_in0_linput|       pointer|
 |stream_out0_layer5_out_din             |  out|   80|     ap_fifo|  stream_out0_layer5_out|       pointer|
-|stream_out0_layer5_out_full_n          |   in|    1|     ap_fifo|  stream_out0_layer5_out|       pointer|
-|stream_out0_layer5_out_write           |  out|    1|     ap_fifo|  stream_out0_layer5_out|       pointer|
 |stream_out0_layer5_out_num_data_valid  |   in|    8|     ap_fifo|  stream_out0_layer5_out|       pointer|
 |stream_out0_layer5_out_fifo_cap        |   in|    8|     ap_fifo|  stream_out0_layer5_out|       pointer|
+|stream_out0_layer5_out_full_n          |   in|    1|     ap_fifo|  stream_out0_layer5_out|       pointer|
+|stream_out0_layer5_out_write           |  out|    1|     ap_fifo|  stream_out0_layer5_out|       pointer|
 +---------------------------------------+-----+-----+------------+------------------------+--------------+
 
 ============================================================
@@ -209,33 +212,33 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 3.67>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%q = alloca i32 1"   --->   Operation 4 'alloca' 'q' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %batch_size, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] ( I:1.83ns O:1.83ns )   --->   "%batch_size_read = read i32 @_ssdm_op_Read.ap_fifo.i32P0A, i32 %batch_size"   --->   Operation 6 'read' 'batch_size_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %batch_size_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] ( I:1.83ns O:1.83ns )   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i32P0A, i32 %batch_size_c, i32 %batch_size_read"   --->   Operation 8 'write' 'write_ln0' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %batch_size, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (1.83ns)   --->   "%batch_size_read = read i32 @_ssdm_op_Read.ap_fifo.i32P0A, i32 %batch_size"   --->   Operation 6 'read' 'batch_size_read' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %batch_size_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (1.83ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i32P0A, i32 %batch_size_c, i32 %batch_size_read"   --->   Operation 8 'write' 'write_ln0' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 11 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 13 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 15 [1/1] (0.42ns)   --->   "%store_ln0 = store i31 0, i31 %q"   --->   Operation 15 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln42 = br void %for.inc.i" [firmware/myproject_axi_master.cpp:42]   --->   Operation 16 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln42 = br void %for.inc.i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 16 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 1.44>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%q_load = load i31 %q" [firmware/myproject_axi_master.cpp:42]   --->   Operation 17 'load' 'q_load' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln42 = zext i31 %q_load" [firmware/myproject_axi_master.cpp:42]   --->   Operation 18 'zext' 'zext_ln42' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (1.01ns)   --->   "%icmp_ln42 = icmp_slt  i32 %zext_ln42, i32 %batch_size_read" [firmware/myproject_axi_master.cpp:42]   --->   Operation 19 'icmp' 'icmp_ln42' <Predicate = true> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 20 [1/1] (1.00ns)   --->   "%add_ln42 = add i31 %q_load, i31 1" [firmware/myproject_axi_master.cpp:42]   --->   Operation 20 'add' 'add_ln42' <Predicate = true> <Delay = 1.00> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln42 = br i1 %icmp_ln42, void %compute.exit, void %for.inc.split.i" [firmware/myproject_axi_master.cpp:42]   --->   Operation 21 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [2/2] (0.00ns)   --->   "%call_ln43 = call void @myproject, i256 %stream_in0_linput, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [firmware/myproject_axi_master.cpp:43]   --->   Operation 22 'call' 'call_ln43' <Predicate = (icmp_ln42)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 23 [1/1] (0.42ns)   --->   "%store_ln42 = store i31 %add_ln42, i31 %q" [firmware/myproject_axi_master.cpp:42]   --->   Operation 23 'store' 'store_ln42' <Predicate = (icmp_ln42)> <Delay = 0.42>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln41 = ret" [firmware/myproject_axi_master.cpp:41]   --->   Operation 24 'ret' 'ret_ln41' <Predicate = (!icmp_ln42)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%q_load = load i31 %q" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 17 'load' 'q_load' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln42 = zext i31 %q_load" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 18 'zext' 'zext_ln42' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (1.01ns)   --->   "%icmp_ln42 = icmp_slt  i32 %zext_ln42, i32 %batch_size_read" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 19 'icmp' 'icmp_ln42' <Predicate = true> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (1.00ns)   --->   "%add_ln42 = add i31 %q_load, i31 1" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 20 'add' 'add_ln42' <Predicate = true> <Delay = 1.00> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln42 = br i1 %icmp_ln42, void %compute.exit, void %for.inc.split.i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 21 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [2/2] (0.00ns)   --->   "%call_ln43 = call void @myproject, i256 %stream_in0_linput, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:43]   --->   Operation 22 'call' 'call_ln43' <Predicate = (icmp_ln42)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 23 [1/1] (0.42ns)   --->   "%store_ln42 = store i31 %add_ln42, i31 %q" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 23 'store' 'store_ln42' <Predicate = (icmp_ln42)> <Delay = 0.42>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%ret_ln42 = ret" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 24 'ret' 'ret_ln42' <Predicate = (!icmp_ln42)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln42 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [firmware/myproject_axi_master.cpp:42]   --->   Operation 25 'specloopname' 'specloopname_ln42' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 26 [1/2] (0.00ns)   --->   "%call_ln43 = call void @myproject, i256 %stream_in0_linput, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [firmware/myproject_axi_master.cpp:43]   --->   Operation 26 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln42 = br void %for.inc.i" [firmware/myproject_axi_master.cpp:42]   --->   Operation 27 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln42 = specloopname void @_ssdm_op_SpecLoopName, void @empty_10" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 25 'specloopname' 'specloopname_ln42' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/2] (0.00ns)   --->   "%call_ln43 = call void @myproject, i256 %stream_in0_linput, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:43]   --->   Operation 26 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln42 = br void %for.inc.i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp:42]   --->   Operation 27 'br' 'br_ln42' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -280,7 +283,7 @@ icmp_ln42         (icmp         ) [ 0011]
 add_ln42          (add          ) [ 0000]
 br_ln42           (br           ) [ 0000]
 store_ln42        (store        ) [ 0000]
-ret_ln41          (ret          ) [ 0000]
+ret_ln42          (ret          ) [ 0000]
 specloopname_ln42 (specloopname ) [ 0000]
 call_ln43         (call         ) [ 0000]
 br_ln42           (br           ) [ 0000]
@@ -735,7 +738,7 @@ br_ln42           (br           ) [ 0000]
 |----------|----------------------------|---------|---------|---------|---------|
 | Operation|       Functional Unit      |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|----------------------------|---------|---------|---------|---------|
-|   call   |     grp_myproject_fu_66    |   1108  |  2.562  |  11621  |  39745  |
+|   call   |     grp_myproject_fu_66    |   1111  |  2.562  |  12505  |  39512  |
 |----------|----------------------------|---------|---------|---------|---------|
 |   icmp   |       icmp_ln42_fu_90      |    0    |    0    |    0    |    39   |
 |----------|----------------------------|---------|---------|---------|---------|
@@ -747,7 +750,7 @@ br_ln42           (br           ) [ 0000]
 |----------|----------------------------|---------|---------|---------|---------|
 |   zext   |       zext_ln42_fu_86      |    0    |    0    |    0    |    0    |
 |----------|----------------------------|---------|---------|---------|---------|
-|   Total  |                            |   1108  |  2.562  |  11621  |  39822  |
+|   Total  |                            |   1111  |  2.562  |  12505  |  39589  |
 |----------|----------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -776,10 +779,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |  1108  |    2   |  11621 |  39822 |
+|  Function |  1111  |    2   |  12505 |  39589 |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |   63   |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |  1108  |    2   |  11684 |  39822 |
+|   Total   |  1111  |    2   |  12568 |  39589 |
 +-----------+--------+--------+--------+--------+

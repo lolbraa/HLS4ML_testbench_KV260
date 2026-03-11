@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="17">
   <syndb class_id="0" tracking_level="0" version="0">
     <userIPLatency>-1</userIPLatency>
-    <userIPName></userIPName>
+    <userIPName/>
     <cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
       <name>myproject_axi_master</name>
       <module_structure>Dataflow</module_structure>
@@ -17,25 +17,25 @@
               <type>1</type>
               <id>1</id>
               <name>gmem_in0</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo class_id="6" tracking_level="0" version="0">
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1819096179</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -53,25 +53,25 @@
               <type>1</type>
               <id>2</id>
               <name>gmem_out0</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1600941364</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -89,25 +89,25 @@
               <type>1</type>
               <id>3</id>
               <name>gmem_in0_ptr_linput</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName>gmem_in0_ptr_linput</originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1869444211</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -125,25 +125,25 @@
               <type>1</type>
               <id>4</id>
               <name>gmem_out0_ptr_layer5_out</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName>gmem_out0_ptr_layer5_out</originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1869444211</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -161,25 +161,25 @@
               <type>1</type>
               <id>5</id>
               <name>batch_size</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName>batch_size</originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -201,8 +201,8 @@
               <type>0</type>
               <id>10</id>
               <name>batch_size_read</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -210,13 +210,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>66</second>
@@ -224,16 +224,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>adapter</opType>
               <implIndex>s_axilite</implIndex>
               <coreName>s_axilite</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>120</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>122</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -258,8 +258,8 @@
               <type>0</type>
               <id>11</id>
               <name>gmem_out0_ptr_layer5_out_read</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -267,13 +267,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>66</second>
@@ -281,16 +281,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>adapter</opType>
               <implIndex>s_axilite</implIndex>
               <coreName>s_axilite</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>120</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>122</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -315,8 +315,8 @@
               <type>0</type>
               <id>12</id>
               <name>gmem_in0_ptr_linput_read</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -324,13 +324,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>66</second>
@@ -338,16 +338,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>adapter</opType>
               <implIndex>s_axilite</implIndex>
               <coreName>s_axilite</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>120</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>122</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -371,9 +371,9 @@
             <Obj>
               <type>0</type>
               <id>13</id>
-              <name>batch_size_c1</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>batch_size_c9</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -381,13 +381,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>66</second>
@@ -395,15 +395,15 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>batch_size_c1_U</rtlName>
+              <originalName/>
+              <rtlName>batch_size_c9_U</rtlName>
               <control>auto</control>
               <opType>fifo</opType>
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
               <storageDepth>2</storageDepth>
-              <coreId>80</coreId>
+              <coreId>81</coreId>
               <rtlModuleName>myproject_axi_master_fifo_w32_d2_S</rtlModuleName>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -428,8 +428,8 @@
               <type>0</type>
               <id>16</id>
               <name>batch_size_c</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -437,13 +437,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>66</second>
@@ -451,7 +451,7 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>batch_size_c_U</rtlName>
               <control>auto</control>
               <opType>fifo</opType>
@@ -459,7 +459,7 @@
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
               <storageDepth>2</storageDepth>
-              <coreId>80</coreId>
+              <coreId>81</coreId>
               <rtlModuleName>myproject_axi_master_fifo_w32_d2_S</rtlModuleName>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -484,8 +484,8 @@
               <type>0</type>
               <id>19</id>
               <name>gmem_out0_ptr_layer5_out_c</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -493,13 +493,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>66</second>
@@ -507,7 +507,7 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>gmem_out0_ptr_layer5_out_c_U</rtlName>
               <control>auto</control>
               <opType>fifo</opType>
@@ -515,7 +515,7 @@
               <coreName>FIFO_SRL</coreName>
               <isStorage>1</isStorage>
               <storageDepth>4</storageDepth>
-              <coreId>80</coreId>
+              <coreId>81</coreId>
               <rtlModuleName>myproject_axi_master_fifo_w64_d4_S</rtlModuleName>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -540,8 +540,8 @@
               <type>0</type>
               <id>40</id>
               <name>_ln66</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -549,13 +549,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>66</second>
@@ -563,16 +563,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>entry_proc_U0</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>574967113</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -598,8 +598,8 @@
               <type>0</type>
               <id>41</id>
               <name>_ln68</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>68</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -607,13 +607,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>68</second>
@@ -621,16 +621,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>976909413</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -649,7 +649,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>1.41</m_delay>
+          <m_delay>4.37</m_delay>
           <m_topoIndex>8</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -659,8 +659,8 @@
               <type>0</type>
               <id>42</id>
               <name>_ln70</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>70</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -668,13 +668,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>70</second>
@@ -682,16 +682,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>compute_U0</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1834971487</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -705,7 +705,7 @@
             <item>79</item>
             <item>80</item>
             <item>81</item>
-            <item>469</item>
+            <item>441</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -722,8 +722,8 @@
               <type>0</type>
               <id>43</id>
               <name>_ln72</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>72</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -731,13 +731,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>72</second>
@@ -745,16 +745,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1702060392</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -766,9 +766,9 @@
             <item>75</item>
             <item>76</item>
             <item>82</item>
-            <item>468</item>
-            <item>470</item>
-            <item>471</item>
+            <item>440</item>
+            <item>442</item>
+            <item>443</item>
           </oprand_edges>
           <opcode>call</opcode>
           <m_Display>0</m_Display>
@@ -785,8 +785,8 @@
               <type>0</type>
               <id>44</id>
               <name>_ln73</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>73</lineNumber>
               <contextFuncName>myproject_axi_master</contextFuncName>
               <contextNormFuncName>myproject_axi_master</contextNormFuncName>
@@ -794,13 +794,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>myproject_axi_master</second>
                       </first>
                       <second>73</second>
@@ -808,16 +808,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>539442740</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -844,25 +844,25 @@
               <type>2</type>
               <id>54</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1832153964</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -875,25 +875,25 @@
               <type>2</type>
               <id>58</id>
               <name>entry_proc</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -906,25 +906,25 @@
               <type>2</type>
               <id>62</id>
               <name>load_input_float_array_ap_fixed_16_6_5_3_0_16u_s</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -937,25 +937,25 @@
               <type>2</type>
               <id>68</id>
               <name>compute</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1818767154</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -968,25 +968,25 @@
               <type>2</type>
               <id>72</id>
               <name>store_result_float_array_ap_fixed_16_6_5_3_0_5u_s</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1819096179</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1002,25 +1002,25 @@
             <type>3</type>
             <id>45</id>
             <name>myproject_axi_master</name>
-            <fileName></fileName>
-            <fileDirectory></fileDirectory>
+            <fileName/>
+            <fileDirectory/>
             <lineNumber>0</lineNumber>
-            <contextFuncName></contextFuncName>
-            <contextNormFuncName></contextNormFuncName>
+            <contextFuncName/>
+            <contextNormFuncName/>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName></originalName>
-            <rtlName></rtlName>
-            <control></control>
-            <opType></opType>
-            <implIndex></implIndex>
-            <coreName></coreName>
+            <originalName/>
+            <rtlName/>
+            <control/>
+            <opType/>
+            <implIndex/>
+            <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
-            <rtlModuleName></rtlModuleName>
+            <coreId>99</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>11</count>
@@ -1232,28 +1232,28 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_50">
-          <id>468</id>
+          <id>440</id>
           <edge_type>4</edge_type>
           <source_obj>42</source_obj>
           <sink_obj>43</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_51">
-          <id>469</id>
+          <id>441</id>
           <edge_type>4</edge_type>
           <source_obj>41</source_obj>
           <sink_obj>42</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_52">
-          <id>470</id>
+          <id>442</id>
           <edge_type>4</edge_type>
           <source_obj>40</source_obj>
           <sink_obj>43</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_53">
-          <id>471</id>
+          <id>443</id>
           <edge_type>4</edge_type>
           <source_obj>40</source_obj>
           <sink_obj>43</sink_obj>
@@ -1294,40 +1294,40 @@
               <dir>0</dir>
               <type>1</type>
               <need_hs>1</need_hs>
-              <top_port class_id="-1"></top_port>
-              <chan class_id="-1"></chan>
+              <top_port class_id="-1"/>
+              <chan class_id="-1"/>
             </item>
             <item class_id_reference="25" object_id="_57">
               <name>gmem_out0</name>
               <dir>1</dir>
               <type>1</type>
               <need_hs>0</need_hs>
-              <top_port class_id="-1"></top_port>
-              <chan class_id="-1"></chan>
+              <top_port class_id="-1"/>
+              <chan class_id="-1"/>
             </item>
             <item class_id_reference="25" object_id="_58">
               <name>gmem_in0_ptr_linput</name>
               <dir>0</dir>
               <type>3</type>
               <need_hs>1</need_hs>
-              <top_port class_id="-1"></top_port>
-              <chan class_id="-1"></chan>
+              <top_port class_id="-1"/>
+              <chan class_id="-1"/>
             </item>
             <item class_id_reference="25" object_id="_59">
               <name>gmem_out0_ptr_layer5_out</name>
               <dir>0</dir>
               <type>3</type>
               <need_hs>1</need_hs>
-              <top_port class_id="-1"></top_port>
-              <chan class_id="-1"></chan>
+              <top_port class_id="-1"/>
+              <chan class_id="-1"/>
             </item>
             <item class_id_reference="25" object_id="_60">
               <name>batch_size</name>
               <dir>0</dir>
               <type>3</type>
               <need_hs>1</need_hs>
-              <top_port class_id="-1"></top_port>
-              <chan class_id="-1"></chan>
+              <top_port class_id="-1"/>
+              <chan class_id="-1"/>
             </item>
           </port_list>
           <process_list class_id="27" tracking_level="0" version="0">
@@ -1346,8 +1346,8 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>1</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_59"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id_reference="25" object_id_reference="_59"/>
+                    <chan class_id="-1"/>
                   </port>
                   <inst class_id="31" tracking_level="1" version="0" object_id="_64">
                     <type>0</type>
@@ -1373,8 +1373,8 @@
                     <dir>0</dir>
                     <type>1</type>
                     <need_hs>1</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_56"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id_reference="25" object_id_reference="_56"/>
+                    <chan class_id="-1"/>
                   </port>
                   <inst class_id_reference="31" object_id="_68">
                     <type>0</type>
@@ -1388,10 +1388,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>1</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_58"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id_reference="25" object_id_reference="_58"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_68"></inst>
+                  <inst class_id_reference="31" object_id_reference="_68"/>
                 </item>
                 <item class_id_reference="30" object_id="_71">
                   <port class_id_reference="25" object_id="_72">
@@ -1399,10 +1399,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>1</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_60"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id_reference="25" object_id_reference="_60"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_68"></inst>
+                  <inst class_id_reference="31" object_id_reference="_68"/>
                 </item>
               </pins>
               <in_source_fork>1</in_source_fork>
@@ -1434,8 +1434,8 @@
                     <dir>1</dir>
                     <type>1</type>
                     <need_hs>1</need_hs>
-                    <top_port class_id_reference="25" object_id_reference="_57"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id_reference="25" object_id_reference="_57"/>
+                    <chan class_id="-1"/>
                   </port>
                   <inst class_id_reference="31" object_id="_77">
                     <type>0</type>
@@ -1470,10 +1470,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_64"></inst>
+                  <inst class_id_reference="31" object_id_reference="_64"/>
                 </item>
               </source_list>
               <sink_list>
@@ -1485,10 +1485,10 @@
                     <dir>1</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_77"></inst>
+                  <inst class_id_reference="31" object_id_reference="_77"/>
                 </item>
               </sink_list>
               <bram_cost>0</bram_cost>
@@ -1497,7 +1497,7 @@
             </item>
             <item class_id_reference="26" object_id="_83">
               <type>1</type>
-              <name>batch_size_c1</name>
+              <name>batch_size_c9</name>
               <ssdmobj_id>13</ssdmobj_id>
               <ctype>0</ctype>
               <depth>2</depth>
@@ -1513,10 +1513,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_68"></inst>
+                  <inst class_id_reference="31" object_id_reference="_68"/>
                 </item>
               </source_list>
               <sink_list>
@@ -1528,8 +1528,8 @@
                     <dir>1</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
                   <inst class_id_reference="31" object_id="_88">
                     <type>0</type>
@@ -1560,10 +1560,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_68"></inst>
+                  <inst class_id_reference="31" object_id_reference="_68"/>
                 </item>
               </source_list>
               <sink_list>
@@ -1575,10 +1575,10 @@
                     <dir>1</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_88"></inst>
+                  <inst class_id_reference="31" object_id_reference="_88"/>
                 </item>
               </sink_list>
               <bram_cost>15</bram_cost>
@@ -1603,10 +1603,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_88"></inst>
+                  <inst class_id_reference="31" object_id_reference="_88"/>
                 </item>
               </source_list>
               <sink_list>
@@ -1618,10 +1618,10 @@
                     <dir>1</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_77"></inst>
+                  <inst class_id_reference="31" object_id_reference="_77"/>
                 </item>
               </sink_list>
               <bram_cost>0</bram_cost>
@@ -1646,10 +1646,10 @@
                     <dir>0</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_88"></inst>
+                  <inst class_id_reference="31" object_id_reference="_88"/>
                 </item>
               </source_list>
               <sink_list>
@@ -1661,10 +1661,10 @@
                     <dir>1</dir>
                     <type>3</type>
                     <need_hs>0</need_hs>
-                    <top_port class_id="-1"></top_port>
-                    <chan class_id="-1"></chan>
+                    <top_port class_id="-1"/>
+                    <chan class_id="-1"/>
                   </port>
-                  <inst class_id_reference="31" object_id_reference="_77"></inst>
+                  <inst class_id_reference="31" object_id_reference="_77"/>
                 </item>
               </sink_list>
               <bram_cost>5</bram_cost>
@@ -1681,12 +1681,12 @@
     </cdfg_regions>
     <fsm class_id="34" tracking_level="1" version="0" object_id="_104">
       <states class_id="35" tracking_level="0" version="0">
-        <count>6</count>
+        <count>7</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="1" version="0" object_id="_105">
           <id>1</id>
           <operations class_id="37" tracking_level="0" version="0">
-            <count>8</count>
+            <count>7</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="1" version="0" object_id="_106">
               <id>10</id>
@@ -1723,192 +1723,199 @@
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_113">
-              <id>41</id>
-              <stage>2</stage>
-              <latency>2</latency>
-            </item>
           </operations>
         </item>
-        <item class_id_reference="36" object_id="_114">
+        <item class_id_reference="36" object_id="_113">
           <id>2</id>
           <operations>
             <count>1</count>
             <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_115">
+            <item class_id_reference="38" object_id="_114">
+              <id>41</id>
+              <stage>2</stage>
+              <latency>2</latency>
+            </item>
+          </operations>
+        </item>
+        <item class_id_reference="36" object_id="_115">
+          <id>3</id>
+          <operations>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item class_id_reference="38" object_id="_116">
               <id>41</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="36" object_id="_116">
-          <id>3</id>
-          <operations>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_117">
-              <id>42</id>
-              <stage>2</stage>
-              <latency>2</latency>
-            </item>
-          </operations>
-        </item>
-        <item class_id_reference="36" object_id="_118">
+        <item class_id_reference="36" object_id="_117">
           <id>4</id>
           <operations>
             <count>1</count>
             <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_119">
+            <item class_id_reference="38" object_id="_118">
+              <id>42</id>
+              <stage>2</stage>
+              <latency>2</latency>
+            </item>
+          </operations>
+        </item>
+        <item class_id_reference="36" object_id="_119">
+          <id>5</id>
+          <operations>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item class_id_reference="38" object_id="_120">
               <id>42</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="36" object_id="_120">
-          <id>5</id>
+        <item class_id_reference="36" object_id="_121">
+          <id>6</id>
           <operations>
             <count>1</count>
             <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_121">
+            <item class_id_reference="38" object_id="_122">
               <id>43</id>
               <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="36" object_id="_122">
-          <id>6</id>
+        <item class_id_reference="36" object_id="_123">
+          <id>7</id>
           <operations>
             <count>26</count>
             <item_version>0</item_version>
-            <item class_id_reference="38" object_id="_123">
+            <item class_id_reference="38" object_id="_124">
               <id>14</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_124">
+            <item class_id_reference="38" object_id="_125">
               <id>15</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_125">
+            <item class_id_reference="38" object_id="_126">
               <id>17</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_126">
+            <item class_id_reference="38" object_id="_127">
               <id>18</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_127">
+            <item class_id_reference="38" object_id="_128">
               <id>20</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_128">
+            <item class_id_reference="38" object_id="_129">
               <id>21</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_129">
+            <item class_id_reference="38" object_id="_130">
               <id>22</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_130">
+            <item class_id_reference="38" object_id="_131">
               <id>23</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_131">
+            <item class_id_reference="38" object_id="_132">
               <id>24</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_132">
+            <item class_id_reference="38" object_id="_133">
               <id>25</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_133">
+            <item class_id_reference="38" object_id="_134">
               <id>26</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_134">
+            <item class_id_reference="38" object_id="_135">
               <id>27</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_135">
+            <item class_id_reference="38" object_id="_136">
               <id>28</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_136">
+            <item class_id_reference="38" object_id="_137">
               <id>29</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_137">
+            <item class_id_reference="38" object_id="_138">
               <id>30</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_138">
+            <item class_id_reference="38" object_id="_139">
               <id>31</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_139">
+            <item class_id_reference="38" object_id="_140">
               <id>32</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_140">
+            <item class_id_reference="38" object_id="_141">
               <id>33</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_141">
+            <item class_id_reference="38" object_id="_142">
               <id>34</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_142">
+            <item class_id_reference="38" object_id="_143">
               <id>35</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_143">
+            <item class_id_reference="38" object_id="_144">
               <id>36</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_144">
+            <item class_id_reference="38" object_id="_145">
               <id>37</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_145">
+            <item class_id_reference="38" object_id="_146">
               <id>38</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_146">
+            <item class_id_reference="38" object_id="_147">
               <id>39</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="38" object_id="_147">
+            <item class_id_reference="38" object_id="_148">
               <id>43</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
-            <item class_id_reference="38" object_id="_148">
+            <item class_id_reference="38" object_id="_149">
               <id>44</id>
               <stage>1</stage>
               <latency>1</latency>
@@ -1917,9 +1924,9 @@
         </item>
       </states>
       <transitions class_id="39" tracking_level="0" version="0">
-        <count>5</count>
+        <count>6</count>
         <item_version>0</item_version>
-        <item class_id="40" tracking_level="1" version="0" object_id="_149">
+        <item class_id="40" tracking_level="1" version="0" object_id="_150">
           <inState>1</inState>
           <outState>2</outState>
           <condition class_id="41" tracking_level="0" version="0">
@@ -1934,7 +1941,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="40" object_id="_150">
+        <item class_id_reference="40" object_id="_151">
           <inState>2</inState>
           <outState>3</outState>
           <condition>
@@ -1949,7 +1956,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="40" object_id="_151">
+        <item class_id_reference="40" object_id="_152">
           <inState>3</inState>
           <outState>4</outState>
           <condition>
@@ -1964,7 +1971,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="40" object_id="_152">
+        <item class_id_reference="40" object_id="_153">
           <inState>4</inState>
           <outState>5</outState>
           <condition>
@@ -1979,7 +1986,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="40" object_id="_153">
+        <item class_id_reference="40" object_id="_154">
           <inState>5</inState>
           <outState>6</outState>
           <condition>
@@ -1994,9 +2001,24 @@
             </sop>
           </condition>
         </item>
+        <item class_id_reference="40" object_id="_155">
+          <inState>6</inState>
+          <outState>7</outState>
+          <condition>
+            <id>-1</id>
+            <sop>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>
+                <count>0</count>
+                <item_version>0</item_version>
+              </item>
+            </sop>
+          </condition>
+        </item>
       </transitions>
     </fsm>
-    <res class_id="44" tracking_level="1" version="0" object_id="_154">
+    <res class_id="44" tracking_level="1" version="0" object_id="_156">
       <dp_component_resource class_id="45" tracking_level="0" version="0">
         <count>9</count>
         <item_version>0</item_version>
@@ -2011,15 +2033,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>1108</second>
+              <second>1111</second>
             </item>
             <item>
               <first>FF</first>
-              <second>9830</second>
+              <second>10709</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>41029</second>
+              <second>40747</second>
             </item>
           </second>
         </item>
@@ -2068,15 +2090,15 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>2</second>
+              <second>4</second>
             </item>
             <item>
               <first>FF</first>
-              <second>671</second>
+              <second>830</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>637</second>
+              <second>694</second>
             </item>
             <item>
               <first>URAM</first>
@@ -2091,15 +2113,15 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>0</second>
+              <second>4</second>
             </item>
             <item>
               <first>FF</first>
-              <second>611</second>
+              <second>830</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>666</second>
+              <second>694</second>
             </item>
             <item>
               <first>URAM</first>
@@ -2114,11 +2136,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>1543</second>
+              <second>1589</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>9580</second>
+              <second>10326</second>
             </item>
           </second>
         </item>
@@ -2143,11 +2165,11 @@
             <item_version>0</item_version>
             <item>
               <first>FF</first>
-              <second>500</second>
+              <second>1229</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2065</second>
+              <second>5386</second>
             </item>
           </second>
         </item>
@@ -2298,7 +2320,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item>
-          <first>batch_size_c1_U</first>
+          <first>batch_size_c9_U</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -2451,7 +2473,7 @@
         <item>
           <first>ap_sync_reg_entry_proc_U0_ap_ready</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -2464,10 +2486,6 @@
             <item>
               <first>(2Count)</first>
               <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2478,7 +2496,7 @@
         <item>
           <first>ap_sync_reg_load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0_ap_ready</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -2491,10 +2509,6 @@
             <item>
               <first>(2Count)</first>
               <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2656,7 +2670,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item>
-          <first>batch_size_c1_U</first>
+          <first>batch_size_c9_U</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -2756,28 +2770,28 @@
       <item>
         <first>41</first>
         <second>
-          <first>0</first>
+          <first>1</first>
           <second>1</second>
         </second>
       </item>
       <item>
         <first>42</first>
         <second>
-          <first>2</first>
+          <first>3</first>
           <second>1</second>
         </second>
       </item>
       <item>
         <first>43</first>
         <second>
-          <first>4</first>
+          <first>5</first>
           <second>1</second>
         </second>
       </item>
       <item>
         <first>44</first>
         <second>
-          <first>5</first>
+          <first>6</first>
           <second>0</second>
         </second>
       </item>
@@ -2789,14 +2803,14 @@
         <first>45</first>
         <second class_id="56" tracking_level="0" version="0">
           <first>0</first>
-          <second>5</second>
+          <second>6</second>
         </second>
       </item>
     </bblk_ent_exit>
     <regions class_id="57" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="58" tracking_level="1" version="0" object_id="_155">
+      <item class_id="58" tracking_level="1" version="0" object_id="_157">
         <region_name>myproject_axi_master</region_name>
         <basic_blocks>
           <count>1</count>
@@ -2921,7 +2935,7 @@
         </second>
       </item>
       <item>
-        <first>150</first>
+        <first>148</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -2930,7 +2944,7 @@
         </second>
       </item>
       <item>
-        <first>164</first>
+        <first>162</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -2943,7 +2957,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item class_id="64" tracking_level="0" version="0">
-        <first>batch_size_c1_fu_100</first>
+        <first>batch_size_c9_fu_100</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2979,7 +2993,7 @@
         </second>
       </item>
       <item>
-        <first>grp_compute_fu_150</first>
+        <first>grp_compute_fu_148</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -2997,7 +3011,7 @@
         </second>
       </item>
       <item>
-        <first>grp_store_result_float_array_ap_fixed_16_6_5_3_0_5u_s_fu_164</first>
+        <first>grp_store_result_float_array_ap_fixed_16_6_5_3_0_5u_s_fu_162</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -3068,7 +3082,7 @@
       <count>5</count>
       <item_version>0</item_version>
       <item>
-        <first>174</first>
+        <first>172</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3076,7 +3090,7 @@
         </second>
       </item>
       <item>
-        <first>179</first>
+        <first>177</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3084,7 +3098,7 @@
         </second>
       </item>
       <item>
-        <first>184</first>
+        <first>182</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3092,7 +3106,7 @@
         </second>
       </item>
       <item>
-        <first>190</first>
+        <first>188</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3100,7 +3114,7 @@
         </second>
       </item>
       <item>
-        <first>196</first>
+        <first>194</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3112,7 +3126,7 @@
       <count>5</count>
       <item_version>0</item_version>
       <item>
-        <first>batch_size_c1_reg_184</first>
+        <first>batch_size_c9_reg_182</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3120,7 +3134,7 @@
         </second>
       </item>
       <item>
-        <first>batch_size_c_reg_190</first>
+        <first>batch_size_c_reg_188</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3128,7 +3142,7 @@
         </second>
       </item>
       <item>
-        <first>batch_size_read_reg_174</first>
+        <first>batch_size_read_reg_172</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3136,7 +3150,7 @@
         </second>
       </item>
       <item>
-        <first>gmem_in0_ptr_linput_read_reg_179</first>
+        <first>gmem_in0_ptr_linput_read_reg_177</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3144,7 +3158,7 @@
         </second>
       </item>
       <item>
-        <first>gmem_out0_ptr_layer5_out_c_reg_196</first>
+        <first>gmem_out0_ptr_layer5_out_c_reg_194</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -3317,6 +3331,5 @@
         </second>
       </item>
     </node2core>
-    <sched_res class_id="-1"></sched_res>
   </syndb>
 </boost_serialization>

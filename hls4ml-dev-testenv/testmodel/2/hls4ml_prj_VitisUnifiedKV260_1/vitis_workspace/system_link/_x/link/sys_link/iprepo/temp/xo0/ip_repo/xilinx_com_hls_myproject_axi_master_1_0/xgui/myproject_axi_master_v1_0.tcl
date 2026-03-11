@@ -4,7 +4,7 @@ proc init_gui { IPINST } {
   #Adding Page
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
   #Adding Group
-  set group_0 [ipgui::add_group $IPINST -name "group 0" -parent ${Page_0} -display_name {AXI4 Master Interface m_axi_gmem_in0}]
+  set group_0 [ipgui::add_group $IPINST -name "group 0" -parent ${Page_0} -display_name {m axi dev reg (AXI4 Master Interface)}]
   ipgui::add_param $IPINST -name "C_M_AXI_GMEM_IN0_ENABLE_ID_PORTS" -parent ${group_0}
   ipgui::add_param $IPINST -name "C_M_AXI_GMEM_IN0_ID_WIDTH" -parent ${group_0}
   ipgui::add_param $IPINST -name "C_M_AXI_GMEM_IN0_DATA_WIDTH" -parent ${group_0} -widget comboBox
@@ -17,21 +17,18 @@ proc init_gui { IPINST } {
   ipgui::add_param $IPINST -name "C_M_AXI_GMEM_IN0_USER_VALUE" -parent ${group_0}
   ipgui::add_param $IPINST -name "C_M_AXI_GMEM_IN0_PROT_VALUE" -parent ${group_0}
   ipgui::add_param $IPINST -name "C_M_AXI_GMEM_IN0_CACHE_VALUE" -parent ${group_0}
-
-  #Adding Group
-  set group_1 [ipgui::add_group $IPINST -name "group 1" -parent ${Page_0} -display_name {AXI4 Master Interface m_axi_gmem_out0}]
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_ENABLE_ID_PORTS" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_ID_WIDTH" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_DATA_WIDTH" -parent ${group_1} -widget comboBox
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_ENABLE_USER_PORTS" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_AWUSER_WIDTH" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_WUSER_WIDTH" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_BUSER_WIDTH" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_ARUSER_WIDTH" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_RUSER_WIDTH" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_USER_VALUE" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_PROT_VALUE" -parent ${group_1}
-  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_CACHE_VALUE" -parent ${group_1}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_ENABLE_ID_PORTS" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_ID_WIDTH" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_DATA_WIDTH" -parent ${group_0} -widget comboBox
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_ENABLE_USER_PORTS" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_AWUSER_WIDTH" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_WUSER_WIDTH" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_BUSER_WIDTH" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_ARUSER_WIDTH" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_RUSER_WIDTH" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_USER_VALUE" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_PROT_VALUE" -parent ${group_0}
+  ipgui::add_param $IPINST -name "C_M_AXI_GMEM_OUT0_CACHE_VALUE" -parent ${group_0}
 
 
 

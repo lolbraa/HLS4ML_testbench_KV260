@@ -71,14 +71,6 @@ module myproject_axi_master_hls_deadlock_detect_unit #(
     end
 
     // Token generation logic
-    wire [OUT_CHAN_NUM - 1:0] token_candidate[OUT_CHAN_NUM:0];
-    assign token_candidate[0] = 'b1;
-    genvar j;
-    generate
-        for (j = 1; j < OUT_CHAN_NUM; j = j + 1) begin : B2
-            assign token_candidate[j] = (proc_dep_vld_vec[j] == 1'b1) ? (1'b1 << j) : token_candidate[j - 1];
-        end
-    endgenerate
     always @ (negedge reset or posedge clock) begin
         if (~reset) begin
             token_out_vec <= 'b0;
@@ -86,7 +78,7 @@ module myproject_axi_master_hls_deadlock_detect_unit #(
         else begin
             //token_clear happen in the same cycle as dl_detect_out
             if ((|token_in_vec & ~token_clear) | origin) begin 
-                token_out_vec <= token_candidate[OUT_CHAN_NUM - 1];
+                token_out_vec <= proc_dep_vld_vec;
             end
             else begin
                 token_out_vec <= 'b0;

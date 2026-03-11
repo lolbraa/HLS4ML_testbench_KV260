@@ -131,9 +131,6 @@ namespace eval dpa {
   variable max_num_aims   32
   variable max_num_ams    31
   variable max_num_asms   31
-
-  # Default settings
-  variable is_cma false
   
   # Trace FIFO Properties Dict
   variable trace_fifo_size_properties [ dict create \
@@ -153,8 +150,7 @@ namespace eval dpa {
   variable axilite_pin_list {}
   # Keep track of which pin goes to which slr
   variable axilite_pin_slr_list {}
-  variable anchors_list {}
-
+  
   ###########################################################
   # insert_dpa_ip
   #  Description:
@@ -170,14 +166,11 @@ namespace eval dpa {
   proc insert_dpa_ip { {dpa_opts {}} {dpa_dict {}} } {
     variable ::dpa::debug
     variable ::dpa::aiengine_flow
-    variable ::dpa::anchors_list
-    variable ::dpa::is_cma
  
     set settingDict [dict_get_default $dpa_opts    SETTINGS {}]
     set debug       [dict_get_default $settingDict DEBUG    false]
-    set is_cma      [dict_get_default $settingDict IS_CMA false]
-
-   # Step 1 - Add debug/profile monitors
+    
+    # Step 1 - Add debug/profile monitors
     puts "--- DPA: Step 1 - Add debug/profile monitors..."
     set dpa_dict [add_debug_profile_ip $dpa_dict $dpa_opts]
     add_deadlock_detection $dpa_opts
@@ -191,29 +184,46 @@ namespace eval dpa {
 
       # Step 3 - Add AI engine support (if needed)
       puts "--- DPA: Step 3 - Add AI engine support..."
-      add_aie_trace_infrastructure_main $dpa_opts
+      add_aie_trace_infrastructure $dpa_opts
 
     } else {
 
       # Step 2 - Add trace infrastructure 
-      puts "--- STEP :: TRACE_OFFLOAD exists"
-      set result        [get_hsdp_config $dpa_opts]
-      set is_pl_hsdp    [lindex $result 0]
-      set is_aie_hsdp   [lindex $result 1]
-      
-      if {$is_pl_hsdp == true && $is_aie_hsdp == true} {
 
+      set is_pl_hsdp false
+      set is_aie_hsdp false
+
+      puts "--- STEP :: TRACE_OFFLOAD exists"
+      set offloadDict [dict_get_default $dpa_opts TRACE_OFFLOAD {}]
+      set traceMemory [dict_get_default $offloadDict  MEM_SPACE     "FIFO"]
+      if {($traceMemory == "HSDP") || ($traceMemory == "hsdp")} {
+        puts "--- STEP :: trace memory HSDP"
+        set is_pl_hsdp true
+      }
+
+      set aietraceDict         [dict_get_default $dpa_opts    AIE_TRACE       {}]
+      set aietraceOffload      [dict_get_default $aietraceDict   TRACE_OFFLOAD   {}]
+      if {($aietraceOffload == "HSDP") || ($aietraceOffload == "hsdp")} {
+        # Only grab AIE trace streams with estimated BW > 0
+        # NOTE: unused streams have BW = 0 (e.g., if the user specifies # of streams > what's needed)
+        set aieStreams [get_bd_intf_pins -quiet -hier -filter {(HDL_ATTRIBUTE.DPA_AIE_TRACE == true) && (HDL_ATTRIBUTE.DPA_AIE_TRACE_BANDWIDTH > 0)}]
+
+        set numStreams [llength $aieStreams]
+        if { $numStreams != 0 } {
+          set is_aie_hsdp true
+        }
+      }
+      if {$is_pl_hsdp == true && $is_aie_hsdp == true} {
         puts "--- DPA: Step 2 - Add HSDP trace infrastructure for AIE+PL..."
         add_hsdp_aie_pl_trace_infrastructure $dpa_opts
-
       } else {
 
-        puts "--- DPA: Step 2 - Add PL trace infrastructure..."
-        add_pl_trace_infrastructure $dpa_opts
+        puts "--- DPA: Step 2 - Add trace infrastructure..."
+        add_trace_infrastructure $dpa_opts
 
         # Step 3 - Add AI engine support (if needed)
-        puts "--- DPA: Step 3 - Add AI engine trace infrastructure..."
-        add_aie_trace_infrastructure_main $dpa_opts
+        puts "--- DPA: Step 3 - Add AI engine support..."
+        add_aie_trace_infrastructure $dpa_opts
       }
     }
     
@@ -802,37 +812,7 @@ namespace eval dpa {
     
     return $traceOffloadSlave
   }; # end get_trace_offload_slave
-
-  ###########################################################
-  # get_and_extract_plio_trace_anchors
-  #  Description:
-  #    Query and check if PLIO trace anchors are available
-  #  Arguments:
-  #    None
-  #  Return Value:
-  #    aieStreams   List containing AIE stream objects
-  ###########################################################
-  proc get_and_extract_plio_trace_anchors {} {
-    variable ::dpa::anchors_list
-    set totalAnchors 0
-    set aieStreams {}
-    
-    set anchors [get_bd_cells -quiet -hierarchical -filter {VLNV=~"*:*:aie_trace_anchor:*"}]
-    set totalAnchors [llength $anchors]
-    if {$totalAnchors == 0} {
-      return {}
-    }
-
-    for {set i 0} {$i < $totalAnchors} {incr i} {
-      set anchor [lindex $anchors $i]
-      set anchorInfo [::vitis::dpa_extract $anchor]
-      lappend aieStreams [dict get $anchorInfo S_AXIS]
-      lappend anchors_list $anchorInfo
-    }
-    
-    return $aieStreams
-  }; # get_and_extract_plio_trace_anchors
-
+ 
   #####################################################################
   # connect_trace_offload_slave
   #  Description:
@@ -851,7 +831,6 @@ namespace eval dpa {
   #####################################################################
   proc connect_trace_offload_slave { traceOffloadSlave traceMemoryType traceMemory masterPinName \
                                      traceClock traceReset {traceBandwidth 10} {traceIndex 0} } {
-    variable ::dpa::is_cma
     putd "--- DPA: connect_trace_offload_slave $traceOffloadSlave $traceMemoryType $traceMemory $masterPinName"
     if {$traceOffloadSlave == {}} {
       send_msg_id "101-1" "CRITICAL WARNING" "Unable to connect to trace offload slave. It was undefined."
@@ -897,29 +876,21 @@ namespace eval dpa {
             
             # Only connect to masters that lead to DDR
             set masters {}
-            set processedNocs {}
             foreach masterPin $masterPins {
               set allObjs [find_bd_objs -quiet -thru_hier -relation connected_to $masterPin]
               set nocObjs [get_bd_cells -quiet -of_objects $allObjs -filter {VLNV =~ *axi_noc*}]
               
               # Find a cascaded NoC that connects to a DDR MC
               foreach nocObj $nocObjs {
-                # For CMA, skip if this NoC has already been processed
-                if {$is_cma && [lsearch $processedNocs $nocObj] >= 0} {
-                  continue
-                }
                 set currNumMC [get_property -quiet CONFIG.NUM_MCP $nocObj]
                 if {$currNumMC > 0} {
                   lappend masters [string range $masterPin [expr [string last "/" $masterPin] + 1] end]
-                  lappend processedNocs $nocObj
                   break
                 }
               }
 
-              # Quit once we find one master and it is not CMA enabled
-              # NOTE: On vek385, CMA (Contiguous Memory Allocator) is used which 
-              #       requires connection to all NOC (DDR) masters.
-              if {$masters != {} && !$is_cma} {
+              # Quit once we find one
+              if {$masters != {}} {
                 break
               }
             }
@@ -2309,7 +2280,7 @@ namespace eval dpa {
   #################################################################################################
 
   ###########################################################
-  # add_pl_trace_infrastructure 
+  # add_trace_infrastructure 
   #  Description:
   #    Add and connect the trace infrastructure 
   #  Arguments:
@@ -2317,7 +2288,7 @@ namespace eval dpa {
   #  Return Value:
   #    None
   ###########################################################
-  proc add_pl_trace_infrastructure {dpa_opts} {
+  proc add_trace_infrastructure {dpa_opts} {
     variable ::dpa::trace_hub_name
     variable ::dpa::trace_s2mm_name
     variable ::dpa::trace_pin_list
@@ -2681,7 +2652,7 @@ namespace eval dpa {
       # Connect to trace offload slave
       connect_trace_offload_slave $traceOffloadSlave $traceMemoryType $traceMemory ${dmaName}/${dmaMasterName} $traceClock $traceReset
     }
-  }; # end add_pl_trace_infrastructure
+  }; # end add_trace_infrastructure
 
   ###########################################################
   # add_multi_slr_trace_infrastructure
@@ -3222,191 +3193,7 @@ namespace eval dpa {
   }; # end get_aie_trace_clock
 
   ###########################################################
-  # add_plio_aie_trace_infrastructure_using_anchors
-  #  Description:
-  #    Add AIE trace infrastucture with the help of PLIO Trace anchors
-  #  Arguments:
-  #    dpa_opts    Dictionary containing options for automation
-  #    aieStreams  Dictionary containing aieStreams from anchors
-  #  Return Value:
-  #    None
-  ###########################################################
-  proc add_plio_aie_trace_infrastructure_using_anchors {dpa_opts aieStreams} {
-    variable ::dpa::aiengine_flow
-    variable ::dpa::aie_trace_s2mm_name
-    variable ::dpa::axilite_pin_list
-    variable ::dpa::noc_mult_factor
-    variable ::dpa::anchors_list
-
-    set numStreams [llength $anchors_list]
-    puts "--- DPA: Adding AIE trace infra with anchors & total anchor streams: $numStreams"
-   
-    # Get trace information: FIFO depth, clock, memory, etc.
-    # NOTE: If we want to use the same memory type (e.g., DDR, LPDDR) as PL trace,
-    #       then grab the trace* values from the TRACE_OFFLOAD dict.
-    set traceDict         [dict_get_default $dpa_opts    AIE_TRACE       {}]
-
-    putd "--- DPA: Adding trace support for aie stream(s): $aieStreams"
-
-    set fifoDepth         [dict_get_default $traceDict   FIFO_DEPTH      4096]
-    set profileStreams    [dict_get_default $traceDict   PROFILE_STREAMS false]
-    set traceMemoryIndex  [dict_get_default $traceDict   MEM_INDEX       0]
-    set firstStream       [get_bd_intf_pins [lindex $aieStreams 0]]
-    set aieBlock          [get_bd_cells -quiet -of $firstStream]
-    #
-    # Clock/Reset
-    # Current observation is that the clock and reset are the same for each stream/anchor
-    #
-    # Get master clock
-    set anchorValues [lindex $anchors_list 0]
-    set masterClock [dict get $anchorValues m_axi_aclk]
-    if {$masterClock == {}} {
-      return
-    }
-    putd "--- DPA: masterClock: $masterClock"
-
-    # Get reset
-    set masterReset  [dict get $anchorValues m_axi_aresetn]
-    
-    if {$masterReset == {}} {
-      send_msg_id "DPA-14" "WARNING" "Unable to find reset for AIE trace offload. This must be connected manually."
-      return
-    }
-    putd "--- DPA: masterReset: $masterReset"
-    
-    #
-    # Instantiate and connect IP
-    #
-    for { set s 0 } { $s < $numStreams } { incr s } {
-      set anchorInfo [lindex $anchors_list $s]
-
-      set currStream [lindex $aieStreams $s]
-
-      # Make sure this stream doesn't already have a slave
-      remove_all_slaves $currStream
-
-      # Add guidance result for this trace stream
-      set streamBytes [get_property -quiet CONFIG.TDATA_NUM_BYTES $currStream]
-      set streamBits [expr 8 * $streamBytes]
-      send_msg_id "DPA-143" "INFO" "AI Engine trace stream $s has a width of $streamBits bits."
-
-      # Default
-      set s2mmBitWidth 64
-      set dWidthConverterMBytes 8
-
-      # 128 bit trace stream: switch datamover to 128 bit
-      # 32/64/other trace streams: use 64 bit datamover
-      if {$streamBits == 128} {
-        set s2mmBitWidth 128
-        set dWidthConverterMBytes 16
-      }
-
-      set dmaName "dpa_aie_trace_s2mm_${s}"
-      set fifoName "dpa_aie_fifo_${s}"
-      set converterName "dpa_aie_conv_${s}"
-
-      # Initiate inteconnect of DPA block components
-      set dmaObject [connect_dpa_s2mm_fifo_dWidthConv $s $currStream $s2mmBitWidth $fifoDepth $dWidthConverterMBytes $masterClock $masterReset]
-      
-      set masterPinName "${dmaName}/m_axi_gmem"
-      putd "--- DPA: connecting to an anchor for streamIdx $s for masterPin: $masterPinName"
-      connect_bd_intf_net [get_bd_intf_pins $masterPinName] [get_bd_intf_pins [dict get $anchorInfo M_AXI]]
-
-      # Assign address
-      set slave [find_bd_objs -quiet -relation addressable_slave -thru_hier [get_bd_intf_pins "${dmaName}/m_axi_gmem"]]
-      set addrSeg [get_bd_addr_segs -quiet -of_objects $slave]
-      puts "--- DPA: Assigning address to slave $slave with segments: $addrSeg"
-      assign_bd_address -quiet $addrSeg
-
-      set local_axilite_pin [get_bd_intf_pins "${dmaName}/s_axi_control"]
-      set pinObj [get_bd_intf_pins $local_axilite_pin]
-      connect_bd_intf_net $pinObj [get_bd_intf_pins [dict get $anchorInfo S_AXI]]
-      set addrSeg [get_bd_addr_segs -quiet -of_objects [get_bd_intf_pins -quiet $local_axilite_pin]]
-      assign_bd_address -quiet $addrSeg
-
-      # Bit 0:0 aie datamover
-      set ipProp 1
-      # Bits 2:1 : (00 -> 32 bits, 01 -> 64 bits, 10 -> 128bits)
-      if {$s2mmBitWidth == 64} {
-        set ipProp 3
-      } elseif {$s2mmBitWidth == 128} {
-        set ipProp 5
-      }
-      # Bits 7:3 : Memory index
-      set ipProp [expr {($traceMemoryIndex == {}) ? $ipProp : (($traceMemoryIndex << 3) + $ipProp) } ]
-
-      set_property HDL_ATTRIBUTE.DPA_IP            true     $dmaObject
-      set_property HDL_ATTRIBUTE.DPA_IP_PROPERTIES $ipProp  $dmaObject
-      set_property HDL_ATTRIBUTE.DPA_IP_FULLNAME   $dmaName $dmaObject
-    }
-
-    add_aie_debug_profile_stream_monitors_using_anchors $dpa_opts $profileStreams $aieStreams $masterClock $masterReset
-
-  }; # end add_plio_aie_trace_infrastructure_using_anchors
- 
-  ###########################################################
-  # connect_dpa_s2mm_fifo_dWidthConv
-  #  Description:
-  #    Interconnects all the DPA IP blocks
-  #  Arguments:
-  #    s                       Trace stream index
-  #    currStream              AIE Trace stream name
-  #    s2mmBitWidth            S2MM bit bandwidth
-  #    fifoDepth               Fifo size
-  #    dWidthConverterMBytes   Data width converter data size
-  #    masterClock             master clock name
-  #    masterReset             master reset name
-  #
-  #  Return Value:
-  #    dmaObject              DPA trace S2MM datamover object
-  ###########################################################
-  proc connect_dpa_s2mm_fifo_dWidthConv {s currStream s2mmBitWidth fifoDepth dWidthConverterMBytes masterClock masterReset} {
-    variable ::dpa::aie_trace_s2mm_name
-    
-    set dmaName "dpa_aie_trace_s2mm_${s}"
-    set fifoName "dpa_aie_fifo_${s}"
-    set converterName "dpa_aie_conv_${s}"
-
-    putd "--- DPA: streamIdx: $s , currStream: $currStream, s2mmBitWidth: $s2mmBitWidth , fifoDepth: $fifoDepth, \
-          dWidthConverterMBytes: $dWidthConverterMBytes , masterClock: $masterClock , masterReset: $masterReset"
-    putd "--- DPA: dmaName: $dmaName, fifoName: $fifoName, converterName: $converterName"
-
-    # Instantiate trace S2MM HLS kernel
-    # set dmaName "dpa_aie_trace_s2mm_${s}"
-    set dmaObject [create_bd_cell -type ip -vlnv $aie_trace_s2mm_name $dmaName]
-    set_property CONFIG.IO_DATAWIDTH $s2mmBitWidth $dmaObject
-
-    # Insert AXI Stream data FIFO
-    # set fifoName "dpa_aie_fifo_${s}"
-    set fifoObj [create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo $fifoName]
-    set_property CONFIG.FIFO_MODE           2 $fifoObj
-    set_property CONFIG.FIFO_DEPTH $fifoDepth $fifoObj
-
-    # In case it's needed, insert data width converter as data mover only supports 64 bits
-    # set converterName "dpa_aie_conv_${s}"
-    set converterObj [create_bd_cell -type ip -vlnv xilinx.com:ip:axis_dwidth_converter $converterName]
-    set_property CONFIG.M_TDATA_NUM_BYTES $dWidthConverterMBytes $converterObj
-
-    connect_bd_net $masterClock [get_bd_pins "${fifoName}/s_axis_aclk"]
-    connect_bd_net $masterClock [get_bd_pins "${converterName}/aclk"]
-    connect_bd_net $masterClock [get_bd_pins "${dmaName}/ap_clk"]
-
-    if {$masterReset != {}} {
-      connect_bd_net $masterReset [get_bd_pins "${fifoName}/s_axis_aresetn"]
-      connect_bd_net $masterReset [get_bd_pins "${converterName}/aresetn"]
-      connect_bd_net $masterReset [get_bd_pins "${dmaName}/ap_rst_n"]
-    }
-
-    # Connections: AIE -> FIFO -> Width Converter -> Data Mover -> NoC -> DDR
-    connect_bd_intf_net $currStream [get_bd_intf_pins "${fifoName}/S_AXIS"]
-    connect_bd_intf_net [get_bd_intf_pins "${fifoName}/M_AXIS"] [get_bd_intf_pins "${converterName}/S_AXIS"] 
-    connect_bd_intf_net [get_bd_intf_pins "${converterName}/M_AXIS"] [get_bd_intf_pins "${dmaName}/S_AXIS"]
-    
-    return $dmaObject
-  }; #end connect_dpa_s2mm_fifo_dWidthConv
-
-  ###########################################################
-  # add_aie_trace_infrastructure_main
+  # add_aie_trace_infrastructure
   #  Description:
   #    Add AIE trace infrastucture
   #  Arguments:
@@ -3414,8 +3201,12 @@ namespace eval dpa {
   #  Return Value:
   #    None
   ###########################################################
-  proc add_aie_trace_infrastructure_main {dpa_opts} {
-    variable ::dpa::anchors_list
+  proc add_aie_trace_infrastructure {dpa_opts} {
+    variable ::dpa::aiengine_flow
+    variable ::dpa::aie_trace_s2mm_name
+    variable ::dpa::axilite_pin_list
+    variable ::dpa::noc_mult_factor
+
     # AIE trace not supported yet in HW emulation flows
     set settingDict [dict_get_default $dpa_opts    SETTINGS {}]
     set is_hw_emu   [dict_get_default $settingDict HW_EMU   false]
@@ -3427,16 +3218,13 @@ namespace eval dpa {
     # NOTE: If we want to use the same memory type (e.g., DDR, LPDDR) as PL trace,
     #       then grab the trace* values from the TRACE_OFFLOAD dict.
     set traceDict         [dict_get_default $dpa_opts    AIE_TRACE       {}]
-    set traceOffload      [dict_get_default $traceDict   TRACE_OFFLOAD   {}]
-    set aieStreams        {}
 
-    # Initial setup to fetch anchors and extract anchors to populate anchors_list.
-    set aieStreams [get_and_extract_plio_trace_anchors]
-    if {$aieStreams == {}} {
-      # Only grab AIE trace streams with estimated BW > 0
-      # NOTE: unused streams have BW = 0 (e.g., if the user specifies # of streams > what's needed)
-      set aieStreams [get_bd_intf_pins -quiet -hier -filter {(HDL_ATTRIBUTE.DPA_AIE_TRACE == true) && (HDL_ATTRIBUTE.DPA_AIE_TRACE_BANDWIDTH > 0)}]
-    }
+    set traceOffload      [dict_get_default $traceDict   TRACE_OFFLOAD   {}]
+
+    # Only grab AIE trace streams with estimated BW > 0
+    # NOTE: unused streams have BW = 0 (e.g., if the user specifies # of streams > what's needed)
+    set aieStreams [get_bd_intf_pins -quiet -hier -filter {(HDL_ATTRIBUTE.DPA_AIE_TRACE == true) && (HDL_ATTRIBUTE.DPA_AIE_TRACE_BANDWIDTH > 0)}]
+
     set numStreams [llength $aieStreams]
     if {$numStreams == 0} {
       if {($traceOffload == "HSDP") || ($traceOffload == "hsdp")} {
@@ -3447,9 +3235,10 @@ namespace eval dpa {
       #verify_aie_trace_gmio
       return
     }
-
-    # Compare total number of streams to number with BW > 0 (Applicable only to without anchors flow)
-    if {[is_drcv AIE-TRACE-05] && $anchors_list == {}} {
+    putd "--- DPA: Adding trace support for $numStreams stream(s): $aieStreams"
+    
+    # Compare total number of streams to number with BW > 0
+    if {[is_drcv AIE-TRACE-05]} {
       set allStreams [get_bd_intf_pins -quiet -hier -filter {HDL_ATTRIBUTE.DPA_AIE_TRACE == true}]
       set numAllStreams [llength $allStreams]
       if {$numStreams < $numAllStreams} {
@@ -3459,46 +3248,13 @@ namespace eval dpa {
         ::guidance::create_affirmation AIE-TRACE-05 -d $numAllStreams
       }
     }
-
-    putd "--- DPA: Adding AIE trace support for $numStreams stream(s): $aieStreams"
-    putd "--- DPA: traceOffload: $traceOffload"
     if {($traceOffload == "HSDP") || ($traceOffload == "hsdp")} {
-      # Execution of hsdp AIE Trace V2
       add_hsdp_aie_trace_infrastructure_v2 $numStreams $aieStreams $dpa_opts
       return
     }
 
-    if {$anchors_list != {}} {
-      # Excecution of PLIO AIE Trace using anchors
-      add_plio_aie_trace_infrastructure_using_anchors $dpa_opts $aieStreams
-      return
-    }
-
-    # Execution of PLIO AIE Trace without anchors
-    add_plio_aie_trace_infrastructure_without_anchors $dpa_opts $traceDict $aieStreams
-
-  }; # end add_aie_trace_infrastructure_main
-
-  ###########################################################
-  # add_plio_aie_trace_infrastructure_without_anchors
-  #  Description:
-  #    Add AIE trace infrastucture for PLIO interface without
-  #    using anchors
-  #  Arguments:
-  #    dpa_opts    Dictionary containing options for automation
-  #    traceDict   Dictionary containing options for AIE_TRACE
-  #    aieStreams List containing all aie streams for AIE
-  #  Return Value:
-  #    None
-  ###########################################################
-  proc add_plio_aie_trace_infrastructure_without_anchors {dpa_opts traceDict aieStreams} {
-    variable ::dpa::aiengine_flow
-    variable ::dpa::aie_trace_s2mm_name
-    variable ::dpa::axilite_pin_list
-    variable ::dpa::noc_mult_factor
-    
-    set traceOffload      [dict_get_default $traceDict   TRACE_OFFLOAD   {}]
     set fifoDepth         [dict_get_default $traceDict   FIFO_DEPTH      4096]
+    set packetRate        [dict_get_default $traceDict   PACKET_RATE     0]
     set clockSelect       [dict_get_default $traceDict   CLK_SELECT      "default"]
     set profileStreams    [dict_get_default $traceDict   PROFILE_STREAMS false]
     set traceMemory       [dict_get_default $traceDict   MEM_SPACE       "DDR"]
@@ -3506,18 +3262,17 @@ namespace eval dpa {
     set traceMemoryIndex  [dict_get_default $traceDict   MEM_INDEX       0]
     set traceOffloadSlave [get_trace_offload_slave $traceDict]
 
-    set numStreams        [llength $aieStreams]
     set firstStream       [get_bd_intf_pins [lindex $aieStreams 0]]
     set aieBlock          [get_bd_cells -quiet -of $firstStream]
 
-    puts "--- DPA: Warning: PLIO anchors are not found, adding AIE trace infrastructure without anchors."
+    set streamBytes       [get_property -quiet CONFIG.TDATA_NUM_BYTES $firstStream]
+    if {$streamBytes == {}} {set streamBytes 4}
+
     #
     # Clock/Reset
     #
-    # Get master clock
     set masterClock [get_aie_trace_clock $clockSelect]
     if {$masterClock == {}} {
-      putd "--- DPA: Error masterClock not set, exiting."
       return
     }
 
@@ -3532,7 +3287,7 @@ namespace eval dpa {
         set resetCells  [get_bd_cells -quiet -of $clkSinks -filter {VLNV=~"*proc_sys_reset*"}]
         set masterReset [lindex [get_bd_pins -quiet -hier -of $resetCells -filter {CONFIG.TYPE == PERIPHERAL && CONFIG.POLARITY == ACTIVE_LOW}] 0]
       }
-
+      
       if {$masterReset == {}} {
         send_msg_id "DPA-14" "WARNING" "Unable to find reset for AIE trace offload. This must be connected manually."
         return
@@ -3548,7 +3303,7 @@ namespace eval dpa {
     connect_bd_net $masterClock [get_bd_pins "${aieBlock}/aclk${numClocks}"]
     # Connect reset
     connect_bd_net $masterReset [get_bd_pins "${aieBlock}/aresetn${numClocks}"]
-
+    
     puts "--- DPA: masterClock = $masterClock, masterReset = $masterReset"
     
     #
@@ -3589,11 +3344,37 @@ namespace eval dpa {
         set dWidthConverterMBytes 16
       }
 
+      # Instantiate trace S2MM HLS kernel
       set dmaName "dpa_aie_trace_s2mm_${s}"
+      set dmaObject [create_bd_cell -type ip -vlnv $aie_trace_s2mm_name $dmaName]
+      set_property CONFIG.IO_DATAWIDTH $s2mmBitWidth $dmaObject
+
+      # Insert AXI Stream data FIFO
       set fifoName "dpa_aie_fifo_${s}"
+      set fifoObj [create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo $fifoName]
+      set_property CONFIG.FIFO_MODE           2 $fifoObj
+      set_property CONFIG.FIFO_DEPTH $fifoDepth $fifoObj
+
+      # In case it's needed, insert data width converter as data mover only supports 64 bits
       set converterName "dpa_aie_conv_${s}"
-      set dmaObject [connect_dpa_s2mm_fifo_dWidthConv $s $currStream $s2mmBitWidth $fifoDepth $dWidthConverterMBytes $masterClock $masterReset]
- 
+      set converterObj [create_bd_cell -type ip -vlnv xilinx.com:ip:axis_dwidth_converter $converterName]
+      set_property CONFIG.M_TDATA_NUM_BYTES $dWidthConverterMBytes $converterObj
+
+      connect_bd_net $masterClock [get_bd_pins "${fifoName}/s_axis_aclk"]
+      connect_bd_net $masterClock [get_bd_pins "${converterName}/aclk"]
+      connect_bd_net $masterClock [get_bd_pins "${dmaName}/ap_clk"]
+
+      if {$masterReset != {}} {
+        connect_bd_net $masterReset [get_bd_pins "${fifoName}/s_axis_aresetn"]
+        connect_bd_net $masterReset [get_bd_pins "${converterName}/aresetn"]
+        connect_bd_net $masterReset [get_bd_pins "${dmaName}/ap_rst_n"]
+      }
+
+      # Connections: AIE -> FIFO -> Width Converter -> Data Mover -> NoC -> DDR
+      connect_bd_intf_net $currStream [get_bd_intf_pins "${fifoName}/S_AXIS"]
+      connect_bd_intf_net [get_bd_intf_pins "${fifoName}/M_AXIS"] [get_bd_intf_pins "${converterName}/S_AXIS"] 
+      connect_bd_intf_net [get_bd_intf_pins "${converterName}/M_AXIS"] [get_bd_intf_pins "${dmaName}/S_AXIS"]
+      
       # Connect data mover to trace slave
       connect_trace_offload_slave $traceOffloadSlave $traceMemoryType $traceMemory "${dmaName}/m_axi_gmem" \
           $masterClock $masterReset $requestedQos $s
@@ -3624,104 +3405,37 @@ namespace eval dpa {
       set_property HDL_ATTRIBUTE.DPA_IP_FULLNAME   $dmaName $dmaObject
     }
 
-    add_aie_debug_profile_stream_monitors $dpa_opts $profileStreams $aieStreams $masterClock $masterReset
-  }; # end add_plio_aie_trace_infrastructure_without_anchors
-
-  ###########################################################
-  # add_aie_debug_profile_stream_monitors
-  #  Description:
-  #    Enable profile stream monitors for debugging using
-  #    profileStreams option
-  #  Arguments:
-  #    dpa_opts         Dictionary containing options for automation
-  #    profileStreams   Flag to enable the debug profile streams
-  #    aieStreams       List containing all aie streams for AIE
-  #    masterClock      Master clock for the design
-  #    masterReset      Master reset for the design
-  #  Return Value:
-  #    None
-  ###########################################################
-  proc add_aie_debug_profile_stream_monitors {dpa_opts profileStreams aieStreams masterClock masterReset} {
     #
     # Add stream monitors
     #
     # For debug purposes only
-    if {!$profileStreams} {
-      return
-    }
+    if {$profileStreams} {
+      #set allStreams [get_bd_intf_pins -quiet -of $aieBlock -filter {MODE == Master}]
+      set allStreams $aieStreams
 
-    putd "--- DPA: Enabling debug profile aie stream monitors"
-    #set allStreams [get_bd_intf_pins -quiet -of $aieBlock -filter {MODE == Master}]
-    set allStreams $aieStreams
+      for { set s 0 } { $s < [llength $allStreams] } { incr s } {
+        set currStream [lindex $allStreams $s]
 
-    for { set s 0 } { $s < [llength $allStreams] } { incr s } {
-      set currStream [lindex $allStreams $s]
-
-      # Determine clock and reset
-      set isTrace [get_property -quiet HDL_ATTRIBUTE.DPA_AIE_TRACE $currStream]
-      if {$isTrace != {}} {
-        set currClock $masterClock
-        set currReset $masterReset
-      } else {
-        set currSlave [find_bd_objs -relation connected_to -thru_hier $currStream]
-        set currClock [bd::clkrst::get_sink_clk $currSlave]
-        set currReset [bd::clkrst::get_sink_rst $currClock]  
-      }
-      
-      set currDict [dict create TYPE exec DETAIL counters CLK_SRC $currClock RST_SRC $currReset]
-      set monName "dpa_aie_stream_mon${s}"
-      add_axi_stream_monitor $currStream $currDict {} {} $monName $dpa_opts
+        # Determine clock and reset
+        set isTrace [get_property -quiet HDL_ATTRIBUTE.DPA_AIE_TRACE $currStream]
+        if {$isTrace != {}} {
+          set currClock $masterClock
+          set currReset $masterReset
+        } else {
+          set currSlave [find_bd_objs -relation connected_to -thru_hier $currStream]
+          set currClock [bd::clkrst::get_sink_clk $currSlave]
+          set currReset [bd::clkrst::get_sink_rst $currClock]  
+        }
+        
+        set currDict [dict create TYPE exec DETAIL counters CLK_SRC $currClock RST_SRC $currReset]
+        set monName "dpa_aie_stream_mon${s}"
+        add_axi_stream_monitor $currStream $currDict {} {} $monName $dpa_opts
       }  
-  }; # end add_aie_debug_profile_stream_monitors
-
-  ###########################################################
-  # add_aie_debug_profile_stream_monitors_using_anchors
-  #  Description:
-  #    Enable profile stream monitors for debugging using
-  #    profileStreams option
-  #  Arguments:
-  #    dpa_opts         Dictionary containing options for automation
-  #    profileStreams   Flag to enable the debug profile streams
-  #    aieStreams       List containing all aie streams for AIE
-  #    masterClock      Master clock for the design
-  #    masterReset      Master reset for the design
-  #  Return Value:
-  #    None
-  ###########################################################
-  proc add_aie_debug_profile_stream_monitors_using_anchors {dpa_opts profileStreams aieStreams masterClock masterReset} {
-    #
-    # Add stream monitors
-    #
-    # For debug purposes only
-    variable ::dpa::anchors_list
-    
-    if {!$profileStreams} {
-      return
     }
 
-    putd "--- DPA: Enabling debug profile aie stream monitors"
-    set allStreams $aieStreams
-
-    for { set s 0 } { $s < [llength $allStreams] } { incr s } {
-      set currStream [lindex $allStreams $s]
-
-      # Determine clock and reset
-      if {$anchors_list != {}} {
-        set currClock $masterClock
-        set currReset $masterReset
-      } else {
-        set currSlave [find_bd_objs -relation connected_to -thru_hier $currStream]
-        set currClock [bd::clkrst::get_sink_clk $currSlave]
-        set currReset [bd::clkrst::get_sink_rst $currClock]  
-      }
-      
-      set currDict [dict create TYPE exec DETAIL counters CLK_SRC $currClock RST_SRC $currReset]
-      set monName "dpa_aie_stream_mon${s}"
-      add_axi_stream_monitor $currStream $currDict {} {} $monName $dpa_opts
-    }  
-  }; # end add_aie_debug_profile_stream_monitors_using_anchors
-
-
+    set aiengine_flow true
+  }; # end add_aie_trace_infrastructure
+  
   #################################################################################################
   ######                          Step 4 - Connect AXI-Lite Control                           #####
   #################################################################################################
@@ -3828,7 +3542,7 @@ namespace eval dpa {
   proc add_control_infrastructure {dpa_opts} {
     variable ::dpa::axilite_pin_list
     variable ::dpa::axilite_pin_slr_list
-
+    
     #putd "axilite_pin_list = $axilite_pin_list"
     if {$axilite_pin_list == {}} {
       return
@@ -3934,7 +3648,7 @@ namespace eval dpa {
         send_msg_id "101-1" "CRITICAL WARNING" "AXI Interconnect cannot support $numMasters masters. Limiting to 64."
         set numMasters 64
       }
-
+      
       set interconName "dpa_ctrl_interconnect"
       set interconObject [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect $interconName]
       set_property CONFIG.NUM_SI 1 $interconObject
@@ -4208,6 +3922,7 @@ namespace eval dpa {
     # Get FIFO depth (used in stream interconnect)
     set traceDict        [dict_get_default $dpa_opts  AIE_TRACE       {}]
     set fifoDepth        [dict_get_default $traceDict FIFO_DEPTH      4096]
+    set packetRate       [dict_get_default $traceDict PACKET_RATE     0]
     set clockSelect      [dict_get_default $traceDict CLK_SELECT      "default"]
     set profileStreams    [dict_get_default $traceDict   PROFILE_STREAMS false]
 
@@ -4252,7 +3967,11 @@ namespace eval dpa {
     putd "--- DPA: masterClock = $masterClock, masterReset = $masterReset"
     # Update CIPS to setup HSDP Aurora connection
     set cips_config [get_property CONFIG.PS_PMC_CONFIG [get_bd_cells /CIPS_0]]
+    set hsdp_config {AURORA_LINE_RATE_GPBS 10.0 GT_REFCLK_MHZ 156.25 PS_ENABLE_HSDP 0 PS_HSDP0_REFCLK 0 PS_HSDP1_REFCLK 0 PS_HSDP_EGRESS_TRAFFIC AURORA PS_HSDP_INGRESS_TRAFFIC AURORA PS_HSDP_MODE HSDP1 PS_HSDP_SAME_EGRESS_AS_INGRESS_TRAFFIC 1 PS_HSDP_SAME_INGRESS_EGRESS_TRAFFIC JTAG PS_USE_HSDP_PL 0}
+    set cips_config [dict merge $cips_config $hsdp_config]
     set_property CONFIG.PS_PMC_CONFIG $cips_config [get_bd_cells /CIPS_0]
+    make_bd_intf_pins_external  [get_bd_intf_pins CIPS_0/gt_refclk1]
+    make_bd_intf_pins_external  [get_bd_intf_pins CIPS_0/HSDP1_GT]
 
     set hsdp_trace_ip  [create_bd_cell -type ip -vlnv xilinx.com:ip:hsdp_trace:1.0 dpa_hsdp_trace_0]
     set_property -dict [ list \
@@ -4319,6 +4038,7 @@ namespace eval dpa {
     # Get FIFO depth (used in stream interconnect)
     set traceDict        [dict_get_default $dpa_opts  AIE_TRACE       {}]
     set fifoDepth        [dict_get_default $traceDict FIFO_DEPTH      4096]
+    set packetRate       [dict_get_default $traceDict PACKET_RATE     0]
     set clockSelect      [dict_get_default $traceDict CLK_SELECT      "default"]
     set profileStreams    [dict_get_default $traceDict   PROFILE_STREAMS false]
 
@@ -4368,11 +4088,12 @@ namespace eval dpa {
 
     putd "--- DPA: masterClock = $masterClock, masterReset = $masterReset"
     # Update CIPS to setup HSDP Aurora connection
-    set cips_bd_cells [get_bd_cells /CIPS_0 -quiet]
-    if {$cips_bd_cells != {}} {
-      set cips_config [get_property CONFIG.PS_PMC_CONFIG $cips_bd_cells]
-      set_property CONFIG.PS_PMC_CONFIG $cips_config [get_bd_cells /CIPS_0]
-    }
+    set cips_config [get_property CONFIG.PS_PMC_CONFIG [get_bd_cells /CIPS_0]]
+    set hsdp_config {AURORA_LINE_RATE_GPBS 10.0 GT_REFCLK_MHZ 156.25 PS_ENABLE_HSDP 0 PS_HSDP0_REFCLK 0 PS_HSDP1_REFCLK 0 PS_HSDP_EGRESS_TRAFFIC AURORA PS_HSDP_INGRESS_TRAFFIC AURORA PS_HSDP_MODE HSDP1 PS_HSDP_SAME_EGRESS_AS_INGRESS_TRAFFIC 1 PS_HSDP_SAME_INGRESS_EGRESS_TRAFFIC JTAG PS_USE_HSDP_PL 0}
+    set cips_config [dict merge $cips_config $hsdp_config]
+    set_property CONFIG.PS_PMC_CONFIG $cips_config [get_bd_cells /CIPS_0]
+    make_bd_intf_pins_external  [get_bd_intf_pins CIPS_0/gt_refclk1]
+    make_bd_intf_pins_external  [get_bd_intf_pins CIPS_0/HSDP1_GT]
 
 
     #set hsdp_trace_ip  [create_bd_cell -type ip -vlnv user.org:user:hsdp_trace_ip_v2:2.0 dpa_hsdp_trace2_0]
@@ -4447,7 +4168,11 @@ namespace eval dpa {
     putd "--- DPA: HSDP for PL masterClock = $masterClock, masterReset = $masterReset"
     # Update CIPS to setup HSDP Aurora connection
     set cips_config [get_property CONFIG.PS_PMC_CONFIG [get_bd_cells /CIPS_0]]
+    set hsdp_config {AURORA_LINE_RATE_GPBS 10.0 GT_REFCLK_MHZ 156.25 PS_ENABLE_HSDP 0 PS_HSDP0_REFCLK 0 PS_HSDP1_REFCLK 0 PS_HSDP_EGRESS_TRAFFIC AURORA PS_HSDP_INGRESS_TRAFFIC AURORA PS_HSDP_MODE HSDP1 PS_HSDP_SAME_EGRESS_AS_INGRESS_TRAFFIC 1 PS_HSDP_SAME_INGRESS_EGRESS_TRAFFIC JTAG PS_USE_HSDP_PL 0}
+    set cips_config [dict merge $cips_config $hsdp_config]
     set_property CONFIG.PS_PMC_CONFIG $cips_config [get_bd_cells /CIPS_0]
+    make_bd_intf_pins_external  [get_bd_intf_pins CIPS_0/gt_refclk1]
+    make_bd_intf_pins_external  [get_bd_intf_pins CIPS_0/HSDP1_GT]
 
     set hsdp_trace_ip  [create_bd_cell -type ip -vlnv xilinx.com:ip:hsdp_trace:2.0 dpa_hsdp_trace2_0]
 
@@ -4611,6 +4336,7 @@ namespace eval dpa {
     # Get FIFO depth (used in stream interconnect)
     set aietraceDict        [dict_get_default $dpa_opts  AIE_TRACE       {}]
     set aiefifoDepth        [dict_get_default $aietraceDict FIFO_DEPTH      4096]
+    set aiepacketRate       [dict_get_default $aietraceDict PACKET_RATE     0]
     set aieclockSelect      [dict_get_default $aietraceDict CLK_SELECT      "default"]
     set aieprofileStreams    [dict_get_default $aietraceDict   PROFILE_STREAMS false]
 
@@ -4661,7 +4387,11 @@ namespace eval dpa {
     putd "--- DPA: AIE masterClock = $aiemasterClock, masterReset = $aiemasterReset"
     # Update CIPS to setup HSDP Aurora connection
     set cips_config [get_property CONFIG.PS_PMC_CONFIG [get_bd_cells /CIPS_0]]
+    set hsdp_config {AURORA_LINE_RATE_GPBS 10.0 GT_REFCLK_MHZ 156.25 PS_ENABLE_HSDP 0 PS_HSDP0_REFCLK 0 PS_HSDP1_REFCLK 0 PS_HSDP_EGRESS_TRAFFIC AURORA PS_HSDP_INGRESS_TRAFFIC AURORA PS_HSDP_MODE HSDP1 PS_HSDP_SAME_EGRESS_AS_INGRESS_TRAFFIC 1 PS_HSDP_SAME_INGRESS_EGRESS_TRAFFIC JTAG PS_USE_HSDP_PL 0}
+    set cips_config [dict merge $cips_config $hsdp_config]
     set_property CONFIG.PS_PMC_CONFIG $cips_config [get_bd_cells /CIPS_0]
+    make_bd_intf_pins_external  [get_bd_intf_pins CIPS_0/gt_refclk1]
+    make_bd_intf_pins_external  [get_bd_intf_pins CIPS_0/HSDP1_GT]
 
     ## ADD One HSDP IP for AIE + PL
     set hsdp_trace_ip  [create_bd_cell -type ip -vlnv xilinx.com:ip:hsdp_trace:2.0 dpa_hsdp_trace2_0]
@@ -4722,45 +4452,7 @@ namespace eval dpa {
     putd "--- DPA: End HSDP additions for AIE + PL Trace"
     return 1
 
-  }; # end add_hsdp_aie_pl_trace_infrastructure
-
-  ##################################################################
-  #  get_hsdp_config 
-  #  Description:
-  #    Query and return if HSDP is enables for PL and AIE
-  #  Arguments:
-  #    dpa_opts     Dictionary containing DPA config
-  #  Return Value:
-  #    List[is_pl_hsdp, is_aie_hsdp]  true if it is available,
-  #                                   false otherwise
-  ##################################################################
-  proc get_hsdp_config {dpa_opts} {
-    set is_pl_hsdp false
-    set is_aie_hsdp false
-
-    set offloadDict [dict_get_default $dpa_opts TRACE_OFFLOAD {}]
-    set traceMemory [dict_get_default $offloadDict  MEM_SPACE     "FIFO"]
-    if {($traceMemory == "HSDP") || ($traceMemory == "hsdp")} {
-      puts "--- STEP :: PL trace memory HSDP"
-      set is_pl_hsdp true
-    }
-
-    set aietraceDict         [dict_get_default $dpa_opts    AIE_TRACE       {}]
-    set aietraceOffload      [dict_get_default $aietraceDict   TRACE_OFFLOAD   {}]
-    if {($aietraceOffload == "HSDP") || ($aietraceOffload == "hsdp")} {
-      # Only grab AIE trace streams with estimated BW > 0
-      # NOTE: unused streams have BW = 0 (e.g., if the user specifies # of streams > what's needed)
-      set aieStreams [get_bd_intf_pins -quiet -hier -filter {(HDL_ATTRIBUTE.DPA_AIE_TRACE == true) && (HDL_ATTRIBUTE.DPA_AIE_TRACE_BANDWIDTH > 0)}]
-
-      set numStreams [llength $aieStreams]
-      if { $numStreams != 0 } {
-        puts "--- STEP :: AIE trace memory HSDP"
-        set is_aie_hsdp true
-      }
-    }
-
-    return [list $is_pl_hsdp $is_aie_hsdp]
-
-  }; # end get_hsdp_config
+  }; # end add_aie_pl_trace_infrastructure
 
 }; # end namespace
+

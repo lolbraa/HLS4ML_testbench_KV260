@@ -1,8 +1,8 @@
 -- ==============================================================
--- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
--- Tool Version Limit: 2025.11
+-- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+-- Tool Version Limit: 2023.10
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- 
 -- ==============================================================
 
@@ -37,9 +37,6 @@ port (
 end entity myproject_axi_master_flow_control_loop_pipe_sequential_init;
 
 architecture behav of myproject_axi_master_flow_control_loop_pipe_sequential_init is
-attribute DowngradeIPIdentifiedWarnings : STRING;
-attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
-
     signal ap_done_cache : std_logic := '0';
     signal ap_loop_init_int : std_logic := '1';
 begin

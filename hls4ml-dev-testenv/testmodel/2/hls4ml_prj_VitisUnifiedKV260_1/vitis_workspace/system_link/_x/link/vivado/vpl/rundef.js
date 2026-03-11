@@ -2,7 +2,7 @@
 // vpl(TM)
 // rundef.js: a vpl-generated Runs Script for WSH 5.1/5.6
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 //
 
 echo "This script was generated under a different operating system."
@@ -13,9 +13,9 @@ var WshShell = new ActiveXObject( "WScript.Shell" );
 var ProcEnv = WshShell.Environment( "Process" );
 var PathVal = ProcEnv("PATH");
 if ( PathVal.length == 0 ) {
-  PathVal = "/usr/lib/AMD/2025.2/Vitis/bin:/usr/lib/AMD/2025.2/Vitis/bin;/usr/lib/AMD/2025.2/Vitis/bin;";
+  PathVal = "/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin;/tools/Xilinx/Vitis/2023.2/bin;";
 } else {
-  PathVal = "/usr/lib/AMD/2025.2/Vitis/bin:/usr/lib/AMD/2025.2/Vitis/bin;/usr/lib/AMD/2025.2/Vitis/bin;" + PathVal;
+  PathVal = "/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/bin;/tools/Xilinx/Vitis/2023.2/bin;" + PathVal;
 }
 
 ProcEnv("PATH") = PathVal;

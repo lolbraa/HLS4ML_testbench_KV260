@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'store_result_float_array_ap_fixed_16_6_5_3_0_5u_s'" level="0">
-<item name = "Date">Wed Mar 11 12:35:12 2026
+<item name = "Date">Wed Mar 11 13:13:02 2026
 </item>
-<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>

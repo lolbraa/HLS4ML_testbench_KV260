@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="17">
   <syndb class_id="0" tracking_level="0" version="0">
     <userIPLatency>-1</userIPLatency>
-    <userIPName></userIPName>
+    <userIPName/>
     <cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
       <name>softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s</name>
       <module_structure>Sequential</module_structure>
@@ -17,25 +17,25 @@
               <type>1</type>
               <id>1</id>
               <name>layer4_out</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo class_id="6" tracking_level="0" version="0">
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName>data</originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
               <coreName>FIFO_SRL</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1819096179</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
           </Value>
@@ -53,25 +53,25 @@
               <type>1</type>
               <id>4</id>
               <name>stream_out0_layer5_out</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
               <coreName>FIFO</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1600941364</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
           </Value>
@@ -93,39 +93,39 @@
               <type>0</type>
               <id>10</id>
               <name>layer4_out_read</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>198</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>198</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>fifo</opType>
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>80</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>81</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
           </Value>
@@ -150,39 +150,39 @@
               <type>0</type>
               <id>11</id>
               <name>trunc_ln198</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>198</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>198</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln198_fu_292_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1279799154</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -206,39 +206,39 @@
               <type>0</type>
               <id>12</id>
               <name>trunc_ln198_4</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>198</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>198</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln198_4_fu_296_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1279799154</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -265,39 +265,39 @@
               <type>0</type>
               <id>13</id>
               <name>trunc_ln198_5</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>198</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>198</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln198_5_fu_306_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1919904869</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -324,39 +324,39 @@
               <type>0</type>
               <id>14</id>
               <name>trunc_ln198_6</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>198</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>198</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln198_6_fu_316_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1211069039</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -383,39 +383,39 @@
               <type>0</type>
               <id>15</id>
               <name>trunc_ln198_7</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>198</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>198</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln198_7_reg_719</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1211069039</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -442,8 +442,8 @@
               <type>0</type>
               <id>16</id>
               <name>icmp_ln66</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -451,58 +451,58 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>44</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>icmp_ln66_fu_336_p2</rtlName>
               <control>auto</control>
-              <opType>setlt</opType>
+              <opType>icmp</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -527,8 +527,8 @@
               <type>0</type>
               <id>17</id>
               <name>xor_ln66</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -536,49 +536,49 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>44</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>xor_ln66_fu_342_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
@@ -587,7 +587,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>74</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -612,8 +612,8 @@
               <type>0</type>
               <id>18</id>
               <name>select_ln66</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -621,49 +621,49 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>44</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>select_ln66_fu_348_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -672,7 +672,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -698,8 +698,8 @@
               <type>0</type>
               <id>19</id>
               <name>icmp_ln66_1</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -707,58 +707,58 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>44</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>icmp_ln66_1_fu_356_p2</rtlName>
               <control>auto</control>
-              <opType>setlt</opType>
+              <opType>icmp</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -783,8 +783,8 @@
               <type>0</type>
               <id>20</id>
               <name>xor_ln66_1</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -792,49 +792,49 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>44</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>xor_ln66_1_fu_362_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
@@ -843,7 +843,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>74</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -868,8 +868,8 @@
               <type>0</type>
               <id>21</id>
               <name>select_ln66_1</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -877,49 +877,49 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>44</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>select_ln66_1_fu_368_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -928,7 +928,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -954,8 +954,8 @@
               <type>0</type>
               <id>22</id>
               <name>icmp_ln66_2</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -963,51 +963,51 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>4</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>icmp_ln66_2_fu_376_p2</rtlName>
               <control>auto</control>
-              <opType>setlt</opType>
+              <opType>icmp</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1032,8 +1032,8 @@
               <type>0</type>
               <id>23</id>
               <name>xor_ln66_2</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -1041,42 +1041,42 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>4</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>xor_ln66_2_fu_426_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
@@ -1085,7 +1085,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>74</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1110,8 +1110,8 @@
               <type>0</type>
               <id>24</id>
               <name>select_ln66_2</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -1119,42 +1119,42 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>4</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>select_ln66_2_fu_431_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -1163,7 +1163,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -1189,8 +1189,8 @@
               <type>0</type>
               <id>25</id>
               <name>icmp_ln66_3</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -1198,44 +1198,44 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>3</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>icmp_ln66_3_fu_437_p2</rtlName>
               <control>auto</control>
-              <opType>setlt</opType>
+              <opType>icmp</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1260,8 +1260,8 @@
               <type>0</type>
               <id>26</id>
               <name>xor_ln66_3</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -1269,35 +1269,35 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>3</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>xor_ln66_3_fu_442_p2</rtlName>
               <control>auto</control>
               <opType>xor</opType>
@@ -1306,7 +1306,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>74</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1331,8 +1331,8 @@
               <type>0</type>
               <id>27</id>
               <name>trunc_ln66</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -1340,44 +1340,44 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>3</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln66_fu_448_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>27</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1401,8 +1401,8 @@
               <type>0</type>
               <id>28</id>
               <name>tmp_i</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -1410,44 +1410,44 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>3</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>tmp_i_reg_739</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3394280878</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1474,8 +1474,8 @@
               <type>0</type>
               <id>29</id>
               <name>select_ln66_3</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>66</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -1483,35 +1483,35 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>3</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>208</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>66</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_max&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>select_ln66_3_fu_452_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -1520,7 +1520,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1546,39 +1546,39 @@
               <type>0</type>
               <id>30</id>
               <name>trunc_ln213</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln213_fu_392_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3168110296</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1601,32 +1601,32 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>x</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>d_xi_xmax</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>x</originalName>
-              <rtlName>x_fu_459_p2</rtlName>
+              <originalName>d_xi_xmax</originalName>
+              <rtlName>d_xi_xmax_fu_459_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -1634,7 +1634,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>1</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1659,39 +1659,39 @@
               <type>0</type>
               <id>32</id>
               <name>trunc_ln213_2_i</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln213_2_i_reg_750</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3168114408</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1717,32 +1717,32 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>x_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>d_xi_xmax_5</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>x</originalName>
-              <rtlName>x_1_fu_464_p2</rtlName>
+              <originalName>d_xi_xmax</originalName>
+              <rtlName>d_xi_xmax_5_fu_464_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -1750,7 +1750,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>1</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1775,39 +1775,39 @@
               <type>0</type>
               <id>34</id>
               <name>trunc_ln213_3_i</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln213_3_i_reg_755</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3168119160</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1833,32 +1833,32 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>x_2</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>d_xi_xmax_6</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>x</originalName>
-              <rtlName>x_2_fu_469_p2</rtlName>
+              <originalName>d_xi_xmax</originalName>
+              <rtlName>d_xi_xmax_6_fu_469_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -1866,7 +1866,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>1</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1891,39 +1891,39 @@
               <type>0</type>
               <id>36</id>
               <name>trunc_ln213_4_i</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln213_4_i_reg_760</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>0</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -1949,32 +1949,32 @@
             <Obj>
               <type>0</type>
               <id>37</id>
-              <name>x_3</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>d_xi_xmax_7</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>x</originalName>
-              <rtlName>x_3_fu_474_p2</rtlName>
+              <originalName>d_xi_xmax</originalName>
+              <rtlName>d_xi_xmax_7_fu_474_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -1982,7 +1982,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>1</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -2006,32 +2006,32 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>x_4</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>d_xi_xmax_8</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>213</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>213</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>x</originalName>
-              <rtlName>x_4_fu_479_p2</rtlName>
+              <originalName>d_xi_xmax</originalName>
+              <rtlName>d_xi_xmax_8_fu_479_p2</rtlName>
               <control>auto</control>
               <opType>sub</opType>
               <implIndex>fabric</implIndex>
@@ -2039,7 +2039,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>1</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>15</bitwidth>
           </Value>
@@ -2063,47 +2063,47 @@
             <Obj>
               <type>0</type>
               <id>39</id>
-              <name>tmp_i_81</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>tmp_i_75</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>145</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>145</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>tmp_i_81_fu_484_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName>tmp_i_75_fu_484_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2130,39 +2130,39 @@
               <type>0</type>
               <id>40</id>
               <name>zext_ln223</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln223_fu_494_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>0</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2186,39 +2186,39 @@
               <type>0</type>
               <id>41</id>
               <name>exp_table_addr</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>92</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2243,40 +2243,40 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>a</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>exp_table_load</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>a</originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>rom</opType>
               <implIndex>auto</implIndex>
               <coreName>ROM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>100</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>101</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -2300,46 +2300,46 @@
               <type>0</type>
               <id>43</id>
               <name>zext_ln141</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>141</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>141</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln141_fu_559_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>779314286</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -2362,47 +2362,47 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>tmp_23_i</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>tmp_28_i</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>145</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>145</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>tmp_23_i_fu_499_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName>tmp_28_i_fu_499_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1668641396</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2429,39 +2429,39 @@
               <type>0</type>
               <id>45</id>
               <name>zext_ln223_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln223_1_fu_509_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1869098791</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2485,39 +2485,39 @@
               <type>0</type>
               <id>46</id>
               <name>exp_table_addr_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1667590767</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2542,40 +2542,40 @@
             <Obj>
               <type>0</type>
               <id>47</id>
-              <name>b</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>exp_table_load_1</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>b</originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>rom</opType>
               <implIndex>auto</implIndex>
               <coreName>ROM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>100</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>101</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -2599,46 +2599,46 @@
               <type>0</type>
               <id>48</id>
               <name>zext_ln141_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>141</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>141</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln141_1_fu_563_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>791818092</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -2661,47 +2661,47 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>tmp_24_i</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>tmp_29_i</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>145</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>145</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>tmp_24_i_fu_514_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName>tmp_29_i_fu_514_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1702126957</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2728,39 +2728,39 @@
               <type>0</type>
               <id>50</id>
               <name>zext_ln223_2</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln223_2_fu_524_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>7237481</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -2784,39 +2784,39 @@
               <type>0</type>
               <id>51</id>
               <name>exp_table_addr_2</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1785884767</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2841,40 +2841,40 @@
             <Obj>
               <type>0</type>
               <id>52</id>
-              <name>a_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>exp_table_load_2</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>a</originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>rom</opType>
               <implIndex>auto</implIndex>
               <coreName>ROM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>100</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>101</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -2898,46 +2898,46 @@
               <type>0</type>
               <id>53</id>
               <name>zext_ln141_2</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>141</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>141</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln141_2_fu_567_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1929405799</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -2960,47 +2960,47 @@
             <Obj>
               <type>0</type>
               <id>54</id>
-              <name>tmp_25_i</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>tmp_30_i</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>145</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>145</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>tmp_25_i_fu_529_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName>tmp_30_i_fu_529_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1701519360</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3027,39 +3027,39 @@
               <type>0</type>
               <id>55</id>
               <name>zext_ln223_3</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln223_3_fu_539_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>825911342</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -3083,39 +3083,39 @@
               <type>0</type>
               <id>56</id>
               <name>exp_table_addr_3</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>791158823</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3140,40 +3140,40 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>b_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>exp_table_load_3</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>b</originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>rom</opType>
               <implIndex>auto</implIndex>
               <coreName>ROM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>100</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>101</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -3197,46 +3197,46 @@
               <type>0</type>
               <id>58</id>
               <name>zext_ln141_3</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>141</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>141</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln141_3_fu_571_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1601200424</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -3259,47 +3259,47 @@
             <Obj>
               <type>0</type>
               <id>59</id>
-              <name>tmp_26_i</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>tmp_31_i</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>145</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_ap_q_mode_5_ap_o_mode_3_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_ufixed_15_5_AP_TRN_AP_WRAP_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_ufixed&amp;lt;15, 5, AP_TRN, AP_WRAP, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>145</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>222</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>tmp_26_i_fu_544_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName>tmp_31_i_fu_544_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1949267566</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3326,39 +3326,39 @@
               <type>0</type>
               <id>60</id>
               <name>zext_ln223_4</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln223_4_fu_554_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1600811632</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -3382,39 +3382,39 @@
               <type>0</type>
               <id>61</id>
               <name>exp_table_addr_4</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1952544361</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3439,40 +3439,40 @@
             <Obj>
               <type>0</type>
               <id>62</id>
-              <name>b_2</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>exp_table_load_4</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>223</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>223</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName>b</originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>rom</opType>
               <implIndex>auto</implIndex>
               <coreName>ROM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>100</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>101</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -3496,8 +3496,8 @@
               <type>0</type>
               <id>63</id>
               <name>zext_ln51</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -3505,58 +3505,58 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>229</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>51</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>44</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 4, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln51_fu_575_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1768304433</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -3580,8 +3580,8 @@
               <type>0</type>
               <id>64</id>
               <name>add_ln51</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -3589,35 +3589,49 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
-                    <count>3</count>
+                    <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>229</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>51</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                      </first>
+                      <second>44</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                      </first>
+                      <second>46</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>add_ln51_fu_579_p2</rtlName>
               <control>auto</control>
               <opType>all</opType>
@@ -3626,7 +3640,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>10</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -3651,8 +3665,8 @@
               <type>0</type>
               <id>65</id>
               <name>add_ln51_1</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -3660,35 +3674,49 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
-                    <count>3</count>
+                    <count>5</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>229</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>51</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 2, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                      </first>
+                      <second>44</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                      </first>
+                      <second>46</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>add_ln51_1_fu_585_p2</rtlName>
               <control>auto</control>
               <opType>all</opType>
@@ -3697,7 +3725,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>10</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -3722,8 +3750,8 @@
               <type>0</type>
               <id>66</id>
               <name>zext_ln51_1</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -3731,44 +3759,51 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
-                    <count>3</count>
+                    <count>4</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>229</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>51</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 4, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                      </first>
+                      <second>46</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln51_1_fu_591_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1836016416</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>13</bitwidth>
           </Value>
@@ -3792,8 +3827,8 @@
               <type>0</type>
               <id>67</id>
               <name>add_ln51_2</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -3801,35 +3836,35 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>3</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>229</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>51</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>add_ln51_2_fu_595_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
@@ -3838,7 +3873,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>1</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -3863,8 +3898,8 @@
               <type>0</type>
               <id>68</id>
               <name>zext_ln51_2</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -3872,44 +3907,44 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>3</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>229</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>51</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln51_2_fu_601_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>741749052</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>13</bitwidth>
           </Value>
@@ -3933,8 +3968,8 @@
               <type>0</type>
               <id>69</id>
               <name>add_ln51_3</name>
-              <fileName>firmware/nnet_utils/nnet_common.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>51</lineNumber>
               <contextFuncName>operator()</contextFuncName>
               <contextNormFuncName>operator_s</contextNormFuncName>
@@ -3942,35 +3977,35 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>3</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>229</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
                         <second>operator()</second>
                       </first>
                       <second>51</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_common.h</first>
-                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt; &amp;gt; &amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_common.h</first>
+                        <second>reduce&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5, nnet::Op_add&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>add_ln51_3_fu_605_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
@@ -3979,7 +4014,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>1</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>13</bitwidth>
           </Value>
@@ -4004,46 +4039,46 @@
               <type>0</type>
               <id>70</id>
               <name>tmp</name>
-              <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>145</lineNumber>
-              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;18, 8, (ap_q_mode)0, (ap_o_mode)0, 0&amp;gt;, 1024U&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_idx_from_real_val_ap_fixed_18_8_ap_q_mode_0_ap_o_mode_0_0_1024U_s</contextNormFuncName>
+              <contextFuncName>softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 1024&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_idx_from_real_val_ap_fixed_18_8_AP_RND_AP_SAT_0_1024_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;18, 8, (ap_q_mode)0, (ap_o_mode)0, 0&amp;gt;, 1024U&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation.h</first>
+                        <second>softmax_idx_from_real_val&amp;lt;ap_fixed&amp;lt;18, 8, AP_RND, AP_SAT, 0&amp;gt;, 1024&amp;gt;</second>
                       </first>
                       <second>145</second>
                     </item>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>232</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>tmp_fu_611_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>826041445</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>5</bitwidth>
           </Value>
@@ -4070,39 +4105,39 @@
               <type>0</type>
               <id>71</id>
               <name>zext_ln232</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>232</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>232</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln232_fu_621_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>791764784</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -4126,39 +4161,39 @@
               <type>0</type>
               <id>72</id>
               <name>invert_table_addr</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>232</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>232</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>908078134</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4184,23 +4219,23 @@
               <type>0</type>
               <id>73</id>
               <name>inv_exp_sum</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>232</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>232</second>
                     </item>
@@ -4208,15 +4243,15 @@
                 </item>
               </inlineStackInfo>
               <originalName>inv_exp_sum</originalName>
-              <rtlName></rtlName>
+              <rtlName/>
               <control>auto</control>
               <opType>rom</opType>
               <implIndex>auto</implIndex>
               <coreName>ROM</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>100</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>101</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>18</bitwidth>
           </Value>
@@ -4240,39 +4275,39 @@
               <type>0</type>
               <id>75</id>
               <name>sext_ln241</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>sext_ln241_fu_626_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1279795712</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4296,39 +4331,39 @@
               <type>0</type>
               <id>76</id>
               <name>zext_ln241</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>mul_ln241_fu_182_p10</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1953063469</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4352,31 +4387,31 @@
               <type>0</type>
               <id>77</id>
               <name>mul_ln241</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>mul_18s_11ns_26_1_1_U1233</rtlName>
+              <originalName/>
+              <rtlName>mul_18s_11ns_26_1_1_U1223</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -4384,7 +4419,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>3</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4408,40 +4443,40 @@
             <Obj>
               <type>0</type>
               <id>78</id>
-              <name>trunc_ln3</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <name>trunc_ln4</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>trunc_ln3_fu_638_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName>trunc_ln4_fu_638_p4</rtlName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1886218528</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -4468,39 +4503,39 @@
               <type>0</type>
               <id>82</id>
               <name>zext_ln241_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>mul_ln241_1_fu_185_p10</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1701602414</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4524,31 +4559,31 @@
               <type>0</type>
               <id>83</id>
               <name>mul_ln241_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>mul_18s_11ns_26_1_1_U1236</rtlName>
+              <originalName/>
+              <rtlName>mul_18s_11ns_26_1_1_U1226</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -4556,7 +4591,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>3</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4581,39 +4616,39 @@
               <type>0</type>
               <id>84</id>
               <name>trunc_ln241_1</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln241_1_fu_652_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1701080941</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -4640,39 +4675,39 @@
               <type>0</type>
               <id>88</id>
               <name>zext_ln241_2</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>mul_ln241_2_fu_184_p10</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1685024116</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4696,31 +4731,31 @@
               <type>0</type>
               <id>89</id>
               <name>mul_ln241_2</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>mul_18s_11ns_26_1_1_U1235</rtlName>
+              <originalName/>
+              <rtlName>mul_18s_11ns_26_1_1_U1225</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -4728,7 +4763,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>3</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4753,39 +4788,39 @@
               <type>0</type>
               <id>90</id>
               <name>trunc_ln241_2</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln241_2_fu_666_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1868783477</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -4812,39 +4847,39 @@
               <type>0</type>
               <id>94</id>
               <name>zext_ln241_3</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>mul_ln241_3_fu_183_p10</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1701519360</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4868,31 +4903,31 @@
               <type>0</type>
               <id>95</id>
               <name>mul_ln241_3</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>mul_18s_11ns_26_1_1_U1234</rtlName>
+              <originalName/>
+              <rtlName>mul_18s_11ns_26_1_1_U1224</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -4900,7 +4935,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>3</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -4925,39 +4960,39 @@
               <type>0</type>
               <id>96</id>
               <name>trunc_ln241_3</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln241_3_fu_680_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1600747617</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -4984,39 +5019,39 @@
               <type>0</type>
               <id>100</id>
               <name>zext_ln241_4</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>mul_ln241_4_fu_181_p10</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1936290921</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -5040,31 +5075,31 @@
               <type>0</type>
               <id>101</id>
               <name>mul_ln241_4</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName>mul_18s_11ns_26_1_1_U1232</rtlName>
+              <originalName/>
+              <rtlName>mul_18s_11ns_26_1_1_U1222</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -5072,7 +5107,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>3</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>26</bitwidth>
           </Value>
@@ -5097,39 +5132,39 @@
               <type>0</type>
               <id>102</id>
               <name>trunc_ln241_4</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>241</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>241</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>trunc_ln241_4_fu_694_p4</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>808542020</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>16</bitwidth>
           </Value>
@@ -5156,39 +5191,39 @@
               <type>0</type>
               <id>105</id>
               <name>p_0</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>243</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>243</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>stream_out0_layer5_out_din</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1952671092</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
           </Value>
@@ -5217,39 +5252,39 @@
               <type>0</type>
               <id>106</id>
               <name>stream_out0_layer5_out_write_ln243</name>
-              <fileName>firmware/nnet_utils/nnet_activation_stream.h</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>243</lineNumber>
-              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
-              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_nnet_array_ap_fixed_16_6_ap_q_mode_5_ap_o_mode_3_0_5U_softmax_config5_s</contextNormFuncName>
+              <contextFuncName>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</contextFuncName>
+              <contextNormFuncName>softmax_stable_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_nnet_array_ap_fixed_16_6_AP_TRN_AP_WRAP_0_5_softmax_config5_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation_stream.h</first>
-                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 5U&amp;gt;, softmax_config5&amp;gt;</second>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_activation_stream.h</first>
+                        <second>softmax_stable&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;16, 6, AP_TRN, AP_WRAP, 0&amp;gt;, 5&amp;gt;, softmax_config5&amp;gt;</second>
                       </first>
                       <second>243</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>fifo</opType>
               <implIndex>memory</implIndex>
               <coreName>FIFO</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>77</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>78</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -5275,25 +5310,25 @@
               <type>0</type>
               <id>107</id>
               <name>_ln0</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1734439795</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -5314,18 +5349,18 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>501</id>
+              <id>491</id>
               <name>exp_table</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>exp_table_U</rtlName>
               <control>auto</control>
               <opType>rom_np</opType>
@@ -5333,7 +5368,7 @@
               <coreName>ROM</coreName>
               <isStorage>1</isStorage>
               <storageDepth>1024</storageDepth>
-              <coreId>100</coreId>
+              <coreId>101</coreId>
               <rtlModuleName>myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_exp_tablebkb</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5355,18 +5390,18 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>502</id>
+              <id>492</id>
               <name>invert_table</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>invert_table_U</rtlName>
               <control>auto</control>
               <opType>rom_1p</opType>
@@ -5374,7 +5409,7 @@
               <coreName>ROM</coreName>
               <isStorage>1</isStorage>
               <storageDepth>1024</storageDepth>
-              <coreId>100</coreId>
+              <coreId>101</coreId>
               <rtlModuleName>myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_invert_tacud</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -5402,25 +5437,25 @@
               <type>2</type>
               <id>116</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>2147483647</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5433,25 +5468,25 @@
               <type>2</type>
               <id>118</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1869444211</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5464,25 +5499,25 @@
               <type>2</type>
               <id>122</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5495,25 +5530,25 @@
               <type>2</type>
               <id>124</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5526,25 +5561,25 @@
               <type>2</type>
               <id>128</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1819096179</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5557,25 +5592,25 @@
               <type>2</type>
               <id>130</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5588,25 +5623,25 @@
               <type>2</type>
               <id>134</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5619,25 +5654,25 @@
               <type>2</type>
               <id>136</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1818767154</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5650,25 +5685,25 @@
               <type>2</type>
               <id>141</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1819096179</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5681,25 +5716,25 @@
               <type>2</type>
               <id>169</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1314214434</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5712,25 +5747,25 @@
               <type>2</type>
               <id>180</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1970561893</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5743,25 +5778,25 @@
               <type>2</type>
               <id>187</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1797259357</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5774,25 +5809,25 @@
               <type>2</type>
               <id>194</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1717530721</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5805,25 +5840,25 @@
               <type>2</type>
               <id>203</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3394286912</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5836,25 +5871,25 @@
               <type>2</type>
               <id>205</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>762733924</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5867,25 +5902,25 @@
               <type>2</type>
               <id>209</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1936484399</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
           </Value>
@@ -5898,25 +5933,25 @@
               <type>2</type>
               <id>267</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3175480704</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5929,25 +5964,25 @@
               <type>2</type>
               <id>269</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3175480704</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5960,25 +5995,25 @@
               <type>2</type>
               <id>283</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>0</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -5991,25 +6026,25 @@
               <type>2</type>
               <id>285</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>3154424752</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -6025,25 +6060,25 @@
             <type>3</type>
             <id>108</id>
             <name>softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config5&gt;</name>
-            <fileName></fileName>
-            <fileDirectory></fileDirectory>
+            <fileName/>
+            <fileDirectory/>
             <lineNumber>0</lineNumber>
-            <contextFuncName></contextFuncName>
-            <contextNormFuncName></contextNormFuncName>
+            <contextFuncName/>
+            <contextNormFuncName/>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName></originalName>
-            <rtlName></rtlName>
-            <control></control>
-            <opType></opType>
-            <implIndex></implIndex>
-            <coreName></coreName>
+            <originalName/>
+            <rtlName/>
+            <control/>
+            <opType/>
+            <implIndex/>
+            <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
-            <rtlModuleName></rtlModuleName>
+            <coreId>0</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>83</count>
@@ -7332,7 +7367,7 @@
         <mMinLatency>4</mMinLatency>
         <mMaxLatency>4</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
-        <mDfPipe class_id="-1"></mDfPipe>
+        <mDfPipe class_id="-1"/>
       </item>
     </cdfg_regions>
     <fsm class_id="24" tracking_level="1" version="0" object_id="_277">
@@ -7990,7 +8025,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>mul_18s_11ns_26_1_1_U1232 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1222 (mul_18s_11ns_26_1_1)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -8009,7 +8044,7 @@
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1233 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1223 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8028,7 +8063,7 @@
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1234 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1224 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8047,7 +8082,7 @@
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1235 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1225 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8066,7 +8101,7 @@
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1236 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1226 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8200,6 +8235,121 @@
             <item>
               <first>LUT</first>
               <second>2</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_5_fu_464_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>22</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_6_fu_469_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>22</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_7_fu_474_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>22</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_8_fu_479_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>22</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_fu_459_p2 ( - ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>15</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>22</second>
             </item>
           </second>
         </item>
@@ -8404,121 +8554,6 @@
           </second>
         </item>
         <item>
-          <first>x_1_fu_464_p2 ( - ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>22</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>x_2_fu_469_p2 ( - ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>22</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>x_3_fu_474_p2 ( - ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>22</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>x_4_fu_479_p2 ( - ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>22</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>x_fu_459_p2 ( - ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>15</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>22</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>xor_ln66_1_fu_362_p2 ( xor ) </first>
           <second>
             <count>4</count>
@@ -8695,7 +8730,7 @@
         <item>
           <first>ap_NS_fsm</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -8708,10 +8743,6 @@
             <item>
               <first>(2Count)</first>
               <second>6</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -8722,7 +8753,7 @@
         <item>
           <first>layer4_out_blk_n</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -8735,10 +8766,6 @@
             <item>
               <first>(2Count)</first>
               <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -8749,7 +8776,7 @@
         <item>
           <first>stream_out0_layer5_out_blk_n</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -8762,10 +8789,6 @@
             <item>
               <first>(2Count)</first>
               <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -8777,44 +8800,6 @@
       <dp_register_resource>
         <count>16</count>
         <item_version>0</item_version>
-        <item>
-          <first>a_1_reg_800</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>11</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>11</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>a_reg_790</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>11</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>11</second>
-            </item>
-          </second>
-        </item>
         <item>
           <first>ap_CS_fsm</first>
           <second>
@@ -8835,7 +8820,7 @@
           </second>
         </item>
         <item>
-          <first>b_1_reg_805</first>
+          <first>exp_table_load_1_reg_795</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8854,7 +8839,7 @@
           </second>
         </item>
         <item>
-          <first>b_2_reg_810</first>
+          <first>exp_table_load_2_reg_800</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8873,7 +8858,45 @@
           </second>
         </item>
         <item>
-          <first>b_reg_795</first>
+          <first>exp_table_load_3_reg_805</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>11</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>11</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>exp_table_load_4_reg_810</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>11</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>11</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>exp_table_load_reg_790</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9086,35 +9109,35 @@
         <count>5</count>
         <item_version>0</item_version>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1232</first>
+          <first>mul_18s_11ns_26_1_1_U1222</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1233</first>
+          <first>mul_18s_11ns_26_1_1_U1223</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1234</first>
+          <first>mul_18s_11ns_26_1_1_U1224</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1235</first>
+          <first>mul_18s_11ns_26_1_1_U1225</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1236</first>
+          <first>mul_18s_11ns_26_1_1_U1226</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -9125,7 +9148,7 @@
         <count>5</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>mul_18s_11ns_26_1_1_U1232 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1222 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9133,7 +9156,7 @@
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1233 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1223 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9141,7 +9164,7 @@
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1234 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1224 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9149,7 +9172,7 @@
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1235 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1225 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9157,7 +9180,7 @@
           </second>
         </item>
         <item>
-          <first>mul_18s_11ns_26_1_1_U1236 (mul_18s_11ns_26_1_1)</first>
+          <first>mul_18s_11ns_26_1_1_U1226 (mul_18s_11ns_26_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9198,6 +9221,46 @@
             <count>1</count>
             <item_version>0</item_version>
             <item>64</item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_5_fu_464_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>33</item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_6_fu_469_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>35</item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_7_fu_474_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>37</item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_8_fu_479_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>38</item>
+          </second>
+        </item>
+        <item>
+          <first>d_xi_xmax_fu_459_p2 ( - ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>31</item>
           </second>
         </item>
         <item>
@@ -9262,46 +9325,6 @@
             <count>1</count>
             <item_version>0</item_version>
             <item>18</item>
-          </second>
-        </item>
-        <item>
-          <first>x_1_fu_464_p2 ( - ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>33</item>
-          </second>
-        </item>
-        <item>
-          <first>x_2_fu_469_p2 ( - ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>35</item>
-          </second>
-        </item>
-        <item>
-          <first>x_3_fu_474_p2 ( - ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>37</item>
-          </second>
-        </item>
-        <item>
-          <first>x_4_fu_479_p2 ( - ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>38</item>
-          </second>
-        </item>
-        <item>
-          <first>x_fu_459_p2 ( - ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>31</item>
           </second>
         </item>
         <item>
@@ -9947,14 +9970,14 @@
         </second>
       </item>
       <item>
-        <first>501</first>
+        <first>491</first>
         <second>
           <first>0</first>
           <second>2</second>
         </second>
       </item>
       <item>
-        <first>502</first>
+        <first>492</first>
         <second>
           <first>0</first>
           <second>2</second>
@@ -10650,6 +10673,46 @@
         </second>
       </item>
       <item>
+        <first>d_xi_xmax_5_fu_464</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>33</item>
+        </second>
+      </item>
+      <item>
+        <first>d_xi_xmax_6_fu_469</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>35</item>
+        </second>
+      </item>
+      <item>
+        <first>d_xi_xmax_7_fu_474</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>37</item>
+        </second>
+      </item>
+      <item>
+        <first>d_xi_xmax_8_fu_479</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>38</item>
+        </second>
+      </item>
+      <item>
+        <first>d_xi_xmax_fu_459</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>31</item>
+        </second>
+      </item>
+      <item>
         <first>exp_table_addr_1_gep_fu_136</first>
         <second>
           <count>1</count>
@@ -10818,7 +10881,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_23_i_fu_499</first>
+        <first>tmp_28_i_fu_499</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10826,7 +10889,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_24_i_fu_514</first>
+        <first>tmp_29_i_fu_514</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10834,7 +10897,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_25_i_fu_529</first>
+        <first>tmp_30_i_fu_529</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10842,7 +10905,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_26_i_fu_544</first>
+        <first>tmp_31_i_fu_544</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10858,7 +10921,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_i_81_fu_484</first>
+        <first>tmp_i_75_fu_484</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10978,7 +11041,7 @@
         </second>
       </item>
       <item>
-        <first>trunc_ln3_fu_638</first>
+        <first>trunc_ln4_fu_638</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10991,46 +11054,6 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>27</item>
-        </second>
-      </item>
-      <item>
-        <first>x_1_fu_464</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>33</item>
-        </second>
-      </item>
-      <item>
-        <first>x_2_fu_469</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>35</item>
-        </second>
-      </item>
-      <item>
-        <first>x_3_fu_474</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>37</item>
-        </second>
-      </item>
-      <item>
-        <first>x_4_fu_479</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>38</item>
-        </second>
-      </item>
-      <item>
-        <first>x_fu_459</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>31</item>
         </second>
       </item>
       <item>
@@ -11490,46 +11513,6 @@
       <count>21</count>
       <item_version>0</item_version>
       <item>
-        <first>a_1_reg_800</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>52</item>
-        </second>
-      </item>
-      <item>
-        <first>a_reg_790</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>42</item>
-        </second>
-      </item>
-      <item>
-        <first>b_1_reg_805</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>57</item>
-        </second>
-      </item>
-      <item>
-        <first>b_2_reg_810</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>62</item>
-        </second>
-      </item>
-      <item>
-        <first>b_reg_795</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>47</item>
-        </second>
-      </item>
-      <item>
         <first>exp_table_addr_1_reg_770</first>
         <second>
           <count>1</count>
@@ -11567,6 +11550,46 @@
           <count>1</count>
           <item_version>0</item_version>
           <item>41</item>
+        </second>
+      </item>
+      <item>
+        <first>exp_table_load_1_reg_795</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>47</item>
+        </second>
+      </item>
+      <item>
+        <first>exp_table_load_2_reg_800</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>52</item>
+        </second>
+      </item>
+      <item>
+        <first>exp_table_load_3_reg_805</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>57</item>
+        </second>
+      </item>
+      <item>
+        <first>exp_table_load_4_reg_810</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>62</item>
+        </second>
+      </item>
+      <item>
+        <first>exp_table_load_reg_790</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>42</item>
         </second>
       </item>
       <item>
@@ -11731,7 +11754,7 @@
       <item>
         <first>16</first>
         <second>
-          <first>530</first>
+          <first>45</first>
           <second>0</second>
         </second>
       </item>
@@ -11752,7 +11775,7 @@
       <item>
         <first>19</first>
         <second>
-          <first>530</first>
+          <first>45</first>
           <second>0</second>
         </second>
       </item>
@@ -11773,7 +11796,7 @@
       <item>
         <first>22</first>
         <second>
-          <first>530</first>
+          <first>45</first>
           <second>0</second>
         </second>
       </item>
@@ -11794,7 +11817,7 @@
       <item>
         <first>25</first>
         <second>
-          <first>530</first>
+          <first>45</first>
           <second>0</second>
         </second>
       </item>
@@ -11960,6 +11983,5 @@
         </second>
       </item>
     </node2core>
-    <sched_res class_id="-1"></sched_res>
   </syndb>
 </boost_serialization>

@@ -89,13 +89,13 @@
   "xclbin": {
    "generated_by": {
     "name": "v++",
-    "version": "2025.2",
-    "cl": "6295257",
-    "time_stamp": "2025-11-13-01:29:13",
-    "options": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
+    "version": "2023.2",
+    "cl": "4026344",
+    "time_stamp": "2023-10-11-15:42:10",
+    "options": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++ -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
     "xclbin_name": "myproject",
-    "uuid": "3318e45d-2e93-429c-b67f-6adba04f8bdd",
-    "link_uuid": "3318e45d-2e93-429c-b67f-6adba04f8bdd",
+    "uuid": "70f28343-d269-4851-aaaa-c661316156dc",
+    "link_uuid": "70f28343-d269-4851-aaaa-c661316156dc",
     "package_uuid": "",
     "system_compile_flow": false
    },
@@ -115,6 +115,13 @@
      "kernels": [
       {
        "name": "myproject_axi_master",
+       "estimated_resources": {
+        "LUT": "29",
+        "REG": "3",
+        "BRAM": "",
+        "DSP": "",
+        "URAM": ""
+       },
        "ports": [
         {
          "name": "M_AXI_GMEM_IN0",
@@ -208,7 +215,7 @@
        "clocks": [
         {
          "port_name": "ap_clk",
-         "id": "not_specified",
+         "id": "0",
          "requested_frequency": 0,
          "achieved_frequency": 0,
          "associated_busif": "",

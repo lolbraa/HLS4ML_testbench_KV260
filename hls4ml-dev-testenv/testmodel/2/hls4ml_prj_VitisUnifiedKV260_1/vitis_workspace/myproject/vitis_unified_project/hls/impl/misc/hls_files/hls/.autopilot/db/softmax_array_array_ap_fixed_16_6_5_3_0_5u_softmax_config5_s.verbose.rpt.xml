@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s'" level="0">
-<item name = "Date">Wed Mar 11 12:35:14 2026
+<item name = "Date">Wed Mar 11 13:13:04 2026
 </item>
-<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -52,7 +52,7 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">4, 5, 202, 422, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 23, -</column>
+<column name="Multiplexer">-, -, -, 41, -</column>
 <column name="Register">-, -, 4, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
 <specialColumn name="Utilization (%)">1, ~0, ~0, ~0, 0</specialColumn>
@@ -86,6 +86,8 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">14, 3, 1, 3</column>
 <column name="ap_done">9, 2, 1, 2</column>
+<column name="layer4_out_read">9, 2, 1, 2</column>
+<column name="stream_out0_layer5_out_write">9, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -110,15 +112,15 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config5&gt;, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, softmax&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config5&gt;, return value</column>
 <column name="layer4_out_dout">in, 80, ap_fifo, layer4_out, pointer</column>
-<column name="layer4_out_empty_n">in, 1, ap_fifo, layer4_out, pointer</column>
-<column name="layer4_out_read">out, 1, ap_fifo, layer4_out, pointer</column>
 <column name="layer4_out_num_data_valid">in, 2, ap_fifo, layer4_out, pointer</column>
 <column name="layer4_out_fifo_cap">in, 2, ap_fifo, layer4_out, pointer</column>
+<column name="layer4_out_empty_n">in, 1, ap_fifo, layer4_out, pointer</column>
+<column name="layer4_out_read">out, 1, ap_fifo, layer4_out, pointer</column>
 <column name="stream_out0_layer5_out_din">out, 80, ap_fifo, stream_out0_layer5_out, pointer</column>
-<column name="stream_out0_layer5_out_full_n">in, 1, ap_fifo, stream_out0_layer5_out, pointer</column>
-<column name="stream_out0_layer5_out_write">out, 1, ap_fifo, stream_out0_layer5_out, pointer</column>
 <column name="stream_out0_layer5_out_num_data_valid">in, 8, ap_fifo, stream_out0_layer5_out, pointer</column>
 <column name="stream_out0_layer5_out_fifo_cap">in, 8, ap_fifo, stream_out0_layer5_out, pointer</column>
+<column name="stream_out0_layer5_out_full_n">in, 1, ap_fifo, stream_out0_layer5_out, pointer</column>
+<column name="stream_out0_layer5_out_write">out, 1, ap_fifo, stream_out0_layer5_out, pointer</column>
 </table>
 </item>
 </section>

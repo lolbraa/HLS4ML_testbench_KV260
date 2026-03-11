@@ -13,9 +13,7 @@
     <cf:port cf:name="batch_size" cf:portType="stream" cf:direction="out"/>
   </cf:block>
   <cf:comp cf:name="kv260pf" xd:componentRef="kv260pf" xd:clockId="0"/>
-  <cf:comp cf:name="myproject_axi_master_1" xd:componentRef="myproject_axi_master" xd:clockId="0">
-    <xd:clock xd:name="ap_clk" xd:frequency="99999001"/>
-  </cf:comp>
+  <cf:comp cf:name="myproject_axi_master_1" xd:componentRef="myproject_axi_master" xd:clockId="0"/>
   <cf:instance cf:name="hwinst_myproject_axi_master_1" cf:blockName="hwblk_myproject_axi_master" cf:compName="myproject_axi_master_1">
     <cf:portMap cf:blockPort="s_axi_control" cf:compPort="s_axi_control" xd:register="0x0"/>
     <cf:portMap cf:blockPort="gmem_in0_ptr_linput" cf:compPort="m_axi_gmem_in0" cf:ctrlPort="s_axi_control" xd:register="0x10"/>

@@ -406,10 +406,10 @@ fpga_resource_limit_hint.entry.4:24 %select_ln66_3 = select i1 %xor_ln66_3, i15 
 
 <Node id="31" bw="15" op_0_bw="15" op_1_bw="15">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:26 %x = sub i15 %select_ln66_3, i15 %trunc_ln213
+fpga_resource_limit_hint.entry.4:26 %d_xi_xmax = sub i15 %select_ln66_3, i15 %trunc_ln213
 
 ]]></Node>
-<StgValue><ssdm name="x"/></StgValue>
+<StgValue><ssdm name="d_xi_xmax"/></StgValue>
 </operation>
 
 <operation id="31" st_id="2" stage="1" lat="1">
@@ -421,10 +421,10 @@ fpga_resource_limit_hint.entry.4:26 %x = sub i15 %select_ln66_3, i15 %trunc_ln21
 
 <Node id="33" bw="15" op_0_bw="15" op_1_bw="15">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:28 %x_1 = sub i15 %select_ln66_3, i15 %trunc_ln213_2_i
+fpga_resource_limit_hint.entry.4:28 %d_xi_xmax_5 = sub i15 %select_ln66_3, i15 %trunc_ln213_2_i
 
 ]]></Node>
-<StgValue><ssdm name="x_1"/></StgValue>
+<StgValue><ssdm name="d_xi_xmax_5"/></StgValue>
 </operation>
 
 <operation id="32" st_id="2" stage="1" lat="1">
@@ -436,10 +436,10 @@ fpga_resource_limit_hint.entry.4:28 %x_1 = sub i15 %select_ln66_3, i15 %trunc_ln
 
 <Node id="35" bw="15" op_0_bw="15" op_1_bw="15">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:30 %x_2 = sub i15 %select_ln66_3, i15 %trunc_ln213_3_i
+fpga_resource_limit_hint.entry.4:30 %d_xi_xmax_6 = sub i15 %select_ln66_3, i15 %trunc_ln213_3_i
 
 ]]></Node>
-<StgValue><ssdm name="x_2"/></StgValue>
+<StgValue><ssdm name="d_xi_xmax_6"/></StgValue>
 </operation>
 
 <operation id="33" st_id="2" stage="1" lat="1">
@@ -451,10 +451,10 @@ fpga_resource_limit_hint.entry.4:30 %x_2 = sub i15 %select_ln66_3, i15 %trunc_ln
 
 <Node id="37" bw="15" op_0_bw="15" op_1_bw="15">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:32 %x_3 = sub i15 %select_ln66_3, i15 %trunc_ln213_4_i
+fpga_resource_limit_hint.entry.4:32 %d_xi_xmax_7 = sub i15 %select_ln66_3, i15 %trunc_ln213_4_i
 
 ]]></Node>
-<StgValue><ssdm name="x_3"/></StgValue>
+<StgValue><ssdm name="d_xi_xmax_7"/></StgValue>
 </operation>
 
 <operation id="34" st_id="2" stage="1" lat="1">
@@ -466,10 +466,10 @@ fpga_resource_limit_hint.entry.4:32 %x_3 = sub i15 %select_ln66_3, i15 %trunc_ln
 
 <Node id="38" bw="15" op_0_bw="15" op_1_bw="15">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:33 %x_4 = sub i15 %select_ln66_3, i15 %tmp_i
+fpga_resource_limit_hint.entry.4:33 %d_xi_xmax_8 = sub i15 %select_ln66_3, i15 %tmp_i
 
 ]]></Node>
-<StgValue><ssdm name="x_4"/></StgValue>
+<StgValue><ssdm name="d_xi_xmax_8"/></StgValue>
 </operation>
 
 <operation id="35" st_id="2" stage="1" lat="1">
@@ -481,10 +481,10 @@ fpga_resource_limit_hint.entry.4:33 %x_4 = sub i15 %select_ln66_3, i15 %tmp_i
 
 <Node id="39" bw="10" op_0_bw="10" op_1_bw="15" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:34 %tmp_i_81 = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %x, i32 5, i32 14
+fpga_resource_limit_hint.entry.4:34 %tmp_i_75 = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax, i32 5, i32 14
 
 ]]></Node>
-<StgValue><ssdm name="tmp_i_81"/></StgValue>
+<StgValue><ssdm name="tmp_i_75"/></StgValue>
 </operation>
 
 <operation id="36" st_id="2" stage="1" lat="1">
@@ -496,7 +496,7 @@ fpga_resource_limit_hint.entry.4:34 %tmp_i_81 = partselect i10 @_ssdm_op_PartSel
 
 <Node id="40" bw="64" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:35 %zext_ln223 = zext i10 %tmp_i_81
+fpga_resource_limit_hint.entry.4:35 %zext_ln223 = zext i10 %tmp_i_75
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln223"/></StgValue>
@@ -526,10 +526,10 @@ fpga_resource_limit_hint.entry.4:36 %exp_table_addr = getelementptr i11 %exp_tab
 
 <Node id="42" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:37 %a = load i10 %exp_table_addr
+fpga_resource_limit_hint.entry.4:37 %exp_table_load = load i10 %exp_table_addr
 
 ]]></Node>
-<StgValue><ssdm name="a"/></StgValue>
+<StgValue><ssdm name="exp_table_load"/></StgValue>
 </operation>
 
 <operation id="39" st_id="2" stage="1" lat="1">
@@ -541,10 +541,10 @@ fpga_resource_limit_hint.entry.4:37 %a = load i10 %exp_table_addr
 
 <Node id="44" bw="10" op_0_bw="10" op_1_bw="15" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:39 %tmp_23_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %x_1, i32 5, i32 14
+fpga_resource_limit_hint.entry.4:39 %tmp_28_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax_5, i32 5, i32 14
 
 ]]></Node>
-<StgValue><ssdm name="tmp_23_i"/></StgValue>
+<StgValue><ssdm name="tmp_28_i"/></StgValue>
 </operation>
 
 <operation id="40" st_id="2" stage="1" lat="1">
@@ -556,7 +556,7 @@ fpga_resource_limit_hint.entry.4:39 %tmp_23_i = partselect i10 @_ssdm_op_PartSel
 
 <Node id="45" bw="64" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:40 %zext_ln223_1 = zext i10 %tmp_23_i
+fpga_resource_limit_hint.entry.4:40 %zext_ln223_1 = zext i10 %tmp_28_i
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln223_1"/></StgValue>
@@ -586,10 +586,10 @@ fpga_resource_limit_hint.entry.4:41 %exp_table_addr_1 = getelementptr i11 %exp_t
 
 <Node id="47" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:42 %b = load i10 %exp_table_addr_1
+fpga_resource_limit_hint.entry.4:42 %exp_table_load_1 = load i10 %exp_table_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="b"/></StgValue>
+<StgValue><ssdm name="exp_table_load_1"/></StgValue>
 </operation>
 
 <operation id="43" st_id="2" stage="1" lat="1">
@@ -601,10 +601,10 @@ fpga_resource_limit_hint.entry.4:42 %b = load i10 %exp_table_addr_1
 
 <Node id="49" bw="10" op_0_bw="10" op_1_bw="15" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:44 %tmp_24_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %x_2, i32 5, i32 14
+fpga_resource_limit_hint.entry.4:44 %tmp_29_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax_6, i32 5, i32 14
 
 ]]></Node>
-<StgValue><ssdm name="tmp_24_i"/></StgValue>
+<StgValue><ssdm name="tmp_29_i"/></StgValue>
 </operation>
 
 <operation id="44" st_id="2" stage="1" lat="1">
@@ -616,7 +616,7 @@ fpga_resource_limit_hint.entry.4:44 %tmp_24_i = partselect i10 @_ssdm_op_PartSel
 
 <Node id="50" bw="64" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:45 %zext_ln223_2 = zext i10 %tmp_24_i
+fpga_resource_limit_hint.entry.4:45 %zext_ln223_2 = zext i10 %tmp_29_i
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln223_2"/></StgValue>
@@ -646,10 +646,10 @@ fpga_resource_limit_hint.entry.4:46 %exp_table_addr_2 = getelementptr i11 %exp_t
 
 <Node id="52" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:47 %a_1 = load i10 %exp_table_addr_2
+fpga_resource_limit_hint.entry.4:47 %exp_table_load_2 = load i10 %exp_table_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="a_1"/></StgValue>
+<StgValue><ssdm name="exp_table_load_2"/></StgValue>
 </operation>
 
 <operation id="47" st_id="2" stage="1" lat="1">
@@ -661,10 +661,10 @@ fpga_resource_limit_hint.entry.4:47 %a_1 = load i10 %exp_table_addr_2
 
 <Node id="54" bw="10" op_0_bw="10" op_1_bw="15" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:49 %tmp_25_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %x_3, i32 5, i32 14
+fpga_resource_limit_hint.entry.4:49 %tmp_30_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax_7, i32 5, i32 14
 
 ]]></Node>
-<StgValue><ssdm name="tmp_25_i"/></StgValue>
+<StgValue><ssdm name="tmp_30_i"/></StgValue>
 </operation>
 
 <operation id="48" st_id="2" stage="1" lat="1">
@@ -676,7 +676,7 @@ fpga_resource_limit_hint.entry.4:49 %tmp_25_i = partselect i10 @_ssdm_op_PartSel
 
 <Node id="55" bw="64" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:50 %zext_ln223_3 = zext i10 %tmp_25_i
+fpga_resource_limit_hint.entry.4:50 %zext_ln223_3 = zext i10 %tmp_30_i
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln223_3"/></StgValue>
@@ -706,10 +706,10 @@ fpga_resource_limit_hint.entry.4:51 %exp_table_addr_3 = getelementptr i11 %exp_t
 
 <Node id="57" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:52 %b_1 = load i10 %exp_table_addr_3
+fpga_resource_limit_hint.entry.4:52 %exp_table_load_3 = load i10 %exp_table_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="b_1"/></StgValue>
+<StgValue><ssdm name="exp_table_load_3"/></StgValue>
 </operation>
 
 <operation id="51" st_id="2" stage="1" lat="1">
@@ -721,10 +721,10 @@ fpga_resource_limit_hint.entry.4:52 %b_1 = load i10 %exp_table_addr_3
 
 <Node id="59" bw="10" op_0_bw="10" op_1_bw="15" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:54 %tmp_26_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %x_4, i32 5, i32 14
+fpga_resource_limit_hint.entry.4:54 %tmp_31_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax_8, i32 5, i32 14
 
 ]]></Node>
-<StgValue><ssdm name="tmp_26_i"/></StgValue>
+<StgValue><ssdm name="tmp_31_i"/></StgValue>
 </operation>
 
 <operation id="52" st_id="2" stage="1" lat="1">
@@ -736,7 +736,7 @@ fpga_resource_limit_hint.entry.4:54 %tmp_26_i = partselect i10 @_ssdm_op_PartSel
 
 <Node id="60" bw="64" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:55 %zext_ln223_4 = zext i10 %tmp_26_i
+fpga_resource_limit_hint.entry.4:55 %zext_ln223_4 = zext i10 %tmp_31_i
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln223_4"/></StgValue>
@@ -766,10 +766,10 @@ fpga_resource_limit_hint.entry.4:56 %exp_table_addr_4 = getelementptr i11 %exp_t
 
 <Node id="62" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:57 %b_2 = load i10 %exp_table_addr_4
+fpga_resource_limit_hint.entry.4:57 %exp_table_load_4 = load i10 %exp_table_addr_4
 
 ]]></Node>
-<StgValue><ssdm name="b_2"/></StgValue>
+<StgValue><ssdm name="exp_table_load_4"/></StgValue>
 </operation>
 </state>
 
@@ -784,10 +784,10 @@ fpga_resource_limit_hint.entry.4:57 %b_2 = load i10 %exp_table_addr_4
 
 <Node id="42" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:37 %a = load i10 %exp_table_addr
+fpga_resource_limit_hint.entry.4:37 %exp_table_load = load i10 %exp_table_addr
 
 ]]></Node>
-<StgValue><ssdm name="a"/></StgValue>
+<StgValue><ssdm name="exp_table_load"/></StgValue>
 </operation>
 
 <operation id="56" st_id="3" stage="1" lat="1">
@@ -799,7 +799,7 @@ fpga_resource_limit_hint.entry.4:37 %a = load i10 %exp_table_addr
 
 <Node id="43" bw="12" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:38 %zext_ln141 = zext i11 %a
+fpga_resource_limit_hint.entry.4:38 %zext_ln141 = zext i11 %exp_table_load
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln141"/></StgValue>
@@ -814,10 +814,10 @@ fpga_resource_limit_hint.entry.4:38 %zext_ln141 = zext i11 %a
 
 <Node id="47" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:42 %b = load i10 %exp_table_addr_1
+fpga_resource_limit_hint.entry.4:42 %exp_table_load_1 = load i10 %exp_table_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="b"/></StgValue>
+<StgValue><ssdm name="exp_table_load_1"/></StgValue>
 </operation>
 
 <operation id="58" st_id="3" stage="1" lat="1">
@@ -829,7 +829,7 @@ fpga_resource_limit_hint.entry.4:42 %b = load i10 %exp_table_addr_1
 
 <Node id="48" bw="12" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:43 %zext_ln141_1 = zext i11 %b
+fpga_resource_limit_hint.entry.4:43 %zext_ln141_1 = zext i11 %exp_table_load_1
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln141_1"/></StgValue>
@@ -844,10 +844,10 @@ fpga_resource_limit_hint.entry.4:43 %zext_ln141_1 = zext i11 %b
 
 <Node id="52" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:47 %a_1 = load i10 %exp_table_addr_2
+fpga_resource_limit_hint.entry.4:47 %exp_table_load_2 = load i10 %exp_table_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="a_1"/></StgValue>
+<StgValue><ssdm name="exp_table_load_2"/></StgValue>
 </operation>
 
 <operation id="60" st_id="3" stage="1" lat="1">
@@ -859,7 +859,7 @@ fpga_resource_limit_hint.entry.4:47 %a_1 = load i10 %exp_table_addr_2
 
 <Node id="53" bw="12" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:48 %zext_ln141_2 = zext i11 %a_1
+fpga_resource_limit_hint.entry.4:48 %zext_ln141_2 = zext i11 %exp_table_load_2
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln141_2"/></StgValue>
@@ -874,10 +874,10 @@ fpga_resource_limit_hint.entry.4:48 %zext_ln141_2 = zext i11 %a_1
 
 <Node id="57" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:52 %b_1 = load i10 %exp_table_addr_3
+fpga_resource_limit_hint.entry.4:52 %exp_table_load_3 = load i10 %exp_table_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="b_1"/></StgValue>
+<StgValue><ssdm name="exp_table_load_3"/></StgValue>
 </operation>
 
 <operation id="62" st_id="3" stage="1" lat="1">
@@ -889,7 +889,7 @@ fpga_resource_limit_hint.entry.4:52 %b_1 = load i10 %exp_table_addr_3
 
 <Node id="58" bw="12" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:53 %zext_ln141_3 = zext i11 %b_1
+fpga_resource_limit_hint.entry.4:53 %zext_ln141_3 = zext i11 %exp_table_load_3
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln141_3"/></StgValue>
@@ -904,10 +904,10 @@ fpga_resource_limit_hint.entry.4:53 %zext_ln141_3 = zext i11 %b_1
 
 <Node id="62" bw="11" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:57 %b_2 = load i10 %exp_table_addr_4
+fpga_resource_limit_hint.entry.4:57 %exp_table_load_4 = load i10 %exp_table_addr_4
 
 ]]></Node>
-<StgValue><ssdm name="b_2"/></StgValue>
+<StgValue><ssdm name="exp_table_load_4"/></StgValue>
 </operation>
 
 <operation id="64" st_id="3" stage="1" lat="1">
@@ -919,7 +919,7 @@ fpga_resource_limit_hint.entry.4:57 %b_2 = load i10 %exp_table_addr_4
 
 <Node id="63" bw="12" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:58 %zext_ln51 = zext i11 %b_2
+fpga_resource_limit_hint.entry.4:58 %zext_ln51 = zext i11 %exp_table_load_4
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln51"/></StgValue>
@@ -1103,9 +1103,9 @@ fpga_resource_limit_hint.entry.4:68 %inv_exp_sum = load i10 %invert_table_addr
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="5" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<Node id="5" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0
+fpga_resource_limit_hint.entry.4:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1118,9 +1118,9 @@ fpga_resource_limit_hint.entry.4:0 %specinterface_ln0 = specinterface void @_ssd
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<Node id="6" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0
+fpga_resource_limit_hint.entry.4:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1133,9 +1133,9 @@ fpga_resource_limit_hint.entry.4:1 %specinterface_ln0 = specinterface void @_ssd
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="7" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0
+fpga_resource_limit_hint.entry.4:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1148,9 +1148,9 @@ fpga_resource_limit_hint.entry.4:2 %specinterface_ln0 = specinterface void @_ssd
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="8" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<Node id="8" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer4_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0
+fpga_resource_limit_hint.entry.4:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer4_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1163,9 +1163,9 @@ fpga_resource_limit_hint.entry.4:3 %specinterface_ln0 = specinterface void @_ssd
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<Node id="9" bw="0" op_0_bw="0" op_1_bw="80" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0
+fpga_resource_limit_hint.entry.4:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -1180,10 +1180,10 @@ fpga_resource_limit_hint.entry.4:4 %specinterface_ln0 = specinterface void @_ssd
 
 <Node id="74" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:69 %rbegin7_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_19
+fpga_resource_limit_hint.entry.4:69 %rbegin1_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_19
 
 ]]></Node>
-<StgValue><ssdm name="rbegin7_i"/></StgValue>
+<StgValue><ssdm name="rbegin1_i"/></StgValue>
 </operation>
 
 <operation id="82" st_id="5" stage="1" lat="1">
@@ -1210,7 +1210,7 @@ fpga_resource_limit_hint.entry.4:70 %sext_ln241 = sext i18 %inv_exp_sum
 
 <Node id="76" bw="26" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:71 %zext_ln241 = zext i11 %a
+fpga_resource_limit_hint.entry.4:71 %zext_ln241 = zext i11 %exp_table_load
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln241"/></StgValue>
@@ -1240,10 +1240,10 @@ fpga_resource_limit_hint.entry.4:72 %mul_ln241 = mul i26 %sext_ln241, i26 %zext_
 
 <Node id="78" bw="16" op_0_bw="16" op_1_bw="26" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:73 %trunc_ln3 = partselect i16 @_ssdm_op_PartSelect.i16.i26.i32.i32, i26 %mul_ln241, i32 10, i32 25
+fpga_resource_limit_hint.entry.4:73 %trunc_ln4 = partselect i16 @_ssdm_op_PartSelect.i16.i26.i32.i32, i26 %mul_ln241, i32 10, i32 25
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln3"/></StgValue>
+<StgValue><ssdm name="trunc_ln4"/></StgValue>
 </operation>
 
 <operation id="86" st_id="5" stage="1" lat="1">
@@ -1270,10 +1270,10 @@ fpga_resource_limit_hint.entry.4:74 %specresourcelimit_ln242 = specresourcelimit
 
 <Node id="80" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:75 %rend8_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_19, i32 %rbegin7_i
+fpga_resource_limit_hint.entry.4:75 %rend25_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_19, i32 %rbegin1_i
 
 ]]></Node>
-<StgValue><ssdm name="rend8_i"/></StgValue>
+<StgValue><ssdm name="rend25_i"/></StgValue>
 </operation>
 
 <operation id="88" st_id="5" stage="1" lat="1">
@@ -1285,10 +1285,10 @@ fpga_resource_limit_hint.entry.4:75 %rend8_i = specregionend i32 @_ssdm_op_SpecR
 
 <Node id="81" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:76 %rbegin5_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_20
+fpga_resource_limit_hint.entry.4:76 %rbegin2_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_20
 
 ]]></Node>
-<StgValue><ssdm name="rbegin5_i"/></StgValue>
+<StgValue><ssdm name="rbegin2_i"/></StgValue>
 </operation>
 
 <operation id="89" st_id="5" stage="1" lat="1">
@@ -1300,7 +1300,7 @@ fpga_resource_limit_hint.entry.4:76 %rbegin5_i = specregionbegin i32 @_ssdm_op_S
 
 <Node id="82" bw="26" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:77 %zext_ln241_1 = zext i11 %b
+fpga_resource_limit_hint.entry.4:77 %zext_ln241_1 = zext i11 %exp_table_load_1
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln241_1"/></StgValue>
@@ -1360,10 +1360,10 @@ fpga_resource_limit_hint.entry.4:80 %specresourcelimit_ln242 = specresourcelimit
 
 <Node id="86" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:81 %rend6_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_20, i32 %rbegin5_i
+fpga_resource_limit_hint.entry.4:81 %rend23_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_20, i32 %rbegin2_i
 
 ]]></Node>
-<StgValue><ssdm name="rend6_i"/></StgValue>
+<StgValue><ssdm name="rend23_i"/></StgValue>
 </operation>
 
 <operation id="94" st_id="5" stage="1" lat="1">
@@ -1390,7 +1390,7 @@ fpga_resource_limit_hint.entry.4:82 %rbegin3_i = specregionbegin i32 @_ssdm_op_S
 
 <Node id="88" bw="26" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:83 %zext_ln241_2 = zext i11 %a_1
+fpga_resource_limit_hint.entry.4:83 %zext_ln241_2 = zext i11 %exp_table_load_2
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln241_2"/></StgValue>
@@ -1450,10 +1450,10 @@ fpga_resource_limit_hint.entry.4:86 %specresourcelimit_ln242 = specresourcelimit
 
 <Node id="92" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:87 %rend4_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_21, i32 %rbegin3_i
+fpga_resource_limit_hint.entry.4:87 %rend21_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_21, i32 %rbegin3_i
 
 ]]></Node>
-<StgValue><ssdm name="rend4_i"/></StgValue>
+<StgValue><ssdm name="rend21_i"/></StgValue>
 </operation>
 
 <operation id="100" st_id="5" stage="1" lat="1">
@@ -1465,10 +1465,10 @@ fpga_resource_limit_hint.entry.4:87 %rend4_i = specregionend i32 @_ssdm_op_SpecR
 
 <Node id="93" bw="32" op_0_bw="32" op_1_bw="0">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:88 %rbegin1_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_11
+fpga_resource_limit_hint.entry.4:88 %rbegin4_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_11
 
 ]]></Node>
-<StgValue><ssdm name="rbegin1_i"/></StgValue>
+<StgValue><ssdm name="rbegin4_i"/></StgValue>
 </operation>
 
 <operation id="101" st_id="5" stage="1" lat="1">
@@ -1480,7 +1480,7 @@ fpga_resource_limit_hint.entry.4:88 %rbegin1_i = specregionbegin i32 @_ssdm_op_S
 
 <Node id="94" bw="26" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:89 %zext_ln241_3 = zext i11 %b_1
+fpga_resource_limit_hint.entry.4:89 %zext_ln241_3 = zext i11 %exp_table_load_3
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln241_3"/></StgValue>
@@ -1540,10 +1540,10 @@ fpga_resource_limit_hint.entry.4:92 %specresourcelimit_ln242 = specresourcelimit
 
 <Node id="98" bw="32" op_0_bw="32" op_1_bw="0" op_2_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:93 %rend2_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_11, i32 %rbegin1_i
+fpga_resource_limit_hint.entry.4:93 %rend19_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_11, i32 %rbegin4_i
 
 ]]></Node>
-<StgValue><ssdm name="rend2_i"/></StgValue>
+<StgValue><ssdm name="rend19_i"/></StgValue>
 </operation>
 
 <operation id="106" st_id="5" stage="1" lat="1">
@@ -1570,7 +1570,7 @@ fpga_resource_limit_hint.entry.4:94 %rbegin_i = specregionbegin i32 @_ssdm_op_Sp
 
 <Node id="100" bw="26" op_0_bw="11">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:95 %zext_ln241_4 = zext i11 %b_2
+fpga_resource_limit_hint.entry.4:95 %zext_ln241_4 = zext i11 %exp_table_load_4
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln241_4"/></StgValue>
@@ -1645,7 +1645,7 @@ fpga_resource_limit_hint.entry.4:99 %rend_i = specregionend i32 @_ssdm_op_SpecRe
 
 <Node id="105" bw="80" op_0_bw="80" op_1_bw="16" op_2_bw="16" op_3_bw="16" op_4_bw="16" op_5_bw="16">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:100 %p_0 = bitconcatenate i80 @_ssdm_op_BitConcatenate.i80.i16.i16.i16.i16.i16, i16 %trunc_ln241_4, i16 %trunc_ln241_3, i16 %trunc_ln241_2, i16 %trunc_ln241_1, i16 %trunc_ln3
+fpga_resource_limit_hint.entry.4:100 %p_0 = bitconcatenate i80 @_ssdm_op_BitConcatenate.i80.i16.i16.i16.i16.i16, i16 %trunc_ln241_4, i16 %trunc_ln241_3, i16 %trunc_ln241_2, i16 %trunc_ln241_1, i16 %trunc_ln4
 
 ]]></Node>
 <StgValue><ssdm name="p_0"/></StgValue>

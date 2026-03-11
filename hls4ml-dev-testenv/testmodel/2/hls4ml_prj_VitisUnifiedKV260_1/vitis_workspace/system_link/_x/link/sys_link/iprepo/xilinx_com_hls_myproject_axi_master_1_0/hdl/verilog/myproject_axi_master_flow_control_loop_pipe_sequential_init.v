@@ -1,14 +1,13 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
-// Tool Version Limit: 2025.11
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+// Tool Version Limit: 2023.10
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
 
 `timescale 1 ns / 1 ps
 
-(* DowngradeIPIdentifiedWarnings = "yes" *)
 module myproject_axi_master_flow_control_loop_pipe_sequential_init(
         ap_clk,
         ap_rst,

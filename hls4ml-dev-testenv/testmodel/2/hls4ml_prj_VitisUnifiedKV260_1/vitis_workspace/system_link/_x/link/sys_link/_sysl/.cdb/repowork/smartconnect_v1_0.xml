@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xd:repository xd:vendor="xilinx.com" xd:library="xd" xd:name="xd_ip" xd:version="2.01.a" xmlns:xd="http://www.xilinx.com/xd" >
-  <xd:component xd:vendor="xilinx.com" xd:library="ip" xd:name="smartconnect" xd:version="1.0" xd:type="interconnect" xd:cellType="ip">
+  <xd:component xd:vendor="xilinx.com" xd:library="ip" xd:name="smartconnect" xd:version="1.0" xd:type="interconnect">
     <xd:busInterface xd:name="ACLK" xd:busTypeRef="clock" xd:mode="slave" xd:direction="in" xd:library="signal" xd:resetRef="aresetn" xd:port="aclk" />
     <xd:busInterface xd:name="ARESETN" xd:busTypeRef="reset" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="aresetn" xd:activeLevel="low" xd:clockRef="ACLK" />
     <xd:busInterface xd:name="M00_AXI" xd:busTypeRef="aximm" xd:mode="master" xd:clockRef="ACLK" xd:resetRef="ARESETN"/>

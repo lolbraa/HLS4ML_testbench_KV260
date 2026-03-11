@@ -367,7 +367,7 @@ end
         .token_out_vec(token_out_vec_1),
         .dl_detect_out(dl_in_vec[1]));
 
-    assign proc_1_data_FIFO_blk[0] = 1'b0 | (~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.batch_size_c1_blk_n) | (~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.stream_in0_linput_blk_n);
+    assign proc_1_data_FIFO_blk[0] = 1'b0 | (~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.batch_size_c9_blk_n) | (~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.grp_load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1_fu_80.stream_in0_linput_blk_n);
     assign proc_1_data_PIPO_blk[0] = 1'b0;
     assign proc_1_start_FIFO_blk[0] = 1'b0 | (~start_for_compute_U0_U.if_full_n & load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.ap_start & ~load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0.real_start & (trans_in_cnt_0 == trans_out_cnt_0) & ~start_for_compute_U0_U.if_read);
     assign proc_1_TLF_FIFO_blk[0] = 1'b0;
@@ -654,7 +654,7 @@ end
     assign proc_7_input_sync_blk[0] = 1'b0;
     assign proc_7_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_7[0] = dl_detect_out ? proc_dep_vld_vec_7_reg[0] : (proc_7_data_FIFO_blk[0] | proc_7_data_PIPO_blk[0] | proc_7_start_FIFO_blk[0] | proc_7_TLF_FIFO_blk[0] | proc_7_input_sync_blk[0] | proc_7_output_sync_blk[0]);
-    assign proc_7_data_FIFO_blk[1] = 1'b0 | (~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.batch_size_blk_n) | (~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.grp_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1_fu_81.stream_out0_layer5_out_blk_n);
+    assign proc_7_data_FIFO_blk[1] = 1'b0 | (~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.batch_size_blk_n) | (~store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.grp_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1_fu_71.stream_out0_layer5_out_blk_n);
     assign proc_7_data_PIPO_blk[1] = 1'b0;
     assign proc_7_start_FIFO_blk[1] = 1'b0;
     assign proc_7_TLF_FIFO_blk[1] = 1'b0;

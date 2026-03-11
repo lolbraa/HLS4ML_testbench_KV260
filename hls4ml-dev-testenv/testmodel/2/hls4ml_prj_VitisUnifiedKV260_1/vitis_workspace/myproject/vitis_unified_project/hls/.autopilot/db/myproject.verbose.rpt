@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'myproject'
 ================================================================
-* Date:           Wed Mar 11 12:35:15 2026
+* Date:           Wed Mar 11 13:13:05 2026
 
-* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        vitis_unified_project
 * Solution:       hls (Vivado IP Flow Target)
 * Product family: zynquplus
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  4.152 ns|     0.62 ns|
+    |ap_clk  |  5.00 ns|  4.331 ns|     0.62 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
     |   min   |   max   |    min    |    max    | min | max |   Type   |
     +---------+---------+-----------+-----------+-----+-----+----------+
-    |       14|       14|  70.000 ns|  70.000 ns|    6|    6|  dataflow|
+    |       15|       15|  75.000 ns|  75.000 ns|    6|    6|  dataflow|
     +---------+---------+-----------+-----------+-----+-----+----------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                                                       |                                                                      |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
         |                                Instance                               |                                Module                                |   min   |   max   |    min    |    max    | min | max |   Type  |
         +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
-        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        3|        3|  15.000 ns|  15.000 ns|    3|    3|       no|
         |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0  |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
         |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        3|        3|  15.000 ns|  15.000 ns|    3|    3|       no|
         |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          |        5|        5|  25.000 ns|  25.000 ns|    5|    5|       no|
@@ -59,16 +59,16 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|       2|    -|
 |FIFO             |        -|     -|     297|     201|    -|
-|Instance         |        4|  1108|    9463|   40689|    -|
+|Instance         |        4|  1111|   10342|   40387|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       -|       -|    -|
 |Register         |        -|     -|       -|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        4|  1108|    9760|   40892|    0|
+|Total            |        4|  1111|   10639|   40590|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
-|Utilization (%)  |        1|    88|       4|      34|    0|
+|Utilization (%)  |        1|    89|       4|      34|    0|
 +-----------------+---------+------+--------+--------+-----+
 
 + Detail: 
@@ -76,12 +76,12 @@
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
     |                                Instance                               |                                Module                                | BRAM_18K| DSP |  FF  |  LUT  | URAM|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
-    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        0|  836|  5610|  28636|    0|
-    |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        0|  267|  2683|   9122|    0|
+    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        0|  856|  6493|  27887|    0|
+    |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        0|  250|  2679|   9551|    0|
     |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0  |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |        0|    0|   964|   2484|    0|
-    |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          |        4|    5|   206|    447|    0|
+    |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          |        4|    5|   206|    465|    0|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
-    |Total                                                                  |                                                                      |        4| 1108|  9463|  40689|    0|
+    |Total                                                                  |                                                                      |        4| 1111| 10342|  40387|    0|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
 
     * DSP: 
@@ -91,15 +91,15 @@
     N/A
 
     * FIFO: 
-    +--------------+---------+----+----+-----+------+------+---------+
-    |     Name     | BRAM_18K| FF | LUT| URAM| Depth| Bits | Size:D*B|
-    +--------------+---------+----+----+-----+------+------+---------+
-    |layer2_out_U  |        0|  99|   0|    -|     1|  1024|     1024|
-    |layer3_out_U  |        0|  99|   0|    -|     1|  1024|     1024|
-    |layer4_out_U  |        0|  99|   0|    -|     1|    80|       80|
-    +--------------+---------+----+----+-----+------+------+---------+
-    |Total         |        0| 297|   0|    0|     3|  2128|     2128|
-    +--------------+---------+----+----+-----+------+------+---------+
+    +----------------+---------+----+----+-----+------+------+---------+
+    |      Name      | BRAM_18K| FF | LUT| URAM| Depth| Bits | Size:D*B|
+    +----------------+---------+----+----+-----+------+------+---------+
+    |layer2_out_i_U  |        0|  99|   0|    -|     1|  1024|     1024|
+    |layer3_out_i_U  |        0|  99|   0|    -|     1|  1024|     1024|
+    |layer4_out_i_U  |        0|  99|   0|    -|     1|    80|       80|
+    +----------------+---------+----+----+-----+------+------+---------+
+    |Total           |        0| 297|   0|    0|     3|  2128|     2128|
+    +----------------+---------+----+----+-----+------+------+---------+
 
     * Expression: 
     +--------------+----------+----+---+----+------------+------------+
@@ -184,45 +184,45 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%layer2_out = alloca i64 1" [firmware/myproject.cpp:32]   --->   Operation 9 'alloca' 'layer2_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 1> <FIFO>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%layer3_out = alloca i64 1" [firmware/myproject.cpp:35]   --->   Operation 10 'alloca' 'layer3_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 1> <FIFO>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%layer4_out = alloca i64 1" [firmware/myproject.cpp:38]   --->   Operation 11 'alloca' 'layer4_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 80> <Depth = 1> <FIFO>
-ST_1 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln41 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i1024 %layer2_out, i256 %stream_in0_linput" [firmware/myproject.cpp:41]   --->   Operation 12 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%layer2_out_i = alloca i64 1"   --->   Operation 9 'alloca' 'layer2_out_i' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 1> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%layer3_out_i = alloca i64 1"   --->   Operation 10 'alloca' 'layer3_out_i' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 1> <FIFO>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%layer4_out_i = alloca i64 1"   --->   Operation 11 'alloca' 'layer4_out_i' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 80> <Depth = 1> <FIFO>
+ST_1 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln41 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i1024 %layer2_out_i, i256 %stream_in0_linput" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:41]   --->   Operation 12 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln41 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i1024 %layer2_out, i256 %stream_in0_linput" [firmware/myproject.cpp:41]   --->   Operation 13 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln41 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i1024 %layer2_out_i, i256 %stream_in0_linput" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:41]   --->   Operation 13 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln43 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out, i1024 %layer3_out" [firmware/myproject.cpp:43]   --->   Operation 14 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln43 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out_i, i1024 %layer3_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:43]   --->   Operation 14 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln43 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out, i1024 %layer3_out" [firmware/myproject.cpp:43]   --->   Operation 15 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln43 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out_i, i1024 %layer3_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:43]   --->   Operation 15 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln45 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,5u>,config4>, i1024 %layer3_out, i80 %layer4_out" [firmware/myproject.cpp:45]   --->   Operation 16 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln45 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,5u>,config4>, i1024 %layer3_out_i, i80 %layer4_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:45]   --->   Operation 16 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln45 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,5u>,config4>, i1024 %layer3_out, i80 %layer4_out" [firmware/myproject.cpp:45]   --->   Operation 17 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln45 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,5u>,config4>, i1024 %layer3_out_i, i80 %layer4_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:45]   --->   Operation 17 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [firmware/myproject.cpp:47]   --->   Operation 18 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out_i, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:47]   --->   Operation 18 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln14 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1" [firmware/myproject.cpp:14]   --->   Operation 25 'specdataflowpipeline' 'specdataflowpipeline_ln14' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @layer2_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer2_out, i1024 %layer2_out"   --->   Operation 26 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer2_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%empty_86 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out, i1024 %layer3_out"   --->   Operation 28 'specchannel' 'empty_86' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer3_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_87 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer4_out, i80 %layer4_out"   --->   Operation 30 'specchannel' 'empty_87' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer4_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [firmware/myproject.cpp:47]   --->   Operation 32 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln14 = ret" [firmware/myproject.cpp:14]   --->   Operation 33 'ret' 'ret_ln14' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1"   --->   Operation 25 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @layer2_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer2_out_i, i1024 %layer2_out_i"   --->   Operation 26 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer2_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%empty_80 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out_i, i1024 %layer3_out_i"   --->   Operation 28 'specchannel' 'empty_80' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer3_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_81 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer4_out_i, i80 %layer4_out_i"   --->   Operation 30 'specchannel' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer4_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out_i, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:47]   --->   Operation 32 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 33 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -246,27 +246,27 @@ Port [ stream_out0_layer5_out]:  wired=1; compound=1; hidden=0; nouse=0; global=
 
 <LifeTime>
 <method=bitvector/>
-layer2_out                (alloca              ) [ 011111111]
-layer3_out                (alloca              ) [ 001111111]
-layer4_out                (alloca              ) [ 001111111]
-call_ln41                 (call                ) [ 000000000]
-call_ln43                 (call                ) [ 000000000]
-call_ln45                 (call                ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-specdataflowpipeline_ln14 (specdataflowpipeline) [ 000000000]
-empty                     (specchannel         ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-empty_86                  (specchannel         ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-empty_87                  (specchannel         ) [ 000000000]
-specinterface_ln0         (specinterface       ) [ 000000000]
-call_ln47                 (call                ) [ 000000000]
-ret_ln14                  (ret                 ) [ 000000000]
+layer2_out_i             (alloca              ) [ 011111111]
+layer3_out_i             (alloca              ) [ 001111111]
+layer4_out_i             (alloca              ) [ 001111111]
+call_ln41                (call                ) [ 000000000]
+call_ln43                (call                ) [ 000000000]
+call_ln45                (call                ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+specdataflowpipeline_ln0 (specdataflowpipeline) [ 000000000]
+empty                    (specchannel         ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+empty_80                 (specchannel         ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+empty_81                 (specchannel         ) [ 000000000]
+specinterface_ln0        (specinterface       ) [ 000000000]
+call_ln47                (call                ) [ 000000000]
+ret_ln0                  (ret                 ) [ 000000000]
 </LifeTime>
 
 <model>
@@ -463,36 +463,36 @@ ret_ln14                  (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="42" class="1004" name="layer2_out_fu_42">
+<comp id="42" class="1004" name="layer2_out_i_fu_42">
 <pin_list>
 <pin id="43" dir="0" index="0" bw="1" slack="0"/>
 <pin id="44" dir="1" index="1" bw="1024" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="layer2_out/1 "/>
+<opset="layer2_out_i/1 "/>
 </bind>
 </comp>
 
-<comp id="46" class="1004" name="layer3_out_fu_46">
+<comp id="46" class="1004" name="layer3_out_i_fu_46">
 <pin_list>
 <pin id="47" dir="0" index="0" bw="1" slack="0"/>
 <pin id="48" dir="1" index="1" bw="1024" slack="2"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="layer3_out/1 "/>
+<opset="layer3_out_i/1 "/>
 </bind>
 </comp>
 
-<comp id="50" class="1004" name="layer4_out_fu_50">
+<comp id="50" class="1004" name="layer4_out_i_fu_50">
 <pin_list>
 <pin id="51" dir="0" index="0" bw="1" slack="0"/>
 <pin id="52" dir="1" index="1" bw="80" slack="4"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="layer4_out/1 "/>
+<opset="layer4_out_i/1 "/>
 </bind>
 </comp>
 
@@ -550,33 +550,33 @@ ret_ln14                  (ret                 ) [ 000000000]
 </bind>
 </comp>
 
-<comp id="84" class="1005" name="layer2_out_reg_84">
+<comp id="84" class="1005" name="layer2_out_i_reg_84">
 <pin_list>
 <pin id="85" dir="0" index="0" bw="1024" slack="0"/>
 <pin id="86" dir="1" index="1" bw="1024" slack="0"/>
 </pin_list>
 <bind>
-<opset="layer2_out "/>
+<opset="layer2_out_i "/>
 </bind>
 </comp>
 
-<comp id="90" class="1005" name="layer3_out_reg_90">
+<comp id="90" class="1005" name="layer3_out_i_reg_90">
 <pin_list>
 <pin id="91" dir="0" index="0" bw="1024" slack="2"/>
 <pin id="92" dir="1" index="1" bw="1024" slack="2"/>
 </pin_list>
 <bind>
-<opset="layer3_out "/>
+<opset="layer3_out_i "/>
 </bind>
 </comp>
 
-<comp id="96" class="1005" name="layer4_out_reg_96">
+<comp id="96" class="1005" name="layer4_out_i_reg_96">
 <pin_list>
 <pin id="97" dir="0" index="0" bw="80" slack="4"/>
 <pin id="98" dir="1" index="1" bw="80" slack="4"/>
 </pin_list>
 <bind>
-<opset="layer4_out "/>
+<opset="layer4_out_i "/>
 </bind>
 </comp>
 
@@ -659,27 +659,27 @@ ret_ln14                  (ret                 ) [ 000000000]
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
 | Operation|                                 Functional Unit                                |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
-|          |   grp_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s_fu_54   |   836   |    0    |   5602  |  28036  |
+|          |   grp_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s_fu_54   |   856   |    0    |   6487  |  27366  |
 |   call   | grp_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s_fu_61 |    0    |    0    |   960   |   2432  |
-|          |    grp_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s_fu_67   |   267   |    0    |   2674  |   8854  |
+|          |    grp_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s_fu_67   |   250   |    0    |   2673  |   9291  |
 |          |     grp_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_73     |    5    |  2.562  |   257   |   423   |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                                                |   1108  |  2.562  |   9493  |  39745  |
+|   Total  |                                                                                |   1111  |  2.562  |  10377  |  39512  |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
 N/A
 
 * Register list:
-+-----------------+--------+
-|                 |   FF   |
-+-----------------+--------+
-|layer2_out_reg_84|  1024  |
-|layer3_out_reg_90|  1024  |
-|layer4_out_reg_96|   80   |
-+-----------------+--------+
-|      Total      |  2128  |
-+-----------------+--------+
++-------------------+--------+
+|                   |   FF   |
++-------------------+--------+
+|layer2_out_i_reg_84|  1024  |
+|layer3_out_i_reg_90|  1024  |
+|layer4_out_i_reg_96|   80   |
++-------------------+--------+
+|       Total       |  2128  |
++-------------------+--------+
 
 * Multiplexer (MUX) list: 
 |--------|------|------|------|--------|
@@ -694,10 +694,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |  1108  |    2   |  9493  |  39745 |
+|  Function |  1111  |    2   |  10377 |  39512 |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |  2128  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |  1108  |    2   |  11621 |  39745 |
+|   Total   |  1111  |    2   |  12505 |  39512 |
 +-----------+--------+--------+--------+--------+

@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2025.2</Version>
+<Version>2023.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -18,34 +18,33 @@
 <PipelineType>dataflow</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.152</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.331</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>14</Best-caseLatency>
-<Average-caseLatency>14</Average-caseLatency>
-<Worst-caseLatency>14</Worst-caseLatency>
-<Best-caseRealTimeLatency>70.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>70.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>70.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>15</Best-caseLatency>
+<Average-caseLatency>15</Average-caseLatency>
+<Worst-caseLatency>15</Worst-caseLatency>
+<Best-caseRealTimeLatency>75.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>75.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>75.000 ns</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>6</DataflowPipelineThroughput>
 <Interval-min>6</Interval-min>
 <Interval-max>6</Interval-max>
-<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/myproject.cpp:32</SourceLocation>
+<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp:41</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>4</BRAM_18K>
-<DSP>1108</DSP>
-<FF>9760</FF>
-<LUT>40892</LUT>
+<DSP>1111</DSP>
+<FF>10639</FF>
+<LUT>40590</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

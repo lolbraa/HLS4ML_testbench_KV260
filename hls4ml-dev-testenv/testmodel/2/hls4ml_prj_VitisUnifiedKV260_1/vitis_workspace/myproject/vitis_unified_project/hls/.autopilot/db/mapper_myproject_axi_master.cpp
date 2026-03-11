@@ -8,7 +8,6 @@
 #include <vector>
 #include "ap_fixed.h"
 #include "ap_int.h"
-#include "hls_directio.h"
 #include "hls_stream.h"
 using namespace std;
 

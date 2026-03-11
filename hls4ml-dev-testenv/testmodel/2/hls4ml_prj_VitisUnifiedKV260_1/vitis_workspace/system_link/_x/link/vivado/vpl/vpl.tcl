@@ -182,7 +182,6 @@ set rc [catch {
   set synth_xdc           [dict get $hw_platform_info synth_xdc]
   set dr_bd_tcl           [dict get $config_info dr_bd_tcl]
   set aie_archive         [dict get $config_info aie_archive_file]
-  set generate_vss        [dict get $config_info enable_vss_bd_gen]
   set ip_param_tcl        [dict get $config_info ip_param_tcl]
   set uses_pr            [dict get $hw_platform_info hw_platform_uses_pr]
   ocl_util::set_ip_repo_and_caching $hw_platform_info $config_info
@@ -373,6 +372,8 @@ OPTRACE "Generate output products" START { }
       generate_target all $ip_file
     }
   }
+  ocl_util::add_to_steps_log $steps_log "internal step: write_hwdef -force -file $vpl_output_dir/system.hdf" [ocl_util::extFileName]:[expr {[dict get [info frame -1] line] + [dict get [info frame 0] line]}]
+  write_hwdef -force -file $vpl_output_dir/system.hdf
   ocl_util::copy_ooc_xdc_files $bd_file $kernel_clock_freqs $config_info $hw_platform_info
 OPTRACE "Generate output products" END { }
 OPTRACE "Collect clock information and write automation summary report" START { }
@@ -429,7 +430,6 @@ set rc [catch {
     puts "INFO: \[OCL_UTIL\] set_property GEN_FULL_BITSTREAM 0 \[get_runs impl_1\]"
     set_property GEN_FULL_BITSTREAM 0 [get_runs impl_1]
   }
-
   lappend impl_runs [get_runs impl_1]
   set strategies_impl [dict get $config_info strategies_impl]
   set enable_multi_strategies [expr {$strategies_impl ne ""}]
@@ -478,17 +478,6 @@ set rc [catch {
     }
   }
   ::vitis_log::impl_runs -runs $impl_runs
-  if { ![dict get $hw_platform_info hw_platform_uses_pr] && [dict get $hw_platform_info seg_config] && [dict get $hw_platform_info seg_config_dynamic_reload] } {
-    set noc_solution_ncr [dict get $hw_platform_info noc_solution_ncr]
-    if {$noc_solution_ncr ne ""} {
-      set noc_solution_ncr [file normalize $noc_solution_ncr]
-      foreach {run} $impl_runs {
-        puts "INFO: \[OCL_UTIL\] set_property NOC_SOLUTION_FILE $noc_solution_ncr \[get_runs $run\]"
-        set_property NOC_SOLUTION_FILE $noc_solution_ncr $run
-      }
-    }
-  }
-
   ocl_util::write_tcl_hooks_for_impl_runs $impl_runs $config_info
       set optrace_task "Source impl_props_tcl"
       set sw_persona_msg "Failed to set Vivado impl properties. \

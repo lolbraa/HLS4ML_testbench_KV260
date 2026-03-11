@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject_axi_master'" level="0">
-<item name = "Date">Wed Mar 11 12:35:12 2026
+<item name = "Date">Wed Mar 11 13:13:02 2026
 </item>
-<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -32,9 +32,9 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="call_ln66_entry_proc_fu_130">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_load_input_float_array_ap_fixed_16_6_5_3_0_16u_s_fu_137">load_input_float_array_ap_fixed_16_6_5_3_0_16u_s, ?, ?, ?, ?, 0, 0, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_compute_fu_150">compute, ?, ?, ?, ?, ?, ?, no</column>
-<column name="grp_store_result_float_array_ap_fixed_16_6_5_3_0_5u_s_fu_164">store_result_float_array_ap_fixed_16_6_5_3_0_5u_s, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_load_input_float_array_ap_fixed_16_6_5_3_0_16u_s_fu_137">load_input_float_array_ap_fixed_16_6_5_3_0_16u_s, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_compute_fu_148">compute, ?, ?, ?, ?, ?, ?, no</column>
+<column name="grp_store_result_float_array_ap_fixed_16_6_5_3_0_5u_s_fu_162">store_result_float_array_ap_fixed_16_6_5_3_0_5u_s, ?, ?, ?, ?, ?, ?, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

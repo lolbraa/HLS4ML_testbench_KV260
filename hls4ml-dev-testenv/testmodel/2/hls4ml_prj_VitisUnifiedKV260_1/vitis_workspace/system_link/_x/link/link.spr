@@ -33,6 +33,7 @@
           <Option Id="OptionsStrList"></Option>
         </Step>
         <Step Id="xclbinutil2nd" EnableStepBool="0"/>
+        <Step Id="generate_sc_driver"/>
       </Strategy>
       <GeneratedRun Dir="run_link" File="gen_run.xml"/>
     </Run>

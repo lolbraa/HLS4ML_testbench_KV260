@@ -1,6 +1,10 @@
 
 
 #---------------------------
+# Constant blocks
+#---------------------------
+
+#---------------------------
 # Platform Parameters for kv260pf
 #---------------------------
 set axi_interconnect_0 [get_bd_cell /axi_interconnect_0]
@@ -23,25 +27,26 @@ set myproject_axi_master_1 [create_bd_cell -type ip -vlnv xilinx.com:hls:myproje
   
 
 #---------------------------
-# Instantiating smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD
+# Instantiating axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD
 #---------------------------
-set smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD [create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD]
+set axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD]
   
 set_property -dict [ list  \
   CONFIG.NUM_MI {1} \
-  CONFIG.NUM_SI {2}  ] $smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD
-#---------------------------
-# Clock/Reset Annotation Registration
-#---------------------------
-
-::sdsoc::mark_pfm_border
-
+  CONFIG.NUM_SI {2} \
+  CONFIG.STRATEGY {2} \
+  CONFIG.M00_HAS_REGSLICE {1} \
+  CONFIG.M00_HAS_DATA_FIFO {2} \
+  CONFIG.S00_HAS_REGSLICE {1} \
+  CONFIG.S00_HAS_DATA_FIFO {2} \
+  CONFIG.S01_HAS_REGSLICE {1} \
+  CONFIG.S01_HAS_DATA_FIFO {2}  ] $axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD
 
 #---------------------------
 # Connectivity Phase 1
 #---------------------------
 connect_bd_intf_net \
-  [get_bd_intf_pins -auto_enable /smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI] \
+  [get_bd_intf_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI] \
   [get_bd_intf_pins -auto_enable /zynq_ultra_ps_e_0/S_AXI_HP0_FPD] \
 
 connect_bd_intf_net \
@@ -50,32 +55,37 @@ connect_bd_intf_net \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /myproject_axi_master_1/m_axi_gmem_in0] \
-  [get_bd_intf_pins -auto_enable /smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI] \
+  [get_bd_intf_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI] \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /myproject_axi_master_1/m_axi_gmem_out0] \
-  [get_bd_intf_pins -auto_enable /smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI] \
+  [get_bd_intf_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI] \
+
+connect_bd_net  \
+  [get_bd_pins -auto_enable /zynq_ultra_ps_e_0/pl_clk0] \
+  [get_bd_pins -auto_enable /myproject_axi_master_1/ap_clk] \
+  [get_bd_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_ACLK] \
+  [get_bd_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_ACLK] \
+  [get_bd_pins -auto_enable /axi_interconnect_0/M02_ACLK] \
+  [get_bd_pins -auto_enable /zynq_ultra_ps_e_0/saxihp0_fpd_aclk] \
+  [get_bd_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/ACLK] \
+  [get_bd_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_ACLK] \
+
+connect_bd_net  \
+  [get_bd_pins -auto_enable /rst_ps8_0_99M/interconnect_aresetn] \
+  [get_bd_pins -auto_enable /axi_interconnect_0/M02_ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_ARESETN] \
+
+connect_bd_net  \
+  [get_bd_pins -auto_enable /rst_ps8_0_99M/peripheral_aresetn] \
+  [get_bd_pins -auto_enable /myproject_axi_master_1/ap_rst_n] \
 
 connect_bd_net  \
   [get_bd_pins -auto_enable /myproject_axi_master_1/interrupt] \
   [get_bd_pins -auto_enable /customIntr_0/In1] \
-
-
-#---------------------------
-# Clock/Reset Annotation
-#---------------------------
-
-set_property HDL_ATTRIBUTE.CLOCK_AUTOMATION true $myproject_axi_master_1
-set_property HDL_ATTRIBUTE.ap_clk.FREQ_HZ {99999001} $myproject_axi_master_1
-set_property HDL_ATTRIBUTE.ap_clk.FREQ_HZ_TOLERANCE {4999950} $myproject_axi_master_1
-
-
-#---------------------------
-# Invoke clock automation
-#---------------------------
-
-::sdsoc::run_clock_reset_automation
-::sdsoc::erase_clock_properties
 
 
 #---------------------------

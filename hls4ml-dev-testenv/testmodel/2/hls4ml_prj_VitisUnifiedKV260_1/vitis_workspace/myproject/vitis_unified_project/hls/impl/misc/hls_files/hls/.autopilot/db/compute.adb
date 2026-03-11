@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="17">
   <syndb class_id="0" tracking_level="0" version="0">
     <userIPLatency>-1</userIPLatency>
-    <userIPName></userIPName>
+    <userIPName/>
     <cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
       <name>compute</name>
       <module_structure>Sequential</module_structure>
@@ -17,25 +17,25 @@
               <type>1</type>
               <id>1</id>
               <name>batch_size</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo class_id="6" tracking_level="0" version="0">
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
               <coreName>FIFO_SRL</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1819096179</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -53,25 +53,25 @@
               <type>1</type>
               <id>2</id>
               <name>batch_size_c</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
               <coreName>FIFO_SRL</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1600941364</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -89,25 +89,25 @@
               <type>1</type>
               <id>3</id>
               <name>stream_in0_linput</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1869444211</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>256</bitwidth>
           </Value>
@@ -125,25 +125,25 @@
               <type>1</type>
               <id>6</id>
               <name>stream_out0_layer5_out</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1869444211</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
           </Value>
@@ -165,25 +165,25 @@
               <type>0</type>
               <id>7</id>
               <name>q</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1211069039</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -207,25 +207,25 @@
               <type>0</type>
               <id>9</id>
               <name>batch_size_read</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName>batch_size</originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>fifo</opType>
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>80</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>81</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -250,25 +250,25 @@
               <type>0</type>
               <id>11</id>
               <name>batch_size_c_write_ln0</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
+              <originalName/>
+              <rtlName/>
               <control>auto</control>
               <opType>fifo</opType>
               <implIndex>srl</implIndex>
               <coreName>FIFO_SRL</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>80</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>81</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -294,25 +294,25 @@
               <type>0</type>
               <id>18</id>
               <name>q_write_ln0</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1919904869</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -337,8 +337,8 @@
               <type>0</type>
               <id>19</id>
               <name>br_ln42</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -346,13 +346,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="11" tracking_level="0" version="0">
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second class_id="12" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
                     <item class_id="13" tracking_level="0" version="0">
                       <first class_id="14" tracking_level="0" version="0">
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>42</second>
@@ -360,16 +360,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1211069039</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -393,8 +393,8 @@
               <type>0</type>
               <id>21</id>
               <name>q_load</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -402,13 +402,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>42</second>
@@ -416,16 +416,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1211069039</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -433,7 +433,7 @@
             <count>2</count>
             <item_version>0</item_version>
             <item>47</item>
-            <item>252</item>
+            <item>236</item>
           </oprand_edges>
           <opcode>load</opcode>
           <m_Display>0</m_Display>
@@ -450,8 +450,8 @@
               <type>0</type>
               <id>22</id>
               <name>zext_ln42</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -459,13 +459,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>42</second>
@@ -473,16 +473,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>zext_ln42_fu_86_p1</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>976909413</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -506,8 +506,8 @@
               <type>0</type>
               <id>23</id>
               <name>icmp_ln42</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -515,13 +515,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>42</second>
@@ -529,16 +529,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>icmp_ln42_fu_90_p2</rtlName>
               <control>auto</control>
-              <opType>setlt</opType>
+              <opType>icmp</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -563,8 +563,8 @@
               <type>0</type>
               <id>24</id>
               <name>add_ln42</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -572,13 +572,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>42</second>
@@ -586,7 +586,7 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>add_ln42_fu_95_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
@@ -595,7 +595,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>1</coreId>
-              <rtlModuleName></rtlModuleName>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -620,8 +620,8 @@
               <type>0</type>
               <id>25</id>
               <name>br_ln42</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -629,13 +629,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>42</second>
@@ -643,16 +643,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1129521725</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -678,8 +678,8 @@
               <type>0</type>
               <id>28</id>
               <name>_ln43</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>43</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -687,13 +687,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>43</second>
@@ -701,16 +701,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
+              <originalName/>
               <rtlName>grp_myproject_fu_66</rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>539110958</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -738,8 +738,8 @@
               <type>0</type>
               <id>29</id>
               <name>q_write_ln42</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -747,13 +747,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>42</second>
@@ -761,16 +761,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>539122993</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -779,8 +779,8 @@
             <item_version>0</item_version>
             <item>59</item>
             <item>60</item>
-            <item>253</item>
-            <item>254</item>
+            <item>237</item>
+            <item>238</item>
           </oprand_edges>
           <opcode>store</opcode>
           <m_Display>0</m_Display>
@@ -797,8 +797,8 @@
               <type>0</type>
               <id>30</id>
               <name>br_ln42</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
               <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
@@ -806,13 +806,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
                       <second>42</second>
@@ -820,16 +820,16 @@
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>757935405</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -852,40 +852,40 @@
             <Obj>
               <type>0</type>
               <id>32</id>
-              <name>_ln41</name>
-              <fileName>firmware/myproject_axi_master.cpp</fileName>
-              <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>41</lineNumber>
+              <name>_ln42</name>
+              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</fileName>
+              <fileDirectory>../.</fileDirectory>
+              <lineNumber>42</lineNumber>
               <contextFuncName>compute</contextFuncName>
               <contextNormFuncName>compute</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1</first>
+                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/myproject_axi_master.cpp</first>
+                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp</first>
                         <second>compute</second>
                       </first>
-                      <second>41</second>
+                      <second>42</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1701519394</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -912,25 +912,25 @@
               <type>2</type>
               <id>34</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>32</bitwidth>
           </Value>
@@ -943,25 +943,25 @@
               <type>2</type>
               <id>43</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>1832153964</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -974,25 +974,25 @@
               <type>2</type>
               <id>52</id>
               <name>empty</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>31</bitwidth>
           </Value>
@@ -1005,25 +1005,25 @@
               <type>2</type>
               <id>57</id>
               <name>myproject</name>
-              <fileName></fileName>
-              <fileDirectory></fileDirectory>
+              <fileName/>
+              <fileDirectory/>
               <lineNumber>0</lineNumber>
-              <contextFuncName></contextFuncName>
-              <contextNormFuncName></contextNormFuncName>
+              <contextFuncName/>
+              <contextNormFuncName/>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName></originalName>
-              <rtlName></rtlName>
-              <control></control>
-              <opType></opType>
-              <implIndex></implIndex>
-              <coreName></coreName>
+              <originalName/>
+              <rtlName/>
+              <control/>
+              <opType/>
+              <implIndex/>
+              <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967295</coreId>
-              <rtlModuleName></rtlModuleName>
+              <coreId>879979624</coreId>
+              <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1039,25 +1039,25 @@
             <type>3</type>
             <id>20</id>
             <name>entry</name>
-            <fileName></fileName>
-            <fileDirectory></fileDirectory>
+            <fileName/>
+            <fileDirectory/>
             <lineNumber>0</lineNumber>
-            <contextFuncName></contextFuncName>
-            <contextNormFuncName></contextNormFuncName>
+            <contextFuncName/>
+            <contextNormFuncName/>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName></originalName>
-            <rtlName></rtlName>
-            <control></control>
-            <opType></opType>
-            <implIndex></implIndex>
-            <coreName></coreName>
+            <originalName/>
+            <rtlName/>
+            <control/>
+            <opType/>
+            <implIndex/>
+            <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
-            <rtlModuleName></rtlModuleName>
+            <coreId>1852142689</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>5</count>
@@ -1074,25 +1074,25 @@
             <type>3</type>
             <id>26</id>
             <name>for.inc.i</name>
-            <fileName></fileName>
-            <fileDirectory></fileDirectory>
+            <fileName/>
+            <fileDirectory/>
             <lineNumber>0</lineNumber>
-            <contextFuncName></contextFuncName>
-            <contextNormFuncName></contextNormFuncName>
+            <contextFuncName/>
+            <contextNormFuncName/>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName></originalName>
-            <rtlName></rtlName>
-            <control></control>
-            <opType></opType>
-            <implIndex></implIndex>
-            <coreName></coreName>
+            <originalName/>
+            <rtlName/>
+            <control/>
+            <opType/>
+            <implIndex/>
+            <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
-            <rtlModuleName></rtlModuleName>
+            <coreId>1936484399</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>5</count>
@@ -1109,25 +1109,25 @@
             <type>3</type>
             <id>31</id>
             <name>for.inc.split.i</name>
-            <fileName></fileName>
-            <fileDirectory></fileDirectory>
+            <fileName/>
+            <fileDirectory/>
             <lineNumber>0</lineNumber>
-            <contextFuncName></contextFuncName>
-            <contextNormFuncName></contextNormFuncName>
+            <contextFuncName/>
+            <contextNormFuncName/>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName></originalName>
-            <rtlName></rtlName>
-            <control></control>
-            <opType></opType>
-            <implIndex></implIndex>
-            <coreName></coreName>
+            <originalName/>
+            <rtlName/>
+            <control/>
+            <opType/>
+            <implIndex/>
+            <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
-            <rtlModuleName></rtlModuleName>
+            <coreId>879979624</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>3</count>
@@ -1142,25 +1142,25 @@
             <type>3</type>
             <id>33</id>
             <name>compute.exit</name>
-            <fileName></fileName>
-            <fileDirectory></fileDirectory>
+            <fileName/>
+            <fileDirectory/>
             <lineNumber>0</lineNumber>
-            <contextFuncName></contextFuncName>
-            <contextNormFuncName></contextNormFuncName>
+            <contextFuncName/>
+            <contextNormFuncName/>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName></originalName>
-            <rtlName></rtlName>
-            <control></control>
-            <opType></opType>
-            <implIndex></implIndex>
-            <coreName></coreName>
+            <originalName/>
+            <rtlName/>
+            <control/>
+            <opType/>
+            <implIndex/>
+            <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>4294967295</coreId>
-            <rtlModuleName></rtlModuleName>
+            <coreId>2020173407</coreId>
+            <rtlModuleName/>
           </Obj>
           <node_objs>
             <count>1</count>
@@ -1341,49 +1341,49 @@
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_51">
-          <id>248</id>
+          <id>232</id>
           <edge_type>2</edge_type>
           <source_obj>20</source_obj>
           <sink_obj>26</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_52">
-          <id>249</id>
+          <id>233</id>
           <edge_type>2</edge_type>
           <source_obj>26</source_obj>
           <sink_obj>31</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_53">
-          <id>250</id>
+          <id>234</id>
           <edge_type>2</edge_type>
           <source_obj>26</source_obj>
           <sink_obj>33</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_54">
-          <id>251</id>
+          <id>235</id>
           <edge_type>2</edge_type>
           <source_obj>31</source_obj>
           <sink_obj>26</sink_obj>
           <is_back_edge>1</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_55">
-          <id>252</id>
+          <id>236</id>
           <edge_type>4</edge_type>
           <source_obj>18</source_obj>
           <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_56">
-          <id>253</id>
+          <id>237</id>
           <edge_type>4</edge_type>
           <source_obj>18</source_obj>
           <sink_obj>29</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_57">
-          <id>254</id>
+          <id>238</id>
           <edge_type>4</edge_type>
           <source_obj>21</source_obj>
           <sink_obj>29</sink_obj>
@@ -1417,7 +1417,7 @@
         <mMinLatency>-1</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
-        <mDfPipe class_id="-1"></mDfPipe>
+        <mDfPipe class_id="-1"/>
       </item>
       <item class_id_reference="22" object_id="_59">
         <mId>2</mId>
@@ -1440,7 +1440,7 @@
         <mMinLatency>0</mMinLatency>
         <mMaxLatency>0</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
-        <mDfPipe class_id="-1"></mDfPipe>
+        <mDfPipe class_id="-1"/>
       </item>
       <item class_id_reference="22" object_id="_60">
         <mId>3</mId>
@@ -1464,7 +1464,7 @@
         <mMinLatency>-1</mMinLatency>
         <mMaxLatency>-1</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
-        <mDfPipe class_id="-1"></mDfPipe>
+        <mDfPipe class_id="-1"/>
       </item>
       <item class_id_reference="22" object_id="_61">
         <mId>4</mId>
@@ -1487,7 +1487,7 @@
         <mMinLatency>0</mMinLatency>
         <mMaxLatency>0</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
-        <mDfPipe class_id="-1"></mDfPipe>
+        <mDfPipe class_id="-1"/>
       </item>
     </cdfg_regions>
     <fsm class_id="24" tracking_level="1" version="0" object_id="_62">
@@ -1708,21 +1708,21 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>1108</second>
+              <second>1111</second>
             </item>
             <item>
               <first>FF</first>
-              <second>9760</second>
+              <second>10639</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>40892</second>
+              <second>40590</second>
             </item>
           </second>
         </item>
       </dp_component_resource>
       <dp_expression_resource>
-        <count>4</count>
+        <count>5</count>
         <item_version>0</item_version>
         <item>
           <first>add_ln42_fu_95_p2 ( + ) </first>
@@ -1749,6 +1749,29 @@
         </item>
         <item>
           <first>ap_block_state1 ( or ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>2</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>ap_sync_grp_myproject_fu_66_ap_done ( or ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1826,12 +1849,12 @@
         <item_version>0</item_version>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>5</count>
+        <count>7</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -1844,10 +1867,6 @@
             <item>
               <first>(2Count)</first>
               <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -1858,7 +1877,7 @@
         <item>
           <first>ap_done</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -1871,10 +1890,6 @@
             <item>
               <first>(2Count)</first>
               <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -1885,7 +1900,7 @@
         <item>
           <first>batch_size_blk_n</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -1898,10 +1913,6 @@
             <item>
               <first>(2Count)</first>
               <second>2</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
             </item>
             <item>
               <first>LUT</first>
@@ -1912,7 +1923,7 @@
         <item>
           <first>batch_size_c_blk_n</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -1927,10 +1938,6 @@
               <second>2</second>
             </item>
             <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
               <first>LUT</first>
               <second>9</second>
             </item>
@@ -1939,7 +1946,7 @@
         <item>
           <first>q_fu_48</first>
           <second>
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
@@ -1954,8 +1961,50 @@
               <second>62</second>
             </item>
             <item>
-              <first>FF</first>
-              <second>0</second>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>stream_in0_linput_read</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>stream_out0_layer5_out_write</first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
             </item>
             <item>
               <first>LUT</first>
@@ -2649,7 +2698,7 @@
       <item>
         <first>23</first>
         <second>
-          <first>530</first>
+          <first>45</first>
           <second>0</second>
         </second>
       </item>
@@ -2668,6 +2717,5 @@
         </second>
       </item>
     </node2core>
-    <sched_res class_id="-1"></sched_res>
   </syndb>
 </boost_serialization>

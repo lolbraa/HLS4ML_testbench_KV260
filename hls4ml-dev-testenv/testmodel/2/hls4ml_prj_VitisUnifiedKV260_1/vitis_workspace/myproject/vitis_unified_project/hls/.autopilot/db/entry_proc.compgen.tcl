@@ -33,7 +33,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_gmem_out0_ptr_layer5_out_c \
     op interface \
-    ports { gmem_out0_ptr_layer5_out_c_din { O 64 vector } gmem_out0_ptr_layer5_out_c_full_n { I 1 bit } gmem_out0_ptr_layer5_out_c_write { O 1 bit } gmem_out0_ptr_layer5_out_c_num_data_valid { I 3 vector } gmem_out0_ptr_layer5_out_c_fifo_cap { I 3 vector } } \
+    ports { gmem_out0_ptr_layer5_out_c_din { O 64 vector } gmem_out0_ptr_layer5_out_c_num_data_valid { I 3 vector } gmem_out0_ptr_layer5_out_c_fifo_cap { I 3 vector } gmem_out0_ptr_layer5_out_c_full_n { I 1 bit } gmem_out0_ptr_layer5_out_c_write { O 1 bit } } \
 } "
 }
 

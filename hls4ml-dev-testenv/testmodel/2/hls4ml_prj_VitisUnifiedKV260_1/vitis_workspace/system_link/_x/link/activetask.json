@@ -1,6 +1,7 @@
 {
-    "completedTask": "xclbinutilinfo",
-    "runComplete": "true",
+"completedTask": "vpl",
+"activeTask": "vpl.create_project",
+    "runComplete": "false",
     "taskList": [
         "system_link",
         "vpl",
@@ -17,6 +18,7 @@
         "vpl.impl.write_bitstream",
         "rtdgen",
         "xclbinutil",
-        "xclbinutilinfo"
+        "xclbinutilinfo",
+        "generate_sc_driver"
     ]
 }

@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2025.2</Version>
+<Version>2023.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -18,32 +18,31 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.054</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.331</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>2</Best-caseLatency>
-<Average-caseLatency>2</Average-caseLatency>
-<Worst-caseLatency>2</Worst-caseLatency>
-<Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
-<Interval-min>2</Interval-min>
-<Interval-max>2</Interval-max>
-<PerformancePragma>-</PerformancePragma>
+<Best-caseLatency>3</Best-caseLatency>
+<Average-caseLatency>3</Average-caseLatency>
+<Worst-caseLatency>3</Worst-caseLatency>
+<Best-caseRealTimeLatency>15.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>15.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>15.000 ns</Worst-caseRealTimeLatency>
+<Interval-min>3</Interval-min>
+<Interval-max>3</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_stream.h:43~firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
+<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_dense_stream.h:43~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP>836</DSP>
-<FF>5610</FF>
-<LUT>28636</LUT>
+<DSP>856</DSP>
+<FF>6493</FF>
+<LUT>27887</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -179,28 +178,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>layer2_out_full_n</name>
-<Object>layer2_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>layer2_out_write</name>
-<Object>layer2_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>layer2_out_num_data_valid</name>
 <Object>layer2_out</Object>
 <Type>pointer</Type>
@@ -223,6 +200,28 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>layer2_out_full_n</name>
+<Object>layer2_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer2_out_write</name>
+<Object>layer2_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>stream_in0_linput_dout</name>
 <Object>stream_in0_linput</Object>
 <Type>pointer</Type>
@@ -231,28 +230,6 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>256</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_empty_n</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_read</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -276,6 +253,28 @@
 <Dir>in</Dir>
 <Bits>8</Bits>
 <Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_in0_linput_empty_n</name>
+<Object>stream_in0_linput</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_in0_linput_read</name>
+<Object>stream_in0_linput</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
 </RtlPorts>
 </InterfaceSummary>
 
