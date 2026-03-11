@@ -1,0 +1,1325 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date              : Wed Mar 11 11:24:49 2026
+| Host              : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
+| Command           : report_timing_summary -max_paths 10 -file vitis_design_wrapper_timing_summary_routed.rpt -pb vitis_design_wrapper_timing_summary_routed.pb -rpx vitis_design_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design            : vitis_design_wrapper
+| Device            : xck26-sfvc784
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
+| Temperature Grade : C
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.438        0.000                      0                99140        0.010        0.000                      0                99140        3.500        0.000                       0                 28245  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock     Waveform(ns)       Period(ns)      Frequency(MHz)
+-----     ------------       ----------      --------------
+clk_pl_0  {0.000 5.000}      10.000          100.000         
+clk_pl_1  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_pl_0            0.438        0.000                      0                99140        0.010        0.000                      0                99140        3.500        0.000                       0                 28245  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_pl_0
+  To Clock:  clk_pl_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.438ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.010ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        3.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.438ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[17]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.770ns  (logic 1.201ns (13.694%)  route 7.569ns (86.306%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.169ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.005ns = ( 13.005 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.789ns (routing 1.450ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.569    12.132    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/A[17]
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.789    13.005    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/CLK
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.193    
+                         clock uncertainty           -0.130    13.063    
+    DSP48E2_X5Y11        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[17])
+                                                     -0.493    12.570    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.570    
+                         arrival time                         -12.132    
+  -------------------------------------------------------------------
+                         slack                                  0.438    
+
+Slack (MET) :             0.440ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[18]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.754ns  (logic 1.201ns (13.719%)  route 7.553ns (86.281%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.169ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.005ns = ( 13.005 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.789ns (routing 1.450ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.553    12.116    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/A[18]
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[18]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.789    13.005    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/CLK
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.193    
+                         clock uncertainty           -0.130    13.063    
+    DSP48E2_X5Y11        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[18])
+                                                     -0.507    12.556    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.556    
+                         arrival time                         -12.116    
+  -------------------------------------------------------------------
+                         slack                                  0.440    
+
+Slack (MET) :             0.451ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[16]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.755ns  (logic 1.201ns (13.717%)  route 7.554ns (86.283%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.169ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.005ns = ( 13.005 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.789ns (routing 1.450ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.554    12.117    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/A[16]
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.789    13.005    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/CLK
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.193    
+                         clock uncertainty           -0.130    13.063    
+    DSP48E2_X5Y11        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[16])
+                                                     -0.495    12.568    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.568    
+                         arrival time                         -12.117    
+  -------------------------------------------------------------------
+                         slack                                  0.451    
+
+Slack (MET) :             0.474ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/A[19]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.771ns  (logic 1.201ns (13.694%)  route 7.570ns (86.306%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.128ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.045ns = ( 13.045 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.829ns (routing 1.450ns, distribution 1.379ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.570    12.132    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/A[19]
+    DSP48E2_X3Y7         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/A[19]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.829    13.045    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/CLK
+    DSP48E2_X3Y7         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.233    
+                         clock uncertainty           -0.130    13.103    
+    DSP48E2_X3Y7         DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[19])
+                                                     -0.497    12.606    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.606    
+                         arrival time                         -12.132    
+  -------------------------------------------------------------------
+                         slack                                  0.474    
+
+Slack (MET) :             0.484ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[29]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.696ns  (logic 1.201ns (13.811%)  route 7.495ns (86.189%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.169ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.005ns = ( 13.005 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.789ns (routing 1.450ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.495    12.057    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/A[29]
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[29]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.789    13.005    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/CLK
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.193    
+                         clock uncertainty           -0.130    13.063    
+    DSP48E2_X5Y11        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[29])
+                                                     -0.522    12.541    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.541    
+                         arrival time                         -12.057    
+  -------------------------------------------------------------------
+                         slack                                  0.484    
+
+Slack (MET) :             0.487ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/DSP_A_B_DATA_INST/A[24]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.543ns  (logic 1.201ns (14.058%)  route 7.342ns (85.942%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.310ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.864ns = ( 12.864 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.648ns (routing 1.450ns, distribution 1.198ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.342    11.905    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/A[24]
+    DSP48E2_X8Y3         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/DSP_A_B_DATA_INST/A[24]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.648    12.864    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/CLK
+    DSP48E2_X8Y3         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.052    
+                         clock uncertainty           -0.130    12.922    
+    DSP48E2_X8Y3         DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[24])
+                                                     -0.531    12.391    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.391    
+                         arrival time                         -11.905    
+  -------------------------------------------------------------------
+                         slack                                  0.487    
+
+Slack (MET) :             0.497ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[19]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.708ns  (logic 1.201ns (13.793%)  route 7.507ns (86.207%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.169ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.005ns = ( 13.005 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.789ns (routing 1.450ns, distribution 1.339ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.507    12.069    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/A[19]
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/A[19]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.789    13.005    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/CLK
+    DSP48E2_X5Y11        DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.193    
+                         clock uncertainty           -0.130    13.063    
+    DSP48E2_X5Y11        DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[19])
+                                                     -0.497    12.566    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_8ns_24_1_1_U79/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.566    
+                         arrival time                         -12.069    
+  -------------------------------------------------------------------
+                         slack                                  0.497    
+
+Slack (MET) :             0.504ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/A[29]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.716ns  (logic 1.201ns (13.779%)  route 7.515ns (86.221%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.128ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.045ns = ( 13.045 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.829ns (routing 1.450ns, distribution 1.379ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.515    12.078    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/A[29]
+    DSP48E2_X3Y7         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/A[29]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.829    13.045    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/CLK
+    DSP48E2_X3Y7         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.233    
+                         clock uncertainty           -0.130    13.103    
+    DSP48E2_X3Y7         DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[29])
+                                                     -0.522    12.581    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.581    
+                         arrival time                         -12.078    
+  -------------------------------------------------------------------
+                         slack                                  0.504    
+
+Slack (MET) :             0.521ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/A[20]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.706ns  (logic 1.201ns (13.796%)  route 7.505ns (86.204%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.128ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.045ns = ( 13.045 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.829ns (routing 1.450ns, distribution 1.379ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.505    12.067    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/A[20]
+    DSP48E2_X3Y7         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/A[20]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.829    13.045    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/CLK
+    DSP48E2_X3Y7         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.233    
+                         clock uncertainty           -0.130    13.103    
+    DSP48E2_X3Y7         DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[20])
+                                                     -0.515    12.588    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9s_25_1_1_U721/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.588    
+                         arrival time                         -12.067    
+  -------------------------------------------------------------------
+                         slack                                  0.521    
+
+Slack (MET) :             0.534ns  (required time - arrival time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/DSP_A_B_DATA_INST/A[15]
+                            (rising edge-triggered cell DSP_A_B_DATA clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_pl_0 rise@10.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        8.501ns  (logic 1.201ns (14.128%)  route 7.300ns (85.872%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.310ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.864ns = ( 12.864 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.362ns
+    Clock Pessimism Removal (CPR):    0.188ns
+  Clock Uncertainty:      0.130ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.250ns
+    Phase Error              (PE):    0.000ns
+  Clock Net Delay (Source):      3.095ns (routing 1.584ns, distribution 1.511ns)
+  Clock Net Delay (Destination): 2.648ns (routing 1.450ns, distribution 1.198ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.095     3.362    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y12         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y12         RAMB36E2 (Prop_RAMB36E2_RAMB36_CLKARDCLK_DOUTADOUT[31])
+                                                      1.201     4.563 r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_2/DOUTADOUT[31]
+                         net (fo=781, routed)         7.300    11.863    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/A[15]
+    DSP48E2_X8Y3         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/DSP_A_B_DATA_INST/A[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                     10.000    10.000 r  
+    PS8_X0Y0             PS8                          0.000    10.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181    10.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035    10.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.648    12.864    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/CLK
+    DSP48E2_X8Y3         DSP_A_B_DATA                                 r  vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/DSP_A_B_DATA_INST/CLK
+                         clock pessimism              0.188    13.052    
+                         clock uncertainty           -0.130    12.922    
+    DSP48E2_X8Y3         DSP_A_B_DATA (Setup_DSP_A_B_DATA_DSP48E2_CLK_A[15])
+                                                     -0.526    12.396    vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_66/dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0/grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67/mul_16s_9ns_25_1_1_U110/tmp_product/DSP_A_B_DATA_INST
+  -------------------------------------------------------------------
+                         required time                         12.396    
+                         arrival time                         -11.863    
+  -------------------------------------------------------------------
+                         slack                                  0.534    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.010ns  (arrival time - required time)
+  Source:                 vitis_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[5]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/axi_smc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][5]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.212ns  (logic 0.112ns (52.830%)  route 0.100ns (47.170%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.099ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.391ns
+    Source Clock Delay      (SCD):    3.058ns
+    Clock Pessimism Removal (CPR):    0.234ns
+  Clock Net Delay (Source):      2.842ns (routing 1.450ns, distribution 1.392ns)
+  Clock Net Delay (Destination): 3.124ns (routing 1.584ns, distribution 1.540ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.842     3.058    vitis_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/clka
+    SLICE_X4Y53          FDRE                                         r  vitis_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y53          FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.112     3.170 r  vitis_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[5]/Q
+                         net (fo=1, routed)           0.100     3.270    vitis_design_i/axi_smc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/s_sc_payld[1]
+    SLICE_X3Y53          FDRE                                         r  vitis_design_i/axi_smc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.124     3.391    vitis_design_i/axi_smc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/aclk
+    SLICE_X3Y53          FDRE                                         r  vitis_design_i/axi_smc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][5]/C
+                         clock pessimism             -0.234     3.157    
+    SLICE_X3Y53          FDRE (Hold_FFF2_SLICEL_C_D)
+                                                      0.103     3.260    vitis_design_i/axi_smc/inst/switchboards/r_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][5]
+  -------------------------------------------------------------------
+                         required time                         -3.260    
+                         arrival time                           3.270    
+  -------------------------------------------------------------------
+                         slack                                  0.010    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1073]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.243ns  (logic 0.113ns (46.502%)  route 0.130ns (53.498%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.130ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.404ns
+    Source Clock Delay      (SCD):    3.039ns
+    Clock Pessimism Removal (CPR):    0.234ns
+  Clock Net Delay (Source):      2.823ns (routing 1.450ns, distribution 1.373ns)
+  Clock Net Delay (Destination): 3.137ns (routing 1.584ns, distribution 1.553ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.823     3.039    vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/m_axi_mm2s_aclk
+    SLICE_X4Y35          FDRE                                         r  vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y35          FDRE (Prop_CFF2_SLICEM_C_Q)
+                                                      0.113     3.152 r  vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[12]/Q
+                         net (fo=2, routed)           0.130     3.282    vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1144]_0[17]
+    SLICE_X5Y35          FDRE                                         r  vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1073]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.137     3.404    vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/aclk
+    SLICE_X5Y35          FDRE                                         r  vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1073]/C
+                         clock pessimism             -0.234     3.170    
+    SLICE_X5Y35          FDRE (Hold_GFF2_SLICEM_C_D)
+                                                      0.102     3.272    vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1073]
+  -------------------------------------------------------------------
+                         required time                         -3.272    
+                         arrival time                           3.282    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[4]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.238ns  (logic 0.114ns (47.899%)  route 0.124ns (52.101%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.126ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.466ns
+    Source Clock Delay      (SCD):    3.102ns
+    Clock Pessimism Removal (CPR):    0.238ns
+  Clock Net Delay (Source):      2.886ns (routing 1.450ns, distribution 1.436ns)
+  Clock Net Delay (Destination): 3.199ns (routing 1.584ns, distribution 1.615ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.886     3.102    vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/aclk
+    SLICE_X0Y186         FDRE                                         r  vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y186         FDRE (Prop_GFF2_SLICEL_C_Q)
+                                                      0.114     3.216 r  vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.ar_channel_0/s_arid_r_reg[4]/Q
+                         net (fo=1, routed)           0.124     3.340    vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/D[4]
+    SLICE_X1Y186         FDRE                                         r  vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.199     3.466    vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/aclk
+    SLICE_X1Y186         FDRE                                         r  vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[4]/C
+                         clock pessimism             -0.238     3.229    
+    SLICE_X1Y186         FDRE (Hold_EFF_SLICEM_C_D)
+                                                      0.101     3.330    vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[4]
+  -------------------------------------------------------------------
+                         required time                         -3.330    
+                         arrival time                           3.340    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0/tmp_41_reg_4434_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1/DINBDIN[15]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.234ns  (logic 0.112ns (47.863%)  route 0.122ns (52.137%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.271ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.350ns
+    Source Clock Delay      (SCD):    2.839ns
+    Clock Pessimism Removal (CPR):    0.239ns
+  Clock Net Delay (Source):      2.623ns (routing 1.450ns, distribution 1.173ns)
+  Clock Net Delay (Destination): 3.083ns (routing 1.584ns, distribution 1.499ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.623     2.839    vitis_design_i/myproject_axi_master_1/inst/load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0/ap_clk
+    SLICE_X29Y85         FDRE                                         r  vitis_design_i/myproject_axi_master_1/inst/load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0/tmp_41_reg_4434_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y85         FDRE (Prop_GFF_SLICEM_C_Q)
+                                                      0.112     2.951 r  vitis_design_i/myproject_axi_master_1/inst/load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0/tmp_41_reg_4434_reg[7]/Q
+                         net (fo=1, routed)           0.122     3.073    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/din[119]
+    RAMB36_X0Y16         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1/DINBDIN[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.083     3.350    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y16         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1/CLKBWRCLK
+                         clock pessimism             -0.239     3.110    
+    RAMB36_X0Y16         RAMB36E2 (Hold_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[15])
+                                                     -0.048     3.062    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1
+  -------------------------------------------------------------------
+                         required time                         -3.062    
+                         arrival time                           3.073    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/switchboards/aw_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][6]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.211ns  (logic 0.115ns (54.502%)  route 0.096ns (45.498%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.097ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.384ns
+    Source Clock Delay      (SCD):    3.047ns
+    Clock Pessimism Removal (CPR):    0.240ns
+  Clock Net Delay (Source):      2.831ns (routing 1.450ns, distribution 1.381ns)
+  Clock Net Delay (Destination): 3.117ns (routing 1.584ns, distribution 1.533ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.831     3.047    vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/clka
+    SLICE_X1Y108         FDRE                                         r  vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y108         FDRE (Prop_DFF2_SLICEM_C_Q)
+                                                      0.115     3.162 r  vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_rd_b.gen_rd_b_synth_template.gen_rf_narrow_reg.doutb_reg_reg[6]/Q
+                         net (fo=1, routed)           0.096     3.258    vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/switchboards/aw_switchboard/inst/gen_mi[0].inst_opipe_payld/s_sc_payld[5]
+    SLICE_X0Y108         FDRE                                         r  vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/switchboards/aw_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.117     3.384    vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/switchboards/aw_switchboard/inst/gen_mi[0].inst_opipe_payld/aclk
+    SLICE_X0Y108         FDRE                                         r  vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/switchboards/aw_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][6]/C
+                         clock pessimism             -0.240     3.144    
+    SLICE_X0Y108         FDRE (Hold_GFF2_SLICEL_C_D)
+                                                      0.103     3.247    vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/switchboards/aw_switchboard/inst/gen_mi[0].inst_opipe_payld/gen_pipe[1].pipe_reg[1][6]
+  -------------------------------------------------------------------
+                         required time                         -3.247    
+                         arrival time                           3.258    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+Slack (MET) :             0.011ns  (arrival time - required time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/buff_wdata/U_fifo_srl/dout_reg[31]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/local_BUS_WDATA_reg[31]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.248ns  (logic 0.114ns (45.968%)  route 0.134ns (54.032%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.134ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.409ns
+    Source Clock Delay      (SCD):    3.035ns
+    Clock Pessimism Removal (CPR):    0.240ns
+  Clock Net Delay (Source):      2.819ns (routing 1.450ns, distribution 1.369ns)
+  Clock Net Delay (Destination): 3.142ns (routing 1.584ns, distribution 1.558ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.819     3.035    vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/buff_wdata/U_fifo_srl/ap_clk
+    SLICE_X10Y108        FDRE                                         r  vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/buff_wdata/U_fifo_srl/dout_reg[31]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y108        FDRE (Prop_GFF2_SLICEM_C_Q)
+                                                      0.114     3.149 r  vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/store_unit_0/buff_wdata/U_fifo_srl/dout_reg[31]/Q
+                         net (fo=1, routed)           0.134     3.283    vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/local_BUS_WSTRB_reg[3]_0[31]
+    SLICE_X9Y107         FDRE                                         r  vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/local_BUS_WDATA_reg[31]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.142     3.409    vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/ap_clk
+    SLICE_X9Y107         FDRE                                         r  vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/local_BUS_WDATA_reg[31]/C
+                         clock pessimism             -0.240     3.169    
+    SLICE_X9Y107         FDRE (Hold_FFF2_SLICEL_C_D)
+                                                      0.103     3.272    vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/local_BUS_WDATA_reg[31]
+  -------------------------------------------------------------------
+                         required time                         -3.272    
+                         arrival time                           3.283    
+  -------------------------------------------------------------------
+                         slack                                  0.011    
+
+Slack (MET) :             0.012ns  (arrival time - required time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/rs_req/data_p1_reg[52]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1113]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.238ns  (logic 0.112ns (46.981%)  route 0.126ns (53.019%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.123ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.470ns
+    Source Clock Delay      (SCD):    3.102ns
+    Clock Pessimism Removal (CPR):    0.244ns
+  Clock Net Delay (Source):      2.886ns (routing 1.450ns, distribution 1.436ns)
+  Clock Net Delay (Destination): 3.203ns (routing 1.584ns, distribution 1.619ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.886     3.102    vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/rs_req/ap_clk
+    SLICE_X7Y123         FDRE                                         r  vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/rs_req/data_p1_reg[52]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y123         FDRE (Prop_CFF_SLICEM_C_Q)
+                                                      0.112     3.214 r  vitis_design_i/myproject_axi_master_1/inst/gmem_out0_m_axi_U/bus_write/wreq_throttle/rs_req/data_p1_reg[52]/Q
+                         net (fo=2, routed)           0.126     3.341    vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1144]_0[58]
+    SLICE_X6Y123         FDRE                                         r  vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1113]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.203     3.470    vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/aclk
+    SLICE_X6Y123         FDRE                                         r  vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1113]/C
+                         clock pessimism             -0.244     3.226    
+    SLICE_X6Y123         FDRE (Hold_HFF2_SLICEL_C_D)
+                                                      0.103     3.329    vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_entry_pipeline/s01_mmu/inst/aw_sreg/skid_buffer_reg[1113]
+  -------------------------------------------------------------------
+                         required time                         -3.329    
+                         arrival time                           3.341    
+  -------------------------------------------------------------------
+                         slack                                  0.012    
+
+Slack (MET) :             0.012ns  (arrival time - required time)
+  Source:                 vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[22]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1083]/D
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.247ns  (logic 0.112ns (45.422%)  route 0.135ns (54.578%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.131ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.405ns
+    Source Clock Delay      (SCD):    3.039ns
+    Clock Pessimism Removal (CPR):    0.234ns
+  Clock Net Delay (Source):      2.823ns (routing 1.450ns, distribution 1.373ns)
+  Clock Net Delay (Destination): 3.138ns (routing 1.584ns, distribution 1.554ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.823     3.039    vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/m_axi_mm2s_aclk
+    SLICE_X4Y35          FDRE                                         r  vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[22]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y35          FDRE (Prop_AFF_SLICEM_C_Q)
+                                                      0.112     3.151 r  vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/I_ADDR_CNTL/sig_next_addr_reg_reg[22]/Q
+                         net (fo=2, routed)           0.135     3.286    vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1144]_0[27]
+    SLICE_X3Y34          FDRE                                         r  vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1083]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.138     3.405    vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/aclk
+    SLICE_X3Y34          FDRE                                         r  vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1083]/C
+                         clock pessimism             -0.234     3.171    
+    SLICE_X3Y34          FDRE (Hold_HFF2_SLICEL_C_D)
+                                                      0.103     3.274    vitis_design_i/axi_smc/inst/s00_entry_pipeline/s00_mmu/inst/ar_sreg/skid_buffer_reg[1083]
+  -------------------------------------------------------------------
+                         required time                         -3.274    
+                         arrival time                           3.286    
+  -------------------------------------------------------------------
+                         slack                                  0.012    
+
+Slack (MET) :             0.012ns  (arrival time - required time)
+  Source:                 vitis_design_i/myproject_axi_master_1/inst/load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0/tmp_41_reg_4434_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1/DINBDIN[17]
+                            (rising edge-triggered cell RAMB36E2 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.234ns  (logic 0.112ns (47.863%)  route 0.122ns (52.137%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.270ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.350ns
+    Source Clock Delay      (SCD):    2.840ns
+    Clock Pessimism Removal (CPR):    0.239ns
+  Clock Net Delay (Source):      2.624ns (routing 1.450ns, distribution 1.174ns)
+  Clock Net Delay (Destination): 3.083ns (routing 1.584ns, distribution 1.499ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.624     2.840    vitis_design_i/myproject_axi_master_1/inst/load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0/ap_clk
+    SLICE_X29Y84         FDRE                                         r  vitis_design_i/myproject_axi_master_1/inst/load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0/tmp_41_reg_4434_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X29Y84         FDRE (Prop_CFF_SLICEM_C_Q)
+                                                      0.112     2.952 r  vitis_design_i/myproject_axi_master_1/inst/load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0/tmp_41_reg_4434_reg[9]/Q
+                         net (fo=1, routed)           0.122     3.074    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/din[121]
+    RAMB36_X0Y16         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1/DINBDIN[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.083     3.350    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/ap_clk
+    RAMB36_X0Y16         RAMB36E2                                     r  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1/CLKBWRCLK
+                         clock pessimism             -0.239     3.110    
+    RAMB36_X0Y16         RAMB36E2 (Hold_RAMB36E2_RAMB36_CLKBWRCLK_DINBDIN[17])
+                                                     -0.048     3.062    vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1
+  -------------------------------------------------------------------
+                         required time                         -3.062    
+                         arrival time                           3.074    
+  -------------------------------------------------------------------
+                         slack                                  0.012    
+
+Slack (MET) :             0.012ns  (arrival time - required time)
+  Source:                 vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_upsizer.inst_upsizer/gen_w_ch.accum_reg[last][0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_14_27/RAMA_D1/I
+                            (rising edge-triggered cell RAMD32 clocked by clk_pl_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_pl_0
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (clk_pl_0 rise@0.000ns - clk_pl_0 rise@0.000ns)
+  Data Path Delay:        0.229ns  (logic 0.112ns (48.908%)  route 0.117ns (51.092%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.138ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    3.420ns
+    Source Clock Delay      (SCD):    3.048ns
+    Clock Pessimism Removal (CPR):    0.234ns
+  Clock Net Delay (Source):      2.832ns (routing 1.450ns, distribution 1.382ns)
+  Clock Net Delay (Destination): 3.153ns (routing 1.584ns, distribution 1.569ns)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.181     0.181    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.035     0.216 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       2.832     3.048    vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_upsizer.inst_upsizer/s_sc_aclk
+    SLICE_X10Y58         FDRE                                         r  vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_upsizer.inst_upsizer/gen_w_ch.accum_reg[last][0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X10Y58         FDRE (Prop_EFF_SLICEM_C_Q)
+                                                      0.112     3.160 r  vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_upsizer.inst_upsizer/gen_w_ch.accum_reg[last][0]/Q
+                         net (fo=1, routed)           0.117     3.277    vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_14_27/DIA1
+    SLICE_X8Y59          RAMD32                                       r  vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_14_27/RAMA_D1/I
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_pl_0 rise edge)
+                                                      0.000     0.000 r  
+    PS8_X0Y0             PS8                          0.000     0.000 r  vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0]
+                         net (fo=1, routed)           0.229     0.229    vitis_design_i/zynq_ultra_ps_e_0/inst/pl_clk_unbuffered[0]
+    BUFG_PS_X0Y80        BUFG_PS (Prop_BUFG_PS_I_O)
+                                                      0.038     0.267 r  vitis_design_i/zynq_ultra_ps_e_0/inst/buffer_pl_clk_0.PL_CLK_0_BUFG/O
+    X1Y1 (CLOCK_ROOT)    net (fo=34672, routed)       3.153     3.420    vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_14_27/WCLK
+    SLICE_X8Y59          RAMD32                                       r  vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_14_27/RAMA_D1/CLK
+                         clock pessimism             -0.234     3.186    
+    SLICE_X8Y59          RAMD32 (Hold_A6LUT_SLICEM_CLK_I)
+                                                      0.079     3.265    vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_14_27/RAMA_D1
+  -------------------------------------------------------------------
+                         required time                         -3.265    
+                         arrival time                           3.277    
+  -------------------------------------------------------------------
+                         slack                                  0.012    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_pl_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/PLCLK[0] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     PS8/MAXIGP2ACLK     n/a            3.000         10.000      7.000      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+Min Period        n/a     PS8/SAXIGP0RCLK     n/a            3.000         10.000      7.000      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0RCLK
+Min Period        n/a     PS8/SAXIGP0WCLK     n/a            3.000         10.000      7.000      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0WCLK
+Min Period        n/a     PS8/SAXIGP2RCLK     n/a            3.000         10.000      7.000      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2RCLK
+Min Period        n/a     PS8/SAXIGP2WCLK     n/a            3.000         10.000      7.000      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2WCLK
+Min Period        n/a     RAMB18E2/CLKARDCLK  n/a            1.960         10.000      8.040      RAMB18_X0Y34  vitis_design_i/myproject_axi_master_1/inst/gmem_in0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg/CLKARDCLK
+Min Period        n/a     RAMB18E2/CLKBWRCLK  n/a            1.960         10.000      8.040      RAMB18_X0Y34  vitis_design_i/myproject_axi_master_1/inst/gmem_in0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg/CLKBWRCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.960         10.000      8.040      RAMB36_X0Y11  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/CLKARDCLK
+Min Period        n/a     RAMB36E2/CLKBWRCLK  n/a            1.960         10.000      8.040      RAMB36_X0Y11  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_0/CLKBWRCLK
+Min Period        n/a     RAMB36E2/CLKARDCLK  n/a            1.960         10.000      8.040      RAMB36_X0Y16  vitis_design_i/myproject_axi_master_1/inst/stream_in0_linput_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg_1/CLKARDCLK
+Low Pulse Width   Slow    PS8/MAXIGP2ACLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+Low Pulse Width   Fast    PS8/MAXIGP2ACLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+Low Pulse Width   Slow    PS8/SAXIGP0RCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0RCLK
+Low Pulse Width   Fast    PS8/SAXIGP0RCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0RCLK
+Low Pulse Width   Slow    PS8/SAXIGP0WCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0WCLK
+Low Pulse Width   Fast    PS8/SAXIGP0WCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0WCLK
+Low Pulse Width   Slow    PS8/SAXIGP2RCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2RCLK
+Low Pulse Width   Fast    PS8/SAXIGP2RCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2RCLK
+Low Pulse Width   Slow    PS8/SAXIGP2WCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2WCLK
+Low Pulse Width   Fast    PS8/SAXIGP2WCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2WCLK
+High Pulse Width  Slow    PS8/MAXIGP2ACLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+High Pulse Width  Fast    PS8/MAXIGP2ACLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/MAXIGP2ACLK
+High Pulse Width  Slow    PS8/SAXIGP0RCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0RCLK
+High Pulse Width  Fast    PS8/SAXIGP0RCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0RCLK
+High Pulse Width  Slow    PS8/SAXIGP0WCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0WCLK
+High Pulse Width  Fast    PS8/SAXIGP0WCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP0WCLK
+High Pulse Width  Slow    PS8/SAXIGP2RCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2RCLK
+High Pulse Width  Fast    PS8/SAXIGP2RCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2RCLK
+High Pulse Width  Slow    PS8/SAXIGP2WCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2WCLK
+High Pulse Width  Fast    PS8/SAXIGP2WCLK     n/a            1.500         5.000       3.500      PS8_X0Y0      vitis_design_i/zynq_ultra_ps_e_0/inst/PS8_i/SAXIGP2WCLK
+
+
+
