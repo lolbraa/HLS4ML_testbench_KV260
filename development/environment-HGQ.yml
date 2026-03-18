@@ -1,4 +1,4 @@
-name: testenv-hgq
+name: devenv-hgq
 dependencies:
   - tensorflow
   - numpy=1.26.0
