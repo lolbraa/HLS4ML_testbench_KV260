@@ -19,7 +19,7 @@ fi
 LDFLAGS=
 INCFLAGS="-Ifirmware/ap_types/"
 PROJECT=hgq2_1_hls4ml_prj_Vitis_da4ml
-LIB_STAMP=96d9e296
+LIB_STAMP=9ee98101
 BASEDIR="$(cd "$(dirname "$0")" && pwd)"
 WEIGHTS_DIR="\"${BASEDIR}/firmware/weights\""
 

@@ -4,6 +4,7 @@ dependencies:
   - numpy
   - notebook
   - scikit-learn
+  - matplotlib
   - pip:
     - hgq2
     - hls4ml[profiling,hgq2,da]

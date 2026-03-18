@@ -1,10 +1,19 @@
 #################
 #    HLS4ML
 #################
+array set opt {
+    reset      0
+    csim       1
+    synth      1
+    cosim      1
+    validation 1
+    export     0
+    vsynth     0
+    fifo_opt   0
+}
 
 set tcldir [file dirname [info script]]
 source [file join $tcldir project.tcl]
-source [file join $tcldir build_opt.tcl]
 
 proc remove_recursive_log_wave {} {
     set tcldir [file dirname [info script]]
@@ -97,6 +106,12 @@ proc add_vcd_instructions_tcl {} {
     # move the new data to the proper filename
     file delete -force $filename
     file rename -force $temp $filename
+}
+
+foreach arg $::argv {
+    foreach o [lsort [array names opt]] {
+        regexp "$o=+(\\w+)" $arg unused opt($o)
+    }
 }
 
 proc report_time { op_name time_start time_end } {
