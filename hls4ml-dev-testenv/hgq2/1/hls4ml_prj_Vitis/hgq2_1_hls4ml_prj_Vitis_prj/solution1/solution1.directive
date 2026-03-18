@@ -1,0 +1,10 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="hgq2_1_hls4ml_prj_Vitis" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="hgq2_1_hls4ml_prj_Vitis"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

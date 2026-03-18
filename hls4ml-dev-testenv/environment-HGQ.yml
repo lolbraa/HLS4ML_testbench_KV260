@@ -1,0 +1,8 @@
+name: testenv-hgq
+dependencies:
+  - tensorflow
+  - numpy=1.26.0
+  - pip:
+    - hgq2
+    - hls4ml[profiling,hgq2]
+#      - "hls4ml[profiling,hgq2] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
