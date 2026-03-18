@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'relu_ap_fixed_15_11_5_3_0_ap_ufixed_11_7_5_3_0_relu_config10_s'" level="0">
-<item name = "Date">Wed Mar 18 14:12:29 2026
+<item name = "Date">Wed Mar 18 19:22:22 2026
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">hgq2_1_hls4ml_prj_Vitis_da4ml_prj</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 1.231 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 1.245 ns, 1.35 ns</column>
 </table>
 </item>
 </section>

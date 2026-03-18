@@ -2,6 +2,7 @@
 set TopModule "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4"
 set ClockPeriod 5
 set ClockList ap_clk
+set AxiliteClockList {}
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
 set PipelineFlag 1
@@ -29,13 +30,10 @@ set ExtraCLdFlags {}
 set SynCheckOptions {}
 set PresynOptions {}
 set PreprocOptions {}
-set SchedOptions {}
-set BindOptions {}
-set RtlGenOptions {}
 set RtlWriterOptions {}
-set CbcGenFlag {}
-set CasGenFlag {}
-set CasMonitorFlag {}
+set CbcGenFlag 0
+set CasGenFlag 0
+set CasMonitorFlag 0
 set AutoSimOptions {}
 set ExportMCPathFlag 0
 set SCTraceFileName mytrace

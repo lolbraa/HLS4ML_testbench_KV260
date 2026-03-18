@@ -3,327 +3,327 @@
 ================================================================
 
 * Total Instructions per Compilation Phase
-+---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Phase         | Step                        | Instructions | Description                                                                            |
-+---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                             | 185,798 *    | After all functions are compiled and linked into a single design                       |
-|               |                             |              |                                                                                        |
-| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                  |  17,955      | user unroll pragmas are applied                                                        |
-|               | (2) simplification          |   6,059      | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                  |   6,049      | user inline pragmas are applied                                                        |
-|               | (4) simplification          |   5,924      | simplification of applied user inline pragmas                                          |
-|               |                             |              |                                                                                        |
-| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition         |   5,727      | user array partition pragmas are applied                                               |
-|               | (2) simplification          |   5,727      | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate  |   5,727      | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape           |   5,740      | apply array reshape pragmas                                                            |
-|               | (5) access patterns         |   5,715      | array access pattern optmizations                                                      |
-|               |                             |              |                                                                                        |
-| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification     |   5,059      | loop and instruction simplification                                                    |
-|               | (2) parallelization         |   4,923      | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition         |   4,923      | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification          |   4,923      | simplification of design after performance transformations                             |
-|               |                             |              |                                                                                        |
-| HW Transforms |                             |              | After hardware transfomations                                                          |
-|               | (1) lowering                |   4,929      | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations           |   4,934      | high level synthesis optimizations                                                     |
-+---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            | 188,554 *    | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 |  16,242      | user unroll pragmas are applied                                                        |
+|               | (2) simplification         |   5,527      | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 |   5,464      | user inline pragmas are applied                                                        |
+|               | (4) simplification         |   4,964      | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        |   4,767      | user array partition pragmas are applied                                               |
+|               | (2) simplification         |   4,767      | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |   4,767      | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |   4,780      | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |   4,755      | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    |   4,167      | loop and instruction simplification                                                    |
+|               | (2) parallelization        |   4,167      | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |   4,167      | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |   4,167      | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               |   4,037      | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |   4,042      | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
     * - Exceeded design size warning message threshold
 
 * Instructions per Function for each Compilation Phase
 +-------------------------------------+-------------------------------------+------------------+---------------+--------------+-------------+---------------+
 | Function                            | Location                            | Compile/Link     | Unroll/Inline | Array/Struct | Performance | HW Transforms |
 +-------------------------------------+-------------------------------------+------------------+---------------+--------------+-------------+---------------+
-| + hgq2_1_hls4ml_prj_Vitis_da4m...   | hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:7 | 185,798 *        | 5,924         | 5,715        | 4,923       | 4,934         |
-|  + dense_da_3<ap_fixed<27, 19, ...  | nnet_code_gen.h:26                  | 61,068           |               |              |             |               |
-|     bit_shift<2, 9, 4, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 7, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 9, 4, AP_TRN, ... | nnet_function_stubs.h:58            |    356 (4 calls) |               |              |             |               |
-|     bit_shift<-2, 6, 3, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 7, 3, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 7, 3, AP_TRN, ... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<3, 10, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 11, 5, AP_TRN,... | nnet_function_stubs.h:58            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<5, 11, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 7, 4, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 9, 5, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 11, 4, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 11, 5, AP_TRN, ... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<1, 9, 4, AP_TRN, A... | nnet_function_stubs.h:58            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<4, 9, 4, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-6, 8, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-4, 7, 3, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<6, 10, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-7, 6, 3, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 10, 4, AP_TRN, ... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-2, 10, 4, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 5, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 9, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 12, 5, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 14, 8, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 13, 5, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 8, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 13, 5, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 12, 5, AP_TRN, ... | nnet_function_stubs.h:58            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<2, 8, 4, AP_TRN, A... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<3, 11, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 14, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<8, 14, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<4, 10, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 10, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-5, 9, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 13, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 8, 4, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 9, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 11, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 16, 6, AP_TRN, ... | nnet_function_stubs.h:58            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<3, 11, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 12, 4, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 11, 5, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 14, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 13, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<5, 16, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 11, 7, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<4, 14, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-5, 15, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<4, 12, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<4, 16, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 14, 7, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 13, 7, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 16, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 15, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 17, 9, AP_TRN,... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<2, 12, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 17, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 14, 10, AP_TRN... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-1, 12, 7, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 14, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 14, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-6, 15, 14, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 16, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 13, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 15, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 15, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-5, 17, 12, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 16, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 14, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 13, 7, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 14, 7, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|    relu<ap_fixed<14, 8, AP_TRN,...  | nnet_activation.h:39                |    228           |  639          |  513         |  215        |  216          |
-|  + dense_da_6<ap_ufixed<12, 6, ...  | nnet_code_gen.h:268                 | 58,564           |               |              |             |               |
-|     bit_shift<3, 8, 3, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 7, 3, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 5, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 6, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 4, 3, AP_TRN, ... | nnet_function_stubs.h:65            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<-2, 6, 4, AP_TRN, ... | nnet_function_stubs.h:65            |    356 (4 calls) |               |              |             |               |
-|     bit_shift<-2, 5, 4, AP_TRN, ... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-1, 7, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 5, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 6, 4, AP_TRN, ... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-2, 8, 5, AP_TRN, ... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<1, 8, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 6, 3, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<4, 9, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<5, 7, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-4, 5, 3, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 7, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 7, 4, AP_TRN, A... | nnet_function_stubs.h:65            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<1, 9, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 8, 5, AP_TRN, A... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<1, 7, 3, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 9, 6, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 9, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 6, 5, AP_TRN, ... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-1, 5, 3, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 5, 3, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 9, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<6, 8, 3, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 5, 3, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 8, 5, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 6, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 5, 3, AP_TRN, A... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-1, 4, 2, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 5, 3, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 6, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 8, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<4, 8, 3, AP_TRN, A... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<4, 12, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 12, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<6, 9, 4, AP_TRN, A... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-2, 10, 5, AP_TRN,... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 7, 4, AP_TRN, A... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<1, 10, 5, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 9, 5, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 11, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 12, 7, AP_TRN, ... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<4, 10, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<5, 7, 3, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 11, 7, AP_TRN,... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 13, 10, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 10, 6, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 10, 5, AP_TRN,... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 11, 6, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 9, 5, AP_TRN, A... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<1, 8, 4, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 11, 10, AP_TRN... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 8, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 10, 7, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 6, 3, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 10, 6, AP_TRN,... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 8, 5, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<7, 10, 6, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 7, 4, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 7, 5, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 8, 4, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 13, 11, AP_TRN... | nnet_function_stubs.h:58            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<-2, 9, 7, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 10, 5, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 12, 8, AP_TRN, ... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<5, 10, 5, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 8, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 11, 7, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 14, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-4, 11, 8, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 8, 6, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 14, 10, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 11, 8, AP_TRN,... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 15, 9, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 12, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 12, 9, AP_TRN,... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-1, 11, 6, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 12, 8, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 12, 7, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-4, 20, 15, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 11, 8, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 16, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 13, 8, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 13, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 14, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 15, 12, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 14, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 16, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 14, 6, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 14, 10, AP_TRN... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<1, 14, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 10, 8, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 15, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 13, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|    relu<ap_fixed<14, 11, AP_TRN...  | nnet_activation.h:39                |    228           |  319          |  257         |  153        |  154          |
-|  + dense_da_9<ap_ufixed<10, 7, ...  | nnet_code_gen.h:545                 | 45,490           |               |              |             |               |
-|     bit_shift<-1, 4, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 6, 6, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 9, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 5, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 7, 5, AP_TRN, A... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-2, 7, 5, AP_TRN, ... | nnet_function_stubs.h:65            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<-2, 6, 5, AP_TRN, ... | nnet_function_stubs.h:65            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<2, 8, 6, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 6, 5, AP_TRN, A... | nnet_function_stubs.h:65            |    356 (4 calls) |               |              |             |               |
-|     bit_shift<2, 6, 5, AP_TRN, A... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-3, 6, 5, AP_TRN, ... | nnet_function_stubs.h:65            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<-4, 4, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 6, 6, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 4, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 5, 6, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-4, 9, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 4, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<4, 7, 5, AP_TRN, A... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-3, 12, 10, AP_TRN... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 7, 6, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 9, 7, AP_TRN, A... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-1, 8, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 8, 8, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 8, 6, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<6, 5, 3, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 8, 8, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<5, 8, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 9, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 9, 7, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 8, 8, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 9, 6, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 9, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 7, 6, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 8, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<4, 8, 6, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-4, 8, 8, AP_TRN, ... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-2, 10, 8, AP_TRN,... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<5, 7, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<2, 7, 7, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 8, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 10, 8, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 9, 6, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 9, 7, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 11, 9, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 11, 10, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 11, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<4, 10, 8, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 11, 7, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 12, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 14, 8, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 13, 9, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<4, 10, 6, AP_TRN, ... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<1, 9, 9, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 12, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 13, 9, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 10, 7, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 11, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 15, 13, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 13, 12, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 12, 8, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<4, 11, 7, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 15, 10, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 14, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 11, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 13, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 13, 12, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 14, 9, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 13, 12, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 15, 12, AP_TRN... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<-3, 15, 13, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 15, 12, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 12, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-5, 14, 12, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-3, 12, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|    relu<ap_fixed<15, 11, AP_TRN...  | nnet_activation.h:39                |    228           |  319          |  257         |  123        |  124          |
-|  + dense_da_12<ap_ufixed<11, 7,...  | nnet_code_gen.h:754                 | 19,107           |               |              |             |               |
-|     bit_shift<2, 5, 4, AP_TRN, A... | nnet_function_stubs.h:65            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<4, 3, 2, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 5, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 7, 6, AP_TRN, ... | nnet_function_stubs.h:65            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<4, 7, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 3, 2, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 7, 5, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 5, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 7, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 6, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-3, 7, 6, AP_TRN, ... | nnet_function_stubs.h:65            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<-2, 4, 4, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 8, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 9, 6, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 7, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 9, 5, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<3, 7, 4, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 10, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-1, 9, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 7, 6, AP_TRN, A... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<-2, 11, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 12, 11, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 10, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<3, 11, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<4, 11, 7, AP_TRN, ... | nnet_function_stubs.h:65            |     89           |               |              |             |               |
-|     bit_shift<1, 8, 6, AP_TRN, A... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<2, 13, 9, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<1, 11, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-1, 14, 12, AP_TRN... | nnet_function_stubs.h:58            |    178 (2 calls) |               |              |             |               |
-|     bit_shift<1, 12, 8, AP_TRN, ... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-4, 14, 11, AP_TRN... | nnet_function_stubs.h:58            |    267 (3 calls) |               |              |             |               |
-|     bit_shift<-5, 12, 10, AP_TRN... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|     bit_shift<-2, 12, 9, AP_TRN,... | nnet_function_stubs.h:58            |     89           |               |              |             |               |
-|    dense_3_oq<ap_fixed<10, 7, A...  | nnet_code_gen.h:861                 |    816           |               |              |             |               |
+| + hgq2_1_hls4ml_prj_Vitis_da4m...   | hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:7 | 188,554 *        | 4,964         | 4,755        | 4,167       | 4,042         |
+|  + dense_da_3<ap_fixed<27, 19, ...  | nnet_code_gen.h:26                  | 61,804           |               |              |             |               |
+|     bit_shift<2, 9, 4, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 7, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 9, 4, (ap_q_mo... | nnet_function_stubs.h:58            |    388 (4 calls) |               |              |             |               |
+|     bit_shift<-2, 6, 3, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 7, 3, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 7, 3, (ap_q_mo... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<3, 10, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 11, 5, (ap_q_m... | nnet_function_stubs.h:58            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<5, 11, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 7, 4, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 9, 5, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 11, 4, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 11, 5, (ap_q_mo... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<1, 9, 4, (ap_q_mod... | nnet_function_stubs.h:58            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<4, 9, 4, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-6, 8, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-4, 7, 3, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<6, 10, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-7, 6, 3, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 10, 4, (ap_q_mo... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-2, 10, 4, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 5, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 9, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 12, 5, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 14, 8, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 13, 5, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 8, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 13, 5, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 12, 5, (ap_q_mo... | nnet_function_stubs.h:58            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<2, 8, 4, (ap_q_mod... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<3, 11, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 14, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<8, 14, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<4, 10, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 10, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-5, 9, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 13, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 8, 4, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 9, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 11, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 16, 6, (ap_q_mo... | nnet_function_stubs.h:58            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<3, 11, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 12, 4, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 11, 5, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 14, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 13, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<5, 16, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 11, 7, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<4, 14, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-5, 15, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<4, 12, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<4, 16, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 14, 7, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 13, 7, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 16, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 15, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 17, 9, (ap_q_m... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<2, 12, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 17, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 14, 10, (ap_q_... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-1, 12, 7, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 14, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 14, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-6, 15, 14, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 16, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 13, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 15, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 15, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-5, 17, 12, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 16, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 14, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 13, 7, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 14, 7, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|    relu<ap_fixed<14, 8, (ap_q_m...  | nnet_activation.h:39                |    228           |  447          |  321         |  140        |               |
+|  + dense_da_6<ap_ufixed<12, 6, ...  | nnet_code_gen.h:268                 | 59,532           |               |              |             |               |
+|     bit_shift<3, 8, 3, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 7, 3, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 5, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 6, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 4, 3, (ap_q_mo... | nnet_function_stubs.h:65            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<-2, 6, 4, (ap_q_mo... | nnet_function_stubs.h:65            |    388 (4 calls) |               |              |             |               |
+|     bit_shift<-2, 5, 4, (ap_q_mo... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-1, 7, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 5, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 6, 4, (ap_q_mo... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-2, 8, 5, (ap_q_mo... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<1, 8, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 6, 3, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<4, 9, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<5, 7, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-4, 5, 3, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 7, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 7, 4, (ap_q_mod... | nnet_function_stubs.h:65            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<1, 9, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 8, 5, (ap_q_mod... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<1, 7, 3, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 9, 6, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 9, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 6, 5, (ap_q_mo... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-1, 5, 3, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 5, 3, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 9, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<6, 8, 3, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 5, 3, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 8, 5, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 6, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 5, 3, (ap_q_mod... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-1, 4, 2, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 5, 3, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 6, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 8, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<4, 8, 3, (ap_q_mod... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<4, 12, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 12, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<6, 9, 4, (ap_q_mod... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-2, 10, 5, (ap_q_m... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 7, 4, (ap_q_mod... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<1, 10, 5, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 9, 5, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 11, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 12, 7, (ap_q_mo... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<4, 10, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<5, 7, 3, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 11, 7, (ap_q_m... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 13, 10, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 10, 6, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 10, 5, (ap_q_m... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 11, 6, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 9, 5, (ap_q_mod... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<1, 8, 4, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 11, 10, (ap_q_... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 8, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 10, 7, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 6, 3, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 10, 6, (ap_q_m... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 8, 5, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<7, 10, 6, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 7, 4, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 7, 5, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 8, 4, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 13, 11, (ap_q_... | nnet_function_stubs.h:58            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<-2, 9, 7, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 10, 5, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 12, 8, (ap_q_mo... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<5, 10, 5, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 8, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 11, 7, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 14, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-4, 11, 8, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 8, 6, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 14, 10, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 11, 8, (ap_q_m... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 15, 9, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 12, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 12, 9, (ap_q_m... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-1, 11, 6, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 12, 8, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 12, 7, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-4, 20, 15, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 11, 8, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 16, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 13, 8, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 13, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 14, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 15, 12, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 14, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 16, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 14, 6, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 14, 10, (ap_q_... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<1, 14, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 10, 8, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 15, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 13, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|    relu<ap_fixed<14, 11, (ap_q_...  | nnet_activation.h:39                |    228           |  223          |  161         |   93        |               |
+|  + dense_da_9<ap_ufixed<10, 7, ...  | nnet_code_gen.h:545                 | 46,214           |               |              |             |               |
+|     bit_shift<-1, 4, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 6, 6, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 9, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 5, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 7, 5, (ap_q_mod... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-2, 7, 5, (ap_q_mo... | nnet_function_stubs.h:65            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<-2, 6, 5, (ap_q_mo... | nnet_function_stubs.h:65            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<2, 8, 6, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 6, 5, (ap_q_mod... | nnet_function_stubs.h:65            |    388 (4 calls) |               |              |             |               |
+|     bit_shift<2, 6, 5, (ap_q_mod... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-3, 6, 5, (ap_q_mo... | nnet_function_stubs.h:65            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<-4, 4, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 6, 6, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 4, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 5, 6, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-4, 9, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 4, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<4, 7, 5, (ap_q_mod... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-3, 12, 10, (ap_q_... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 7, 6, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 9, 7, (ap_q_mod... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-1, 8, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 8, 8, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 8, 6, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<6, 5, 3, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 8, 8, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<5, 8, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 9, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 9, 7, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 8, 8, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 9, 6, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 9, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 7, 6, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 8, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<4, 8, 6, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-4, 8, 8, (ap_q_mo... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-2, 10, 8, (ap_q_m... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<5, 7, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<2, 7, 7, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 8, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 10, 8, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 9, 6, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 9, 7, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 11, 9, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 11, 10, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 11, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<4, 10, 8, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 11, 7, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 12, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 14, 8, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 13, 9, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<4, 10, 6, (ap_q_mo... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<1, 9, 9, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 12, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 13, 9, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 10, 7, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 11, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 15, 13, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 13, 12, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 12, 8, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<4, 11, 7, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 15, 10, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 14, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 11, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 13, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 13, 12, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 14, 9, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 13, 12, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 15, 12, (ap_q_... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<-3, 15, 13, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 15, 12, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 12, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-5, 14, 12, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-3, 12, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|    relu<ap_fixed<15, 11, (ap_q_...  | nnet_activation.h:39                |    228           |  223          |  161         |   78        |               |
+|  + dense_da_12<ap_ufixed<11, 7,...  | nnet_code_gen.h:754                 | 19,435           |               |              |             |               |
+|     bit_shift<2, 5, 4, (ap_q_mod... | nnet_function_stubs.h:65            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<4, 3, 2, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 5, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 7, 6, (ap_q_mo... | nnet_function_stubs.h:65            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<4, 7, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 3, 2, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 7, 5, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 5, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 7, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 6, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-3, 7, 6, (ap_q_mo... | nnet_function_stubs.h:65            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<-2, 4, 4, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 8, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 9, 6, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 7, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 9, 5, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<3, 7, 4, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 10, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-1, 9, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 7, 6, (ap_q_mod... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<-2, 11, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 12, 11, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 10, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<3, 11, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<4, 11, 7, (ap_q_mo... | nnet_function_stubs.h:65            |     97           |               |              |             |               |
+|     bit_shift<1, 8, 6, (ap_q_mod... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<2, 13, 9, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<1, 11, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-1, 14, 12, (ap_q_... | nnet_function_stubs.h:58            |    194 (2 calls) |               |              |             |               |
+|     bit_shift<1, 12, 8, (ap_q_mo... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-4, 14, 11, (ap_q_... | nnet_function_stubs.h:58            |    291 (3 calls) |               |              |             |               |
+|     bit_shift<-5, 12, 10, (ap_q_... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|     bit_shift<-2, 12, 9, (ap_q_m... | nnet_function_stubs.h:58            |     97           |               |              |             |               |
+|    dense_3_oq<ap_fixed<10, 7, (...  | nnet_code_gen.h:861                 |    816           |               |              |             |               |
 +-------------------------------------+-------------------------------------+------------------+---------------+--------------+-------------+---------------+
     * - Exceeded design size warning message threshold
 

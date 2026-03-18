@@ -1,147 +1,144 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "9 4 7 2 8 10 6",
+    "calls": "2 8 5 1 7 3 4",
+    "control_depth": 0,
+    "def_use_depth": 5,
     "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp",
     "fileloc": 7,
-    "instructions": 1462,
+    "instructions": 1080,
     "loads": {
-      "L": 193,
+      "L": 125,
       "T": 1
     },
+    "memory_accesses": 138,
     "name": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4",
     "stores": {
       "T": 5
     },
-    "total_instructions": 6434
+    "total_instructions": 4460
   },
   "1": {
     "basicblocks": 1,
     "calls": "",
-    "file": "nnet_mult.h",
-    "fileloc": 110,
-    "instructions": 5,
-    "name": "cast<ap_ufixed<11, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, config6>",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp",
+    "fileloc": 0,
+    "instructions": 82,
+    "memory_accesses": 20,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
     "stores": {
-      "L": 1
+      "L": 20
     },
-    "total_instructions": 5
-  },
-  "10": {
-    "basicblocks": 97,
-    "calls": "",
-    "file": "nnet_activation.h",
-    "fileloc": 39,
-    "instructions": 226,
-    "name": "relu<ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<11, 7, AP_TRN, AP_WRAP, 0>, relu_config10>",
-    "stores": {
-      "L": 64
-    },
-    "total_instructions": 226
+    "total_instructions": 82
   },
   "2": {
-    "basicblocks": 97,
-    "calls": "",
-    "file": "nnet_activation.h",
-    "fileloc": 39,
-    "instructions": 226,
-    "name": "relu<ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, relu_config7>",
-    "stores": {
-      "L": 64
+    "basicblocks": 1,
+    "calls": "6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp",
+    "fileloc": 0,
+    "instructions": 779,
+    "loads": {
+      "L": 25
     },
-    "total_instructions": 226
+    "memory_accesses": 114,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 1035
   },
   "3": {
     "basicblocks": 1,
     "calls": "",
-    "file": "nnet_mult.h",
-    "fileloc": 110,
-    "instructions": 5,
-    "name": "cast<ap_ufixed<9, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, config9>",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp",
+    "fileloc": 0,
+    "instructions": 62,
+    "memory_accesses": 15,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
     "stores": {
-      "L": 1
+      "L": 15
     },
-    "total_instructions": 5
+    "total_instructions": 62
   },
   "4": {
-    "basicblocks": 193,
+    "basicblocks": 1,
     "calls": "",
-    "file": "nnet_activation.h",
-    "fileloc": 39,
-    "instructions": 450,
-    "name": "relu<ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, ap_ufixed<12, 6, AP_TRN, AP_WRAP, 0>, relu_config4>",
+    "control_depth": 0,
+    "def_use_depth": 13,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 380,
+    "memory_accesses": 5,
+    "name": "dense_latency<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, config12>",
     "stores": {
-      "L": 128
+      "L": 5
     },
-    "total_instructions": 450
+    "total_instructions": 380
   },
   "5": {
     "basicblocks": 1,
     "calls": "",
-    "file": "nnet_mult.h",
-    "fileloc": 110,
-    "instructions": 5,
-    "name": "cast<ap_fixed<26, 19, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, config3>",
+    "control_depth": 0,
+    "def_use_depth": 15,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp",
+    "fileloc": 0,
+    "instructions": 973,
+    "memory_accesses": 20,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
     "stores": {
-      "L": 1
+      "L": 20
     },
-    "total_instructions": 5
+    "total_instructions": 973
   },
   "6": {
     "basicblocks": 1,
     "calls": "",
-    "file": "nnet_dense_latency.h",
-    "fileloc": 13,
-    "instructions": 475,
-    "name": "dense_latency<ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 7, AP_TRN, AP_WRAP, 0>, config12>",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "cast<ap_fixed<26, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>",
     "stores": {
-      "L": 5
+      "L": 1
     },
-    "total_instructions": 475
+    "total_instructions": 4
   },
   "7": {
     "basicblocks": 1,
-    "calls": "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
-    "file": "nnet_dense_latency.h",
-    "fileloc": 13,
-    "instructions": 1129,
-    "loads": {
-      "L": 32
-    },
-    "name": "dense_latency<ap_ufixed<11, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, config6>",
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 12,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp",
+    "fileloc": 0,
+    "instructions": 746,
+    "memory_accesses": 15,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
     "stores": {
-      "L": 32
+      "L": 15
     },
-    "total_instructions": 1289
+    "total_instructions": 746
   },
   "8": {
     "basicblocks": 1,
-    "calls": "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3",
-    "file": "nnet_dense_latency.h",
-    "fileloc": 13,
-    "instructions": 888,
-    "loads": {
-      "L": 32
-    },
-    "name": "dense_latency<ap_ufixed<9, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, config9>",
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp",
+    "fileloc": 0,
+    "instructions": 102,
+    "memory_accesses": 25,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
     "stores": {
-      "L": 32
+      "L": 25
     },
-    "total_instructions": 1048
-  },
-  "9": {
-    "basicblocks": 1,
-    "calls": "5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5",
-    "file": "nnet_dense_latency.h",
-    "fileloc": 13,
-    "instructions": 938,
-    "loads": {
-      "L": 64
-    },
-    "name": "dense_latency<ap_fixed<26, 19, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, config3>",
-    "stores": {
-      "L": 64
-    },
-    "total_instructions": 1258
+    "total_instructions": 102
   }
 }

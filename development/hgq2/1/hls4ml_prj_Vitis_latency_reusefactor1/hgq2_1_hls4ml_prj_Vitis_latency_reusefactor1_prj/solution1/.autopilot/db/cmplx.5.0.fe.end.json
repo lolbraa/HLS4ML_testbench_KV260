@@ -1,0 +1,98 @@
+{
+    "0": {
+        "name": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1",
+        "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+        "fileloc": "7",
+        "instructions": "532",
+        "total_instructions": "2646",
+        "calls": "5 3 1 6 2 7 4",
+        "basicblocks": "1",
+        "memory_accesses": "6",
+        "control_depth": "0",
+        "def_use_depth": "30"
+    },
+    "1": {
+        "name": "dense_latency<ap_ufixed<11, 6, 5, 3, 0>, ap_fixed<14, 11, 5, 3, 0>, config6>",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+        "fileloc": "54",
+        "instructions": "598",
+        "total_instructions": "598",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "25",
+        "control_depth": "0",
+        "def_use_depth": "27"
+    },
+    "2": {
+        "name": "dense_latency<ap_ufixed<9, 7, 5, 3, 0>, ap_fixed<15, 11, 5, 3, 0>, config9>",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+        "fileloc": "54",
+        "instructions": "458",
+        "total_instructions": "458",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "20",
+        "control_depth": "0",
+        "def_use_depth": "23"
+    },
+    "3": {
+        "name": "relu<ap_fixed<14, 8, 5, 3, 0>, ap_ufixed<12, 6, 5, 3, 0>, relu_config4>",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+        "fileloc": "75",
+        "instructions": "127",
+        "total_instructions": "127",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "25",
+        "control_depth": "0",
+        "def_use_depth": "28"
+    },
+    "4": {
+        "name": "dense_latency<ap_ufixed<10, 7, 5, 3, 0>, ap_fixed<10, 7, 5, 3, 0>, config12>",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "249",
+        "total_instructions": "249",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "15",
+        "control_depth": "0",
+        "def_use_depth": "14"
+    },
+    "5": {
+        "name": "dense_latency<ap_fixed<26, 19, 5, 3, 0>, ap_fixed<14, 8, 5, 3, 0>, config3>",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+        "fileloc": "54",
+        "instructions": "503",
+        "total_instructions": "503",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "13",
+        "control_depth": "0",
+        "def_use_depth": "33"
+    },
+    "6": {
+        "name": "relu<ap_fixed<14, 11, 5, 3, 0>, ap_ufixed<10, 7, 5, 3, 0>, relu_config7>",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+        "fileloc": "81",
+        "instructions": "102",
+        "total_instructions": "102",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "20",
+        "control_depth": "0",
+        "def_use_depth": "23"
+    },
+    "7": {
+        "name": "relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+        "fileloc": "87",
+        "instructions": "77",
+        "total_instructions": "77",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "15",
+        "control_depth": "0",
+        "def_use_depth": "18"
+    }
+}

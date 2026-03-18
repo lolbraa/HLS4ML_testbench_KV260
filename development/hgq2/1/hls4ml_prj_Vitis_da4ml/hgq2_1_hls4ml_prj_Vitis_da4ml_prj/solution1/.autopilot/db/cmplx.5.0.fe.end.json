@@ -1,38 +1,50 @@
 {
+    "1": {
+        "name": "relu<ap_fixed<14, 8, 5, 3, 0>, ap_ufixed<12, 6, 5, 3, 0>, relu_config4>",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp",
+        "fileloc": "53",
+        "instructions": "131",
+        "total_instructions": "131",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "25",
+        "control_depth": "0",
+        "def_use_depth": "28"
+    },
+    "2": {
+        "name": "relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp",
+        "fileloc": "61",
+        "instructions": "84",
+        "total_instructions": "84",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "15",
+        "control_depth": "0",
+        "def_use_depth": "18"
+    },
     "0": {
         "name": "hgq2_1_hls4ml_prj_Vitis_da4ml",
         "file": "hgq2_1_hls4ml_prj_Vitis_da4ml.cpp",
         "fileloc": "7",
-        "instructions": "1626",
-        "total_instructions": "1944",
-        "calls": "2 1 3",
-        "basicblocks": "1"
+        "instructions": "1612",
+        "total_instructions": "1933",
+        "calls": "1 3 2",
+        "basicblocks": "1",
+        "memory_accesses": "6",
+        "control_depth": "0",
+        "def_use_depth": "51"
     },
-    "1": {
+    "3": {
         "name": "relu<ap_fixed<14, 11, 5, 3, 0>, ap_ufixed<10, 7, 5, 3, 0>, relu_config7>",
-        "file": "firmware\/nnet_utils\/nnet_activation.h",
-        "fileloc": "45",
+        "file": "firmware\/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp",
+        "fileloc": "57",
         "instructions": "106",
         "total_instructions": "106",
         "calls": "",
-        "basicblocks": "1"
-    },
-    "2": {
-        "name": "relu<ap_fixed<14, 8, 5, 3, 0>, ap_ufixed<12, 6, 5, 3, 0>, relu_config4>",
-        "file": "firmware\/nnet_utils\/nnet_activation.h",
-        "fileloc": "45",
-        "instructions": "130",
-        "total_instructions": "130",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "3": {
-        "name": "relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>",
-        "file": "firmware\/nnet_utils\/nnet_activation.h",
-        "fileloc": "45",
-        "instructions": "82",
-        "total_instructions": "82",
-        "calls": "",
-        "basicblocks": "1"
+        "basicblocks": "1",
+        "memory_accesses": "20",
+        "control_depth": "0",
+        "def_use_depth": "23"
     }
 }

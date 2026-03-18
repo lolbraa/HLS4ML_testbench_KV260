@@ -41,7 +41,7 @@
 <ID>426</ID>
 </Instance>
 <Instance>
-<InstName>call_ret6_dense_latency_ap_ufixed_10_7_5_3_0_ap_fixed_10_7_5_3_0_config12_s_fu_445</InstName>
+<InstName>grp_dense_latency_ap_ufixed_10_7_5_3_0_ap_fixed_10_7_5_3_0_config12_s_fu_445</InstName>
 <ModuleName>dense_latency_ap_ufixed_10_7_5_3_0_ap_fixed_10_7_5_3_0_config12_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>445</ID>
@@ -70,11 +70,12 @@
 <PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33~firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp:54</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -85,7 +86,7 @@
 <FF>233</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>3017</LUT>
+<LUT>3010</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>2</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -450,8 +451,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_0_val</name>
-<Object>data_0_val</Object>
+<name>conv8_i_i_i581_i</name>
+<Object>conv8_i_i_i581_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -461,8 +462,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val</name>
-<Object>data_1_val</Object>
+<name>conv8_i_i_i540_i</name>
+<Object>conv8_i_i_i540_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -472,8 +473,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_2_val</name>
-<Object>data_2_val</Object>
+<name>conv8_i_i_i501_i</name>
+<Object>conv8_i_i_i501_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -483,8 +484,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_3_val</name>
-<Object>data_3_val</Object>
+<name>conv_i_i_i463_i</name>
+<Object>conv_i_i_i463_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -494,8 +495,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_4_val</name>
-<Object>data_4_val</Object>
+<name>conv8_i_i_i429_i</name>
+<Object>conv8_i_i_i429_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -505,8 +506,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
+<name>conv8_i_i_i390_i</name>
+<Object>conv8_i_i_i390_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -516,8 +517,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
+<name>conv8_i_i_i351_i</name>
+<Object>conv8_i_i_i351_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -527,8 +528,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_7_val</name>
-<Object>data_7_val</Object>
+<name>conv8_i_i_i313_i</name>
+<Object>conv8_i_i_i313_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -538,8 +539,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_8_val</name>
-<Object>data_8_val</Object>
+<name>conv8_i_i_i274_i</name>
+<Object>conv8_i_i_i274_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -549,8 +550,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_10_val</name>
-<Object>data_10_val</Object>
+<name>conv8_i_i_i198_i</name>
+<Object>conv8_i_i_i198_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -560,8 +561,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_11_val</name>
-<Object>data_11_val</Object>
+<name>conv8_i_i_i159_i</name>
+<Object>conv8_i_i_i159_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -571,8 +572,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val</name>
-<Object>data_14_val</Object>
+<name>conv8_i_i_i48_i</name>
+<Object>conv8_i_i_i48_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -582,8 +583,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
+<name>conv8_i_i_i_i</name>
+<Object>conv8_i_i_i_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -613,11 +614,12 @@
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
 <PipelineDepth>1</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_activation.h:42</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_activation.h:39~firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp:75</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -927,8 +929,19 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val</name>
-<Object>data_1_val</Object>
+<name>ap_rst</name>
+<Object>relu&lt;ap_fixed&lt;14, 8, 5, 3, 0&gt;, ap_ufixed&lt;12, 6, 5, 3, 0&gt;, relu_config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer3_out_1_val</name>
+<Object>layer3_out_1_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -938,8 +951,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
+<name>layer3_out_5_val</name>
+<Object>layer3_out_5_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -949,8 +962,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
+<name>layer3_out_6_val</name>
+<Object>layer3_out_6_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -960,8 +973,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_7_val</name>
-<Object>data_7_val</Object>
+<name>layer3_out_7_val</name>
+<Object>layer3_out_7_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -971,8 +984,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_9_val</name>
-<Object>data_9_val</Object>
+<name>layer3_out_9_val</name>
+<Object>layer3_out_9_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -982,8 +995,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_12_val</name>
-<Object>data_12_val</Object>
+<name>layer3_out_12_val</name>
+<Object>layer3_out_12_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -993,8 +1006,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val</name>
-<Object>data_14_val</Object>
+<name>layer3_out_14_val</name>
+<Object>layer3_out_14_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1004,8 +1017,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
+<name>layer3_out_15_val</name>
+<Object>layer3_out_15_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1015,8 +1028,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_21_val</name>
-<Object>data_21_val</Object>
+<name>layer3_out_21_val</name>
+<Object>layer3_out_21_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1026,8 +1039,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_23_val</name>
-<Object>data_23_val</Object>
+<name>layer3_out_23_val</name>
+<Object>layer3_out_23_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1037,8 +1050,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_28_val</name>
-<Object>data_28_val</Object>
+<name>layer3_out_28_val</name>
+<Object>layer3_out_28_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1048,8 +1061,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
+<name>layer3_out_30_val</name>
+<Object>layer3_out_30_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1059,8 +1072,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_31_val</name>
-<Object>data_31_val</Object>
+<name>layer3_out_31_val</name>
+<Object>layer3_out_31_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1070,8 +1083,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_32_val</name>
-<Object>data_32_val</Object>
+<name>layer3_out_32_val</name>
+<Object>layer3_out_32_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1081,8 +1094,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_34_val</name>
-<Object>data_34_val</Object>
+<name>layer3_out_34_val</name>
+<Object>layer3_out_34_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1092,8 +1105,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_38_val</name>
-<Object>data_38_val</Object>
+<name>layer3_out_38_val</name>
+<Object>layer3_out_38_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1103,8 +1116,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_39_val</name>
-<Object>data_39_val</Object>
+<name>layer3_out_39_val</name>
+<Object>layer3_out_39_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1114,8 +1127,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_44_val</name>
-<Object>data_44_val</Object>
+<name>layer3_out_44_val</name>
+<Object>layer3_out_44_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1125,8 +1138,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_45_val</name>
-<Object>data_45_val</Object>
+<name>layer3_out_45_val</name>
+<Object>layer3_out_45_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1136,8 +1149,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_47_val</name>
-<Object>data_47_val</Object>
+<name>layer3_out_47_val</name>
+<Object>layer3_out_47_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1147,8 +1160,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_50_val</name>
-<Object>data_50_val</Object>
+<name>layer3_out_50_val</name>
+<Object>layer3_out_50_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1158,8 +1171,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_51_val</name>
-<Object>data_51_val</Object>
+<name>layer3_out_51_val</name>
+<Object>layer3_out_51_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1169,8 +1182,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_56_val</name>
-<Object>data_56_val</Object>
+<name>layer3_out_56_val</name>
+<Object>layer3_out_56_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1180,8 +1193,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_57_val</name>
-<Object>data_57_val</Object>
+<name>layer3_out_57_val</name>
+<Object>layer3_out_57_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1191,8 +1204,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_62_val</name>
-<Object>data_62_val</Object>
+<name>layer3_out_62_val</name>
+<Object>layer3_out_62_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1210,7 +1223,7 @@
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
 <TargetInitiationInterval>4</TargetInitiationInterval>
-<EstimatedClockPeriod>3.345</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.180</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -1222,19 +1235,20 @@
 <PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33~firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp:54</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>398</FF>
+<FF>278</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>3088</LUT>
+<LUT>3358</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>2</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1547,8 +1561,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val</name>
-<Object>data_1_val</Object>
+<name>conv8_i_i_i1458_i</name>
+<Object>conv8_i_i_i1458_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1558,8 +1572,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
+<name>conv8_i_i_i1375_i</name>
+<Object>conv8_i_i_i1375_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1569,8 +1583,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
+<name>conv_i_i_i1333_i</name>
+<Object>conv_i_i_i1333_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1580,8 +1594,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_7_val</name>
-<Object>data_7_val</Object>
+<name>conv8_i_i_i1297_i</name>
+<Object>conv8_i_i_i1297_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1591,8 +1605,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_9_val</name>
-<Object>data_9_val</Object>
+<name>conv8_i_i_i1246_i</name>
+<Object>conv8_i_i_i1246_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1602,8 +1616,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_12_val</name>
-<Object>data_12_val</Object>
+<name>conv8_i_i_i1177_i</name>
+<Object>conv8_i_i_i1177_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1613,8 +1627,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val</name>
-<Object>data_14_val</Object>
+<name>conv8_i_i_i1122_i</name>
+<Object>conv8_i_i_i1122_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1624,8 +1638,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
+<name>conv8_i_i_i1081_i</name>
+<Object>conv8_i_i_i1081_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1635,8 +1649,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_21_val</name>
-<Object>data_21_val</Object>
+<name>conv8_i_i_i972_i</name>
+<Object>conv8_i_i_i972_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1646,8 +1660,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_23_val</name>
-<Object>data_23_val</Object>
+<name>conv8_i_i_i919_i</name>
+<Object>conv8_i_i_i919_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1657,8 +1671,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_28_val</name>
-<Object>data_28_val</Object>
+<name>conv8_i_i_i824_i</name>
+<Object>conv8_i_i_i824_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1668,8 +1682,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
+<name>conv8_i_i_i771_i</name>
+<Object>conv8_i_i_i771_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1679,8 +1693,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_31_val</name>
-<Object>data_31_val</Object>
+<name>conv8_i_i_i734_i</name>
+<Object>conv8_i_i_i734_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1690,8 +1704,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_32_val</name>
-<Object>data_32_val</Object>
+<name>conv8_i_i_i693_i</name>
+<Object>conv8_i_i_i693_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1701,8 +1715,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_34_val</name>
-<Object>data_34_val</Object>
+<name>conv_i_i_i639_i</name>
+<Object>conv_i_i_i639_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1712,8 +1726,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_38_val</name>
-<Object>data_38_val</Object>
+<name>conv8_i_i_i563_i</name>
+<Object>conv8_i_i_i563_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1723,8 +1737,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_39_val</name>
-<Object>data_39_val</Object>
+<name>conv8_i_i_i524_i</name>
+<Object>conv8_i_i_i524_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1734,8 +1748,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_44_val</name>
-<Object>data_44_val</Object>
+<name>conv8_i_i_i429_i142</name>
+<Object>conv8_i_i_i429_i142</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1745,8 +1759,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_45_val</name>
-<Object>data_45_val</Object>
+<name>conv8_i_i_i388_i</name>
+<Object>conv8_i_i_i388_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1756,8 +1770,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_47_val</name>
-<Object>data_47_val</Object>
+<name>conv_i_i_i336_i</name>
+<Object>conv_i_i_i336_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1767,8 +1781,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_50_val</name>
-<Object>data_50_val</Object>
+<name>conv_i_i_i275_i</name>
+<Object>conv_i_i_i275_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1778,8 +1792,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_51_val</name>
-<Object>data_51_val</Object>
+<name>conv8_i_i_i242_i</name>
+<Object>conv8_i_i_i242_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1789,8 +1803,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_56_val</name>
-<Object>data_56_val</Object>
+<name>conv8_i_i_i147_i</name>
+<Object>conv8_i_i_i147_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1800,8 +1814,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_57_val</name>
-<Object>data_57_val</Object>
+<name>conv8_i_i_i108_i</name>
+<Object>conv8_i_i_i108_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1811,8 +1825,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_62_val</name>
-<Object>data_62_val</Object>
+<name>conv8_i_i_i_i185</name>
+<Object>conv8_i_i_i_i185</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -1842,11 +1856,12 @@
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
 <PipelineDepth>1</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_activation.h:42</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_activation.h:39~firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp:81</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -2101,8 +2116,19 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_0_val</name>
-<Object>data_0_val</Object>
+<name>ap_rst</name>
+<Object>relu&lt;ap_fixed&lt;14, 11, 5, 3, 0&gt;, ap_ufixed&lt;10, 7, 5, 3, 0&gt;, relu_config7&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer6_out_0_val</name>
+<Object>layer6_out_0_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2112,8 +2138,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val</name>
-<Object>data_1_val</Object>
+<name>layer6_out_1_val</name>
+<Object>layer6_out_1_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2123,8 +2149,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_2_val</name>
-<Object>data_2_val</Object>
+<name>layer6_out_2_val</name>
+<Object>layer6_out_2_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2134,8 +2160,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_3_val</name>
-<Object>data_3_val</Object>
+<name>layer6_out_3_val</name>
+<Object>layer6_out_3_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2145,8 +2171,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
+<name>layer6_out_5_val</name>
+<Object>layer6_out_5_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2156,8 +2182,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
+<name>layer6_out_6_val</name>
+<Object>layer6_out_6_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2167,8 +2193,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_9_val</name>
-<Object>data_9_val</Object>
+<name>layer6_out_9_val</name>
+<Object>layer6_out_9_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2178,8 +2204,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_12_val</name>
-<Object>data_12_val</Object>
+<name>layer6_out_12_val</name>
+<Object>layer6_out_12_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2189,8 +2215,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val</name>
-<Object>data_14_val</Object>
+<name>layer6_out_14_val</name>
+<Object>layer6_out_14_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2200,8 +2226,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
+<name>layer6_out_15_val</name>
+<Object>layer6_out_15_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2211,8 +2237,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_19_val</name>
-<Object>data_19_val</Object>
+<name>layer6_out_19_val</name>
+<Object>layer6_out_19_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2222,8 +2248,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_20_val</name>
-<Object>data_20_val</Object>
+<name>layer6_out_20_val</name>
+<Object>layer6_out_20_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2233,8 +2259,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_21_val</name>
-<Object>data_21_val</Object>
+<name>layer6_out_21_val</name>
+<Object>layer6_out_21_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2244,8 +2270,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_22_val</name>
-<Object>data_22_val</Object>
+<name>layer6_out_22_val</name>
+<Object>layer6_out_22_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2255,8 +2281,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_24_val</name>
-<Object>data_24_val</Object>
+<name>layer6_out_24_val</name>
+<Object>layer6_out_24_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2266,8 +2292,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_25_val</name>
-<Object>data_25_val</Object>
+<name>layer6_out_25_val</name>
+<Object>layer6_out_25_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2277,8 +2303,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_26_val</name>
-<Object>data_26_val</Object>
+<name>layer6_out_26_val</name>
+<Object>layer6_out_26_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2288,8 +2314,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_27_val</name>
-<Object>data_27_val</Object>
+<name>layer6_out_27_val</name>
+<Object>layer6_out_27_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2299,8 +2325,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_29_val</name>
-<Object>data_29_val</Object>
+<name>layer6_out_29_val</name>
+<Object>layer6_out_29_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2310,8 +2336,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
+<name>layer6_out_30_val</name>
+<Object>layer6_out_30_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2329,7 +2355,7 @@
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
 <TargetInitiationInterval>4</TargetInitiationInterval>
-<EstimatedClockPeriod>3.271</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.302</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -2341,11 +2367,12 @@
 <PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33~firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp:54</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -2353,12 +2380,12 @@
 <DSP>0</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>0</UTIL_DSP>
-<FF>255</FF>
+<FF>193</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>2188</LUT>
+<LUT>2580</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>1</UTIL_LUT>
+<UTIL_LUT>2</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -2611,8 +2638,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_0_val</name>
-<Object>data_0_val</Object>
+<name>conv_i_i_i887_i</name>
+<Object>conv_i_i_i887_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2622,8 +2649,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val</name>
-<Object>data_1_val</Object>
+<name>conv_i_i_i850_i</name>
+<Object>conv_i_i_i850_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2633,8 +2660,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_2_val</name>
-<Object>data_2_val</Object>
+<name>conv8_i_i_i816_i</name>
+<Object>conv8_i_i_i816_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2644,8 +2671,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_3_val</name>
-<Object>data_3_val</Object>
+<name>conv_i_i_i776_i</name>
+<Object>conv_i_i_i776_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2655,8 +2682,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
+<name>conv8_i_i_i728_i</name>
+<Object>conv8_i_i_i728_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2666,8 +2693,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
+<name>conv8_i_i_i687_i</name>
+<Object>conv8_i_i_i687_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2677,8 +2704,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_9_val</name>
-<Object>data_9_val</Object>
+<name>conv8_i_i_i618_i</name>
+<Object>conv8_i_i_i618_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2688,8 +2715,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_12_val</name>
-<Object>data_12_val</Object>
+<name>conv8_i_i_i551_i</name>
+<Object>conv8_i_i_i551_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2699,8 +2726,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val</name>
-<Object>data_14_val</Object>
+<name>conv8_i_i_i496_i</name>
+<Object>conv8_i_i_i496_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2710,8 +2737,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
+<name>conv4_i_i_i_i476_i</name>
+<Object>conv4_i_i_i_i476_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2721,8 +2748,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_19_val</name>
-<Object>data_19_val</Object>
+<name>conv_i_i_i379_i</name>
+<Object>conv_i_i_i379_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2732,8 +2759,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_20_val</name>
-<Object>data_20_val</Object>
+<name>conv8_i_i_i345_i</name>
+<Object>conv8_i_i_i345_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2743,8 +2770,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_21_val</name>
-<Object>data_21_val</Object>
+<name>conv4_i_i_i_i326_i</name>
+<Object>conv4_i_i_i_i326_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2754,8 +2781,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_22_val</name>
-<Object>data_22_val</Object>
+<name>conv8_i_i_i271_i</name>
+<Object>conv8_i_i_i271_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2765,8 +2792,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_24_val</name>
-<Object>data_24_val</Object>
+<name>conv_i_i_i216_i</name>
+<Object>conv_i_i_i216_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2776,8 +2803,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_25_val</name>
-<Object>data_25_val</Object>
+<name>conv8_i_i_i184_i</name>
+<Object>conv8_i_i_i184_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2787,8 +2814,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_26_val</name>
-<Object>data_26_val</Object>
+<name>conv8_i_i_i143_i</name>
+<Object>conv8_i_i_i143_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2798,8 +2825,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_27_val</name>
-<Object>data_27_val</Object>
+<name>conv8_i_i_i104_i</name>
+<Object>conv8_i_i_i104_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2809,8 +2836,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_29_val</name>
-<Object>data_29_val</Object>
+<name>conv_i_i_i53_i</name>
+<Object>conv_i_i_i53_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2820,8 +2847,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
+<name>conv8_i_i_i_i499</name>
+<Object>conv8_i_i_i_i499</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2851,11 +2878,12 @@
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
 <PipelineDepth>1</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_activation.h:42</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_activation.h:39~firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp:87</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -3055,8 +3083,19 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_2_val</name>
-<Object>data_2_val</Object>
+<name>ap_rst</name>
+<Object>relu&lt;ap_fixed&lt;15, 11, 5, 3, 0&gt;, ap_ufixed&lt;11, 7, 5, 3, 0&gt;, relu_config10&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer9_out_2_val</name>
+<Object>layer9_out_2_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3066,8 +3105,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_4_val</name>
-<Object>data_4_val</Object>
+<name>layer9_out_4_val</name>
+<Object>layer9_out_4_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3077,8 +3116,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
+<name>layer9_out_5_val</name>
+<Object>layer9_out_5_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3088,8 +3127,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
+<name>layer9_out_6_val</name>
+<Object>layer9_out_6_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3099,8 +3138,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_10_val</name>
-<Object>data_10_val</Object>
+<name>layer9_out_10_val</name>
+<Object>layer9_out_10_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3110,8 +3149,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_13_val</name>
-<Object>data_13_val</Object>
+<name>layer9_out_13_val</name>
+<Object>layer9_out_13_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3121,8 +3160,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
+<name>layer9_out_15_val</name>
+<Object>layer9_out_15_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3132,8 +3171,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_16_val</name>
-<Object>data_16_val</Object>
+<name>layer9_out_16_val</name>
+<Object>layer9_out_16_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3143,8 +3182,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_18_val</name>
-<Object>data_18_val</Object>
+<name>layer9_out_18_val</name>
+<Object>layer9_out_18_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3154,8 +3193,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_21_val</name>
-<Object>data_21_val</Object>
+<name>layer9_out_21_val</name>
+<Object>layer9_out_21_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3165,8 +3204,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_22_val</name>
-<Object>data_22_val</Object>
+<name>layer9_out_22_val</name>
+<Object>layer9_out_22_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3176,8 +3215,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_23_val</name>
-<Object>data_23_val</Object>
+<name>layer9_out_23_val</name>
+<Object>layer9_out_23_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3187,8 +3226,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_26_val</name>
-<Object>data_26_val</Object>
+<name>layer9_out_26_val</name>
+<Object>layer9_out_26_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3198,8 +3237,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_28_val</name>
-<Object>data_28_val</Object>
+<name>layer9_out_28_val</name>
+<Object>layer9_out_28_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3209,8 +3248,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_31_val</name>
-<Object>data_31_val</Object>
+<name>layer9_out_31_val</name>
+<Object>layer9_out_31_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3228,33 +3267,34 @@
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
 <TargetInitiationInterval>4</TargetInitiationInterval>
-<EstimatedClockPeriod>3.282</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.269</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>0</Best-caseLatency>
-<Average-caseLatency>0</Average-caseLatency>
-<Worst-caseLatency>0</Worst-caseLatency>
-<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>1</PipelineDepth>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
+<Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
+<PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>0</FF>
+<FF>121</FF>
 <AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>0</UTIL_FF>
-<LUT>1163</LUT>
+<UTIL_FF>~0</UTIL_FF>
+<LUT>1177</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -3267,6 +3307,61 @@
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
 <Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
@@ -3332,6 +3427,17 @@
 <Dir>out</Dir>
 <Bits>10</Bits>
 <Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ce</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>data_2_val</name>
@@ -3507,18 +3613,19 @@
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
-<EstimatedClockPeriod>3.345</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.302</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>11</Best-caseLatency>
-<Average-caseLatency>11</Average-caseLatency>
-<Worst-caseLatency>11</Worst-caseLatency>
-<Best-caseRealTimeLatency>55.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>55.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>55.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>12</Best-caseLatency>
+<Average-caseLatency>12</Average-caseLatency>
+<Worst-caseLatency>12</Worst-caseLatency>
+<Best-caseRealTimeLatency>60.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>60.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>60.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>2</PipelineInitiationInterval>
-<PipelineDepth>12</PipelineDepth>
+<PipelineDepth>13</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -3531,12 +3638,12 @@
 <DSP>5</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>2709</FF>
+<FF>2651</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>12496</LUT>
+<LUT>13168</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>10</UTIL_LUT>
+<UTIL_LUT>11</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>

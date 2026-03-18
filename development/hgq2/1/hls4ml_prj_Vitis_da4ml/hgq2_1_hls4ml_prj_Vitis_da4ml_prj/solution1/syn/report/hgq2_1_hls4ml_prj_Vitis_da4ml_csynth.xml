@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.2</Version>
+<Version>2025.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -19,7 +19,7 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.622</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.639</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -33,6 +33,7 @@
 <PipelineDepth>7</PipelineDepth>
 <Interval-min>1</Interval-min>
 <Interval-max>1</Interval-max>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -43,8 +44,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>1746</FF>
-<LUT>9838</LUT>
+<FF>1736</FF>
+<LUT>9791</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>

@@ -1,2453 +1,3254 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "115 113 114 103 111 109 107 96",
+    "calls": "11 29 31 27 28 25 26 23",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "hgq2_1_hls4ml_prj_Vitis_da4ml.cpp",
     "fileloc": 7,
     "instructions": 69,
+    "memory_accesses": 0,
     "name": "hgq2_1_hls4ml_prj_Vitis_da4ml",
-    "total_instructions": 185798
+    "total_instructions": 188554
   },
   "1": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 6, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "10": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 8, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "100": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 6, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 15, 10, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "101": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-5, 12, 10, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "102": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 12, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-5, 12, 10, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "103": {
-    "basicblocks": 10,
+    "basicblocks": 1,
     "calls": "",
-    "file": "nnet_activation.h",
-    "fileloc": 39,
-    "instructions": 45,
-    "loads": {
-      "L": 3
-    },
-    "name": "relu<ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, relu_config7>",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 228
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "104": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 11, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-4, 14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "105": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 13, 10, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 4, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "106": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 8, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "107": {
     "basicblocks": 1,
-    "calls": "210 201 198 193 210 184 182 193 258 256 251 210 244 241 236 241 232 230 227 26 28 33 36 39 241 46 53 3 5 7 10 9 20 21 21 95 97 101 97 97 108",
-    "file": "nnet_code_gen.h",
-    "fileloc": 754,
-    "instructions": 1266,
-    "loads": {
-      "L": 46
-    },
-    "name": "dense_da_12<ap_ufixed<11, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 7, AP_TRN, AP_WRAP, 0> >",
-    "stores": {
-      "L": 46
-    },
-    "total_instructions": 19107
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "108": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 12, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 14, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "109": {
-    "basicblocks": 10,
+    "basicblocks": 1,
     "calls": "",
-    "file": "nnet_activation.h",
-    "fileloc": 39,
-    "instructions": 45,
-    "loads": {
-      "L": 3
-    },
-    "name": "relu<ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<11, 7, AP_TRN, AP_WRAP, 0>, relu_config10>",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 228
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 12, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "11": {
     "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "calls": "245 243 240 20 21 13 15 17 17 12 17 9 240 10 7 8 240 4 6 13 262 265 235 236 241 4 247 246 249 4 151 148 156 160 241 154 161 134 166 165 240 131 138 136 143 147 144 195 193 8 200 209 205 213 210 161 171 200 177 186 183 190 89 161 73 83 90 78 231 46 47 36 250 134 258 46 219 57 58 61 62 200 53 250 115 114 221 117 118 108",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "nnet_code_gen.h",
+    "fileloc": 26,
+    "instructions": 3513,
+    "loads": {
+      "L": 195
+    },
+    "memory_accesses": 0,
+    "name": "dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >",
+    "stores": {
+      "L": 195
+    },
+    "total_instructions": 61804
   },
   "110": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 11, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "111": {
     "basicblocks": 1,
-    "calls": "86 87 92 93 94 258 100 106 258 244 100 117 119 119 244 121 1 94 100 12 119 14 244 19 22 258 244 184 117 31 241 41 40 44 56 188 179 184 199 205 213 207 222 223 193 231 238 237 234 41 243 261 253 259 237 230 129 124 137 136 145 140 141 148 158 154 164 154 95 173 166 176 66 75 60 84 90 79 15 34 32 54 45 42 69 74 42 59 57 81",
-    "file": "nnet_code_gen.h",
-    "fileloc": 545,
-    "instructions": 2820,
-    "loads": {
-      "L": 140
-    },
-    "name": "dense_da_9<ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<15, 11, AP_TRN, AP_WRAP, 0> >",
-    "stores": {
-      "L": 140
-    },
-    "total_instructions": 45490
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "112": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 11, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 11, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "113": {
-    "basicblocks": 10,
+    "basicblocks": 1,
     "calls": "",
-    "file": "nnet_activation.h",
-    "fileloc": 39,
-    "instructions": 45,
-    "loads": {
-      "L": 3
-    },
-    "name": "relu<ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, ap_ufixed<12, 6, AP_TRN, AP_WRAP, 0>, relu_config4>",
-    "stores": {
-      "L": 3
-    },
-    "total_instructions": 228
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "114": {
     "basicblocks": 1,
-    "calls": "38 24 43 47 51 203 203 219 215 256 208 242 239 255 51 245 249 139 134 128 51 131 143 160 161 157 203 219 177 242 203 6 151 8 55 208 37 128 217 244 216 212 209 225 189 186 183 204 202 202 250 226 228 133 216 171 172 80 186 68 110 105 143 99 23 13 16 18 17 11 166 2 4 191 263 177 130 122 126 34 34 175 168 95 165 98 104 120 128 73 172 95 226 16 30 50 49 52 266 214 195 102 118 116 112 72 61 83 85 214 34 25 79 35 27 29 29 248 246 262 265",
-    "file": "nnet_code_gen.h",
-    "fileloc": 268,
-    "instructions": 3676,
-    "loads": {
-      "L": 169
-    },
-    "name": "dense_da_6<ap_ufixed<12, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 11, AP_TRN, AP_WRAP, 0> >",
-    "stores": {
-      "L": 169
-    },
-    "total_instructions": 58564
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-5, 17, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "115": {
     "basicblocks": 1,
-    "calls": "48 65 63 64 62 58 76 71 71 70 71 67 63 82 78 77 63 91 89 58 88 178 167 169 170 91 174 162 163 91 152 153 155 156 170 159 147 126 149 150 63 142 144 146 132 135 138 123 125 77 127 257 254 264 260 147 247 127 252 235 233 240 183 147 229 221 220 224 262 211 206 218 50 126 118 211 248 197 196 194 192 127 200 50 187 185 35 181 180 190",
-    "file": "nnet_code_gen.h",
-    "fileloc": 26,
-    "instructions": 3497,
-    "loads": {
-      "L": 195
-    },
-    "name": "dense_da_3<ap_fixed<27, 19, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 8, AP_TRN, AP_WRAP, 0> >",
-    "stores": {
-      "L": 195
-    },
-    "total_instructions": 61068
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 15, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "116": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-4, 20, 15, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-4, 5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "117": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 6, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 14, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "118": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 12, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 13, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "119": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 6, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "12": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 4, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<5, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "120": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 14, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<5, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "121": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-4, 4, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "122": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 7, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 9, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "123": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 12, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "124": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 11, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 13, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "125": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 11, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 14, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "126": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 7, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "127": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 16, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 15, 13, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "128": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "129": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 9, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "13": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 11, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 7, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "130": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "131": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<8, 14, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "132": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-5, 9, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "133": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 9, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "134": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "135": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 13, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "136": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 11, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "137": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 11, 10, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "138": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "139": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-4, 5, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 10, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "14": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 5, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "140": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 11, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 13, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "141": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 12, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "142": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<8, 14, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "143": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 8, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-5, 9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "144": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<4, 10, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "145": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 10, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<7, 10, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "146": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 10, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "147": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 12, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 13, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "148": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 14, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "149": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 11, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "15": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 11, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "150": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 14, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 8, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "151": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 5, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "152": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 12, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "153": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 14, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 10, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "154": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 10, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 13, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "155": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 13, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "156": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 13, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "157": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "158": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 13, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 9, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "159": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 13, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-4, 11, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "16": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 9, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "160": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 7, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "161": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 9, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "162": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 5, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 13, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "163": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 9, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "164": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 9, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 10, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "165": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<5, 10, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 14, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "166": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 10, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 11, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "167": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<6, 10, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "168": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 10, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 3, 2, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "169": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-7, 6, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<5, 10, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "17": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 11, 10, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "170": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 10, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "171": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 11, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 13, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "172": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 12, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "173": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 13, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 12, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "174": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 10, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<5, 7, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "175": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 9, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "176": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 11, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "177": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 6, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<5, 16, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "178": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-4, 7, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "179": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 8, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "18": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 7, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "180": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 13, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "181": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 14, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 10, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "182": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 3, 2, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 9, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "183": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<4, 12, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 14, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "184": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 7, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 10, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "185": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-5, 17, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "186": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 8, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "187": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 15, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "188": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<6, 5, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "189": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 8, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 12, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "19": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-4, 9, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 12, 10, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "190": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 14, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-5, 15, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "191": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 8, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "192": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 13, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 4, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "193": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 7, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "194": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 16, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 11, 10, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "195": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 11, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "196": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-6, 15, 14, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "197": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 14, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "198": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 5, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 11, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "199": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<5, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 8, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "2": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 6, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 8, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "20": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 11, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 6, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "200": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 15, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "201": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 3, 2, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 6, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "202": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<6, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 11, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "203": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 6, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 11, 10, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "204": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 12, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 9, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "205": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 9, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 12, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "206": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 12, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 10, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "207": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 8, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 10, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "208": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 6, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 10, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "209": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 5, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "21": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 14, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 7, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "210": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 5, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 14, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "211": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 17, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "212": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 4, 2, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "213": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 9, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "214": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 12, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "215": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "216": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 5, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 7, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "217": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 8, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 15, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "218": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 17, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 14, 10, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "219": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 5, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "22": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 4, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 5, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "220": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 13, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 14, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "221": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 14, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "222": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 9, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 8, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "223": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 9, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 16, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "224": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 16, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<5, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "225": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 6, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 14, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "226": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 13, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "227": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 7, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 13, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "228": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
     "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 10, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-4, 8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "229": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<4, 16, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 8, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "23": {
     "basicblocks": 1,
     "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 10, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "230": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 9, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "231": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "232": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 8, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "233": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<4, 14, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "234": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 10, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "235": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 11, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "236": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 4, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "237": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-4, 8, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "238": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 8, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "239": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "24": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 7, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "240": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-5, 15, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "241": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 7, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "242": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 8, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "243": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<5, 7, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "244": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 6, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "245": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "246": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 10, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "247": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 13, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "248": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 14, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "249": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<5, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "25": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 15, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "250": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 10, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "251": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 7, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "252": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<5, 16, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "253": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 8, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "254": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 12, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "255": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 6, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "256": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 5, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "257": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 11, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "258": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 7, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "259": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 10, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "26": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 9, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "260": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 14, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "261": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 7, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "262": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 15, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "263": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<7, 10, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "264": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 11, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "265": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 13, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "266": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 12, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "27": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 14, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "28": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "29": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 14, 10, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "3": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 10, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "30": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 8, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "31": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 12, 10, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "32": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 13, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "33": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 10, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "34": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 13, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "35": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 16, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "36": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 9, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "37": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 5, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "38": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 8, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "39": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 7, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 10, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "40": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 8, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "41": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 9, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "42": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 15, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "43": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-3, 5, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "44": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 8, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "45": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 13, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "46": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 11, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "47": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 6, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "48": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "49": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 11, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 11, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "50": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 14, 10, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "51": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 4, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "52": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 15, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "53": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 12, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "54": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 14, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "55": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<6, 8, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "56": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 8, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "57": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-5, 14, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "58": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 7, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "59": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 12, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "6": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 5, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "60": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<1, 12, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "61": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 13, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "62": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 7, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "63": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "64": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 6, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "65": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "66": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 15, 13, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "67": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 7, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "68": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<5, 7, 3, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "69": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 15, 13, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "7": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 11, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "70": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<5, 11, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "71": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 11, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "72": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 16, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "73": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-4, 11, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "74": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 15, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "75": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 13, 12, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "76": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<3, 10, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "77": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 11, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "78": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 11, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "79": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 14, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "8": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "80": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<4, 10, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "81": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-3, 12, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "82": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 9, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "83": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 13, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "84": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<4, 11, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "85": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 14, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "86": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-1, 4, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "87": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<3, 6, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "88": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-6, 8, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "89": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<4, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "9": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<2, 13, 9, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "90": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 15, 10, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "91": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 9, 4, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "92": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<-2, 9, 7, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "93": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 5, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "94": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 65,
-    "instructions": 12,
-    "name": "bit_shift<2, 7, 5, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "95": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<1, 12, 8, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
-  },
-  "96": {
-    "basicblocks": 1,
-    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
     "file": "nnet_code_gen.h",
     "fileloc": 861,
     "instructions": 91,
     "loads": {
       "L": 5
     },
-    "name": "dense_3_oq<ap_fixed<10, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<9, 7, AP_TRN, AP_WRAP, 0> >",
+    "memory_accesses": 0,
+    "name": "dense_3_oq<ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >",
     "stores": {
       "L": 5
     },
     "total_instructions": 816
   },
+  "230": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 10, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "231": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 15, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "232": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 10, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "233": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "234": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 13, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "235": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<6, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "236": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-7, 6, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "237": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 9, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "238": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 15, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "239": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 4, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "240": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "241": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "242": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "243": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "244": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "245": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "246": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "247": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "248": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "249": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "25": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 2,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 45,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 9,
+    "name": "relu<ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config10>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 228
+  },
+  "250": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 14, 10, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "251": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "252": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 11, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "253": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 8, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "254": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "255": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 3, 2, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "256": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-4, 20, 15, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "257": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<5, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "258": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 12, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "259": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "26": {
+    "basicblocks": 1,
+    "calls": "251 255 149 157 251 167 168 157 130 135 142 251 146 197 192 197 199 204 212 172 178 175 182 69 197 86 76 43 37 39 60 52 112 125 125 123 104 102 104 104 96",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "nnet_code_gen.h",
+    "fileloc": 754,
+    "instructions": 1266,
+    "loads": {
+      "L": 46
+    },
+    "memory_accesses": 0,
+    "name": "dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >",
+    "stores": {
+      "L": 46
+    },
+    "total_instructions": 19435
+  },
+  "260": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 11, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "261": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<6, 5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "262": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-6, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "263": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "264": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "265": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-4, 7, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "266": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 12, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "27": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 2,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 45,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 9,
+    "name": "relu<ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config7>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 228
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "105 98 72 70 65 130 88 80 130 146 88 42 64 64 146 33 32 65 88 34 64 22 146 30 24 130 146 167 42 19 197 3 2 1 5 261 264 167 257 259 248 254 237 239 157 233 229 228 230 3 224 216 222 206 228 204 214 198 203 202 184 188 173 180 162 153 158 153 123 140 132 137 127 124 109 106 100 91 85 79 82 75 68 56 50 55 56 44 48 41",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "nnet_code_gen.h",
+    "fileloc": 545,
+    "instructions": 2824,
+    "loads": {
+      "L": 140
+    },
+    "memory_accesses": 0,
+    "name": "dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >",
+    "stores": {
+      "L": 140
+    },
+    "total_instructions": 46214
+  },
+  "29": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 2,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 45,
+    "loads": {
+      "L": 3
+    },
+    "memory_accesses": 9,
+    "name": "relu<ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config4>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 228
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "30": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-4, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "31": {
+    "basicblocks": 1,
+    "calls": "14 18 16 95 94 93 93 92 107 135 103 99 101 97 94 119 120 116 113 110 94 111 128 126 122 121 93 92 45 99 93 40 38 35 63 103 59 110 54 146 51 49 74 71 67 66 89 87 84 84 81 77 181 185 51 187 189 170 66 174 176 179 128 207 208 211 215 191 194 196 132 201 139 141 145 45 129 133 134 79 79 163 164 123 169 150 152 155 110 159 189 123 77 215 253 250 252 238 244 242 263 266 258 256 260 223 227 226 225 242 79 217 91 221 220 218 218 219 232 231 234",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "nnet_code_gen.h",
+    "fileloc": 268,
+    "instructions": 3676,
+    "loads": {
+      "L": 169
+    },
+    "memory_accesses": 0,
+    "name": "dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >",
+    "stores": {
+      "L": 169
+    },
+    "total_instructions": 59532
+  },
+  "32": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 6, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "33": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-4, 4, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "34": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 4, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "35": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "36": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 17, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "37": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 11, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "38": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "39": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "40": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "41": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 12, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "42": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "43": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 10, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "44": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 12, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "45": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "46": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 17, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-5, 14, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "49": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 4, 2, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 8, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "50": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 15, 13, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "51": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "52": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 13, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "53": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 15, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "54": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "55": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 15, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "56": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 15, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "57": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 14, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "58": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-6, 15, 14, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "59": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "60": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 8, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "61": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 16, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "62": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 13, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "63": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<6, 8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "64": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "65": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "66": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "67": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "68": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 13, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "69": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 11, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "70": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 5, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "71": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "72": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "73": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "74": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "75": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 14, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "76": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 12, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "77": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "78": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-1, 16, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "79": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 13, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "80": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 8, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "81": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 10, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "82": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-3, 13, 12, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "83": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 14, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "84": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<6, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "85": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 11, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "86": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 11, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "87": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "88": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "89": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<4, 12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "90": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<2, 13, 7, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "91": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "92": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "93": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "94": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 4, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "95": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<1, 6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
+  "96": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_function_stubs.h",
+    "fileloc": 58,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
+  },
   "97": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-4, 14, 11, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 6, 3, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "98": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-2, 8, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<3, 6, 6, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   },
   "99": {
     "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "nnet_function_stubs.h",
-    "fileloc": 58,
-    "instructions": 12,
-    "name": "bit_shift<-1, 10, 6, AP_TRN, AP_WRAP, 0>",
-    "total_instructions": 89
+    "fileloc": 65,
+    "instructions": 16,
+    "memory_accesses": 0,
+    "name": "bit_shift<-2, 8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>",
+    "total_instructions": 97
   }
 }

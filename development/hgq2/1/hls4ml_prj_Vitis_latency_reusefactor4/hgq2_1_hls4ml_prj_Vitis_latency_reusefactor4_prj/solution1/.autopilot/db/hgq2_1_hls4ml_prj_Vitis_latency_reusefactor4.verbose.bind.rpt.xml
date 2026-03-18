@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4'" level="0">
-<item name = "Date">Wed Mar 18 12:55:52 2026
+<item name = "Date">Wed Mar 18 19:19:33 2026
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.345 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.302 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">11, 11, 55.000 ns, 55.000 ns, 2, 2, yes</column>
+<column name="">12, 12, 60.000 ns, 60.000 ns, 2, 2, yes</column>
 </table>
 </item>
 <item name = "Detail">
@@ -37,7 +37,7 @@
 <column name="call_ret4_relu_ap_fixed_14_11_5_3_0_ap_ufixed_10_7_5_3_0_relu_config7_s_fu_378">relu_ap_fixed_14_11_5_3_0_ap_ufixed_10_7_5_3_0_relu_config7_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
 <column name="grp_dense_latency_ap_ufixed_9_7_5_3_0_ap_fixed_15_11_5_3_0_config9_s_fu_402">dense_latency_ap_ufixed_9_7_5_3_0_ap_fixed_15_11_5_3_0_config9_s, 1, 1, 5.000 ns, 5.000 ns, 2, 2, yes</column>
 <column name="call_ret_relu_ap_fixed_15_11_5_3_0_ap_ufixed_11_7_5_3_0_relu_config10_s_fu_426">relu_ap_fixed_15_11_5_3_0_ap_ufixed_11_7_5_3_0_relu_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
-<column name="call_ret6_dense_latency_ap_ufixed_10_7_5_3_0_ap_fixed_10_7_5_3_0_config12_s_fu_445">dense_latency_ap_ufixed_10_7_5_3_0_ap_fixed_10_7_5_3_0_config12_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="grp_dense_latency_ap_ufixed_10_7_5_3_0_ap_fixed_10_7_5_3_0_config12_s_fu_445">dense_latency_ap_ufixed_10_7_5_3_0_ap_fixed_10_7_5_3_0_config12_s, 1, 1, 5.000 ns, 5.000 ns, 2, 2, yes</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

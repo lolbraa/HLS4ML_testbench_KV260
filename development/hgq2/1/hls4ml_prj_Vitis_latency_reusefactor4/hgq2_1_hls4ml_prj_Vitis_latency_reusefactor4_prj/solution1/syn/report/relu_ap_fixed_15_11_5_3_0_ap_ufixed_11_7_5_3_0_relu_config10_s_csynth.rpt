@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'relu_ap_fixed_15_11_5_3_0_ap_ufixed_11_7_5_3_0_relu_config10_s'
 ================================================================
-* Date:           Wed Mar 18 12:55:52 2026
+* Date:           Wed Mar 18 19:19:34 2026
 
-* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj
 * Solution:       solution1 (Vivado IP Flow Target)
 * Product family: zynquplus
@@ -126,39 +126,40 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  |                               Source Object                               |    C Type    |
-+--------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
-|ap_ready      |  out|    1|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_0   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_1   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_2   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_3   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_4   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_5   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_6   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_7   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_8   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_9   |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_10  |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_11  |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_12  |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_13  |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|ap_return_14  |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
-|data_2_val    |   in|   15|     ap_none|                                                                 data_2_val|        scalar|
-|data_4_val    |   in|   15|     ap_none|                                                                 data_4_val|        scalar|
-|data_5_val    |   in|   15|     ap_none|                                                                 data_5_val|        scalar|
-|data_6_val    |   in|   15|     ap_none|                                                                 data_6_val|        scalar|
-|data_10_val   |   in|   15|     ap_none|                                                                data_10_val|        scalar|
-|data_13_val   |   in|   15|     ap_none|                                                                data_13_val|        scalar|
-|data_15_val   |   in|   15|     ap_none|                                                                data_15_val|        scalar|
-|data_16_val   |   in|   15|     ap_none|                                                                data_16_val|        scalar|
-|data_18_val   |   in|   15|     ap_none|                                                                data_18_val|        scalar|
-|data_21_val   |   in|   15|     ap_none|                                                                data_21_val|        scalar|
-|data_22_val   |   in|   15|     ap_none|                                                                data_22_val|        scalar|
-|data_23_val   |   in|   15|     ap_none|                                                                data_23_val|        scalar|
-|data_26_val   |   in|   15|     ap_none|                                                                data_26_val|        scalar|
-|data_28_val   |   in|   15|     ap_none|                                                                data_28_val|        scalar|
-|data_31_val   |   in|   15|     ap_none|                                                                data_31_val|        scalar|
-+--------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
++-------------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |                               Source Object                               |    C Type    |
++-------------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
+|ap_ready           |  out|    1|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_0        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_1        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_2        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_3        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_4        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_5        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_6        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_7        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_8        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_9        |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_10       |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_11       |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_12       |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_13       |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_return_14       |  out|   11|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  relu<ap_fixed<15, 11, 5, 3, 0>, ap_ufixed<11, 7, 5, 3, 0>, relu_config10>|  return value|
+|layer9_out_2_val   |   in|   15|     ap_none|                                                           layer9_out_2_val|        scalar|
+|layer9_out_4_val   |   in|   15|     ap_none|                                                           layer9_out_4_val|        scalar|
+|layer9_out_5_val   |   in|   15|     ap_none|                                                           layer9_out_5_val|        scalar|
+|layer9_out_6_val   |   in|   15|     ap_none|                                                           layer9_out_6_val|        scalar|
+|layer9_out_10_val  |   in|   15|     ap_none|                                                          layer9_out_10_val|        scalar|
+|layer9_out_13_val  |   in|   15|     ap_none|                                                          layer9_out_13_val|        scalar|
+|layer9_out_15_val  |   in|   15|     ap_none|                                                          layer9_out_15_val|        scalar|
+|layer9_out_16_val  |   in|   15|     ap_none|                                                          layer9_out_16_val|        scalar|
+|layer9_out_18_val  |   in|   15|     ap_none|                                                          layer9_out_18_val|        scalar|
+|layer9_out_21_val  |   in|   15|     ap_none|                                                          layer9_out_21_val|        scalar|
+|layer9_out_22_val  |   in|   15|     ap_none|                                                          layer9_out_22_val|        scalar|
+|layer9_out_23_val  |   in|   15|     ap_none|                                                          layer9_out_23_val|        scalar|
+|layer9_out_26_val  |   in|   15|     ap_none|                                                          layer9_out_26_val|        scalar|
+|layer9_out_28_val  |   in|   15|     ap_none|                                                          layer9_out_28_val|        scalar|
+|layer9_out_31_val  |   in|   15|     ap_none|                                                          layer9_out_31_val|        scalar|
++-------------------+-----+-----+------------+---------------------------------------------------------------------------+--------------+
 

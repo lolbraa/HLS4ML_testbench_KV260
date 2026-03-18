@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'relu_ap_fixed_14_11_5_3_0_ap_ufixed_10_7_5_3_0_relu_config7_s'" level="0">
-<item name = "Date">Wed Mar 18 12:55:52 2026
+<item name = "Date">Wed Mar 18 19:19:34 2026
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj</item>
 <item name = "Solution">solution1 (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -155,26 +155,27 @@
 <column name="ap_return_17">out, 10, ap_ctrl_hs, relu&lt;ap_fixed&lt;14, 11, 5, 3, 0&gt;, ap_ufixed&lt;10, 7, 5, 3, 0&gt;, relu_config7&gt;, return value</column>
 <column name="ap_return_18">out, 10, ap_ctrl_hs, relu&lt;ap_fixed&lt;14, 11, 5, 3, 0&gt;, ap_ufixed&lt;10, 7, 5, 3, 0&gt;, relu_config7&gt;, return value</column>
 <column name="ap_return_19">out, 10, ap_ctrl_hs, relu&lt;ap_fixed&lt;14, 11, 5, 3, 0&gt;, ap_ufixed&lt;10, 7, 5, 3, 0&gt;, relu_config7&gt;, return value</column>
-<column name="data_0_val">in, 14, ap_none, data_0_val, scalar</column>
-<column name="data_1_val">in, 14, ap_none, data_1_val, scalar</column>
-<column name="data_2_val">in, 14, ap_none, data_2_val, scalar</column>
-<column name="data_3_val">in, 14, ap_none, data_3_val, scalar</column>
-<column name="data_5_val">in, 14, ap_none, data_5_val, scalar</column>
-<column name="data_6_val">in, 14, ap_none, data_6_val, scalar</column>
-<column name="data_9_val">in, 14, ap_none, data_9_val, scalar</column>
-<column name="data_12_val">in, 14, ap_none, data_12_val, scalar</column>
-<column name="data_14_val">in, 14, ap_none, data_14_val, scalar</column>
-<column name="data_15_val">in, 14, ap_none, data_15_val, scalar</column>
-<column name="data_19_val">in, 14, ap_none, data_19_val, scalar</column>
-<column name="data_20_val">in, 14, ap_none, data_20_val, scalar</column>
-<column name="data_21_val">in, 14, ap_none, data_21_val, scalar</column>
-<column name="data_22_val">in, 14, ap_none, data_22_val, scalar</column>
-<column name="data_24_val">in, 14, ap_none, data_24_val, scalar</column>
-<column name="data_25_val">in, 14, ap_none, data_25_val, scalar</column>
-<column name="data_26_val">in, 14, ap_none, data_26_val, scalar</column>
-<column name="data_27_val">in, 14, ap_none, data_27_val, scalar</column>
-<column name="data_29_val">in, 14, ap_none, data_29_val, scalar</column>
-<column name="data_30_val">in, 14, ap_none, data_30_val, scalar</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, relu&lt;ap_fixed&lt;14, 11, 5, 3, 0&gt;, ap_ufixed&lt;10, 7, 5, 3, 0&gt;, relu_config7&gt;, return value</column>
+<column name="layer6_out_0_val">in, 14, ap_none, layer6_out_0_val, scalar</column>
+<column name="layer6_out_1_val">in, 14, ap_none, layer6_out_1_val, scalar</column>
+<column name="layer6_out_2_val">in, 14, ap_none, layer6_out_2_val, scalar</column>
+<column name="layer6_out_3_val">in, 14, ap_none, layer6_out_3_val, scalar</column>
+<column name="layer6_out_5_val">in, 14, ap_none, layer6_out_5_val, scalar</column>
+<column name="layer6_out_6_val">in, 14, ap_none, layer6_out_6_val, scalar</column>
+<column name="layer6_out_9_val">in, 14, ap_none, layer6_out_9_val, scalar</column>
+<column name="layer6_out_12_val">in, 14, ap_none, layer6_out_12_val, scalar</column>
+<column name="layer6_out_14_val">in, 14, ap_none, layer6_out_14_val, scalar</column>
+<column name="layer6_out_15_val">in, 14, ap_none, layer6_out_15_val, scalar</column>
+<column name="layer6_out_19_val">in, 14, ap_none, layer6_out_19_val, scalar</column>
+<column name="layer6_out_20_val">in, 14, ap_none, layer6_out_20_val, scalar</column>
+<column name="layer6_out_21_val">in, 14, ap_none, layer6_out_21_val, scalar</column>
+<column name="layer6_out_22_val">in, 14, ap_none, layer6_out_22_val, scalar</column>
+<column name="layer6_out_24_val">in, 14, ap_none, layer6_out_24_val, scalar</column>
+<column name="layer6_out_25_val">in, 14, ap_none, layer6_out_25_val, scalar</column>
+<column name="layer6_out_26_val">in, 14, ap_none, layer6_out_26_val, scalar</column>
+<column name="layer6_out_27_val">in, 14, ap_none, layer6_out_27_val, scalar</column>
+<column name="layer6_out_29_val">in, 14, ap_none, layer6_out_29_val, scalar</column>
+<column name="layer6_out_30_val">in, 14, ap_none, layer6_out_30_val, scalar</column>
 </table>
 </item>
 </section>

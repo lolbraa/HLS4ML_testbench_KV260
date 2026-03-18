@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.2</Version>
+<Version>2025.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -19,20 +19,21 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.345</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.302</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>11</Best-caseLatency>
-<Average-caseLatency>11</Average-caseLatency>
-<Worst-caseLatency>11</Worst-caseLatency>
-<Best-caseRealTimeLatency>55.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>55.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>55.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>12</Best-caseLatency>
+<Average-caseLatency>12</Average-caseLatency>
+<Worst-caseLatency>12</Worst-caseLatency>
+<Best-caseRealTimeLatency>60.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>60.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>60.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>2</PipelineInitiationInterval>
-<PipelineDepth>12</PipelineDepth>
+<PipelineDepth>13</PipelineDepth>
 <Interval-min>2</Interval-min>
 <Interval-max>2</Interval-max>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -44,8 +45,8 @@
 <AreaEstimates>
 <Resources>
 <DSP>5</DSP>
-<FF>2709</FF>
-<LUT>12496</LUT>
+<FF>2651</FF>
+<LUT>13168</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>

@@ -1,5 +1,6 @@
 [
   {
+    "csim": false,
     "functionLabel": "",
     "functionName": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4",
     "id": 0,

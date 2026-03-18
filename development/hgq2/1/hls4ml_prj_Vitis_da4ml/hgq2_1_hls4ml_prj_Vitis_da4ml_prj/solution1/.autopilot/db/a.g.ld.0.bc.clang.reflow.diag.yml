@@ -290,23 +290,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 214, 
-                   Column: 36 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<14, (10) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 14, 10, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<14, 10, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 211, 
                    Column: 35 }
 Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -330,23 +313,6 @@ Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<12, (6) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 208, 
-                   Column: 35 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<17, (9) + (-1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-1, 17, 9, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<17, 9, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -545,46 +511,12 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 178, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<16, (6) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 177, 
                    Column: 33 }
 Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<13, (5) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 13, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<13, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 176, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<12, (5) + (3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<3, 12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -653,23 +585,6 @@ Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<11, (5) + (3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<3, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 168, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<16, (6) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -885,40 +800,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 147, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<8, (4) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<8, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 146, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<12, (5) + (3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<3, 12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 145, 
                    Column: 33 }
 Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -1089,40 +970,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 132, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<9, (4) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 130, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<10, (4) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 129, 
                    Column: 32 }
 Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -1225,57 +1072,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 120, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<9, (4) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 119, 
-                   Column: 32 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<9, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 117, 
-                   Column: 32 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<11, (5) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 116, 
                    Column: 31 }
 Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -1299,23 +1095,6 @@ Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<9, (5) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 111, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<9, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -1378,63 +1157,12 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 106, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<11, (5) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 105, 
-                   Column: 32 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<11, (5) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<11, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 104, 
                    Column: 31 }
 Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<10, (4) + (3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<3, 10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<10, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 103, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<7, (3) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 7, 3, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<7, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -1469,23 +1197,6 @@ Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<6, (3) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 6, 3, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<6, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_3<ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 26, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 99, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_3I8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EES1_ILi14ELi8ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<9, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -1600,23 +1311,6 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 535, 
-                   Column: 36 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<14, (10) + (-1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-1, 14, 10, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<14, 10, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 533, 
                    Column: 36 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
@@ -1888,23 +1582,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 495, 
-                   Column: 34 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<12, (9) + (-1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-1, 12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 493, 
                    Column: 34 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -2160,23 +1837,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 473, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<12, (8) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 12, 8, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<12, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 472, 
                    Column: 33 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -2200,40 +1860,6 @@ Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<9, (7) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 469, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<13, (11) + (-3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-3, 13, 11, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<13, 11, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 468, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<13, (11) + (-3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-3, 13, 11, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<13, 11, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -2449,23 +2075,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 451, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<9, (5) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<9, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 450, 
                    Column: 33 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -2619,23 +2228,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 435, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<12, (7) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 12, 7, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<12, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 434, 
                    Column: 32 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -2704,23 +2296,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 430, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<7, (4) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 429, 
                    Column: 32 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -2739,23 +2314,6 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 428, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<9, (4) + (6), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<6, 9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<9, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 427, 
                    Column: 33 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
@@ -2797,23 +2355,6 @@ Args:
   - Callee:          'ap_fixed<12, (5) + (4), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<4, 12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<12, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 424, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<8, (3) + (4), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<4, 8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<8, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
@@ -2891,23 +2432,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 416, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<5, (3) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<5, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 415, 
                    Column: 31 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -2931,23 +2455,6 @@ Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_ufixed<8, (5) + (-1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-1, 8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 413, 
-                   Column: 32 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (4) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 65, Column: 0 }
   - String:          ''' into '''
@@ -3095,46 +2602,12 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 403, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (-1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-1, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 402, 
                    Column: 32 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_ufixed<5, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 401, 
-                   Column: 30 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 65, Column: 0 }
   - String:          ''' into '''
@@ -3197,23 +2670,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 396, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<8, (5) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 395, 
                    Column: 32 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -3237,23 +2693,6 @@ Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_ufixed<4, (3) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 4, 3, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<4, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 393, 
-                   Column: 30 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (4) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 65, Column: 0 }
   - String:          ''' into '''
@@ -3333,23 +2772,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 388, 
-                   Column: 30 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<4, (3) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 4, 3, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<4, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 387, 
                    Column: 32 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -3384,40 +2806,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 385, 
-                   Column: 32 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<8, (5) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<8, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 384, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (4) + (-1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-1, 6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 383, 
                    Column: 32 }
 Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -3441,74 +2829,6 @@ Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_ufixed<7, (4) + (-1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-1, 7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 381, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<5, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 380, 
-                   Column: 32 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 379, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_6<ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 376, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_6I9ap_ufixedILi12ELi6EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi14ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<4, (3) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 4, 3, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<4, 3, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 65, Column: 0 }
   - String:          ''' into '''
@@ -3679,23 +2999,6 @@ Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<15, (13) + (-3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-3, 15, 13, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<15, 13, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 738, 
-                   Column: 37 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<15, (12) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 15, 12, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<15, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -3996,23 +3299,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 701, 
-                   Column: 35 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<10, (6) + (4), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<4, 10, 6, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<10, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 700, 
                    Column: 35 }
 Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -4302,23 +3588,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 682, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<8, (8) + (-4), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-4, 8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<8, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 681, 
                    Column: 34 }
 Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -4574,23 +3843,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 660, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<9, (7) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 659, 
                    Column: 32 }
 Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -4631,23 +3883,6 @@ Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_ufixed<6, (5) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 656, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (5) + (4), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<4, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 65, Column: 0 }
   - String:          ''' into '''
@@ -4716,23 +3951,6 @@ Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mo
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_ufixed<9, (7) + (-4), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-4, 9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 646, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 65, Column: 0 }
   - String:          ''' into '''
@@ -4863,182 +4081,12 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 634, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 632, 
-                   Column: 33 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (-3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-3, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 631, 
-                   Column: 32 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (-3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-3, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 630, 
-                   Column: 32 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 628, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 627, 
-                   Column: 30 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<1, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 626, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (5) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 625, 
                    Column: 31 }
 Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_ufixed<8, (6) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 8, 6, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<8, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 624, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<6, (5) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<6, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 623, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (5) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_9<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 621, 
-                   Column: 31 }
-Function:        _ZN4nnet10dense_da_9I9ap_ufixedILi10ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi15ELi11ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (5) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 5, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 65, Column: 0 }
   - String:          ''' into '''
@@ -5152,46 +4200,12 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 855, 
-                   Column: 35 }
-Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<14, (11) + (-4), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-4, 14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 854, 
                    Column: 35 }
 Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_fixed<12, (10) + (-5), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-5, 12, 10, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<12, 10, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 853, 
-                   Column: 35 }
-Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<14, (11) + (-4), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-4, 14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 58, Column: 0 }
   - String:          ''' into '''
@@ -5221,23 +4235,6 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 848, 
-                   Column: 33 }
-Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_fixed<14, (12) + (-1), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-1, 14, 12, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed<14, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 58, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 846, 
                    Column: 33 }
 Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
@@ -5543,46 +4540,12 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 822, 
-                   Column: 31 }
-Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (6) + (-3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-3, 7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 821, 
                    Column: 30 }
 Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_ufixed<4, (4) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 4, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<4, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 820, 
-                   Column: 32 }
-Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (6) + (-3), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-3, 7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
     DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
                        Line: 65, Column: 0 }
   - String:          ''' into '''
@@ -5730,40 +4693,6 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 810, 
-                   Column: 32 }
-Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<5, (4) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 808, 
-                   Column: 32 }
-Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<7, (6) + (-2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<-2, 7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<7, 6, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 806, 
                    Column: 31 }
 Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
@@ -5798,25 +4727,8 @@ Args:
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 804, 
-                   Column: 31 }
-Function:        _ZN4nnet11dense_da_12I9ap_ufixedILi11ELi7EL9ap_q_mode5EL9ap_o_mode3ELi0EE8ap_fixedILi10ELi7ELS2_5ELS3_3ELi0EEEEvPT_PT0_
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'ap_ufixed<5, (4) + (2), (ap_q_mode)5, (ap_o_mode)3, 0> nnet::bit_shift<2, 5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_ufixed<5, 4, (ap_q_mode)5, (ap_o_mode)3, 0>)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_function_stubs.h, 
-                       Line: 65, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'void nnet::dense_da_12<ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
-    DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
-                       Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            inline
-Name:            AlwaysInline
 DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 51, 
-                   Column: 2 }
+                   Column: 5 }
 Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
 Args:            
   - String:          'Inlining function '''
@@ -5828,6 +4740,22 @@ Args:
     DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
                        Line: 10, Column: 0 }
   - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 53, 
+                   Column: 5 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config4>(ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation.h, Line: 39, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
@@ -5846,6 +4774,22 @@ Args:
                        Line: 10, Column: 0 }
   - String:          ''''
 ...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 57, 
+                   Column: 5 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config7>(ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation.h, Line: 39, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
@@ -5862,6 +4806,22 @@ Args:
     DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
                        Line: 10, Column: 0 }
   - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 61, 
+                   Column: 5 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config10>(ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation.h, Line: 39, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Passed
 Pass:            inline
@@ -5981,11 +4941,71 @@ Args:
   - String:          ''' completely with a factor of '
   - Factor:          '64'
 ...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 53, 
+                   Column: 5 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config4>(ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation.h, Line: 39, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 57, 
+                   Column: 5 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config7>(ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation.h, Line: 39, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 61, 
+                   Column: 5 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config10>(ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/nnet_utils/nnet_activation.h, Line: 39, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_hgq2_1_hls4ml_prj_Vitis_da4ml_ir
+Args:            
+  - Callee:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_hgq2_1_hls4ml_prj_Vitis_da4ml_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 30, 
-                   Column: 12 }
+                   Column: 15 }
 Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
 Args:            
   - String:          'Applying '
@@ -6004,7 +5024,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 33, 
-                   Column: 17 }
+                   Column: 20 }
 Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
 Args:            
   - String:          'Applying '
@@ -6023,7 +5043,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 36, 
-                   Column: 12 }
+                   Column: 15 }
 Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
 Args:            
   - String:          'Applying '
@@ -6042,7 +5062,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 39, 
-                   Column: 17 }
+                   Column: 20 }
 Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
 Args:            
   - String:          'Applying '
@@ -6061,7 +5081,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 42, 
-                   Column: 12 }
+                   Column: 15 }
 Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
 Args:            
   - String:          'Applying '
@@ -6080,7 +5100,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, Line: 45, 
-                   Column: 17 }
+                   Column: 20 }
 Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
 Args:            
   - String:          'Applying '
@@ -6132,4 +5152,52 @@ Args:
   - String:          ' on dimension '
   - Dim:             '1'
   - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 268, 
+                   Column: 23 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config4>(ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 545, 
+                   Column: 23 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config7>(ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: firmware/nnet_utils/nnet_code_gen.h, Line: 754, 
+                   Column: 24 }
+Function:        _Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE
+Args:            
+  - Callee:          'void nnet::relu<ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config10>(ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'hgq2_1_hls4ml_prj_Vitis_da4ml(ap_fixed<27, 19, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp, 
+                       Line: 10, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
 ...

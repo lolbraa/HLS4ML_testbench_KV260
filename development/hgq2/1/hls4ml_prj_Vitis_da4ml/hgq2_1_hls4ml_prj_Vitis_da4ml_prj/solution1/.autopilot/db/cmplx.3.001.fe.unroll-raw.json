@@ -1,64 +1,76 @@
 {
   "0": {
     "basicblocks": 6275,
-    "calls": "2 1 3",
+    "calls": "1 2 3",
+    "control_depth": 1,
+    "def_use_depth": 16,
     "file": "hgq2_1_hls4ml_prj_Vitis_da4ml.cpp",
     "fileloc": 7,
-    "instructions": 15136,
+    "instructions": 13551,
     "loads": {
       "L": 260,
       "T": 61
     },
+    "memory_accesses": 462,
     "name": "hgq2_1_hls4ml_prj_Vitis_da4ml",
     "stores": {
       "L": 133,
       "T": 5
     },
-    "total_instructions": 17955
+    "total_instructions": 16242
   },
   "1": {
-    "basicblocks": 356,
-    "calls": "",
-    "file": "nnet_activation.h",
-    "fileloc": 39,
-    "instructions": 705,
-    "loads": {
-      "L": 32
-    },
-    "name": "relu<ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, relu_config7>",
-    "stores": {
-      "L": 64
-    },
-    "total_instructions": 705
-  },
-  "2": {
     "basicblocks": 708,
     "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 3,
     "file": "nnet_activation.h",
     "fileloc": 39,
-    "instructions": 1409,
+    "instructions": 1345,
     "loads": {
       "L": 64
     },
-    "name": "relu<ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, ap_ufixed<12, 6, AP_TRN, AP_WRAP, 0>, relu_config4>",
+    "memory_accesses": 192,
+    "name": "relu<ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config4>",
     "stores": {
       "L": 128
     },
-    "total_instructions": 1409
+    "total_instructions": 1345
+  },
+  "2": {
+    "basicblocks": 356,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 3,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 673,
+    "loads": {
+      "L": 32
+    },
+    "memory_accesses": 96,
+    "name": "relu<ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config7>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 673
   },
   "3": {
     "basicblocks": 356,
     "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 3,
     "file": "nnet_activation.h",
     "fileloc": 39,
-    "instructions": 705,
+    "instructions": 673,
     "loads": {
       "L": 32
     },
-    "name": "relu<ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<11, 7, AP_TRN, AP_WRAP, 0>, relu_config10>",
+    "memory_accesses": 96,
+    "name": "relu<ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config10>",
     "stores": {
       "L": 64
     },
-    "total_instructions": 705
+    "total_instructions": 673
   }
 }

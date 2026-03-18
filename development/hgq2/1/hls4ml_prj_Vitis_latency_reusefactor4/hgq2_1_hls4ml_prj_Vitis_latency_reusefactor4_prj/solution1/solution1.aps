@@ -3,6 +3,9 @@
         <config_compile name_max_length="80" complex-mul-dsp="0"/>
         <config_schedule enable_dsp_full_reg="0"/>
     </config>
+    <clockList>
+        <clock default="false" name="default" uncertainty="27%" period="5"/>
+    </clockList>
     <name>
         <value string="solution1"/>
     </name>
@@ -16,8 +19,4 @@
     <libraryList>
         <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
     </libraryList>
-    <clockList>
-        <clock default="false" name="default" uncertainty="27%" period="5"/>
-    </clockList>
 </AutoPilot:solution>
-

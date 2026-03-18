@@ -15,7 +15,7 @@
       <key>message</key>
       <string>unexpected pragma argument &apos;softmax&apos;, expects function/operation</string>
       <key>ID</key>
-      <integer>5566</integer>
+      <integer>7036</integer>
       <key>WarningOption</key>
       <string>invalid-hls-pragmas</string>
     </dict>
@@ -27,11 +27,11 @@
       <key>line</key>
       <integer>33</integer>
       <key>column</key>
-      <integer>9</integer>
+      <integer>13</integer>
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>6996</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -43,11 +43,11 @@
       <key>line</key>
       <integer>107</integer>
       <key>column</key>
-      <integer>9</integer>
+      <integer>13</integer>
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>6996</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>
@@ -59,11 +59,11 @@
       <key>line</key>
       <integer>189</integer>
       <key>column</key>
-      <integer>9</integer>
+      <integer>13</integer>
       <key>message</key>
       <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
       <key>ID</key>
-      <integer>5536</integer>
+      <integer>6996</integer>
       <key>WarningOption</key>
       <string>ignored-hls-pragmas</string>
     </dict>

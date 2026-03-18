@@ -16,7 +16,7 @@
 					<Obj class_id="5" tracking_level="0" version="0">
 						<type>1</type>
 						<id>1</id>
-						<name>data_1_val</name>
+						<name>layer3_out_1_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -34,7 +34,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>62</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>data_5_val</name>
+						<name>layer3_out_5_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -70,7 +70,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3621216858</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -88,7 +88,7 @@
 					<Obj>
 						<type>1</type>
 						<id>3</id>
-						<name>data_6_val</name>
+						<name>layer3_out_6_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -124,7 +124,7 @@
 					<Obj>
 						<type>1</type>
 						<id>4</id>
-						<name>data_7_val</name>
+						<name>layer3_out_7_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -160,7 +160,7 @@
 					<Obj>
 						<type>1</type>
 						<id>5</id>
-						<name>data_9_val</name>
+						<name>layer3_out_9_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777041552</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -196,7 +196,7 @@
 					<Obj>
 						<type>1</type>
 						<id>6</id>
-						<name>data_12_val</name>
+						<name>layer3_out_12_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -232,7 +232,7 @@
 					<Obj>
 						<type>1</type>
 						<id>7</id>
-						<name>data_14_val</name>
+						<name>layer3_out_14_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -268,7 +268,7 @@
 					<Obj>
 						<type>1</type>
 						<id>8</id>
-						<name>data_15_val</name>
+						<name>layer3_out_15_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -286,7 +286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>64</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -304,7 +304,7 @@
 					<Obj>
 						<type>1</type>
 						<id>9</id>
-						<name>data_21_val</name>
+						<name>layer3_out_21_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -322,7 +322,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1868963956</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -340,7 +340,7 @@
 					<Obj>
 						<type>1</type>
 						<id>10</id>
-						<name>data_23_val</name>
+						<name>layer3_out_23_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -358,7 +358,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777587840</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -376,7 +376,7 @@
 					<Obj>
 						<type>1</type>
 						<id>11</id>
-						<name>data_28_val</name>
+						<name>layer3_out_28_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -394,7 +394,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -412,7 +412,7 @@
 					<Obj>
 						<type>1</type>
 						<id>12</id>
-						<name>data_30_val</name>
+						<name>layer3_out_30_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -430,7 +430,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>67</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -448,7 +448,7 @@
 					<Obj>
 						<type>1</type>
 						<id>13</id>
-						<name>data_31_val</name>
+						<name>layer3_out_31_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -466,7 +466,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777592512</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -484,7 +484,7 @@
 					<Obj>
 						<type>1</type>
 						<id>14</id>
-						<name>data_32_val</name>
+						<name>layer3_out_32_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -502,7 +502,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -520,7 +520,7 @@
 					<Obj>
 						<type>1</type>
 						<id>15</id>
-						<name>data_34_val</name>
+						<name>layer3_out_34_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -538,7 +538,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -556,7 +556,7 @@
 					<Obj>
 						<type>1</type>
 						<id>16</id>
-						<name>data_38_val</name>
+						<name>layer3_out_38_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -574,7 +574,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>124</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -592,7 +592,7 @@
 					<Obj>
 						<type>1</type>
 						<id>17</id>
-						<name>data_39_val</name>
+						<name>layer3_out_39_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -610,7 +610,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777595040</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -628,7 +628,7 @@
 					<Obj>
 						<type>1</type>
 						<id>18</id>
-						<name>data_44_val</name>
+						<name>layer3_out_44_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -646,7 +646,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -664,7 +664,7 @@
 					<Obj>
 						<type>1</type>
 						<id>19</id>
-						<name>data_45_val</name>
+						<name>layer3_out_45_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -682,7 +682,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2427030477</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -700,7 +700,7 @@
 					<Obj>
 						<type>1</type>
 						<id>20</id>
-						<name>data_47_val</name>
+						<name>layer3_out_47_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -718,7 +718,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1970038130</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -736,7 +736,7 @@
 					<Obj>
 						<type>1</type>
 						<id>21</id>
-						<name>data_50_val</name>
+						<name>layer3_out_50_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -754,7 +754,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -772,7 +772,7 @@
 					<Obj>
 						<type>1</type>
 						<id>22</id>
-						<name>data_51_val</name>
+						<name>layer3_out_51_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -790,7 +790,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777929920</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -808,7 +808,7 @@
 					<Obj>
 						<type>1</type>
 						<id>23</id>
-						<name>data_56_val</name>
+						<name>layer3_out_56_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -826,7 +826,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539831586</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -844,7 +844,7 @@
 					<Obj>
 						<type>1</type>
 						<id>24</id>
-						<name>data_57_val</name>
+						<name>layer3_out_57_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -862,7 +862,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852795252</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -880,7 +880,7 @@
 					<Obj>
 						<type>1</type>
 						<id>25</id>
-						<name>data_62_val</name>
+						<name>layer3_out_62_val</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -898,7 +898,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>640688172</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -920,24 +920,31 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>data_62_val_read</name>
+						<name>layer3_out_62_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second class_id="11" tracking_level="0" version="0">
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -952,7 +959,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2020173407</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -977,24 +984,31 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>data_57_val_read</name>
+						<name>layer3_out_57_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1009,7 +1023,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2020173407</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1034,24 +1048,31 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>data_56_val_read</name>
+						<name>layer3_out_56_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1066,7 +1087,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2020173407</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1091,24 +1112,31 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>data_51_val_read</name>
+						<name>layer3_out_51_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1123,7 +1151,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1148,24 +1176,31 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>data_50_val_read</name>
+						<name>layer3_out_50_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1180,7 +1215,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1205,24 +1240,31 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>data_47_val_read</name>
+						<name>layer3_out_47_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1237,7 +1279,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>304</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1262,24 +1304,31 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>data_45_val_read</name>
+						<name>layer3_out_45_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1294,7 +1343,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1319,24 +1368,31 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>data_44_val_read</name>
+						<name>layer3_out_44_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1351,7 +1407,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>608</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1376,24 +1432,31 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>data_39_val_read</name>
+						<name>layer3_out_39_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1408,7 +1471,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1433,24 +1496,31 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>data_38_val_read</name>
+						<name>layer3_out_38_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1465,7 +1535,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777570368</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1490,24 +1560,31 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>data_34_val_read</name>
+						<name>layer3_out_34_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1522,7 +1599,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1952541801</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1547,24 +1624,31 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>data_32_val_read</name>
+						<name>layer3_out_32_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1579,7 +1663,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1604,24 +1688,31 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>data_31_val_read</name>
+						<name>layer3_out_31_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1636,7 +1727,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1919252069</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1661,24 +1752,31 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>data_30_val_read</name>
+						<name>layer3_out_30_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1693,7 +1791,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1918987552</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1718,24 +1816,31 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>data_28_val_read</name>
+						<name>layer3_out_28_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1750,7 +1855,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777610480</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1775,24 +1880,31 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>data_23_val_read</name>
+						<name>layer3_out_23_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1807,7 +1919,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777881456</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1832,24 +1944,31 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>data_21_val_read</name>
+						<name>layer3_out_21_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1864,7 +1983,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777882792</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1889,24 +2008,31 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>data_15_val_read</name>
+						<name>layer3_out_15_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1921,7 +2047,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777885656</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -1946,24 +2072,31 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>data_14_val_read</name>
+						<name>layer3_out_14_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -1978,7 +2111,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -2003,24 +2136,31 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>data_12_val_read</name>
+						<name>layer3_out_12_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -2035,7 +2175,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2427741299</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -2060,24 +2200,31 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>data_9_val_read</name>
+						<name>layer3_out_9_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -2092,7 +2239,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2427742100</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -2117,24 +2264,31 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>data_7_val_read</name>
+						<name>layer3_out_7_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -2149,7 +2303,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -2174,24 +2328,31 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>data_6_val_read</name>
+						<name>layer3_out_6_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -2206,7 +2367,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777566624</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -2231,24 +2392,31 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>data_5_val_read</name>
+						<name>layer3_out_5_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -2263,7 +2431,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777294592</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -2288,24 +2456,31 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>data_1_val_read</name>
+						<name>layer3_out_1_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>42</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>42</second>
 									</item>
@@ -2320,7 +2495,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2427771704</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -2349,20 +2524,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -2377,7 +2559,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2406,20 +2588,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -2434,7 +2623,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>272</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -2462,27 +2651,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -2490,7 +2686,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777585248</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -2520,20 +2716,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -2548,7 +2751,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2577,20 +2780,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -2605,7 +2815,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -2633,27 +2843,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -2661,7 +2878,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1970173218</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -2691,20 +2908,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -2719,7 +2943,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2748,20 +2972,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -2776,7 +3007,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777122912</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -2804,27 +3035,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -2832,7 +3070,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777770240</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -2862,20 +3100,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -2890,7 +3135,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777100064</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2919,20 +3164,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -2947,7 +3199,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -2975,27 +3227,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -3003,7 +3262,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3033,20 +3292,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -3061,7 +3327,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777103728</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3090,20 +3356,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -3118,7 +3391,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777108240</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3146,27 +3419,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -3174,7 +3454,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3204,20 +3484,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -3232,7 +3519,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777109872</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3261,20 +3548,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -3289,7 +3583,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>808591443</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3317,27 +3611,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -3345,7 +3646,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3375,20 +3676,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -3403,7 +3711,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777887520</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3432,20 +3740,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -3460,7 +3775,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936683105</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3488,27 +3803,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -3516,7 +3838,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2427020788</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3546,20 +3868,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -3574,7 +3903,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3603,20 +3932,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -3631,7 +3967,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777896616</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3659,27 +3995,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -3687,7 +4030,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777898320</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3717,20 +4060,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -3745,7 +4095,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2427009206</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3774,20 +4124,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -3802,7 +4159,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601200424</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3830,27 +4187,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -3858,7 +4222,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777903024</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -3888,20 +4252,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -3916,7 +4287,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1814455397</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3945,20 +4316,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -3973,7 +4351,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4001,27 +4379,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -4029,7 +4414,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4059,20 +4444,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -4087,7 +4479,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777909872</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4116,20 +4508,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -4144,7 +4543,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1667327589</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4172,27 +4571,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -4200,7 +4606,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4230,20 +4636,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -4258,7 +4671,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4287,20 +4700,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -4315,7 +4735,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777916480</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4343,27 +4763,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -4371,7 +4798,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4401,20 +4828,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -4429,7 +4863,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4458,20 +4892,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -4486,7 +4927,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4514,27 +4955,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -4542,7 +4990,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777923088</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4572,20 +5020,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -4600,7 +5055,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4629,20 +5084,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -4657,7 +5119,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4685,27 +5147,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -4713,7 +5182,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4743,20 +5212,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -4771,7 +5247,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>945763377</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4800,20 +5276,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -4828,7 +5311,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601200479</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4856,27 +5339,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -4884,7 +5374,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1162630468</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -4914,20 +5404,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -4942,7 +5439,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1397508187</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -4971,20 +5468,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -4999,7 +5503,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>694510703</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5027,27 +5531,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -5055,7 +5566,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852795252</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5085,20 +5596,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -5113,7 +5631,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1667327589</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5142,20 +5660,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -5170,7 +5695,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1634494832</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5198,27 +5723,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -5226,7 +5758,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1630019628</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5256,20 +5788,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -5284,7 +5823,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1885415456</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5313,20 +5852,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -5341,7 +5887,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>694510703</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5369,27 +5915,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -5397,7 +5950,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>741681509</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5427,20 +5980,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -5455,7 +6015,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>980447331</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5484,20 +6044,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -5512,7 +6079,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539437354</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5540,27 +6107,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -5568,7 +6142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>875639328</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5598,20 +6172,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -5626,7 +6207,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>570456436</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5655,20 +6236,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -5683,7 +6271,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852142702</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5711,27 +6299,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -5739,7 +6334,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869833586</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5769,20 +6364,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -5797,7 +6399,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852138591</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5826,20 +6428,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -5854,7 +6463,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1635216754</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5882,27 +6491,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -5910,7 +6526,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1013212536</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -5940,20 +6556,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -5968,7 +6591,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>891905380</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -5997,20 +6620,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -6025,7 +6655,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>544106784</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -6053,27 +6683,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -6081,7 +6718,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1834971487</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -6111,20 +6748,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6139,7 +6783,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1179535650</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6168,20 +6812,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -6196,7 +6847,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1679847023</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -6224,27 +6875,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -6252,7 +6910,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869440365</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -6282,20 +6940,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6310,7 +6975,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>795177569</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6339,20 +7004,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -6367,7 +7039,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1600484206</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -6395,27 +7067,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -6423,7 +7102,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1734439968</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -6453,20 +7132,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6481,7 +7167,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1313415680</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -6510,20 +7196,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>46</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>46</second>
 									</item>
@@ -6538,7 +7231,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953653108</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -6566,27 +7259,34 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>res</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -6594,7 +7294,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>792463934</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -6620,24 +7320,31 @@
 					<Obj>
 						<type>0</type>
 						<id>127</id>
-						<name>newret</name>
+						<name>mrv</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6652,7 +7359,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -6677,24 +7384,31 @@
 					<Obj>
 						<type>0</type>
 						<id>128</id>
-						<name>newret2</name>
+						<name>mrv_1</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6709,7 +7423,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -6734,24 +7448,31 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>newret4</name>
+						<name>mrv_2</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6766,7 +7487,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -6791,24 +7512,31 @@
 					<Obj>
 						<type>0</type>
 						<id>130</id>
-						<name>newret6</name>
+						<name>mrv_3</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6823,7 +7551,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -6848,24 +7576,31 @@
 					<Obj>
 						<type>0</type>
 						<id>131</id>
-						<name>newret8</name>
+						<name>mrv_4</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6880,7 +7615,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778007072</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -6905,24 +7640,31 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>newret10</name>
+						<name>mrv_5</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6937,7 +7679,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778008784</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -6962,24 +7704,31 @@
 					<Obj>
 						<type>0</type>
 						<id>133</id>
-						<name>newret12</name>
+						<name>mrv_6</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -6994,7 +7743,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778010384</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7019,24 +7768,31 @@
 					<Obj>
 						<type>0</type>
 						<id>134</id>
-						<name>newret14</name>
+						<name>mrv_7</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7051,7 +7807,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7076,24 +7832,31 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>newret15</name>
+						<name>mrv_8</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7108,7 +7871,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7133,24 +7896,31 @@
 					<Obj>
 						<type>0</type>
 						<id>136</id>
-						<name>newret16</name>
+						<name>mrv_9</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7165,7 +7935,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778015392</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7190,24 +7960,31 @@
 					<Obj>
 						<type>0</type>
 						<id>137</id>
-						<name>newret17</name>
+						<name>mrv_10</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7222,7 +7999,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2427417202</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7247,24 +8024,31 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>newret18</name>
+						<name>mrv_11</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7279,7 +8063,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7304,24 +8088,31 @@
 					<Obj>
 						<type>0</type>
 						<id>139</id>
-						<name>newret19</name>
+						<name>mrv_12</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7336,7 +8127,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>176</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7361,24 +8152,31 @@
 					<Obj>
 						<type>0</type>
 						<id>140</id>
-						<name>newret20</name>
+						<name>mrv_13</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7393,7 +8191,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778020192</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7418,24 +8216,31 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>newret21</name>
+						<name>mrv_s</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7450,7 +8255,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7475,24 +8280,31 @@
 					<Obj>
 						<type>0</type>
 						<id>142</id>
-						<name>newret22</name>
+						<name>mrv_14</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7507,7 +8319,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>304</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7532,24 +8344,31 @@
 					<Obj>
 						<type>0</type>
 						<id>143</id>
-						<name>newret23</name>
+						<name>mrv_15</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7564,7 +8383,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777320048</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7589,24 +8408,31 @@
 					<Obj>
 						<type>0</type>
 						<id>144</id>
-						<name>newret24</name>
+						<name>mrv_16</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7621,7 +8447,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778028688</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7646,24 +8472,31 @@
 					<Obj>
 						<type>0</type>
 						<id>145</id>
-						<name>newret25</name>
+						<name>mrv_17</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7678,7 +8511,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778030416</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7703,24 +8536,31 @@
 					<Obj>
 						<type>0</type>
 						<id>146</id>
-						<name>newret26</name>
+						<name>mrv_18</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7735,7 +8575,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778032008</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7760,24 +8600,31 @@
 					<Obj>
 						<type>0</type>
 						<id>147</id>
-						<name>newret27</name>
+						<name>mrv_19</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7792,7 +8639,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2778033376</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7817,24 +8664,31 @@
 					<Obj>
 						<type>0</type>
 						<id>148</id>
-						<name>newret28</name>
+						<name>mrv_20</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7849,7 +8703,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2427399159</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7874,24 +8728,31 @@
 					<Obj>
 						<type>0</type>
 						<id>149</id>
-						<name>newret29</name>
+						<name>mrv_21</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7906,7 +8767,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7931,24 +8792,31 @@
 					<Obj>
 						<type>0</type>
 						<id>150</id>
-						<name>newret30</name>
+						<name>mrv_22</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -7963,7 +8831,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -7988,24 +8856,31 @@
 					<Obj>
 						<type>0</type>
 						<id>151</id>
-						<name>newret31</name>
+						<name>mrv_23</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -8020,7 +8895,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777742208</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -8049,20 +8924,27 @@
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
 						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</fileDirectory>
 						<lineNumber>45</lineNumber>
-						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
-						<contextNormFuncName>relu_ap_fixed_14_8_AP_TRN_AP_WRAP_0_ap_ufixed_12_6_AP_TRN_AP_WRAP_0_relu_config4_s</contextNormFuncName>
+						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</contextFuncName>
+						<contextNormFuncName>relu_ap_fixed_14_8_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_12_6_ap_q_mode_5_ap_o_mode_3_0_relu_config4_s</contextNormFuncName>
 						<inlineStackInfo>
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
 								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4</first>
 								<second>
-									<count>1</count>
+									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
+											<first>firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp</first>
+											<second>_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+										</first>
+										<second>75</second>
+									</item>
+									<item>
+										<first>
 											<first>firmware/nnet_utils/nnet_activation.h</first>
-											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config4&amp;gt;</second>
+											<second>relu&amp;lt;ap_fixed&amp;lt;14, 8, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;12, 6, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config4&amp;gt;</second>
 										</first>
 										<second>45</second>
 									</item>
@@ -8077,7 +8959,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777749952</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -8123,7 +9005,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>62</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>14</bitwidth>
@@ -8154,7 +9036,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>12</bitwidth>
@@ -8185,7 +9067,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>2777755856</coreId>
+						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>300</bitwidth>
@@ -8219,7 +9101,7 @@
 					<coreName></coreName>
 					<isStorage>0</isStorage>
 					<storageDepth>0</storageDepth>
-					<coreId>2003661417</coreId>
+					<coreId>4294967295</coreId>
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
@@ -10943,6 +11825,14 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</node2core>
+	<sched_res class_id="39" tracking_level="1" version="0" object_id="_384">
+		<ResourceTableActual class_id="40" tracking_level="0" version="0">
+			<II>1</II>
+		</ResourceTableActual>
+		<ResourceTableFailed class_id="41" tracking_level="0" version="0">
+			<II>-1</II>
+		</ResourceTableFailed>
+	</sched_res>
 </syndb>
 </boost_serialization>
 

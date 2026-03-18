@@ -1,64 +1,76 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "2 1 3",
+    "calls": "2 3 1",
+    "control_depth": 0,
+    "def_use_depth": 19,
     "file": "hgq2_1_hls4ml_prj_Vitis_da4ml.cpp",
     "fileloc": 7,
-    "instructions": 4713,
+    "instructions": 4137,
     "loads": {
       "L": 60,
       "T": 13
     },
+    "memory_accesses": 209,
     "name": "hgq2_1_hls4ml_prj_Vitis_da4ml",
     "stores": {
       "L": 128,
       "T": 5
     },
-    "total_instructions": 5740
+    "total_instructions": 4780
   },
   "1": {
-    "basicblocks": 97,
+    "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
     "file": "nnet_activation.h",
     "fileloc": 39,
-    "instructions": 257,
+    "instructions": 161,
     "loads": {
       "L": 32
     },
-    "name": "relu<ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, relu_config7>",
+    "memory_accesses": 64,
+    "name": "relu<ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<11, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config10>",
     "stores": {
-      "L": 64
+      "L": 32
     },
-    "total_instructions": 257
+    "total_instructions": 161
   },
   "2": {
-    "basicblocks": 193,
+    "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
     "file": "nnet_activation.h",
     "fileloc": 39,
-    "instructions": 513,
+    "instructions": 321,
     "loads": {
       "L": 64
     },
-    "name": "relu<ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, ap_ufixed<12, 6, AP_TRN, AP_WRAP, 0>, relu_config4>",
+    "memory_accesses": 128,
+    "name": "relu<ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<12, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config4>",
     "stores": {
-      "L": 128
+      "L": 64
     },
-    "total_instructions": 513
+    "total_instructions": 321
   },
   "3": {
-    "basicblocks": 97,
+    "basicblocks": 1,
     "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
     "file": "nnet_activation.h",
     "fileloc": 39,
-    "instructions": 257,
+    "instructions": 161,
     "loads": {
       "L": 32
     },
-    "name": "relu<ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<11, 7, AP_TRN, AP_WRAP, 0>, relu_config10>",
+    "memory_accesses": 64,
+    "name": "relu<ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config7>",
     "stores": {
-      "L": 64
+      "L": 32
     },
-    "total_instructions": 257
+    "total_instructions": 161
   }
 }

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE boost_serialization>
 <boost_serialization signature="serialization::archive" version="17">
   <syndb class_id="0" tracking_level="0" version="0">
     <userIPLatency>-1</userIPLatency>
-    <userIPName/>
+    <userIPName></userIPName>
     <cdfg class_id="1" tracking_level="1" version="0" object_id="_0">
       <name>relu_ap_fixed_14_11_5_3_0_ap_ufixed_10_7_5_3_0_relu_config7_s</name>
       <module_structure>Pipeline</module_structure>
@@ -16,28 +16,28 @@
             <Obj class_id="5" tracking_level="0" version="0">
               <type>1</type>
               <id>1</id>
-              <name>data_0_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i869_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo class_id="6" tracking_level="0" version="0">
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>62</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>12</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -52,26 +52,26 @@
             <Obj>
               <type>1</type>
               <id>2</id>
-              <name>data_1_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i829_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3621216858</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -88,26 +88,26 @@
             <Obj>
               <type>1</type>
               <id>3</id>
-              <name>data_2_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i786_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -124,26 +124,26 @@
             <Obj>
               <type>1</type>
               <id>4</id>
-              <name>data_3_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i743_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953394531</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -160,26 +160,26 @@
             <Obj>
               <type>1</type>
               <id>5</id>
-              <name>data_5_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i684_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3449330466</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -196,26 +196,26 @@
             <Obj>
               <type>1</type>
               <id>6</id>
-              <name>data_6_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv_i_i_i668_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>721706832</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>13</bitwidth>
           </Value>
@@ -232,28 +232,28 @@
             <Obj>
               <type>1</type>
               <id>7</id>
-              <name>data_9_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv_i_i_i619_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>640</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>13</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -268,26 +268,26 @@
             <Obj>
               <type>1</type>
               <id>8</id>
-              <name>data_12_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i542_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4201670847</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -304,26 +304,26 @@
             <Obj>
               <type>1</type>
               <id>9</id>
-              <name>data_14_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i509_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1601463662</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -340,28 +340,28 @@
             <Obj>
               <type>1</type>
               <id>10</id>
-              <name>data_15_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i467_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>48</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>12</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -376,26 +376,26 @@
             <Obj>
               <type>1</type>
               <id>11</id>
-              <name>data_19_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i370_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737352640</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -412,26 +412,26 @@
             <Obj>
               <type>1</type>
               <id>12</id>
-              <name>data_20_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i329_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -448,26 +448,26 @@
             <Obj>
               <type>1</type>
               <id>13</id>
-              <name>data_21_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i289_i659</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1767055470</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -484,26 +484,26 @@
             <Obj>
               <type>1</type>
               <id>14</id>
-              <name>data_22_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i247_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1852714867</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -520,26 +520,26 @@
             <Obj>
               <type>1</type>
               <id>15</id>
-              <name>data_24_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i187_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>941632564</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -556,26 +556,26 @@
             <Obj>
               <type>1</type>
               <id>16</id>
-              <name>data_25_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i146_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1769235310</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -592,26 +592,26 @@
             <Obj>
               <type>1</type>
               <id>17</id>
-              <name>data_26_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv_i_i_i105_i673</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -628,26 +628,26 @@
             <Obj>
               <type>1</type>
               <id>18</id>
-              <name>data_27_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i93_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737424976</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>14</bitwidth>
           </Value>
@@ -664,26 +664,26 @@
             <Obj>
               <type>1</type>
               <id>19</id>
-              <name>data_29_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i35_i</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737392432</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -700,26 +700,26 @@
             <Obj>
               <type>1</type>
               <id>20</id>
-              <name>data_30_val</name>
-              <fileName/>
-              <fileDirectory/>
+              <name>conv5_i_i_i_i702</name>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName>datareg</originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -739,41 +739,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>22</id>
-              <name>data_30_val_read</name>
+              <id>21</id>
+              <name>conv5_i_i_i_i702_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second class_id="11" tracking_level="0" version="0">
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -796,41 +803,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>23</id>
-              <name>data_29_val_read</name>
+              <id>22</id>
+              <name>conv5_i_i_i35_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>18</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -853,41 +867,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>24</id>
-              <name>data_27_val_read</name>
+              <id>23</id>
+              <name>conv5_i_i_i93_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>14</bitwidth>
           </Value>
@@ -910,41 +931,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>25</id>
-              <name>data_26_val_read</name>
+              <id>24</id>
+              <name>conv_i_i_i105_i673_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -967,41 +995,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>26</id>
-              <name>data_25_val_read</name>
+              <id>25</id>
+              <name>conv5_i_i_i146_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967040</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -1024,41 +1059,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>27</id>
-              <name>data_24_val_read</name>
+              <id>26</id>
+              <name>conv5_i_i_i187_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3447783707</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -1081,41 +1123,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>28</id>
-              <name>data_22_val_read</name>
+              <id>27</id>
+              <name>conv5_i_i_i247_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -1138,41 +1187,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>29</id>
-              <name>data_21_val_read</name>
+              <id>28</id>
+              <name>conv5_i_i_i289_i659_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>741550437</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -1195,41 +1251,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>30</id>
-              <name>data_20_val_read</name>
+              <id>29</id>
+              <name>conv5_i_i_i329_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>469984800</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -1252,41 +1315,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>31</id>
-              <name>data_19_val_read</name>
+              <id>30</id>
+              <name>conv5_i_i_i370_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4201747445</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -1309,43 +1379,50 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>32</id>
-              <name>data_15_val_read</name>
+              <id>31</id>
+              <name>conv5_i_i_i467_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>12</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -1366,41 +1443,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>33</id>
-              <name>data_14_val_read</name>
+              <id>32</id>
+              <name>conv5_i_i_i509_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737410528</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>12</bitwidth>
           </Value>
@@ -1423,41 +1507,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>34</id>
-              <name>data_12_val_read</name>
+              <id>33</id>
+              <name>conv5_i_i_i542_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>471226192</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -1480,49 +1571,56 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>35</id>
-              <name>data_9_val_read</name>
+              <id>34</id>
+              <name>conv_i_i_i619_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>13</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
+            <item>158</item>
             <item>159</item>
-            <item>160</item>
           </oprand_edges>
           <opcode>read</opcode>
           <m_Display>0</m_Display>
@@ -1537,41 +1635,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>36</id>
-              <name>data_6_val_read</name>
+              <id>35</id>
+              <name>conv_i_i_i668_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3448076092</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>13</bitwidth>
           </Value>
@@ -1594,41 +1699,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>37</id>
-              <name>data_5_val_read</name>
+              <id>36</id>
+              <name>conv5_i_i_i684_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3448214130</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -1651,41 +1763,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>38</id>
-              <name>data_3_val_read</name>
+              <id>37</id>
+              <name>conv5_i_i_i743_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -1708,41 +1827,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>39</id>
-              <name>data_2_val_read</name>
+              <id>38</id>
+              <name>conv5_i_i_i786_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>11</bitwidth>
           </Value>
@@ -1765,41 +1891,48 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>40</id>
-              <name>data_1_val_read</name>
+              <id>39</id>
+              <name>conv5_i_i_i829_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737501424</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -1822,43 +1955,50 @@
           <Value>
             <Obj>
               <type>0</type>
-              <id>41</id>
-              <name>data_0_val_read</name>
+              <id>40</id>
+              <name>conv5_i_i_i869_i_read</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <lineNumber>39</lineNumber>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
                       </first>
-                      <second>45</second>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_activation.h</first>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
+                      </first>
+                      <second>39</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>12</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
@@ -1884,36 +2024,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_fu_194_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -1928,7 +2075,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.80</m_delay>
+          <m_delay>0.79</m_delay>
           <m_topoIndex>21</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1941,36 +2088,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_fu_200_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -1997,27 +2151,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_fu_204_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -2026,7 +2187,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2055,36 +2216,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_39_fu_212_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2112,36 +2280,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_39_fu_218_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>176</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -2168,27 +2343,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_39_fu_222_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -2197,7 +2379,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -2226,36 +2408,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>zext_ln45_fu_230_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3448228678</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -2282,36 +2471,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_40_fu_234_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -2319,7 +2515,7 @@
             <count>2</count>
             <item_version>0</item_version>
             <item>189</item>
-            <item>191</item>
+            <item>190</item>
           </oprand_edges>
           <opcode>icmp</opcode>
           <m_Display>0</m_Display>
@@ -2339,43 +2535,50 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_40_fu_240_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>738074304</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>192</item>
+            <item>191</item>
           </oprand_edges>
           <opcode>trunc</opcode>
           <m_Display>0</m_Display>
@@ -2395,27 +2598,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_40_fu_244_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -2424,16 +2634,16 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
+            <item>192</item>
             <item>193</item>
             <item>194</item>
-            <item>195</item>
           </oprand_edges>
           <opcode>select</opcode>
           <m_Display>0</m_Display>
@@ -2453,44 +2663,51 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_41_fu_252_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
+            <item>195</item>
             <item>196</item>
-            <item>197</item>
           </oprand_edges>
           <opcode>icmp</opcode>
           <m_Display>0</m_Display>
@@ -2510,43 +2727,50 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_41_fu_258_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470805136</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>198</item>
+            <item>197</item>
           </oprand_edges>
           <opcode>trunc</opcode>
           <m_Display>0</m_Display>
@@ -2566,27 +2790,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_41_fu_262_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -2595,16 +2826,16 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
+            <item>198</item>
             <item>199</item>
             <item>200</item>
-            <item>201</item>
           </oprand_edges>
           <opcode>select</opcode>
           <m_Display>0</m_Display>
@@ -2624,44 +2855,51 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_42_fu_270_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
+            <item>201</item>
             <item>202</item>
-            <item>203</item>
           </oprand_edges>
           <opcode>icmp</opcode>
           <m_Display>0</m_Display>
@@ -2681,43 +2919,50 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_42_fu_276_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470117256</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>204</item>
+            <item>203</item>
           </oprand_edges>
           <opcode>trunc</opcode>
           <m_Display>0</m_Display>
@@ -2737,27 +2982,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_42_fu_280_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -2766,16 +3018,16 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
+            <item>204</item>
             <item>205</item>
             <item>206</item>
-            <item>207</item>
           </oprand_edges>
           <opcode>select</opcode>
           <m_Display>0</m_Display>
@@ -2795,44 +3047,51 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_43_fu_288_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>208</item>
-            <item>210</item>
+            <item>207</item>
+            <item>209</item>
           </oprand_edges>
           <opcode>icmp</opcode>
           <m_Display>0</m_Display>
@@ -2852,43 +3111,50 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_43_fu_294_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3447977316</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>211</item>
+            <item>210</item>
           </oprand_edges>
           <opcode>trunc</opcode>
           <m_Display>0</m_Display>
@@ -2908,27 +3174,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_43_fu_298_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -2937,16 +3210,16 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
           <oprand_edges>
             <count>3</count>
             <item_version>0</item_version>
+            <item>211</item>
             <item>212</item>
             <item>213</item>
-            <item>214</item>
           </oprand_edges>
           <opcode>select</opcode>
           <m_Display>0</m_Display>
@@ -2962,47 +3235,54 @@
             <Obj>
               <type>0</type>
               <id>61</id>
-              <name>zext_ln45_7</name>
+              <name>zext_ln45_8</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>zext_ln45_7_fu_306_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName>zext_ln45_8_fu_306_p1</rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1630027312</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
           <oprand_edges>
             <count>1</count>
             <item_version>0</item_version>
-            <item>215</item>
+            <item>214</item>
           </oprand_edges>
           <opcode>zext</opcode>
           <m_Display>0</m_Display>
@@ -3022,43 +3302,50 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_44_fu_310_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
           <oprand_edges>
             <count>2</count>
             <item_version>0</item_version>
-            <item>216</item>
+            <item>215</item>
             <item>217</item>
           </oprand_edges>
           <opcode>icmp</opcode>
@@ -3066,7 +3353,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.82</m_delay>
+          <m_delay>0.80</m_delay>
           <m_topoIndex>41</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3079,36 +3366,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_44_fu_316_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>738155736</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -3135,27 +3429,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_44_fu_320_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -3164,7 +3465,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -3189,40 +3490,47 @@
             <Obj>
               <type>0</type>
               <id>65</id>
-              <name>zext_ln45_8</name>
+              <name>zext_ln45_9</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>zext_ln45_8_fu_328_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName>zext_ln45_9_fu_328_p1</rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737573952</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3249,36 +3557,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_45_fu_332_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3306,36 +3621,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_45_fu_338_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3362,27 +3684,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_45_fu_342_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -3391,7 +3720,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3420,36 +3749,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_46_fu_350_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3477,36 +3813,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_46_fu_356_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>469955608</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3533,27 +3876,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_46_fu_360_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -3562,7 +3912,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3591,36 +3941,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_47_fu_368_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3635,7 +3992,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>0.80</m_delay>
+          <m_delay>0.79</m_delay>
           <m_topoIndex>51</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -3648,36 +4005,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_47_fu_374_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737412640</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3704,27 +4068,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_47_fu_378_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -3733,7 +4104,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3762,36 +4133,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_48_fu_386_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3819,36 +4197,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_48_fu_392_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967294</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3875,27 +4260,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_48_fu_396_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -3904,7 +4296,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -3933,36 +4325,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_49_fu_404_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -3990,36 +4389,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_49_fu_410_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737371040</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4046,27 +4452,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_49_fu_414_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -4075,7 +4488,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4104,36 +4517,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_50_fu_422_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4161,36 +4581,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_50_fu_428_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4217,27 +4644,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_50_fu_432_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -4246,7 +4680,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4275,36 +4709,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_51_fu_440_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4332,36 +4773,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_51_fu_446_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>4294967294</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4388,27 +4836,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_51_fu_450_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -4417,7 +4872,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4446,36 +4901,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_52_fu_458_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4503,36 +4965,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_52_fu_464_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737649072</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4559,27 +5028,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_52_fu_468_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -4588,7 +5064,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4617,36 +5093,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_53_fu_476_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4674,36 +5157,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_53_fu_482_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737335608</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4730,27 +5220,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_53_fu_486_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -4759,7 +5256,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -4788,36 +5285,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_54_fu_494_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -4845,36 +5349,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_54_fu_500_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737326920</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -4901,27 +5412,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_54_fu_504_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -4930,7 +5448,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -4955,40 +5473,47 @@
             <Obj>
               <type>0</type>
               <id>96</id>
-              <name>zext_ln45_9</name>
+              <name>zext_ln45_10</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName>zext_ln45_9_fu_512_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName>zext_ln45_10_fu_512_p1</rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737326464</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -5015,36 +5540,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_55_fu_516_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5072,36 +5604,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_55_fu_522_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -5128,27 +5667,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_55_fu_526_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -5157,7 +5703,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -5186,36 +5732,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_56_fu_534_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5243,36 +5796,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_56_fu_540_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -5299,27 +5859,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_56_fu_544_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -5328,7 +5895,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -5357,36 +5924,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>icmp_ln45_57_fu_552_p2</rtlName>
               <control>auto</control>
-              <opType>icmp</opType>
+              <opType>setgt</opType>
               <implIndex>auto</implIndex>
               <coreName>Cmp</coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>9</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>1</bitwidth>
           </Value>
@@ -5414,36 +5988,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>46</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>46</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName></originalName>
               <rtlName>trunc_ln46_57_fu_558_p1</rtlName>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -5470,27 +6051,34 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
+              <originalName>res</originalName>
               <rtlName>select_ln45_57_fu_562_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
@@ -5499,7 +6087,7 @@
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
               <coreId>73</coreId>
-              <rtlModuleName/>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -5524,40 +6112,47 @@
             <Obj>
               <type>0</type>
               <id>106</id>
-              <name>newret</name>
+              <name>mrv</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737592560</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -5581,40 +6176,47 @@
             <Obj>
               <type>0</type>
               <id>107</id>
-              <name>newret2</name>
+              <name>mrv_1</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -5638,40 +6240,47 @@
             <Obj>
               <type>0</type>
               <id>108</id>
-              <name>newret4</name>
+              <name>mrv_2</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737591056</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -5695,40 +6304,47 @@
             <Obj>
               <type>0</type>
               <id>109</id>
-              <name>newret6</name>
+              <name>mrv_3</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -5752,40 +6368,47 @@
             <Obj>
               <type>0</type>
               <id>110</id>
-              <name>newret8</name>
+              <name>mrv_4</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -5809,40 +6432,47 @@
             <Obj>
               <type>0</type>
               <id>111</id>
-              <name>newret10</name>
+              <name>mrv_5</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737585264</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -5866,40 +6496,47 @@
             <Obj>
               <type>0</type>
               <id>112</id>
-              <name>newret12</name>
+              <name>mrv_6</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1397508187</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -5923,40 +6560,47 @@
             <Obj>
               <type>0</type>
               <id>113</id>
-              <name>newret14</name>
+              <name>mrv_7</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -5980,40 +6624,47 @@
             <Obj>
               <type>0</type>
               <id>114</id>
-              <name>newret16</name>
+              <name>mrv_8</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737425512</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6037,40 +6688,47 @@
             <Obj>
               <type>0</type>
               <id>115</id>
-              <name>newret18</name>
+              <name>mrv_9</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3448184442</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6094,40 +6752,47 @@
             <Obj>
               <type>0</type>
               <id>116</id>
-              <name>newret20</name>
+              <name>mrv_10</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737530024</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6151,40 +6816,47 @@
             <Obj>
               <type>0</type>
               <id>117</id>
-              <name>newret22</name>
+              <name>mrv_11</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737530384</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6208,40 +6880,47 @@
             <Obj>
               <type>0</type>
               <id>118</id>
-              <name>newret24</name>
+              <name>mrv_12</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3448200254</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6265,40 +6944,47 @@
             <Obj>
               <type>0</type>
               <id>119</id>
-              <name>newret26</name>
+              <name>mrv_13</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6322,40 +7008,47 @@
             <Obj>
               <type>0</type>
               <id>120</id>
-              <name>newret28</name>
+              <name>mrv_14</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737568672</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6379,40 +7072,47 @@
             <Obj>
               <type>0</type>
               <id>121</id>
-              <name>newret30</name>
+              <name>mrv_15</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737575488</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6436,40 +7136,47 @@
             <Obj>
               <type>0</type>
               <id>122</id>
-              <name>newret32</name>
+              <name>mrv_16</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>608</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6493,40 +7200,47 @@
             <Obj>
               <type>0</type>
               <id>123</id>
-              <name>newret33</name>
+              <name>mrv_17</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>0</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6550,40 +7264,47 @@
             <Obj>
               <type>0</type>
               <id>124</id>
-              <name>newret34</name>
+              <name>mrv_18</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>469832352</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6607,40 +7328,47 @@
             <Obj>
               <type>0</type>
               <id>125</id>
-              <name>newret35</name>
+              <name>mrv_19</name>
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6668,36 +7396,43 @@
               <fileName>firmware/nnet_utils/nnet_activation.h</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
-              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
-              <contextNormFuncName>relu_ap_fixed_14_11_AP_TRN_AP_WRAP_0_ap_ufixed_10_7_AP_TRN_AP_WRAP_0_relu_config7_s</contextNormFuncName>
+              <contextFuncName>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</contextFuncName>
+              <contextNormFuncName>relu_ap_fixed_14_11_ap_q_mode_5_ap_o_mode_3_0_ap_ufixed_10_7_ap_q_mode_5_ap_o_mode_3_0_relu_config7_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml</first>
                   <second>
-                    <count>1</count>
+                    <count>2</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
+                        <first>firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp</first>
+                        <second>_Z29hgq2_1_hls4ml_prj_Vitis_da4mlP8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_</second>
+                      </first>
+                      <second>57</second>
+                    </item>
+                    <item>
+                      <first>
                         <first>firmware/nnet_utils/nnet_activation.h</first>
-                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config7&amp;gt;</second>
+                        <second>relu&amp;lt;ap_fixed&amp;lt;14, 11, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, ap_ufixed&amp;lt;10, 7, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, relu_config7&amp;gt;</second>
                       </first>
                       <second>45</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -6725,27 +7460,27 @@
               <type>2</type>
               <id>174</id>
               <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737659504</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>12</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -6756,25 +7491,25 @@
               <type>2</type>
               <id>179</id>
               <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>470828288</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>10</bitwidth>
           </Value>
@@ -6787,25 +7522,25 @@
               <type>2</type>
               <id>186</id>
               <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>128</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>9</bitwidth>
           </Value>
@@ -6816,29 +7551,29 @@
           <Value>
             <Obj>
               <type>2</type>
-              <id>190</id>
+              <id>208</id>
               <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>3447813356</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>11</bitwidth>
+            <bitwidth>13</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -6847,29 +7582,29 @@
           <Value>
             <Obj>
               <type>2</type>
-              <id>209</id>
+              <id>216</id>
               <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>176</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>13</bitwidth>
+            <bitwidth>12</bitwidth>
           </Value>
           <const_type>0</const_type>
           <content>0</content>
@@ -6880,25 +7615,25 @@
               <type>2</type>
               <id>221</id>
               <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737352640</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -6911,25 +7646,25 @@
               <type>2</type>
               <id>286</id>
               <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737345648</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>14</bitwidth>
           </Value>
@@ -6942,25 +7677,25 @@
               <type>2</type>
               <id>304</id>
               <name>empty</name>
-              <fileName/>
-              <fileDirectory/>
+              <fileName></fileName>
+              <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
-              <contextFuncName/>
-              <contextNormFuncName/>
+              <contextFuncName></contextFuncName>
+              <contextNormFuncName></contextNormFuncName>
               <inlineStackInfo>
                 <count>0</count>
                 <item_version>0</item_version>
               </inlineStackInfo>
-              <originalName/>
-              <rtlName/>
-              <control/>
-              <opType/>
-              <implIndex/>
-              <coreName/>
+              <originalName></originalName>
+              <rtlName></rtlName>
+              <control></control>
+              <opType></opType>
+              <implIndex></implIndex>
+              <coreName></coreName>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>737573952</coreId>
-              <rtlModuleName/>
+              <coreId>4294967295</coreId>
+              <rtlModuleName></rtlModuleName>
             </Obj>
             <bitwidth>200</bitwidth>
           </Value>
@@ -6976,29 +7711,30 @@
             <type>3</type>
             <id>127</id>
             <name>relu&lt;ap_fixed&lt;14, 11, 5, 3, 0&gt;, ap_ufixed&lt;10, 7, 5, 3, 0&gt;, relu_config7&gt;</name>
-            <fileName/>
-            <fileDirectory/>
+            <fileName></fileName>
+            <fileDirectory></fileDirectory>
             <lineNumber>0</lineNumber>
-            <contextFuncName/>
-            <contextNormFuncName/>
+            <contextFuncName></contextFuncName>
+            <contextNormFuncName></contextNormFuncName>
             <inlineStackInfo>
               <count>0</count>
               <item_version>0</item_version>
             </inlineStackInfo>
-            <originalName/>
-            <rtlName/>
-            <control/>
-            <opType/>
-            <implIndex/>
-            <coreName/>
+            <originalName></originalName>
+            <rtlName></rtlName>
+            <control></control>
+            <opType></opType>
+            <implIndex></implIndex>
+            <coreName></coreName>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1768300588</coreId>
-            <rtlModuleName/>
+            <coreId>4294967295</coreId>
+            <rtlModuleName></rtlModuleName>
           </Obj>
           <node_objs>
             <count>105</count>
             <item_version>0</item_version>
+            <item>21</item>
             <item>22</item>
             <item>23</item>
             <item>24</item>
@@ -7018,7 +7754,6 @@
             <item>38</item>
             <item>39</item>
             <item>40</item>
-            <item>41</item>
             <item>42</item>
             <item>43</item>
             <item>44</item>
@@ -7114,146 +7849,146 @@
           <id>130</id>
           <edge_type>1</edge_type>
           <source_obj>20</source_obj>
-          <sink_obj>22</sink_obj>
+          <sink_obj>21</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_136">
           <id>132</id>
           <edge_type>1</edge_type>
           <source_obj>19</source_obj>
-          <sink_obj>23</sink_obj>
+          <sink_obj>22</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_137">
           <id>135</id>
           <edge_type>1</edge_type>
           <source_obj>18</source_obj>
-          <sink_obj>24</sink_obj>
+          <sink_obj>23</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_138">
           <id>138</id>
           <edge_type>1</edge_type>
           <source_obj>17</source_obj>
-          <sink_obj>25</sink_obj>
+          <sink_obj>24</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_139">
           <id>141</id>
           <edge_type>1</edge_type>
           <source_obj>16</source_obj>
-          <sink_obj>26</sink_obj>
+          <sink_obj>25</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_140">
           <id>143</id>
           <edge_type>1</edge_type>
           <source_obj>15</source_obj>
-          <sink_obj>27</sink_obj>
+          <sink_obj>26</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_141">
           <id>145</id>
           <edge_type>1</edge_type>
           <source_obj>14</source_obj>
-          <sink_obj>28</sink_obj>
+          <sink_obj>27</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_142">
           <id>147</id>
           <edge_type>1</edge_type>
           <source_obj>13</source_obj>
-          <sink_obj>29</sink_obj>
+          <sink_obj>28</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_143">
           <id>149</id>
           <edge_type>1</edge_type>
           <source_obj>12</source_obj>
-          <sink_obj>30</sink_obj>
+          <sink_obj>29</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_144">
           <id>151</id>
           <edge_type>1</edge_type>
           <source_obj>11</source_obj>
-          <sink_obj>31</sink_obj>
+          <sink_obj>30</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_145">
           <id>153</id>
           <edge_type>1</edge_type>
           <source_obj>10</source_obj>
-          <sink_obj>32</sink_obj>
+          <sink_obj>31</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_146">
           <id>155</id>
           <edge_type>1</edge_type>
           <source_obj>9</source_obj>
-          <sink_obj>33</sink_obj>
+          <sink_obj>32</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_147">
           <id>157</id>
           <edge_type>1</edge_type>
           <source_obj>8</source_obj>
-          <sink_obj>34</sink_obj>
+          <sink_obj>33</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_148">
-          <id>160</id>
+          <id>159</id>
           <edge_type>1</edge_type>
           <source_obj>7</source_obj>
-          <sink_obj>35</sink_obj>
+          <sink_obj>34</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_149">
           <id>162</id>
           <edge_type>1</edge_type>
           <source_obj>6</source_obj>
-          <sink_obj>36</sink_obj>
+          <sink_obj>35</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_150">
           <id>164</id>
           <edge_type>1</edge_type>
           <source_obj>5</source_obj>
-          <sink_obj>37</sink_obj>
+          <sink_obj>36</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_151">
           <id>166</id>
           <edge_type>1</edge_type>
           <source_obj>4</source_obj>
-          <sink_obj>38</sink_obj>
+          <sink_obj>37</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_152">
           <id>168</id>
           <edge_type>1</edge_type>
           <source_obj>3</source_obj>
-          <sink_obj>39</sink_obj>
+          <sink_obj>38</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_153">
           <id>170</id>
           <edge_type>1</edge_type>
           <source_obj>2</source_obj>
-          <sink_obj>40</sink_obj>
+          <sink_obj>39</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_154">
           <id>172</id>
           <edge_type>1</edge_type>
           <source_obj>1</source_obj>
-          <sink_obj>41</sink_obj>
+          <sink_obj>40</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_155">
           <id>173</id>
           <edge_type>1</edge_type>
-          <source_obj>41</source_obj>
+          <source_obj>40</source_obj>
           <sink_obj>42</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7267,7 +8002,7 @@
         <item class_id_reference="20" object_id="_157">
           <id>176</id>
           <edge_type>1</edge_type>
-          <source_obj>41</source_obj>
+          <source_obj>40</source_obj>
           <sink_obj>43</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7295,7 +8030,7 @@
         <item class_id_reference="20" object_id="_161">
           <id>181</id>
           <edge_type>1</edge_type>
-          <source_obj>40</source_obj>
+          <source_obj>39</source_obj>
           <sink_obj>45</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7309,7 +8044,7 @@
         <item class_id_reference="20" object_id="_163">
           <id>183</id>
           <edge_type>1</edge_type>
-          <source_obj>40</source_obj>
+          <source_obj>39</source_obj>
           <sink_obj>46</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7344,196 +8079,196 @@
         <item class_id_reference="20" object_id="_168">
           <id>189</id>
           <edge_type>1</edge_type>
-          <source_obj>39</source_obj>
+          <source_obj>38</source_obj>
           <sink_obj>49</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_169">
-          <id>191</id>
+          <id>190</id>
           <edge_type>1</edge_type>
-          <source_obj>190</source_obj>
+          <source_obj>174</source_obj>
           <sink_obj>49</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_170">
-          <id>192</id>
+          <id>191</id>
           <edge_type>1</edge_type>
-          <source_obj>39</source_obj>
+          <source_obj>38</source_obj>
           <sink_obj>50</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_171">
-          <id>193</id>
+          <id>192</id>
           <edge_type>1</edge_type>
           <source_obj>49</source_obj>
           <sink_obj>51</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_172">
-          <id>194</id>
+          <id>193</id>
           <edge_type>1</edge_type>
           <source_obj>50</source_obj>
           <sink_obj>51</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_173">
-          <id>195</id>
+          <id>194</id>
           <edge_type>1</edge_type>
           <source_obj>179</source_obj>
           <sink_obj>51</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_174">
-          <id>196</id>
+          <id>195</id>
           <edge_type>1</edge_type>
-          <source_obj>38</source_obj>
+          <source_obj>37</source_obj>
           <sink_obj>52</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_175">
-          <id>197</id>
+          <id>196</id>
           <edge_type>1</edge_type>
-          <source_obj>190</source_obj>
+          <source_obj>174</source_obj>
           <sink_obj>52</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_176">
-          <id>198</id>
+          <id>197</id>
           <edge_type>1</edge_type>
-          <source_obj>38</source_obj>
+          <source_obj>37</source_obj>
           <sink_obj>53</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_177">
-          <id>199</id>
+          <id>198</id>
           <edge_type>1</edge_type>
           <source_obj>52</source_obj>
           <sink_obj>54</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_178">
-          <id>200</id>
+          <id>199</id>
           <edge_type>1</edge_type>
           <source_obj>53</source_obj>
           <sink_obj>54</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_179">
-          <id>201</id>
+          <id>200</id>
           <edge_type>1</edge_type>
           <source_obj>179</source_obj>
           <sink_obj>54</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_180">
-          <id>202</id>
+          <id>201</id>
           <edge_type>1</edge_type>
-          <source_obj>37</source_obj>
+          <source_obj>36</source_obj>
           <sink_obj>55</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_181">
-          <id>203</id>
+          <id>202</id>
           <edge_type>1</edge_type>
-          <source_obj>190</source_obj>
+          <source_obj>174</source_obj>
           <sink_obj>55</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_182">
-          <id>204</id>
+          <id>203</id>
           <edge_type>1</edge_type>
-          <source_obj>37</source_obj>
+          <source_obj>36</source_obj>
           <sink_obj>56</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_183">
-          <id>205</id>
+          <id>204</id>
           <edge_type>1</edge_type>
           <source_obj>55</source_obj>
           <sink_obj>57</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_184">
-          <id>206</id>
+          <id>205</id>
           <edge_type>1</edge_type>
           <source_obj>56</source_obj>
           <sink_obj>57</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_185">
-          <id>207</id>
+          <id>206</id>
           <edge_type>1</edge_type>
           <source_obj>179</source_obj>
           <sink_obj>57</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_186">
-          <id>208</id>
+          <id>207</id>
           <edge_type>1</edge_type>
-          <source_obj>36</source_obj>
+          <source_obj>35</source_obj>
           <sink_obj>58</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_187">
-          <id>210</id>
+          <id>209</id>
           <edge_type>1</edge_type>
-          <source_obj>209</source_obj>
+          <source_obj>208</source_obj>
           <sink_obj>58</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_188">
-          <id>211</id>
+          <id>210</id>
           <edge_type>1</edge_type>
-          <source_obj>36</source_obj>
+          <source_obj>35</source_obj>
           <sink_obj>59</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_189">
-          <id>212</id>
+          <id>211</id>
           <edge_type>1</edge_type>
           <source_obj>58</source_obj>
           <sink_obj>60</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_190">
-          <id>213</id>
+          <id>212</id>
           <edge_type>1</edge_type>
           <source_obj>59</source_obj>
           <sink_obj>60</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_191">
-          <id>214</id>
+          <id>213</id>
           <edge_type>1</edge_type>
           <source_obj>186</source_obj>
           <sink_obj>60</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_192">
-          <id>215</id>
+          <id>214</id>
           <edge_type>1</edge_type>
           <source_obj>60</source_obj>
           <sink_obj>61</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_193">
-          <id>216</id>
+          <id>215</id>
           <edge_type>1</edge_type>
-          <source_obj>35</source_obj>
+          <source_obj>34</source_obj>
           <sink_obj>62</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_194">
           <id>217</id>
           <edge_type>1</edge_type>
-          <source_obj>209</source_obj>
+          <source_obj>216</source_obj>
           <sink_obj>62</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_195">
           <id>218</id>
           <edge_type>1</edge_type>
-          <source_obj>35</source_obj>
+          <source_obj>34</source_obj>
           <sink_obj>63</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7568,21 +8303,21 @@
         <item class_id_reference="20" object_id="_200">
           <id>224</id>
           <edge_type>1</edge_type>
-          <source_obj>34</source_obj>
+          <source_obj>33</source_obj>
           <sink_obj>66</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_201">
           <id>225</id>
           <edge_type>1</edge_type>
-          <source_obj>190</source_obj>
+          <source_obj>174</source_obj>
           <sink_obj>66</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_202">
           <id>226</id>
           <edge_type>1</edge_type>
-          <source_obj>34</source_obj>
+          <source_obj>33</source_obj>
           <sink_obj>67</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7610,21 +8345,21 @@
         <item class_id_reference="20" object_id="_206">
           <id>230</id>
           <edge_type>1</edge_type>
-          <source_obj>33</source_obj>
+          <source_obj>32</source_obj>
           <sink_obj>69</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_207">
           <id>231</id>
           <edge_type>1</edge_type>
-          <source_obj>174</source_obj>
+          <source_obj>216</source_obj>
           <sink_obj>69</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_208">
           <id>232</id>
           <edge_type>1</edge_type>
-          <source_obj>33</source_obj>
+          <source_obj>32</source_obj>
           <sink_obj>70</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7652,7 +8387,7 @@
         <item class_id_reference="20" object_id="_212">
           <id>236</id>
           <edge_type>1</edge_type>
-          <source_obj>32</source_obj>
+          <source_obj>31</source_obj>
           <sink_obj>72</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7666,7 +8401,7 @@
         <item class_id_reference="20" object_id="_214">
           <id>238</id>
           <edge_type>1</edge_type>
-          <source_obj>32</source_obj>
+          <source_obj>31</source_obj>
           <sink_obj>73</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7694,21 +8429,21 @@
         <item class_id_reference="20" object_id="_218">
           <id>242</id>
           <edge_type>1</edge_type>
-          <source_obj>31</source_obj>
+          <source_obj>30</source_obj>
           <sink_obj>75</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_219">
           <id>243</id>
           <edge_type>1</edge_type>
-          <source_obj>174</source_obj>
+          <source_obj>216</source_obj>
           <sink_obj>75</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_220">
           <id>244</id>
           <edge_type>1</edge_type>
-          <source_obj>31</source_obj>
+          <source_obj>30</source_obj>
           <sink_obj>76</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7736,21 +8471,21 @@
         <item class_id_reference="20" object_id="_224">
           <id>248</id>
           <edge_type>1</edge_type>
-          <source_obj>30</source_obj>
+          <source_obj>29</source_obj>
           <sink_obj>78</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_225">
           <id>249</id>
           <edge_type>1</edge_type>
-          <source_obj>174</source_obj>
+          <source_obj>216</source_obj>
           <sink_obj>78</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_226">
           <id>250</id>
           <edge_type>1</edge_type>
-          <source_obj>30</source_obj>
+          <source_obj>29</source_obj>
           <sink_obj>79</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7778,21 +8513,21 @@
         <item class_id_reference="20" object_id="_230">
           <id>254</id>
           <edge_type>1</edge_type>
-          <source_obj>29</source_obj>
+          <source_obj>28</source_obj>
           <sink_obj>81</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_231">
           <id>255</id>
           <edge_type>1</edge_type>
-          <source_obj>190</source_obj>
+          <source_obj>174</source_obj>
           <sink_obj>81</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_232">
           <id>256</id>
           <edge_type>1</edge_type>
-          <source_obj>29</source_obj>
+          <source_obj>28</source_obj>
           <sink_obj>82</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7820,21 +8555,21 @@
         <item class_id_reference="20" object_id="_236">
           <id>260</id>
           <edge_type>1</edge_type>
-          <source_obj>28</source_obj>
+          <source_obj>27</source_obj>
           <sink_obj>84</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_237">
           <id>261</id>
           <edge_type>1</edge_type>
-          <source_obj>174</source_obj>
+          <source_obj>216</source_obj>
           <sink_obj>84</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_238">
           <id>262</id>
           <edge_type>1</edge_type>
-          <source_obj>28</source_obj>
+          <source_obj>27</source_obj>
           <sink_obj>85</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7862,21 +8597,21 @@
         <item class_id_reference="20" object_id="_242">
           <id>266</id>
           <edge_type>1</edge_type>
-          <source_obj>27</source_obj>
+          <source_obj>26</source_obj>
           <sink_obj>87</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_243">
           <id>267</id>
           <edge_type>1</edge_type>
-          <source_obj>174</source_obj>
+          <source_obj>216</source_obj>
           <sink_obj>87</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_244">
           <id>268</id>
           <edge_type>1</edge_type>
-          <source_obj>27</source_obj>
+          <source_obj>26</source_obj>
           <sink_obj>88</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7904,21 +8639,21 @@
         <item class_id_reference="20" object_id="_248">
           <id>272</id>
           <edge_type>1</edge_type>
-          <source_obj>26</source_obj>
+          <source_obj>25</source_obj>
           <sink_obj>90</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_249">
           <id>273</id>
           <edge_type>1</edge_type>
-          <source_obj>174</source_obj>
+          <source_obj>216</source_obj>
           <sink_obj>90</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_250">
           <id>274</id>
           <edge_type>1</edge_type>
-          <source_obj>26</source_obj>
+          <source_obj>25</source_obj>
           <sink_obj>91</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7946,7 +8681,7 @@
         <item class_id_reference="20" object_id="_254">
           <id>278</id>
           <edge_type>1</edge_type>
-          <source_obj>25</source_obj>
+          <source_obj>24</source_obj>
           <sink_obj>93</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7960,7 +8695,7 @@
         <item class_id_reference="20" object_id="_256">
           <id>280</id>
           <edge_type>1</edge_type>
-          <source_obj>25</source_obj>
+          <source_obj>24</source_obj>
           <sink_obj>94</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -7995,7 +8730,7 @@
         <item class_id_reference="20" object_id="_261">
           <id>285</id>
           <edge_type>1</edge_type>
-          <source_obj>24</source_obj>
+          <source_obj>23</source_obj>
           <sink_obj>97</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8009,7 +8744,7 @@
         <item class_id_reference="20" object_id="_263">
           <id>288</id>
           <edge_type>1</edge_type>
-          <source_obj>24</source_obj>
+          <source_obj>23</source_obj>
           <sink_obj>98</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8037,21 +8772,21 @@
         <item class_id_reference="20" object_id="_267">
           <id>292</id>
           <edge_type>1</edge_type>
-          <source_obj>23</source_obj>
+          <source_obj>22</source_obj>
           <sink_obj>100</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_268">
           <id>293</id>
           <edge_type>1</edge_type>
-          <source_obj>190</source_obj>
+          <source_obj>174</source_obj>
           <sink_obj>100</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_269">
           <id>294</id>
           <edge_type>1</edge_type>
-          <source_obj>23</source_obj>
+          <source_obj>22</source_obj>
           <sink_obj>101</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8079,21 +8814,21 @@
         <item class_id_reference="20" object_id="_273">
           <id>298</id>
           <edge_type>1</edge_type>
-          <source_obj>22</source_obj>
+          <source_obj>21</source_obj>
           <sink_obj>103</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_274">
           <id>299</id>
           <edge_type>1</edge_type>
-          <source_obj>190</source_obj>
+          <source_obj>174</source_obj>
           <sink_obj>103</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
         <item class_id_reference="20" object_id="_275">
           <id>300</id>
           <edge_type>1</edge_type>
-          <source_obj>22</source_obj>
+          <source_obj>21</source_obj>
           <sink_obj>104</sink_obj>
           <is_back_edge>0</is_back_edge>
         </item>
@@ -8431,7 +9166,7 @@
         <mMinLatency>0</mMinLatency>
         <mMaxLatency>0</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
-        <mDfPipe class_id="-1"/>
+        <mDfPipe class_id="-1"></mDfPipe>
       </item>
     </cdfg_regions>
     <fsm class_id="24" tracking_level="1" version="0" object_id="_321">
@@ -9111,7 +9846,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>13</second>
+              <second>12</second>
             </item>
             <item>
               <first>(1P1)</first>
@@ -9123,7 +9858,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>19</second>
             </item>
           </second>
         </item>
@@ -9180,7 +9915,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>12</second>
+              <second>11</second>
             </item>
             <item>
               <first>(1P1)</first>
@@ -9192,7 +9927,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>19</second>
+              <second>18</second>
             </item>
           </second>
         </item>
@@ -9433,7 +10168,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
-              <second>12</second>
+              <second>11</second>
             </item>
             <item>
               <first>(1P1)</first>
@@ -9445,7 +10180,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>19</second>
+              <second>18</second>
             </item>
           </second>
         </item>
@@ -10351,8 +11086,15 @@
       <count>105</count>
       <item_version>0</item_version>
       <item class_id="38" tracking_level="0" version="0">
-        <first>22</first>
+        <first>21</first>
         <second class_id="39" tracking_level="0" version="0">
+          <first>0</first>
+          <second>0</second>
+        </second>
+      </item>
+      <item>
+        <first>22</first>
+        <second>
           <first>0</first>
           <second>0</second>
         </second>
@@ -10478,13 +11220,6 @@
       </item>
       <item>
         <first>40</first>
-        <second>
-          <first>0</first>
-          <second>0</second>
-        </second>
-      </item>
-      <item>
-        <first>41</first>
         <second>
           <first>0</first>
           <second>0</second>
@@ -11129,7 +11864,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>22</item>
+          <item>21</item>
         </second>
       </item>
       <item>
@@ -11137,7 +11872,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>23</item>
+          <item>22</item>
         </second>
       </item>
       <item>
@@ -11145,7 +11880,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>23</item>
         </second>
       </item>
       <item>
@@ -11153,7 +11888,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>25</item>
+          <item>24</item>
         </second>
       </item>
       <item>
@@ -11161,7 +11896,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>26</item>
+          <item>25</item>
         </second>
       </item>
       <item>
@@ -11169,7 +11904,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>27</item>
+          <item>26</item>
         </second>
       </item>
       <item>
@@ -11177,7 +11912,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>28</item>
+          <item>27</item>
         </second>
       </item>
       <item>
@@ -11185,7 +11920,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>29</item>
+          <item>28</item>
         </second>
       </item>
       <item>
@@ -11193,7 +11928,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>30</item>
+          <item>29</item>
         </second>
       </item>
       <item>
@@ -11201,7 +11936,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>31</item>
+          <item>30</item>
         </second>
       </item>
       <item>
@@ -11209,7 +11944,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>32</item>
+          <item>31</item>
         </second>
       </item>
       <item>
@@ -11217,7 +11952,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>33</item>
+          <item>32</item>
         </second>
       </item>
       <item>
@@ -11225,7 +11960,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>34</item>
+          <item>33</item>
         </second>
       </item>
       <item>
@@ -11233,7 +11968,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>35</item>
+          <item>34</item>
         </second>
       </item>
       <item>
@@ -11241,7 +11976,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>36</item>
+          <item>35</item>
         </second>
       </item>
       <item>
@@ -11249,7 +11984,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>37</item>
+          <item>36</item>
         </second>
       </item>
       <item>
@@ -11257,7 +11992,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>38</item>
+          <item>37</item>
         </second>
       </item>
       <item>
@@ -11265,7 +12000,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>39</item>
+          <item>38</item>
         </second>
       </item>
       <item>
@@ -11273,7 +12008,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>40</item>
+          <item>39</item>
         </second>
       </item>
       <item>
@@ -11281,7 +12016,7 @@
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>41</item>
+          <item>40</item>
         </second>
       </item>
       <item>
@@ -12121,47 +12856,7 @@
         </second>
       </item>
       <item>
-        <first>newret10_fu_600</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>111</item>
-        </second>
-      </item>
-      <item>
-        <first>newret12_fu_606</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>112</item>
-        </second>
-      </item>
-      <item>
-        <first>newret14_fu_612</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>113</item>
-        </second>
-      </item>
-      <item>
-        <first>newret16_fu_618</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>114</item>
-        </second>
-      </item>
-      <item>
-        <first>newret18_fu_624</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>115</item>
-        </second>
-      </item>
-      <item>
-        <first>newret20_fu_630</first>
+        <first>mrv_10_fu_630</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12169,7 +12864,7 @@
         </second>
       </item>
       <item>
-        <first>newret22_fu_636</first>
+        <first>mrv_11_fu_636</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12177,7 +12872,7 @@
         </second>
       </item>
       <item>
-        <first>newret24_fu_642</first>
+        <first>mrv_12_fu_642</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12185,7 +12880,7 @@
         </second>
       </item>
       <item>
-        <first>newret26_fu_648</first>
+        <first>mrv_13_fu_648</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12193,7 +12888,7 @@
         </second>
       </item>
       <item>
-        <first>newret28_fu_654</first>
+        <first>mrv_14_fu_654</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12201,15 +12896,7 @@
         </second>
       </item>
       <item>
-        <first>newret2_fu_576</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>107</item>
-        </second>
-      </item>
-      <item>
-        <first>newret30_fu_660</first>
+        <first>mrv_15_fu_660</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12217,7 +12904,7 @@
         </second>
       </item>
       <item>
-        <first>newret32_fu_666</first>
+        <first>mrv_16_fu_666</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12225,7 +12912,7 @@
         </second>
       </item>
       <item>
-        <first>newret33_fu_672</first>
+        <first>mrv_17_fu_672</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12233,7 +12920,7 @@
         </second>
       </item>
       <item>
-        <first>newret34_fu_678</first>
+        <first>mrv_18_fu_678</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12241,7 +12928,7 @@
         </second>
       </item>
       <item>
-        <first>newret35_fu_684</first>
+        <first>mrv_19_fu_684</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12249,7 +12936,15 @@
         </second>
       </item>
       <item>
-        <first>newret4_fu_582</first>
+        <first>mrv_1_fu_576</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>107</item>
+        </second>
+      </item>
+      <item>
+        <first>mrv_2_fu_582</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12257,7 +12952,7 @@
         </second>
       </item>
       <item>
-        <first>newret6_fu_588</first>
+        <first>mrv_3_fu_588</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12265,7 +12960,7 @@
         </second>
       </item>
       <item>
-        <first>newret8_fu_594</first>
+        <first>mrv_4_fu_594</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12273,7 +12968,47 @@
         </second>
       </item>
       <item>
-        <first>newret_fu_570</first>
+        <first>mrv_5_fu_600</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>111</item>
+        </second>
+      </item>
+      <item>
+        <first>mrv_6_fu_606</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>112</item>
+        </second>
+      </item>
+      <item>
+        <first>mrv_7_fu_612</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>113</item>
+        </second>
+      </item>
+      <item>
+        <first>mrv_8_fu_618</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>114</item>
+        </second>
+      </item>
+      <item>
+        <first>mrv_9_fu_624</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>115</item>
+        </second>
+      </item>
+      <item>
+        <first>mrv_fu_570</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12601,7 +13336,15 @@
         </second>
       </item>
       <item>
-        <first>zext_ln45_7_fu_306</first>
+        <first>zext_ln45_10_fu_512</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>96</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln45_8_fu_306</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12609,19 +13352,11 @@
         </second>
       </item>
       <item>
-        <first>zext_ln45_8_fu_328</first>
+        <first>zext_ln45_9_fu_328</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>65</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln45_9_fu_512</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>96</item>
         </second>
       </item>
       <item>
@@ -12641,95 +13376,7 @@
       <count>20</count>
       <item_version>0</item_version>
       <item>
-        <first>data_0_val_read_read_fu_188</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>41</item>
-        </second>
-      </item>
-      <item>
-        <first>data_12_val_read_read_fu_146</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>34</item>
-        </second>
-      </item>
-      <item>
-        <first>data_14_val_read_read_fu_140</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>33</item>
-        </second>
-      </item>
-      <item>
-        <first>data_15_val_read_read_fu_134</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>32</item>
-        </second>
-      </item>
-      <item>
-        <first>data_19_val_read_read_fu_128</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>31</item>
-        </second>
-      </item>
-      <item>
-        <first>data_1_val_read_read_fu_182</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>40</item>
-        </second>
-      </item>
-      <item>
-        <first>data_20_val_read_read_fu_122</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>30</item>
-        </second>
-      </item>
-      <item>
-        <first>data_21_val_read_read_fu_116</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>29</item>
-        </second>
-      </item>
-      <item>
-        <first>data_22_val_read_read_fu_110</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>28</item>
-        </second>
-      </item>
-      <item>
-        <first>data_24_val_read_read_fu_104</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>27</item>
-        </second>
-      </item>
-      <item>
-        <first>data_25_val_read_read_fu_98</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>26</item>
-        </second>
-      </item>
-      <item>
-        <first>data_26_val_read_read_fu_92</first>
+        <first>conv5_i_i_i146_i_read_read_fu_98</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12737,31 +13384,39 @@
         </second>
       </item>
       <item>
-        <first>data_27_val_read_read_fu_86</first>
+        <first>conv5_i_i_i187_i_read_read_fu_104</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>24</item>
+          <item>26</item>
         </second>
       </item>
       <item>
-        <first>data_29_val_read_read_fu_80</first>
+        <first>conv5_i_i_i247_i_read_read_fu_110</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>23</item>
+          <item>27</item>
         </second>
       </item>
       <item>
-        <first>data_2_val_read_read_fu_176</first>
+        <first>conv5_i_i_i289_i659_read_read_fu_116</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>39</item>
+          <item>28</item>
         </second>
       </item>
       <item>
-        <first>data_30_val_read_read_fu_74</first>
+        <first>conv5_i_i_i329_i_read_read_fu_122</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>29</item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i35_i_read_read_fu_80</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12769,23 +13424,39 @@
         </second>
       </item>
       <item>
-        <first>data_3_val_read_read_fu_170</first>
+        <first>conv5_i_i_i370_i_read_read_fu_128</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>38</item>
+          <item>30</item>
         </second>
       </item>
       <item>
-        <first>data_5_val_read_read_fu_164</first>
+        <first>conv5_i_i_i467_i_read_read_fu_134</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
-          <item>37</item>
+          <item>31</item>
         </second>
       </item>
       <item>
-        <first>data_6_val_read_read_fu_158</first>
+        <first>conv5_i_i_i509_i_read_read_fu_140</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>32</item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i542_i_read_read_fu_146</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>33</item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i684_i_read_read_fu_164</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12793,7 +13464,71 @@
         </second>
       </item>
       <item>
-        <first>data_9_val_read_read_fu_152</first>
+        <first>conv5_i_i_i743_i_read_read_fu_170</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>37</item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i786_i_read_read_fu_176</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>38</item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i829_i_read_read_fu_182</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>39</item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i869_i_read_read_fu_188</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>40</item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i93_i_read_read_fu_86</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>23</item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i_i702_read_read_fu_74</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>21</item>
+        </second>
+      </item>
+      <item>
+        <first>conv_i_i_i105_i673_read_read_fu_92</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>24</item>
+        </second>
+      </item>
+      <item>
+        <first>conv_i_i_i619_i_read_read_fu_152</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>34</item>
+        </second>
+      </item>
+      <item>
+        <first>conv_i_i_i668_i_read_read_fu_158</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -12989,172 +13724,7 @@
       <count>20</count>
       <item_version>0</item_version>
       <item class_id="53" tracking_level="0" version="0">
-        <first>data_0_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>41</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_12_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>34</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_14_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>33</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_15_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>32</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_19_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>31</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_1_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>40</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_20_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>30</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_21_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>29</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_22_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>28</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_24_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>27</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_25_val</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>
-            <first>read</first>
-            <second>
-              <count>1</count>
-              <item_version>0</item_version>
-              <item>26</item>
-            </second>
-          </item>
-        </second>
-      </item>
-      <item>
-        <first>data_26_val</first>
+        <first>conv5_i_i_i146_i</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13169,7 +13739,7 @@
         </second>
       </item>
       <item>
-        <first>data_27_val</first>
+        <first>conv5_i_i_i187_i</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13178,13 +13748,13 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>24</item>
+              <item>26</item>
             </second>
           </item>
         </second>
       </item>
       <item>
-        <first>data_29_val</first>
+        <first>conv5_i_i_i247_i</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13193,13 +13763,13 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>23</item>
+              <item>27</item>
             </second>
           </item>
         </second>
       </item>
       <item>
-        <first>data_2_val</first>
+        <first>conv5_i_i_i289_i659</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13208,13 +13778,28 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>39</item>
+              <item>28</item>
             </second>
           </item>
         </second>
       </item>
       <item>
-        <first>data_30_val</first>
+        <first>conv5_i_i_i329_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>29</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i35_i</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13229,7 +13814,7 @@
         </second>
       </item>
       <item>
-        <first>data_3_val</first>
+        <first>conv5_i_i_i370_i</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13238,13 +13823,13 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>38</item>
+              <item>30</item>
             </second>
           </item>
         </second>
       </item>
       <item>
-        <first>data_5_val</first>
+        <first>conv5_i_i_i467_i</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13253,13 +13838,43 @@
             <second>
               <count>1</count>
               <item_version>0</item_version>
-              <item>37</item>
+              <item>31</item>
             </second>
           </item>
         </second>
       </item>
       <item>
-        <first>data_6_val</first>
+        <first>conv5_i_i_i509_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>32</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i542_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>33</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i684_i</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13274,7 +13889,127 @@
         </second>
       </item>
       <item>
-        <first>data_9_val</first>
+        <first>conv5_i_i_i743_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>37</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i786_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>38</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i829_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>39</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i869_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>40</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i93_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>23</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv5_i_i_i_i702</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>21</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv_i_i_i105_i673</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>24</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv_i_i_i619_i</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>
+            <first>read</first>
+            <second>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>34</item>
+            </second>
+          </item>
+        </second>
+      </item>
+      <item>
+        <first>conv_i_i_i668_i</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -13299,7 +14034,7 @@
       <item>
         <first>42</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13313,7 +14048,7 @@
       <item>
         <first>45</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13327,7 +14062,7 @@
       <item>
         <first>49</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13341,7 +14076,7 @@
       <item>
         <first>52</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13355,7 +14090,7 @@
       <item>
         <first>55</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13369,7 +14104,7 @@
       <item>
         <first>58</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13383,7 +14118,7 @@
       <item>
         <first>62</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13397,7 +14132,7 @@
       <item>
         <first>66</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13411,7 +14146,7 @@
       <item>
         <first>69</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13425,7 +14160,7 @@
       <item>
         <first>72</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13439,7 +14174,7 @@
       <item>
         <first>75</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13453,7 +14188,7 @@
       <item>
         <first>78</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13467,7 +14202,7 @@
       <item>
         <first>81</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13481,7 +14216,7 @@
       <item>
         <first>84</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13495,7 +14230,7 @@
       <item>
         <first>87</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13509,7 +14244,7 @@
       <item>
         <first>90</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13523,7 +14258,7 @@
       <item>
         <first>93</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13537,7 +14272,7 @@
       <item>
         <first>97</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13551,7 +14286,7 @@
       <item>
         <first>100</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13565,7 +14300,7 @@
       <item>
         <first>103</first>
         <second>
-          <first>45</first>
+          <first>531</first>
           <second>0</second>
         </second>
       </item>
@@ -13577,5 +14312,13 @@
         </second>
       </item>
     </node2core>
+    <sched_res class_id="54" tracking_level="1" version="0" object_id="_431">
+      <ResourceTableActual class_id="55" tracking_level="0" version="0">
+        <II>1</II>
+      </ResourceTableActual>
+      <ResourceTableFailed class_id="56" tracking_level="0" version="0">
+        <II>-1</II>
+      </ResourceTableFailed>
+    </sched_res>
   </syndb>
 </boost_serialization>

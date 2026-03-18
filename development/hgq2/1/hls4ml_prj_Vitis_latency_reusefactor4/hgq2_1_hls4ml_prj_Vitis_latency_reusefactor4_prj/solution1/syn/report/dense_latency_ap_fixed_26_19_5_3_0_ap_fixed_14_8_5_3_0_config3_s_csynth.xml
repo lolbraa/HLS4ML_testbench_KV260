@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.2</Version>
+<Version>2025.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -33,11 +33,12 @@
 <PipelineDepth>2</PipelineDepth>
 <Interval-min>2</Interval-min>
 <Interval-max>2</Interval-max>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33~firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp:54</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
@@ -45,7 +46,7 @@
 <Resources>
 <DSP>5</DSP>
 <FF>233</FF>
-<LUT>3017</LUT>
+<LUT>3010</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -412,8 +413,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_0_val</name>
-<Object>data_0_val</Object>
+<name>conv8_i_i_i581_i</name>
+<Object>conv8_i_i_i581_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -423,8 +424,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val</name>
-<Object>data_1_val</Object>
+<name>conv8_i_i_i540_i</name>
+<Object>conv8_i_i_i540_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -434,8 +435,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_2_val</name>
-<Object>data_2_val</Object>
+<name>conv8_i_i_i501_i</name>
+<Object>conv8_i_i_i501_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -445,8 +446,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_3_val</name>
-<Object>data_3_val</Object>
+<name>conv_i_i_i463_i</name>
+<Object>conv_i_i_i463_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -456,8 +457,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_4_val</name>
-<Object>data_4_val</Object>
+<name>conv8_i_i_i429_i</name>
+<Object>conv8_i_i_i429_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -467,8 +468,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
+<name>conv8_i_i_i390_i</name>
+<Object>conv8_i_i_i390_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -478,8 +479,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
+<name>conv8_i_i_i351_i</name>
+<Object>conv8_i_i_i351_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -489,8 +490,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_7_val</name>
-<Object>data_7_val</Object>
+<name>conv8_i_i_i313_i</name>
+<Object>conv8_i_i_i313_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -500,8 +501,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_8_val</name>
-<Object>data_8_val</Object>
+<name>conv8_i_i_i274_i</name>
+<Object>conv8_i_i_i274_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -511,8 +512,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_10_val</name>
-<Object>data_10_val</Object>
+<name>conv8_i_i_i198_i</name>
+<Object>conv8_i_i_i198_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -522,8 +523,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_11_val</name>
-<Object>data_11_val</Object>
+<name>conv8_i_i_i159_i</name>
+<Object>conv8_i_i_i159_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -533,8 +534,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val</name>
-<Object>data_14_val</Object>
+<name>conv8_i_i_i48_i</name>
+<Object>conv8_i_i_i48_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -544,8 +545,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
+<name>conv8_i_i_i_i</name>
+<Object>conv8_i_i_i_i</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

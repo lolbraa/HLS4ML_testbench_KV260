@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.2</Version>
+<Version>2025.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -33,11 +33,12 @@
 <PipelineDepth>1</PipelineDepth>
 <Interval-min>1</Interval-min>
 <Interval-max>1</Interval-max>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_activation.h:42</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_activation.h:39~firmware/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.cpp:75</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
@@ -346,8 +347,19 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val</name>
-<Object>data_1_val</Object>
+<name>ap_rst</name>
+<Object>relu&lt;ap_fixed&lt;14, 8, 5, 3, 0&gt;, ap_ufixed&lt;12, 6, 5, 3, 0&gt;, relu_config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer3_out_1_val</name>
+<Object>layer3_out_1_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -357,8 +369,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val</name>
-<Object>data_5_val</Object>
+<name>layer3_out_5_val</name>
+<Object>layer3_out_5_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -368,8 +380,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
+<name>layer3_out_6_val</name>
+<Object>layer3_out_6_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -379,8 +391,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_7_val</name>
-<Object>data_7_val</Object>
+<name>layer3_out_7_val</name>
+<Object>layer3_out_7_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -390,8 +402,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_9_val</name>
-<Object>data_9_val</Object>
+<name>layer3_out_9_val</name>
+<Object>layer3_out_9_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -401,8 +413,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_12_val</name>
-<Object>data_12_val</Object>
+<name>layer3_out_12_val</name>
+<Object>layer3_out_12_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -412,8 +424,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val</name>
-<Object>data_14_val</Object>
+<name>layer3_out_14_val</name>
+<Object>layer3_out_14_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -423,8 +435,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
+<name>layer3_out_15_val</name>
+<Object>layer3_out_15_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -434,8 +446,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_21_val</name>
-<Object>data_21_val</Object>
+<name>layer3_out_21_val</name>
+<Object>layer3_out_21_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -445,8 +457,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_23_val</name>
-<Object>data_23_val</Object>
+<name>layer3_out_23_val</name>
+<Object>layer3_out_23_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -456,8 +468,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_28_val</name>
-<Object>data_28_val</Object>
+<name>layer3_out_28_val</name>
+<Object>layer3_out_28_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -467,8 +479,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
+<name>layer3_out_30_val</name>
+<Object>layer3_out_30_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -478,8 +490,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_31_val</name>
-<Object>data_31_val</Object>
+<name>layer3_out_31_val</name>
+<Object>layer3_out_31_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -489,8 +501,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_32_val</name>
-<Object>data_32_val</Object>
+<name>layer3_out_32_val</name>
+<Object>layer3_out_32_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -500,8 +512,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_34_val</name>
-<Object>data_34_val</Object>
+<name>layer3_out_34_val</name>
+<Object>layer3_out_34_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -511,8 +523,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_38_val</name>
-<Object>data_38_val</Object>
+<name>layer3_out_38_val</name>
+<Object>layer3_out_38_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -522,8 +534,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_39_val</name>
-<Object>data_39_val</Object>
+<name>layer3_out_39_val</name>
+<Object>layer3_out_39_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -533,8 +545,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_44_val</name>
-<Object>data_44_val</Object>
+<name>layer3_out_44_val</name>
+<Object>layer3_out_44_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -544,8 +556,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_45_val</name>
-<Object>data_45_val</Object>
+<name>layer3_out_45_val</name>
+<Object>layer3_out_45_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -555,8 +567,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_47_val</name>
-<Object>data_47_val</Object>
+<name>layer3_out_47_val</name>
+<Object>layer3_out_47_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -566,8 +578,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_50_val</name>
-<Object>data_50_val</Object>
+<name>layer3_out_50_val</name>
+<Object>layer3_out_50_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -577,8 +589,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_51_val</name>
-<Object>data_51_val</Object>
+<name>layer3_out_51_val</name>
+<Object>layer3_out_51_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -588,8 +600,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_56_val</name>
-<Object>data_56_val</Object>
+<name>layer3_out_56_val</name>
+<Object>layer3_out_56_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -599,8 +611,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_57_val</name>
-<Object>data_57_val</Object>
+<name>layer3_out_57_val</name>
+<Object>layer3_out_57_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -610,8 +622,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_62_val</name>
-<Object>data_62_val</Object>
+<name>layer3_out_62_val</name>
+<Object>layer3_out_62_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

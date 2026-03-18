@@ -1,0 +1,126 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "7 3 6 1 2 5 4",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+    "fileloc": 7,
+    "instructions": 1146,
+    "loads": {
+      "L": 125,
+      "T": 1
+    },
+    "memory_accesses": 138,
+    "name": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1",
+    "stores": {
+      "T": 5
+    },
+    "total_instructions": 4289
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+    "fileloc": 0,
+    "instructions": 81,
+    "memory_accesses": 20,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
+    "stores": {
+      "L": 20
+    },
+    "total_instructions": 81
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 12,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 762,
+    "memory_accesses": 32,
+    "name": "dense_latency<ap_ufixed<9, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<15, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config9>",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 762
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+    "fileloc": 0,
+    "instructions": 101,
+    "memory_accesses": 25,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 101
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 13,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 379,
+    "memory_accesses": 5,
+    "name": "dense_latency<ap_ufixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<10, 7, (ap_q_mode)5, (ap_o_mode)3, 0>, config12>",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 379
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.cpp",
+    "fileloc": 0,
+    "instructions": 61,
+    "memory_accesses": 15,
+    "name": "_Z44hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1P8ap_fixedILi27ELi19EL9ap_q_mode5EL9ap_o_mode3ELi0EEPS_ILi9ELi7ELS0_5ELS1_3ELi0EE_",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 61
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 15,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 984,
+    "memory_accesses": 32,
+    "name": "dense_latency<ap_ufixed<11, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 984
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 12,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 775,
+    "memory_accesses": 64,
+    "name": "dense_latency<ap_fixed<26, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 775
+  }
+}

@@ -35,14 +35,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 10 \
-    name data_0_val \
+    name conv8_i_i_i581_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_0_val \
+    corename dc_conv8_i_i_i581_i \
     op interface \
-    ports { data_0_val { I 11 vector } } \
+    ports { conv8_i_i_i581_i { I 11 vector } } \
 } "
 }
 
@@ -50,14 +50,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 11 \
-    name data_1_val \
+    name conv8_i_i_i540_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_1_val \
+    corename dc_conv8_i_i_i540_i \
     op interface \
-    ports { data_1_val { I 11 vector } } \
+    ports { conv8_i_i_i540_i { I 11 vector } } \
 } "
 }
 
@@ -65,14 +65,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 12 \
-    name data_2_val \
+    name conv8_i_i_i501_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_2_val \
+    corename dc_conv8_i_i_i501_i \
     op interface \
-    ports { data_2_val { I 11 vector } } \
+    ports { conv8_i_i_i501_i { I 11 vector } } \
 } "
 }
 
@@ -80,14 +80,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 13 \
-    name data_3_val \
+    name conv_i_i_i463_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_3_val \
+    corename dc_conv_i_i_i463_i \
     op interface \
-    ports { data_3_val { I 11 vector } } \
+    ports { conv_i_i_i463_i { I 11 vector } } \
 } "
 }
 
@@ -95,14 +95,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 14 \
-    name data_4_val \
+    name conv8_i_i_i429_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_4_val \
+    corename dc_conv8_i_i_i429_i \
     op interface \
-    ports { data_4_val { I 11 vector } } \
+    ports { conv8_i_i_i429_i { I 11 vector } } \
 } "
 }
 
@@ -110,14 +110,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 15 \
-    name data_5_val \
+    name conv8_i_i_i390_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_5_val \
+    corename dc_conv8_i_i_i390_i \
     op interface \
-    ports { data_5_val { I 12 vector } } \
+    ports { conv8_i_i_i390_i { I 12 vector } } \
 } "
 }
 
@@ -125,14 +125,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 16 \
-    name data_6_val \
+    name conv8_i_i_i351_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_6_val \
+    corename dc_conv8_i_i_i351_i \
     op interface \
-    ports { data_6_val { I 11 vector } } \
+    ports { conv8_i_i_i351_i { I 11 vector } } \
 } "
 }
 
@@ -140,14 +140,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 17 \
-    name data_7_val \
+    name conv8_i_i_i313_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_7_val \
+    corename dc_conv8_i_i_i313_i \
     op interface \
-    ports { data_7_val { I 11 vector } } \
+    ports { conv8_i_i_i313_i { I 11 vector } } \
 } "
 }
 
@@ -155,14 +155,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 18 \
-    name data_8_val \
+    name conv8_i_i_i274_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_8_val \
+    corename dc_conv8_i_i_i274_i \
     op interface \
-    ports { data_8_val { I 11 vector } } \
+    ports { conv8_i_i_i274_i { I 11 vector } } \
 } "
 }
 
@@ -170,14 +170,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 19 \
-    name data_10_val \
+    name conv8_i_i_i198_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_10_val \
+    corename dc_conv8_i_i_i198_i \
     op interface \
-    ports { data_10_val { I 10 vector } } \
+    ports { conv8_i_i_i198_i { I 10 vector } } \
 } "
 }
 
@@ -185,14 +185,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 20 \
-    name data_11_val \
+    name conv8_i_i_i159_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_11_val \
+    corename dc_conv8_i_i_i159_i \
     op interface \
-    ports { data_11_val { I 10 vector } } \
+    ports { conv8_i_i_i159_i { I 10 vector } } \
 } "
 }
 
@@ -200,14 +200,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 21 \
-    name data_14_val \
+    name conv8_i_i_i48_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_14_val \
+    corename dc_conv8_i_i_i48_i \
     op interface \
-    ports { data_14_val { I 12 vector } } \
+    ports { conv8_i_i_i48_i { I 12 vector } } \
 } "
 }
 
@@ -215,14 +215,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 22 \
-    name data_15_val \
+    name conv8_i_i_i_i \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_data_15_val \
+    corename dc_conv8_i_i_i_i \
     op interface \
-    ports { data_15_val { I 11 vector } } \
+    ports { conv8_i_i_i_i { I 11 vector } } \
 } "
 }
 

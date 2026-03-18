@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.2</Version>
+<Version>2025.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -19,32 +19,33 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.282</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.269</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>0</Best-caseLatency>
-<Average-caseLatency>0</Average-caseLatency>
-<Worst-caseLatency>0</Worst-caseLatency>
-<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>1</PipelineDepth>
-<Interval-min>1</Interval-min>
-<Interval-max>1</Interval-max>
+<Best-caseLatency>1</Best-caseLatency>
+<Average-caseLatency>1</Average-caseLatency>
+<Worst-caseLatency>1</Worst-caseLatency>
+<Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
+<PipelineDepth>2</PipelineDepth>
+<Interval-min>2</Interval-min>
+<Interval-max>2</Interval-max>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:33</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>0</FF>
-<LUT>1163</LUT>
+<FF>121</FF>
+<LUT>1177</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -59,6 +60,61 @@
 </AreaEstimates>
 
 <InterfaceSummary>
+<RtlPorts>
+<name>ap_clk</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_rst</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
 <Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
@@ -124,6 +180,17 @@
 <Dir>out</Dir>
 <Bits>10</Bits>
 <Attribute>data</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ce</name>
+<Object>dense_latency&lt;ap_ufixed&lt;10, 7, 5, 3, 0&gt;, ap_fixed&lt;10, 7, 5, 3, 0&gt;, config12&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>data_2_val</name>
