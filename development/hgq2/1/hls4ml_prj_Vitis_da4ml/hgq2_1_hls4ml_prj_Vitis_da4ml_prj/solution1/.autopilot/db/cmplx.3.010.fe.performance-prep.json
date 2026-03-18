@@ -1,0 +1,54 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 1 3",
+    "file": "hgq2_1_hls4ml_prj_Vitis_da4ml.cpp",
+    "fileloc": 7,
+    "instructions": 4432,
+    "loads": {
+      "L": 60,
+      "T": 1
+    },
+    "name": "hgq2_1_hls4ml_prj_Vitis_da4ml",
+    "stores": {
+      "T": 5
+    },
+    "total_instructions": 5059
+  },
+  "1": {
+    "basicblocks": 85,
+    "calls": "",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 177,
+    "name": "relu<ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, relu_config7>",
+    "stores": {
+      "L": 52
+    },
+    "total_instructions": 177
+  },
+  "2": {
+    "basicblocks": 154,
+    "calls": "",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 293,
+    "name": "relu<ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, ap_ufixed<12, 6, AP_TRN, AP_WRAP, 0>, relu_config4>",
+    "stores": {
+      "L": 89
+    },
+    "total_instructions": 293
+  },
+  "3": {
+    "basicblocks": 80,
+    "calls": "",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 157,
+    "name": "relu<ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<11, 7, AP_TRN, AP_WRAP, 0>, relu_config10>",
+    "stores": {
+      "L": 47
+    },
+    "total_instructions": 157
+  }
+}

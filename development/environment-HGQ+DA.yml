@@ -1,0 +1,9 @@
+name: devenv-hgq+da
+dependencies:
+  - tensorflow
+  - numpy
+  - notebook
+  - pip:
+    - hgq2
+    - hls4ml[profiling,hgq2,da]
+#      - "hls4ml[profiling,hgq2] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
