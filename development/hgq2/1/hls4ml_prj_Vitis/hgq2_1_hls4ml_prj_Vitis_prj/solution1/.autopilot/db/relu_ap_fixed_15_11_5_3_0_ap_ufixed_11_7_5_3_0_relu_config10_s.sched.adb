@@ -106,7 +106,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1330007625</coreId>
+						<coreId>3857473632</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -142,7 +142,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1240241008</coreId>
+						<coreId>3857508640</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -178,7 +178,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1394634343</coreId>
+						<coreId>1601265520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -214,7 +214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1685025360</coreId>
+						<coreId>1701344288</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -250,7 +250,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852142702</coreId>
+						<coreId>1597059121</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -286,7 +286,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>825111350</coreId>
+						<coreId>1668246636</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -322,7 +322,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1735289196</coreId>
+						<coreId>757935405</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -358,7 +358,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701669236</coreId>
+						<coreId>1735289196</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -394,7 +394,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1937055829</coreId>
+						<coreId>1952802409</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -430,7 +430,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>574453865</coreId>
+						<coreId>1431323424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -466,7 +466,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1313415741</coreId>
+						<coreId>1768318322</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -502,7 +502,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1937055829</coreId>
+						<coreId>1031369833</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -538,7 +538,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1931502947</coreId>
+						<coreId>1431323424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -562,7 +562,7 @@
 						<id>17</id>
 						<name>data_31_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -570,7 +570,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -619,7 +619,7 @@
 						<id>18</id>
 						<name>data_28_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -627,7 +627,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -676,7 +676,7 @@
 						<id>19</id>
 						<name>data_26_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -684,7 +684,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -733,7 +733,7 @@
 						<id>20</id>
 						<name>data_23_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -741,7 +741,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -763,7 +763,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1885414971</coreId>
+						<coreId>574109492</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -790,7 +790,7 @@
 						<id>21</id>
 						<name>data_22_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -798,7 +798,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -820,7 +820,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242847383</coreId>
+						<coreId>3860055970</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -847,7 +847,7 @@
 						<id>22</id>
 						<name>data_21_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -855,7 +855,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -877,7 +877,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3</coreId>
+						<coreId>6</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -904,7 +904,7 @@
 						<id>23</id>
 						<name>data_18_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -912,7 +912,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -934,7 +934,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>22</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -961,7 +961,7 @@
 						<id>24</id>
 						<name>data_16_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -969,7 +969,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -991,7 +991,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242478200</coreId>
+						<coreId>3</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -1018,7 +1018,7 @@
 						<id>25</id>
 						<name>data_15_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1026,7 +1026,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1048,7 +1048,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>4</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -1075,7 +1075,7 @@
 						<id>26</id>
 						<name>data_13_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1083,7 +1083,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1105,7 +1105,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242481224</coreId>
+						<coreId>10</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -1132,7 +1132,7 @@
 						<id>27</id>
 						<name>data_10_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1140,7 +1140,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1162,7 +1162,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242482088</coreId>
+						<coreId>3860058942</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -1189,7 +1189,7 @@
 						<id>28</id>
 						<name>data_6_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1197,7 +1197,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1219,7 +1219,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3860059373</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -1246,7 +1246,7 @@
 						<id>29</id>
 						<name>data_5_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1254,7 +1254,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1276,7 +1276,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242485112</coreId>
+						<coreId>673201011</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -1303,7 +1303,7 @@
 						<id>30</id>
 						<name>data_4_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1311,7 +1311,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1333,7 +1333,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1</coreId>
+						<coreId>3860060463</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -1360,7 +1360,7 @@
 						<id>31</id>
 						<name>data_2_val_read</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>42</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1368,7 +1368,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1390,7 +1390,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>6</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>15</bitwidth>
@@ -1417,7 +1417,7 @@
 						<id>32</id>
 						<name>icmp_ln45</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1425,7 +1425,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1447,7 +1447,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242853214</coreId>
+						<coreId>0</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1474,7 +1474,7 @@
 						<id>33</id>
 						<name>trunc_ln46</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1482,7 +1482,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1504,7 +1504,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242853756</coreId>
+						<coreId>3</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -1530,7 +1530,7 @@
 						<id>34</id>
 						<name>select_ln45</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1538,7 +1538,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1560,7 +1560,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>3</coreId>
+						<coreId>4</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -1588,7 +1588,7 @@
 						<id>35</id>
 						<name>icmp_ln45_1</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1596,7 +1596,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1618,7 +1618,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>12</coreId>
+						<coreId>10</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1645,7 +1645,7 @@
 						<id>36</id>
 						<name>trunc_ln46_1</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1653,7 +1653,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1675,7 +1675,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242493320</coreId>
+						<coreId>12</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -1701,7 +1701,7 @@
 						<id>37</id>
 						<name>select_ln45_1</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1709,7 +1709,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1731,7 +1731,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>0</coreId>
+						<coreId>3859503568</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -1759,7 +1759,7 @@
 						<id>38</id>
 						<name>icmp_ln45_2</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1767,7 +1767,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1789,7 +1789,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1713905714</coreId>
+						<coreId>64</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1816,7 +1816,7 @@
 						<id>39</id>
 						<name>trunc_ln46_2</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1824,7 +1824,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1846,7 +1846,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1718513507</coreId>
+						<coreId>3859505352</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -1872,7 +1872,7 @@
 						<id>40</id>
 						<name>select_ln45_2</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1880,7 +1880,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1902,7 +1902,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>824192052</coreId>
+						<coreId>1869770325</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -1930,7 +1930,7 @@
 						<id>41</id>
 						<name>icmp_ln45_3</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1938,7 +1938,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1960,7 +1960,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>807414835</coreId>
+						<coreId>539119430</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -1987,7 +1987,7 @@
 						<id>42</id>
 						<name>trunc_ln46_3</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -1995,7 +1995,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2017,7 +2017,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953068832</coreId>
+						<coreId>1600484206</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2043,7 +2043,7 @@
 						<id>43</id>
 						<name>select_ln45_3</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2051,7 +2051,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2073,7 +2073,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936484724</coreId>
+						<coreId>1663056755</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2101,7 +2101,7 @@
 						<id>44</id>
 						<name>icmp_ln45_4</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2109,7 +2109,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2131,7 +2131,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1768320623</coreId>
+						<coreId>842087284</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2158,7 +2158,7 @@
 						<id>45</id>
 						<name>trunc_ln46_4</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2166,7 +2166,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2188,7 +2188,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>574108722</coreId>
+						<coreId>997485606</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2214,7 +2214,7 @@
 						<id>46</id>
 						<name>select_ln45_4</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2222,7 +2222,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2244,7 +2244,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701978146</coreId>
+						<coreId>1685024095</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2272,7 +2272,7 @@
 						<id>47</id>
 						<name>icmp_ln45_5</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2280,7 +2280,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2302,7 +2302,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1126185531</coreId>
+						<coreId>1948262968</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2329,7 +2329,7 @@
 						<id>48</id>
 						<name>trunc_ln46_5</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2337,7 +2337,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2359,7 +2359,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>891905380</coreId>
+						<coreId>841823281</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2385,7 +2385,7 @@
 						<id>49</id>
 						<name>select_ln45_5</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2393,7 +2393,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2415,7 +2415,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>640688172</coreId>
+						<coreId>1918990189</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2443,7 +2443,7 @@
 						<id>50</id>
 						<name>icmp_ln45_6</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2451,7 +2451,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2473,7 +2473,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1769218148</coreId>
+						<coreId>1885413420</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2500,7 +2500,7 @@
 						<id>51</id>
 						<name>trunc_ln46_6</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2508,7 +2508,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2530,7 +2530,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1769173861</coreId>
+						<coreId>825375286</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2556,7 +2556,7 @@
 						<id>52</id>
 						<name>select_ln45_6</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2564,7 +2564,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2586,7 +2586,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1734439968</coreId>
+						<coreId>1835491698</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2614,7 +2614,7 @@
 						<id>53</id>
 						<name>icmp_ln45_7</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2622,7 +2622,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2644,7 +2644,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1734691874</coreId>
+						<coreId>1936018748</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2671,7 +2671,7 @@
 						<id>54</id>
 						<name>trunc_ln46_7</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2679,7 +2679,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2701,7 +2701,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1814460771</coreId>
+						<coreId>1931498832</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2727,7 +2727,7 @@
 						<id>55</id>
 						<name>select_ln45_7</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2735,7 +2735,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2757,7 +2757,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1718513507</coreId>
+						<coreId>171847458</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2785,7 +2785,7 @@
 						<id>56</id>
 						<name>icmp_ln45_8</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2793,7 +2793,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2815,7 +2815,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>540698478</coreId>
+						<coreId>574451311</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -2842,7 +2842,7 @@
 						<id>57</id>
 						<name>trunc_ln46_8</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2850,7 +2850,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2872,7 +2872,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953852527</coreId>
+						<coreId>574454132</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2898,7 +2898,7 @@
 						<id>58</id>
 						<name>select_ln45_8</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2906,7 +2906,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2928,7 +2928,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1919252069</coreId>
+						<coreId>1869767529</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -2956,7 +2956,7 @@
 						<id>59</id>
 						<name>icmp_ln45_9</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -2964,7 +2964,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2986,7 +2986,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>790766141</coreId>
+						<coreId>1043276322</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3013,7 +3013,7 @@
 						<id>60</id>
 						<name>trunc_ln46_9</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3021,7 +3021,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3043,7 +3043,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1953852527</coreId>
+						<coreId>1918989395</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3069,7 +3069,7 @@
 						<id>61</id>
 						<name>select_ln45_9</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3077,7 +3077,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3099,7 +3099,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1835365491</coreId>
+						<coreId>757935405</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3127,7 +3127,7 @@
 						<id>62</id>
 						<name>icmp_ln45_10</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3135,7 +3135,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3157,7 +3157,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>895432543</coreId>
+						<coreId>576532784</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3184,7 +3184,7 @@
 						<id>63</id>
 						<name>trunc_ln46_10</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3192,7 +3192,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3214,7 +3214,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>840975438</coreId>
+						<coreId>1398752325</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3240,7 +3240,7 @@
 						<id>64</id>
 						<name>select_ln45_10</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3248,7 +3248,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3270,7 +3270,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>861877599</coreId>
+						<coreId>1919950882</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3298,7 +3298,7 @@
 						<id>65</id>
 						<name>icmp_ln45_11</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3306,7 +3306,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3328,7 +3328,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1919510055</coreId>
+						<coreId>808591428</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3355,7 +3355,7 @@
 						<id>66</id>
 						<name>trunc_ln46_11</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3363,7 +3363,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3385,7 +3385,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>570456421</coreId>
+						<coreId>1634956133</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3411,7 +3411,7 @@
 						<id>67</id>
 						<name>select_ln45_11</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3419,7 +3419,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3441,7 +3441,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>842609205</coreId>
+						<coreId>1919510055</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3469,7 +3469,7 @@
 						<id>68</id>
 						<name>icmp_ln45_12</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3477,7 +3477,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3499,7 +3499,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>758591538</coreId>
+						<coreId>7630437</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3526,7 +3526,7 @@
 						<id>69</id>
 						<name>trunc_ln46_12</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3534,7 +3534,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3556,7 +3556,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>536884790</coreId>
+						<coreId>542329928</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3582,7 +3582,7 @@
 						<id>70</id>
 						<name>select_ln45_12</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3590,7 +3590,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3612,7 +3612,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701060709</coreId>
+						<coreId>840979276</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3640,7 +3640,7 @@
 						<id>71</id>
 						<name>icmp_ln45_13</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3648,7 +3648,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3670,7 +3670,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>543515987</coreId>
+						<coreId>808591443</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3697,7 +3697,7 @@
 						<id>72</id>
 						<name>trunc_ln46_13</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3705,7 +3705,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3727,7 +3727,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1280128083</coreId>
+						<coreId>1600941364</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3753,7 +3753,7 @@
 						<id>73</id>
 						<name>select_ln45_13</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3761,7 +3761,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3783,7 +3783,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1819096179</coreId>
+						<coreId>1914708596</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3811,7 +3811,7 @@
 						<id>74</id>
 						<name>icmp_ln45_14</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3819,7 +3819,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3841,7 +3841,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1701978146</coreId>
+						<coreId>536884537</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>1</bitwidth>
@@ -3868,7 +3868,7 @@
 						<id>75</id>
 						<name>trunc_ln46_14</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>46</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3876,7 +3876,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3898,7 +3898,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1869438833</coreId>
+						<coreId>1919903346</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3924,7 +3924,7 @@
 						<id>76</id>
 						<name>select_ln45_14</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3932,7 +3932,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3954,7 +3954,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1952804462</coreId>
+						<coreId>1952801824</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -3982,7 +3982,7 @@
 						<id>77</id>
 						<name>newret</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -3990,7 +3990,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4012,7 +4012,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601200444</coreId>
+						<coreId>1852138591</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4039,7 +4039,7 @@
 						<id>78</id>
 						<name>newret2</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4047,7 +4047,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4069,7 +4069,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1853187616</coreId>
+						<coreId>1601265520</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4096,7 +4096,7 @@
 						<id>79</id>
 						<name>newret4</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4104,7 +4104,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4126,7 +4126,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1768257338</coreId>
+						<coreId>1601200424</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4153,7 +4153,7 @@
 						<id>80</id>
 						<name>newret6</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4161,7 +4161,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4183,7 +4183,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1936018748</coreId>
+						<coreId>1701735983</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4210,7 +4210,7 @@
 						<id>81</id>
 						<name>newret8</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4218,7 +4218,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4240,7 +4240,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1852795252</coreId>
+						<coreId>807414835</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4267,7 +4267,7 @@
 						<id>82</id>
 						<name>newret1</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4275,7 +4275,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4297,7 +4297,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>539765310</coreId>
+						<coreId>539767593</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4324,7 +4324,7 @@
 						<id>83</id>
 						<name>newret3</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4332,7 +4332,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4354,7 +4354,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1885415456</coreId>
+						<coreId>858350948</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4381,7 +4381,7 @@
 						<id>84</id>
 						<name>newret5</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4389,7 +4389,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4411,7 +4411,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1952541791</coreId>
+						<coreId>893008184</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4438,7 +4438,7 @@
 						<id>85</id>
 						<name>newret7</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4446,7 +4446,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4468,7 +4468,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>796093545</coreId>
+						<coreId>656436847</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4495,7 +4495,7 @@
 						<id>86</id>
 						<name>newret9</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4503,7 +4503,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4525,7 +4525,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1970040691</coreId>
+						<coreId>1936269351</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4552,7 +4552,7 @@
 						<id>87</id>
 						<name>newret10</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4560,7 +4560,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4582,7 +4582,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1881145423</coreId>
+						<coreId>758395186</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4609,7 +4609,7 @@
 						<id>88</id>
 						<name>newret11</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4617,7 +4617,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4639,7 +4639,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>942746932</coreId>
+						<coreId>825046065</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4666,7 +4666,7 @@
 						<id>89</id>
 						<name>newret12</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4674,7 +4674,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4696,7 +4696,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1378295920</coreId>
+						<coreId>1953391988</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4723,7 +4723,7 @@
 						<id>90</id>
 						<name>newret13</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4731,7 +4731,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4753,7 +4753,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1683977317</coreId>
+						<coreId>1665234021</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4780,7 +4780,7 @@
 						<id>91</id>
 						<name>newret14</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4788,7 +4788,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4810,7 +4810,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1853187616</coreId>
+						<coreId>1635216754</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>
@@ -4837,7 +4837,7 @@
 						<id>92</id>
 						<name>_ln45</name>
 						<fileName>firmware/nnet_utils/nnet_activation.h</fileName>
-						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
+						<fileDirectory>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>relu&amp;lt;ap_fixed&amp;lt;15, 11, AP_TRN, AP_WRAP, 0&amp;gt;, ap_ufixed&amp;lt;11, 7, AP_TRN, AP_WRAP, 0&amp;gt;, relu_config10&amp;gt;</contextFuncName>
 						<contextNormFuncName>relu_ap_fixed_15_11_AP_TRN_AP_WRAP_0_ap_ufixed_11_7_AP_TRN_AP_WRAP_0_relu_config10_s</contextNormFuncName>
@@ -4845,7 +4845,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis</first>
+								<first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4867,7 +4867,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1601200424</coreId>
+						<coreId>1668179316</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>0</bitwidth>
@@ -4944,7 +4944,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1667457338</coreId>
+						<coreId>1952803952</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>11</bitwidth>
@@ -4975,7 +4975,7 @@
 						<coreName></coreName>
 						<isStorage>0</isStorage>
 						<storageDepth>0</storageDepth>
-						<coreId>1242829984</coreId>
+						<coreId>3860035856</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>165</bitwidth>

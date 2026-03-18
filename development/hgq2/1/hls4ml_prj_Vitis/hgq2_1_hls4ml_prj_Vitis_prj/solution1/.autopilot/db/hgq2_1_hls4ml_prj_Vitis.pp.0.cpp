@@ -59864,7 +59864,7 @@ __attribute__((sdx_kernel("hgq2_1_hls4ml_prj_Vitis", 0))) void hgq2_1_hls4ml_prj
     input_layer_t input_layer[16],
     result_t layer13_out[5]
 ) {
-#line 169 "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis/build_prj.tcl"
+#line 169 "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/build_prj.tcl"
 #pragma HLSDIRECTIVE TOP name=hgq2_1_hls4ml_prj_Vitis
 # 10 "firmware/hgq2_1_hls4ml_prj_Vitis.cpp"
 

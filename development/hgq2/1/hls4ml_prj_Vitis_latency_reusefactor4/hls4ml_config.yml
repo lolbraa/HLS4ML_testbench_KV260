@@ -1,0 +1,29 @@
+Backend: Vitis
+ClockPeriod: 5
+ClockUncertainty: 27%
+HLSConfig:
+  Model:
+    BitExact: null
+    Precision: ap_fixed<16,6>
+    ReuseFactor: 1
+IOType: io_parallel
+InputData: null
+InputShapes:
+  input_layer:
+  - 16
+KerasModel: !keras_model '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/keras_model.keras'
+OutputDir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4
+OutputPredictions: null
+OutputShapes:
+  layer13_out:
+  - 5
+Part: xck26-sfvc784-2LV-c
+ProjectName: hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4
+Stamp: 95c49603
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

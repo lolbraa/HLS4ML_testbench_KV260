@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hgq2_1_hls4ml_prj_Vitis'
 ================================================================
-* Date:           Tue Mar 17 11:12:47 2026
+* Date:           Wed Mar 18 11:35:17 2026
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        hgq2_1_hls4ml_prj_Vitis_prj
@@ -648,7 +648,7 @@ Target clock period: 5.000ns, clock uncertainty: 1.350ns.
  <State 1>: 2.986ns
 The critical path consists of the following:
 	wire read operation ('input_layer_read', firmware/nnet_utils/nnet_code_gen.h:30->firmware/hgq2_1_hls4ml_prj_Vitis.cpp:71) on port 'input_layer' (firmware/nnet_utils/nnet_code_gen.h:30->firmware/hgq2_1_hls4ml_prj_Vitis.cpp:71) [21]  (0.000 ns)
-	'add' operation 11 bit ('layer2_out', firmware/nnet_utils/nnet_code_gen.h:33->firmware/hgq2_1_hls4ml_prj_Vitis.cpp:71) [40]  (0.798 ns)
+	'add' operation 11 bit ('add_ln44', firmware/nnet_utils/nnet_code_gen.h:44->firmware/hgq2_1_hls4ml_prj_Vitis.cpp:71) [79]  (0.798 ns)
 	'call' operation 350 bit ('call_ret1', firmware/nnet_utils/nnet_dense.h:54->firmware/nnet_utils/nnet_dense.h:45->firmware/hgq2_1_hls4ml_prj_Vitis.cpp:73) to 'dense_latency<ap_fixed<26, 19, 5, 3, 0>, ap_fixed<14, 8, 5, 3, 0>, config3>' [86]  (2.188 ns)
 
  <State 2>: 3.573ns

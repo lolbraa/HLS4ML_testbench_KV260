@@ -749,7 +749,7 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/nnet_utils/nnet_dense_stream.h:91:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="dense" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=res complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis/build_prj.tcl:169:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/build_prj.tcl:169:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="hgq2_1_hls4ml_prj_Vitis" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=hgq2_1_hls4ml_prj_Vitis" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="firmware/hgq2_1_hls4ml_prj_Vitis.cpp:13:9" msg_body="HLS pragma dump">

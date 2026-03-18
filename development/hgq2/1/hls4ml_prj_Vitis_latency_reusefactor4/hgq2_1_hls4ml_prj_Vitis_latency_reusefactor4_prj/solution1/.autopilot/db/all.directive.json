@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/build_prj.tcl",
+    "sourceLine": 169,
+    "success": true
+  }
+]

@@ -1,7 +1,8 @@
 name: devenv-hgq
 dependencies:
   - tensorflow
-  - numpy=1.26.0
+  - numpy
+  - notebook
   - pip:
     - hgq2
     - hls4ml[profiling,hgq2]

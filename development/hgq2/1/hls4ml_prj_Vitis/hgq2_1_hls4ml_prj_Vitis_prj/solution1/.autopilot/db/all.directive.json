@@ -16,7 +16,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/hgq2/1/hls4ml_prj_Vitis/build_prj.tcl",
+    "sourceFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/build_prj.tcl",
     "sourceLine": 169,
     "success": true
   }
