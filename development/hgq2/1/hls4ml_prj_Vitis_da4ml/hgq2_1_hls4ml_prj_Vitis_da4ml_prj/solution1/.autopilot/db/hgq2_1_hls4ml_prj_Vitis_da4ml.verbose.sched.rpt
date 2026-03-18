@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hgq2_1_hls4ml_prj_Vitis_da4ml'
 ================================================================
-* Date:           Wed Mar 18 12:29:17 2026
+* Date:           Wed Mar 18 12:33:53 2026
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        hgq2_1_hls4ml_prj_Vitis_da4ml_prj
@@ -1743,7 +1743,7 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'sub' operation 14 bit ('v149', firmware/nnet_utils/nnet_code_gen.h:194->firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:51) [335]  (0.831 ns)
 	'call' operation 300 bit ('call_ret1', firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:53) to 'relu<ap_fixed<14, 8, 5, 3, 0>, ap_ufixed<12, 6, 5, 3, 0>, relu_config4>' [373]  (1.206 ns)
-	'add' operation 5 bit ('model_inp_q_44', firmware/nnet_utils/nnet_code_gen.h:314->firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:55) [470]  (0.789 ns)
+	'add' operation 5 bit ('model_inp_q_7', firmware/nnet_utils/nnet_code_gen.h:277->firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:55) [414]  (0.789 ns)
 	'sub' operation 7 bit ('v72', firmware/nnet_utils/nnet_code_gen.h:407->firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:55) [630]  (0.781 ns)
 
  <State 3>: 3.183ns
@@ -1758,7 +1758,7 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'add' operation 14 bit ('v167', firmware/nnet_utils/nnet_code_gen.h:502->firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:55) [920]  (0.831 ns)
 	'call' operation 200 bit ('call_ret2', firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:57) to 'relu<ap_fixed<14, 11, 5, 3, 0>, ap_ufixed<10, 7, 5, 3, 0>, relu_config7>' [955]  (1.234 ns)
-	'add' operation 6 bit ('model_inp_q_27', firmware/nnet_utils/nnet_code_gen.h:574->firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:59) [1047]  (0.781 ns)
+	'add' operation 6 bit ('model_inp_q_22', firmware/nnet_utils/nnet_code_gen.h:569->firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:59) [1031]  (0.781 ns)
 	'sub' operation 10 bit ('v64', firmware/nnet_utils/nnet_code_gen.h:644->firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:59) [1154]  (0.776 ns)
 
  <State 5>: 3.367ns
