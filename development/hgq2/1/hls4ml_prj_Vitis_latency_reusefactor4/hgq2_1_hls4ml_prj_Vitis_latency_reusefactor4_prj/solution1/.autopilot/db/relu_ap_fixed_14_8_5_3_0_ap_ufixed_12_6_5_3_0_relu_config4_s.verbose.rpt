@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'relu_ap_fixed_14_8_5_3_0_ap_ufixed_12_6_5_3_0_relu_config4_s'
 ================================================================
-* Date:           Wed Mar 18 11:54:47 2026
+* Date:           Wed Mar 18 12:55:52 2026
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj

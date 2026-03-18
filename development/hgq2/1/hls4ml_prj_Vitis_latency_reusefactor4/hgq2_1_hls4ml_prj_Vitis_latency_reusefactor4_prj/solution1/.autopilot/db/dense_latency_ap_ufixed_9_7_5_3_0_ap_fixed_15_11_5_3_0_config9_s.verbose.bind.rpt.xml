@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_latency_ap_ufixed_9_7_5_3_0_ap_fixed_15_11_5_3_0_config9_s'" level="0">
-<item name = "Date">Wed Mar 18 11:54:47 2026
+<item name = "Date">Wed Mar 18 12:55:51 2026
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.424 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.271 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="">1, 1, 5.000 ns, 5.000 ns, 2, 2, yes</column>
 </table>
 </item>
 <item name = "Detail">

@@ -3,6 +3,7 @@ dependencies:
   - tensorflow
   - numpy
   - notebook
+  - scikit-learn
   - pip:
     - hgq2
     - hls4ml[profiling,hgq2]

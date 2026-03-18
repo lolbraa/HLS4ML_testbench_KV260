@@ -19,7 +19,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_input_layer \
     op interface \
-    ports { input_layer_ap_vld { I 1 bit } input_layer { I 432 vector } } \
+    ports { input_layer { I 432 vector } input_layer_ap_vld { I 1 bit } } \
 } "
 }
 

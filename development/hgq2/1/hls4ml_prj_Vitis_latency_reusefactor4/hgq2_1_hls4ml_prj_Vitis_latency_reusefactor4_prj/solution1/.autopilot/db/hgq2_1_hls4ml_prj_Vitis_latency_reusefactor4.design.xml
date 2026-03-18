@@ -57,8 +57,8 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>3.573</EstimatedClockPeriod>
+<TargetInitiationInterval>4</TargetInitiationInterval>
+<EstimatedClockPeriod>3.251</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -67,7 +67,7 @@
 <Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
@@ -82,10 +82,10 @@
 <DSP>5</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>566</FF>
+<FF>233</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>3353</LUT>
+<LUT>3017</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>2</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -116,6 +116,50 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency&lt;ap_fixed&lt;26, 19, 5, 3, 0&gt;, ap_fixed&lt;14, 8, 5, 3, 0&gt;, config3&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency&lt;ap_fixed&lt;26, 19, 5, 3, 0&gt;, ap_fixed&lt;14, 8, 5, 3, 0&gt;, config3&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency&lt;ap_fixed&lt;26, 19, 5, 3, 0&gt;, ap_fixed&lt;14, 8, 5, 3, 0&gt;, config3&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>dense_latency&lt;ap_fixed&lt;26, 19, 5, 3, 0&gt;, ap_fixed&lt;14, 8, 5, 3, 0&gt;, config3&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -1165,8 +1209,8 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>3.411</EstimatedClockPeriod>
+<TargetInitiationInterval>4</TargetInitiationInterval>
+<EstimatedClockPeriod>3.345</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -1175,7 +1219,7 @@
 <Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
@@ -1187,10 +1231,10 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>626</FF>
+<FF>398</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>3354</LUT>
+<LUT>3088</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>2</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1224,6 +1268,50 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency&lt;ap_ufixed&lt;11, 6, 5, 3, 0&gt;, ap_fixed&lt;14, 11, 5, 3, 0&gt;, config6&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency&lt;ap_ufixed&lt;11, 6, 5, 3, 0&gt;, ap_fixed&lt;14, 11, 5, 3, 0&gt;, config6&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency&lt;ap_ufixed&lt;11, 6, 5, 3, 0&gt;, ap_fixed&lt;14, 11, 5, 3, 0&gt;, config6&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>dense_latency&lt;ap_ufixed&lt;11, 6, 5, 3, 0&gt;, ap_fixed&lt;14, 11, 5, 3, 0&gt;, config6&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -2240,8 +2328,8 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>3.424</EstimatedClockPeriod>
+<TargetInitiationInterval>4</TargetInitiationInterval>
+<EstimatedClockPeriod>3.271</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -2250,7 +2338,7 @@
 <Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
@@ -2265,12 +2353,12 @@
 <DSP>0</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>0</UTIL_DSP>
-<FF>454</FF>
+<FF>255</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>2384</LUT>
+<LUT>2188</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>2</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -2299,6 +2387,50 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency&lt;ap_ufixed&lt;9, 7, 5, 3, 0&gt;, ap_fixed&lt;15, 11, 5, 3, 0&gt;, config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency&lt;ap_ufixed&lt;9, 7, 5, 3, 0&gt;, ap_fixed&lt;15, 11, 5, 3, 0&gt;, config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency&lt;ap_ufixed&lt;9, 7, 5, 3, 0&gt;, ap_fixed&lt;15, 11, 5, 3, 0&gt;, config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>dense_latency&lt;ap_ufixed&lt;9, 7, 5, 3, 0&gt;, ap_fixed&lt;15, 11, 5, 3, 0&gt;, config9&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -3095,7 +3227,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
+<TargetInitiationInterval>4</TargetInitiationInterval>
 <EstimatedClockPeriod>3.282</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
@@ -3375,17 +3507,17 @@
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
 <TargetInitiationInterval>4294967295</TargetInitiationInterval>
-<EstimatedClockPeriod>3.573</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.345</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>8</Best-caseLatency>
-<Average-caseLatency>8</Average-caseLatency>
-<Worst-caseLatency>8</Worst-caseLatency>
-<Best-caseRealTimeLatency>40.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>40.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>40.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>9</PipelineDepth>
+<Best-caseLatency>11</Best-caseLatency>
+<Average-caseLatency>11</Average-caseLatency>
+<Worst-caseLatency>11</Worst-caseLatency>
+<Best-caseRealTimeLatency>55.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>55.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>55.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
+<PipelineDepth>12</PipelineDepth>
 <PipelineType>yes</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
@@ -3399,12 +3531,12 @@
 <DSP>5</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>2853</FF>
+<FF>2709</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>13271</LUT>
+<LUT>12496</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>11</UTIL_LUT>
+<UTIL_LUT>10</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -3481,18 +3613,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>input_layer_ap_vld</name>
-<Object>input_layer</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_vld</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-<CType>int</CType>
-</RtlPorts>
-<RtlPorts>
 <name>input_layer</name>
 <Object>input_layer</Object>
 <Type>pointer</Type>
@@ -3502,6 +3622,18 @@
 <Dir>in</Dir>
 <Bits>432</Bits>
 <Attribute>data</Attribute>
+<CType>int</CType>
+</RtlPorts>
+<RtlPorts>
+<name>input_layer_ap_vld</name>
+<Object>input_layer</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_vld</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
 <CType>int</CType>
 </RtlPorts>
 <RtlPorts>

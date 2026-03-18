@@ -59753,7 +59753,7 @@ struct config3 : nnet::dense_config {
     static const unsigned n_out = 64;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     static const unsigned n_zeros = 939;
     static const unsigned n_nonzeros = 85;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -59773,7 +59773,7 @@ struct relu_config4 : nnet::activ_config {
     static const unsigned n_in = 64;
     static const unsigned table_size = 262144;
     static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     typedef dense_0_relu_table_t table_t;
 };
 
@@ -59783,7 +59783,7 @@ struct config6 : nnet::dense_config {
     static const unsigned n_out = 32;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     static const unsigned n_zeros = 1923;
     static const unsigned n_nonzeros = 125;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -59803,7 +59803,7 @@ struct relu_config7 : nnet::activ_config {
     static const unsigned n_in = 32;
     static const unsigned table_size = 1048576;
     static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     typedef dense_1_relu_table_t table_t;
 };
 
@@ -59813,7 +59813,7 @@ struct config9 : nnet::dense_config {
     static const unsigned n_out = 32;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     static const unsigned n_zeros = 929;
     static const unsigned n_nonzeros = 95;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;
@@ -59833,7 +59833,7 @@ struct relu_config10 : nnet::activ_config {
     static const unsigned n_in = 32;
     static const unsigned table_size = 262144;
     static const unsigned io_type = nnet::io_parallel;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     typedef dense_2_relu_table_t table_t;
 };
 
@@ -59843,7 +59843,7 @@ struct config12 : nnet::dense_config {
     static const unsigned n_out = 5;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
-    static const unsigned reuse_factor = 1;
+    static const unsigned reuse_factor = 4;
     static const unsigned n_zeros = 122;
     static const unsigned n_nonzeros = 38;
     static const unsigned multiplier_limit = ((n_in * n_out + reuse_factor - 1) / reuse_factor) - n_zeros / reuse_factor;

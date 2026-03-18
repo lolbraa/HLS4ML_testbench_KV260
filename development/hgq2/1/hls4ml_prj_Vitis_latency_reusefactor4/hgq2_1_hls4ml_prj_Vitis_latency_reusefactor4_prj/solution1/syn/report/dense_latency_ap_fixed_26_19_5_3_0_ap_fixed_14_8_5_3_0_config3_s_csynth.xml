@@ -11,7 +11,7 @@
 <TopModelName>dense_latency_ap_fixed_26_19_5_3_0_ap_fixed_14_8_5_3_0_config3_s</TopModelName>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
+<TargetInitiationInterval>4</TargetInitiationInterval>
 <FlowTarget>vivado</FlowTarget>
 </UserAssignments>
 
@@ -19,7 +19,7 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.573</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.251</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -29,10 +29,10 @@
 <Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
-<Interval-min>1</Interval-min>
-<Interval-max>1</Interval-max>
+<Interval-min>2</Interval-min>
+<Interval-max>2</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -44,8 +44,8 @@
 <AreaEstimates>
 <Resources>
 <DSP>5</DSP>
-<FF>566</FF>
-<LUT>3353</LUT>
+<FF>233</FF>
+<LUT>3017</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -78,6 +78,50 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency&lt;ap_fixed&lt;26, 19, 5, 3, 0&gt;, ap_fixed&lt;14, 8, 5, 3, 0&gt;, config3&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency&lt;ap_fixed&lt;26, 19, 5, 3, 0&gt;, ap_fixed&lt;14, 8, 5, 3, 0&gt;, config3&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency&lt;ap_fixed&lt;26, 19, 5, 3, 0&gt;, ap_fixed&lt;14, 8, 5, 3, 0&gt;, config3&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>dense_latency&lt;ap_fixed&lt;26, 19, 5, 3, 0&gt;, ap_fixed&lt;14, 8, 5, 3, 0&gt;, config3&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
