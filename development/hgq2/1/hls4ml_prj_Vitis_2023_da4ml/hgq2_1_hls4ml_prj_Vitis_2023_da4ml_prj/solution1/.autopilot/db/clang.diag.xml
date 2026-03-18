@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_da4ml/hgq2_1_hls4ml_prj_Vitis_2023_da4ml_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_da4ml.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>firmware/nnet_utils/nnet_activation.h</string>
+      <key>line</key>
+      <integer>402</integer>
+      <key>column</key>
+      <integer>36</integer>
+      <key>message</key>
+      <string>unexpected pragma argument &apos;softmax&apos;, expects function/operation</string>
+      <key>ID</key>
+      <integer>5566</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

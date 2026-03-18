@@ -1,0 +1,340 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 185798 *, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  17955, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,   6059, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,   6049, user inline pragmas are applied</column>
+            <column name="">(4) simplification,   5924, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,   5727, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   5727, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,   5727, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   5740, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   5715, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   5059, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   4923, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   4923, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   4923, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,   4929, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   4934, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="hgq2_1_hls4ml_prj_Vitis_2023_da4ml" col1="hgq2_1_hls4ml_prj_Vitis_2023_da4ml.cpp:7" col2="185798" col2_note="*" col3="5924" col4="5715" col5="4923" col6="4934">
+                    <row id="201" col0="dense_da_3&lt;ap_fixed&lt;27, 19, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;14, 8, AP_TRN, AP_WRAP, 0&gt; &gt;" col1="nnet_code_gen.h:26" col2="61068" col3="" col4="" col5="" col6="">
+                        <row id="155" col0="bit_shift&lt;2, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="173" col0="bit_shift&lt;-2, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="171" col0="bit_shift&lt;-2, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="356" col2_disp="   356 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="169" col0="bit_shift&lt;-2, 6, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="166" col0="bit_shift&lt;-3, 7, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="162" col0="bit_shift&lt;-2, 7, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="185" col0="bit_shift&lt;3, 10, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="183" col0="bit_shift&lt;-2, 11, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="177" col0="bit_shift&lt;5, 11, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="175" col0="bit_shift&lt;2, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="79" col0="bit_shift&lt;1, 9, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="101" col0="bit_shift&lt;-2, 11, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="124" col0="bit_shift&lt;2, 11, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="112" col0="bit_shift&lt;1, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="212" col0="bit_shift&lt;4, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="24" col0="bit_shift&lt;-6, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="190" col0="bit_shift&lt;-4, 7, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="234" col0="bit_shift&lt;6, 10, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="46" col0="bit_shift&lt;-7, 6, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="13" col0="bit_shift&lt;1, 10, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="16" col0="bit_shift&lt;-2, 10, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="11" col0="bit_shift&lt;-1, 5, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="12" col0="bit_shift&lt;-1, 9, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="266" col0="bit_shift&lt;-1, 12, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="265" col0="bit_shift&lt;-1, 14, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="9" col0="bit_shift&lt;-2, 13, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="6" col0="bit_shift&lt;-2, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="255" col0="bit_shift&lt;-3, 13, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="254" col0="bit_shift&lt;3, 12, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="262" col0="bit_shift&lt;2, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="260" col0="bit_shift&lt;3, 11, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="258" col0="bit_shift&lt;3, 14, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="241" col0="bit_shift&lt;8, 14, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="250" col0="bit_shift&lt;4, 10, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="252" col0="bit_shift&lt;2, 10, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="235" col0="bit_shift&lt;-5, 9, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="239" col0="bit_shift&lt;2, 13, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="228" col0="bit_shift&lt;3, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="227" col0="bit_shift&lt;-1, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="233" col0="bit_shift&lt;1, 11, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="230" col0="bit_shift&lt;2, 16, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="220" col0="bit_shift&lt;3, 11, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="225" col0="bit_shift&lt;2, 12, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="224" col0="bit_shift&lt;-1, 11, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="214" col0="bit_shift&lt;3, 14, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="210" col0="bit_shift&lt;1, 13, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="216" col0="bit_shift&lt;5, 16, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="117" col0="bit_shift&lt;-2, 11, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="121" col0="bit_shift&lt;4, 14, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="114" col0="bit_shift&lt;-5, 15, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="111" col0="bit_shift&lt;4, 12, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="108" col0="bit_shift&lt;4, 16, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="93" col0="bit_shift&lt;1, 14, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="88" col0="bit_shift&lt;2, 13, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="89" col0="bit_shift&lt;-1, 16, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="215" col0="bit_shift&lt;-1, 15, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="82" col0="bit_shift&lt;-1, 17, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="72" col0="bit_shift&lt;2, 12, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="75" col0="bit_shift&lt;-3, 17, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="138" col0="bit_shift&lt;-2, 14, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="1" col0="bit_shift&lt;-1, 12, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="98" col0="bit_shift&lt;1, 14, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="63" col0="bit_shift&lt;1, 14, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="70" col0="bit_shift&lt;-6, 15, 14, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="66" col0="bit_shift&lt;2, 16, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="59" col0="bit_shift&lt;-2, 13, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="60" col0="bit_shift&lt;1, 15, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="51" col0="bit_shift&lt;-2, 15, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="52" col0="bit_shift&lt;-5, 17, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="80" col0="bit_shift&lt;1, 16, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="54" col0="bit_shift&lt;-2, 14, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="45" col0="bit_shift&lt;-1, 13, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="49" col0="bit_shift&lt;-1, 14, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="245" col0="relu&lt;ap_fixed&lt;14, 8, AP_TRN, AP_WRAP, 0&gt;, ap_ufixed&lt;12, 6, AP_TRN, AP_WRAP, 0&gt;, relu_config4&gt;" col1="nnet_activation.h:39" col2="228" col3="639" col4="513" col5="215" col6="216"/>
+                    <row id="223" col0="dense_da_6&lt;ap_ufixed&lt;12, 6, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;14, 11, AP_TRN, AP_WRAP, 0&gt; &gt;" col1="nnet_code_gen.h:268" col2="58564" col3="" col4="" col5="" col6="">
+                        <row id="25" col0="bit_shift&lt;3, 8, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="29" col0="bit_shift&lt;-3, 7, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="32" col0="bit_shift&lt;-3, 5, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="69" col0="bit_shift&lt;1, 6, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="42" col0="bit_shift&lt;-2, 4, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="86" col0="bit_shift&lt;-2, 6, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="356" col2_disp="   356 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="94" col0="bit_shift&lt;-2, 5, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="102" col0="bit_shift&lt;-1, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="109" col0="bit_shift&lt;-1, 5, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="103" col0="bit_shift&lt;-1, 6, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="219" col0="bit_shift&lt;-2, 8, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="110" col0="bit_shift&lt;1, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="211" col0="bit_shift&lt;-2, 6, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="238" col0="bit_shift&lt;4, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="237" col0="bit_shift&lt;5, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="232" col0="bit_shift&lt;-4, 5, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="231" col0="bit_shift&lt;-2, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="242" col0="bit_shift&lt;1, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="246" col0="bit_shift&lt;1, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="14" col0="bit_shift&lt;1, 8, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="3" col0="bit_shift&lt;1, 7, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="7" col0="bit_shift&lt;3, 9, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="113" col0="bit_shift&lt;-3, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="145" col0="bit_shift&lt;-1, 6, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="221" col0="bit_shift&lt;-1, 5, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="160" col0="bit_shift&lt;-2, 5, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="222" col0="bit_shift&lt;2, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="67" col0="bit_shift&lt;6, 8, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="20" col0="bit_shift&lt;-3, 5, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="26" col0="bit_shift&lt;-1, 8, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="118" col0="bit_shift&lt;1, 6, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="27" col0="bit_shift&lt;2, 5, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="39" col0="bit_shift&lt;-1, 4, 2, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="31" col0="bit_shift&lt;1, 5, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="104" col0="bit_shift&lt;3, 6, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="107" col0="bit_shift&lt;2, 8, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="120" col0="bit_shift&lt;4, 8, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="111" col0="bit_shift&lt;4, 12, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="76" col0="bit_shift&lt;1, 12, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="116" col0="bit_shift&lt;6, 9, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="226" col0="bit_shift&lt;-2, 10, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="17" col0="bit_shift&lt;1, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="10" col0="bit_shift&lt;1, 10, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="253" col0="bit_shift&lt;-2, 9, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="257" col0="bit_shift&lt;1, 11, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="248" col0="bit_shift&lt;2, 12, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="202" col0="bit_shift&lt;4, 10, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="147" col0="bit_shift&lt;5, 7, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="130" col0="bit_shift&lt;-2, 11, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="142" col0="bit_shift&lt;1, 13, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="134" col0="bit_shift&lt;-1, 10, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="122" col0="bit_shift&lt;-3, 10, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="128" col0="bit_shift&lt;1, 11, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="127" col0="bit_shift&lt;2, 9, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="182" col0="bit_shift&lt;1, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="180" col0="bit_shift&lt;-3, 11, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="165" col0="bit_shift&lt;3, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="153" col0="bit_shift&lt;-1, 10, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="174" col0="bit_shift&lt;3, 6, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="100" col0="bit_shift&lt;-1, 10, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="92" col0="bit_shift&lt;-1, 8, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="8" col0="bit_shift&lt;7, 10, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="264" col0="bit_shift&lt;3, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="259" col0="bit_shift&lt;-1, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="262" col0="bit_shift&lt;2, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="36" col0="bit_shift&lt;-3, 13, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="244" col0="bit_shift&lt;-2, 9, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="188" col0="bit_shift&lt;3, 10, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="139" col0="bit_shift&lt;1, 12, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="68" col0="bit_shift&lt;5, 10, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="35" col0="bit_shift&lt;-2, 8, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="199" col0="bit_shift&lt;1, 11, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="193" col0="bit_shift&lt;3, 14, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="164" col0="bit_shift&lt;-4, 11, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="132" col0="bit_shift&lt;3, 8, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="138" col0="bit_shift&lt;-2, 14, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="136" col0="bit_shift&lt;-1, 11, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="40" col0="bit_shift&lt;1, 15, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="50" col0="bit_shift&lt;1, 12, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="194" col0="bit_shift&lt;-1, 12, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="196" col0="bit_shift&lt;-1, 11, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="2" col0="bit_shift&lt;-3, 12, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="1" col0="bit_shift&lt;-1, 12, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="146" col0="bit_shift&lt;-4, 20, 15, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="168" col0="bit_shift&lt;-2, 11, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="189" col0="bit_shift&lt;-2, 16, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="154" col0="bit_shift&lt;-1, 13, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="152" col0="bit_shift&lt;2, 13, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="151" col0="bit_shift&lt;-1, 14, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="61" col0="bit_shift&lt;-3, 15, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="247" col0="bit_shift&lt;-2, 14, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="80" col0="bit_shift&lt;1, 16, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="83" col0="bit_shift&lt;2, 14, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="84" col0="bit_shift&lt;-1, 14, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="98" col0="bit_shift&lt;1, 14, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="87" col0="bit_shift&lt;-1, 10, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="215" col0="bit_shift&lt;-1, 15, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="236" col0="bit_shift&lt;-1, 13, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="208" col0="relu&lt;ap_fixed&lt;14, 11, AP_TRN, AP_WRAP, 0&gt;, ap_ufixed&lt;10, 7, AP_TRN, AP_WRAP, 0&gt;, relu_config7&gt;" col1="nnet_activation.h:39" col2="228" col3="319" col4="257" col5="153" col6="154"/>
+                    <row id="205" col0="dense_da_9&lt;ap_ufixed&lt;10, 7, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;15, 11, AP_TRN, AP_WRAP, 0&gt; &gt;" col1="nnet_code_gen.h:545" col2="45490" col3="" col4="" col5="" col6="">
+                        <row id="34" col0="bit_shift&lt;-1, 4, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="37" col0="bit_shift&lt;3, 6, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="43" col0="bit_shift&lt;-2, 9, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="55" col0="bit_shift&lt;2, 5, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="62" col0="bit_shift&lt;2, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="106" col0="bit_shift&lt;-2, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="65" col0="bit_shift&lt;-2, 6, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="74" col0="bit_shift&lt;2, 8, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="118" col0="bit_shift&lt;1, 6, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="356" col2_disp="   356 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="91" col0="bit_shift&lt;2, 6, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="95" col0="bit_shift&lt;-3, 6, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="99" col0="bit_shift&lt;-4, 4, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="105" col0="bit_shift&lt;-3, 6, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="217" col0="bit_shift&lt;1, 4, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="213" col0="bit_shift&lt;-1, 5, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="218" col0="bit_shift&lt;-4, 9, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="229" col0="bit_shift&lt;3, 4, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="96" col0="bit_shift&lt;4, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="251" col0="bit_shift&lt;-3, 12, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="22" col0="bit_shift&lt;-3, 7, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="243" col0="bit_shift&lt;2, 9, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="249" col0="bit_shift&lt;-1, 8, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="261" col0="bit_shift&lt;1, 8, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="5" col0="bit_shift&lt;-1, 8, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="263" col0="bit_shift&lt;6, 5, 3, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="18" col0="bit_shift&lt;-2, 8, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="15" col0="bit_shift&lt;5, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="57" col0="bit_shift&lt;-3, 9, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="256" col0="bit_shift&lt;3, 9, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="135" col0="bit_shift&lt;-3, 8, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="90" col0="bit_shift&lt;2, 9, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="157" col0="bit_shift&lt;-1, 9, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="85" col0="bit_shift&lt;-2, 7, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="191" col0="bit_shift&lt;-1, 8, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="187" col0="bit_shift&lt;4, 8, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="179" col0="bit_shift&lt;-4, 8, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="192" col0="bit_shift&lt;-2, 10, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="197" col0="bit_shift&lt;5, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="195" col0="bit_shift&lt;2, 7, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="200" col0="bit_shift&lt;-3, 8, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="198" col0="bit_shift&lt;1, 10, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="33" col0="bit_shift&lt;1, 9, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="209" col0="bit_shift&lt;-1, 9, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="207" col0="bit_shift&lt;1, 11, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="131" col0="bit_shift&lt;1, 11, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="133" col0="bit_shift&lt;2, 11, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="137" col0="bit_shift&lt;4, 10, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="123" col0="bit_shift&lt;3, 11, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="125" col0="bit_shift&lt;3, 12, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="143" col0="bit_shift&lt;3, 14, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="148" col0="bit_shift&lt;3, 13, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="140" col0="bit_shift&lt;4, 10, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="156" col0="bit_shift&lt;1, 9, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="139" col0="bit_shift&lt;1, 12, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="161" col0="bit_shift&lt;1, 13, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="153" col0="bit_shift&lt;-1, 10, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="176" col0="bit_shift&lt;2, 11, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="186" col0="bit_shift&lt;-1, 15, 13, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="167" col0="bit_shift&lt;1, 13, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="172" col0="bit_shift&lt;1, 12, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="41" col0="bit_shift&lt;4, 11, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="21" col0="bit_shift&lt;-1, 15, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="247" col0="bit_shift&lt;-2, 14, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="19" col0="bit_shift&lt;-2, 11, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="36" col0="bit_shift&lt;-3, 13, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="4" col0="bit_shift&lt;-3, 13, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="28" col0="bit_shift&lt;1, 14, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="56" col0="bit_shift&lt;-2, 13, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="71" col0="bit_shift&lt;-2, 15, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="47" col0="bit_shift&lt;-3, 15, 13, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="44" col0="bit_shift&lt;-1, 15, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="77" col0="bit_shift&lt;-2, 12, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="81" col0="bit_shift&lt;-5, 14, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="119" col0="bit_shift&lt;-3, 12, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="206" col0="relu&lt;ap_fixed&lt;15, 11, AP_TRN, AP_WRAP, 0&gt;, ap_ufixed&lt;11, 7, AP_TRN, AP_WRAP, 0&gt;, relu_config10&gt;" col1="nnet_activation.h:39" col2="228" col3="319" col4="257" col5="123" col6="124"/>
+                    <row id="204" col0="dense_da_12&lt;ap_ufixed&lt;11, 7, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;10, 7, AP_TRN, AP_WRAP, 0&gt; &gt;" col1="nnet_code_gen.h:754" col2="19107" col3="" col4="" col5="" col6="">
+                        <row id="240" col0="bit_shift&lt;2, 5, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="73" col0="bit_shift&lt;4, 3, 2, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="78" col0="bit_shift&lt;1, 5, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="85" col0="bit_shift&lt;-2, 7, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="96" col0="bit_shift&lt;4, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="97" col0="bit_shift&lt;-1, 3, 2, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="106" col0="bit_shift&lt;-2, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="109" col0="bit_shift&lt;-1, 5, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="115" col0="bit_shift&lt;3, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="118" col0="bit_shift&lt;1, 6, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="22" col0="bit_shift&lt;-3, 7, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="23" col0="bit_shift&lt;-2, 4, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="30" col0="bit_shift&lt;-2, 8, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="33" col0="bit_shift&lt;1, 9, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="38" col0="bit_shift&lt;1, 7, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="48" col0="bit_shift&lt;1, 9, 5, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="53" col0="bit_shift&lt;3, 7, 4, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="58" col0="bit_shift&lt;1, 10, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="64" col0="bit_shift&lt;-1, 9, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="150" col0="bit_shift&lt;3, 7, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="158" col0="bit_shift&lt;-2, 11, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="159" col0="bit_shift&lt;-1, 12, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="163" col0="bit_shift&lt;-2, 10, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="170" col0="bit_shift&lt;3, 11, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="178" col0="bit_shift&lt;4, 11, 7, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:65" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="184" col0="bit_shift&lt;1, 8, 6, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="181" col0="bit_shift&lt;2, 13, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="126" col0="bit_shift&lt;1, 11, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="129" col0="bit_shift&lt;-1, 14, 12, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="178" col2_disp="   178 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="139" col0="bit_shift&lt;1, 12, 8, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="141" col0="bit_shift&lt;-4, 14, 11, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="267" col2_disp="   267 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="144" col0="bit_shift&lt;-5, 12, 10, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                        <row id="149" col0="bit_shift&lt;-2, 12, 9, AP_TRN, AP_WRAP, 0&gt;" col1="nnet_function_stubs.h:58" col2="89" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="203" col0="dense_3_oq&lt;ap_fixed&lt;10, 7, AP_TRN, AP_WRAP, 0&gt;, ap_fixed&lt;9, 7, AP_TRN, AP_WRAP, 0&gt; &gt;" col1="nnet_code_gen.h:861" col2="816" col3="" col4="" col5="" col6=""/>
+                </row>
+            </rows>
+            <notes>
+                <note name="*" desc="Exceeded design size warning message threshold"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

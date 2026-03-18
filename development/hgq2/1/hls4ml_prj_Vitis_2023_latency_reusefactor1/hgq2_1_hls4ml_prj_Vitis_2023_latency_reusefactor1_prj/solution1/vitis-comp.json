@@ -1,0 +1,9 @@
+{
+  "name": "hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj-solution1",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["hls_config.cfg"],
+    "work_dir": "..\/..\/."
+  }
+}

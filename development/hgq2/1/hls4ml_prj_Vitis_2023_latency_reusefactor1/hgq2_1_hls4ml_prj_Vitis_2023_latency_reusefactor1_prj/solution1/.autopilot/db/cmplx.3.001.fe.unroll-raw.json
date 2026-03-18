@@ -1,0 +1,184 @@
+{
+  "0": {
+    "basicblocks": 1015,
+    "calls": "7 1 2 5 10 11 8",
+    "file": "hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.cpp",
+    "fileloc": 7,
+    "instructions": 3647,
+    "loads": {
+      "L": 260,
+      "T": 64
+    },
+    "name": "hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1",
+    "stores": {
+      "L": 144,
+      "T": 5
+    },
+    "total_instructions": 239095
+  },
+  "1": {
+    "basicblocks": 708,
+    "calls": "",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 1409,
+    "loads": {
+      "L": 64
+    },
+    "name": "relu<ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, ap_ufixed<12, 6, AP_TRN, AP_WRAP, 0>, relu_config4>",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 1409
+  },
+  "10": {
+    "basicblocks": 18637,
+    "calls": "9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 54116,
+    "loads": {
+      "L": 6240
+    },
+    "name": "dense_latency<ap_ufixed<9, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, config9>",
+    "stores": {
+      "L": 3168
+    },
+    "total_instructions": 54724
+  },
+  "11": {
+    "basicblocks": 356,
+    "calls": "",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 705,
+    "loads": {
+      "L": 32
+    },
+    "name": "relu<ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<11, 7, AP_TRN, AP_WRAP, 0>, relu_config10>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 705
+  },
+  "2": {
+    "basicblocks": 37133,
+    "calls": "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 107583,
+    "loads": {
+      "L": 12416
+    },
+    "name": "dense_latency<ap_ufixed<11, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, config6>",
+    "stores": {
+      "L": 6240
+    },
+    "total_instructions": 108191
+  },
+  "3": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 19,
+    "loads": {
+      "L": 4
+    },
+    "name": "cast<ap_ufixed<11, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, config6>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 19
+  },
+  "4": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 19,
+    "loads": {
+      "L": 4
+    },
+    "name": "cast<ap_fixed<26, 19, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, config3>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 19
+  },
+  "5": {
+    "basicblocks": 356,
+    "calls": "",
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 705,
+    "loads": {
+      "L": 32
+    },
+    "name": "relu<ap_fixed<14, 11, AP_TRN, AP_WRAP, 0>, ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, relu_config7>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 705
+  },
+  "6": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 19,
+    "loads": {
+      "L": 4
+    },
+    "name": "cast<ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 7, AP_TRN, AP_WRAP, 0>, config12>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 19
+  },
+  "7": {
+    "basicblocks": 22829,
+    "calls": "4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 58912,
+    "loads": {
+      "L": 6288
+    },
+    "name": "dense_latency<ap_fixed<26, 19, AP_TRN, AP_WRAP, 0>, ap_fixed<14, 8, AP_TRN, AP_WRAP, 0>, config3>",
+    "stores": {
+      "L": 3264
+    },
+    "total_instructions": 60128
+  },
+  "8": {
+    "basicblocks": 3617,
+    "calls": "6 6 6 6 6",
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 9491,
+    "loads": {
+      "L": 1002
+    },
+    "name": "dense_latency<ap_ufixed<10, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<10, 7, AP_TRN, AP_WRAP, 0>, config12>",
+    "stores": {
+      "L": 495
+    },
+    "total_instructions": 9586
+  },
+  "9": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 19,
+    "loads": {
+      "L": 4
+    },
+    "name": "cast<ap_ufixed<9, 7, AP_TRN, AP_WRAP, 0>, ap_fixed<15, 11, AP_TRN, AP_WRAP, 0>, config9>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 19
+  }
+}

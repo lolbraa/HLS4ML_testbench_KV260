@@ -1,0 +1,766 @@
+---
+MainSourceFile:  /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          797747
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          1025575
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          1026043
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          1026512
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /tools/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          1310056
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_27_1:  '
+    FileOffset:      27
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          1684345
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_27_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_39_1:  '
+    FileOffset:      39
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          1684583
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_39_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_56_1:  '
+    FileOffset:      56
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_types.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          1685078
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_56_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_1:  '
+    FileOffset:      265
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2364860
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_275_1:  '
+    FileOffset:      275
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2365247
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_275_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_286_1:  '
+    FileOffset:      286
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2365582
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_286_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_293_1:  '
+    FileOffset:      293
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2365805
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_293_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_295_2:  '
+    FileOffset:      295
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2365900
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_295_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_307_1:  '
+    FileOffset:      307
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2366264
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_307_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_309_2:  '
+    FileOffset:      309
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2366346
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_309_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_324_1:  '
+    FileOffset:      324
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2366689
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_324_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_344_1:  '
+    FileOffset:      344
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2367142
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_344_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_345_2:  '
+    FileOffset:      345
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2367187
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_345_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_360_1:  '
+    FileOffset:      360
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2367596
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_360_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_367_1:  '
+    FileOffset:      367
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_helpers.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2367809
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_367_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_136_1:  '
+    FileOffset:      136
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2377361
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_136_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_2:  '
+    FileOffset:      137
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2377445
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_3:  '
+    FileOffset:      158
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2377987
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_159_4:  '
+    FileOffset:      159
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_conv1d_latency.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2378071
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_159_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_31_1:  '
+    FileOffset:      31
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2388255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_31_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_43_1:  '
+    FileOffset:      43
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2388508
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_43_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_1:  '
+    FileOffset:      57
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2388869
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_84_1:  '
+    FileOffset:      84
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2389685
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_84_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_1:  '
+    FileOffset:      114
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2390346
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_151_1:  '
+    FileOffset:      151
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2391491
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_151_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_167_1:  '
+    FileOffset:      167
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2391955
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_167_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_200_1:  '
+    FileOffset:      200
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2392887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_200_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_213_2:  '
+    FileOffset:      213
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2393422
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_213_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_246_1:  '
+    FileOffset:      246
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2394285
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_246_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_255_2:  '
+    FileOffset:      255
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2394555
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_255_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_268_3:  '
+    FileOffset:      268
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2395118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_268_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_275_1:  '
+    FileOffset:      275
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2395355
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_275_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_288_1:  '
+    FileOffset:      288
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2395715
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_288_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_1:  '
+    FileOffset:      325
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2396672
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_2:  '
+    FileOffset:      330
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2396792
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_331_3:  '
+    FileOffset:      331
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2396849
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_331_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_348_4:  '
+    FileOffset:      348
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2397449
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_348_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_361_1:  '
+    FileOffset:      361
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2397957
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_361_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_369_2:  '
+    FileOffset:      369
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2398101
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_369_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_405_1:  '
+    FileOffset:      405
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2399296
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_405_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_407_2:  '
+    FileOffset:      407
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2399365
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_407_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_409_3:  '
+    FileOffset:      409
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2399434
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_409_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_414_4:  '
+    FileOffset:      414
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2399690
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_414_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_427_1:  '
+    FileOffset:      427
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2400004
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_427_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_457_1:  '
+    FileOffset:      457
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2400641
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_457_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_484_1:  '
+    FileOffset:      484
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2401477
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_484_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_498_1:  '
+    FileOffset:      498
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2401819
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_498_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_514_1:  '
+    FileOffset:      514
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2402277
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_514_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_532_1:  '
+    FileOffset:      532
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2402747
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_532_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_549_1:  '
+    FileOffset:      549
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2403150
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_549_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_566_1:  '
+    FileOffset:      566
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2403545
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_566_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_596_1:  '
+    FileOffset:      596
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2404211
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_596_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_615_1:  '
+    FileOffset:      615
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2404785
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_615_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_645_1:  '
+    FileOffset:      645
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2405451
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_645_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_664_1:  '
+    FileOffset:      664
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2406005
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_664_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_694_1:  '
+    FileOffset:      694
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2406654
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_694_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_721_1:  '
+    FileOffset:      721
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2407492
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_721_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_749_1:  '
+    FileOffset:      749
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2408176
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_749_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_779_1:  '
+    FileOffset:      779
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2408861
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_779_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_808_1:  '
+    FileOffset:      808
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2409701
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_808_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_828_1:  '
+    FileOffset:      828
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2410120
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_828_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_229_1:  '
+    FileOffset:      229
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2416174
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_229_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_236_2:  '
+    FileOffset:      236
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2416314
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_236_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_245_3:  '
+    FileOffset:      245
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2416579
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_245_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_254_4:  '
+    FileOffset:      254
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2416773
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_254_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_258_5:  '
+    FileOffset:      258
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2416866
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_258_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_269_6:  '
+    FileOffset:      269
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2417192
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_269_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_273_7:  '
+    FileOffset:      273
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2417302
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_273_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_297_1:  '
+    FileOffset:      297
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2418268
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_297_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_301_2:  '
+    FileOffset:      301
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2418354
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_301_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_320_1:  '
+    FileOffset:      320
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2419030
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_320_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_211_1:  '
+    FileOffset:      211
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2425332
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_220_2:  '
+    FileOffset:      220
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2425610
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_220_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_325_1:  '
+    FileOffset:      325
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2428831
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_325_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_2:  '
+    FileOffset:      330
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2428973
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_338_3:  '
+    FileOffset:      338
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_activation_stream.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2429177
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_338_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      33
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      107
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      189
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_dense_resource.h
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_14_1:  '
+    FileOffset:      14
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_dense_compressed.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2455518
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_14_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_74_1:  '
+    FileOffset:      74
+    FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/firmware/nnet_utils/nnet_dense_compressed.h
+    Replacements:    
+      - FilePath:        /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_2023_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor1.pp.0.cpp
+        Offset:          2457389
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_74_1: '
+...

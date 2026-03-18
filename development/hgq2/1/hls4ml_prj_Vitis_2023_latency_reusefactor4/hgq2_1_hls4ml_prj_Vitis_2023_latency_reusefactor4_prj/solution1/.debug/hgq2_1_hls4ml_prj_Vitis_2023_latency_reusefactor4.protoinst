@@ -1,0 +1,49 @@
+{
+	"version": "1.0",
+	"modules": {
+		"hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor4": {
+			"proto_instances": {
+				"/AESL_inst_hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor4_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_dense_latency_ap_fixed_26_19_5_3_0_ap_fixed_14_8_5_3_0_config3_s_fu_303/grp_dense_latency_ap_fixed_26_19_5_3_0_ap_fixed_14_8_5_3_0_config3_s_fu_303_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_dense_latency_ap_ufixed_11_6_5_3_0_ap_fixed_14_11_5_3_0_config6_s_fu_349/grp_dense_latency_ap_ufixed_11_6_5_3_0_ap_fixed_14_11_5_3_0_config6_s_fu_349_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_dense_latency_ap_ufixed_9_7_5_3_0_ap_fixed_15_11_5_3_0_config9_s_fu_402/grp_dense_latency_ap_ufixed_9_7_5_3_0_ap_fixed_15_11_5_3_0_config9_s_fu_402_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}
