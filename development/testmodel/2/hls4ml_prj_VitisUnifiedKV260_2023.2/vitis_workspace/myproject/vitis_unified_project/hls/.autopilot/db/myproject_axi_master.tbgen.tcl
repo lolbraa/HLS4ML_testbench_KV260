@@ -287,8 +287,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "batch_size", "Type" : "None", "Direction" : "I"},
 			{"Name" : "stream_in0_linput", "Type" : "Fifo", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "9", "SubInstance" : "compute_U0", "Port" : "stream_in0_linput"},
-					{"ID" : "5", "SubInstance" : "load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0", "Port" : "stream_in0_linput"}]},
+					{"ID" : "5", "SubInstance" : "load_input_float_array_ap_fixed_16_6_5_3_0_16u_U0", "Port" : "stream_in0_linput"},
+					{"ID" : "9", "SubInstance" : "compute_U0", "Port" : "stream_in0_linput"}]},
 			{"Name" : "exp_table", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "9", "SubInstance" : "compute_U0", "Port" : "exp_table"}]},
@@ -297,8 +297,8 @@ set RtlHierarchyInfo {[
 					{"ID" : "9", "SubInstance" : "compute_U0", "Port" : "invert_table"}]},
 			{"Name" : "stream_out0_layer5_out", "Type" : "Fifo", "Direction" : "IO",
 				"SubConnect" : [
-					{"ID" : "9", "SubInstance" : "compute_U0", "Port" : "stream_out0_layer5_out"},
-					{"ID" : "1141", "SubInstance" : "store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0", "Port" : "stream_out0_layer5_out"}]}]},
+					{"ID" : "1141", "SubInstance" : "store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0", "Port" : "stream_out0_layer5_out"},
+					{"ID" : "9", "SubInstance" : "compute_U0", "Port" : "stream_out0_layer5_out"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.control_s_axi_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem_in0_m_axi_U", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.gmem_out0_m_axi_U", "Parent" : "0"},

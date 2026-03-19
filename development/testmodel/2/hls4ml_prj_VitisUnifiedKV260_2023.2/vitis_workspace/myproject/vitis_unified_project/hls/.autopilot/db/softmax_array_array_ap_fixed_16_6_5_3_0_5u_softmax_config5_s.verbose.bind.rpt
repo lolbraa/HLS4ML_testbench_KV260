@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s'
 ================================================================
-* Date:           Thu Mar 19 09:18:54 2026
+* Date:           Thu Mar 19 11:33:27 2026
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        vitis_unified_project
@@ -81,14 +81,14 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 0.00>
-ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln359 = call void @softmax_stable<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:359]   --->   Operation 3 'call' 'call_ln359' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 3 [2/2] (0.00ns)   --->   "%call_ln359 = call void @softmax_stable<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:359]   --->   Operation 3 'call' 'call_ln359' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
 ST_2 : Operation 4 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 4 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %stream_out0_layer5_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer4_out, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 7 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln359 = call void @softmax_stable<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:359]   --->   Operation 8 'call' 'call_ln359' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 8 [1/2] (0.00ns)   --->   "%call_ln359 = call void @softmax_stable<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:359]   --->   Operation 8 'call' 'call_ln359' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 9 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
 

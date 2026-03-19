@@ -1,29 +1,11 @@
 {
     "1": {
-        "name": "dense<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, config4>",
-        "file": "nnet_dense_stream.h",
-        "fileloc": "82",
-        "instructions": "76",
-        "total_instructions": "1729",
-        "calls": "9",
-        "basicblocks": "1"
-    },
-    "2": {
-        "name": "softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_activation_stream.h",
-        "fileloc": "359",
-        "instructions": "6",
-        "total_instructions": "109",
-        "calls": "8",
-        "basicblocks": "1"
-    },
-    "3": {
-        "name": "compute",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
-        "fileloc": "42",
-        "instructions": "23",
-        "total_instructions": "6609",
-        "calls": "7",
+        "name": "load_input<float,array<ap_fixed,16u>>_Pipeline_VITIS_LOOP_13_1",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
+        "fileloc": "12",
+        "instructions": "693",
+        "total_instructions": "693",
+        "calls": "",
         "basicblocks": "4",
         "loads": {
             "L": "1"
@@ -35,75 +17,9 @@
             "L": "1"
         }
     },
-    "4": {
-        "name": "entry_proc",
-        "file": "myproject_axi_master.cpp",
-        "fileloc": "0",
-        "instructions": "4",
-        "total_instructions": "4",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "5": {
-        "name": "store_result<float, array<ap_fixed<16, 6, 5, 3, 0>, 5u> >",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
-        "fileloc": "29",
-        "instructions": "21",
-        "total_instructions": "291",
-        "calls": "10",
-        "basicblocks": "1"
-    },
-    "0": {
-        "name": "myproject_axi_master",
-        "file": "myproject_axi_master.cpp",
-        "fileloc": "47",
-        "instructions": "35",
-        "total_instructions": "7651",
-        "calls": "4 12 3 5",
-        "basicblocks": "1"
-    },
-    "6": {
-        "name": "dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_dense_stream.h",
-        "fileloc": "87",
-        "instructions": "90",
-        "total_instructions": "4401",
-        "calls": "11",
-        "basicblocks": "1"
-    },
-    "7": {
-        "name": "myproject",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject.cpp",
-        "fileloc": "41",
-        "instructions": "21",
-        "total_instructions": "6586",
-        "calls": "6 13 1 2",
-        "basicblocks": "1"
-    },
-    "8": {
-        "name": "softmax_stable<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_activation_stream.h",
-        "fileloc": "198",
-        "instructions": "103",
-        "total_instructions": "103",
-        "calls": "",
-        "basicblocks": "1",
-        "loads": {
-            "G": "6"
-        }
-    },
-    "9": {
-        "name": "dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config4>",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_dense_stream.h",
-        "fileloc": "17",
-        "instructions": "1653",
-        "total_instructions": "1653",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "10": {
+    "2": {
         "name": "store_result<float,array<ap_fixed,5u>>_Pipeline_VITIS_LOOP_29_1",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
         "fileloc": "28",
         "instructions": "270",
         "total_instructions": "270",
@@ -119,25 +35,64 @@
             "L": "1"
         }
     },
-    "11": {
-        "name": "dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config2>",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_dense_stream.h",
-        "fileloc": "17",
-        "instructions": "4311",
-        "total_instructions": "4311",
-        "calls": "",
-        "basicblocks": "1"
-    },
-    "12": {
-        "name": "load_input<float, array<ap_fixed<16, 6, 5, 3, 0>, 16u> >",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
-        "fileloc": "13",
-        "instructions": "19",
-        "total_instructions": "712",
+    "3": {
+        "name": "dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_dense_stream.h",
+        "fileloc": "87",
+        "instructions": "90",
+        "total_instructions": "4401",
         "calls": "14",
         "basicblocks": "1"
     },
-    "13": {
+    "4": {
+        "name": "dense<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, config4>",
+        "file": "nnet_dense_stream.h",
+        "fileloc": "82",
+        "instructions": "76",
+        "total_instructions": "1729",
+        "calls": "6",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "store_result<float, array<ap_fixed<16, 6, 5, 3, 0>, 5u> >",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
+        "fileloc": "29",
+        "instructions": "21",
+        "total_instructions": "291",
+        "calls": "2",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "myproject_axi_master",
+        "file": "myproject_axi_master.cpp",
+        "fileloc": "47",
+        "instructions": "35",
+        "total_instructions": "7651",
+        "calls": "10 9 13 5",
+        "basicblocks": "1"
+    },
+    "6": {
+        "name": "dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config4>",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_dense_stream.h",
+        "fileloc": "17",
+        "instructions": "1653",
+        "total_instructions": "1653",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "7": {
+        "name": "softmax_stable<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_activation_stream.h",
+        "fileloc": "198",
+        "instructions": "103",
+        "total_instructions": "103",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "6"
+        }
+    },
+    "8": {
         "name": "relu<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, relu_config3>",
         "file": "nnet_activation_stream.h",
         "fileloc": "39",
@@ -146,13 +101,49 @@
         "calls": "",
         "basicblocks": "1"
     },
-    "14": {
-        "name": "load_input<float,array<ap_fixed,16u>>_Pipeline_VITIS_LOOP_13_1",
-        "file": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
-        "fileloc": "12",
-        "instructions": "693",
-        "total_instructions": "693",
+    "9": {
+        "name": "load_input<float, array<ap_fixed<16, 6, 5, 3, 0>, 16u> >",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
+        "fileloc": "13",
+        "instructions": "19",
+        "total_instructions": "712",
+        "calls": "1",
+        "basicblocks": "1"
+    },
+    "10": {
+        "name": "entry_proc",
+        "file": "myproject_axi_master.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
         "calls": "",
+        "basicblocks": "1"
+    },
+    "11": {
+        "name": "myproject",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject.cpp",
+        "fileloc": "41",
+        "instructions": "21",
+        "total_instructions": "6586",
+        "calls": "3 8 4 12",
+        "basicblocks": "1"
+    },
+    "12": {
+        "name": "softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_activation_stream.h",
+        "fileloc": "359",
+        "instructions": "6",
+        "total_instructions": "109",
+        "calls": "7",
+        "basicblocks": "1"
+    },
+    "13": {
+        "name": "compute",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp",
+        "fileloc": "42",
+        "instructions": "23",
+        "total_instructions": "6609",
+        "calls": "11",
         "basicblocks": "4",
         "loads": {
             "L": "1"
@@ -163,5 +154,14 @@
         "loops": {
             "L": "1"
         }
+    },
+    "14": {
+        "name": "dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config2>",
+        "file": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/nnet_utils\/nnet_dense_stream.h",
+        "fileloc": "17",
+        "instructions": "4311",
+        "total_instructions": "4311",
+        "calls": "",
+        "basicblocks": "1"
     }
 }

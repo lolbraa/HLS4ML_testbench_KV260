@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/vitis_unified_project.hlsrun_package_summary",
+ "thisFile": "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/vitis_unified_project.hlsrun_package_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,34 +9,34 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu Mar 19 09:19:23 2026",
- "timestampMillis": "1773908363630",
+ "dateTimestamp": "Thu Mar 19 11:34:01 2026",
+ "timestampMillis": "1773920041582",
  "buildStep": {
-  "cmdId": "924610da-e1d0-4d39-a3a0-57fa57bb8344",
+  "cmdId": "a2855ddf-f57d-4085-98cc-b6fd29606452",
   "name": "vitis-run",
-  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/logs/vitis_unified_project.steps.log",
-  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project ",
+  "logFile": "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/logs/vitis_unified_project.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project ",
   "args": [
    "--mode",
    "hls",
    "--package",
    "--config",
-   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg",
+   "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg",
    "--work_dir",
    "vitis_unified_project"
   ],
   "iniFiles": [],
-  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject"
+  "cwd": "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 19 09:19:23 2026",
- "timestampMillis": "1773908363630",
+ "dateTimestamp": "Thu Mar 19 11:34:01 2026",
+ "timestampMillis": "1773920041582",
  "status": {
-  "cmdId": "924610da-e1d0-4d39-a3a0-57fa57bb8344",
+  "cmdId": "a2855ddf-f57d-4085-98cc-b6fd29606452",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Thu Mar 19 09:19:24 2026",
- "timestampMillis": "1773908364705",
+ "dateTimestamp": "Thu Mar 19 11:34:02 2026",
+ "timestampMillis": "1773920042833",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -59,13 +59,13 @@
     "base": {
      "type": "KERNEL",
      "name": "myproject_axi_master",
-     "file": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
+     "file": "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
      "reports": [],
      "uuid": ""
     },
     "sources": [
-     "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp",
-     "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp"
+     "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp",
+     "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -81,29 +81,29 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Mar 19 09:19:24 2026",
- "timestampMillis": "1773908364706",
+ "dateTimestamp": "Thu Mar 19 11:34:02 2026",
+ "timestampMillis": "1773920042834",
  "buildStep": {
-  "cmdId": "4e945b70-1540-4589-aad4-d232b51b703f",
+  "cmdId": "5e40b520-6922-4472-aa87-823a1f22c77c",
   "name": "export_design",
-  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/hls.log",
+  "logFile": "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/hls.log",
   "commandLine": "export_design -flow none",
   "args": [
    "-flow",
    "none"
   ],
   "iniFiles": [],
-  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject"
+  "cwd": "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 19 09:19:24 2026",
- "timestampMillis": "1773908364706",
+ "dateTimestamp": "Thu Mar 19 11:34:02 2026",
+ "timestampMillis": "1773920042834",
  "status": {
-  "cmdId": "4e945b70-1540-4589-aad4-d232b51b703f",
+  "cmdId": "5e40b520-6922-4472-aa87-823a1f22c77c",
   "state": "CS_RUNNING"
  }
 }
@@ -111,10 +111,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 19 09:19:44 2026",
- "timestampMillis": "1773908384002",
+ "dateTimestamp": "Thu Mar 19 11:34:22 2026",
+ "timestampMillis": "1773920062929",
  "status": {
-  "cmdId": "4e945b70-1540-4589-aad4-d232b51b703f",
+  "cmdId": "5e40b520-6922-4472-aa87-823a1f22c77c",
   "state": "CS_PASSED"
  }
 }
@@ -122,10 +122,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Mar 19 09:19:44 2026",
- "timestampMillis": "1773908384070",
+ "dateTimestamp": "Thu Mar 19 11:34:22 2026",
+ "timestampMillis": "1773920062974",
  "status": {
-  "cmdId": "924610da-e1d0-4d39-a3a0-57fa57bb8344",
+  "cmdId": "a2855ddf-f57d-4085-98cc-b6fd29606452",
   "state": "CS_PASSED"
  }
 }
@@ -133,8 +133,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 19 09:19:44 2026",
- "timestampMillis": "1773908384070",
+ "dateTimestamp": "Thu Mar 19 11:34:22 2026",
+ "timestampMillis": "1773920062975",
  "report": {
   "path": "",
   "name": "",
@@ -147,8 +147,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Mar 19 09:19:44 2026",
- "timestampMillis": "1773908384070",
+ "dateTimestamp": "Thu Mar 19 11:34:22 2026",
+ "timestampMillis": "1773920062975",
  "report": {
   "path": "",
   "name": "",

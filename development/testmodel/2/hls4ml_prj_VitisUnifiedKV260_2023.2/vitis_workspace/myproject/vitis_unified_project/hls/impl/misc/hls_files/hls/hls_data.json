@@ -90,6 +90,7 @@
   "HlsSolution": {
     "FlowTarget": "vivado",
     "ConfigTcl": [
+      "config_cosim -enable_fifo_sizing=1",
       "config_export -version=1.0.0",
       "config_export -format=xo",
       "config_export -flow=none",
@@ -125,8 +126,8 @@
   },
   "Files": {
     "CSource": [
-      "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject.cpp",
-      "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp"
+      "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject.cpp",
+      "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/myproject_axi_master_compute.vhd",
@@ -1896,7 +1897,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2026-03-19 09:19:01 CET",
+    "Time": "2026-03-19 11:33:38 +0000",
     "ToolName": "vitis_hls",
     "ToolVersion": "2023.2"
   }

@@ -68,13 +68,13 @@ set has_xpm_memory "0"
 set has_blackbox "false"
 set sdx_kernel_type "hls"
 set xo_kernel_name "myproject_axi_master"
-set xo_kernel_files {/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp}
+set xo_kernel_files {/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp}
 set enable_xo_gen true
 set kernel_xml [file join [pwd] ../kernel/kernel.xml]
-set solution_dir "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls"
+set solution_dir "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls"
 set solution_json_file [file join $solution_dir [file tail $solution_dir]_data.json]
-set debug_dir "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/.debug"
-set xo_hls_files_dir "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hls_files"
+set debug_dir "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/.debug"
+set xo_hls_files_dir "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hls_files"
 set hdl_module_list {myproject_axi_master_fpext_32ns_64_2_no_dsp_1
 myproject_axi_master_flow_control_loop_pipe_sequential_init
 myproject_axi_master_mul_16s_8ns_24_1_1
@@ -129,7 +129,7 @@ store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1
 store_result_float_array_ap_fixed_16_6_5_3_0_5u_s
 myproject_axi_master
 }
-set kernel_xo "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo"
+set kernel_xo "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo"
 set detect_deadlock_json "myproject_axi_master_message_dict.json"
 
 ## Variables
