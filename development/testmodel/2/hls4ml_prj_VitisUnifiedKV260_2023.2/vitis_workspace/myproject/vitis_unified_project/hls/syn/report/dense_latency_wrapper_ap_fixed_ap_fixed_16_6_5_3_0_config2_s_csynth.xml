@@ -19,7 +19,7 @@
 <PipelineType>yes</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.331</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.176</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -37,15 +37,15 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_latency.h:33~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
+<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_latency.h:33~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP>844</DSP>
-<FF>5289</FF>
-<LUT>28081</LUT>
+<DSP>837</DSP>
+<FF>4992</FF>
+<LUT>28172</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>

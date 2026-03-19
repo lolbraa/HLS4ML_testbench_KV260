@@ -125,8 +125,8 @@
   },
   "Files": {
     "CSource": [
-      "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/hls4ml-dev-testenv\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject.cpp",
-      "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/hls4ml-dev-testenv\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp"
+      "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject.cpp",
+      "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/myproject_axi_master_compute.vhd",
@@ -1505,18 +1505,18 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.331"
+          "Estimate": "4.176"
         },
         "Area": {
-          "DSP": "844",
+          "DSP": "837",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "67",
-          "FF": "5289",
+          "FF": "4992",
           "AVAIL_FF": "234240",
           "UTIL_FF": "2",
-          "LUT": "28081",
+          "LUT": "28172",
           "AVAIL_LUT": "117120",
-          "UTIL_LUT": "23",
+          "UTIL_LUT": "24",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "0",
@@ -1537,16 +1537,16 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.331"
+          "Estimate": "4.176"
         },
         "Area": {
-          "DSP": "844",
+          "DSP": "837",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "67",
-          "FF": "5550",
+          "FF": "5253",
           "AVAIL_FF": "234240",
           "UTIL_FF": "2",
-          "LUT": "28139",
+          "LUT": "28230",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "24",
           "BRAM_18K": "0",
@@ -1604,13 +1604,13 @@
           "Estimate": "4.053"
         },
         "Area": {
-          "DSP": "261",
+          "DSP": "273",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "20",
-          "FF": "1564",
+          "UTIL_DSP": "21",
+          "FF": "1575",
           "AVAIL_FF": "234240",
           "UTIL_FF": "~0",
-          "LUT": "9150",
+          "LUT": "8766",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "7",
           "BRAM_18K": "0",
@@ -1636,13 +1636,13 @@
           "Estimate": "4.053"
         },
         "Area": {
-          "DSP": "261",
+          "DSP": "273",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "20",
-          "FF": "2674",
+          "UTIL_DSP": "21",
+          "FF": "2685",
           "AVAIL_FF": "234240",
           "UTIL_FF": "1",
-          "LUT": "9214",
+          "LUT": "8830",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "7",
           "BRAM_18K": "0",
@@ -1729,19 +1729,19 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.331"
+          "Estimate": "4.176"
         },
         "Area": {
           "BRAM_18K": "4",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "1",
-          "DSP": "1110",
+          "DSP": "1115",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "88",
-          "FF": "9691",
+          "UTIL_DSP": "89",
+          "FF": "9405",
           "AVAIL_FF": "234240",
           "UTIL_FF": "4",
-          "LUT": "40505",
+          "LUT": "40212",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "34",
           "URAM": "0",
@@ -1761,7 +1761,7 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.331"
+          "Estimate": "4.176"
         },
         "Loops": [{
             "Name": "VITIS_LOOP_42_1",
@@ -1774,13 +1774,13 @@
           "BRAM_18K": "4",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "1",
-          "DSP": "1110",
+          "DSP": "1115",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "88",
-          "FF": "9761",
+          "UTIL_DSP": "89",
+          "FF": "9475",
           "AVAIL_FF": "234240",
           "UTIL_FF": "4",
-          "LUT": "40662",
+          "LUT": "40369",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "34",
           "URAM": "0",
@@ -1877,13 +1877,13 @@
           "BRAM_18K": "32",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "11",
-          "DSP": "1110",
+          "DSP": "1115",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "88",
-          "FF": "15069",
+          "UTIL_DSP": "89",
+          "FF": "14783",
           "AVAIL_FF": "234240",
           "UTIL_FF": "6",
-          "LUT": "58486",
+          "LUT": "58193",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "49",
           "URAM": "0",
@@ -1896,7 +1896,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2026-03-11 14:04:10 UTC",
+    "Time": "2026-03-19 09:19:01 CET",
     "ToolName": "vitis_hls",
     "ToolVersion": "2023.2"
   }

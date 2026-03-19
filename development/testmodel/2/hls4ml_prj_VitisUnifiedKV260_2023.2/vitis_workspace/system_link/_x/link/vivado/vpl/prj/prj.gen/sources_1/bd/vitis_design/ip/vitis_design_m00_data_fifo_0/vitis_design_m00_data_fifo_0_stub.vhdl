@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
--- Date        : Wed Mar 11 14:07:11 2026
+-- Date        : Thu Mar 19 09:11:15 2026
 -- Host        : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_m00_data_fifo_0/vitis_design_m00_data_fifo_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top vitis_design_m00_data_fifo_0 -prefix
+--               vitis_design_m00_data_fifo_0_ vitis_design_m00_data_fifo_0_stub.vhdl
 -- Design      : vitis_design_m00_data_fifo_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xck26-sfvc784-2LV-c

@@ -1771,7 +1771,7 @@
           <SummaryOfTimingAnalysis>
             <TargetClockPeriod>5</TargetClockPeriod>
             <ClockUncertainty>0.62</ClockUncertainty>
-            <EstimatedClockPeriod>4.331</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.176</EstimatedClockPeriod>
           </SummaryOfTimingAnalysis>
           <SummaryOfOverallLatency>
             <Best-caseLatency>1</Best-caseLatency>
@@ -1786,8 +1786,8 @@
         </PerformanceEstimates>
         <AreaEstimates>
           <Resources>
-            <FF>5289</FF>
-            <LUT>28081</LUT>
+            <FF>4992</FF>
+            <LUT>28172</LUT>
           </Resources>
         </AreaEstimates>
         <InterfaceSummary>
@@ -2701,7 +2701,7 @@
           <SummaryOfTimingAnalysis>
             <TargetClockPeriod>5</TargetClockPeriod>
             <ClockUncertainty>0.62</ClockUncertainty>
-            <EstimatedClockPeriod>4.331</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.176</EstimatedClockPeriod>
           </SummaryOfTimingAnalysis>
           <SummaryOfOverallLatency>
             <Best-caseLatency>2</Best-caseLatency>
@@ -2716,8 +2716,8 @@
         </PerformanceEstimates>
         <AreaEstimates>
           <Resources>
-            <FF>5550</FF>
-            <LUT>28139</LUT>
+            <FF>5253</FF>
+            <LUT>28230</LUT>
           </Resources>
         </AreaEstimates>
         <InterfaceSummary>
@@ -3212,8 +3212,8 @@
         </PerformanceEstimates>
         <AreaEstimates>
           <Resources>
-            <FF>1564</FF>
-            <LUT>9150</LUT>
+            <FF>1575</FF>
+            <LUT>8766</LUT>
           </Resources>
         </AreaEstimates>
         <InterfaceSummary>
@@ -4021,8 +4021,8 @@
         </PerformanceEstimates>
         <AreaEstimates>
           <Resources>
-            <FF>2674</FF>
-            <LUT>9214</LUT>
+            <FF>2685</FF>
+            <LUT>8830</LUT>
           </Resources>
         </AreaEstimates>
         <InterfaceSummary>
@@ -4677,7 +4677,7 @@
           <SummaryOfTimingAnalysis>
             <TargetClockPeriod>5</TargetClockPeriod>
             <ClockUncertainty>0.62</ClockUncertainty>
-            <EstimatedClockPeriod>4.331</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.176</EstimatedClockPeriod>
           </SummaryOfTimingAnalysis>
           <SummaryOfOverallLatency>
             <Best-caseLatency>14</Best-caseLatency>
@@ -4693,8 +4693,8 @@
         <AreaEstimates>
           <Resources>
             <BRAM_18K>4</BRAM_18K>
-            <FF>9691</FF>
-            <LUT>40505</LUT>
+            <FF>9405</FF>
+            <LUT>40212</LUT>
             <URAM>0</URAM>
           </Resources>
         </AreaEstimates>
@@ -4850,7 +4850,7 @@
           <SummaryOfTimingAnalysis>
             <TargetClockPeriod>5</TargetClockPeriod>
             <ClockUncertainty>0.62</ClockUncertainty>
-            <EstimatedClockPeriod>4.331</EstimatedClockPeriod>
+            <EstimatedClockPeriod>4.176</EstimatedClockPeriod>
           </SummaryOfTimingAnalysis>
           <SummaryOfOverallLatency>
             <Best-caseLatency>undef</Best-caseLatency>
@@ -4867,8 +4867,8 @@
         <AreaEstimates>
           <Resources>
             <BRAM_18K>4</BRAM_18K>
-            <FF>9761</FF>
-            <LUT>40662</LUT>
+            <FF>9475</FF>
+            <LUT>40369</LUT>
             <URAM>0</URAM>
           </Resources>
         </AreaEstimates>
@@ -6648,8 +6648,8 @@
         <AreaEstimates>
           <Resources>
             <BRAM_18K>32</BRAM_18K>
-            <FF>15069</FF>
-            <LUT>58486</LUT>
+            <FF>14783</FF>
+            <LUT>58193</LUT>
             <URAM>0</URAM>
           </Resources>
         </AreaEstimates>

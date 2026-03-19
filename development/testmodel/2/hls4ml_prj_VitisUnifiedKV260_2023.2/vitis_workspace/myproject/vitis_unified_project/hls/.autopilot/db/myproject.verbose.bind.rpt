@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'myproject'
 ================================================================
-* Date:           Wed Mar 11 14:03:53 2026
+* Date:           Thu Mar 19 09:18:54 2026
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        vitis_unified_project
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  4.331 ns|     0.62 ns|
+    |ap_clk  |  5.00 ns|  4.176 ns|     0.62 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -94,25 +94,25 @@ State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%layer2_out_i = alloca i64 1"   --->   Operation 9 'alloca' 'layer2_out_i' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 1> <FIFO>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%layer3_out_i = alloca i64 1"   --->   Operation 10 'alloca' 'layer3_out_i' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1024> <Depth = 1> <FIFO>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%layer4_out_i = alloca i64 1"   --->   Operation 11 'alloca' 'layer4_out_i' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 80> <Depth = 1> <FIFO>
-ST_1 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln41 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i1024 %layer2_out_i, i256 %stream_in0_linput" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:41]   --->   Operation 12 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_1 : Operation 12 [2/2] (0.00ns)   --->   "%call_ln41 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i1024 %layer2_out_i, i256 %stream_in0_linput" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:41]   --->   Operation 12 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 2 <SV = 1> <Delay = 0.00>
-ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln41 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i1024 %layer2_out_i, i256 %stream_in0_linput" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:41]   --->   Operation 13 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln41 = call void @dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2>, i1024 %layer2_out_i, i256 %stream_in0_linput" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:41]   --->   Operation 13 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln43 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out_i, i1024 %layer3_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:43]   --->   Operation 14 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 14 [2/2] (0.00ns)   --->   "%call_ln43 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out_i, i1024 %layer3_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:43]   --->   Operation 14 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln43 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out_i, i1024 %layer3_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:43]   --->   Operation 15 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln43 = call void @relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>, i1024 %layer2_out_i, i1024 %layer3_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:43]   --->   Operation 15 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln45 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,5u>,config4>, i1024 %layer3_out_i, i80 %layer4_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:45]   --->   Operation 16 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_5 : Operation 16 [2/2] (0.00ns)   --->   "%call_ln45 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,5u>,config4>, i1024 %layer3_out_i, i80 %layer4_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:45]   --->   Operation 16 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln45 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,5u>,config4>, i1024 %layer3_out_i, i80 %layer4_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:45]   --->   Operation 17 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln45 = call void @dense<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,5u>,config4>, i1024 %layer3_out_i, i80 %layer4_out_i" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:45]   --->   Operation 17 'call' 'call_ln45' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out_i, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:47]   --->   Operation 18 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_7 : Operation 18 [2/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out_i, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:47]   --->   Operation 18 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 8 <SV = 7> <Delay = 0.00>
 ST_8 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %stream_in0_linput, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
@@ -124,11 +124,11 @@ ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface 
 ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1"   --->   Operation 25 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @layer2_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer2_out_i, i1024 %layer2_out_i"   --->   Operation 26 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer2_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%empty_80 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out_i, i1024 %layer3_out_i"   --->   Operation 28 'specchannel' 'empty_80' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%empty_78 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out_i, i1024 %layer3_out_i"   --->   Operation 28 'specchannel' 'empty_78' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer3_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_81 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer4_out_i, i80 %layer4_out_i"   --->   Operation 30 'specchannel' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_79 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer4_out_i, i80 %layer4_out_i"   --->   Operation 30 'specchannel' 'empty_79' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer4_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out_i, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:47]   --->   Operation 32 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out_i, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:47]   --->   Operation 32 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 33 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
 
@@ -168,9 +168,9 @@ specinterface_ln0        (specinterface       ) [ 000000000]
 specdataflowpipeline_ln0 (specdataflowpipeline) [ 000000000]
 empty                    (specchannel         ) [ 000000000]
 specinterface_ln0        (specinterface       ) [ 000000000]
-empty_80                 (specchannel         ) [ 000000000]
+empty_78                 (specchannel         ) [ 000000000]
 specinterface_ln0        (specinterface       ) [ 000000000]
-empty_81                 (specchannel         ) [ 000000000]
+empty_79                 (specchannel         ) [ 000000000]
 specinterface_ln0        (specinterface       ) [ 000000000]
 call_ln47                (call                ) [ 000000000]
 ret_ln0                  (ret                 ) [ 000000000]
@@ -562,12 +562,12 @@ ret_ln0                  (ret                 ) [ 000000000]
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
 | Operation|                                 Functional Unit                                |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
-|          |   grp_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s_fu_54   |   844   |    0    |   5545  |  27583  |
+|          |   grp_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s_fu_54   |   837   |    0    |   5248  |  27669  |
 |   call   | grp_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s_fu_61 |    0    |    0    |   960   |   2432  |
-|          |    grp_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s_fu_67   |   261   |    0    |   2668  |   8975  |
+|          |    grp_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s_fu_67   |   273   |    0    |   2679  |   8600  |
 |          |     grp_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_73     |    5    |  2.562  |   257   |   423   |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                                                |   1110  |  2.562  |   9430  |  39413  |
+|   Total  |                                                                                |   1115  |  2.562  |   9144  |  39124  |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -597,10 +597,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |  1110  |    2   |  9430  |  39413 |
+|  Function |  1115  |    2   |  9144  |  39124 |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |  2128  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |  1110  |    2   |  11558 |  39413 |
+|   Total   |  1115  |    2   |  11272 |  39124 |
 +-----------+--------+--------+--------+--------+

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s'" level="0">
-<item name = "Date">Wed Mar 11 14:03:57 2026
+<item name = "Date">Thu Mar 19 09:18:55 2026
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.331 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.176 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -50,7 +50,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 844, 5289, 28081, -</column>
+<column name="Instance">-, 837, 4992, 28172, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 56, -</column>
 <column name="Register">-, -, 261, -, -</column>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97">dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s, 0, 844, 5289, 28081, 0</column>
+<column name="grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97">dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s, 0, 837, 4992, 28172, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

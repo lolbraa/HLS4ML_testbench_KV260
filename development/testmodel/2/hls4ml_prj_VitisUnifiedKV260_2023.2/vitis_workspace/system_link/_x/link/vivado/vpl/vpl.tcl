@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/vpl.tcl"
+  variable script "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/vpl.tcl"
   variable category "vivado_impl"
 }
 

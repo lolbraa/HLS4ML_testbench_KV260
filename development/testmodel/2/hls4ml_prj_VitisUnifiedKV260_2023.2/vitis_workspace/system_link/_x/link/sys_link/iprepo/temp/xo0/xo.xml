@@ -2,7 +2,7 @@
 <Root VersionMajor="7" VersionMinor="3" SoftwareVersionMajor="2023" SoftwareVersionMinor="2" IpCache="no">
   <IpCaches/>
   <Kernels>
-    <Kernel Name="myproject_axi_master" Dir="myproject_axi_master" IP="ip_repo/xilinx_com_hls_myproject_axi_master_1_0" TopIpDir="." ProjectID="71570e8c710241bc8ddb00273e58de0d" Debug="yes" Hls="yes" Pdi="no" ShimSoln="no" SwEmu="no" Domain="" Deadlock="no" KernelJson="yes">
+    <Kernel Name="myproject_axi_master" Dir="myproject_axi_master" IP="ip_repo/xilinx_com_hls_myproject_axi_master_1_0" TopIpDir="." ProjectID="fbb3a9f286704b148114a7882919ea8a" Debug="yes" Hls="yes" Pdi="no" ShimSoln="no" SwEmu="no" Domain="" Deadlock="no" KernelJson="yes">
       <SupportedFlows>
         <SupportedFlow>CPU_EMU</SupportedFlow>
         <SupportedFlow>HW_EMU</SupportedFlow>

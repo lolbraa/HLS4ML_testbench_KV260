@@ -7,15 +7,15 @@
     "design_state": "Synthesized",
     "user_budget": {
         "actual_resources": {
-            "LUT": "27807",
+            "LUT": "27712",
             "LUTAsMem": "360",
-            "REG": "15038",
+            "REG": "14523",
             "BRAM": "8",
             "URAM": "0",
-            "DSP": "1107"
+            "DSP": "1109"
         },
         "supply_resources": {
-            "LUT": "110248",
+            "LUT": "110249",
             "LUTAsMem": "56439",
             "REG": "223507",
             "BRAM": "134",
@@ -31,12 +31,12 @@
                 {
                     "cu_name": "myproject_axi_master_1",
                     "actual_resources": {
-                        "LUT": "27807",
+                        "LUT": "27712",
                         "LUTAsMem": "360",
-                        "REG": "15038",
+                        "REG": "14523",
                         "BRAM": "8",
                         "URAM": "0",
-                        "DSP": "1107"
+                        "DSP": "1109"
                     }
                 }
             ]

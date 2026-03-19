@@ -9,22 +9,22 @@ set SynModuleInfo {
   {SRCNAME {load_input<float, array<ap_fixed<16, 6, 5, 3, 0>, 16u> >} MODELNAME load_input_float_array_ap_fixed_16_6_5_3_0_16u_s RTLNAME myproject_axi_master_load_input_float_array_ap_fixed_16_6_5_3_0_16u_s}
   {SRCNAME dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config2> MODELNAME dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s RTLNAME myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s
     SUBMODULES {
-      {MODELNAME myproject_axi_master_mul_16s_10s_26_1_1 RTLNAME myproject_axi_master_mul_16s_10s_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_axi_master_mul_16s_8s_24_1_1 RTLNAME myproject_axi_master_mul_16s_8s_24_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_axi_master_mul_16s_7ns_23_1_1 RTLNAME myproject_axi_master_mul_16s_7ns_23_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_axi_master_mul_16s_10ns_26_1_1 RTLNAME myproject_axi_master_mul_16s_10ns_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_axi_master_mul_16s_9s_25_1_1 RTLNAME myproject_axi_master_mul_16s_9s_25_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_axi_master_mul_16s_9ns_25_1_1 RTLNAME myproject_axi_master_mul_16s_9ns_25_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME myproject_axi_master_mul_16s_8ns_24_1_1 RTLNAME myproject_axi_master_mul_16s_8ns_24_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_9ns_25_1_1 RTLNAME myproject_axi_master_mul_16s_9ns_25_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_10s_26_1_1 RTLNAME myproject_axi_master_mul_16s_10s_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_9s_25_1_1 RTLNAME myproject_axi_master_mul_16s_9s_25_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_10ns_26_1_1 RTLNAME myproject_axi_master_mul_16s_10ns_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_6ns_22_1_1 RTLNAME myproject_axi_master_mul_16s_6ns_22_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME myproject_axi_master_mul_16s_11ns_26_1_1 RTLNAME myproject_axi_master_mul_16s_11ns_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME myproject_axi_master_mul_16s_11s_26_1_1 RTLNAME myproject_axi_master_mul_16s_11s_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_axi_master_mul_16s_6s_22_1_1 RTLNAME myproject_axi_master_mul_16s_6s_22_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME myproject_axi_master_mul_16s_7s_23_1_1 RTLNAME myproject_axi_master_mul_16s_7s_23_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_axi_master_mul_16s_6ns_22_1_1 RTLNAME myproject_axi_master_mul_16s_6ns_22_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
-      {MODELNAME myproject_axi_master_mul_16s_5ns_21_1_1 RTLNAME myproject_axi_master_mul_16s_5ns_21_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_8s_24_1_1 RTLNAME myproject_axi_master_mul_16s_8s_24_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME myproject_axi_master_mul_16s_12ns_26_1_1 RTLNAME myproject_axi_master_mul_16s_12ns_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_7ns_23_1_1 RTLNAME myproject_axi_master_mul_16s_7ns_23_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME myproject_axi_master_mul_16s_5s_21_1_1 RTLNAME myproject_axi_master_mul_16s_5s_21_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_6s_22_1_1 RTLNAME myproject_axi_master_mul_16s_6s_22_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME myproject_axi_master_mul_16s_12s_26_1_1 RTLNAME myproject_axi_master_mul_16s_12s_26_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
+      {MODELNAME myproject_axi_master_mul_16s_5ns_21_1_1 RTLNAME myproject_axi_master_mul_16s_5ns_21_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME dense<array<ap_fixed,16u>,array<ap_fixed<16,6,5,3,0>,64u>,config2> MODELNAME dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s RTLNAME myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s}

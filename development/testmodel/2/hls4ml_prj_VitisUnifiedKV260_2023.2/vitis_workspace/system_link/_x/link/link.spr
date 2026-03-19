@@ -2,8 +2,8 @@
 <project name="link" dir="" srcset="sources_1">
   <FileSets>
     <FileSet Name="kernel_myproject_axi_master" Type="DesignSrcs">
-      <File Path="/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject.cpp"/>
-      <File Path="/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject_axi_master.cpp"/>
+      <File Path="/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject.cpp"/>
+      <File Path="/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject_axi_master.cpp"/>
       <Config/>
     </FileSet>
     <FileSet Name="sources_1" Type="DesignSrcs">
@@ -22,7 +22,7 @@
         </Step>
         <Step Id="rtd2_system_diagram"/>
         <Step Id="vpl">
-          <Option Id="ConfigFileStr">/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/vplConfig.ini</Option>
+          <Option Id="ConfigFileStr">/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/vplConfig.ini</Option>
           <Option Id="OptionsStrList"></Option>
         </Step>
         <Step Id="rtdgen"/>

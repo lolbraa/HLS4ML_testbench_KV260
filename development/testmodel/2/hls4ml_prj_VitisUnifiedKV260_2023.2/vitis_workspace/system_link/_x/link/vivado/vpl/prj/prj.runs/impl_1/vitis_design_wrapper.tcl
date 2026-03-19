@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl"
+  variable script "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -127,17 +127,17 @@ set rc [catch {
   create_msg_db init_design.pb
 OPTRACE "Design Initialization: pre hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl failed"
     }
     return -code error
   }
@@ -147,12 +147,12 @@ OPTRACE "Design Initialization: pre hook" END { }
   set_param project.gatelevelSubdesign 1
   set_param hd.Visual 0
   set_param place.ultrathreadsUsed 0
-  set_param chipscope.maxJobs 1
-  set_param bd.debug_profile.script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/debug_profile_automation.tcl
+  set_param chipscope.maxJobs 3
+  set_param bd.debug_profile.script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/debug_profile_automation.tcl
   set_param bd.enable_dpa 1
   set_param bd.ForceAppCoreUpgrade 1
   set_param compiler.enablePerformanceTrace 1
-  set_param runs.launchOptions { -jobs 3  }
+  set_param runs.launchOptions { -jobs 6  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xck26-sfvc784-2LV-c
   set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
@@ -161,29 +161,29 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.cache/wt [current_project]
   set_property tool_flow SDx [current_project]
-  set_property parent.project_path /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.xpr [current_project]
+  set_property parent.project_path /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.xpr [current_project]
   set_property ip_repo_paths {
-  /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0
+  /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0
   /tools/Xilinx/Vitis/2023.2/data/cache/xilinx
-  /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache
+  /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache
   /tools/Xilinx/Vitis/2023.2/data/ip
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/.ipcache [current_project]
+  set_property ip_output_repo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/.ipcache [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.dcp
+  add_files -quiet /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd
+  add_files /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc -mode out_of_context /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc
-  set_property processing_order EARLY [get_files /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc]
+  read_xdc -mode out_of_context /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc
+  set_property processing_order EARLY [get_files /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc]
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
@@ -199,17 +199,17 @@ OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "Design Initialization: post hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl failed"
     }
     return -code error
   }
@@ -234,17 +234,17 @@ set rc [catch {
   create_msg_db opt_design.pb
 OPTRACE "Opt Design: pre hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl failed"
     }
     return -code error
   }
@@ -260,17 +260,17 @@ OPTRACE "opt_design reports" START { REPORT }
 OPTRACE "opt_design reports" END { }
 OPTRACE "Opt Design: post hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl failed"
     }
     return -code error
   }
@@ -293,17 +293,17 @@ set rc [catch {
   create_msg_db place_design.pb
 OPTRACE "Place Design: pre hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl failed"
     }
     return -code error
   }
@@ -324,17 +324,17 @@ OPTRACE "place_design reports" START { REPORT }
 OPTRACE "place_design reports" END { }
 OPTRACE "Place Design: post hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl failed"
     }
     return -code error
   }
@@ -392,17 +392,17 @@ OPTRACE "route_design reports" START { REPORT }
 OPTRACE "route_design reports" END { }
 OPTRACE "Route Design: post hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl failed"
     }
     return -code error
   }
@@ -434,17 +434,17 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "Write Bitstream: pre hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl failed"
     }
     return -code error
   }
@@ -464,17 +464,17 @@ OPTRACE "read constraints: write_bitstream_post" END { }
   catch {file copy -force vitis_design_wrapper.ltx debug_nets.ltx}
 OPTRACE "Write Bitstream: post hook" START { }
   set src_rc [catch { 
-    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl"
-    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl
+    puts "source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl"
+    source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl failed"
     }
     return -code error
   }

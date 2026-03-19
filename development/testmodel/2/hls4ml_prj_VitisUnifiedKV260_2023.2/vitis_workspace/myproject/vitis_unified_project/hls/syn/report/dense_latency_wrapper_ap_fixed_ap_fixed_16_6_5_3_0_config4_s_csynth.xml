@@ -37,15 +37,15 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_latency.h:33~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
+<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_latency.h:33~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP>261</DSP>
-<FF>1564</FF>
-<LUT>9150</LUT>
+<DSP>273</DSP>
+<FF>1575</FF>
+<LUT>8766</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>

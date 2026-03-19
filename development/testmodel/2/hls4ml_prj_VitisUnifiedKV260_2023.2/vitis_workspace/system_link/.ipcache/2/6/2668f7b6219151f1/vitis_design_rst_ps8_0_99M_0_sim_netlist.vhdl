@@ -2,7 +2,7 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
--- Date        : Wed Mar 11 13:28:36 2026
+-- Date        : Thu Mar 19 09:10:35 2026
 -- Host        : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ vitis_design_rst_ps8_0_99M_0_sim_netlist.vhdl
@@ -626,13 +626,13 @@ architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sequence_psr
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N_i_1\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of Core_i_1 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of Core_i_1 : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \bsr_dec[0]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \bsr_dec[2]_i_1\ : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of \bsr_dec[2]_i_1\ : label is "soft_lutpair3";
   attribute SOFT_HLUTNM of bsr_i_1 : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \core_dec[0]_i_1\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \core_dec[2]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of from_sys_i_1 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \core_dec[2]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of from_sys_i_1 : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of pr_i_1 : label is "soft_lutpair6";
 begin
   Bsr_out <= \^bsr_out\;

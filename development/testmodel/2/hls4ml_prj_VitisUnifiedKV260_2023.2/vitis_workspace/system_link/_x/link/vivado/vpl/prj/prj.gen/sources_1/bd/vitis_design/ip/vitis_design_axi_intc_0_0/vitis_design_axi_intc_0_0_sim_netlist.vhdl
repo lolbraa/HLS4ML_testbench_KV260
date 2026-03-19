@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
--- Date        : Wed Mar 11 13:28:09 2026
+-- Date        : Thu Mar 19 09:20:46 2026
 -- Host        : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top vitis_design_axi_intc_0_0 -prefix
---               vitis_design_axi_intc_0_0_ vitis_design_axi_intc_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0_sim_netlist.vhdl
 -- Design      : vitis_design_axi_intc_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -61,6 +61,8 @@ entity vitis_design_axi_intc_0_0_address_decoder is
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC;
     Bus_RNW_reg_reg_5 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_address_decoder : entity is "address_decoder";
 end vitis_design_axi_intc_0_0_address_decoder;
 
 architecture STRUCTURE of vitis_design_axi_intc_0_0_address_decoder is
@@ -125,43 +127,43 @@ architecture STRUCTURE of vitis_design_axi_intc_0_0_address_decoder is
   signal s_axi_wdata_1_sn_1 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[0].ce_out_i[0]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[10].ce_out_i[10]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[11].ce_out_i[11]_i_1\ : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[10].ce_out_i[10]_i_1\ : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[11].ce_out_i[11]_i_1\ : label is "soft_lutpair11";
   attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[12].ce_out_i[12]_i_1\ : label is "soft_lutpair9";
   attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[13].ce_out_i[13]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[14].ce_out_i[14]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[14].ce_out_i[14]_i_1\ : label is "soft_lutpair8";
   attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[15].ce_out_i[15]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[15].ce_out_i[15]_i_2\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[16].ce_out_i[16]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[15].ce_out_i[15]_i_2\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[16].ce_out_i[16]_i_1\ : label is "soft_lutpair13";
   attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[17].ce_out_i[17]_i_1\ : label is "soft_lutpair18";
   attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[18].ce_out_i[18]_i_2\ : label is "soft_lutpair18";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[1].ce_out_i[1]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[2].ce_out_i[2]_i_1\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[3].ce_out_i[3]_i_1\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[4].ce_out_i[4]_i_1\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[5].ce_out_i[5]_i_1\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[6].ce_out_i[6]_i_1\ : label is "soft_lutpair9";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[7].ce_out_i[7]_i_1\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[8].ce_out_i[8]_i_1\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[9].ce_out_i[9]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[1].ce_out_i[1]_i_1\ : label is "soft_lutpair8";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[2].ce_out_i[2]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[3].ce_out_i[3]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[4].ce_out_i[4]_i_1\ : label is "soft_lutpair7";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[5].ce_out_i[5]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[6].ce_out_i[6]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[7].ce_out_i[7]_i_1\ : label is "soft_lutpair10";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[8].ce_out_i[8]_i_1\ : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of \GEN_BKEND_CE_REGISTERS[9].ce_out_i[9]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \REG_GEN[0].IAR_NORMAL_MODE_GEN.iar[0]_i_2\ : label is "soft_lutpair17";
   attribute SOFT_HLUTNM of \REG_GEN[0].ier[0]_i_2\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \REG_GEN[1].IAR_NORMAL_MODE_GEN.iar[1]_i_2\ : label is "soft_lutpair16";
   attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_2 : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_3 : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_4 : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_5 : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_6 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_3 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_4 : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_5 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of ip2bus_rdack_int_d1_i_6 : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_2 : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_3 : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_4 : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_5 : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_6 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_3 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_4 : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_5 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of ip2bus_wrack_int_d1_i_6 : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \mer_int[0]_i_1\ : label is "soft_lutpair17";
   attribute SOFT_HLUTNM of \mer_int[1]_i_1\ : label is "soft_lutpair16";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[1]_i_2\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[1]_i_2\ : label is "soft_lutpair14";
   attribute SOFT_HLUTNM of \s_axi_rdata_i[31]_i_2\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \s_axi_rdata_i[31]_i_3\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \s_axi_rdata_i[31]_i_3\ : label is "soft_lutpair14";
 begin
   Bus_RNW_reg_reg_0 <= \^bus_rnw_reg_reg_0\;
   \GEN_BKEND_CE_REGISTERS[0].ce_out_i_reg[0]_0\ <= \^gen_bkend_ce_registers[0].ce_out_i_reg[0]_0\;
@@ -982,6 +984,8 @@ entity vitis_design_axi_intc_0_0_intc_core is
     intr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \REG_GEN[0].ier_reg[0]_1\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_intc_core : entity is "intc_core";
 end vitis_design_axi_intc_0_0_intc_core;
 
 architecture STRUCTURE of vitis_design_axi_intc_0_0_intc_core is
@@ -1407,6 +1411,8 @@ entity vitis_design_axi_intc_0_0_slave_attachment is
     p_0_in3_in : in STD_LOGIC;
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_slave_attachment : entity is "slave_attachment";
 end vitis_design_axi_intc_0_0_slave_attachment;
 
 architecture STRUCTURE of vitis_design_axi_intc_0_0_slave_attachment is
@@ -2256,6 +2262,8 @@ entity vitis_design_axi_intc_0_0_axi_lite_ipif is
     p_0_in3_in : in STD_LOGIC;
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end vitis_design_axi_intc_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of vitis_design_axi_intc_0_0_axi_lite_ipif is
@@ -2406,6 +2414,8 @@ entity vitis_design_axi_intc_0_0_axi_intc is
   attribute C_S_AXI_ADDR_WIDTH of vitis_design_axi_intc_0_0_axi_intc : entity is 9;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of vitis_design_axi_intc_0_0_axi_intc : entity is 32;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_axi_intc : entity is "axi_intc";
   attribute hdl : string;
   attribute hdl of vitis_design_axi_intc_0_0_axi_intc : entity is "VHDL";
   attribute imp_netlist : string;

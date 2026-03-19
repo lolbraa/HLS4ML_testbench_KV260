@@ -94,8 +94,8 @@
     "time_stamp": "2023-10-11-15:42:10",
     "options": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++ -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
     "xclbin_name": "myproject",
-    "uuid": "6ef996d9-1201-40fe-b0a9-df9a030c7b59",
-    "link_uuid": "6ef996d9-1201-40fe-b0a9-df9a030c7b59",
+    "uuid": "612c6fc2-63f0-45e8-a4ea-035fb3873595",
+    "link_uuid": "612c6fc2-63f0-45e8-a4ea-035fb3873595",
     "package_uuid": "",
     "system_compile_flow": false
    },

@@ -35,16 +35,16 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:66</SourceLocation>
+<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:66</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>32</BRAM_18K>
-<DSP>1110</DSP>
-<FF>15069</FF>
-<LUT>58486</LUT>
+<DSP>1115</DSP>
+<FF>14783</FF>
+<LUT>58193</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

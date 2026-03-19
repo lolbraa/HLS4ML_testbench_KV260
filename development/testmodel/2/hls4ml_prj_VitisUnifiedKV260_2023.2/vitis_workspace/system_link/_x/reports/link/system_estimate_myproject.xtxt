@@ -1,0 +1,81 @@
+===============================================================================
+Version:    v++ v2023.2 (64-bit)
+Build:      SW Build 4026344 on 2023-10-11-15:42:10
+Copyright:  Copyright 1986-2023 Xilinx, Inc. All Rights Reserved.
+Created:    Thu Mar 19 09:27:59 2026
+===============================================================================
+
+-------------------------------------------------------------------------------
+Design Name:             myproject
+Target Device:           vendor:kv260_som_som240_1_connector_kv260_carrier_som240_1_connector:kv260pf:0.0
+Target Clock:            99.999001MHz
+Total number of kernels: 1
+-------------------------------------------------------------------------------
+
+Kernel Summary
+Kernel Name           Type  Target              OpenCL Library  Compute Units
+--------------------  ----  ------------------  --------------  -------------
+myproject_axi_master  c     fpga0:OCL_REGION_0  myproject       1
+
+
+-------------------------------------------------------------------------------
+OpenCL Binary:     myproject
+Kernels mapped to: clc_region
+
+Timing Information (MHz)
+Compute Unit            Kernel Name           Module Name                                                           Target Frequency  Estimated Frequency
+----------------------  --------------------  --------------------------------------------------------------------  ----------------  -------------------
+myproject_axi_master_1  myproject_axi_master  entry_proc                                                            200               544.069641
+myproject_axi_master_1  myproject_axi_master  load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1          200               228.571426
+myproject_axi_master_1  myproject_axi_master  load_input_float_array_ap_fixed_16_6_5_3_0_16u_s                      200               228.571426
+myproject_axi_master_1  myproject_axi_master  dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s          200               239.463593
+myproject_axi_master_1  myproject_axi_master  dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      200               239.463593
+myproject_axi_master_1  myproject_axi_master  relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  200               334.896179
+myproject_axi_master_1  myproject_axi_master  dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s          200               246.73082
+myproject_axi_master_1  myproject_axi_master  dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       200               246.73082
+myproject_axi_master_1  myproject_axi_master  softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s   200               240.847794
+myproject_axi_master_1  myproject_axi_master  softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          200               240.847794
+myproject_axi_master_1  myproject_axi_master  myproject                                                             200               239.463593
+myproject_axi_master_1  myproject_axi_master  compute                                                               200               239.463593
+myproject_axi_master_1  myproject_axi_master  store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1         200               228.571426
+myproject_axi_master_1  myproject_axi_master  store_result_float_array_ap_fixed_16_6_5_3_0_5u_s                     200               228.571426
+myproject_axi_master_1  myproject_axi_master  myproject_axi_master                                                  200               228.571426
+
+Latency Information
+Compute Unit            Kernel Name           Module Name                                                           Start Interval  Best (cycles)  Avg (cycles)  Worst (cycles)  Best (absolute)  Avg (absolute)  Worst (absolute)
+----------------------  --------------------  --------------------------------------------------------------------  --------------  -------------  ------------  --------------  ---------------  --------------  ----------------
+myproject_axi_master_1  myproject_axi_master  entry_proc                                                            0               0              0             0               0 ns             0 ns            0 ns
+myproject_axi_master_1  myproject_axi_master  load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1          undef           undef          undef         undef           undef            undef           undef
+myproject_axi_master_1  myproject_axi_master  load_input_float_array_ap_fixed_16_6_5_3_0_16u_s                      undef           undef          undef         undef           undef            undef           undef
+myproject_axi_master_1  myproject_axi_master  dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s          1               1              1             1               5.000 ns         5.000 ns        5.000 ns
+myproject_axi_master_1  myproject_axi_master  dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      2               2              2             2               10.000 ns        10.000 ns       10.000 ns
+myproject_axi_master_1  myproject_axi_master  relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  1               1              1             1               5.000 ns         5.000 ns        5.000 ns
+myproject_axi_master_1  myproject_axi_master  dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s          1               1              1             1               5.000 ns         5.000 ns        5.000 ns
+myproject_axi_master_1  myproject_axi_master  dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       3               3              3             3               15.000 ns        15.000 ns       15.000 ns
+myproject_axi_master_1  myproject_axi_master  softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s   4               4              4             4               20.000 ns        20.000 ns       20.000 ns
+myproject_axi_master_1  myproject_axi_master  softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          5               5              5             5               25.000 ns        25.000 ns       25.000 ns
+myproject_axi_master_1  myproject_axi_master  myproject                                                             6               14             14            14              70.000 ns        70.000 ns       70.000 ns
+myproject_axi_master_1  myproject_axi_master  compute                                                               undef           undef          undef         undef           undef            undef           undef
+myproject_axi_master_1  myproject_axi_master  store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1         undef           undef          undef         undef           undef            undef           undef
+myproject_axi_master_1  myproject_axi_master  store_result_float_array_ap_fixed_16_6_5_3_0_5u_s                     undef           undef          undef         undef           undef            undef           undef
+myproject_axi_master_1  myproject_axi_master  myproject_axi_master                                                  undef           undef          undef         undef           undef            undef           undef
+
+Area Information
+Compute Unit            Kernel Name           Module Name                                                           FF     LUT    DSP  BRAM  URAM
+----------------------  --------------------  --------------------------------------------------------------------  -----  -----  ---  ----  ----
+myproject_axi_master_1  myproject_axi_master  entry_proc                                                            3      29     0    0     0
+myproject_axi_master_1  myproject_axi_master  load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1          1485   10011  0    0     0
+myproject_axi_master_1  myproject_axi_master  load_input_float_array_ap_fixed_16_6_5_3_0_16u_s                      1589   10326  0    0     0
+myproject_axi_master_1  myproject_axi_master  dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s          4992   28172  0    0     0
+myproject_axi_master_1  myproject_axi_master  dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      5253   28230  0    0     0
+myproject_axi_master_1  myproject_axi_master  relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  964    2484   0    0     0
+myproject_axi_master_1  myproject_axi_master  dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s          1575   8766   0    0     0
+myproject_axi_master_1  myproject_axi_master  dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       2685   8830   0    0     0
+myproject_axi_master_1  myproject_axi_master  softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s   202    422    0    4     0
+myproject_axi_master_1  myproject_axi_master  softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          206    465    0    4     0
+myproject_axi_master_1  myproject_axi_master  myproject                                                             9405   40212  0    4     0
+myproject_axi_master_1  myproject_axi_master  compute                                                               9475   40369  0    4     0
+myproject_axi_master_1  myproject_axi_master  store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1         1092   5020   0    0     0
+myproject_axi_master_1  myproject_axi_master  store_result_float_array_ap_fixed_16_6_5_3_0_5u_s                     1229   5386   0    0     0
+myproject_axi_master_1  myproject_axi_master  myproject_axi_master                                                  14783  58193  0    32    0
+-------------------------------------------------------------------------------

@@ -1,37 +1,19 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "7 2 14",
+    "calls": "2 13 10",
     "file": "myproject_axi_master.cpp",
     "fileloc": 47,
     "instructions": 16,
     "name": "myproject_axi_master",
-    "total_instructions": 16762
+    "total_instructions": 16780
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "5",
-    "file": "nnet_activation_stream.h",
-    "fileloc": 351,
-    "instructions": 2,
-    "name": "softmax<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, softmax_config5>",
-    "total_instructions": 189
-  },
-  "10": {
-    "basicblocks": 1,
-    "calls": "12 13 6 1",
-    "file": "myproject.cpp",
-    "fileloc": 7,
-    "instructions": 14,
-    "name": "myproject",
-    "total_instructions": 16506
-  },
-  "11": {
     "basicblocks": 1,
     "calls": "",
     "file": "nnet_dense_latency.h",
     "fileloc": 13,
-    "instructions": 3315,
+    "instructions": 3318,
     "loads": {
       "L": 64
     },
@@ -39,33 +21,9 @@
     "stores": {
       "L": 5
     },
-    "total_instructions": 3315
+    "total_instructions": 3318
   },
-  "12": {
-    "basicblocks": 1,
-    "calls": "9",
-    "file": "nnet_dense_stream.h",
-    "fileloc": 82,
-    "instructions": 245,
-    "loads": {
-      "L": 64
-    },
-    "name": "dense<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, config2>",
-    "stores": {
-      "L": 16
-    },
-    "total_instructions": 11259
-  },
-  "13": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_activation_stream.h",
-    "fileloc": 39,
-    "instructions": 261,
-    "name": "relu<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, relu_config3>",
-    "total_instructions": 1094
-  },
-  "14": {
+  "10": {
     "basicblocks": 15,
     "calls": "",
     "file": "myproject_axi_master.cpp",
@@ -80,54 +38,9 @@
     },
     "total_instructions": 106
   },
-  "2": {
-    "basicblocks": 4,
-    "calls": "10",
-    "file": "myproject_axi_master.cpp",
-    "fileloc": 41,
-    "instructions": 9,
-    "name": "compute",
-    "total_instructions": 16515
-  },
-  "3": {
+  "11": {
     "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_mult.h",
-    "fileloc": 110,
-    "instructions": 3,
-    "loads": {
-      "L": 1
-    },
-    "name": "cast<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config2>",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 3
-  },
-  "4": {
-    "basicblocks": 1,
-    "calls": "11",
-    "file": "nnet_dense_stream.h",
-    "fileloc": 13,
-    "instructions": 2,
-    "name": "dense_latency_wrapper<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4>",
-    "total_instructions": 3317
-  },
-  "5": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "nnet_activation_stream.h",
-    "fileloc": 169,
-    "instructions": 156,
-    "loads": {
-      "G": 6
-    },
-    "name": "softmax_stable<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, softmax_config5>",
-    "total_instructions": 187
-  },
-  "6": {
-    "basicblocks": 1,
-    "calls": "4",
+    "calls": "14",
     "file": "nnet_dense_stream.h",
     "fileloc": 82,
     "instructions": 213,
@@ -138,9 +51,36 @@
     "stores": {
       "L": 64
     },
-    "total_instructions": 3950
+    "total_instructions": 3953
   },
-  "7": {
+  "12": {
+    "basicblocks": 1,
+    "calls": "6",
+    "file": "nnet_activation_stream.h",
+    "fileloc": 351,
+    "instructions": 2,
+    "name": "softmax<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, softmax_config5>",
+    "total_instructions": 189
+  },
+  "13": {
+    "basicblocks": 4,
+    "calls": "4",
+    "file": "myproject_axi_master.cpp",
+    "fileloc": 41,
+    "instructions": 9,
+    "name": "compute",
+    "total_instructions": 16533
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "nnet_dense_stream.h",
+    "fileloc": 13,
+    "instructions": 2,
+    "name": "dense_latency_wrapper<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config4>",
+    "total_instructions": 3320
+  },
+  "2": {
     "basicblocks": 12,
     "calls": "",
     "file": "myproject_axi_master.cpp",
@@ -155,12 +95,72 @@
     },
     "total_instructions": 125
   },
+  "3": {
+    "basicblocks": 1,
+    "calls": "9",
+    "file": "nnet_dense_stream.h",
+    "fileloc": 82,
+    "instructions": 245,
+    "loads": {
+      "L": 64
+    },
+    "name": "dense<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 16>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, config2>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 11274
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "3 5 11 12",
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 14,
+    "name": "myproject",
+    "total_instructions": 16524
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_activation_stream.h",
+    "fileloc": 39,
+    "instructions": 261,
+    "name": "relu<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 64>, relu_config3>",
+    "total_instructions": 1094
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_activation_stream.h",
+    "fileloc": 169,
+    "instructions": 156,
+    "loads": {
+      "G": 6
+    },
+    "name": "softmax_stable<nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, nnet::array<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, 5>, softmax_config5>",
+    "total_instructions": 187
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "cast<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config2>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
   "8": {
     "basicblocks": 1,
-    "calls": "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3",
+    "calls": "7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7",
     "file": "nnet_dense_latency.h",
     "fileloc": 13,
-    "instructions": 10372,
+    "instructions": 10387,
     "loads": {
       "L": 80
     },
@@ -168,7 +168,7 @@
     "stores": {
       "L": 128
     },
-    "total_instructions": 10564
+    "total_instructions": 10579
   },
   "9": {
     "basicblocks": 1,
@@ -177,6 +177,6 @@
     "fileloc": 13,
     "instructions": 2,
     "name": "dense_latency_wrapper<ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, ap_fixed<16, 6, AP_TRN, AP_WRAP, 0>, config2>",
-    "total_instructions": 10566
+    "total_instructions": 10581
   }
 }

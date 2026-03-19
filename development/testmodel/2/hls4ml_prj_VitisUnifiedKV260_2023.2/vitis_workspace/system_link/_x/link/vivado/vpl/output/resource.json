@@ -4,19 +4,19 @@
             "ip_instance": "vitis_design_myproject_axi_master_1_0",
             "resources": [
                 {
-                    "LUT": "27807"
+                    "LUT": "27712"
                 },
                 {
-                    "LUTAsLogic": "27447"
+                    "LUTAsLogic": "27352"
                 },
                 {
                     "LUTAsMem": "360"
                 },
                 {
-                    "REG": "15038"
+                    "REG": "14523"
                 },
                 {
-                    "CARRY8": "2409"
+                    "CARRY8": "2389"
                 },
                 {
                     "F7MUX": "108"
@@ -34,7 +34,7 @@
                     "URAM": "0"
                 },
                 {
-                    "DSP": "1107"
+                    "DSP": "1109"
                 },
                 {
                     "GLOBAL_CLOCK_BUFFERS": "0"

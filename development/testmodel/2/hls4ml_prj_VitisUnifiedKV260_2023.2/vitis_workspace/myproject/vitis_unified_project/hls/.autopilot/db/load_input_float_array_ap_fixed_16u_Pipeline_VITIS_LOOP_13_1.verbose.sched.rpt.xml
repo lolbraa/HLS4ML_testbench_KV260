@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1'" level="0">
-<item name = "Date">Wed Mar 11 14:03:41 2026
+<item name = "Date">Thu Mar 19 09:18:46 2026
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>

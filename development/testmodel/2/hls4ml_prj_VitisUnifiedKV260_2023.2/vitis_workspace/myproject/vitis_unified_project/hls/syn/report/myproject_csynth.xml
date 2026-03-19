@@ -18,7 +18,7 @@
 <PipelineType>dataflow</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.331</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.176</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -35,16 +35,16 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:41</SourceLocation>
+<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:41</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>4</BRAM_18K>
-<DSP>1110</DSP>
-<FF>9691</FF>
-<LUT>40505</LUT>
+<DSP>1115</DSP>
+<FF>9405</FF>
+<LUT>40212</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

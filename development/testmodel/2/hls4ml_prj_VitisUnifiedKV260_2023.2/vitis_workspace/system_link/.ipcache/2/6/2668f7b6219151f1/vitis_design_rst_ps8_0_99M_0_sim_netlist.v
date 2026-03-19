@@ -2,7 +2,7 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (lin64) Build 4029153 Fri Oct 13 20:13:54 MDT 2023
-// Date        : Wed Mar 11 13:28:36 2026
+// Date        : Thu Mar 19 09:10:35 2026
 // Host        : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
 // Command     : write_verilog -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 //               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ vitis_design_rst_ps8_0_99M_0_sim_netlist.v
@@ -533,7 +533,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sequence_psr
     \ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N_i_1 
        (.I0(Pr_out),
         .O(pr_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT2 #(
     .INIT(4'h2)) 
     Core_i_1
@@ -562,7 +562,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sequence_psr
         .I2(seq_cnt[3]),
         .I3(seq_cnt[5]),
         .O(p_5_out[0]));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \bsr_dec[2]_i_1 
@@ -609,7 +609,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sequence_psr
         .I2(seq_cnt[3]),
         .I3(seq_cnt[5]),
         .O(\core_dec[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \core_dec[2]_i_1 
@@ -640,7 +640,7 @@ module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_sequence_psr
         .D(\core_dec[2]_i_1_n_0 ),
         .Q(p_0_in),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT2 #(
     .INIT(4'h8)) 
     from_sys_i_1
