@@ -90,6 +90,7 @@
   "HlsSolution": {
     "FlowTarget": "vivado",
     "ConfigTcl": [
+      "config_cosim -enable_fifo_sizing=1",
       "config_export -version=1.0.0",
       "config_export -format=xo",
       "config_export -flow=none",
@@ -1504,16 +1505,16 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.237"
+          "Estimate": "4.236"
         },
         "Area": {
-          "DSP": "852",
+          "DSP": "858",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "68",
-          "FF": "5422",
+          "FF": "5027",
           "AVAIL_FF": "234240",
           "UTIL_FF": "2",
-          "LUT": "27979",
+          "LUT": "27866",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "23",
           "BRAM_18K": "0",
@@ -1526,26 +1527,26 @@
       },
       "dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s": {
         "Latency": {
-          "LatencyBest": "3",
-          "LatencyAvg": "3",
-          "LatencyWorst": "3",
-          "PipelineII": "3",
+          "LatencyBest": "2",
+          "LatencyAvg": "2",
+          "LatencyWorst": "2",
+          "PipelineII": "2",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.237"
+          "Estimate": "4.236"
         },
         "Area": {
-          "DSP": "852",
+          "DSP": "858",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "68",
-          "FF": "6708",
+          "FF": "5288",
           "AVAIL_FF": "234240",
           "UTIL_FF": "2",
-          "LUT": "28043",
+          "LUT": "27924",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "23",
           "BRAM_18K": "0",
@@ -1603,15 +1604,15 @@
           "Estimate": "4.053"
         },
         "Area": {
-          "DSP": "264",
+          "DSP": "252",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "21",
-          "FF": "1556",
+          "UTIL_DSP": "20",
+          "FF": "1522",
           "AVAIL_FF": "234240",
           "UTIL_FF": "~0",
-          "LUT": "9043",
+          "LUT": "9374",
           "AVAIL_LUT": "117120",
-          "UTIL_LUT": "7",
+          "UTIL_LUT": "8",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "0",
@@ -1635,15 +1636,15 @@
           "Estimate": "4.053"
         },
         "Area": {
-          "DSP": "264",
+          "DSP": "252",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "21",
-          "FF": "2666",
+          "UTIL_DSP": "20",
+          "FF": "2632",
           "AVAIL_FF": "234240",
           "UTIL_FF": "1",
-          "LUT": "9107",
+          "LUT": "9438",
           "AVAIL_LUT": "117120",
-          "UTIL_LUT": "7",
+          "UTIL_LUT": "8",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "0",
@@ -1718,9 +1719,9 @@
       },
       "myproject": {
         "Latency": {
-          "LatencyBest": "15",
-          "LatencyAvg": "15",
-          "LatencyWorst": "15",
+          "LatencyBest": "14",
+          "LatencyAvg": "14",
+          "LatencyWorst": "14",
           "PipelineII": "6",
           "PipelineDepth": "",
           "PipelineType": "dataflow"
@@ -1728,19 +1729,19 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.237"
+          "Estimate": "4.236"
         },
         "Area": {
           "BRAM_18K": "4",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "1",
-          "DSP": "1121",
+          "DSP": "1115",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "89",
-          "FF": "10841",
+          "FF": "9387",
           "AVAIL_FF": "234240",
           "UTIL_FF": "4",
-          "LUT": "40302",
+          "LUT": "40514",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "34",
           "URAM": "0",
@@ -1760,26 +1761,26 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.237"
+          "Estimate": "4.236"
         },
         "Loops": [{
             "Name": "VITIS_LOOP_42_1",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
-            "PipelineDepth": "17"
+            "PipelineDepth": "16"
           }],
         "Area": {
           "BRAM_18K": "4",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "1",
-          "DSP": "1121",
+          "DSP": "1115",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "89",
-          "FF": "10911",
+          "FF": "9457",
           "AVAIL_FF": "234240",
           "UTIL_FF": "4",
-          "LUT": "40459",
+          "LUT": "40671",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "34",
           "URAM": "0",
@@ -1876,13 +1877,13 @@
           "BRAM_18K": "32",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "11",
-          "DSP": "1121",
+          "DSP": "1115",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "89",
-          "FF": "16219",
+          "FF": "14765",
           "AVAIL_FF": "234240",
           "UTIL_FF": "6",
-          "LUT": "58283",
+          "LUT": "58495",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "49",
           "URAM": "0",
@@ -1895,7 +1896,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2026-03-20 08:20:42 +0000",
+    "Time": "2026-03-20 09:43:01 +0000",
     "ToolName": "vitis_hls",
     "ToolVersion": "2023.2"
   }

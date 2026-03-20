@@ -13,7 +13,7 @@ INCFLAGS="-Ifirmware/ap_types/"
 
 PROJECT=myproject
 WRAPPER_NAME=myproject_axi_master
-LIB_STAMP=4543d251
+LIB_STAMP=d6e70a8d
 BASEDIR="$(cd "$(dirname "$0")" && pwd)"
 WEIGHTS_DIR="\"${BASEDIR}/firmware/weights\""
 

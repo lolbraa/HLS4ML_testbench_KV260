@@ -481,10 +481,10 @@ fpga_resource_limit_hint.entry.4:33 %d_xi_xmax_8 = sub i15 %select_ln66_3, i15 %
 
 <Node id="39" bw="10" op_0_bw="10" op_1_bw="15" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:34 %tmp_i_75 = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax, i32 5, i32 14
+fpga_resource_limit_hint.entry.4:34 %tmp_i_73 = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax, i32 5, i32 14
 
 ]]></Node>
-<StgValue><ssdm name="tmp_i_75"/></StgValue>
+<StgValue><ssdm name="tmp_i_73"/></StgValue>
 </operation>
 
 <operation id="36" st_id="2" stage="1" lat="1">
@@ -496,7 +496,7 @@ fpga_resource_limit_hint.entry.4:34 %tmp_i_75 = partselect i10 @_ssdm_op_PartSel
 
 <Node id="40" bw="64" op_0_bw="10">
 <![CDATA[
-fpga_resource_limit_hint.entry.4:35 %zext_ln223 = zext i10 %tmp_i_75
+fpga_resource_limit_hint.entry.4:35 %zext_ln223 = zext i10 %tmp_i_73
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln223"/></StgValue>

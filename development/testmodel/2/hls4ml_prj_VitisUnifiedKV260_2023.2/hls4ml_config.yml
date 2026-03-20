@@ -19,7 +19,7 @@ OutputShapes:
   - 5
 Part: xck26-sfvc784-2LV-c
 ProjectName: myproject
-Stamp: 4543d251
+Stamp: d6e70a8d
 Version: 1.0.0
 VitisUnifiedConfig:
   Board: kv260

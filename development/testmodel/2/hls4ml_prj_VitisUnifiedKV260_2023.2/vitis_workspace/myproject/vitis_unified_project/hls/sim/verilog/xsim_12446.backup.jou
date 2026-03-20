@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar 20 09:43:57 2026
+# Process ID: 12446
+# Current directory: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/myproject_axi_master/xsim_script.tcl}
+# Log file: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/xsim.log
+# Journal file: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/xsim.jou
+# Running On: 161174ea8eb1, OS: Linux, CPU Frequency: 4291.936 MHz, CPU Physical cores: 12, Host memory: 20906 MB
+#-----------------------------------------------------------
+source xsim.dir/myproject_axi_master/xsim_script.tcl
+source myproject_axi_master.tcl

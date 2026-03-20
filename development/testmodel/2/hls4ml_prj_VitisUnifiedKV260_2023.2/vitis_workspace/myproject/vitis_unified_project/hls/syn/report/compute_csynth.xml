@@ -18,7 +18,7 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.237</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.236</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -37,7 +37,7 @@
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
-<IterationLatency>17</IterationLatency>
+<IterationLatency>16</IterationLatency>
 <InstanceList>
 </InstanceList>
 </VITIS_LOOP_42_1>
@@ -60,9 +60,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>4</BRAM_18K>
-<DSP>1121</DSP>
-<FF>10911</FF>
-<LUT>40459</LUT>
+<DSP>1115</DSP>
+<FF>9457</FF>
+<LUT>40671</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

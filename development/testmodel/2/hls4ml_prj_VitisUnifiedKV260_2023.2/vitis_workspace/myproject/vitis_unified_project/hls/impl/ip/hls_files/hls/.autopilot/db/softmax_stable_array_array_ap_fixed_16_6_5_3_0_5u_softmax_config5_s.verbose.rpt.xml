@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s'" level="0">
-<item name = "Date">Fri Mar 20 08:20:13 2026
+<item name = "Date">Fri Mar 20 09:42:31 2026
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">vitis_unified_project</item>
@@ -61,11 +61,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_18s_11ns_26_1_1_U1232">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_18s_11ns_26_1_1_U1233">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_18s_11ns_26_1_1_U1234">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_18s_11ns_26_1_1_U1235">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_18s_11ns_26_1_1_U1236">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1226">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1227">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1228">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1229">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1230">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

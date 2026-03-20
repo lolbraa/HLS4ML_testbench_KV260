@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'myproject'
 ================================================================
-* Date:           Fri Mar 20 08:20:13 2026
+* Date:           Fri Mar 20 09:42:31 2026
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        vitis_unified_project
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  4.237 ns|     0.62 ns|
+    |ap_clk  |  5.00 ns|  4.236 ns|     0.62 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
     |   min   |   max   |    min    |    max    | min | max |   Type   |
     +---------+---------+-----------+-----------+-----+-----+----------+
-    |       15|       15|  75.000 ns|  75.000 ns|    6|    6|  dataflow|
+    |       14|       14|  70.000 ns|  70.000 ns|    6|    6|  dataflow|
     +---------+---------+-----------+-----------+-----+-----+----------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                                                       |                                                                      |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
         |                                Instance                               |                                Module                                |   min   |   max   |    min    |    max    | min | max |   Type  |
         +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
-        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        3|        3|  15.000 ns|  15.000 ns|    3|    3|       no|
+        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
         |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0  |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
         |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        3|        3|  15.000 ns|  15.000 ns|    3|    3|       no|
         |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          |        5|        5|  25.000 ns|  25.000 ns|    5|    5|       no|
@@ -59,12 +59,12 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|       2|    -|
 |FIFO             |        -|     -|     297|     201|    -|
-|Instance         |        4|  1121|   10544|   40099|    -|
+|Instance         |        4|  1115|    9090|   40311|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       -|       -|    -|
 |Register         |        -|     -|       -|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        4|  1121|   10841|   40302|    0|
+|Total            |        4|  1115|    9387|   40514|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -76,12 +76,12 @@
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
     |                                Instance                               |                                Module                                | BRAM_18K| DSP |  FF  |  LUT  | URAM|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
-    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        0|  852|  6708|  28043|    0|
-    |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        0|  264|  2666|   9107|    0|
+    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        0|  858|  5288|  27924|    0|
+    |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        0|  252|  2632|   9438|    0|
     |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0  |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |        0|    0|   964|   2484|    0|
     |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          |        4|    5|   206|    465|    0|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
-    |Total                                                                  |                                                                      |        4| 1121| 10544|  40099|    0|
+    |Total                                                                  |                                                                      |        4| 1115|  9090|  40311|    0|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
 
     * DSP: 
@@ -217,9 +217,9 @@ ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface 
 ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_1"   --->   Operation 25 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @layer2_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer2_out_i, i1024 %layer2_out_i"   --->   Operation 26 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer2_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%empty_80 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out_i, i1024 %layer3_out_i"   --->   Operation 28 'specchannel' 'empty_80' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%empty_78 = specchannel i32 @_ssdm_op_SpecChannel, void @layer3_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i1024 %layer3_out_i, i1024 %layer3_out_i"   --->   Operation 28 'specchannel' 'empty_78' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1024 %layer3_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 29 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_81 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer4_out_i, i80 %layer4_out_i"   --->   Operation 30 'specchannel' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%empty_79 = specchannel i32 @_ssdm_op_SpecChannel, void @layer4_out_str, i32 1, void @p_str, void @p_str, i32 1, i32 1, i80 %layer4_out_i, i80 %layer4_out_i"   --->   Operation 30 'specchannel' 'empty_79' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i80 %layer4_out_i, void @empty_14, i32 0, i32 0, void @empty_1, i32 0, i32 0, void @empty_1, void @empty_1, void @empty_1, i32 0, i32 0, i32 0, i32 0, void @empty_1, void @empty_1, i32 4294967295, i32 0"   --->   Operation 31 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_8 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln47 = call void @softmax<array,array<ap_fixed<16,6,5,3,0>,5u>,softmax_config5>, i80 %layer4_out_i, i11 %exp_table, i18 %invert_table, i80 %stream_out0_layer5_out" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:47]   --->   Operation 32 'call' 'call_ln47' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 33 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
@@ -261,9 +261,9 @@ specinterface_ln0        (specinterface       ) [ 000000000]
 specdataflowpipeline_ln0 (specdataflowpipeline) [ 000000000]
 empty                    (specchannel         ) [ 000000000]
 specinterface_ln0        (specinterface       ) [ 000000000]
-empty_80                 (specchannel         ) [ 000000000]
+empty_78                 (specchannel         ) [ 000000000]
 specinterface_ln0        (specinterface       ) [ 000000000]
-empty_81                 (specchannel         ) [ 000000000]
+empty_79                 (specchannel         ) [ 000000000]
 specinterface_ln0        (specinterface       ) [ 000000000]
 call_ln47                (call                ) [ 000000000]
 ret_ln0                  (ret                 ) [ 000000000]
@@ -659,12 +659,12 @@ ret_ln0                  (ret                 ) [ 000000000]
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
 | Operation|                                 Functional Unit                                |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
-|          |   grp_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s_fu_54   |   852   |    0    |   6702  |  27503  |
+|          |   grp_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s_fu_54   |   858   |    0    |   5283  |  27403  |
 |   call   | grp_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s_fu_61 |    0    |    0    |   960   |   2432  |
-|          |    grp_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s_fu_67   |   264   |    0    |   2660  |   8873  |
+|          |    grp_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s_fu_67   |   252   |    0    |   2626  |   9182  |
 |          |     grp_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_fu_73     |    5    |  2.562  |   257   |   423   |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                                                                |   1121  |  2.562  |  10579  |  39231  |
+|   Total  |                                                                                |   1115  |  2.562  |   9126  |  39440  |
 |----------|--------------------------------------------------------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -694,10 +694,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |  1121  |    2   |  10579 |  39231 |
+|  Function |  1115  |    2   |  9126  |  39440 |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    -   |    -   |
 |  Register |    -   |    -   |  2128  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |  1121  |    2   |  12707 |  39231 |
+|   Total   |  1115  |    2   |  11254 |  39440 |
 +-----------+--------+--------+--------+--------+
