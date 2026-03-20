@@ -29,9 +29,10 @@ module myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_6
         stream_in0_linput_read
 );
 
-parameter    ap_ST_fsm_state1 = 3'd1;
-parameter    ap_ST_fsm_state2 = 3'd2;
-parameter    ap_ST_fsm_state3 = 3'd4;
+parameter    ap_ST_fsm_state1 = 4'd1;
+parameter    ap_ST_fsm_state2 = 4'd2;
+parameter    ap_ST_fsm_state3 = 4'd4;
+parameter    ap_ST_fsm_state4 = 4'd8;
 
 input   ap_clk;
 input   ap_rst;
@@ -63,30 +64,95 @@ reg stream_in0_linput_read;
 reg    real_start;
 reg    start_once_reg;
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [3:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    layer2_out_blk_n;
-wire    ap_CS_fsm_state3;
+wire    ap_CS_fsm_state4;
 reg    stream_in0_linput_blk_n;
 wire   [15:0] data_pack_fu_117_p1;
-reg   [15:0] data_pack_reg_660;
+reg   [15:0] data_pack_reg_596;
 reg    ap_block_state1;
-reg   [15:0] data_pack_142_reg_665;
-reg   [15:0] data_pack_143_reg_670;
-reg   [15:0] data_pack_144_reg_675;
-reg   [15:0] data_pack_145_reg_680;
-reg   [15:0] data_pack_146_reg_685;
-reg   [15:0] data_pack_147_reg_690;
-reg   [15:0] data_pack_148_reg_695;
-reg   [15:0] data_pack_149_reg_700;
-reg   [15:0] data_pack_150_reg_705;
-reg   [15:0] data_pack_151_reg_710;
-reg   [15:0] data_pack_152_reg_715;
-reg   [15:0] data_pack_153_reg_720;
-reg   [15:0] data_pack_154_reg_725;
-reg   [15:0] data_pack_155_reg_730;
-reg   [15:0] data_pack_156_reg_735;
+reg   [15:0] data_pack_142_reg_601;
+reg   [15:0] data_pack_143_reg_606;
+reg   [15:0] data_pack_144_reg_611;
+reg   [15:0] data_pack_145_reg_616;
+reg   [15:0] data_pack_146_reg_621;
+reg   [15:0] data_pack_147_reg_626;
+reg   [15:0] data_pack_148_reg_631;
+reg   [15:0] data_pack_149_reg_636;
+reg   [15:0] data_pack_150_reg_641;
+reg   [15:0] data_pack_151_reg_646;
+reg   [15:0] data_pack_152_reg_651;
+reg   [15:0] data_pack_153_reg_656;
+reg   [15:0] data_pack_154_reg_661;
+reg   [15:0] data_pack_155_reg_666;
+reg   [15:0] data_pack_156_reg_671;
+reg   [15:0] res_reg_676;
+wire    ap_CS_fsm_state3;
+reg   [15:0] res_72_reg_681;
+reg   [15:0] res_73_reg_686;
+reg   [15:0] res_74_reg_691;
+reg   [15:0] res_75_reg_696;
+reg   [15:0] res_76_reg_701;
+reg   [15:0] res_77_reg_706;
+reg   [15:0] res_78_reg_711;
+reg   [15:0] res_79_reg_716;
+reg   [15:0] res_80_reg_721;
+reg   [15:0] res_81_reg_726;
+reg   [15:0] res_82_reg_731;
+reg   [15:0] res_83_reg_736;
+reg   [15:0] res_84_reg_741;
+reg   [15:0] res_85_reg_746;
+reg   [15:0] res_86_reg_751;
+reg   [15:0] res_87_reg_756;
+reg   [15:0] res_88_reg_761;
+reg   [15:0] res_89_reg_766;
+reg   [15:0] res_90_reg_771;
+reg   [15:0] res_91_reg_776;
+reg   [15:0] res_92_reg_781;
+reg   [15:0] res_93_reg_786;
+reg   [15:0] res_94_reg_791;
+reg   [15:0] res_95_reg_796;
+reg   [15:0] res_96_reg_801;
+reg   [15:0] res_97_reg_806;
+reg   [15:0] res_98_reg_811;
+reg   [15:0] res_99_reg_816;
+reg   [15:0] res_100_reg_821;
+reg   [15:0] res_101_reg_826;
+reg   [15:0] res_102_reg_831;
+reg   [15:0] res_103_reg_836;
+reg   [15:0] res_104_reg_841;
+reg   [15:0] res_105_reg_846;
+reg   [15:0] res_106_reg_851;
+reg   [15:0] res_107_reg_856;
+reg   [15:0] res_108_reg_861;
+reg   [15:0] res_109_reg_866;
+reg   [15:0] res_110_reg_871;
+reg   [15:0] res_111_reg_876;
+reg   [15:0] res_112_reg_881;
+reg   [15:0] res_113_reg_886;
+reg   [15:0] res_114_reg_891;
+reg   [15:0] res_115_reg_896;
+reg   [15:0] res_116_reg_901;
+reg   [15:0] res_117_reg_906;
+reg   [15:0] res_118_reg_911;
+reg   [15:0] res_119_reg_916;
+reg   [15:0] res_120_reg_921;
+reg   [15:0] res_121_reg_926;
+reg   [15:0] res_122_reg_931;
+reg   [15:0] res_123_reg_936;
+reg   [15:0] res_124_reg_941;
+reg   [15:0] res_125_reg_946;
+reg   [15:0] res_126_reg_951;
+reg   [15:0] res_127_reg_956;
+reg   [15:0] res_128_reg_961;
+reg   [15:0] res_129_reg_966;
+reg   [15:0] res_130_reg_971;
+reg   [15:0] res_131_reg_976;
+reg   [15:0] res_132_reg_981;
+reg   [15:0] res_133_reg_986;
+reg   [15:0] res_134_reg_991;
 wire   [15:0] grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_0;
 wire   [15:0] grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_1;
 wire   [15:0] grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_2;
@@ -152,38 +218,39 @@ wire   [15:0] grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_f
 wire   [15:0] grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_62;
 wire   [15:0] grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_63;
 wire    ap_CS_fsm_state2;
-reg   [2:0] ap_NS_fsm;
+reg   [3:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
-reg    ap_ST_fsm_state3_blk;
+wire    ap_ST_fsm_state3_blk;
+reg    ap_ST_fsm_state4_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 start_once_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 3'd1;
+#0 ap_CS_fsm = 4'd1;
 end
 
 myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .data_0_val1(data_pack_reg_660),
-    .data_1_val2(data_pack_142_reg_665),
-    .data_2_val3(data_pack_143_reg_670),
-    .data_3_val4(data_pack_144_reg_675),
-    .data_4_val5(data_pack_145_reg_680),
-    .data_5_val6(data_pack_146_reg_685),
-    .data_6_val7(data_pack_147_reg_690),
-    .data_7_val8(data_pack_148_reg_695),
-    .data_8_val9(data_pack_149_reg_700),
-    .data_9_val10(data_pack_150_reg_705),
-    .data_10_val11(data_pack_151_reg_710),
-    .data_11_val12(data_pack_152_reg_715),
-    .data_12_val13(data_pack_153_reg_720),
-    .data_13_val14(data_pack_154_reg_725),
-    .data_14_val15(data_pack_155_reg_730),
-    .data_15_val16(data_pack_156_reg_735),
+    .data_0_val1(data_pack_reg_596),
+    .data_1_val2(data_pack_142_reg_601),
+    .data_2_val3(data_pack_143_reg_606),
+    .data_3_val4(data_pack_144_reg_611),
+    .data_4_val5(data_pack_145_reg_616),
+    .data_5_val6(data_pack_146_reg_621),
+    .data_6_val7(data_pack_147_reg_626),
+    .data_7_val8(data_pack_148_reg_631),
+    .data_8_val9(data_pack_149_reg_636),
+    .data_9_val10(data_pack_150_reg_641),
+    .data_10_val11(data_pack_151_reg_646),
+    .data_11_val12(data_pack_152_reg_651),
+    .data_12_val13(data_pack_153_reg_656),
+    .data_13_val14(data_pack_154_reg_661),
+    .data_14_val15(data_pack_155_reg_666),
+    .data_15_val16(data_pack_156_reg_671),
     .ap_return_0(grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_0),
     .ap_return_1(grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_1),
     .ap_return_2(grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_2),
@@ -264,7 +331,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+        end else if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -274,7 +341,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         start_once_reg <= 1'b0;
     end else begin
-        if (((real_start == 1'b1) & (internal_ap_ready == 1'b0))) begin
+        if (((internal_ap_ready == 1'b0) & (real_start == 1'b1))) begin
             start_once_reg <= 1'b1;
         end else if ((internal_ap_ready == 1'b1)) begin
             start_once_reg <= 1'b0;
@@ -284,22 +351,91 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        data_pack_142_reg_665 <= {{stream_in0_linput_dout[31:16]}};
-        data_pack_143_reg_670 <= {{stream_in0_linput_dout[47:32]}};
-        data_pack_144_reg_675 <= {{stream_in0_linput_dout[63:48]}};
-        data_pack_145_reg_680 <= {{stream_in0_linput_dout[79:64]}};
-        data_pack_146_reg_685 <= {{stream_in0_linput_dout[95:80]}};
-        data_pack_147_reg_690 <= {{stream_in0_linput_dout[111:96]}};
-        data_pack_148_reg_695 <= {{stream_in0_linput_dout[127:112]}};
-        data_pack_149_reg_700 <= {{stream_in0_linput_dout[143:128]}};
-        data_pack_150_reg_705 <= {{stream_in0_linput_dout[159:144]}};
-        data_pack_151_reg_710 <= {{stream_in0_linput_dout[175:160]}};
-        data_pack_152_reg_715 <= {{stream_in0_linput_dout[191:176]}};
-        data_pack_153_reg_720 <= {{stream_in0_linput_dout[207:192]}};
-        data_pack_154_reg_725 <= {{stream_in0_linput_dout[223:208]}};
-        data_pack_155_reg_730 <= {{stream_in0_linput_dout[239:224]}};
-        data_pack_156_reg_735 <= {{stream_in0_linput_dout[255:240]}};
-        data_pack_reg_660 <= data_pack_fu_117_p1;
+        data_pack_142_reg_601 <= {{stream_in0_linput_dout[31:16]}};
+        data_pack_143_reg_606 <= {{stream_in0_linput_dout[47:32]}};
+        data_pack_144_reg_611 <= {{stream_in0_linput_dout[63:48]}};
+        data_pack_145_reg_616 <= {{stream_in0_linput_dout[79:64]}};
+        data_pack_146_reg_621 <= {{stream_in0_linput_dout[95:80]}};
+        data_pack_147_reg_626 <= {{stream_in0_linput_dout[111:96]}};
+        data_pack_148_reg_631 <= {{stream_in0_linput_dout[127:112]}};
+        data_pack_149_reg_636 <= {{stream_in0_linput_dout[143:128]}};
+        data_pack_150_reg_641 <= {{stream_in0_linput_dout[159:144]}};
+        data_pack_151_reg_646 <= {{stream_in0_linput_dout[175:160]}};
+        data_pack_152_reg_651 <= {{stream_in0_linput_dout[191:176]}};
+        data_pack_153_reg_656 <= {{stream_in0_linput_dout[207:192]}};
+        data_pack_154_reg_661 <= {{stream_in0_linput_dout[223:208]}};
+        data_pack_155_reg_666 <= {{stream_in0_linput_dout[239:224]}};
+        data_pack_156_reg_671 <= {{stream_in0_linput_dout[255:240]}};
+        data_pack_reg_596 <= data_pack_fu_117_p1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state3)) begin
+        res_100_reg_821 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_29;
+        res_101_reg_826 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_30;
+        res_102_reg_831 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_31;
+        res_103_reg_836 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_32;
+        res_104_reg_841 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_33;
+        res_105_reg_846 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_34;
+        res_106_reg_851 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_35;
+        res_107_reg_856 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_36;
+        res_108_reg_861 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_37;
+        res_109_reg_866 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_38;
+        res_110_reg_871 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_39;
+        res_111_reg_876 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_40;
+        res_112_reg_881 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_41;
+        res_113_reg_886 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_42;
+        res_114_reg_891 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_43;
+        res_115_reg_896 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_44;
+        res_116_reg_901 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_45;
+        res_117_reg_906 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_46;
+        res_118_reg_911 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_47;
+        res_119_reg_916 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_48;
+        res_120_reg_921 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_49;
+        res_121_reg_926 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_50;
+        res_122_reg_931 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_51;
+        res_123_reg_936 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_52;
+        res_124_reg_941 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_53;
+        res_125_reg_946 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_54;
+        res_126_reg_951 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_55;
+        res_127_reg_956 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_56;
+        res_128_reg_961 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_57;
+        res_129_reg_966 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_58;
+        res_130_reg_971 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_59;
+        res_131_reg_976 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_60;
+        res_132_reg_981 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_61;
+        res_133_reg_986 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_62;
+        res_134_reg_991 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_63;
+        res_72_reg_681 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_1;
+        res_73_reg_686 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_2;
+        res_74_reg_691 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_3;
+        res_75_reg_696 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_4;
+        res_76_reg_701 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_5;
+        res_77_reg_706 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_6;
+        res_78_reg_711 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_7;
+        res_79_reg_716 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_8;
+        res_80_reg_721 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_9;
+        res_81_reg_726 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_10;
+        res_82_reg_731 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_11;
+        res_83_reg_736 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_12;
+        res_84_reg_741 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_13;
+        res_85_reg_746 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_14;
+        res_86_reg_751 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_15;
+        res_87_reg_756 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_16;
+        res_88_reg_761 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_17;
+        res_89_reg_766 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_18;
+        res_90_reg_771 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_19;
+        res_91_reg_776 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_20;
+        res_92_reg_781 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_21;
+        res_93_reg_786 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_22;
+        res_94_reg_791 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_23;
+        res_95_reg_796 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_24;
+        res_96_reg_801 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_25;
+        res_97_reg_806 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_26;
+        res_98_reg_811 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_27;
+        res_99_reg_816 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_28;
+        res_reg_676 <= grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_0;
     end
 end
 
@@ -313,16 +449,18 @@ end
 
 assign ap_ST_fsm_state2_blk = 1'b0;
 
+assign ap_ST_fsm_state3_blk = 1'b0;
+
 always @ (*) begin
     if ((layer2_out_full_n == 1'b0)) begin
-        ap_ST_fsm_state3_blk = 1'b1;
+        ap_ST_fsm_state4_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state3_blk = 1'b0;
+        ap_ST_fsm_state4_blk = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -330,7 +468,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((real_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((1'b1 == ap_CS_fsm_state1) & (real_start == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -338,7 +476,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -346,7 +484,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
         layer2_out_blk_n = layer2_out_full_n;
     end else begin
         layer2_out_blk_n = 1'b1;
@@ -354,7 +492,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         layer2_out_write = 1'b1;
     end else begin
         layer2_out_write = 1'b0;
@@ -370,7 +508,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((real_start == 1'b1) & (start_once_reg == 1'b0))) begin
+    if (((start_once_reg == 1'b0) & (real_start == 1'b1))) begin
         start_write = 1'b1;
     end else begin
         start_write = 1'b0;
@@ -378,7 +516,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~((real_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
+    if ((~((ap_done_reg == 1'b1) | (real_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1))) begin
         stream_in0_linput_blk_n = stream_in0_linput_empty_n;
     end else begin
         stream_in0_linput_blk_n = 1'b1;
@@ -406,10 +544,13 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+            ap_NS_fsm = ap_ST_fsm_state4;
+        end
+        ap_ST_fsm_state4 : begin
+            if (((layer2_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state3;
+                ap_NS_fsm = ap_ST_fsm_state4;
             end
         end
         default : begin
@@ -424,20 +565,18 @@ assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
+assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
+
 always @ (*) begin
-    ap_block_state1 = ((real_start == 1'b0) | (stream_in0_linput_empty_n == 1'b0) | (ap_done_reg == 1'b1));
+    ap_block_state1 = ((stream_in0_linput_empty_n == 1'b0) | (ap_done_reg == 1'b1) | (real_start == 1'b0));
 end
 
 assign ap_ready = internal_ap_ready;
 
 assign data_pack_fu_117_p1 = stream_in0_linput_dout[15:0];
 
-assign layer2_out_din = {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_63}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_62}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_61}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_60}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_59}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_58}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_57}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_56}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_55}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_54}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_53}}, 
-    {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_52}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_51}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_50}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_49}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_48}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_47}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_46}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_45}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_44}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_43}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_42}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_41}}, 
-    {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_40}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_39}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_38}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_37}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_36}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_35}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_34}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_33}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_32}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_31}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_30}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_29}}, 
-    {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_28}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_27}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_26}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_25}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_24}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_23}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_22}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_21}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_20}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_19}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_18}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_17}}, 
-    {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_16}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_15}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_14}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_13}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_12}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_11}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_10}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_9}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_8}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_7}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_6}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_5}}, 
-    {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_4}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_3}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_2}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_1}}, {grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97_ap_return_0}};
+assign layer2_out_din = {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{res_134_reg_991}, {res_133_reg_986}}, {res_132_reg_981}}, {res_131_reg_976}}, {res_130_reg_971}}, {res_129_reg_966}}, {res_128_reg_961}}, {res_127_reg_956}}, {res_126_reg_951}}, {res_125_reg_946}}, {res_124_reg_941}}, {res_123_reg_936}}, {res_122_reg_931}}, {res_121_reg_926}}, {res_120_reg_921}}, {res_119_reg_916}}, {res_118_reg_911}}, {res_117_reg_906}}, {res_116_reg_901}}, {res_115_reg_896}}, {res_114_reg_891}}, {res_113_reg_886}}, {res_112_reg_881}}, {res_111_reg_876}}, {res_110_reg_871}}, {res_109_reg_866}}, {res_108_reg_861}}, {res_107_reg_856}}, {res_106_reg_851}}, {res_105_reg_846}}, {res_104_reg_841}}, {res_103_reg_836}}, {res_102_reg_831}}, {res_101_reg_826}}, {res_100_reg_821}}, {res_99_reg_816}}, {res_98_reg_811}}, {res_97_reg_806}}, {res_96_reg_801}}, {res_95_reg_796}}, {res_94_reg_791}}, {res_93_reg_786}}, {res_92_reg_781}}, {res_91_reg_776}}, {res_90_reg_771}}, {res_89_reg_766}}, {res_88_reg_761}}, {res_87_reg_756}}, {res_86_reg_751}}, 
+    {res_85_reg_746}}, {res_84_reg_741}}, {res_83_reg_736}}, {res_82_reg_731}}, {res_81_reg_726}}, {res_80_reg_721}}, {res_79_reg_716}}, {res_78_reg_711}}, {res_77_reg_706}}, {res_76_reg_701}}, {res_75_reg_696}}, {res_74_reg_691}}, {res_73_reg_686}}, {res_72_reg_681}}, {res_reg_676}};
 
 assign start_out = real_start;
 

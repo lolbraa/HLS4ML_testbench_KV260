@@ -148,7 +148,7 @@
           <compileWorkGroupSize x="1" y="1" z="1"/>
           <maxWorkGroupSize x="1" y="1" z="1"/>
           <string_table/>
-          <instance name="myproject_axi_master_1"><addrRemap base="0x0080020000" range="0x10000" port="S_AXI_CONTROL"/></instance>
+          <instance name="myproject_axi_master_1"><addrRemap base="0x0" range="0x0" port="none"/></instance>
           <FIFOInformation>
             <FIFOInst>
               <Name>layer2_out_i_U</Name>

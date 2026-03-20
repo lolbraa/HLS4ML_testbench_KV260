@@ -9,9 +9,9 @@
     "generateEstimateRpt": "false",
     "keepSolution": "false",
     "link": "false",
-    "logDir": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/vitis_workspace\/system_link\/_x\/logs\/link",
+    "logDir": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/vitis_workspace\/system_link\/_x\/logs\/link",
     "package": "false",
-    "reportDir": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/vitis_workspace\/system_link\/_x\/reports\/link",
+    "reportDir": "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/vitis_workspace\/system_link\/_x\/reports\/link",
     "saveTemps": "false",
     "verbose": "false",
     "vplNoIpCache": "false"

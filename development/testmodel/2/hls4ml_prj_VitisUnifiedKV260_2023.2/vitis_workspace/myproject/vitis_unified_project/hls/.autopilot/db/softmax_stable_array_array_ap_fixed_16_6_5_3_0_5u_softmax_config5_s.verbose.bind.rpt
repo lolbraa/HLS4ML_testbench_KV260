@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s'
 ================================================================
-* Date:           Thu Mar 19 11:33:27 2026
+* Date:           Fri Mar 20 08:20:10 2026
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        vitis_unified_project
@@ -110,8 +110,8 @@ ST_2 : Operation 31 [1/1] (0.84ns)   --->   "%d_xi_xmax_5 = sub i15 %select_ln66
 ST_2 : Operation 32 [1/1] (0.84ns)   --->   "%d_xi_xmax_6 = sub i15 %select_ln66_3, i15 %trunc_ln213_3_i" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:213]   --->   Operation 32 'sub' 'd_xi_xmax_6' <Predicate = true> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 33 [1/1] (0.84ns)   --->   "%d_xi_xmax_7 = sub i15 %select_ln66_3, i15 %trunc_ln213_4_i" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:213]   --->   Operation 33 'sub' 'd_xi_xmax_7' <Predicate = true> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 34 [1/1] (0.84ns)   --->   "%d_xi_xmax_8 = sub i15 %select_ln66_3, i15 %tmp_i" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:213]   --->   Operation 34 'sub' 'd_xi_xmax_8' <Predicate = true> <Delay = 0.84> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_i_73 = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax, i32 5, i32 14" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation.h:145->/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:222]   --->   Operation 35 'partselect' 'tmp_i_73' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln223 = zext i10 %tmp_i_73" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:223]   --->   Operation 36 'zext' 'zext_ln223' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%tmp_i_75 = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax, i32 5, i32 14" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation.h:145->/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:222]   --->   Operation 35 'partselect' 'tmp_i_75' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln223 = zext i10 %tmp_i_75" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:223]   --->   Operation 36 'zext' 'zext_ln223' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%exp_table_addr = getelementptr i11 %exp_table, i64 0, i64 %zext_ln223" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:223]   --->   Operation 37 'getelementptr' 'exp_table_addr' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 38 [2/2] (1.23ns)   --->   "%exp_table_load = load i10 %exp_table_addr" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:223]   --->   Operation 38 'load' 'exp_table_load' <Predicate = true> <Delay = 1.23> <CoreInst = "ROM">   --->   Core 101 'ROM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 11> <Depth = 1024> <ROM>
 ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_28_i = partselect i10 @_ssdm_op_PartSelect.i10.i15.i32.i32, i15 %d_xi_xmax_5, i32 5, i32 14" [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation.h:145->/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:222]   --->   Operation 39 'partselect' 'tmp_28_i' <Predicate = true> <Delay = 0.00>
@@ -248,7 +248,7 @@ d_xi_xmax_5             (sub              ) [ 000000]
 d_xi_xmax_6             (sub              ) [ 000000]
 d_xi_xmax_7             (sub              ) [ 000000]
 d_xi_xmax_8             (sub              ) [ 000000]
-tmp_i_73                (partselect       ) [ 000000]
+tmp_i_75                (partselect       ) [ 000000]
 zext_ln223              (zext             ) [ 000000]
 exp_table_addr          (getelementptr    ) [ 000100]
 tmp_28_i                (partselect       ) [ 000000]
@@ -1310,7 +1310,7 @@ ret_ln0                 (ret              ) [ 000000]
 </bind>
 </comp>
 
-<comp id="484" class="1004" name="tmp_i_73_fu_484">
+<comp id="484" class="1004" name="tmp_i_75_fu_484">
 <pin_list>
 <pin id="485" dir="0" index="0" bw="10" slack="0"/>
 <pin id="486" dir="0" index="1" bw="15" slack="0"/>
@@ -1320,7 +1320,7 @@ ret_ln0                 (ret              ) [ 000000]
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp_i_73/2 "/>
+<opset="tmp_i_75/2 "/>
 </bind>
 </comp>
 
@@ -2413,7 +2413,7 @@ ret_ln0                 (ret              ) [ 000000]
 		d_xi_xmax_6 : 3
 		d_xi_xmax_7 : 3
 		d_xi_xmax_8 : 3
-		tmp_i_73 : 4
+		tmp_i_75 : 4
 		zext_ln223 : 5
 		exp_table_addr : 6
 		exp_table_load : 7
@@ -2526,7 +2526,7 @@ ret_ln0                 (ret              ) [ 000000]
 |          |   trunc_ln213_2_i_fu_396   |    0    |    0    |    0    |
 |          |   trunc_ln213_3_i_fu_406   |    0    |    0    |    0    |
 |          |   trunc_ln213_4_i_fu_416   |    0    |    0    |    0    |
-|          |       tmp_i_73_fu_484      |    0    |    0    |    0    |
+|          |       tmp_i_75_fu_484      |    0    |    0    |    0    |
 |partselect|       tmp_28_i_fu_499      |    0    |    0    |    0    |
 |          |       tmp_29_i_fu_514      |    0    |    0    |    0    |
 |          |       tmp_30_i_fu_529      |    0    |    0    |    0    |

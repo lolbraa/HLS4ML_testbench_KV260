@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'myproject'
 ================================================================
-* Date:           Thu Mar 19 11:33:31 2026
+* Date:           Fri Mar 20 08:20:13 2026
 
 * Version:        2023.2 (Build 4023990 on Oct 11 2023)
 * Project:        vitis_unified_project
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  4.176 ns|     0.62 ns|
+    |ap_clk  |  5.00 ns|  4.237 ns|     0.62 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
     |   min   |   max   |    min    |    max    | min | max |   Type   |
     +---------+---------+-----------+-----------+-----+-----+----------+
-    |       14|       14|  70.000 ns|  70.000 ns|    6|    6|  dataflow|
+    |       15|       15|  75.000 ns|  75.000 ns|    6|    6|  dataflow|
     +---------+---------+-----------+-----------+-----+-----+----------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                                                       |                                                                      |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
         |                                Instance                               |                                Module                                |   min   |   max   |    min    |    max    | min | max |   Type  |
         +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
-        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+        |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        3|        3|  15.000 ns|  15.000 ns|    3|    3|       no|
         |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0  |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
         |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        3|        3|  15.000 ns|  15.000 ns|    3|    3|       no|
         |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          |        5|        5|  25.000 ns|  25.000 ns|    5|    5|       no|
@@ -59,12 +59,12 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|       2|    -|
 |FIFO             |        -|     -|     297|     201|    -|
-|Instance         |        4|  1115|    9108|   40009|    -|
+|Instance         |        4|  1121|   10544|   40099|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       -|       -|    -|
 |Register         |        -|     -|       -|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        4|  1115|    9405|   40212|    0|
+|Total            |        4|  1121|   10841|   40302|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -76,12 +76,12 @@
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
     |                                Instance                               |                                Module                                | BRAM_18K| DSP |  FF  |  LUT  | URAM|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
-    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        0|  837|  5253|  28230|    0|
-    |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        0|  273|  2685|   8830|    0|
+    |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0      |dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s      |        0|  852|  6708|  28043|    0|
+    |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0       |dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s       |        0|  264|  2666|   9107|    0|
     |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0  |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |        0|    0|   964|   2484|    0|
     |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s          |        4|    5|   206|    465|    0|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
-    |Total                                                                  |                                                                      |        4| 1115|  9108|  40009|    0|
+    |Total                                                                  |                                                                      |        4| 1121| 10544|  40099|    0|
     +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+-----+------+-------+-----+
 
     * DSP: 

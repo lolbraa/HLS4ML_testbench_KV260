@@ -124,8 +124,8 @@
   },
   "Files": {
     "CSource": [
-      "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject.cpp",
-      "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp"
+      "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject.cpp",
+      "\/workspace\/HLS4ML_testbench_KV260\/development\/testmodel\/2\/hls4ml_prj_VitisUnifiedKV260_2023.2\/firmware\/myproject_axi_master.cpp"
     ],
     "Vhdl": [
       "impl\/vhdl\/myproject_axi_master_compute.vhd",
@@ -1504,18 +1504,18 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.176"
+          "Estimate": "4.237"
         },
         "Area": {
-          "DSP": "837",
+          "DSP": "852",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "67",
-          "FF": "4992",
+          "UTIL_DSP": "68",
+          "FF": "5422",
           "AVAIL_FF": "234240",
           "UTIL_FF": "2",
-          "LUT": "28172",
+          "LUT": "27979",
           "AVAIL_LUT": "117120",
-          "UTIL_LUT": "24",
+          "UTIL_LUT": "23",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "0",
@@ -1526,28 +1526,28 @@
       },
       "dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s": {
         "Latency": {
-          "LatencyBest": "2",
-          "LatencyAvg": "2",
-          "LatencyWorst": "2",
-          "PipelineII": "2",
+          "LatencyBest": "3",
+          "LatencyAvg": "3",
+          "LatencyWorst": "3",
+          "PipelineII": "3",
           "PipelineDepth": "",
           "PipelineType": "no"
         },
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.176"
+          "Estimate": "4.237"
         },
         "Area": {
-          "DSP": "837",
+          "DSP": "852",
           "AVAIL_DSP": "1248",
-          "UTIL_DSP": "67",
-          "FF": "5253",
+          "UTIL_DSP": "68",
+          "FF": "6708",
           "AVAIL_FF": "234240",
           "UTIL_FF": "2",
-          "LUT": "28230",
+          "LUT": "28043",
           "AVAIL_LUT": "117120",
-          "UTIL_LUT": "24",
+          "UTIL_LUT": "23",
           "BRAM_18K": "0",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "0",
@@ -1603,13 +1603,13 @@
           "Estimate": "4.053"
         },
         "Area": {
-          "DSP": "273",
+          "DSP": "264",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "21",
-          "FF": "1575",
+          "FF": "1556",
           "AVAIL_FF": "234240",
           "UTIL_FF": "~0",
-          "LUT": "8766",
+          "LUT": "9043",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "7",
           "BRAM_18K": "0",
@@ -1635,13 +1635,13 @@
           "Estimate": "4.053"
         },
         "Area": {
-          "DSP": "273",
+          "DSP": "264",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "21",
-          "FF": "2685",
+          "FF": "2666",
           "AVAIL_FF": "234240",
           "UTIL_FF": "1",
-          "LUT": "8830",
+          "LUT": "9107",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "7",
           "BRAM_18K": "0",
@@ -1718,9 +1718,9 @@
       },
       "myproject": {
         "Latency": {
-          "LatencyBest": "14",
-          "LatencyAvg": "14",
-          "LatencyWorst": "14",
+          "LatencyBest": "15",
+          "LatencyAvg": "15",
+          "LatencyWorst": "15",
           "PipelineII": "6",
           "PipelineDepth": "",
           "PipelineType": "dataflow"
@@ -1728,19 +1728,19 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.176"
+          "Estimate": "4.237"
         },
         "Area": {
           "BRAM_18K": "4",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "1",
-          "DSP": "1115",
+          "DSP": "1121",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "89",
-          "FF": "9405",
+          "FF": "10841",
           "AVAIL_FF": "234240",
           "UTIL_FF": "4",
-          "LUT": "40212",
+          "LUT": "40302",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "34",
           "URAM": "0",
@@ -1760,26 +1760,26 @@
         "Timing": {
           "Target": "5.00",
           "Uncertainty": "0.62",
-          "Estimate": "4.176"
+          "Estimate": "4.237"
         },
         "Loops": [{
             "Name": "VITIS_LOOP_42_1",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
-            "PipelineDepth": "16"
+            "PipelineDepth": "17"
           }],
         "Area": {
           "BRAM_18K": "4",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "1",
-          "DSP": "1115",
+          "DSP": "1121",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "89",
-          "FF": "9475",
+          "FF": "10911",
           "AVAIL_FF": "234240",
           "UTIL_FF": "4",
-          "LUT": "40369",
+          "LUT": "40459",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "34",
           "URAM": "0",
@@ -1876,13 +1876,13 @@
           "BRAM_18K": "32",
           "AVAIL_BRAM": "288",
           "UTIL_BRAM": "11",
-          "DSP": "1115",
+          "DSP": "1121",
           "AVAIL_DSP": "1248",
           "UTIL_DSP": "89",
-          "FF": "14783",
+          "FF": "16219",
           "AVAIL_FF": "234240",
           "UTIL_FF": "6",
-          "LUT": "58193",
+          "LUT": "58283",
           "AVAIL_LUT": "117120",
           "UTIL_LUT": "49",
           "URAM": "0",
@@ -1895,7 +1895,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2026-03-19 09:19:26 CET",
+    "Time": "2026-03-20 08:20:42 +0000",
     "ToolName": "vitis_hls",
     "ToolVersion": "2023.2"
   }

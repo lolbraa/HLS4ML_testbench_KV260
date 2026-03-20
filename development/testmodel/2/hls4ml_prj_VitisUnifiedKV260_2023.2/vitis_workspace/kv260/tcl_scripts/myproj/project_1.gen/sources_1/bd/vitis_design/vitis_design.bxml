@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="43">
   <CompositeFile CompositeFileTopName="vitis_design" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1773906873"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1773906873"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1773906873"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1773906873"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1773994883"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1773994883"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1773994883"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1773994883"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth/vitis_design.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>

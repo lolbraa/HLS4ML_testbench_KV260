@@ -34,7 +34,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1767268202</coreId>
+              <coreId>1600941364</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>256</bitwidth>
@@ -70,7 +70,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1449093746</coreId>
+              <coreId>1600941364</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>80</bitwidth>
@@ -219,7 +219,7 @@
               <type>0</type>
               <id>21</id>
               <name>_ln41</name>
-              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</fileName>
+              <fileName>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>41</lineNumber>
               <contextFuncName>myproject</contextFuncName>
@@ -228,13 +228,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="11" tracking_level="0" version="0">
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject</first>
+                  <first>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject</first>
                   <second class_id="12" tracking_level="0" version="0">
                     <count>1</count>
                     <item_version>0</item_version>
                     <item class_id="13" tracking_level="0" version="0">
                       <first class_id="14" tracking_level="0" version="0">
-                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</first>
+                        <first>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</first>
                         <second>myproject</second>
                       </first>
                       <second>41</second>
@@ -250,7 +250,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>791158830</coreId>
+              <coreId>1869182057</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -277,7 +277,7 @@
               <type>0</type>
               <id>22</id>
               <name>_ln43</name>
-              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</fileName>
+              <fileName>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>43</lineNumber>
               <contextFuncName>myproject</contextFuncName>
@@ -286,13 +286,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject</first>
+                  <first>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</first>
+                        <first>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</first>
                         <second>myproject</second>
                       </first>
                       <second>43</second>
@@ -308,7 +308,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1885429618</coreId>
+              <coreId>808858198</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -337,7 +337,7 @@
               <type>0</type>
               <id>23</id>
               <name>_ln45</name>
-              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</fileName>
+              <fileName>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>45</lineNumber>
               <contextFuncName>myproject</contextFuncName>
@@ -346,13 +346,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject</first>
+                  <first>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</first>
+                        <first>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</first>
                         <second>myproject</second>
                       </first>
                       <second>45</second>
@@ -368,7 +368,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1847602218</coreId>
+              <coreId>757935405</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -397,7 +397,7 @@
               <type>0</type>
               <id>24</id>
               <name>_ln47</name>
-              <fileName>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</fileName>
+              <fileName>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>47</lineNumber>
               <contextFuncName>myproject</contextFuncName>
@@ -406,13 +406,13 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject</first>
+                  <first>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject</first>
                   <second>
                     <count>1</count>
                     <item_version>0</item_version>
                     <item>
                       <first>
-                        <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</first>
+                        <first>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp</first>
                         <second>myproject</second>
                       </first>
                       <second>47</second>
@@ -428,7 +428,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>976909413</coreId>
+              <coreId>575620686</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -476,7 +476,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1948283493</coreId>
+              <coreId>1766203965</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -521,7 +521,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1747923503</coreId>
+              <coreId>1819096179</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -552,7 +552,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1767268202</coreId>
+              <coreId>1819096179</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -583,7 +583,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1767268202</coreId>
+              <coreId>1701601889</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -614,7 +614,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1767268202</coreId>
+              <coreId>2037672306</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -645,7 +645,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1818843183</coreId>
+              <coreId>1701273971</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -679,7 +679,7 @@
             <coreName/>
             <isStorage>0</isStorage>
             <storageDepth>0</storageDepth>
-            <coreId>1769236822</coreId>
+            <coreId>1953060447</coreId>
             <rtlModuleName/>
           </Obj>
           <node_objs>
@@ -883,8 +883,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>14</mMinLatency>
-        <mMaxLatency>14</mMaxLatency>
+        <mMinLatency>15</mMinLatency>
+        <mMaxLatency>15</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_41">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -1444,15 +1444,15 @@
             <item_version>0</item_version>
             <item class_id="48" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>837</second>
+              <second>852</second>
             </item>
             <item>
               <first>FF</first>
-              <second>5253</second>
+              <second>6708</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>28230</second>
+              <second>28043</second>
             </item>
           </second>
         </item>
@@ -1463,15 +1463,15 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>273</second>
+              <second>264</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2685</second>
+              <second>2666</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>8830</second>
+              <second>9107</second>
             </item>
           </second>
         </item>

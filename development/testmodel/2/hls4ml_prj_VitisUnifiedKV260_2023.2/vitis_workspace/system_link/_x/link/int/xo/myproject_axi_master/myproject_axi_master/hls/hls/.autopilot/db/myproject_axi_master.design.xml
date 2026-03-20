@@ -367,14 +367,14 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:13</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:13</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_13_1>
 <Name>VITIS_LOOP_13_1</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Memory Dependency</ViolationType>
 <IterationDistance>1</IterationDistance>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:13</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:13</SourceLocation>
 </VITIS_LOOP_13_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -1071,7 +1071,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:13</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:13</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -1851,7 +1851,7 @@
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>4.176</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.237</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -1867,20 +1867,20 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_latency.h:33~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_latency.h:33~/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>837</DSP>
+<DSP>852</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
-<UTIL_DSP>67</UTIL_DSP>
-<FF>4992</FF>
+<UTIL_DSP>68</UTIL_DSP>
+<FF>5422</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>2</UTIL_FF>
-<LUT>28172</LUT>
+<LUT>27979</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>24</UTIL_LUT>
+<UTIL_LUT>23</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -2800,35 +2800,35 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.176</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.237</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>2</Best-caseLatency>
-<Average-caseLatency>2</Average-caseLatency>
-<Worst-caseLatency>2</Worst-caseLatency>
-<Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>2</PipelineInitiationInterval>
+<Best-caseLatency>3</Best-caseLatency>
+<Average-caseLatency>3</Average-caseLatency>
+<Worst-caseLatency>3</Worst-caseLatency>
+<Best-caseRealTimeLatency>15.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>15.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>15.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>3</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:43~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:43~/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>837</DSP>
+<DSP>852</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
-<UTIL_DSP>67</UTIL_DSP>
-<FF>5253</FF>
+<UTIL_DSP>68</UTIL_DSP>
+<FF>6708</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>2</UTIL_FF>
-<LUT>28230</LUT>
+<LUT>28043</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>24</UTIL_LUT>
+<UTIL_LUT>23</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -3081,7 +3081,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:44</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:44</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -3349,18 +3349,18 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_latency.h:33~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_latency.h:33~/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>273</DSP>
+<DSP>264</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>21</UTIL_DSP>
-<FF>1575</FF>
+<FF>1556</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>8766</LUT>
+<LUT>9043</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>7</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -4176,18 +4176,18 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:43~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:43~/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<DSP>273</DSP>
+<DSP>264</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>21</UTIL_DSP>
-<FF>2685</FF>
+<FF>2666</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>8830</LUT>
+<LUT>9107</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>7</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -4442,7 +4442,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:198</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:198</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -4664,7 +4664,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:359</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/nnet_utils/nnet_activation_stream.h:359</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -4882,15 +4882,15 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.176</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.237</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>14</Best-caseLatency>
-<Average-caseLatency>14</Average-caseLatency>
-<Worst-caseLatency>14</Worst-caseLatency>
-<Best-caseRealTimeLatency>70.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>70.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>70.000 ns</Worst-caseRealTimeLatency>
+<Best-caseLatency>15</Best-caseLatency>
+<Average-caseLatency>15</Average-caseLatency>
+<Worst-caseLatency>15</Worst-caseLatency>
+<Best-caseRealTimeLatency>75.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>75.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>75.000 ns</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>6</DataflowPipelineThroughput>
 <PipelineInitiationInterval>6</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
@@ -4898,7 +4898,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:41</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp:41</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -4906,13 +4906,13 @@
 <BRAM_18K>4</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>1</UTIL_BRAM>
-<DSP>1115</DSP>
+<DSP>1121</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>89</UTIL_DSP>
-<FF>9405</FF>
+<FF>10841</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>4</UTIL_FF>
-<LUT>40212</LUT>
+<LUT>40302</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>34</UTIL_LUT>
 <URAM>0</URAM>
@@ -5075,7 +5075,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.176</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.237</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -5094,8 +5094,8 @@
 <TripCount>undef</TripCount>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
-<IterationLatency>16</IterationLatency>
-<PipelineDepth>16</PipelineDepth>
+<IterationLatency>17</IterationLatency>
+<PipelineDepth>17</PipelineDepth>
 <PipelineType>no</PipelineType>
 <InstanceList>
 <Instance>grp_myproject_fu_66</Instance>
@@ -5105,13 +5105,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:42</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:42</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_42_1>
 <Name>VITIS_LOOP_42_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:42</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:42</SourceLocation>
 </VITIS_LOOP_42_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -5121,13 +5121,13 @@
 <BRAM_18K>4</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>1</UTIL_BRAM>
-<DSP>1115</DSP>
+<DSP>1121</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>89</UTIL_DSP>
-<FF>9475</FF>
+<FF>10911</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>4</UTIL_FF>
-<LUT>40369</LUT>
+<LUT>40459</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>34</UTIL_LUT>
 <URAM>0</URAM>
@@ -5473,14 +5473,14 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:29</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:29</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_29_1>
 <Name>VITIS_LOOP_29_1</Name>
 <IssueType>II Violation</IssueType>
 <ViolationType>Memory Dependency</ViolationType>
 <IterationDistance>1</IterationDistance>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:29</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:29</SourceLocation>
 </VITIS_LOOP_29_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -6177,7 +6177,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:29</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:29</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -6972,7 +6972,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:66</SourceLocation>
+<SourceLocation>/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp:66</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -6980,13 +6980,13 @@
 <BRAM_18K>32</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>11</UTIL_BRAM>
-<DSP>1115</DSP>
+<DSP>1121</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>89</UTIL_DSP>
-<FF>14783</FF>
+<FF>16219</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>6</UTIL_FF>
-<LUT>58193</LUT>
+<LUT>58283</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>49</UTIL_LUT>
 <URAM>0</URAM>

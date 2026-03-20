@@ -151,7 +151,7 @@ end;
 architecture behav of myproject_axi_master is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "myproject_axi_master_myproject_axi_master,hls_ip_2023_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=4.375000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=32,HLS_SYN_DSP=0,HLS_SYN_FF=14783,HLS_SYN_LUT=58193,HLS_VERSION=2023_2}";
+    "myproject_axi_master_myproject_axi_master,hls_ip_2023_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=4.375000,HLS_SYN_LAT=-1,HLS_SYN_TPT=-1,HLS_SYN_MEM=32,HLS_SYN_DSP=0,HLS_SYN_FF=16219,HLS_SYN_LUT=58283,HLS_VERSION=2023_2}";
     constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant C_M_AXI_DATA_WIDTH : INTEGER := 32;

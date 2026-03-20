@@ -2,7 +2,7 @@
 This result is generated under the condition there is no block from testbench side.
 So in real working environment, the suggested depth may need some margin.
 
-After FIFO sizing, module total executing time has no change.(still 15770030 cycles)
+After FIFO sizing, module total executing time has no change.(still 9530 cycles)
 The detailed FIFO info are listed below.
     FIFO(AESL_inst_myproject_axi_master.gmem_out0_ptr_layer5_out_c_U):
     {

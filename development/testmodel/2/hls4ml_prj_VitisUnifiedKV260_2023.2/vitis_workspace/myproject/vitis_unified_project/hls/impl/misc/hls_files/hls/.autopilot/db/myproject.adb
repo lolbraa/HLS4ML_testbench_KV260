@@ -428,7 +428,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>543516513</coreId>
+              <coreId>575620686</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -476,7 +476,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1734439968</coreId>
+              <coreId>1766203965</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -583,7 +583,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1629888613</coreId>
+              <coreId>1701601889</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -614,7 +614,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>171847458</coreId>
+              <coreId>2037672306</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -645,7 +645,7 @@
               <coreName/>
               <isStorage>0</isStorage>
               <storageDepth>0</storageDepth>
-              <coreId>1953852527</coreId>
+              <coreId>1701273971</coreId>
               <rtlModuleName/>
             </Obj>
             <bitwidth>0</bitwidth>
@@ -883,8 +883,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>14</mMinLatency>
-        <mMaxLatency>14</mMaxLatency>
+        <mMinLatency>15</mMinLatency>
+        <mMaxLatency>15</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_41">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -1444,15 +1444,15 @@
             <item_version>0</item_version>
             <item class_id="48" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>837</second>
+              <second>852</second>
             </item>
             <item>
               <first>FF</first>
-              <second>5253</second>
+              <second>6708</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>28230</second>
+              <second>28043</second>
             </item>
           </second>
         </item>
@@ -1463,15 +1463,15 @@
             <item_version>0</item_version>
             <item>
               <first>DSP</first>
-              <second>273</second>
+              <second>264</second>
             </item>
             <item>
               <first>FF</first>
-              <second>2685</second>
+              <second>2666</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>8830</second>
+              <second>9107</second>
             </item>
           </second>
         </item>

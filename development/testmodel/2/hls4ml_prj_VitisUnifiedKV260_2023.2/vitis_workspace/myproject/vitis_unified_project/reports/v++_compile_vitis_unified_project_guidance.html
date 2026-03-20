@@ -3407,7 +3407,7 @@ window.onload = function () { addSorting(); }
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
 <tr><td><b>Tool Version</b></td><td>xcd v.2023.2 (lin64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Thu Mar 19 11:33:58 2026</td></tr>
+<tr><td><b>Date</b></td><td>Fri Mar 20 08:20:36 2026</td></tr>
 <tr><td><b>Host</b></td><td>161174ea8eb1 running 64-bit unknown</td></tr>
 <tr><td><b>Command</b></td><td>/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project </td></tr>
 </table></center><br>
@@ -3432,6 +3432,72 @@ window.onload = function () { addSorting(); }
 <th align="left">Categories</th>
 <th align="left" width="350">Details</th>
 <th align="left" width="380">Resolution</th>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.myproject_axi_master.Throughput</td>
+<td align="left">The II Violation in module 'load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1' (loop 'VITIS_LOOP_13_1'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between bus read operation ('gmem_in0_addr_read_15', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) and bus read operation ('gmem_in0_addr_read', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.myproject_axi_master.Throughput</td>
+<td align="left">The II Violation in module 'load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1' (loop 'VITIS_LOOP_13_1'): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between bus read operation ('gmem_in0_addr_read_15', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) and bus read operation ('gmem_in0_addr_read', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.myproject_axi_master.Throughput</td>
+<td align="left">Pipelining result : Target II = NA, Final II = 16, Depth = 20, loop 'VITIS_LOOP_13_1'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.myproject_axi_master.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config2>'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.myproject_axi_master.Throughput</td>
+<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config4>'
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left">Throughput</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.myproject_axi_master.Throughput</td>
+<td align="left">The II Violation in module 'store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1' (loop 'VITIS_LOOP_29_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_out0_addr_write_ln33', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=33">myproject_axi_master.cpp</a>) on port 'gmem_out0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=33">myproject_axi_master.cpp</a>) and bus write operation ('gmem_out0_addr_write_ln33', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=33">myproject_axi_master.cpp</a>) on port 'gmem_out0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=33">myproject_axi_master.cpp</a>).
+</td>
+<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">18</td>
@@ -3628,72 +3694,6 @@ window.onload = function () { addSorting(); }
 <td align="left">HLS Throughput Related</td>
 <td align="left">Accelerator.myproject_axi_master.Throughput</td>
 <td align="left">The II Violation in module 'load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1' (loop 'VITIS_LOOP_13_1'): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1) between bus read operation ('gmem_in0_addr_read_15', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) and bus read operation ('gmem_in0_addr_read', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">12</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.myproject_axi_master.Throughput</td>
-<td align="left">The II Violation in module 'load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1' (loop 'VITIS_LOOP_13_1'): Unable to enforce a carried dependence constraint (II = 11, distance = 1, offset = 1) between bus read operation ('gmem_in0_addr_read_15', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) and bus read operation ('gmem_in0_addr_read', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">13</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.myproject_axi_master.Throughput</td>
-<td align="left">The II Violation in module 'load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1' (loop 'VITIS_LOOP_13_1'): Unable to enforce a carried dependence constraint (II = 15, distance = 1, offset = 1) between bus read operation ('gmem_in0_addr_read_15', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) and bus read operation ('gmem_in0_addr_read', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>) on port 'gmem_in0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=17">myproject_axi_master.cpp</a>).
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">14</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.myproject_axi_master.Throughput</td>
-<td align="left">Pipelining result : Target II = NA, Final II = 16, Depth = 20, loop 'VITIS_LOOP_13_1'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">15</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.myproject_axi_master.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config2>'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">16</td>
-<td align="left">Throughput</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.myproject_axi_master.Throughput</td>
-<td align="left">Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'dense_latency_wrapper<ap_fixed,ap_fixed<16,6,5,3,0>,config4>'
-</td>
-<td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">17</td>
-<td align="left">Throughput</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.myproject_axi_master.Throughput</td>
-<td align="left">The II Violation in module 'store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1' (loop 'VITIS_LOOP_29_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus write operation ('gmem_out0_addr_write_ln33', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=33">myproject_axi_master.cpp</a>) on port 'gmem_out0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=33">myproject_axi_master.cpp</a>) and bus write operation ('gmem_out0_addr_write_ln33', <a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=33">myproject_axi_master.cpp</a>) on port 'gmem_out0' (<a href="file:///workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp#line=33">myproject_axi_master.cpp</a>).
 </td>
 <td align="left"><a href="http:///docs.xilinx.com/access/sources/dita/map?Doc_Version=2023.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>

@@ -1,6 +1,7 @@
 {
-    "completedTask": "generate_sc_driver",
-    "runComplete": "true",
+"completedTask": "vpl.generate_target",
+"activeTask": "vpl.config_hw_runs",
+    "runComplete": "false",
     "taskList": [
         "system_link",
         "vpl",
