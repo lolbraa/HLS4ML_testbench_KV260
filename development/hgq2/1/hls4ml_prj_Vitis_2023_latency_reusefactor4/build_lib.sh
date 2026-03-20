@@ -19,7 +19,7 @@ fi
 LDFLAGS=
 INCFLAGS="-Ifirmware/ap_types/"
 PROJECT=hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor4
-LIB_STAMP=daf479b0
+LIB_STAMP=703ecd66
 BASEDIR="$(cd "$(dirname "$0")" && pwd)"
 WEIGHTS_DIR="\"${BASEDIR}/firmware/weights\""
 

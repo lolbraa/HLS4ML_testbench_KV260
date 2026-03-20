@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_latency_ap_fixed_26_19_5_3_0_ap_fixed_14_8_5_3_0_config3_s'" level="0">
-<item name = "Date">Wed Mar 18 19:36:30 2026
+<item name = "Date">Fri Mar 20 14:12:10 2026
 </item>
 <item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
 <item name = "Project">hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor4_prj</item>

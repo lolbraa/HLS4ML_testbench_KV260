@@ -1,4 +1,7 @@
 <AutoPilot:project xmlns:AutoPilot="com.autoesl.autopilot.project" projectType="C/C++" name="hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor4_prj" top="hgq2_1_hls4ml_prj_Vitis_2023_latency_reusefactor4">
+    <Simulation argv="">
+        <SimFlow name="csim" setup="false" optimizeCompile="false" clean="false" ldflags="" mflags=""/>
+    </Simulation>
     <files>
         <file name="../../tb_data" sc="0" tb="1" cflags="-Wno-unknown-pragmas" csimflags="" blackbox="false"/>
         <file name="../../firmware/weights" sc="0" tb="1" cflags="-Wno-unknown-pragmas" csimflags="" blackbox="false"/>
