@@ -1,0 +1,41 @@
+vhdl xpm  \
+"/usr/lib/AMD/2025.2/data/ip/xpm/xpm_VCOMP.vhd" \
+
+vhdl axi_datamover_v5_1_37  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ipshared/d44a/hdl/axi_datamover_v5_1_vh_rfs.vhd" \
+
+vhdl axi_sg_v4_1_21  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ipshared/b193/hdl/axi_sg_v4_1_rfs.vhd" \
+
+vhdl axi_dma_v7_1_37  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ipshared/7f6a/hdl/axi_dma_v7_1_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/sim/vitis_design_axi_dma_0_0.vhd" \
+
+vhdl axi_lite_ipif_v3_0_4  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+
+vhdl axi_intc_v4_1_22  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ipshared/f258/hdl/axi_intc_v4_1_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/sim/vitis_design_axi_intc_0_0.vhd" \
+
+vhdl proc_sys_reset_v5_0_17  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/bd_0/ip/ip_1/sim/bd_8c12_psr_aclk_0.vhd" \
+
+vhdl smartconnect_v1_0  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ipshared/cb42/hdl/sc_ultralite_v1_0_rfs.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ip/vitis_design_rst_ps8_0_99M_0/sim/vitis_design_rst_ps8_0_99M_0.vhd" \
+
+vhdl fifo_generator_v13_2_14  \
+"../../../project_1.gen/sources_1/bd/vitis_design/ipshared/d654/hdl/fifo_generator_v13_2_rfs.vhd" \
+
+# Do not sort compile order
+nosort
