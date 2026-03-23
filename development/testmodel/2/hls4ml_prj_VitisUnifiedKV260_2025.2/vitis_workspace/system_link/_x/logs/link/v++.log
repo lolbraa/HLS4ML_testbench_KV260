@@ -1,8 +1,8 @@
 INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
 	Reports: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link
 	Log files: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/logs/link
-INFO: [v++ 60-1548] Creating build summary session with primary output /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin.link_summary, at Fri Mar 20 11:55:44 2026
-INFO: [v++ 60-1315] Creating rulecheck session with output '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html', at Fri Mar 20 11:55:44 2026
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin.link_summary, at Mon Mar 23 10:36:24 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html', at Mon Mar 23 10:36:24 2026
 INFO: [v++ 60-895]   Target platform: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
 INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa'
 INFO: [v++ 60-629] Linking for hardware target
@@ -10,86 +10,242 @@ INFO: [v++ 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_ca
 INFO: [v++ 82-31] Launching aie baremetal script for: link
 WARNING: [v++ 82-11894] The baremetal_metadata.cpp file was not created successfully.
 INFO: [v++ 60-1332] Run 'run_link' status: Not started
-INFO: [v++ 60-1443] [11:55:45] Run run_link: Step system_link: Started
+INFO: [v++ 60-1443] [10:36:24] Run run_link: Step system_link: Started
 INFO: [v++ 60-1453] Command Line: system_link --xo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link
 INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link
 INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo
 INFO: [SYSTEM_LINK 82-53] Creating IP database /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-INFO: [SYSTEM_LINK 82-38] [11:55:46] build_xd_ip_db started: /usr/lib/AMD/2025.2/Vitis/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/kv260_axi_all_platform.hpfm -clkid 0 -ip /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/iprepo/xilinx_com_hls_myproject_axi_master_1_0,myproject_axi_master -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-INFO: [SYSTEM_LINK 82-37] [11:55:46] build_xd_ip_db finished successfully
-Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.08 . Memory (MB): peak = 521.520 ; gain = 0.000 ; free physical = 1940 ; free virtual = 10944
+INFO: [SYSTEM_LINK 82-38] [10:36:25] build_xd_ip_db started: /usr/lib/AMD/2025.2/Vitis/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/kv260_axi_all_platform.hpfm -clkid 0 -ip /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/iprepo/xilinx_com_hls_myproject_axi_master_1_0,myproject_axi_master -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [10:36:25] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.07 . Memory (MB): peak = 521.520 ; gain = 0.000 ; free physical = 9742 ; free virtual = 14330
 INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
 INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
-INFO: [SYSTEM_LINK 82-38] [11:55:46] cfgen started: /usr/lib/AMD/2025.2/Vitis/bin/cfgen  -dpa_mem_offload false -dpa_aie_mem_offload false -dmclkid 0 -r /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [10:36:25] cfgen started: /usr/lib/AMD/2025.2/Vitis/bin/cfgen  -dpa_mem_offload false -dpa_aie_mem_offload false -dmclkid 0 -r /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
 INFO: [CFGEN 83-0] Kernel Specs: 
 INFO: [CFGEN 83-0]   kernel: myproject_axi_master, num: 1  {myproject_axi_master_1}
 INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_in0_ptr_linput to HP0
 INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_out0_ptr_layer5_out to HP0
-INFO: [SYSTEM_LINK 82-37] [11:55:46] cfgen finished successfully
-Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.53 . Memory (MB): peak = 521.520 ; gain = 0.000 ; free physical = 1915 ; free virtual = 10921
+INFO: [SYSTEM_LINK 82-37] [10:36:25] cfgen finished successfully
+Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.53 . Memory (MB): peak = 521.520 ; gain = 0.000 ; free physical = 9745 ; free virtual = 14334
 INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
-INFO: [SYSTEM_LINK 82-38] [11:55:46] cf2bd started: /usr/lib/AMD/2025.2/Vitis/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int
+INFO: [SYSTEM_LINK 82-38] [10:36:25] cf2bd started: /usr/lib/AMD/2025.2/Vitis/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int
 INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
 INFO: [CF2BD 82-28] cf2xd finished successfully
 INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -dn dr -dp /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd
 INFO: [CF2BD 82-28] cf_xsd finished successfully
-INFO: [SYSTEM_LINK 82-37] [11:55:47] cf2bd finished successfully
-Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.71 . Memory (MB): peak = 521.520 ; gain = 0.000 ; free physical = 1904 ; free virtual = 10911
-INFO: [v++ 60-1441] [11:55:47] Run run_link: Step system_link: Completed
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 528.965 ; gain = 0.000 ; free physical = 1951 ; free virtual = 10958
-INFO: [v++ 60-1443] [11:55:47] Run run_link: Step cf2sw: Started
+INFO: [SYSTEM_LINK 82-37] [10:36:26] cf2bd finished successfully
+Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.68 . Memory (MB): peak = 521.520 ; gain = 0.000 ; free physical = 9737 ; free virtual = 14328
+INFO: [v++ 60-1441] [10:36:26] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 528.961 ; gain = 0.000 ; free physical = 9737 ; free virtual = 14328
+INFO: [v++ 60-1443] [10:36:26] Run run_link: Step cf2sw: Started
 INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml
 INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link
-INFO: [v++ 60-1441] [11:55:47] Run run_link: Step cf2sw: Completed
-Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.61 . Memory (MB): peak = 528.965 ; gain = 0.000 ; free physical = 1947 ; free virtual = 10955
-INFO: [v++ 60-1443] [11:55:47] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1441] [10:36:27] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.58 . Memory (MB): peak = 528.961 ; gain = 0.000 ; free physical = 9736 ; free virtual = 14328
+INFO: [v++ 60-1443] [10:36:27] Run run_link: Step rtd2_system_diagram: Started
 INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
 INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link
-INFO: [v++ 60-1441] [11:55:47] Run run_link: Step rtd2_system_diagram: Completed
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.03 . Memory (MB): peak = 528.965 ; gain = 0.000 ; free physical = 1954 ; free virtual = 10963
-INFO: [v++ 60-1443] [11:55:47] Run run_link: Step vpl: Started
+INFO: [v++ 60-1441] [10:36:27] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.03 . Memory (MB): peak = 528.961 ; gain = 0.000 ; free physical = 9736 ; free virtual = 14329
+INFO: [v++ 60-1443] [10:36:27] Run run_link: Step vpl: Started
 INFO: [v++ 60-1453] Command Line: vpl -t hw -f /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/.ipcache --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int --log_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/logs/link --report_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link --no-info --iprepo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link/vpl.pb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/dr.bd.tcl
 INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link
 
 ****** vpl v2025.2 (64-bit)
   **** SW Build 6295257 on 2025-11-13-01:29:13
-  **** Start of session at: Fri Mar 20 11:55:48 2026
+  **** Start of session at: Mon Mar 23 10:36:27 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 INFO: [VPL 60-839] Read in kernel information from file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/kernel_info.dat'.
 INFO: [VPL 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
 INFO: [VPL 60-1032] Extracting hardware platform to /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform
-[11:55:51] Run vpl: Step create_project: Started
+[10:36:30] Run vpl: Step create_project: Started
 Creating Vivado project.
-[11:55:53] Run vpl: Step create_project: Completed
-[11:55:53] Run vpl: Step create_bd: Started
-[11:55:55] Run vpl: Step create_bd: Completed
-[11:55:55] Run vpl: Step update_bd: Started
-[11:55:55] Run vpl: Step update_bd: Completed
-[11:55:55] Run vpl: Step generate_target: Started
-[11:56:12] Run vpl: Step generate_target: Completed
-[11:56:12] Run vpl: Step config_hw_runs: Started
-[11:56:13] Run vpl: Step config_hw_runs: Completed
-[11:56:13] Run vpl: Step synth: Started
-[11:57:33] Block-level synthesis in progress, 0 of 10 jobs complete, 8 jobs running.
-[11:59:14] Run vpl: Step synth: Failed
-[11:59:59] Run vpl: FINISHED. Run Status: synth ERROR
+[10:36:32] Run vpl: Step create_project: Completed
+[10:36:32] Run vpl: Step create_bd: Started
+[10:36:35] Run vpl: Step create_bd: Completed
+[10:36:35] Run vpl: Step update_bd: Started
+[10:36:35] Run vpl: Step update_bd: Completed
+[10:36:35] Run vpl: Step generate_target: Started
+[10:36:52] Run vpl: Step generate_target: Completed
+[10:36:52] Run vpl: Step config_hw_runs: Started
+[10:36:53] Run vpl: Step config_hw_runs: Completed
+[10:36:53] Run vpl: Step synth: Started
+[10:37:24] Block-level synthesis in progress, 2 of 5 jobs complete, 2 jobs running.
+[10:37:54] Block-level synthesis in progress, 4 of 5 jobs complete, 0 jobs running.
+[10:38:20] Run vpl: Step synth: Completed
+[10:38:20] Run vpl: Step impl: Started
+[10:39:20] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 02m 52s 
 
-===>The following messages were generated while  creating FPGA bitstream. Log file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/runme.log :
-ERROR: [VPL 12-13638] Failed runs(s) : 'vitis_design_axi_dma_0_0_synth_1', 'vitis_design_zynq_ultra_ps_e_0_0_synth_1', 'vitis_design_axi_smc_0_synth_1', 'vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1'
- 'vitis_design_axi_dma_0_0_synth_1' run failed with below errors.
- 'vitis_design_zynq_ultra_ps_e_0_0_synth_1' run failed with below errors.
- 'vitis_design_axi_smc_0_synth_1' run failed with below errors.
- 'vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1' run failed with below errors.
-ERROR: [VPL 60-773] In '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/runme.log', caught Tcl error:  ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
-WARNING: [VPL 60-732] Link warning: No monitor points found for BD automation.
-ERROR: [VPL 60-704] Integration error, Failed to complete hardware synthesis. The run name is 'synth_1'. An error stack with function names and arguments may be available in the 'vivado.log'.
-ERROR: [VPL 60-1328] Vpl run 'vpl' failed
-WARNING: [VPL 60-1142] Unable to read data from '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/generated_reports.log', generated reports will not be copied.
-ERROR: [VPL 60-806] Failed to finish platform linker
-INFO: [v++ 60-1442] [11:59:59] Run run_link: Step vpl: Failed
-Time (s): cpu = 00:00:02 ; elapsed = 00:04:11 . Memory (MB): peak = 528.965 ; gain = 0.000 ; free physical = 474 ; free virtual = 1076
-ERROR: [v++ 60-661] v++ link run 'run_link' failed
-ERROR: [v++ 60-626] Kernel link failed to complete
-ERROR: [v++ 60-703] Failed to finish linking
+[10:39:20] Starting logic optimization..
+[10:39:20] Phase 1 Initialization
+[10:39:20] Phase 1.1 Core Generation And Design Setup
+[10:39:20] Phase 1.2 Setup Constraints And Sort Netlist
+[10:39:20] Phase 2 Timer Update And Timing Data Collection
+[10:39:20] Phase 2.1 Detect if minReqCache needed
+[10:39:20] Phase 2.2 Timer Update
+[10:39:20] Phase 2.3 Timing Data Collection
+[10:39:20] Phase 3 Retarget
+[10:39:20] Phase 4 Constant propagation
+[10:39:20] Phase 5 Sweep
+[10:39:20] Phase 6 BUFG optimization
+[10:39:20] Phase 7 Shift Register Optimization
+[10:39:20] Phase 8 Post Processing Netlist
+[10:39:20] Phase 9 Finalization
+[10:39:20] Phase 9.1 Finalizing Design Cores and Updating Shapes
+[10:39:20] Phase 9.2 Verifying Netlist Connectivity
+[10:39:50] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 00m 30s 
+
+[10:39:50] Starting logic placement..
+[10:39:50] Phase 1 Placer Initialization
+[10:39:50] Phase 1.1 Placer Initialization Netlist Sorting
+[10:39:50] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[10:39:50] Phase 1.3 Build Placer Netlist Model
+[10:40:20] Phase 1.4 Constrain Clocks/Macros
+[10:40:20] Phase 2 Global Placement
+[10:40:20] Phase 2.1 Floorplanning
+[10:40:20] Phase 2.1.1 Partition Driven Placement
+[10:40:20] Phase 2.1.1.1 PBP: Partition Driven Placement
+[10:40:20] Phase 2.1.1.2 PBP: Clock Region Placement
+[10:40:20] Phase 2.1.1.3 PBP: Discrete Incremental
+[10:40:20] Phase 2.1.1.4 PBP: Compute Congestion
+[10:40:20] Phase 2.1.1.5 PBP: Macro Placement
+[10:40:50] Phase 2.1.1.6 PBP: UpdateTiming
+[10:40:50] Phase 2.1.1.7 PBP: Add part constraints
+[10:40:50] Phase 2.2 Update Timing before SLR Path Opt
+[10:40:50] Phase 2.3 Post-Processing in Floorplanning
+[10:40:50] Phase 2.4 Global Place Phase1
+[10:41:20] Phase 2.5 Global Place Phase2
+[10:41:20] Phase 2.5.1 UpdateTiming Before Physical Synthesis
+[10:41:20] Phase 2.5.2 Physical Synthesis In Placer
+[10:41:20] Phase 3 Detail Placement
+[10:41:20] Phase 3.1 Commit Multi Column Macros
+[10:41:20] Phase 3.2 Commit Most Macros & LUTRAMs
+[10:41:20] Phase 3.3 Small Shape DP
+[10:41:20] Phase 3.3.1 Small Shape Clustering
+[10:41:20] Phase 3.3.2 Slice Area Swap
+[10:41:20] Phase 3.3.2.1 Slice Area Swap Initial
+[10:41:50] Phase 3.4 Re-assign LUT pins
+[10:41:50] Phase 3.5 Pipeline Register Optimization
+[10:41:50] Phase 4 Post Placement Optimization and Clean-Up
+[10:41:50] Phase 4.1 Post Commit Optimization
+[10:41:50] Phase 4.1.1 Post Placement Optimization
+[10:41:50] Phase 4.1.1.1 BUFG Insertion
+[10:41:50] Phase 1 Physical Synthesis Initialization
+[10:41:50] Phase 4.1.1.2 Post Placement Timing Optimization
+[10:41:50] Phase 4.2 Post Placement Cleanup
+[10:41:50] Phase 4.3 Placer Reporting
+[10:41:50] Phase 4.3.1 Print Estimated Congestion
+[10:41:50] Phase 4.4 Final Placement Cleanup
+[10:42:21] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 02m 30s 
+
+[10:42:21] Starting logic routing..
+[10:42:21] Phase 1 Build RT Design
+[10:42:21] Phase 2 Router Initialization
+[10:42:21] Phase 2.1 Fix Topology Constraints
+[10:42:21] Phase 2.2 Pre Route Cleanup
+[10:42:21] Phase 2.3 Global Clock Net Routing
+[10:42:21] Phase 2.4 Update Timing
+[10:42:21] Phase 2.5 Soft Constraint Pins - Fast Budgeting
+[10:42:21] Phase 3 Global Routing
+[10:42:21] Phase 4 Initial Routing
+[10:42:21] Phase 4.1 Initial Net Routing Pass
+[10:42:21] Phase 5 Rip-up And Reroute
+[10:42:21] Phase 5.1 Global Iteration 0
+[10:44:21] Phase 5.2 Global Iteration 1
+[10:44:21] Phase 6 Delay and Skew Optimization
+[10:44:21] Phase 6.1 Delay CleanUp
+[10:44:21] Phase 6.2 Clock Skew Optimization
+[10:44:21] Phase 7 Post Hold Fix
+[10:44:21] Phase 7.1 Hold Fix Iter
+[10:44:21] Phase 8 Route finalize
+[10:44:21] Phase 9 Verifying routed nets
+[10:44:21] Phase 10 Depositing Routes
+[10:44:21] Phase 11 Resolve XTalk
+[10:44:21] Phase 12 Post Process Routing
+[10:44:21] Phase 13 Post Router Timing
+[10:44:21] Phase 14 Post-Route Event Processing
+[10:44:21] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 02m 00s 
+
+[10:44:21] Starting bitstream generation..
+[10:45:05] Creating bitmap...
+[10:45:05] Writing bitstream ./vitis_design_wrapper.bit...
+[10:45:05] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 00m 44s 
+Check VPL, containing 6 checks, has run: 0 errors
+[10:45:05] Run vpl: Step impl: Completed
+[10:45:05] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [10:45:05] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:03:50 ; elapsed = 00:08:38 . Memory (MB): peak = 528.961 ; gain = 0.000 ; free physical = 10999 ; free virtual = 14669
+INFO: [v++ 60-1443] [10:45:05] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1453] Command Line: cf2sw -a /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/address_map.xml -sdsl /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/sdsl.dat -xclbin /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -rtd /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.rtd -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.xml
+INFO: [v++ 60-1652] Cf2sw returned exit code: 0
+INFO: [v++ 60-1441] [10:45:05] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.59 . Memory (MB): peak = 528.961 ; gain = 0.000 ; free physical = 10992 ; free virtual = 14691
+INFO: [v++ 60-1443] [10:45:05] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section BITSTREAM:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/system.bit --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd --add-section BUILD_METADATA:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.xml --add-section SYSTEM_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0 --output /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link
+XRT Build Version: 2.19.0 (Vitis)
+       Build Date: 2025-02-07 10:52:04
+          Hash ID: f02de266f785111094b02d32a9012bd0da3abd58
+Creating a default 'in-memory' xclbin image.
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 7797832 bytes
+Format : RAW
+File   : '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/system.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+WARNING: Skipping CLOCK_FREQ_TOPOLOGY section for count size is zero.
+WARNING: Section 'CLOCK_FREQ_TOPOLOGY' content is empty.  No data in the given JSON file.
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was empty.  No action taken.
+Format : JSON
+File   : '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 2210 bytes
+Format : JSON
+File   : '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 3000 bytes
+Format : RAW
+File   : '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 10738 bytes
+Format : RAW
+File   : '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json'
+Successfully wrote (7820840 bytes) to the output file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [10:45:06] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.06 . Memory (MB): peak = 528.961 ; gain = 0.000 ; free physical = 10960 ; free virtual = 14668
+INFO: [v++ 60-1443] [10:45:06] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin.info --input /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin
+INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1441] [10:45:06] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.07 . Memory (MB): peak = 528.961 ; gain = 0.000 ; free physical = 10958 ; free virtual = 14667
+INFO: [v++ 60-2397] Platform default or user specified output type sd_card detected but is not a supported output for v++ --link. Use the v++ --package option instead to create SD card output.
+INFO: [v++ 60-586] Created myproject.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html
+	Timing Report: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpt
+	Vivado Log: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/logs/link/vivado.log
+	Steps Log File: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/logs/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the Vitis Unified IDE to visualize and navigate the reports. Run the following command. 
+    vitis -a/ --analyze /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 8m 44s

@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri Mar 20 11:22:59 2026",
- "timestampMillis": "1774002179444",
+ "dateTimestamp": "Mon Mar 23 10:36:24 2026",
+ "timestampMillis": "1774258584004",
  "buildStep": {
-  "cmdId": "8e393fec-6a25-4c85-88c5-2bff71adf66b",
+  "cmdId": "44e3a1a4-1c6a-4a8a-9020-6493cba2203d",
   "name": "v++",
   "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/link.steps.log",
   "commandLine": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
@@ -42,10 +42,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:22:59 2026",
- "timestampMillis": "1774002179444",
+ "dateTimestamp": "Mon Mar 23 10:36:24 2026",
+ "timestampMillis": "1774258584004",
  "status": {
-  "cmdId": "8e393fec-6a25-4c85-88c5-2bff71adf66b",
+  "cmdId": "44e3a1a4-1c6a-4a8a-9020-6493cba2203d",
   "state": "CS_RUNNING"
  }
 }
@@ -53,8 +53,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Fri Mar 20 11:22:59 2026",
- "timestampMillis": "1774002179966",
+ "dateTimestamp": "Mon Mar 23 10:36:24 2026",
+ "timestampMillis": "1774258584509",
  "buildSummary": {
   "hardwarePlatform": "kv260_axi_all_platform.xsa",
   "hardwareDsa": "",
@@ -102,8 +102,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Mar 20 11:22:59 2026",
- "timestampMillis": "1774002179968",
+ "dateTimestamp": "Mon Mar 23 10:36:24 2026",
+ "timestampMillis": "1774258584511",
  "report": {
   "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/analyzer_input/analyzer_summary.json",
   "name": "",
@@ -116,10 +116,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Mar 20 11:22:59 2026",
- "timestampMillis": "1774002179990",
+ "dateTimestamp": "Mon Mar 23 10:36:24 2026",
+ "timestampMillis": "1774258584531",
  "buildStep": {
-  "cmdId": "7f05062c-dd8a-4d64-ad2f-7799d8214eb6",
+  "cmdId": "f3ec0b9a-38a2-4ff9-bee6-605d134c566e",
   "name": "system_link",
   "logFile": "",
   "commandLine": "system_link --xo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/sys_link",
@@ -144,10 +144,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:22:59 2026",
- "timestampMillis": "1774002179990",
+ "dateTimestamp": "Mon Mar 23 10:36:24 2026",
+ "timestampMillis": "1774258584531",
  "status": {
-  "cmdId": "7f05062c-dd8a-4d64-ad2f-7799d8214eb6",
+  "cmdId": "f3ec0b9a-38a2-4ff9-bee6-605d134c566e",
   "state": "CS_RUNNING"
  }
 }
@@ -155,10 +155,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:23:02 2026",
- "timestampMillis": "1774002182379",
+ "dateTimestamp": "Mon Mar 23 10:36:26 2026",
+ "timestampMillis": "1774258586620",
  "status": {
-  "cmdId": "7f05062c-dd8a-4d64-ad2f-7799d8214eb6",
+  "cmdId": "f3ec0b9a-38a2-4ff9-bee6-605d134c566e",
   "state": "CS_PASSED"
  }
 }
@@ -166,10 +166,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Mar 20 11:23:02 2026",
- "timestampMillis": "1774002182381",
+ "dateTimestamp": "Mon Mar 23 10:36:26 2026",
+ "timestampMillis": "1774258586621",
  "buildStep": {
-  "cmdId": "eb4ea1e7-5d34-43d3-b6d4-a56a9a49eab0",
+  "cmdId": "ab054c07-bf64-48a6-983c-d72c98c5a26f",
   "name": "cf2sw",
   "logFile": "",
   "commandLine": "cf2sw -sdsl /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml",
@@ -193,10 +193,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:23:02 2026",
- "timestampMillis": "1774002182381",
+ "dateTimestamp": "Mon Mar 23 10:36:26 2026",
+ "timestampMillis": "1774258586621",
  "status": {
-  "cmdId": "eb4ea1e7-5d34-43d3-b6d4-a56a9a49eab0",
+  "cmdId": "ab054c07-bf64-48a6-983c-d72c98c5a26f",
   "state": "CS_RUNNING"
  }
 }
@@ -204,10 +204,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:23:02 2026",
- "timestampMillis": "1774002182983",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587202",
  "status": {
-  "cmdId": "eb4ea1e7-5d34-43d3-b6d4-a56a9a49eab0",
+  "cmdId": "ab054c07-bf64-48a6-983c-d72c98c5a26f",
   "state": "CS_PASSED"
  }
 }
@@ -215,10 +215,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Mar 20 11:23:02 2026",
- "timestampMillis": "1774002182985",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587203",
  "buildStep": {
-  "cmdId": "8b1a053b-6fa8-4882-a799-cd8a4bf016a1",
+  "cmdId": "7ee4242b-3672-4b01-9ae6-5bbb17812225",
   "name": "rtd2_system_diagram",
   "logFile": "",
   "commandLine": "rtd2SystemDiagram",
@@ -231,10 +231,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:23:02 2026",
- "timestampMillis": "1774002182985",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587203",
  "status": {
-  "cmdId": "8b1a053b-6fa8-4882-a799-cd8a4bf016a1",
+  "cmdId": "7ee4242b-3672-4b01-9ae6-5bbb17812225",
   "state": "CS_RUNNING"
  }
 }
@@ -242,8 +242,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Mar 20 11:23:03 2026",
- "timestampMillis": "1774002183020",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587232",
  "report": {
   "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/systemDiagramModel.json",
   "name": "",
@@ -256,10 +256,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:23:03 2026",
- "timestampMillis": "1774002183020",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587233",
  "status": {
-  "cmdId": "8b1a053b-6fa8-4882-a799-cd8a4bf016a1",
+  "cmdId": "7ee4242b-3672-4b01-9ae6-5bbb17812225",
   "state": "CS_PASSED"
  }
 }
@@ -267,10 +267,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Mar 20 11:23:03 2026",
- "timestampMillis": "1774002183021",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587234",
  "buildStep": {
-  "cmdId": "9f849f93-1271-46a8-bfd9-2205c99b90b2",
+  "cmdId": "113c3e73-ebf4-4c0e-9726-abd6eda9bde9",
   "name": "vpl",
   "logFile": "",
   "commandLine": "vpl -t hw -f /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/.ipcache --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int --log_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/logs/link --report_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link --no-info --iprepo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link/vpl.pb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/dr.bd.tcl",
@@ -316,10 +316,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:23:03 2026",
- "timestampMillis": "1774002183021",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587234",
  "status": {
-  "cmdId": "9f849f93-1271-46a8-bfd9-2205c99b90b2",
+  "cmdId": "113c3e73-ebf4-4c0e-9726-abd6eda9bde9",
   "state": "CS_RUNNING"
  }
 }
@@ -327,10 +327,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri Mar 20 11:23:03 2026",
- "timestampMillis": "1774002183669",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587886",
  "buildStep": {
-  "cmdId": "40cdf270-a1b0-4936-8d11-30e5882e577b",
+  "cmdId": "b6e6c0e7-0cb4-488e-91e0-a4e8bd6c9fe0",
   "name": "vpl",
   "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/link.steps.log",
   "commandLine": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/vpl -t hw -f /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/.ipcache --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int --log_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/logs/link --report_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link --no-info --iprepo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/run_link/vpl.pb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/dr.bd.tcl ",
@@ -343,10 +343,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:23:03 2026",
- "timestampMillis": "1774002183669",
+ "dateTimestamp": "Mon Mar 23 10:36:27 2026",
+ "timestampMillis": "1774258587886",
  "status": {
-  "cmdId": "40cdf270-a1b0-4936-8d11-30e5882e577b",
+  "cmdId": "b6e6c0e7-0cb4-488e-91e0-a4e8bd6c9fe0",
   "state": "CS_RUNNING"
  }
 }
@@ -354,8 +354,8 @@
 <ENTRY>
 {
  "type": "ET_VivadoProject",
- "dateTimestamp": "Fri Mar 20 11:23:04 2026",
- "timestampMillis": "1774002184034",
+ "dateTimestamp": "Mon Mar 23 10:36:28 2026",
+ "timestampMillis": "1774258588193",
  "vivadoProject": {
   "openDir": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl",
   "openScript": "openprj.tcl",
@@ -366,10 +366,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri Mar 20 11:23:04 2026",
- "timestampMillis": "1774002184035",
+ "dateTimestamp": "Mon Mar 23 10:36:28 2026",
+ "timestampMillis": "1774258588193",
  "buildStep": {
-  "cmdId": "6540598b-382b-49ca-ba06-19f09d406fb2",
+  "cmdId": "6fe90c24-70bd-4e39-9857-9322af453e7d",
   "name": "vivado",
   "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/vivado.log",
   "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
@@ -394,10 +394,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:23:04 2026",
- "timestampMillis": "1774002184035",
+ "dateTimestamp": "Mon Mar 23 10:36:28 2026",
+ "timestampMillis": "1774258588194",
  "status": {
-  "cmdId": "6540598b-382b-49ca-ba06-19f09d406fb2",
+  "cmdId": "6fe90c24-70bd-4e39-9857-9322af453e7d",
   "state": "CS_RUNNING"
  }
 }
@@ -405,8 +405,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Mar 20 11:23:27 2026",
- "timestampMillis": "1774002207320",
+ "dateTimestamp": "Mon Mar 23 10:36:52 2026",
+ "timestampMillis": "1774258612031",
  "report": {
   "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/automation_summary_pre_synthesis.txt",
   "name": "",
@@ -418,42 +418,775 @@
 </ENTRY>
 <ENTRY>
 {
- "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:24:27 2026",
- "timestampMillis": "1774002267082",
- "status": {
-  "cmdId": "6540598b-382b-49ca-ba06-19f09d406fb2",
-  "state": "CS_FAILED"
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 23 10:38:20 2026",
+ "timestampMillis": "1774258700421",
+ "buildStep": {
+  "cmdId": "d49ff7d7-378f-4533-b487-caeb6f5a418d",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:24:27 2026",
- "timestampMillis": "1774002267181",
+ "dateTimestamp": "Mon Mar 23 10:38:20 2026",
+ "timestampMillis": "1774258700422",
  "status": {
-  "cmdId": "40cdf270-a1b0-4936-8d11-30e5882e577b",
-  "state": "CS_FAILED"
+  "cmdId": "d49ff7d7-378f-4533-b487-caeb6f5a418d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Mar 23 10:38:20 2026",
+ "timestampMillis": "1774258700422",
+ "buildStep": {
+  "cmdId": "654a3f84-cca4-451e-8bb3-51b99f497c67",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:24:27 2026",
- "timestampMillis": "1774002267239",
+ "dateTimestamp": "Mon Mar 23 10:38:20 2026",
+ "timestampMillis": "1774258700422",
  "status": {
-  "cmdId": "9f849f93-1271-46a8-bfd9-2205c99b90b2",
-  "state": "CS_FAILED"
+  "cmdId": "654a3f84-cca4-451e-8bb3-51b99f497c67",
+  "state": "CS_RUNNING"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Mar 20 11:24:27 2026",
- "timestampMillis": "1774002267249",
+ "dateTimestamp": "Mon Mar 23 10:44:23 2026",
+ "timestampMillis": "1774259063542",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:44:25 2026",
+ "timestampMillis": "1774259065796",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:44:25 2026",
+ "timestampMillis": "1774259065797",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105307",
+ "status": {
+  "cmdId": "6fe90c24-70bd-4e39-9857-9322af453e7d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105312",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105312",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105312",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105313",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105313",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105313",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105313",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105314",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105314",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105314",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105314",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105315",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105315",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105315",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105315",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105316",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105318",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_zynq_ultra_ps_e_0_0_synth_1_vitis_design_zynq_ultra_ps_e_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105319",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_smc_0_synth_1_vitis_design_axi_smc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105319",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_intc_0_0_synth_1_vitis_design_axi_intc_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105319",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1_vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105319",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "654a3f84-cca4-451e-8bb3-51b99f497c67"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105320",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "654a3f84-cca4-451e-8bb3-51b99f497c67"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105320",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "654a3f84-cca4-451e-8bb3-51b99f497c67"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105338",
+ "status": {
+  "cmdId": "b6e6c0e7-0cb4-488e-91e0-a4e8bd6c9fe0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105380",
+ "status": {
+  "cmdId": "113c3e73-ebf4-4c0e-9726-abd6eda9bde9",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105383",
+ "buildStep": {
+  "cmdId": "51a611e0-ba76-4690-9417-6a4e9bcae963",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105383",
+ "status": {
+  "cmdId": "51a611e0-ba76-4690-9417-6a4e9bcae963",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105384",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105384",
+ "buildStep": {
+  "cmdId": "20c4f415-dd35-43a2-a97f-0c121f8786d2",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/address_map.xml -sdsl /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/sdsl.dat -xclbin /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -rtd /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.rtd -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.xml",
+  "args": [
+   "-a",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.rtd",
+   "-o",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105385",
+ "status": {
+  "cmdId": "20c4f415-dd35-43a2-a97f-0c121f8786d2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105973",
+ "status": {
+  "cmdId": "20c4f415-dd35-43a2-a97f-0c121f8786d2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105974",
+ "buildStep": {
+  "cmdId": "b7c2727f-f032-478b-8190-a445e2100e56",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.rtd",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105974",
+ "status": {
+  "cmdId": "b7c2727f-f032-478b-8190-a445e2100e56",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105975",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105975",
+ "status": {
+  "cmdId": "b7c2727f-f032-478b-8190-a445e2100e56",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105975",
+ "buildStep": {
+  "cmdId": "e00d28cc-d165-4c00-a397-ab39a0b7a889",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105976",
+ "status": {
+  "cmdId": "e00d28cc-d165-4c00-a397-ab39a0b7a889",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105976",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105976",
+ "status": {
+  "cmdId": "e00d28cc-d165-4c00-a397-ab39a0b7a889",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105976",
+ "status": {
+  "cmdId": "51a611e0-ba76-4690-9417-6a4e9bcae963",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105977",
+ "buildStep": {
+  "cmdId": "1738334b-9ac3-4b19-91b9-6a5aa3681d28",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/system.bit --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd --add-section BUILD_METADATA:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.xml --add-section SYSTEM_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0 --output /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/system.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:false",
+   "--add-section",
+   ":JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/myproject.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0",
+   "--output",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:05 2026",
+ "timestampMillis": "1774259105978",
+ "status": {
+  "cmdId": "1738334b-9ac3-4b19-91b9-6a5aa3681d28",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:06 2026",
+ "timestampMillis": "1774259106032",
+ "status": {
+  "cmdId": "1738334b-9ac3-4b19-91b9-6a5aa3681d28",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Mar 23 10:45:06 2026",
+ "timestampMillis": "1774259106033",
+ "buildStep": {
+  "cmdId": "ed7cd008-9cec-49c9-aa68-36f596486802",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin.info --input /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin.info",
+   "--input",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/myproject.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:06 2026",
+ "timestampMillis": "1774259106033",
+ "status": {
+  "cmdId": "ed7cd008-9cec-49c9-aa68-36f596486802",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Mar 23 10:45:06 2026",
+ "timestampMillis": "1774259106101",
+ "status": {
+  "cmdId": "ed7cd008-9cec-49c9-aa68-36f596486802",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Mar 23 10:45:06 2026",
+ "timestampMillis": "1774259106106",
  "report": {
   "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/logs/optraceViewer.html",
   "name": "",
@@ -466,19 +1199,19 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri Mar 20 11:24:27 2026",
- "timestampMillis": "1774002267250",
+ "dateTimestamp": "Mon Mar 23 10:45:06 2026",
+ "timestampMillis": "1774259106106",
  "status": {
-  "cmdId": "8e393fec-6a25-4c85-88c5-2bff71adf66b",
-  "state": "CS_FAILED"
+  "cmdId": "44e3a1a4-1c6a-4a8a-9020-6493cba2203d",
+  "state": "CS_PASSED"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Mar 20 11:24:27 2026",
- "timestampMillis": "1774002267273",
+ "dateTimestamp": "Mon Mar 23 10:45:06 2026",
+ "timestampMillis": "1774259106118",
  "report": {
   "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html",
   "name": "",
@@ -491,8 +1224,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri Mar 20 11:24:27 2026",
- "timestampMillis": "1774002267273",
+ "dateTimestamp": "Mon Mar 23 10:45:06 2026",
+ "timestampMillis": "1774259106118",
  "report": {
   "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/v++_link_myproject_guidance.pb3",
   "name": "",

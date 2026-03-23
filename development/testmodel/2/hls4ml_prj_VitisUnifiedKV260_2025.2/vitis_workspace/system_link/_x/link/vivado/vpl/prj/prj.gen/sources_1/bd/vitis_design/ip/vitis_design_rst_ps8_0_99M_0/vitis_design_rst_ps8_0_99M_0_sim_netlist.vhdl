@@ -4,8 +4,8 @@
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
 -- Date        : Fri Mar 20 11:24:21 2026
 -- Host        : KrissDEV running 64-bit Ubuntu 24.04.4 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_rst_ps8_0_99M_0/vitis_design_rst_ps8_0_99M_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top vitis_design_rst_ps8_0_99M_0 -prefix
+--               vitis_design_rst_ps8_0_99M_0_ vitis_design_rst_ps8_0_99M_0_sim_netlist.vhdl
 -- Design      : vitis_design_rst_ps8_0_99M_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -22,8 +22,6 @@ entity vitis_design_rst_ps8_0_99M_0_upcnt_n is
     seq_cnt_en : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_rst_ps8_0_99M_0_upcnt_n : entity is "upcnt_n";
 end vitis_design_rst_ps8_0_99M_0_upcnt_n;
 
 architecture STRUCTURE of vitis_design_rst_ps8_0_99M_0_upcnt_n is
@@ -190,8 +188,6 @@ entity vitis_design_rst_ps8_0_99M_0_xpm_cdc_single is
   attribute DEST_SYNC_FF of vitis_design_rst_ps8_0_99M_0_xpm_cdc_single : entity is 4;
   attribute INIT_SYNC_FF : integer;
   attribute INIT_SYNC_FF of vitis_design_rst_ps8_0_99M_0_xpm_cdc_single : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_rst_ps8_0_99M_0_xpm_cdc_single : entity is "xpm_cdc_single";
   attribute SIM_ASSERT_CHK : integer;
   attribute SIM_ASSERT_CHK of vitis_design_rst_ps8_0_99M_0_xpm_cdc_single : entity is 0;
   attribute SRC_INPUT_REG : integer;
@@ -362,8 +358,6 @@ entity vitis_design_rst_ps8_0_99M_0_lpf is
     ext_reset_in : in STD_LOGIC;
     aux_reset_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_rst_ps8_0_99M_0_lpf : entity is "lpf";
 end vitis_design_rst_ps8_0_99M_0_lpf;
 
 architecture STRUCTURE of vitis_design_rst_ps8_0_99M_0_lpf is
@@ -607,8 +601,6 @@ entity vitis_design_rst_ps8_0_99M_0_sequence_psr is
     lpf_int : in STD_LOGIC;
     slowest_sync_clk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_rst_ps8_0_99M_0_sequence_psr : entity is "sequence_psr";
 end vitis_design_rst_ps8_0_99M_0_sequence_psr;
 
 architecture STRUCTURE of vitis_design_rst_ps8_0_99M_0_sequence_psr is
@@ -947,8 +939,6 @@ entity vitis_design_rst_ps8_0_99M_0_proc_sys_reset is
   attribute C_NUM_PERP_ARESETN of vitis_design_rst_ps8_0_99M_0_proc_sys_reset : entity is 1;
   attribute C_NUM_PERP_RST : integer;
   attribute C_NUM_PERP_RST of vitis_design_rst_ps8_0_99M_0_proc_sys_reset : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_rst_ps8_0_99M_0_proc_sys_reset : entity is "proc_sys_reset";
 end vitis_design_rst_ps8_0_99M_0_proc_sys_reset;
 
 architecture STRUCTURE of vitis_design_rst_ps8_0_99M_0_proc_sys_reset is
