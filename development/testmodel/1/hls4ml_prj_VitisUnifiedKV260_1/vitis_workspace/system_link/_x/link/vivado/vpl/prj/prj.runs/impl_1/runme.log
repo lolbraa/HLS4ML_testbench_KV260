@@ -1,0 +1,304 @@
+
+*** Running vivado
+    with args -log vitis_design_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source vitis_design_wrapper.tcl -notrace
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Mar  5 14:36:06 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source vitis_design_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 38021
+source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/usr/lib/AMD/2025.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/usr/lib/AMD/2025.2/Vitis/data/vitis/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/lib/AMD/2025.2/data/ip'.
+Command: link_design -top vitis_design_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0.dcp' for cell 'vitis_design_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0.dcp' for cell 'vitis_design_i/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/vitis_design_axi_smc_0.dcp' for cell 'vitis_design_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/vitis_design_myproject_axi_master_1_0.dcp' for cell 'vitis_design_i/myproject_axi_master_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_rst_ps8_0_99M_0/vitis_design_rst_ps8_0_99M_0.dcp' for cell 'vitis_design_i/rst_ps8_0_99M'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.dcp' for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_zynq_ultra_ps_e_0_0/vitis_design_zynq_ultra_ps_e_0_0.dcp' for cell 'vitis_design_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/m02_couplers/m02_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_auto_pc_0/vitis_design_axi_interconnect_0_imp_auto_pc_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2897.562 ; gain = 0.000 ; free physical = 9100 ; free virtual = 11476
+INFO: [Netlist 29-17] Analyzing 27278 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0.xdc] for cell 'vitis_design_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0.xdc] for cell 'vitis_design_i/axi_dma_0/U0'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0.xdc] for cell 'vitis_design_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0.xdc] for cell 'vitis_design_i/axi_intc_0/U0'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/bd_0/ip/ip_1/bd_8c12_psr_aclk_0_board.xdc] for cell 'vitis_design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/bd_0/ip/ip_1/bd_8c12_psr_aclk_0_board.xdc] for cell 'vitis_design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/smartconnect.xdc] for cell 'vitis_design_i/axi_smc/inst'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/smartconnect.xdc] for cell 'vitis_design_i/axi_smc/inst'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_rst_ps8_0_99M_0/vitis_design_rst_ps8_0_99M_0_board.xdc] for cell 'vitis_design_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_rst_ps8_0_99M_0/vitis_design_rst_ps8_0_99M_0_board.xdc] for cell 'vitis_design_i/rst_ps8_0_99M/U0'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_zynq_ultra_ps_e_0_0/vitis_design_zynq_ultra_ps_e_0_0.xdc] for cell 'vitis_design_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_zynq_ultra_ps_e_0_0/vitis_design_zynq_ultra_ps_e_0_0.xdc] for cell 'vitis_design_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/bd_0/ip/ip_1/bd_b0ea_psr_aclk_0_board.xdc] for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/bd_0/ip/ip_1/bd_b0ea_psr_aclk_0_board.xdc] for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/smartconnect.xdc] for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/smartconnect.xdc] for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0_clocks.xdc] for cell 'vitis_design_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0_clocks.xdc] for cell 'vitis_design_i/axi_dma_0/U0'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0_clocks.xdc] for cell 'vitis_design_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0_clocks.xdc] for cell 'vitis_design_i/axi_intc_0/U0'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_clocks.xdc] for cell 'vitis_design_i/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_clocks.xdc] for cell 'vitis_design_i/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+INFO: [Project 1-1714] 93 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 5249.527 ; gain = 0.000 ; free physical = 6956 ; free virtual = 9332
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1404 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1248 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 9 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 137 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 8 instances
+
+25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:27 ; elapsed = 00:00:58 . Memory (MB): peak = 5249.562 ; gain = 3623.414 ; free physical = 6956 ; free virtual = 9332
+source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/output/_user_impl_clk.xdc]
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/output/_user_impl_clk.xdc]
+source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl
+Post-synthesis utilization DRC check...
+available resources:
+   luts      : -1
+   registers : -1
+   brams     : -1
+   dsps      : -1
+required resources:
+   luts      : 189221
+   registers : 35706
+   brams     : 8
+   dsps      : 1248
+WARNING: There is no resource utilization data in hardware platform, utilization DRC is skipped
+INFO: System Diagram: Run step: synthed
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 5249.562 ; gain = 0.000 ; free physical = 6932 ; free virtual = 9311
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a122a1f4
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:11 . Memory (MB): peak = 5249.562 ; gain = 0.000 ; free physical = 6908 ; free virtual = 9287
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1a122a1f4
+
+Time (s): cpu = 00:00:00.27 ; elapsed = 00:00:00.27 . Memory (MB): peak = 5447.340 ; gain = 0.000 ; free physical = 6735 ; free virtual = 9114
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1a122a1f4
+
+Time (s): cpu = 00:00:00.37 ; elapsed = 00:00:00.37 . Memory (MB): peak = 5447.340 ; gain = 0.000 ; free physical = 6735 ; free virtual = 9114
+Phase 1 Initialization | Checksum: 1a122a1f4
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.39 . Memory (MB): peak = 5447.340 ; gain = 0.000 ; free physical = 6735 ; free virtual = 9114
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1a122a1f4
+
+Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.6 . Memory (MB): peak = 5687.340 ; gain = 240.000 ; free physical = 6530 ; free virtual = 8909
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1a122a1f4
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 5687.340 ; gain = 240.000 ; free physical = 6530 ; free virtual = 8909
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1a122a1f4
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 5687.340 ; gain = 240.000 ; free physical = 6530 ; free virtual = 8909
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1a122a1f4
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 5687.340 ; gain = 240.000 ; free physical = 6530 ; free virtual = 8909
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 9 inverters resulting in an inversion of 80 pins
+INFO: [Opt 31-138] Pushed 101 inverter(s) to 3080 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 16e7cb897
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 5687.340 ; gain = 240.000 ; free physical = 6530 ; free virtual = 8909
+Retarget | Checksum: 16e7cb897
+INFO: [Opt 31-389] Phase Retarget created 143 cells and removed 596 cells
+INFO: [Opt 31-1021] In phase Retarget, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 12 inverter(s) to 12 load pin(s).
+Phase 4 Constant propagation | Checksum: 1268bbc98
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 5687.340 ; gain = 240.000 ; free physical = 6527 ; free virtual = 8915
+Constant propagation | Checksum: 1268bbc98
+INFO: [Opt 31-389] Phase Constant propagation created 12337 cells and removed 24758 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 5687.340 ; gain = 0.000 ; free physical = 6527 ; free virtual = 8915
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 5687.340 ; gain = 0.000 ; free physical = 6527 ; free virtual = 8915
+Phase 5 Sweep | Checksum: 1cea7fcf7
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 5687.340 ; gain = 240.000 ; free physical = 6527 ; free virtual = 8915
+Sweep | Checksum: 1cea7fcf7
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 786 cells
+INFO: [Opt 31-1021] In phase Sweep, 106 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1cea7fcf7
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:20 . Memory (MB): peak = 5719.355 ; gain = 272.016 ; free physical = 6527 ; free virtual = 8914
+BUFG optimization | Checksum: 1cea7fcf7
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1cea7fcf7
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:20 . Memory (MB): peak = 5719.355 ; gain = 272.016 ; free physical = 6527 ; free virtual = 8914
+Shift Register Optimization | Checksum: 1cea7fcf7
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+INFO: [Opt 31-1566] Pulled 142 inverters resulting in an inversion of 926 pins
+Phase 8 Post Processing Netlist | Checksum: f716aa11
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:22 . Memory (MB): peak = 5719.355 ; gain = 272.016 ; free physical = 6527 ; free virtual = 8914
+Post Processing Netlist | Checksum: f716aa11
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 336 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 244ac68b8
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:29 . Memory (MB): peak = 5719.355 ; gain = 272.016 ; free physical = 6527 ; free virtual = 8914
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.38 . Memory (MB): peak = 5719.355 ; gain = 0.000 ; free physical = 6527 ; free virtual = 8914
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 244ac68b8
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 5719.355 ; gain = 272.016 ; free physical = 6527 ; free virtual = 8914
+Phase 9 Finalization | Checksum: 244ac68b8
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 5719.355 ; gain = 272.016 ; free physical = 6527 ; free virtual = 8914
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             143  |             596  |                                             82  |
+|  Constant propagation         |           12337  |           24758  |                                             82  |
+|  Sweep                        |               0  |             786  |                                            106  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |             336  |                                             82  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 244ac68b8
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 5719.355 ; gain = 272.016 ; free physical = 6527 ; free virtual = 8914
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 13 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 7 Total Ports: 26
+Ending PowerOpt Patch Enables Task | Checksum: 1e464b988
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 7062.656 ; gain = 0.000 ; free physical = 5243 ; free virtual = 7634
+Ending Power Optimization Task | Checksum: 1e464b988
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:25 . Memory (MB): peak = 7062.656 ; gain = 1343.301 ; free physical = 5243 ; free virtual = 7634
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1e464b988
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7062.656 ; gain = 0.000 ; free physical = 5243 ; free virtual = 7634
+Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.2 . Memory (MB): peak = 7062.656 ; gain = 0.000 ; free physical = 5243 ; free virtual = 7634
+INFO: [Common 17-83] Releasing license: Implementation
+58 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:45 ; elapsed = 00:01:09 . Memory (MB): peak = 7062.656 ; gain = 1813.094 ; free physical = 5243 ; free virtual = 7634
+source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl
+source /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl
+CRITICAL WARNING: [Vivado 12-4430] You are lowering the severity from an ERROR. This can potentially lead to board damage or other functionality issues on hardware. If this is not desired, please run 'reset_property SEVERITY [get_drc_checks HDPR-5]' to undo this change.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter VITIS_REGION!=\"\"'.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+ERROR: [DRC UTLZ-1] Resource utilization: CARRY8 over-utilized in Top Level Design (This design requires more CARRY8 cells than are available in the target device. This design requires 24416 of such cell types but only 14640 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)
+ERROR: [DRC UTLZ-1] Resource utilization: CARRY8 over-utilized in Top Level Design (This design requires more CARRY8 cells than are available in the target device. This design requires 24416 of such cell types but only 14640 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device.)
+ERROR: [DRC UTLZ-1] Resource utilization: LUT as Logic over-utilized in Top Level Design (This design requires more LUT as Logic cells than are available in the target device. This design requires 185631 of such cell types but only 117120 compatible sites are available in the target device. Please analyze your synthesis results and constraints to ensure the design is mapped to Xilinx primitives as expected. If so, please consider targeting a larger device. Please set tcl parameter "drc.disableLUTOverUtilError" to 1 to change this error to warning.)
+INFO: [Vivado_Tcl 4-198] DRC finished with 3 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-23] Error(s) found during DRC. Placer not run.
+67 Infos, 1 Warnings, 1 Critical Warnings and 4 Errors encountered.
+place_design failed
+place_design: Time (s): cpu = 00:00:47 ; elapsed = 00:00:16 . Memory (MB): peak = 7155.719 ; gain = 93.062 ; free physical = 5258 ; free virtual = 7651
+ERROR: [Common 17-39] 'place_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  5 14:38:36 2026...

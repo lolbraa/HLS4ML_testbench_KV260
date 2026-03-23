@@ -1,0 +1,70 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/reports/link
+	Log files: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/myproject.xclbin.link_summary, at Fri Mar 20 08:21:43 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html', at Fri Mar 20 08:21:43 2026
+INFO: [v++ 60-895]   Target platform: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa'
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [08:21:43] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int --temp_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/run_link
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [08:21:44] build_xd_ip_db started: /tools/Xilinx/Vitis/2023.2/bin/build_xd_ip_db -ip_search 0  -sds-pf /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/kv260_axi_all_platform.hpfm -clkid 0 -ip /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/iprepo/xilinx_com_hls_myproject_axi_master_1_0,myproject_axi_master -o /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [08:21:46] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 457.129 ; gain = 0.000 ; free physical = 4496 ; free virtual = 14292
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [08:21:46] cfgen started: /tools/Xilinx/Vitis/2023.2/bin/cfgen  -dpa_mem_offload false -dmclkid 0 -r /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: myproject_axi_master, num: 1  {myproject_axi_master_1}
+INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_in0_ptr_linput to HP0
+INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_out0_ptr_layer5_out to HP0
+INFO: [SYSTEM_LINK 82-37] [08:21:46] cfgen finished successfully
+Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.49 . Memory (MB): peak = 457.129 ; gain = 0.000 ; free physical = 4279 ; free virtual = 14263
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [08:21:46] cf2bd started: /tools/Xilinx/Vitis/2023.2/bin/cf2bd  --linux --trace_buffer 1024 --input_file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd --temp_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link --output_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -dn dr -dp /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [08:21:47] cf2bd finished successfully
+Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.71 . Memory (MB): peak = 457.129 ; gain = 0.000 ; free physical = 3990 ; free virtual = 14226
+INFO: [v++ 60-1441] [08:21:47] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 464.719 ; gain = 0.000 ; free physical = 3997 ; free virtual = 14234
+INFO: [v++ 60-1443] [08:21:47] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1441] [08:21:47] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:00.56 ; elapsed = 00:00:00.6 . Memory (MB): peak = 464.719 ; gain = 0.000 ; free physical = 3848 ; free virtual = 14286
+INFO: [v++ 60-1443] [08:21:47] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1441] [08:21:47] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.05 . Memory (MB): peak = 464.719 ; gain = 0.000 ; free physical = 3840 ; free virtual = 14298
+INFO: [v++ 60-1443] [08:21:47] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/.ipcache --output_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int --log_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/logs/link --report_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/reports/link --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link --no-info --iprepo /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/run_link/vpl.pb /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/run_link
+
+****** vpl v2023.2 (64-bit)
+  **** SW Build 4026344 on 2023-10-11-15:42:10
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int/kernel_info.dat'.
+INFO: [VPL 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
+INFO: [VPL 60-1032] Extracting hardware platform to /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform
+[08:21:51] Run vpl: Step create_project: Started
+Creating Vivado project.
+[08:21:55] Run vpl: Step create_project: Completed
+[08:21:55] Run vpl: Step create_bd: Started
+[08:21:57] Run vpl: Step create_bd: Completed
+[08:21:57] Run vpl: Step update_bd: Started
+[08:21:58] Run vpl: Step update_bd: Completed
+[08:21:58] Run vpl: Step generate_target: Started
+[08:22:20] Run vpl: Step generate_target: Completed
+[08:22:20] Run vpl: Step config_hw_runs: Started
+[08:23:35] Run vpl: Step config_hw_runs: RUNNING...

@@ -1,0 +1,424 @@
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:28530:7: warning: Added loop label VITIS_LOOP_1207_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1207_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:28530:7: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:29504:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:29504:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:29518:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:29518:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:29532:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:29532:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:31149:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:31149:7: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:33132:9: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_27_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:33132:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:33144:9: warning: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_39_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:33144:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:33161:9: warning: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^~~
+        VITIS_LOOP_56_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:33161:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56374:5: warning: Added loop label VITIS_LOOP_265_1:   [xilinx-label-all-loops]
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    ^~~
+    VITIS_LOOP_265_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56374:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56384:5: warning: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (auto i = 0; i < SIZE; i++)
+    ^~~
+    VITIS_LOOP_275_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56384:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56395:5: warning: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^~~
+    VITIS_LOOP_286_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56395:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56402:5: warning: Added loop label VITIS_LOOP_293_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_293_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56402:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56404:9: warning: Added loop label VITIS_LOOP_295_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^~~
+        VITIS_LOOP_295_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56404:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56416:5: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / data_T::size; i++) {
+    ^~~
+    VITIS_LOOP_307_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56416:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56418:9: warning: Added loop label VITIS_LOOP_309_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_309_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56418:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56433:5: warning: Added loop label VITIS_LOOP_324_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_324_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56433:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56453:5: warning: Added loop label VITIS_LOOP_344_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^~~
+    VITIS_LOOP_344_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56453:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56454:9: warning: Added loop label VITIS_LOOP_345_2:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < ncols; jj++) {
+        ^~~
+        VITIS_LOOP_345_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56454:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56469:5: warning: Added loop label VITIS_LOOP_360_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_360_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56469:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56476:5: warning: Added loop label VITIS_LOOP_367_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^~~
+    VITIS_LOOP_367_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56476:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56786:5: warning: Added loop label VITIS_LOOP_136_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^~~
+    VITIS_LOOP_136_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56786:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56787:9: warning: Added loop label VITIS_LOOP_137_2:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^~~
+        VITIS_LOOP_137_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56787:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56808:5: warning: Added loop label VITIS_LOOP_158_3:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^~~
+    VITIS_LOOP_158_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56808:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56809:9: warning: Added loop label VITIS_LOOP_159_4:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^~~
+        VITIS_LOOP_159_4: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:56809:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57135:2: warning: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_31_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57135:2: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57147:5: warning: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_43_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57147:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57161:5: warning: Added loop label VITIS_LOOP_57_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_57_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57161:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57188:5: warning: Added loop label VITIS_LOOP_84_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_84_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57188:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57218:5: warning: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_114_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57218:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57255:5: warning: Added loop label VITIS_LOOP_151_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::exp_table_size; i++) {
+    ^~~
+    VITIS_LOOP_151_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57255:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57271:5: warning: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::inv_table_size; i++) {
+    ^~~
+    VITIS_LOOP_167_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57271:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57304:5: warning: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_200_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57304:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57317:5: warning: Added loop label VITIS_LOOP_213_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_213_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57317:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57350:5: warning: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_246_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57350:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57359:5: warning: Added loop label VITIS_LOOP_255_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_255_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57359:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57372:5: warning: Added loop label VITIS_LOOP_268_3:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_268_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57372:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57379:5: warning: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_275_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57379:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57392:5: warning: Added loop label VITIS_LOOP_288_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_288_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57392:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57429:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57429:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57434:5: warning: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_330_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57434:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57435:9: warning: Added loop label VITIS_LOOP_331_3:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < CONFIG_T::n_slice; jj++) {
+        ^~~
+        VITIS_LOOP_331_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57435:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57452:5: warning: Added loop label VITIS_LOOP_348_4:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^~~
+    VITIS_LOOP_348_4: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57452:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57465:5: warning: Added loop label VITIS_LOOP_361_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_361_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57465:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57473:5: warning: Added loop label VITIS_LOOP_369_2:   [xilinx-label-all-loops]
+    for (int i = 1; i < CONFIG_T::n_slice; i++) {
+    ^~~
+    VITIS_LOOP_369_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57473:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57509:5: warning: Added loop label VITIS_LOOP_405_1:   [xilinx-label-all-loops]
+    for (signed i = 0; i < CONFIG_T::n_outer; i++) {
+    ^~~
+    VITIS_LOOP_405_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57509:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57511:2: warning: Added loop label VITIS_LOOP_407_2:   [xilinx-label-all-loops]
+ for (signed k = 0; k < CONFIG_T::n_inner; k++) {
+ ^~~
+ VITIS_LOOP_407_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57511:2: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57513:2: warning: Added loop label VITIS_LOOP_409_3:   [xilinx-label-all-loops]
+ for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+ ^~~
+ VITIS_LOOP_409_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57513:2: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57518:13: warning: Added loop label VITIS_LOOP_414_4:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^~~
+            VITIS_LOOP_414_4: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57518:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57531:5: warning: Added loop label VITIS_LOOP_427_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_427_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57531:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57561:5: warning: Added loop label VITIS_LOOP_457_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_457_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57561:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57588:2: warning: Added loop label VITIS_LOOP_484_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_484_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57588:2: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57602:2: warning: Added loop label VITIS_LOOP_498_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_498_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57602:2: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57618:5: warning: Added loop label VITIS_LOOP_514_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_514_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57618:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57636:5: warning: Added loop label VITIS_LOOP_532_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_532_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57636:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57653:5: warning: Added loop label VITIS_LOOP_549_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_549_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57653:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57670:5: warning: Added loop label VITIS_LOOP_566_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_566_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57670:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57700:5: warning: Added loop label VITIS_LOOP_596_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_596_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57700:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57719:5: warning: Added loop label VITIS_LOOP_615_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_615_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57719:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57749:5: warning: Added loop label VITIS_LOOP_645_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_645_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57749:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57768:5: warning: Added loop label VITIS_LOOP_664_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_664_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57768:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57798:5: warning: Added loop label VITIS_LOOP_694_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_694_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57798:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57825:5: warning: Added loop label VITIS_LOOP_721_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^~~
+    VITIS_LOOP_721_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57825:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57853:2: warning: Added loop label VITIS_LOOP_749_1:   [xilinx-label-all-loops]
+ for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+ ^~~
+ VITIS_LOOP_749_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57853:2: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57883:5: warning: Added loop label VITIS_LOOP_779_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_779_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57883:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57912:5: warning: Added loop label VITIS_LOOP_808_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_808_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57912:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57932:5: warning: Added loop label VITIS_LOOP_828_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^~~
+    VITIS_LOOP_828_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:57932:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58177:9: warning: Added loop label VITIS_LOOP_229_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_229_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58177:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58184:13: warning: Added loop label VITIS_LOOP_236_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^~~
+            VITIS_LOOP_236_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58184:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58193:9: warning: Added loop label VITIS_LOOP_245_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_245_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58193:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58202:13: warning: Added loop label VITIS_LOOP_254_4:   [xilinx-label-all-loops]
+            for (int j = 0; j < pack_diff; j++) {
+            ^~~
+            VITIS_LOOP_254_4: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58202:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58206:17: warning: Added loop label VITIS_LOOP_258_5:   [xilinx-label-all-loops]
+                for (int k = 0; k < res_T::size; k++) {
+                ^~~
+                VITIS_LOOP_258_5: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58206:17: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58217:9: warning: Added loop label VITIS_LOOP_269_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^~~
+        VITIS_LOOP_269_6: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58217:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58221:13: warning: Added loop label VITIS_LOOP_273_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^~~
+            VITIS_LOOP_273_7: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58221:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58245:9: warning: Added loop label VITIS_LOOP_297_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < n_dupl; j++) {
+        ^~~
+        VITIS_LOOP_297_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58245:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58249:13: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+            for (int k = 0; k < res_T::size; k++) {
+            ^~~
+            VITIS_LOOP_301_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58249:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58268:9: warning: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < res_T::size; k++) {
+        ^~~
+        VITIS_LOOP_320_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58268:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58492:9: warning: Added loop label VITIS_LOOP_211_1:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_211_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58492:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58501:9: warning: Added loop label VITIS_LOOP_220_2:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^~~
+        VITIS_LOOP_220_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58501:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58606:5: warning: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_in / res_T::size; i++) {
+    ^~~
+    VITIS_LOOP_325_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58606:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58611:9: warning: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < res_T::size; i++) {
+        ^~~
+        VITIS_LOOP_330_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58611:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58619:9: warning: Added loop label VITIS_LOOP_338_3:   [xilinx-label-all-loops]
+        for (int i = 1; i < res_T::size; i++) {
+        ^~~
+        VITIS_LOOP_338_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:58619:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:59201:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:59275:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:59357:9: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+        ^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:59530:5: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for (unsigned k = 0; k < CONFIG_T::n_out; k++) {
+    ^~~
+    VITIS_LOOP_14_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:59530:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:59590:9: warning: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+        for (int im = 0; im < CONFIG_T::n_out; im++) {
+        ^~~
+        VITIS_LOOP_74_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis/hgq2_1_hls4ml_prj_Vitis_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis.pp.0.cpp:59590:9: note: FIX-IT applied suggested code changes

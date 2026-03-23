@@ -1,0 +1,419 @@
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:29444:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:29444:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:29458:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:29458:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:29472:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:29472:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:32949:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:32949:7: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:47779:9: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_27_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:47779:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:47791:9: remark: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_39_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:47791:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:47808:9: remark: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_56_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:47808:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59576:5: remark: Added loop label VITIS_LOOP_265_1:   [xilinx-label-all-loops]
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    ^
+    VITIS_LOOP_265_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59576:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59586:5: remark: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (auto i = 0; i < SIZE; i++)
+    ^
+    VITIS_LOOP_275_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59586:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59597:5: remark: Added loop label VITIS_LOOP_286_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^
+    VITIS_LOOP_286_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59597:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59604:5: remark: Added loop label VITIS_LOOP_293_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / res_T::size; i++) {
+    ^
+    VITIS_LOOP_293_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59604:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59606:9: remark: Added loop label VITIS_LOOP_295_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^
+        VITIS_LOOP_295_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59606:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59618:5: remark: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / data_T::size; i++) {
+    ^
+    VITIS_LOOP_307_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59618:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59620:9: remark: Added loop label VITIS_LOOP_309_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_309_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59620:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59635:5: remark: Added loop label VITIS_LOOP_324_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^
+    VITIS_LOOP_324_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59635:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59655:5: remark: Added loop label VITIS_LOOP_344_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^
+    VITIS_LOOP_344_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59655:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59656:9: remark: Added loop label VITIS_LOOP_345_2:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < ncols; jj++) {
+        ^
+        VITIS_LOOP_345_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59656:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59671:5: remark: Added loop label VITIS_LOOP_360_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^
+    VITIS_LOOP_360_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59671:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59678:5: remark: Added loop label VITIS_LOOP_367_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^
+    VITIS_LOOP_367_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59678:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59988:5: remark: Added loop label VITIS_LOOP_136_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^
+    VITIS_LOOP_136_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59988:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59989:9: remark: Added loop label VITIS_LOOP_137_2:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^
+        VITIS_LOOP_137_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:59989:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60010:5: remark: Added loop label VITIS_LOOP_158_3:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^
+    VITIS_LOOP_158_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60010:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60011:9: remark: Added loop label VITIS_LOOP_159_4:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^
+        VITIS_LOOP_159_4: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60011:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60337:5: remark: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_31_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60337:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60349:5: remark: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_43_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60349:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60363:5: remark: Added loop label VITIS_LOOP_57_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_57_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60363:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60390:5: remark: Added loop label VITIS_LOOP_84_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_84_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60390:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60420:5: remark: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_114_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60420:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60457:5: remark: Added loop label VITIS_LOOP_151_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::exp_table_size; i++) {
+    ^
+    VITIS_LOOP_151_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60457:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60473:5: remark: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::inv_table_size; i++) {
+    ^
+    VITIS_LOOP_167_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60473:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60506:5: remark: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_200_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60506:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60519:5: remark: Added loop label VITIS_LOOP_213_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_213_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60519:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60552:5: remark: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_246_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60552:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60561:5: remark: Added loop label VITIS_LOOP_255_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_255_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60561:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60574:5: remark: Added loop label VITIS_LOOP_268_3:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_268_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60574:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60581:5: remark: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_275_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60581:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60594:5: remark: Added loop label VITIS_LOOP_288_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_288_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60594:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60631:5: remark: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_325_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60631:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60636:5: remark: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_330_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60636:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60637:9: remark: Added loop label VITIS_LOOP_331_3:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < CONFIG_T::n_slice; jj++) {
+        ^
+        VITIS_LOOP_331_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60637:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60654:5: remark: Added loop label VITIS_LOOP_348_4:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_348_4: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60654:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60667:5: remark: Added loop label VITIS_LOOP_361_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_361_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60667:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60675:5: remark: Added loop label VITIS_LOOP_369_2:   [xilinx-label-all-loops]
+    for (int i = 1; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_369_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60675:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60711:5: remark: Added loop label VITIS_LOOP_405_1:   [xilinx-label-all-loops]
+    for (signed i = 0; i < CONFIG_T::n_outer; i++) {
+    ^
+    VITIS_LOOP_405_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60711:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60713:9: remark: Added loop label VITIS_LOOP_407_2:   [xilinx-label-all-loops]
+        for (signed k = 0; k < CONFIG_T::n_inner; k++) {
+        ^
+        VITIS_LOOP_407_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60713:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60715:13: remark: Added loop label VITIS_LOOP_409_3:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^
+            VITIS_LOOP_409_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60715:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60720:13: remark: Added loop label VITIS_LOOP_414_4:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^
+            VITIS_LOOP_414_4: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60720:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60733:5: remark: Added loop label VITIS_LOOP_427_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_427_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60733:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60763:5: remark: Added loop label VITIS_LOOP_457_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_457_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60763:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60790:5: remark: Added loop label VITIS_LOOP_484_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_484_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60790:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60804:5: remark: Added loop label VITIS_LOOP_498_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_498_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60804:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60820:5: remark: Added loop label VITIS_LOOP_514_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_514_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60820:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60838:5: remark: Added loop label VITIS_LOOP_532_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_532_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60838:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60855:5: remark: Added loop label VITIS_LOOP_549_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_549_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60855:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60872:5: remark: Added loop label VITIS_LOOP_566_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_566_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60872:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60902:5: remark: Added loop label VITIS_LOOP_596_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_596_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60902:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60921:5: remark: Added loop label VITIS_LOOP_615_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_615_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60921:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60951:5: remark: Added loop label VITIS_LOOP_645_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_645_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60951:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60970:5: remark: Added loop label VITIS_LOOP_664_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_664_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:60970:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61000:5: remark: Added loop label VITIS_LOOP_694_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_694_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61000:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61027:5: remark: Added loop label VITIS_LOOP_721_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_721_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61027:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61055:5: remark: Added loop label VITIS_LOOP_749_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_749_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61055:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61085:5: remark: Added loop label VITIS_LOOP_779_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_779_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61085:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61114:5: remark: Added loop label VITIS_LOOP_808_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_808_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61114:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61134:5: remark: Added loop label VITIS_LOOP_828_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_828_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61134:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61379:9: remark: Added loop label VITIS_LOOP_229_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_229_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61379:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61386:13: remark: Added loop label VITIS_LOOP_236_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^
+            VITIS_LOOP_236_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61386:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61395:9: remark: Added loop label VITIS_LOOP_245_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_245_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61395:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61404:13: remark: Added loop label VITIS_LOOP_254_4:   [xilinx-label-all-loops]
+            for (int j = 0; j < pack_diff; j++) {
+            ^
+            VITIS_LOOP_254_4: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61404:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61408:17: remark: Added loop label VITIS_LOOP_258_5:   [xilinx-label-all-loops]
+                for (int k = 0; k < res_T::size; k++) {
+                ^
+                VITIS_LOOP_258_5: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61408:17: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61419:9: remark: Added loop label VITIS_LOOP_269_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_269_6: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61419:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61423:13: remark: Added loop label VITIS_LOOP_273_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^
+            VITIS_LOOP_273_7: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61423:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61447:9: remark: Added loop label VITIS_LOOP_297_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < n_dupl; j++) {
+        ^
+        VITIS_LOOP_297_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61447:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61451:13: remark: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+            for (int k = 0; k < res_T::size; k++) {
+            ^
+            VITIS_LOOP_301_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61451:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61470:9: remark: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < res_T::size; k++) {
+        ^
+        VITIS_LOOP_320_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61470:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61694:9: remark: Added loop label VITIS_LOOP_211_1:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_211_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61694:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61703:9: remark: Added loop label VITIS_LOOP_220_2:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_220_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61703:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61808:5: remark: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_in / res_T::size; i++) {
+    ^
+    VITIS_LOOP_325_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61808:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61813:9: remark: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < res_T::size; i++) {
+        ^
+        VITIS_LOOP_330_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61813:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61821:9: remark: Added loop label VITIS_LOOP_338_3:   [xilinx-label-all-loops]
+        for (int i = 1; i < res_T::size; i++) {
+        ^
+        VITIS_LOOP_338_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:61821:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:62403:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:62477:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:62559:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:62732:5: remark: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for (unsigned k = 0; k < CONFIG_T::n_out; k++) {
+    ^
+    VITIS_LOOP_14_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:62732:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:62792:9: remark: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+        for (int im = 0; im < CONFIG_T::n_out; im++) {
+        ^
+        VITIS_LOOP_74_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor4/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor4.pp.0.cpp:62792:9: note: FIX-IT applied suggested code changes

@@ -1,0 +1,15 @@
+ERROR: [v++ 60-1258] No valid platform was found that matches '/usr/lib/AMD/2025.2/Vitis/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm'. Please make sure that the platform is specified correctly, and the platform has the right version number. The platform repo paths are:
+	/usr/lib/AMD/2025.2/Vitis/platforms
+	/usr/lib/AMD/2025.2/Vitis/base_platforms
+The valid platforms found from the above repo paths are:
+	/usr/lib/AMD/2025.2/Vitis/base_platforms/vek385_base/vek385_base.xpfm
+	/usr/lib/AMD/2025.2/Vitis/base_platforms/vrk160_base/vrk160_base.xpfm
+	/usr/lib/AMD/2025.2/Vitis/base_platforms/xilinx_kv260_base_202520_1/xilinx_kv260_base_202520_1.xpfm
+	/usr/lib/AMD/2025.2/Vitis/base_platforms/xilinx_vck190_base_202520_1/xilinx_vck190_base_202520_1.xpfm
+	/usr/lib/AMD/2025.2/Vitis/base_platforms/xilinx_vck190_base_dfx_202520_1/xilinx_vck190_base_dfx_202520_1.xpfm
+	/usr/lib/AMD/2025.2/Vitis/base_platforms/xilinx_vek280_base_202520_1/xilinx_vek280_base_202520_1.xpfm
+	/usr/lib/AMD/2025.2/Vitis/base_platforms/xilinx_vmk180_base_202520_1/xilinx_vmk180_base_202520_1.xpfm
+
+ERROR: [v++ 60-587] Failed to add a platform: specified platform /usr/lib/AMD/2025.2/Vitis/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm is not found or is not valid
+INFO: [v++ 60-1662] Stopping dispatch session having empty uuid.
+INFO: [v++ 60-1653] Closing dispatch client.

@@ -1,0 +1,1095 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/vitis_unified_project.hlsrun_cosim_summary, at Fri Mar 20 08:18:52 2026
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run cosim -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'root' on host '161174ea8eb1' (Linux_x86_64 version 6.8.0-106-generic) on Fri Mar 20 08:18:52 +0000 2026
+INFO: [HLS 200-10] In directory '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject'
+INFO: [HLS 200-1909] Reading HLS ini file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project 
+INFO: [HLS 200-1510] Running: open_project /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp,-std=c++0x' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp,-std=c++0x' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'tb.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/weights' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/weights' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/tb_data' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(16)
+INFO: [HLS 200-10] Adding test bench file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/tb_data' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp,-DRTL_SIM' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(18)
+INFO: [HLS 200-1465] Applying ini 'syn.top=myproject_axi_master' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'clock=5ns' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=12.5%' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.enable_fifo_sizing=true' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(24)
+INFO: [HLS 200-1465] Applying ini 'package.ip.version=1.0.0' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(19)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(20)
+INFO: [HLS 200-1465] Applying ini 'syn.compile.name_max_length=80' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(21)
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1465] Applying ini 'syn.schedule.enable_dsp_full_reg=0' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(22)
+INFO: [HLS 200-1510] Running: apply_ini /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+INFO: [HLS 200-1510] Running: cosim_design 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_myproject_axi_master.cpp
+   Compiling myproject_axi_master.cpp_pre.cpp.tb.cpp
+   Compiling myproject.cpp_pre.cpp.tb.cpp
+   Compiling myproject_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_myproject_axi_master_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Processing input 0
+Predictions
+0 1 0 0 0 
+Quantized predictions
+0.444336 0.379883 0.0302734 0.0595703 0.0986328 
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+WARNING: [HLS 200-616] This design uses AXI slave interface in dataflow mode, which can result in simulation dead-lock and/or mismatching results (due to AXI slave FIFO sizing).
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado_gen_ip.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 20 08:19:08 2026...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_axi_master_top glbl -Oenable_linking_all_libraries -prj myproject_axi_master.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s myproject_axi_master 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/ip/xil_defaultlib/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_6ns_22_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_6ns_22_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w1024_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w1024_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w1024_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_gmem_out0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_load
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_store
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_read
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_write
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_srl
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_exp_tablebkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_exp_tablebkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_invert_tacud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_invert_tacud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_10s_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_10s_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_11ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_11ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_8s_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_8s_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_12s_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_12s_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_5s_21_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_5s_21_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_gmem_in0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_load
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_store
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_read
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_write
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_srl
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w80_d128_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w80_d128_A
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w80_d128_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_5ns_21_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_5ns_21_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_9ns_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_9ns_25_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w32_d2_S
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w32_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_18s_11ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_18s_11ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w64_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w64_d4_S
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w64_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_compute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_compute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_8ns_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_8ns_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_11s_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_11s_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_load_input_float_array_ap_fixed_16_6_5_3_0_16u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_load_input_float_array_ap_fixed_16_6_5_3_0_16u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w256_d128_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w256_d128_A
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w256_d128_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_myproject
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_7s_23_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_7s_23_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_7ns_23_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_7ns_23_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_axi_master_gmem_in0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem_in0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/fifo_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myproject_axi_master_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_axi_master_gmem_out0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem_out0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_9s_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_9s_25_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w80_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w80_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w80_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_10ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_10ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_12ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_12ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_6s_22_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_6s_22_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_compute_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_compute_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_compute_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_store_result_float_array_ap_fixed_16_6_5_3_0_5u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_store_result_float_array_ap_fixed_16_6_5_3_0_5u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w1024_d1_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w80_d1_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w64_d4_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w32_d2_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_compute_U0.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_11.xbip_utils_v3_0_11_pkg
+Compiling package axi_utils_v2_0_7.axi_utils_v2_0_7_pkg
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_exp_table...
+Compiling package mult_gen_v12_0_19.mult_gen_v12_0_19_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_pkg
+Compiling package floating_point_v7_1_16.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv_comp
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.myproject_axi_master_control_s_a...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_entry_proc
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.myproject_axi_master_fpext_32ns_...
+Compiling module xil_defaultlib.myproject_axi_master_fpext_32ns_...
+Compiling module xil_defaultlib.myproject_axi_master_flow_contro...
+Compiling module xil_defaultlib.myproject_axi_master_load_input_...
+Compiling module xil_defaultlib.myproject_axi_master_load_input_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_10s...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_9ns...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_7ns...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_8s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_11n...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_9s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_8ns...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_10n...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_7s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_11s...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_12n...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_6ns...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_5s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_6s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_5ns...
+Compiling module xil_defaultlib.myproject_axi_master_dense_laten...
+Compiling module xil_defaultlib.myproject_axi_master_dense_array...
+Compiling module xil_defaultlib.myproject_axi_master_relu_array_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_12s...
+Compiling module xil_defaultlib.myproject_axi_master_dense_laten...
+Compiling module xil_defaultlib.myproject_axi_master_dense_array...
+Compiling module xil_defaultlib.myproject_axi_master_softmax_sta...
+Compiling module xil_defaultlib.myproject_axi_master_softmax_sta...
+Compiling module xil_defaultlib.myproject_axi_master_mul_18s_11n...
+Compiling module xil_defaultlib.myproject_axi_master_softmax_sta...
+Compiling module xil_defaultlib.myproject_axi_master_softmax_arr...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w1024_...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w1024_...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w80_d1...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w80_d1...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_r...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_r...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_d...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_d...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_s...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_s...
+Compiling module xil_defaultlib.myproject_axi_master_myproject
+Compiling module xil_defaultlib.myproject_axi_master_compute
+Compiling module xil_defaultlib.myproject_axi_master_store_resul...
+Compiling module xil_defaultlib.myproject_axi_master_store_resul...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w64_d4...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w64_d4...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w32_d2...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w32_d2...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w256_d...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w256_d...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w80_d1...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w80_d1...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_s...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_s...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_c...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_c...
+Compiling module xil_defaultlib.myproject_axi_master
+Compiling module xil_defaultlib.AESL_axi_master_gmem_in0
+Compiling module xil_defaultlib.AESL_axi_master_gmem_out0
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=3)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=16)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.fifo_monitor_1
+Compiling module xil_defaultlib.apatb_myproject_axi_master_top
+Compiling module work.glbl
+Built simulation snapshot myproject_axi_master
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/myproject_axi_master/xsim_script.tcl
+# xsim {myproject_axi_master} -autoloadwcfg -tclbatch {myproject_axi_master.tcl}
+Time resolution is 1 ps
+source myproject_axi_master.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 100 [n/a] @ "113000"
+// RTL Simulation : 1 / 100 [n/a] @ "748000"
+// RTL Simulation : 2 / 100 [n/a] @ "1223000"
+// RTL Simulation : 3 / 100 [n/a] @ "1698000"
+// RTL Simulation : 4 / 100 [n/a] @ "2173000"
+// RTL Simulation : 5 / 100 [n/a] @ "2648000"
+// RTL Simulation : 6 / 100 [n/a] @ "3123000"
+// RTL Simulation : 7 / 100 [n/a] @ "3598000"
+// RTL Simulation : 8 / 100 [n/a] @ "4073000"
+// RTL Simulation : 9 / 100 [n/a] @ "4548000"
+// RTL Simulation : 10 / 100 [n/a] @ "5023000"
+// RTL Simulation : 11 / 100 [n/a] @ "5498000"
+// RTL Simulation : 12 / 100 [n/a] @ "5973000"
+// RTL Simulation : 13 / 100 [n/a] @ "6448000"
+// RTL Simulation : 14 / 100 [n/a] @ "6923000"
+// RTL Simulation : 15 / 100 [n/a] @ "7398000"
+// RTL Simulation : 16 / 100 [n/a] @ "7873000"
+// RTL Simulation : 17 / 100 [n/a] @ "8348000"
+// RTL Simulation : 18 / 100 [n/a] @ "8823000"
+// RTL Simulation : 19 / 100 [n/a] @ "9298000"
+// RTL Simulation : 20 / 100 [n/a] @ "9773000"
+// RTL Simulation : 21 / 100 [n/a] @ "10248000"
+// RTL Simulation : 22 / 100 [n/a] @ "10723000"
+// RTL Simulation : 23 / 100 [n/a] @ "11198000"
+// RTL Simulation : 24 / 100 [n/a] @ "11673000"
+// RTL Simulation : 25 / 100 [n/a] @ "12148000"
+// RTL Simulation : 26 / 100 [n/a] @ "12623000"
+// RTL Simulation : 27 / 100 [n/a] @ "13098000"
+// RTL Simulation : 28 / 100 [n/a] @ "13573000"
+// RTL Simulation : 29 / 100 [n/a] @ "14048000"
+// RTL Simulation : 30 / 100 [n/a] @ "14523000"
+// RTL Simulation : 31 / 100 [n/a] @ "14998000"
+// RTL Simulation : 32 / 100 [n/a] @ "15473000"
+// RTL Simulation : 33 / 100 [n/a] @ "15948000"
+// RTL Simulation : 34 / 100 [n/a] @ "16423000"
+// RTL Simulation : 35 / 100 [n/a] @ "16898000"
+// RTL Simulation : 36 / 100 [n/a] @ "17373000"
+// RTL Simulation : 37 / 100 [n/a] @ "17848000"
+// RTL Simulation : 38 / 100 [n/a] @ "18323000"
+// RTL Simulation : 39 / 100 [n/a] @ "18798000"
+// RTL Simulation : 40 / 100 [n/a] @ "19273000"
+// RTL Simulation : 41 / 100 [n/a] @ "19748000"
+// RTL Simulation : 42 / 100 [n/a] @ "20223000"
+// RTL Simulation : 43 / 100 [n/a] @ "20698000"
+// RTL Simulation : 44 / 100 [n/a] @ "21173000"
+// RTL Simulation : 45 / 100 [n/a] @ "21648000"
+// RTL Simulation : 46 / 100 [n/a] @ "22123000"
+// RTL Simulation : 47 / 100 [n/a] @ "22598000"
+// RTL Simulation : 48 / 100 [n/a] @ "23073000"
+// RTL Simulation : 49 / 100 [n/a] @ "23548000"
+// RTL Simulation : 50 / 100 [n/a] @ "24023000"
+// RTL Simulation : 51 / 100 [n/a] @ "24498000"
+// RTL Simulation : 52 / 100 [n/a] @ "24973000"
+// RTL Simulation : 53 / 100 [n/a] @ "25448000"
+// RTL Simulation : 54 / 100 [n/a] @ "25923000"
+// RTL Simulation : 55 / 100 [n/a] @ "26398000"
+// RTL Simulation : 56 / 100 [n/a] @ "26873000"
+// RTL Simulation : 57 / 100 [n/a] @ "27348000"
+// RTL Simulation : 58 / 100 [n/a] @ "27823000"
+// RTL Simulation : 59 / 100 [n/a] @ "28298000"
+// RTL Simulation : 60 / 100 [n/a] @ "28773000"
+// RTL Simulation : 61 / 100 [n/a] @ "29248000"
+// RTL Simulation : 62 / 100 [n/a] @ "29723000"
+// RTL Simulation : 63 / 100 [n/a] @ "30198000"
+// RTL Simulation : 64 / 100 [n/a] @ "30673000"
+// RTL Simulation : 65 / 100 [n/a] @ "31148000"
+// RTL Simulation : 66 / 100 [n/a] @ "31623000"
+// RTL Simulation : 67 / 100 [n/a] @ "32098000"
+// RTL Simulation : 68 / 100 [n/a] @ "32573000"
+// RTL Simulation : 69 / 100 [n/a] @ "33048000"
+// RTL Simulation : 70 / 100 [n/a] @ "33523000"
+// RTL Simulation : 71 / 100 [n/a] @ "33998000"
+// RTL Simulation : 72 / 100 [n/a] @ "34473000"
+// RTL Simulation : 73 / 100 [n/a] @ "34948000"
+// RTL Simulation : 74 / 100 [n/a] @ "35423000"
+// RTL Simulation : 75 / 100 [n/a] @ "35898000"
+// RTL Simulation : 76 / 100 [n/a] @ "36373000"
+// RTL Simulation : 77 / 100 [n/a] @ "36848000"
+// RTL Simulation : 78 / 100 [n/a] @ "37323000"
+// RTL Simulation : 79 / 100 [n/a] @ "37798000"
+// RTL Simulation : 80 / 100 [n/a] @ "38273000"
+// RTL Simulation : 81 / 100 [n/a] @ "38748000"
+// RTL Simulation : 82 / 100 [n/a] @ "39223000"
+// RTL Simulation : 83 / 100 [n/a] @ "39698000"
+// RTL Simulation : 84 / 100 [n/a] @ "40173000"
+// RTL Simulation : 85 / 100 [n/a] @ "40648000"
+// RTL Simulation : 86 / 100 [n/a] @ "41123000"
+// RTL Simulation : 87 / 100 [n/a] @ "41598000"
+// RTL Simulation : 88 / 100 [n/a] @ "42073000"
+// RTL Simulation : 89 / 100 [n/a] @ "42548000"
+// RTL Simulation : 90 / 100 [n/a] @ "43023000"
+// RTL Simulation : 91 / 100 [n/a] @ "43498000"
+// RTL Simulation : 92 / 100 [n/a] @ "43973000"
+// RTL Simulation : 93 / 100 [n/a] @ "44448000"
+// RTL Simulation : 94 / 100 [n/a] @ "44923000"
+// RTL Simulation : 95 / 100 [n/a] @ "45398000"
+// RTL Simulation : 96 / 100 [n/a] @ "45873000"
+// RTL Simulation : 97 / 100 [n/a] @ "46348000"
+// RTL Simulation : 98 / 100 [n/a] @ "46823000"
+// RTL Simulation : 99 / 100 [n/a] @ "47298000"
+// RTL Simulation : 100 / 100 [n/a] @ "47773000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 47802500 ps : File "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.autotb.v" Line 583
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Mar 20 08:19:29 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+Processing input 0
+Predictions
+0 1 0 0 0 
+Quantized predictions
+0.444336 0.379883 0.0302734 0.0595703 0.0986328 
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2023.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_axi_master_top glbl -Oenable_linking_all_libraries -prj myproject_axi_master.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s myproject_axi_master 
+Multi-threading is on. Using 10 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/ip/xil_defaultlib/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_6ns_22_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_6ns_22_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w1024_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w1024_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w1024_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_gmem_out0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_load
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_store
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_read
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_write
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_srl
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_out0_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_exp_tablebkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_exp_tablebkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_invert_tacud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s_invert_tacud
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_10s_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_10s_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_11ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_11ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_8s_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_8s_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_12s_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_12s_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_5s_21_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_5s_21_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_gmem_in0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_load
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_store
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_read
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_write
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_srl
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_gmem_in0_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w80_d128_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w80_d128_A
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w80_d128_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_5ns_21_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_5ns_21_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_9ns_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_9ns_25_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w32_d2_S
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w32_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_18s_11ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_18s_11ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w64_d4_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w64_d4_S
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w64_d4_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_compute.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_compute
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_8ns_24_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_8ns_24_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_11s_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_11s_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_load_input_float_array_ap_fixed_16_6_5_3_0_16u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_load_input_float_array_ap_fixed_16_6_5_3_0_16u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w256_d128_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w256_d128_A
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w256_d128_A_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_myproject.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_myproject
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_7s_23_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_7s_23_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_7ns_23_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_7ns_23_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_axi_master_gmem_in0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem_in0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/fifo_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_myproject_axi_master_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/AESL_axi_master_gmem_out0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem_out0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_9s_25_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_9s_25_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w80_d1_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w80_d1_S
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_fifo_w80_d1_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_10ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_10ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_12ns_26_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_12ns_26_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_mul_16s_6s_22_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_mul_16s_6s_22_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_compute_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_compute_U0
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_start_for_compute_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_store_result_float_array_ap_fixed_16_6_5_3_0_5u_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myproject_axi_master_store_result_float_array_ap_fixed_16_6_5_3_0_5u_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 11 for port 'if_num_data_valid' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_myproject.v:204]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 11 for port 'if_fifo_cap' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_myproject.v:205]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 11 for port 'if_num_data_valid' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_myproject.v:219]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 11 for port 'if_fifo_cap' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_myproject.v:220]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 11 for port 'if_num_data_valid' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_myproject.v:234]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 11 for port 'if_fifo_cap' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_myproject.v:235]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 11 for port 'if_num_data_valid' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:860]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 11 for port 'if_fifo_cap' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:861]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 11 for port 'if_num_data_valid' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:875]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 11 for port 'if_fifo_cap' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:876]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 11 for port 'if_num_data_valid' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:890]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 11 for port 'if_fifo_cap' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:891]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 11 for port 'if_num_data_valid' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:905]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 11 for port 'if_fifo_cap' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:906]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 11 for port 'if_num_data_valid' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:920]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 11 for port 'if_fifo_cap' [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.v:921]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w1024_d1_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w80_d1_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w64_d4_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_fifo_w32_d2_S.v:49]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0.v:46]
+WARNING: [VRFC 10-5021] port 'reset' is not connected on this instance [/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master_start_for_compute_U0.v:46]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_11.xbip_utils_v3_0_11_pkg
+Compiling package axi_utils_v2_0_7.axi_utils_v2_0_7_pkg
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_exp_table...
+Compiling package mult_gen_v12_0_19.mult_gen_v12_0_19_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_16.floating_point_v7_1_16_pkg
+Compiling package floating_point_v7_1_16.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv_comp
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.myproject_axi_master_control_s_a...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_in0_m_...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_gmem_out0_m...
+Compiling module xil_defaultlib.myproject_axi_master_entry_proc
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=8,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_16.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_16.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_16.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=2,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_16.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_16.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_7.xbip_pipe_v3_0_7_viv [\xbip_pipe_v3_0_7_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_16.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16_viv [\floating_point_v7_1_16_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_16.floating_point_v7_1_16 [\floating_point_v7_1_16(c_xdevic...]
+Compiling module xil_defaultlib.myproject_axi_master_fpext_32ns_...
+Compiling module xil_defaultlib.myproject_axi_master_fpext_32ns_...
+Compiling module xil_defaultlib.myproject_axi_master_flow_contro...
+Compiling module xil_defaultlib.myproject_axi_master_load_input_...
+Compiling module xil_defaultlib.myproject_axi_master_load_input_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_10s...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_9ns...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_7ns...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_8s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_11n...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_9s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_8ns...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_10n...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_7s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_11s...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_12n...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_6ns...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_5s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_6s_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_5ns...
+Compiling module xil_defaultlib.myproject_axi_master_dense_laten...
+Compiling module xil_defaultlib.myproject_axi_master_dense_array...
+Compiling module xil_defaultlib.myproject_axi_master_relu_array_...
+Compiling module xil_defaultlib.myproject_axi_master_mul_16s_12s...
+Compiling module xil_defaultlib.myproject_axi_master_dense_laten...
+Compiling module xil_defaultlib.myproject_axi_master_dense_array...
+Compiling module xil_defaultlib.myproject_axi_master_softmax_sta...
+Compiling module xil_defaultlib.myproject_axi_master_softmax_sta...
+Compiling module xil_defaultlib.myproject_axi_master_mul_18s_11n...
+Compiling module xil_defaultlib.myproject_axi_master_softmax_sta...
+Compiling module xil_defaultlib.myproject_axi_master_softmax_arr...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w1024_...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w1024_...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w80_d1...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w80_d1...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_r...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_r...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_d...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_d...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_s...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_s...
+Compiling module xil_defaultlib.myproject_axi_master_myproject
+Compiling module xil_defaultlib.myproject_axi_master_compute
+Compiling module xil_defaultlib.myproject_axi_master_store_resul...
+Compiling module xil_defaultlib.myproject_axi_master_store_resul...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w64_d4...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w64_d4...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w32_d2...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w32_d2...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w256_d...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w256_d...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w80_d1...
+Compiling module xil_defaultlib.myproject_axi_master_fifo_w80_d1...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_s...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_s...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_c...
+Compiling module xil_defaultlib.myproject_axi_master_start_for_c...
+Compiling module xil_defaultlib.myproject_axi_master
+Compiling module xil_defaultlib.AESL_axi_master_gmem_in0
+Compiling module xil_defaultlib.AESL_axi_master_gmem_out0
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=3)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=16)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.fifo_monitor_1
+Compiling module xil_defaultlib.apatb_myproject_axi_master_top
+Compiling module work.glbl
+Built simulation snapshot myproject_axi_master
+
+****** xsim v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/myproject_axi_master/xsim_script.tcl
+# xsim {myproject_axi_master} -autoloadwcfg -tclbatch {myproject_axi_master.tcl}
+Time resolution is 1 ps
+source myproject_axi_master.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 100 [n/a] @ "113000"
+// RTL Simulation : 1 / 100 [n/a] @ "748000"
+// RTL Simulation : 2 / 100 [n/a] @ "1223000"
+// RTL Simulation : 3 / 100 [n/a] @ "1698000"
+// RTL Simulation : 4 / 100 [n/a] @ "2173000"
+// RTL Simulation : 5 / 100 [n/a] @ "2648000"
+// RTL Simulation : 6 / 100 [n/a] @ "3123000"
+// RTL Simulation : 7 / 100 [n/a] @ "3598000"
+// RTL Simulation : 8 / 100 [n/a] @ "4073000"
+// RTL Simulation : 9 / 100 [n/a] @ "4548000"
+// RTL Simulation : 10 / 100 [n/a] @ "5023000"
+// RTL Simulation : 11 / 100 [n/a] @ "5498000"
+// RTL Simulation : 12 / 100 [n/a] @ "5973000"
+// RTL Simulation : 13 / 100 [n/a] @ "6448000"
+// RTL Simulation : 14 / 100 [n/a] @ "6923000"
+// RTL Simulation : 15 / 100 [n/a] @ "7398000"
+// RTL Simulation : 16 / 100 [n/a] @ "7873000"
+// RTL Simulation : 17 / 100 [n/a] @ "8348000"
+// RTL Simulation : 18 / 100 [n/a] @ "8823000"
+// RTL Simulation : 19 / 100 [n/a] @ "9298000"
+// RTL Simulation : 20 / 100 [n/a] @ "9773000"
+// RTL Simulation : 21 / 100 [n/a] @ "10248000"
+// RTL Simulation : 22 / 100 [n/a] @ "10723000"
+// RTL Simulation : 23 / 100 [n/a] @ "11198000"
+// RTL Simulation : 24 / 100 [n/a] @ "11673000"
+// RTL Simulation : 25 / 100 [n/a] @ "12148000"
+// RTL Simulation : 26 / 100 [n/a] @ "12623000"
+// RTL Simulation : 27 / 100 [n/a] @ "13098000"
+// RTL Simulation : 28 / 100 [n/a] @ "13573000"
+// RTL Simulation : 29 / 100 [n/a] @ "14048000"
+// RTL Simulation : 30 / 100 [n/a] @ "14523000"
+// RTL Simulation : 31 / 100 [n/a] @ "14998000"
+// RTL Simulation : 32 / 100 [n/a] @ "15473000"
+// RTL Simulation : 33 / 100 [n/a] @ "15948000"
+// RTL Simulation : 34 / 100 [n/a] @ "16423000"
+// RTL Simulation : 35 / 100 [n/a] @ "16898000"
+// RTL Simulation : 36 / 100 [n/a] @ "17373000"
+// RTL Simulation : 37 / 100 [n/a] @ "17848000"
+// RTL Simulation : 38 / 100 [n/a] @ "18323000"
+// RTL Simulation : 39 / 100 [n/a] @ "18798000"
+// RTL Simulation : 40 / 100 [n/a] @ "19273000"
+// RTL Simulation : 41 / 100 [n/a] @ "19748000"
+// RTL Simulation : 42 / 100 [n/a] @ "20223000"
+// RTL Simulation : 43 / 100 [n/a] @ "20698000"
+// RTL Simulation : 44 / 100 [n/a] @ "21173000"
+// RTL Simulation : 45 / 100 [n/a] @ "21648000"
+// RTL Simulation : 46 / 100 [n/a] @ "22123000"
+// RTL Simulation : 47 / 100 [n/a] @ "22598000"
+// RTL Simulation : 48 / 100 [n/a] @ "23073000"
+// RTL Simulation : 49 / 100 [n/a] @ "23548000"
+// RTL Simulation : 50 / 100 [n/a] @ "24023000"
+// RTL Simulation : 51 / 100 [n/a] @ "24498000"
+// RTL Simulation : 52 / 100 [n/a] @ "24973000"
+// RTL Simulation : 53 / 100 [n/a] @ "25448000"
+// RTL Simulation : 54 / 100 [n/a] @ "25923000"
+// RTL Simulation : 55 / 100 [n/a] @ "26398000"
+// RTL Simulation : 56 / 100 [n/a] @ "26873000"
+// RTL Simulation : 57 / 100 [n/a] @ "27348000"
+// RTL Simulation : 58 / 100 [n/a] @ "27823000"
+// RTL Simulation : 59 / 100 [n/a] @ "28298000"
+// RTL Simulation : 60 / 100 [n/a] @ "28773000"
+// RTL Simulation : 61 / 100 [n/a] @ "29248000"
+// RTL Simulation : 62 / 100 [n/a] @ "29723000"
+// RTL Simulation : 63 / 100 [n/a] @ "30198000"
+// RTL Simulation : 64 / 100 [n/a] @ "30673000"
+// RTL Simulation : 65 / 100 [n/a] @ "31148000"
+// RTL Simulation : 66 / 100 [n/a] @ "31623000"
+// RTL Simulation : 67 / 100 [n/a] @ "32098000"
+// RTL Simulation : 68 / 100 [n/a] @ "32573000"
+// RTL Simulation : 69 / 100 [n/a] @ "33048000"
+// RTL Simulation : 70 / 100 [n/a] @ "33523000"
+// RTL Simulation : 71 / 100 [n/a] @ "33998000"
+// RTL Simulation : 72 / 100 [n/a] @ "34473000"
+// RTL Simulation : 73 / 100 [n/a] @ "34948000"
+// RTL Simulation : 74 / 100 [n/a] @ "35423000"
+// RTL Simulation : 75 / 100 [n/a] @ "35898000"
+// RTL Simulation : 76 / 100 [n/a] @ "36373000"
+// RTL Simulation : 77 / 100 [n/a] @ "36848000"
+// RTL Simulation : 78 / 100 [n/a] @ "37323000"
+// RTL Simulation : 79 / 100 [n/a] @ "37798000"
+// RTL Simulation : 80 / 100 [n/a] @ "38273000"
+// RTL Simulation : 81 / 100 [n/a] @ "38748000"
+// RTL Simulation : 82 / 100 [n/a] @ "39223000"
+// RTL Simulation : 83 / 100 [n/a] @ "39698000"
+// RTL Simulation : 84 / 100 [n/a] @ "40173000"
+// RTL Simulation : 85 / 100 [n/a] @ "40648000"
+// RTL Simulation : 86 / 100 [n/a] @ "41123000"
+// RTL Simulation : 87 / 100 [n/a] @ "41598000"
+// RTL Simulation : 88 / 100 [n/a] @ "42073000"
+// RTL Simulation : 89 / 100 [n/a] @ "42548000"
+// RTL Simulation : 90 / 100 [n/a] @ "43023000"
+// RTL Simulation : 91 / 100 [n/a] @ "43498000"
+// RTL Simulation : 92 / 100 [n/a] @ "43973000"
+// RTL Simulation : 93 / 100 [n/a] @ "44448000"
+// RTL Simulation : 94 / 100 [n/a] @ "44923000"
+// RTL Simulation : 95 / 100 [n/a] @ "45398000"
+// RTL Simulation : 96 / 100 [n/a] @ "45873000"
+// RTL Simulation : 97 / 100 [n/a] @ "46348000"
+// RTL Simulation : 98 / 100 [n/a] @ "46823000"
+// RTL Simulation : 99 / 100 [n/a] @ "47298000"
+// RTL Simulation : 100 / 100 [n/a] @ "47773000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 47802500 ps : File "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/myproject_axi_master.autotb.v" Line 583
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Mar 20 08:19:39 2026...
+INFO: [COSIM 212-316] Starting C post checking ...
+Processing input 0
+Predictions
+0 1 0 0 0 
+Quantized predictions
+0.444336 0.379883 0.0302734 0.0595703 0.0986328 
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 67.15 seconds. CPU system time: 2.31 seconds. Elapsed time: 46.62 seconds; current allocated memory: 23.520 MB.
+INFO: [HLS 200-1510] Running: close_project 
+INFO: [HLS 200-112] Total CPU user time: 67.73 seconds. Total CPU system time: 2.37 seconds. Total elapsed time: 47.16 seconds; peak allocated memory: 237.809 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Mar 20 08:19:39 2026...
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 50s

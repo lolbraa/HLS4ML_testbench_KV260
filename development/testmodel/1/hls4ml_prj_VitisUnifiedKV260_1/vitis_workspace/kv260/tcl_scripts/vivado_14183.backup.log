@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Mar  5 13:17:25 2026
+# Process ID         : 14183
+# Current directory  : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/kv260/tcl_scripts
+# Command line       : vivado -mode batch -source create_xsa.tcl
+# Log file           : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/kv260/tcl_scripts/vivado.log
+# Journal file       : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/kv260/tcl_scripts/vivado.jou
+# Running On         : KrissDEV
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 3400.062 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 6
+# Host memory        : 20909 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 20909 MB
+# Available Virtual  : 16785 MB
+#-----------------------------------------------------------
+source create_xsa.tcl
+# set script_dir [file dirname [file normalize [info script]]]
+# set output_dir [file join $script_dir "output"]
+# set xsa_path   [file join $output_dir "kv260_axi_all_platform.xsa"]
+# file mkdir $output_dir
+# cd $script_dir
+# source [file join $script_dir "kv260_axi_all_platform.tcl"]
+## namespace eval _tcl {
+## proc get_script_folder {} {
+##    set script_path [file normalize [info script]]
+##    set script_folder [file dirname $script_path]
+##    return $script_folder
+## }
+## }
+## variable script_folder
+## set script_folder [_tcl::get_script_folder]
+## set scripts_vivado_version 2023.2
+## set current_vivado_version [version -short]
+## if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+##    puts ""
+##    if { [string compare $scripts_vivado_version $current_vivado_version] > 0 } {
+##       catch {common::send_gid_msg -ssname BD::TCL -id 2042 -severity "ERROR" " This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Sourcing the script failed since it was created with a future version of Vivado."}
+## 
+##    } else {
+##      catch {common::send_gid_msg -ssname BD::TCL -id 2041 -severity "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+## 
+##    }
+## 
+##    return 1
+## }
+
+ERROR: [BD::TCL 103-2041] This script was generated using Vivado <2023.2> and is being run in <2025.2> of Vivado. Please run the script in Vivado <2023.2> then open the design in Vivado <2025.2>. Upgrade the design by running "Tools => Report => Report IP Status...", then run write_bd_tcl to create an updated script.
+ERROR: [Common 17-53] User Exception: No open project. Please create or open a project before executing this command.
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  5 13:17:26 2026...

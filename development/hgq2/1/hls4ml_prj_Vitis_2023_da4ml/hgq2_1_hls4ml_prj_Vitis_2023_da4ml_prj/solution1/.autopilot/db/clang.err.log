@@ -1,0 +1,6 @@
+In file included from firmware/hgq2_1_hls4ml_prj_Vitis_2023_da4ml.cpp:4:
+In file included from firmware/parameters.h:10:
+firmware/nnet_utils/nnet_activation.h:402:36: warning: unexpected pragma argument 'softmax', expects function/operation [-Winvalid-hls-pragmas]
+#pragma HLS allocation instances = softmax<CONFIG_T> limit = CONFIG_T::parallelization_factor function
+                                   ^
+1 warning generated.

@@ -1,0 +1,5 @@
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml/firmware/hgq2_1_hls4ml_prj_Vitis_da4ml.cpp:4:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml/firmware/parameters.h:10:
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_da4ml/firmware/nnet_utils/nnet_activation.h:402:40: warning: unexpected pragma argument 'softmax', expects function/operation [-Winvalid-hls-pragmas]
+    #pragma HLS allocation instances = softmax<CONFIG_T> limit = CONFIG_T::parallelization_factor function
+                                       ^

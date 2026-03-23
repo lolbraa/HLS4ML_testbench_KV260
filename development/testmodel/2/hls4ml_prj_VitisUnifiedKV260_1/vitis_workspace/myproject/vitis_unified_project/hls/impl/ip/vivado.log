@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Wed Mar 11 13:13:39 2026
+# Process ID: 150712
+# Current directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/vivado.log
+# Journal file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/vivado.jou
+# Running On: KrissDEV, OS: Linux, CPU Frequency: 4291.936 MHz, CPU Physical cores: 6, Host memory: 20909 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+Running package_xo -xo_path /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -kernel_name myproject_axi_master -kernel_xml /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/../kernel/kernel.xml -kernel_files {/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject.cpp /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/firmware/myproject_axi_master.cpp} -ip_directory /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/ip_unzip_dir -design_xml /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.design.xml -debug_directory /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/.debug -hls_directory /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hls_files -kernel_json /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/hls4ml-dev-testenv/testmodel/2/hls4ml_prj_VitisUnifiedKV260_1/vitis_workspace/myproject/vitis_unified_project/hls/hls_data.json
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 11 13:13:44 2026...

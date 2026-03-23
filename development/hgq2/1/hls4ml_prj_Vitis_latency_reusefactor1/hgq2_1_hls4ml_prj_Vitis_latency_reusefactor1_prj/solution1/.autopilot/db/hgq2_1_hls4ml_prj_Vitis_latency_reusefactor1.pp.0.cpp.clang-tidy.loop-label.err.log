@@ -1,0 +1,5 @@
+8 warnings and 3 errors generated.
+Error while processing /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/1/hls4ml_prj_Vitis_latency_reusefactor1/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1_prj/solution1/.autopilot/db/hgq2_1_hls4ml_prj_Vitis_latency_reusefactor1.pp.0.cpp.
+clang-tidy applied 82 of 82 suggested fixes.
+Suppressed 258 warnings (250 in non-user code, 8 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

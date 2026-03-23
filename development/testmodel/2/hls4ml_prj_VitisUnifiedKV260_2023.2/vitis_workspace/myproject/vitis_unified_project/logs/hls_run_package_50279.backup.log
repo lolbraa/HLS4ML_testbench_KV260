@@ -1,0 +1,81 @@
+INFO: [vitis-run 60-1548] Creating build summary session with primary output /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/vitis_unified_project.hlsrun_package_summary, at Fri Mar 20 09:42:58 2026
+INFO: [vitis-run 82-31] Launching vitis_hls: vitis_hls -nolog -run package -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+  **** SW Build 4023990 on Oct 11 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source /tools/Xilinx/Vitis_HLS/2023.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'root' on host '161174ea8eb1' (Linux_x86_64 version 6.8.0-106-generic) on Fri Mar 20 09:42:59 +0000 2026
+INFO: [HLS 200-10] In directory '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject'
+INFO: [HLS 200-1909] Reading HLS ini file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg
+INFO: [HLS 200-1909] Reading HLS ini file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+INFO: [HLS 200-2005] Using work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project 
+INFO: [HLS 200-1510] Running: open_project /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -diskless 
+INFO: [HLS 200-1510] Running: open_solution hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: apply_ini /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg 
+INFO: [HLS 200-1909] Reading HLS ini file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg
+INFO: [HLS 200-1465] Applying ini 'syn.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp,-std=c++0x' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp,-std=c++0x' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'tb.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/weights' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/weights' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/tb_data' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(16)
+INFO: [HLS 200-10] Adding test bench file '/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/tb_data' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp,-DRTL_SIM' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(18)
+INFO: [HLS 200-1465] Applying ini 'syn.top=myproject_axi_master' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(12)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xck26-sfvc784-2LV-c' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying ini 'clock=5ns' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=12.5%' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1465] Applying ini 'cosim.enable_fifo_sizing=true' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(24)
+INFO: [HLS 200-1465] Applying ini 'package.ip.version=1.0.0' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(19)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=xo' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(20)
+INFO: [HLS 200-1465] Applying ini 'syn.compile.name_max_length=80' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(21)
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1465] Applying ini 'syn.schedule.enable_dsp_full_reg=0' at /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg(22)
+INFO: [HLS 200-1510] Running: apply_ini /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline 
+INFO: [HLS 200-1909] Reading HLS ini file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+INFO: [HLS 200-1510] Running: export_design -flow none 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+Running package_xo -xo_path /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -kernel_name myproject_axi_master -kernel_xml /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/../kernel/kernel.xml -kernel_files {/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp} -ip_directory /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/ip_unzip_dir -design_xml /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.design.xml -debug_directory /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/.debug -hls_directory /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hls_files -kernel_json /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/hls_data.json
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 20 09:43:09 2026...
+INFO: [HLS 200-802] Generated output file vitis_unified_project/myproject_axi_master.xo
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 9.8 seconds. CPU system time: 0.36 seconds. Elapsed time: 19.54 seconds; current allocated memory: 21.992 MB.
+INFO: [HLS 200-1510] Running: close_project 
+INFO: [HLS 200-112] Total CPU user time: 10.37 seconds. Total CPU system time: 0.45 seconds. Total elapsed time: 20.1 seconds; peak allocated memory: 236.254 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Fri Mar 20 09:43:19 2026...
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 23s
