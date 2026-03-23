@@ -3389,22 +3389,22 @@
             "value": "128"
           },
           "PSU__SD0__CLK_100_SDR_OTAP_DLY": {
-            "value": "0x3"
+            "value": "0x00"
           },
           "PSU__SD0__CLK_200_SDR_OTAP_DLY": {
-            "value": "0x3"
+            "value": "0x00"
           },
           "PSU__SD0__CLK_50_DDR_ITAP_DLY": {
-            "value": "0x3D"
+            "value": "0x00"
           },
           "PSU__SD0__CLK_50_DDR_OTAP_DLY": {
-            "value": "0x4"
+            "value": "0x00"
           },
           "PSU__SD0__CLK_50_SDR_ITAP_DLY": {
-            "value": "0x15"
+            "value": "0x00"
           },
           "PSU__SD0__CLK_50_SDR_OTAP_DLY": {
-            "value": "0x5"
+            "value": "0x00"
           },
           "PSU__SD0__PERIPHERAL__ENABLE": {
             "value": "0"

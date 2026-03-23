@@ -1,8 +1,0 @@
-,gmem_out0_ptr_layer5_out_c_U,2,ScalarPro
-,batch_size_c9_U,2,ScalarPro
-,stream_in0_linput_U,2,Stream
-,batch_size_c_U,2,ScalarPro
-,stream_out0_layer5_out_U,2,Stream
-compute_U0.grp_myproject_fu_66,layer2_out_i_U,1,Stream
-compute_U0.grp_myproject_fu_66,layer3_out_i_U,1,Stream
-compute_U0.grp_myproject_fu_66,layer4_out_i_U,1,Stream

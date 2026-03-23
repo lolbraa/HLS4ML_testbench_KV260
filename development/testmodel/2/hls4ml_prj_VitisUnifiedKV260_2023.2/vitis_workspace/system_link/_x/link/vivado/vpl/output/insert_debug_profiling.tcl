@@ -15,8 +15,8 @@ set dpa_opts [list \
              ]
 
 set_param bd.enable_dpa 1
-set_param bd.debug_profile.script /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/debug_profile_automation.tcl
+set_param bd.debug_profile.script /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/debug_profile_automation.tcl
 apply_bd_automation -rule xilinx.com:bd_rule:debug_profile -opts $dpa_opts -dict $dpa_dict
 
 # Write debug_ip_layout
-debug_profile::write_debug_ip_layout false "vendor:kv260_som_som240_1_connector_kv260_carrier_som240_1_connector:kv260pf:0.0" "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int"
+debug_profile::write_debug_ip_layout false "vendor:kv260_som_som240_1_connector_kv260_carrier_som240_1_connector:kv260pf:0.0" "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/_x/link/int"

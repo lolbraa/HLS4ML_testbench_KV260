@@ -1,0 +1,76 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../myproject_test.cpp in debug mode
+   Compiling ../../../../../../firmware/myproject.cpp in debug mode
+   Compiling ../../../../../../firmware/myproject_axi_master.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../../../firmware/nnet_utils/nnet_helpers.h:4,
+                 from ../../../../../../myproject_test.cpp:14:
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:29:45: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <typename T> constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                                             ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:30:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bitwidth<void> = 1 * CHAR_BIT;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:32:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:33:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:35:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:38:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:42:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                       ^~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:43:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bytewidth<void> = 1;
+                                   ^~~~~~~~~~~~~~~
+In file included from ../../../../../../firmware/nnet_utils/nnet_helpers.h:4,
+                 from ../../../../../../firmware/nnet_utils/nnet_common.h:5,
+                 from ../../../../../../firmware/nnet_utils/nnet_conv1d_latency.h:4,
+                 from ../../../../../../firmware/nnet_utils/nnet_code_gen.h:4,
+                 from ../../../../../../firmware/parameters.h:7,
+                 from ../../../../../../firmware/myproject.cpp:4:
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:29:45: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <typename T> constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                                             ^~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:30:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bitwidth<void> = 1 * CHAR_BIT;
+                                   ^~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:32:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_int<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:33:48: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <std::size_t W> constexpr std::size_t bitwidth<ap_uint<W>> = W;
+                                                ^~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:35:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_fixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:38:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bitwidth<ap_ufixed<_AP_W, _AP_I, _AP_Q, _AP_O, _AP_N>> =
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:42:23: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                       ^~~~~~~~~
+/tools/Xilinx/Vitis_HLS/2023.2/include/ap_axi_sdata.h:43:35: warning: variable templates only available with -std=c++14 or -std=gnu++14
+ template <> constexpr std::size_t bytewidth<void> = 1;
+                                   ^~~~~~~~~~~~~~~
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib/x86_64-linux-gnu/libm.so.6: unknown type [0x13] section `.relr.dyn'
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib/x86_64-linux-gnu/libm.so.6 when searching for /lib/x86_64-linux-gnu/libm.so.6
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: cannot find /lib/x86_64-linux-gnu/libm.so.6
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib/x86_64-linux-gnu/libm.so.6: unknown type [0x13] section `.relr.dyn'
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib/x86_64-linux-gnu/libm.so.6 when searching for /lib/x86_64-linux-gnu/libm.so.6
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib/x86_64-linux-gnu/libmvec.so.1: unknown type [0x13] section `.relr.dyn'
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib/x86_64-linux-gnu/libmvec.so.1 when searching for /lib/x86_64-linux-gnu/libmvec.so.1
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: cannot find /lib/x86_64-linux-gnu/libmvec.so.1
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib/x86_64-linux-gnu/libmvec.so.1: unknown type [0x13] section `.relr.dyn'
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib/x86_64-linux-gnu/libmvec.so.1 when searching for /lib/x86_64-linux-gnu/libmvec.so.1
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:318: csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

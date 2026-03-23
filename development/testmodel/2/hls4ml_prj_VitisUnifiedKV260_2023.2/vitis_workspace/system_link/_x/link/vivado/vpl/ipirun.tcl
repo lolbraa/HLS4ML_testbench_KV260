@@ -97,7 +97,7 @@ dict set mem_topology_dict HPC1 4
 
 set hw_platform_info [dict create \
   hw_platform_dir              ".local/hw_platform" \
-  hw_platform_file             "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa" \
+  hw_platform_file             "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa" \
   hw_platform_part             "xck26-sfvc784-2LV-c" \
   hw_platform_vbnv             "vendor:kv260_som_som240_1_connector_kv260_carrier_som240_1_connector:kv260pf:0.0" \
   bb_locked_dcp                "" \
@@ -140,7 +140,7 @@ set hw_platform_info [dict create \
   hw_platform_bconn_unlocked    {} \
   hw_platform_board_part       "xilinx.com:kv260_som:part0:1.4" \
   link_output_format           "bitstream" \
-  xpfm_file                    "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa" \
+  xpfm_file                    "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa" \
   is_complete_platform         "false" \
   bus_sp_tags                   $bus_sp_tags \
   bus_sp_indeces                $bus_sp_indeces\
@@ -190,7 +190,7 @@ set config_info [dict create \
   no_install_ip_cache       false \
   install_ip_cache          $install_ip_cache \
   no_ip_cache               false \
-  remote_ip_cache          "/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/.ipcache" \
+  remote_ip_cache          "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/system_link/.ipcache" \
   user_board_repo           {} \
   user_bconn                {} \
   dr_bd_tcl                ".local/dr.bd.tcl" \

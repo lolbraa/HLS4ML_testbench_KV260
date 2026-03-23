@@ -8,116 +8,157 @@
 # The following environment variables are set when running v++
 Environment variables :
 ------------------------------------------
-CONDA_EXE=/root/miniconda3/bin/conda
+SHELL=/bin/bash
+PYTHONUNBUFFERED=1
+NVM_INC=/home/ncgadmin/.nvm/versions/node/v24.11.1/include/node
+CONDA_EXE=/home/ncgadmin/miniconda3/bin/conda
 _CE_M=
 RDI_APPROOT=/tools/Xilinx/Vitis/2023.2
 RDI_JAVA_PLATFORM=
-HOSTNAME=161174ea8eb1
 LANGUAGE=en_US:en
 XIL_SUPPRESS_OVERRIDE_WARNINGS=1
 RDI_BINROOT=/tools/Xilinx/Vitis/2023.2/bin
+LC_ADDRESS=C.UTF-8
 XILINX_VIVADO=/tools/Xilinx/Vivado/2023.2
+LC_NAME=C.UTF-8
 RDI_OPT_EXT=.o
 RDI_INSTALLVER=2023.2
 RDI_INSTALLROOT=/tools/Xilinx
+PYTHON_FROZEN_MODULES=on
+ELECTRON_RUN_AS_NODE=1
 RDI_PATCHROOT=
-XML_CATALOG_FILES=file:///root/miniconda3/envs/devenv-vu/etc/xml/catalog file:///etc/xml/catalog
+LC_MONETARY=C.UTF-8
+XML_CATALOG_FILES=file:///home/ncgadmin/miniconda3/envs/devenv-vu/etc/xml/catalog file:///etc/xml/catalog
 XIL_NO_OVERRIDE=0
-RDI_LIBDIR=/tools/Xilinx/Vitis/2023.2/lib/lnx64.o/Default:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o
-PWD=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-GSETTINGS_SCHEMA_DIR=/root/miniconda3/envs/devenv-vu/share/glib-2.0/schemas
-CONDA_PREFIX=/root/miniconda3/envs/devenv-vu
+RDI_LIBDIR=/tools/Xilinx/Vitis/2023.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o
+PWD=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
+GSETTINGS_SCHEMA_DIR=/home/ncgadmin/miniconda3/envs/devenv-vu/share/glib-2.0/schemas
+LOGNAME=ncgadmin
+CONDA_ROOT=/home/ncgadmin/miniconda3
+XDG_SESSION_TYPE=tty
+CONDA_PREFIX=/home/ncgadmin/miniconda3/envs/devenv-vu
 _RDI_DONT_SET_XILINX_AS_PATH=True
-JPY_SESSION_NAME=/workspace/HLS4ML_testbench_KV260/development/testmodel_VitisUnifiedKV260-8be1e909-5a24-4426-9266-f80e2074884f.ipynb
+VSCODE_ESM_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
 GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+PYDEVD_IPYTHON_COMPATIBLE_DEBUGGING=1
 RDI_PREPEND_PATH=/tools/Xilinx/Vitis/2023.2/bin
 XILINX_DSP=
-HOME=/root
+HOME=/home/ncgadmin
 SYNTH_COMMON=/tools/Xilinx/Vitis/2023.2/scripts/rt/data
 LANG=en_US.UTF-8
+LC_PAPER=C.UTF-8
+LS_COLORS=
 XILINX_HLS=/tools/Xilinx/Vitis_HLS/2023.2
 FORCE_COLOR=1
 CONDA_PROMPT_MODIFIER=(devenv-vu) 
 PYDEVD_USE_FRAME_EVAL=NO
 HDI_PROCESSOR=x86_64
 RDI_BUILD=yes
+VSCODE_AGENT_FOLDER=/home/ncgadmin/.vscode-server
 CLICOLOR=1
 RDI_PROG=/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++
 ENABLE_RUNTIME_UPTIME_TELEMETRY=1
 CLICOLOR_FORCE=1
-RDI_SESSION_INFO=/workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject:161174ea8eb1_1773994648_9315
+SSH_CONNECTION=100.76.45.72 47566 100.118.179.58 22
+RDI_SESSION_INFO=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject:KrissDEV_1774270485_10832
 RT_TCL_PATH=/tools/Xilinx/Vitis/2023.2/scripts/rt/base_tcl/tcl
 XILINX_SDK=/tools/Xilinx/Vitis/2023.2
+NVM_DIR=/home/ncgadmin/.nvm
 RDI_SHARED_DATA=/tools/Xilinx/SharedData/2023.2/data
-JPY_PARENT_PID=7350
-_CONDA_EXE=/root/miniconda3/bin/conda
+_CONDA_EXE=/home/ncgadmin/miniconda3/bin/conda
 KMP_DUPLICATE_LIB_OK=True
+LESSCLOSE=/usr/bin/lesspipe %s %s
 KMP_INIT_AT_FORK=FALSE
-_CONDA_ROOT=/root/miniconda3
+_CONDA_ROOT=/home/ncgadmin/miniconda3
+XDG_SESSION_CLASS=user
+VSCODE_HANDLES_SIGPIPE=true
 TERM=xterm-color
+LC_IDENTIFICATION=C.UTF-8
 _CE_CONDA=
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=ncgadmin
 GIT_PAGER=cat
 XILINX_PLANAHEAD=/tools/Xilinx/Vitis/2023.2
-CONDA_SHLVL=1
+PYTHONIOENCODING=utf-8
+CONDA_SHLVL=2
 RDI_BASEROOT=/tools/Xilinx/Vitis
 TPU_ML_PLATFORM=Tensorflow
 RDI_TPS_ROOT=/tools/Xilinx/Vivado/2023.2/tps/lnx64
 RDI_JAVA_VERSION=17.0.7_7
 RDI_DATADIR=/tools/Xilinx/Vitis/2023.2/data
-SHLVL=2
+SHLVL=4
+NVM_CD_FLAGS=
 PAGER=cat
+LC_TELEPHONE=C.UTF-8
 TPU_ML_PLATFORM_VERSION=2.18.0
+LC_MEASUREMENT=C.UTF-8
+VSCODE_CWD=/home/ncgadmin
+VSCODE_RECONNECTION_GRACE_TIME=10800000
 XILINX_VIVADO_HLS=/tools/Xilinx/Vivado/2023.2
 XIL_CHECK_TCL_DEBUG=False
+XDG_SESSION_ID=3
 MPLBACKEND=module://matplotlib_inline.backend_inline
-CONDA_PYTHON_EXE=/root/miniconda3/bin/python
-LD_LIBRARY_PATH=/tools/Xilinx/Vitis/2023.2/tps/lnx64/java-cef-95.0.4638.69/bin/lib/linux64:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o/Default:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o:/tools/Xilinx/Vitis/2023.2/tps/lnx64/jre17.0.7_7/lib/:/tools/Xilinx/Vitis/2023.2/tps/lnx64/jre17.0.7_7/lib//server:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o/Default:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o:/tools/Xilinx/Vitis/2023.2/bin/../lnx64/tools/dot/lib
-HDIPRELDPATH=/tools/Xilinx/Vitis/2023.2/lib/lnx64.o/Default:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o:/tools/Xilinx/Vitis/2023.2/bin/../lnx64/tools/dot/lib
-LC_CTYPE=C.UTF-8
+CONDA_PYTHON_EXE=/home/ncgadmin/miniconda3/bin/python
+LD_LIBRARY_PATH=/tools/Xilinx/Vitis/2023.2/tps/lnx64/java-cef-95.0.4638.69/bin/lib/linux64:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o:/tools/Xilinx/Vitis/2023.2/tps/lnx64/jre17.0.7_7/lib/:/tools/Xilinx/Vitis/2023.2/tps/lnx64/jre17.0.7_7/lib//server:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o:/tools/Xilinx/Vitis/2023.2/bin/../lnx64/tools/dot/lib
+HDIPRELDPATH=/tools/Xilinx/Vitis/2023.2/lib/lnx64.o/Ubuntu:/tools/Xilinx/Vitis/2023.2/lib/lnx64.o:/tools/Xilinx/Vitis/2023.2/bin/../lnx64/tools/dot/lib
+XDG_RUNTIME_DIR=/run/user/1000
 TCMALLOC_LARGE_ALLOC_REPORT_THRESHOLD=4294967296
+SSH_CLIENT=100.76.45.72 47566 22
 CONDA_DEFAULT_ENV=devenv-vu
+DEBUGINFOD_URLS=https://debuginfod.ubuntu.com 
+LC_TIME=C.UTF-8
 TCL_LIBRARY=/tools/Xilinx/Vitis/2023.2/tps/tcl/tcl8.5
+VSCODE_CLI_REQUIRE_TOKEN=3bbd28cf-bda2-4b24-9af1-8d8b800459c8
 LC_ALL=en_US.UTF-8
+XDG_DATA_DIRS=/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+BROWSER=/home/ncgadmin/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/helpers/browser.sh
 TF2_BEHAVIOR=1
-PATH=/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.26/bin:/tools/Xilinx/Vitis/2023.2/bin/../gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/tools/Xilinx/Vitis/2023.2/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vivado/2023.2/tps/lnx64/gcc-8.3.0/bin:/tools/Xilinx/Vivado/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/jre17.0.7_7/bin:/tools/Xilinx/Vivado/2023.2/bin:/root/miniconda3/envs/devenv-vu/bin:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/root/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PATH=/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.26/bin:/tools/Xilinx/Vitis/2023.2/bin/../gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/bin/../gnu/ppc64le/4.9.3/lnx64/bin:/tools/Xilinx/Vitis/2023.2/bin/../gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vivado/2023.2/tps/lnx64/gcc-8.3.0/bin:/tools/Xilinx/Vivado/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/jre17.0.7_7/bin:/tools/Xilinx/Vivado/2023.2/bin:/home/ncgadmin/miniconda3/envs/devenv-vu/bin:/home/ncgadmin/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/bin/remote-cli:/home/ncgadmin/.local/bin:/tools/Xilinx/Vitis_HLS/2023.2/bin:/tools/Xilinx/Model_Composer/2023.2/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2023.2/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2023.2/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2023.2/aietools/bin:/tools/Xilinx/Vitis/2023.2/gnu/riscv/lin/riscv64-unknown-elf/bin:/home/ncgadmin/miniconda3/condabin:/home/ncgadmin/.nvm/versions/node/v24.11.1/bin:/home/ncgadmin/.config/herd-lite/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 RT_LIBPATH=/tools/Xilinx/Vitis/2023.2/scripts/rt/data
+PHP_INI_SCAN_DIR=/home/ncgadmin/.config/herd-lite/bin:
 HDI_APPROOT=/tools/Xilinx/Vitis/2023.2
+APPLICATION_INSIGHTS_NO_STATSBEAT=true
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
 RDI_PLATFORM=lnx64
+VSCODE_NLS_CONFIG={"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/ncgadmin/.vscode-server/cli/servers/Stable-07ff9d6178ede9a1bd12ad3399074d726ebe6e43/server/out/nls.messages.json","locale":"en","availableLanguages":{}}
 MYVIVADO=
+NVM_BIN=/home/ncgadmin/.nvm/versions/node/v24.11.1/bin
+CONDA_PREFIX_1=/home/ncgadmin/miniconda3
 ISL_IOSTREAMS_RSA=/tools/Xilinx/Vitis/2023.2/tps/isl
+VSCODE_HANDLES_UNCAUGHT_ERRORS=true
+LC_NUMERIC=C.UTF-8
 XILINX_VITIS=/tools/Xilinx/Vitis/2023.2
 OLDPWD=/tools/Xilinx/Vitis/2023.2/bin
+VSCODE_IPC_HOOK_CLI=/run/user/1000/vscode-ipc-dfe839a4-f53c-4363-b38b-38e5b4f02914.sock
 _=/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++
-XILINX_CD_CONNECT_ID=40767
-XILINX_CD_SESSION=3ff86000-32b6-4559-ad2b-cc94d7d9c431
+XILINX_CD_CONNECT_ID=33179
+XILINX_CD_SESSION=3da2356e-c813-417a-8a78-8412a18ccf71
 
 
 V++ command line:
 ------------------------------------------
-/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
+/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
 
 FINAL PROGRAM OPTIONS
 --compile
---config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg
+--config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg
 --hls.clock 5ns
 --hls.clock_uncertainty 12.5%
---hls.cosim.enable_fifo_sizing true
 --hls.flow_target vivado
 --hls.package.ip.version 1.0.0
 --hls.package.output.format xo
 --hls.package.output.syn 1
 --hls.syn.compile.name_max_length 80
---hls.syn.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp
---hls.syn.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp
---hls.syn.file_cflags /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp,-std=c++0x
---hls.syn.file_cflags /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp,-std=c++0x
+--hls.syn.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp
+--hls.syn.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp
+--hls.syn.file_cflags /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp,-std=c++0x
+--hls.syn.file_cflags /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp,-std=c++0x
 --hls.syn.schedule.enable_dsp_full_reg 0
 --hls.syn.top myproject_axi_master
---hls.tb.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp
---hls.tb.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/weights
---hls.tb.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/tb_data
---hls.tb.file_cflags /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp,-std=c++0x
---hls.tb.file_cflags /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp,-DRTL_SIM
+--hls.tb.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp
+--hls.tb.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/weights
+--hls.tb.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/tb_data
+--hls.tb.file_cflags /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp,-std=c++0x
 --mode hls
 --part xck26-sfvc784-2LV-c
 --target hw
@@ -126,257 +167,129 @@ FINAL PROGRAM OPTIONS
 PARSED COMMAND LINE OPTIONS
 -c 
 --mode hls 
---config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg 
+--config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg 
 --work_dir vitis_unified_project 
 
 PARSED CONFIG FILE (1) OPTIONS
-file: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg
+file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg
 part xck26-sfvc784-2LV-c 
 hls.clock 5ns 
 hls.clock_uncertainty 12.5% 
 hls.flow_target vivado 
-hls.syn.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp 
-hls.syn.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp 
-hls.syn.file_cflags /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp,-std=c++0x 
-hls.syn.file_cflags /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp,-std=c++0x 
+hls.syn.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp 
+hls.syn.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp 
+hls.syn.file_cflags /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject_axi_master.cpp,-std=c++0x 
+hls.syn.file_cflags /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/myproject.cpp,-std=c++0x 
 hls.syn.top myproject_axi_master 
-hls.tb.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp 
-hls.tb.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/weights 
-hls.tb.file /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/tb_data 
-hls.tb.file_cflags /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp,-std=c++0x 
-hls.tb.file_cflags /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp,-DRTL_SIM 
+hls.tb.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp 
+hls.tb.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/firmware/weights 
+hls.tb.file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/tb_data 
+hls.tb.file_cflags /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/myproject_test.cpp,-std=c++0x 
 hls.package.ip.version 1.0.0 
 hls.package.output.format xo 
 hls.syn.compile.name_max_length 80 
 hls.syn.schedule.enable_dsp_full_reg 0 
 hls.package.output.syn 1 
-hls.cosim.enable_fifo_sizing true 
 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 08:17:31
+timestamp: 23 Mar 2026 13:54:48
 ------------------------------------------
-V++ internal step: writing a config file for vitis_hls: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-timestamp: 20 Mar 2026 08:17:31
+V++ internal step: writing a config file for vitis_hls: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:54:48
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: running vitis_hls
-timestamp: 20 Mar 2026 08:17:31
-working dir: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-cmd: vitis_hls -nolog -run csynth -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:54:48
+working dir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
+cmd: vitis_hls -nolog -run csynth -work_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
 V++ internal step status: success
 
 ------------------------------------------
 VITIS-RUN command line :
 ------------------------------------------
-/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
+/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
   Options from -O    : 
   Options from *.ini : 
   Options from Hw Platform : 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 08:18:28
+timestamp: 23 Mar 2026 13:55:45
 ------------------------------------------
-VITIS-RUN internal step: writing a config file for vitis_hls: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-timestamp: 20 Mar 2026 08:18:28
+VITIS-RUN internal step: writing a config file for vitis_hls: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:55:45
 VITIS-RUN internal step status: success
 ------------------------------------------
 VITIS-RUN internal step: running vitis_hls
-timestamp: 20 Mar 2026 08:18:28
-working dir: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-cmd: vitis_hls -nolog -run package -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:55:45
+working dir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
+cmd: vitis_hls -nolog -run package -work_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
 VITIS-RUN internal step status: success
 
 ------------------------------------------
 VITIS-RUN command line :
 ------------------------------------------
-/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
+/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
   Options from -O    : 
   Options from *.ini : 
   Options from Hw Platform : 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 08:18:52
+timestamp: 23 Mar 2026 13:56:08
 ------------------------------------------
-VITIS-RUN internal step: writing a config file for vitis_hls: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-timestamp: 20 Mar 2026 08:18:52
+VITIS-RUN internal step: writing a config file for vitis_hls: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:56:08
 VITIS-RUN internal step status: success
 ------------------------------------------
 VITIS-RUN internal step: running vitis_hls
-timestamp: 20 Mar 2026 08:18:52
-working dir: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-cmd: vitis_hls -nolog -run cosim -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-VITIS-RUN internal step status: success
+timestamp: 23 Mar 2026 13:56:08
+working dir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
+cmd: vitis_hls -nolog -run csim -work_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+VITIS-RUN internal step status: fail
 
 ------------------------------------------
 V++ command line :
 ------------------------------------------
-/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
+/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
   Options from -O    : 
   Options from *.ini : 
   Options from Hw Platform : 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 08:19:43
+timestamp: 23 Mar 2026 13:56:21
 ------------------------------------------
-V++ internal step: writing a config file for vitis_hls: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-timestamp: 20 Mar 2026 08:19:43
+V++ internal step: writing a config file for vitis_hls: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:56:21
 V++ internal step status: success
 ------------------------------------------
 V++ internal step: running vitis_hls
-timestamp: 20 Mar 2026 08:19:43
-working dir: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-cmd: vitis_hls -nolog -run csynth -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:56:21
+working dir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
+cmd: vitis_hls -nolog -run csynth -work_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
 V++ internal step status: success
 
 ------------------------------------------
 VITIS-RUN command line :
 ------------------------------------------
-/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
+/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
   Options from -O    : 
   Options from *.ini : 
   Options from Hw Platform : 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 08:20:39
+timestamp: 23 Mar 2026 13:57:18
 ------------------------------------------
-VITIS-RUN internal step: writing a config file for vitis_hls: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-timestamp: 20 Mar 2026 08:20:39
+VITIS-RUN internal step: writing a config file for vitis_hls: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:57:18
 VITIS-RUN internal step status: success
 ------------------------------------------
 VITIS-RUN internal step: running vitis_hls
-timestamp: 20 Mar 2026 08:20:39
-working dir: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-cmd: vitis_hls -nolog -run package -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
+timestamp: 23 Mar 2026 13:57:18
+working dir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
+cmd: vitis_hls -nolog -run package -work_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
 VITIS-RUN internal step status: success
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 09:42:00
-------------------------------------------
-V++ internal step: writing a config file for vitis_hls: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-timestamp: 20 Mar 2026 09:42:00
-V++ internal step status: success
-------------------------------------------
-V++ internal step: running vitis_hls
-timestamp: 20 Mar 2026 09:42:00
-working dir: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-cmd: vitis_hls -nolog -run csynth -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-V++ internal step status: success
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 09:42:58
-------------------------------------------
-VITIS-RUN internal step: writing a config file for vitis_hls: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-timestamp: 20 Mar 2026 09:42:58
-VITIS-RUN internal step status: success
-------------------------------------------
-VITIS-RUN internal step: running vitis_hls
-timestamp: 20 Mar 2026 09:42:58
-working dir: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-cmd: vitis_hls -nolog -run package -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-VITIS-RUN internal step status: success
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 09:43:22
-------------------------------------------
-VITIS-RUN internal step: writing a config file for vitis_hls: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-timestamp: 20 Mar 2026 09:43:22
-VITIS-RUN internal step status: success
-------------------------------------------
-VITIS-RUN internal step: running vitis_hls
-timestamp: 20 Mar 2026 09:43:22
-working dir: /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject
-cmd: vitis_hls -nolog -run cosim -work_dir /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project -config /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg -cmdlineconfig /workspace/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline
-VITIS-RUN internal step status: success
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 11:06:41
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 11:07:30
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 11:07:40
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 11:09:16
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 20 Mar 2026 11:10:03

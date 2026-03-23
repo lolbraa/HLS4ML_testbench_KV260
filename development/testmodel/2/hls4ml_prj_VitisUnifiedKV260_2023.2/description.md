@@ -4,7 +4,7 @@
 En simpel model for å teste A til Å med Vitis Unified på KV260.
 Oppdatert fork som underlag.
 Dummet ned til utrolig lite for å nå innenfor KV260-krav.
-Kompilerer med Vitis/Vivado 2023.2.
+Compiling with Vitis/Vivado 2025.2 with updated fork of Vitis Unified with new scripts.
 
 - **Model architecture description**: {model_to_test}
 - **Model Revision**: {model_revision}
