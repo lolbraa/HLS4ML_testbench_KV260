@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xd:vendor="xilinx.com" xd:library="xd" xd:name="xd_ip" xd:version="2.01.a" xmlns:xd="http://www.xilinx.com/xd" >
+    <xd:fcnMap xd:fcnName="ap_none_rst" xd:type="RTLKernel" xd:clockId="0" xd:flow="aie" xd:componentRef="ap_none_rst" xd:source="ap_none_rst.xo">
+        <xd:ctrlReg xd:busInterface="S_AXI" xd:portInterfaceType="axilite" xd:name="control" xd:type="ap_ctrl_none" xd:offset="0x0"/>
+        <xd:arg xd:name="rst_active" xd:swRootName="rst_active" xd:dataWidth="32" xd:offset="0x10" xd:portInterfaceType="axilite" xd:direction="in" xd:id="0" xd:busInterfaceRef="S_AXI"/>
+    </xd:fcnMap>
+    <xd:component xd:vendor="xilinx.com" xd:library="ip" xd:name="ap_none_rst" xd:version="1.0" xd:cellType="ip" xd:type="accelerator">
+        <xd:busInterface xd:name="S_AXI" xd:busTypeRef="aximm" xd:mode="slave" xd:clockRef="ACLK" xd:resetRef="in_aresetn:out_aresetn"/>
+        <xd:busInterface xd:name="ACLK" xd:busTypeRef="clock" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="aclk" xd:resetRef="IN_ARESETN"/>
+        <xd:busInterface xd:name="IN_ARESETN" xd:busTypeRef="reset" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="in_aresetn" xd:clockRef="ACLK" xd:activeLevel="low"/>
+    </xd:component>
+</xd:repository>

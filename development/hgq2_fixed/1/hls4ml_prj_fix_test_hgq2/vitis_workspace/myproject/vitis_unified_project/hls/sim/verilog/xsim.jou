@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Mar 31 11:13:49 2026
+# Process ID         : 1837519
+# Current directory  : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2_fixed/1/hls4ml_prj_fix_test_hgq2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog
+# Command line       : xsim -mode tcl -source {xsim.dir/myproject_axi_master/xsim_script.tcl}
+# Log file           : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2_fixed/1/hls4ml_prj_fix_test_hgq2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/xsim.log
+# Journal file       : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2_fixed/1/hls4ml_prj_fix_test_hgq2/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/xsim.jou
+# Running On         : KrissDEV
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.936 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 12
+# Host memory        : 20906 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 20906 MB
+# Available Virtual  : 12234 MB
+#-----------------------------------------------------------
+source xsim.dir/myproject_axi_master/xsim_script.tcl
+source myproject_axi_master.tcl

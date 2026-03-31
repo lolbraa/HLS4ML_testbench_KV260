@@ -51,33 +51,33 @@ void collect_trace_output(struct trace_data *c_trace_outputs) {
 
 // Wrapper of top level function for Python bridge
 void hgq2_1_hls4ml_prj_Vitis_2023_da4ml_float(
-    float *input_layer,
-    float *layer13_out
+    float *input_layer_1,
+    float *layer12_out
 ) {
 
-    input_layer_t input_layer_ap[16];
-    nnet::convert_data<float, input_layer_t, 16>(input_layer, input_layer_ap);
+    input_layer_1_t input_layer_1_ap[16];
+    nnet::convert_data<float, input_layer_1_t, 16>(input_layer_1, input_layer_1_ap);
 
-    result_t layer13_out_ap[5];
+    result_t layer12_out_ap[5];
 
-    hgq2_1_hls4ml_prj_Vitis_2023_da4ml(input_layer_ap,layer13_out_ap);
+    hgq2_1_hls4ml_prj_Vitis_2023_da4ml(input_layer_1_ap,layer12_out_ap);
 
-    nnet::convert_data<result_t, float, 5>(layer13_out_ap, layer13_out);
+    nnet::convert_data<result_t, float, 5>(layer12_out_ap, layer12_out);
 }
 
 void hgq2_1_hls4ml_prj_Vitis_2023_da4ml_double(
-    double *input_layer,
-    double *layer13_out
+    double *input_layer_1,
+    double *layer12_out
 ) {
 
-    input_layer_t input_layer_ap[16];
-    nnet::convert_data<double, input_layer_t, 16>(input_layer, input_layer_ap);
+    input_layer_1_t input_layer_1_ap[16];
+    nnet::convert_data<double, input_layer_1_t, 16>(input_layer_1, input_layer_1_ap);
 
-    result_t layer13_out_ap[5];
+    result_t layer12_out_ap[5];
 
-    hgq2_1_hls4ml_prj_Vitis_2023_da4ml(input_layer_ap,layer13_out_ap);
+    hgq2_1_hls4ml_prj_Vitis_2023_da4ml(input_layer_1_ap,layer12_out_ap);
 
-    nnet::convert_data<result_t, double, 5>(layer13_out_ap, layer13_out);
+    nnet::convert_data<result_t, double, 5>(layer12_out_ap, layer12_out);
 }
 }
 

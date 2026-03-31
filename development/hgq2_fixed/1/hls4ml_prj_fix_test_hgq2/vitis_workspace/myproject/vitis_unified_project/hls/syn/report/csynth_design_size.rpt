@@ -1,0 +1,103 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            |   4,835      | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 | 240,060 *    | user unroll pragmas are applied                                                        |
+|               | (2) simplification         |  70,108      | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 |  68,433      | user inline pragmas are applied                                                        |
+|               | (4) simplification         |  66,982      | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        |  35,511      | user array partition pragmas are applied                                               |
+|               | (2) simplification         |   7,809      | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |   7,821      | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |   8,587      | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |   8,350      | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    |   7,801      | loop and instruction simplification                                                    |
+|               | (2) parallelization        |   8,562      | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |   8,421      | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |   8,317      | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               |   7,747      | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |   8,384      | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++-----------------------------------------+-----------------------------+----------------+------------------+-----------------+-------------+---------------+
+| Function                                | Location                    | Compile/Link   | Unroll/Inline    | Array/Struct    | Performance | HW Transforms |
++-----------------------------------------+-----------------------------+----------------+------------------+-----------------+-------------+---------------+
+| + myproject_axi_master                  | myproject_axi_master.cpp:47 | 4,835          | 66,982           | 8,350           | 8,317       | 8,384         |
+|  + load_input<float, nnet::arra...      | myproject_axi_master.cpp:10 |  514           |   128            |  135            |  914        |  945          |
+|     operator[]                          | nnet_types.h:17             |    3           |                  |                 |             |               |
+|  + compute                              | myproject_axi_master.cpp:41 | 4,121          | 66,743           | 8,095           | 7,079       | 7,121         |
+|   + myproject                           | myproject.cpp:7             | 4,110          | 66,733           | 8,085           | 7,070       | 7,112         |
+|    + dense<nnet::array<ap_fixed<1...    | nnet_dense_stream.h:82      |  810           | 16,281           | 2,058           | 1,546       | 1,608         |
+|     + data_prepare<nnet::array<ap_...   | nnet_dense_stream.h:28      |   75           |                  |                 |             |               |
+|        operator[]                       | nnet_types.h:17             |    6 (2 calls) |                  |                 |             |               |
+|     + dense_latency_wrapper<ap_fix...   | nnet_dense_stream.h:13      |  644           |                  |                 |             |               |
+|      + dense_latency<ap_fixed<11, 5...  | nnet_dense_latency.h:13     |  642           |                  |                 |             |               |
+|         product                         | nnet_mult.h:70              |  141           |                  |                 |             |               |
+|         cast<ap_fixed<11, 5, (ap_q_m... | nnet_mult.h:110             |   59           |                  |                 |             |               |
+|     + res_write<nnet::array<ap_fix...   | nnet_dense_stream.h:53      |   71           |                  |                 |             |               |
+|        operator[]                       | nnet_types.h:17             |    6 (2 calls) |                  |                 |             |               |
+|     + dense_latency<ap_fixed<11, 5...   | nnet_dense_latency.h:13     |                | 16,032           | 1,365           |  885        |  886          |
+|        cast<ap_fixed<11, 5, (ap_q_m...  | nnet_mult.h:110             |                |   256 (64 calls) |  256 (64 calls) |             |               |
+|    + relu<nnet::array<ap_fixed<13...    | nnet_activation_stream.h:39 |  307           | 1,099            | 1,669           | 1,669       | 1,725         |
+|       operator[]                        | nnet_types.h:17             |   12 (4 calls) |                  |                 |             |               |
+|    + dense<nnet::array<ap_ufixed<...    | nnet_dense_stream.h:82      |  810           | 31,404           | 1,671           | 1,392       | 1,416         |
+|     + data_prepare<nnet::array<ap_...   | nnet_dense_stream.h:28      |   75           |                  |                 |             |               |
+|        operator[]                       | nnet_types.h:17             |    6 (2 calls) |                  |                 |             |               |
+|     + dense_latency_wrapper<ap_ufi...   | nnet_dense_stream.h:13      |  644           |                  |                 |             |               |
+|      + dense_latency<ap_ufixed<10, ...  | nnet_dense_latency.h:13     |  642           |                  |                 |             |               |
+|         product                         | nnet_mult.h:70              |  141           |                  |                 |             |               |
+|         cast<ap_ufixed<10, 7, (ap_q_... | nnet_mult.h:110             |   59           |                  |                 |             |               |
+|     + res_write<nnet::array<ap_fix...   | nnet_dense_stream.h:53      |   71           |                  |                 |             |               |
+|        operator[]                       | nnet_types.h:17             |    6 (2 calls) |                  |                 |             |               |
+|       dense_latency<ap_ufixed<10, ...   | nnet_dense_latency.h:13     |                | 31,106           |  883            |  857        |  858          |
+|    + relu<nnet::array<ap_fixed<15...    | nnet_activation_stream.h:39 |  307           |   490            |  773            |  773        |  733          |
+|       operator[]                        | nnet_types.h:17             |   12 (4 calls) |                  |                 |             |               |
+|    + dense<nnet::array<ap_ufixed<...    | nnet_dense_stream.h:82      |  810           | 15,728           |  801            |  685        |  680          |
+|     + data_prepare<nnet::array<ap_...   | nnet_dense_stream.h:28      |   75           |                  |                 |             |               |
+|        operator[]                       | nnet_types.h:17             |    6 (2 calls) |                  |                 |             |               |
+|     + dense_latency_wrapper<ap_ufi...   | nnet_dense_stream.h:13      |  644           |                  |                 |             |               |
+|      + dense_latency<ap_ufixed<8, 7...  | nnet_dense_latency.h:13     |  642           |                  |                 |             |               |
+|         product                         | nnet_mult.h:70              |  141           |                  |                 |             |               |
+|         cast<ap_ufixed<8, 7, (ap_q_m... | nnet_mult.h:110             |   59           |                  |                 |             |               |
+|     + res_write<nnet::array<ap_fix...   | nnet_dense_stream.h:53      |   71           |                  |                 |             |               |
+|        operator[]                       | nnet_types.h:17             |    6 (2 calls) |                  |                 |             |               |
+|       dense_latency<ap_ufixed<8, 7...   | nnet_dense_latency.h:13     |                | 15,526           |  244            |  231        |  232          |
+|    + relu<nnet::array<ap_fixed<13...    | nnet_activation_stream.h:39 |  307           |   490            |  773            |  773        |  733          |
+|       operator[]                        | nnet_types.h:17             |   12 (4 calls) |                  |                 |             |               |
+|    + dense<nnet::array<ap_ufixed<...    | nnet_dense_stream.h:82      |  703           | 1,211            |  314            |  206        |  189          |
+|     + data_prepare<nnet::array<ap_...   | nnet_dense_stream.h:28      |   75           |                  |                 |             |               |
+|        operator[]                       | nnet_types.h:17             |    6 (2 calls) |                  |                 |             |               |
+|     + dense_latency_wrapper<ap_ufi...   | nnet_dense_stream.h:13      |  537           |                  |                 |             |               |
+|      + dense_latency<ap_ufixed<8, 7...  | nnet_dense_latency.h:13     |  535           |                  |                 |             |               |
+|         product                         | nnet_mult.h:70              |  141           |                  |                 |             |               |
+|         cast<ap_ufixed<8, 7, (ap_q_m... | nnet_mult.h:110             |    3           |                  |                 |             |               |
+|     + res_write<nnet::array<ap_fix...   | nnet_dense_stream.h:53      |   71           |                  |                 |             |               |
+|        operator[]                       | nnet_types.h:17             |    6 (2 calls) |                  |                 |             |               |
+|       dense_latency<ap_ufixed<8, 7...   | nnet_dense_latency.h:13     |                | 1,091            |   75            |   66        |   67          |
+|  + store_result<float, nnet::ar...      | myproject_axi_master.cpp:26 |  176           |    97            |  104            |  308        |  295          |
+|     operator[]                          | nnet_types.h:17             |    3           |                  |                 |             |               |
++-----------------------------------------+-----------------------------+----------------+------------------+-----------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

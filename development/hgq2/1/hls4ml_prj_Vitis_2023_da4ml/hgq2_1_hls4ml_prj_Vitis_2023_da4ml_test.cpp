@@ -59,12 +59,12 @@ int main(int argc, char **argv) {
             }
 
             // hls-fpga-machine-learning insert data
-      input_layer_t input_layer[16];
-      nnet::copy_data<float, input_layer_t, 0, 16>(in, input_layer);
-      result_t layer13_out[5];
+      input_layer_1_t input_layer_1[16];
+      nnet::copy_data<float, input_layer_1_t, 0, 16>(in, input_layer_1);
+      result_t layer12_out[5];
 
             // hls-fpga-machine-learning insert top-level-function
-            hgq2_1_hls4ml_prj_Vitis_2023_da4ml(input_layer,layer13_out);
+            hgq2_1_hls4ml_prj_Vitis_2023_da4ml(input_layer_1,layer12_out);
 
             if (e % CHECKPOINT == 0) {
                 std::cout << "Predictions" << std::endl;
@@ -75,12 +75,12 @@ int main(int argc, char **argv) {
                 std::cout << std::endl;
                 std::cout << "Quantized predictions" << std::endl;
                 // hls-fpga-machine-learning insert quantized
-                nnet::print_result<result_t, 5>(layer13_out, std::cout, true);
+                nnet::print_result<result_t, 5>(layer12_out, std::cout, true);
             }
             e++;
 
             // hls-fpga-machine-learning insert tb-output
-            nnet::print_result<result_t, 5>(layer13_out, fout);
+            nnet::print_result<result_t, 5>(layer12_out, fout);
         }
         fin.close();
         fpr.close();
@@ -89,18 +89,18 @@ int main(int argc, char **argv) {
         const unsigned NUM_TEST_SAMPLES = 5;
         for (unsigned i = 0; i < NUM_TEST_SAMPLES; i++) {
             // hls-fpga-machine-learning insert zero
-            input_layer_t input_layer[16];
-            nnet::fill_zero<input_layer_t, 16>(input_layer);
-            result_t layer13_out[5];
+            input_layer_1_t input_layer_1[16];
+            nnet::fill_zero<input_layer_1_t, 16>(input_layer_1);
+            result_t layer12_out[5];
 
             // hls-fpga-machine-learning insert top-level-function
-            hgq2_1_hls4ml_prj_Vitis_2023_da4ml(input_layer,layer13_out);
+            hgq2_1_hls4ml_prj_Vitis_2023_da4ml(input_layer_1,layer12_out);
 
             // hls-fpga-machine-learning insert output
-            nnet::print_result<result_t, 5>(layer13_out, std::cout, true);
+            nnet::print_result<result_t, 5>(layer12_out, std::cout, true);
 
             // hls-fpga-machine-learning insert tb-output
-            nnet::print_result<result_t, 5>(layer13_out, fout);
+            nnet::print_result<result_t, 5>(layer12_out, fout);
         }
     }
 

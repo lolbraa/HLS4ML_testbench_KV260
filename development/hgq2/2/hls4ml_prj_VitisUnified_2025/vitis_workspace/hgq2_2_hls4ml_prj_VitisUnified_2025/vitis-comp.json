@@ -1,0 +1,9 @@
+{
+  "name": "hgq2_2_hls4ml_prj_VitisUnified_2025",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/hls_kernel_config.cfg"],
+    "work_dir": "vitis_unified_project"
+  }
+}

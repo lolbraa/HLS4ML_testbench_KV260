@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../../myproject_test.cpp in debug mode
+   Compiling ../../../../../../firmware/myproject.cpp in debug mode
+   Compiling ../../../../../../firmware/myproject_axi_master.cpp in debug mode
+   Generating csim.exe
+Processing input 0
+Predictions
+0 1 0 0 0 
+Quantized predictions
+3.69141 2.27734 -0.203125 0.4375 0.21875 
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

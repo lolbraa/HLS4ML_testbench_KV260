@@ -1,0 +1,314 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Mar 31 11:56:08 2026
+# Process ID         : 1914608
+# Current directory  : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl
+# Command line       : vivado -log vivado.log -applog -messageDb vivado.pb -mode batch -source vpl.tcl -notrace
+# Log file           : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/vivado.log
+# Journal file       : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/vivado.jou
+# Running On         : KrissDEV
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.936 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 12
+# Host memory        : 20906 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 20906 MB
+# Available Virtual  : 11015 MB
+#-----------------------------------------------------------
+source vpl.tcl -notrace
+INFO: Dispatch client connection id - 39785
+[11:56:09] Run vpl: Step create_project: Started
+INFO: [OCL_UTIL] current step: vpl.create_project
+Creating Vivado project.
+INFO: [OCL_UTIL] set ::origin_dir_loc .local/hw_platform/prj
+INFO: [OCL_UTIL] set ::user_project_name prj
+INFO: [OCL_UTIL] internal step: source .local/hw_platform/prj/rebuild.tcl to create prj project
+INFO: [Project 1-1727] Source BDs should be added before importing the top BD /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/prj/project_1.srcs/sources_1/bd/vitis_design/vitis_design.bd with BDC
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/lib/AMD/2025.2/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ vitis_design_customIntr_0_0
+INFO: Project created:prj
+[11:56:11] Run vpl: Step create_project: Completed
+[11:56:11] Run vpl: Step create_bd: Started
+INFO: [OCL_UTIL] current step: vpl.create_bd
+INFO: [OCL_UTIL] set_property ip_repo_paths /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 /usr/lib/AMD/2025.2/data/cache/xilinx .local/hw_platform/ipcache /usr/lib/AMD/2025.2/Vitis/data/vitis/ip [current_project]
+INFO: [OCL_UTIL] internal step: update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/usr/lib/AMD/2025.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/usr/lib/AMD/2025.2/Vitis/data/vitis/ip'.
+INFO: [OCL_UTIL] internal step: config_ip_cache -use_cache_location /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/.ipcache
+INFO: [OCL_UTIL] set_property synth_checkpoint_mode Hierarchical [get_files -all vitis_design.bd]
+INFO: [OCL_UTIL] internal step: open_bd_design -auto_upgrade [get_files vitis_design.bd]
+Reading block design file </home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd>...
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps8_0_99M
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.5 - zynq_ultra_ps_e_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - customIntr_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Successfully read diagram <vitis_design> from block design file </home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd>
+INFO: [BD 41-1799] The block design contains upgradeable cell(s), automatically upgrading to newest version...
+INFO: [IP_Flow 19-3420] Updated vitis_design_axi_interconnect_0_0 to use current project options
+INFO: [OCL_UTIL] internal step: report locked IPs
+INFO: [OCL_UTIL] internal step: source .local/dr.bd.tcl
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [OCL_UTIL] internal step: save_bd_design
+Wrote  : </home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd> 
+[11:56:13] Run vpl: Step create_bd: Completed
+[11:56:13] Run vpl: Step update_bd: Started
+INFO: [OCL_UTIL] current step: vpl.update_bd
+INFO: [OCL_UTIL] internal step: inserting profiling and debug cores
+--- DPA: insert_chipscope_debug: No chipscope_debugs dict name - nothing to insert
+INFO: Platform is not decorated with AXI-Lite and trace masters
+INFO: Platform does not require extraction of debug/profile metadata.
+--- DPA: -----------------------------------------------------------
+--- DPA: Automation Dictionary:
+--- DPA: -----------------------------------------------------------
+WARNING: No monitor points found for BD automation.
+--- DPA: Did not find NoC with PFM.AXI_PORT and sptag=DDR
+--- DPA: Did not find NoC with PFM.AXI_PORT and sptag=LPDDR
+--- DPA: Step 1 - Add debug/profile monitors...
+--- DPA: Step 2 - No trace added
+--- DPA: Step 3 - Add AI engine support...
+--- DPA: Step 4 - Add AXI-Lite control...
+--- DPA: Step 5 - Group IP into System_DPA...
+INFO: [OCL_UTIL] internal step: assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/myproject_axi_master_1/Data_m_axi_gmem_in0' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/myproject_axi_master_1/Data_m_axi_gmem_out0' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/myproject_axi_master_1/Data_m_axi_gmem_in0' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/myproject_axi_master_1/Data_m_axi_gmem_out0' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_QSPI' is being assigned into address space '/myproject_axi_master_1/Data_m_axi_gmem_in0' at <0xC000_0000 [ 512M ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_QSPI' is being assigned into address space '/myproject_axi_master_1/Data_m_axi_gmem_out0' at <0xC000_0000 [ 512M ]>.
+Slave segment '/myproject_axi_master_1/s_axi_control/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8002_0000 [ 64K ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/myproject_axi_master_1/Data_m_axi_gmem_in0' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/myproject_axi_master_1/Data_m_axi_gmem_in0' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_in0.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/myproject_axi_master_1/Data_m_axi_gmem_out0' at <0xFF00_0000 [ 16M ]>.
+WARNING: [BD 41-1051] Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' with 'register' usage does not match address space '/myproject_axi_master_1/Data_m_axi_gmem_out0' with 'memory' usage so will be excluded from this address space. Please use the 'include_bd_addr_seg' command to override this precaution if required.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_out0.
+INFO: [OCL_UTIL] bd::util_cmd set_bd_source Vitis [current_bd_design]
+INFO: [OCL_UTIL] internal step: writing address_map.xml
+INFO: [OCL_UTIL] internal step: collect BD interface connectivity and update compute units
+INFO: [OCL_UTIL] internal step: save_bd_design
+Wrote  : </home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd> 
+[11:56:14] Run vpl: Step update_bd: Completed
+[11:56:14] Run vpl: Step generate_target: Started
+INFO: [OCL_UTIL] current step: vpl.generate_target
+INFO: [BD 41-1799] The block design contains upgradeable cell(s), automatically upgrading to newest version...
+INFO: [IP_Flow 19-3420] Updated vitis_design_axi_interconnect_0_0 to use current project options
+INFO: [OCL_UTIL] internal step: generate_target all [get_files vitis_design.bd]
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-3281] Instance '/zynq_ultra_ps_e_0' is connected on both sides by SmartConnects and cannot automatically configure itself to match the endpoints. Please manually configure its AXI interfaces as required for the design.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_in0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_out0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_in0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_out0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_in0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_out0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_in0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_out0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/axi_smc/S01_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] vitis_design_axi_smc_0: SmartConnect vitis_design_axi_smc_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x0000_0000 [ 2G ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0xC000_0000 [ 512M ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8_0000_0000 [ 32G ]> from slave interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI' to master interface '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0: SmartConnect vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0 is in High-performance Mode.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_in0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_out0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_in0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /myproject_axi_master_1/Data_m_axi_gmem_out0.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
+CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-11] /axi_dma_0
+                   #################################### 
+                   S_AXIS_S2MM interface is unconnected
+                   ####################################
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/M00_AXI(0)
+Wrote  : </home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI_arlock'(1) to pin: '/myproject_axi_master_1/m_axi_gmem_in0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI_awlock'(1) to pin: '/myproject_axi_master_1/m_axi_gmem_out0_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S00_AXI_arlock'(1) to pin: '/myproject_axi_master_1/m_axi_gmem_in0_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/S01_AXI_awlock'(1) to pin: '/myproject_axi_master_1/m_axi_gmem_out0_AWLOCK'(2) - Only lower order bits will be connected.
+Verilog Output written to : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/sim/vitis_design.v
+Verilog Output written to : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/hdl/vitis_design_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+Exporting to file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/bd_0/hw_handoff/vitis_design_axi_smc_0.hwh
+Generated Hardware Definition File /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/bd_0/synth/vitis_design_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.5-0] vitis_design_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Amd's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Amd's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_LPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HPC0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block myproject_axi_master_1 .
+Exporting to file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/bd_0/hw_handoff/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.hwh
+Generated Hardware Definition File /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/bd_0/synth/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_auto_pc_0/vitis_design_axi_interconnect_0_imp_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m02_couplers/m02_regslice .
+Exporting to file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/hw_handoff/vitis_design.hwh
+Generated Hardware Definition File /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.hwdef
+INFO: [BD 41-3262] Generated VHDL Instantiation Template file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/vitis_design.vho
+INFO: [BD 41-3262] Generated Verilog Instantiation Template file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/vitis_design.veo
+INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/vitis_design_sv.sveo
+generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2021.750 ; gain = 133.281 ; free physical = 3362 ; free virtual = 9797
+INFO: [OCL_UTIL] internal step: writing user synth clock constraints in /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc
+INFO: [OCL_UTIL] internal step: add_files /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc -fileset [current_fileset -constrset]
+INFO: [OCL_UTIL] set_property used_in synthesis implementation out_of_context /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc
+INFO: [OCL_UTIL] set_property processing_order early /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc
+INFO: [OCL_UTIL] internal step: collect clock information and write automation summary report
+[11:56:30] Run vpl: Step generate_target: Completed
+[11:56:30] Run vpl: Step config_hw_runs: Started
+INFO: [OCL_UTIL] current step: vpl.config_hw_runs
+INFO: [OCL_UTIL] internal step: creating vpl tcl hooks for implementation run
+INFO: [OCL_UTIL] internal step: source scripts/_vivado_report_commands.tcl
+INFO: [Project 1-957] Report "impl_1_place_report_utilization_0" was used in following dashboard(s) and has been removed.
+default_dashboard.
+INFO: [Project 1-957] Report "impl_1_route_report_drc_0" was used in following dashboard(s) and has been removed.
+default_dashboard.
+INFO: [Project 1-957] Report "impl_1_route_report_methodology_0" was used in following dashboard(s) and has been removed.
+default_dashboard.
+INFO: [Project 1-957] Report "impl_1_route_report_power_0" was used in following dashboard(s) and has been removed.
+default_dashboard.
+INFO: [Project 1-957] Report "impl_1_route_report_timing_summary_0" was used in following dashboard(s) and has been removed.
+default_dashboard.
+INFO: [Project 1-957] Report "synth_1_synth_report_utilization_0" was used in following dashboard(s) and has been removed.
+default_dashboard.
+INFO: [OCL_UTIL] internal step: create_report_config -report_name impl_report_timing_summary_route_design_summary -report_type report_timing_summary -steps {route_design} -runs {impl_1} -options {-max_paths 10}
+INFO: [OCL_UTIL] internal step: create_report_config -report_name impl_report_timing_summary_post_route_phys_opt_design_summary -report_type report_timing_summary -steps {post_route_phys_opt_design} -runs {impl_1} -options {-max_paths 10}
+INFO: [OCL_UTIL] internal step: source scripts/_vivado_synth_props.tcl
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+INFO: [OCL_UTIL] set_property GEN_FULL_BITSTREAM 0 [get_runs impl_1]
+INFO: [OCL_UTIL] internal step: source scripts/_vivado_impl_props.tcl
+[11:56:32] Run vpl: Step config_hw_runs: Completed
+[11:56:32] Run vpl: Step synth: Started
+INFO: [OCL_UTIL] current step: vpl.synth
+INFO: [OCL_UTIL] parameter general.maxThreads has value 8, set it to 1 for synthesis runs to reduce cpu and memory usage
+INFO: [OCL_UTIL] internal step: launch_runs synth_1 -jobs 6  
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Mar 31 11:56:32 2026] Launched vitis_design_axi_smc_0_synth_1, vitis_design_rst_ps8_0_99M_0_synth_1, vitis_design_axi_intc_0_0_synth_1, vitis_design_axi_dma_0_0_synth_1, vitis_design_zynq_ultra_ps_e_0_0_synth_1, vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1, vitis_design_myproject_axi_master_1_0_synth_1, vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1, vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1, vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1...
+Run output will be captured here:
+vitis_design_axi_smc_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/runme.log
+vitis_design_rst_ps8_0_99M_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/runme.log
+vitis_design_axi_intc_0_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/runme.log
+vitis_design_axi_dma_0_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/runme.log
+vitis_design_zynq_ultra_ps_e_0_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/runme.log
+vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/runme.log
+vitis_design_myproject_axi_master_1_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/runme.log
+vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/runme.log
+vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/runme.log
+vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/runme.log
+[Tue Mar 31 11:56:32 2026] Launched synth_1...
+Run output will be captured here: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/runme.log
+[Tue Mar 31 11:56:32 2026] Waiting for synth_1 to finish...
+[Tue Mar 31 11:57:15 2026] synth_1 finished
+ERROR: [Vivado 12-13638] Failed runs(s) : 'vitis_design_axi_smc_0_synth_1', 'vitis_design_axi_intc_0_0_synth_1', 'vitis_design_zynq_ultra_ps_e_0_0_synth_1', 'vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1'
+ 'vitis_design_axi_smc_0_synth_1' run failed with below errors.
+ 'vitis_design_axi_intc_0_0_synth_1' run failed with below errors.
+ 'vitis_design_zynq_ultra_ps_e_0_0_synth_1' run failed with below errors.
+ 'vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1' run failed with below errors.
+wait_on_runs: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:43 . Memory (MB): peak = 2229.852 ; gain = 0.000 ; free physical = 1477 ; free virtual = 2684
+INFO: [OCL_UTIL] status: fail
+ERROR: caught error: ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+
+    while executing
+"wait_on_run $syn_run_name"
+[11:57:15] Run vpl: Step synth: Failed
+INFO: [OCL_UTIL] current step: vpl.synth failed. To rerun the existing project please use --from_step vpl.synth
+Failed to complete hardware synthesis. The run name is 'synth_1'. An error stack with function names and arguments may be available in the 'vivado.log'.
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 11:57:15 2026...

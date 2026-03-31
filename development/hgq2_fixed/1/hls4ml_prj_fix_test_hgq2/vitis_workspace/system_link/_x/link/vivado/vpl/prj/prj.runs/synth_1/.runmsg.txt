@@ -1,0 +1,2 @@
+Compiling (top level synthesis checkpoint) dynamic region
+Log file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2_fixed/1/hls4ml_prj_fix_test_hgq2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/runme.log

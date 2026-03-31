@@ -10,8 +10,8 @@
 
 // Prototype of top level function for C-synthesis
 void hgq2_1_hls4ml_prj_Vitis_2023_da4ml(
-    input_layer_t input_layer[16],
-    result_t layer13_out[5]
+    input_layer_1_t input_layer_1[16],
+    result_t layer12_out[5]
 );
 
 // hls-fpga-machine-learning insert emulator-defines

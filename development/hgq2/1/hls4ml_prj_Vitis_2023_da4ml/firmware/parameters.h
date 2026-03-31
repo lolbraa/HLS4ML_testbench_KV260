@@ -17,7 +17,7 @@
 // dense_0_relu
 struct relu_config4 : nnet::activ_config {
     static const unsigned n_in = 64;
-    static const unsigned table_size = 262144;
+    static const unsigned table_size = 524288;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
     typedef dense_0_relu_table_t table_t;
@@ -26,7 +26,7 @@ struct relu_config4 : nnet::activ_config {
 // dense_1_relu
 struct relu_config7 : nnet::activ_config {
     static const unsigned n_in = 32;
-    static const unsigned table_size = 1048576;
+    static const unsigned table_size = 524288;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
     typedef dense_1_relu_table_t table_t;
@@ -35,7 +35,7 @@ struct relu_config7 : nnet::activ_config {
 // dense_2_relu
 struct relu_config10 : nnet::activ_config {
     static const unsigned n_in = 32;
-    static const unsigned table_size = 262144;
+    static const unsigned table_size = 131072;
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
     typedef dense_2_relu_table_t table_t;

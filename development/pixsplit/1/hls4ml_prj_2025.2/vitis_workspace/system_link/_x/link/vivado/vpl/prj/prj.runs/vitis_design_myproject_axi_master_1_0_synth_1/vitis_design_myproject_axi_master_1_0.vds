@@ -1,0 +1,1127 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Mar 31 11:56:52 2026
+# Process ID         : 1917826
+# Current directory  : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1
+# Command line       : vivado -log vitis_design_myproject_axi_master_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_myproject_axi_master_1_0.tcl
+# Log file           : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.vds
+# Journal file       : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vivado.jou
+# Running On         : KrissDEV
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.936 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 12
+# Host memory        : 20906 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 20906 MB
+# Available Virtual  : 1468 MB
+#-----------------------------------------------------------
+source vitis_design_myproject_axi_master_1_0.tcl -notrace
+INFO: Dispatch client connection id - 39785
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1533.039 ; gain = 93.840 ; free physical = 556 ; free virtual = 1652
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/usr/lib/AMD/2025.2/data/cache/xilinx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/usr/lib/AMD/2025.2/Vitis/data/vitis/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/lib/AMD/2025.2/data/ip'.
+Command: synth_design -top vitis_design_myproject_axi_master_1_0 -part xck26-sfvc784-2LV-c -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1918447
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2736.727 ; gain = 151.688 ; free physical = 270 ; free virtual = 1663
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_myproject_axi_master_1_0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/synth/vitis_design_myproject_axi_master_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_control_s_axi' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_control_s_axi.v:224]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_control_s_axi' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_load' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_srl' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_srl' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo__parameterized0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_mem' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_mem' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo__parameterized0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_load' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_read' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo__parameterized1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_srl__parameterized0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_srl__parameterized0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo__parameterized1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_burst_converter' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_burst_sequential' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:1656]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_reg_slice' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_reg_slice' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_burst_sequential' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:1656]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_burst_converter' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_reg_slice__parameterized0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_reg_slice__parameterized0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_read' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:796]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_store' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized2' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized2' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized2' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized2' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized3' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized3' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized3' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized3' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_store' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_write' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:1112]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_burst_converter' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_burst_sequential' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2013]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_burst_sequential' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2013]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_burst_converter' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_throttle' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized4' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized4' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized4' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized4' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_throttle' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized2' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized2' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_write' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:1112]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_entry_proc' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_entry_proc' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_load_input_float_array_ap_fixed_15_11_0_3_0_60u_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_load_input_float_array_ap_fixed_15_11_0_3_0_60u_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/synth/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_PART bound to: xck26-sfvc784-2LV-c - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/synth/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/synth/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_sparsemux_9_3_15_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_sparsemux_9_3_15_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_sparsemux_9_3_15_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_sparsemux_9_3_15_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_flow_control_loop_pipe_sequential_init' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_flow_control_loop_pipe_sequential_init' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_load_input_float_array_ap_fixed_15_11_0_3_0_60u_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_load_input_float_array_ap_fixed_15_11_0_3_0_60u_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_compute' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_compute.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_myproject' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_myproject.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_mul_15s_8ns_23_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_15s_8ns_23_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_mul_15s_8ns_23_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_15s_8ns_23_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_mul_15s_6s_21_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_15s_6s_21_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_mul_15s_6s_21_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_15s_6s_21_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_mul_13s_6ns_19_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_13s_6ns_19_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_mul_13s_6ns_19_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_13s_6ns_19_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_mul_14s_5s_19_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_14s_5s_19_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_mul_14s_5s_19_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_14s_5s_19_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_mul_14s_7s_21_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_14s_7s_21_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_mul_14s_7s_21_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_14s_7s_21_1_1.v:5]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_mul_14s_8s_22_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_14s_8s_22_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_mul_14s_8s_22_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_14s_8s_22_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_mul_13s_5ns_18_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_13s_5ns_18_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_mul_13s_5ns_18_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_13s_5ns_18_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_mul_12s_6s_17_1_1' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_12s_6s_17_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_mul_12s_6s_17_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_mul_12s_6s_17_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w2432_d1_S' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w2432_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w2432_d1_S_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w2432_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w2432_d1_S_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w2432_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w2432_d1_S' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w2432_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w1664_d1_S' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w1664_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w1664_d1_S_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w1664_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w1664_d1_S_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w1664_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w1664_d1_S' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w1664_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w1344_d1_S' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w1344_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w1344_d1_S_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w1344_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w1344_d1_S_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w1344_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w1344_d1_S' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w1344_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w896_d1_S' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w896_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w896_d1_S_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w896_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w896_d1_S_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w896_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w896_d1_S' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w896_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w672_d1_S' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w672_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w672_d1_S_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w672_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w672_d1_S_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w672_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w672_d1_S' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w672_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w416_d1_S' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w416_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w416_d1_S_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w416_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w416_d1_S_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w416_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w416_d1_S' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w416_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w288_d1_S' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w288_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w288_d1_S_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w288_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w288_d1_S_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w288_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w288_d1_S' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w288_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w192_d1_S' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w192_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w192_d1_S_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w192_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w192_d1_S_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w192_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w192_d1_S' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w192_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7bkb' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7bkb.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7bkb_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7bkb.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7bkb_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7bkb.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7bkb' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7bkb.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config1cud' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config1cud.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config1cud_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config1cud.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config1cud_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config1cud.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config1cud' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config1cud.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13dEe' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13dEe.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13dEe_ShiftReg' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13dEe.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13dEe_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13dEe.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13dEe' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13dEe.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0' [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0.v:10]
+INFO: [Common 17-14] Message 'Synth 8-6157' appears 100 times and further instances of the messages will be disabled.
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0_ShiftReg' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_myproject' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_myproject.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_compute' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_compute.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_ctlz_20_20_1_1' (0#1) [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_ctlz_20_20_1_1.v:8]
+INFO: [Common 17-14] Message 'Synth 8-6155' appears 100 times and further instances of the messages will be disabled.
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_control_s_axi.v:299]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port addr[1] in module myproject_axi_master_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_AWREADY in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_ARREADY in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RVALID in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[31] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[30] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[29] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[28] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[27] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[26] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[25] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[24] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[23] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[22] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[21] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[20] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[19] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[18] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[17] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[16] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[15] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[14] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[13] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[12] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[11] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[10] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[9] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[8] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[7] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[6] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[5] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[4] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[3] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[2] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[1] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RLAST in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RID[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[8] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[7] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[6] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[5] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[4] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[3] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[2] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[1] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RUSER[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RRESP[1] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RRESP[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BVALID in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BRESP[1] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BRESP[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BID[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BUSER[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[95] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[94] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[93] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[92] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[91] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[90] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[89] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[88] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[87] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[86] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[85] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[84] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[63] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[62] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[61] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[60] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[59] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[58] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[57] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[56] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[55] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[54] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[53] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[52] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[31] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[30] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[29] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[28] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[27] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[26] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[25] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[24] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[23] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[22] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[21] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_dout[20] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_num_data_valid[7] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_num_data_valid[6] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_num_data_valid[5] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_num_data_valid[4] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_num_data_valid[3] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_num_data_valid[2] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_num_data_valid[1] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_num_data_valid[0] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer15_out_fifo_cap[7] in module myproject_axi_master_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 3113.266 ; gain = 528.227 ; free physical = 1467 ; free virtual = 2063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 3113.266 ; gain = 528.227 ; free physical = 1329 ; free virtual = 1947
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 3113.266 ; gain = 528.227 ; free physical = 1329 ; free virtual = 1947
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.5 ; elapsed = 00:00:00.5 . Memory (MB): peak = 3121.266 ; gain = 0.000 ; free physical = 230 ; free virtual = 567
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/constraints/myproject_axi_master_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/constraints/myproject_axi_master_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3182.484 ; gain = 0.000 ; free physical = 1133 ; free virtual = 1783
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.41 . Memory (MB): peak = 3194.406 ; gain = 0.008 ; free physical = 874 ; free virtual = 1588
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 3194.406 ; gain = 609.367 ; free physical = 3025 ; free virtual = 3553
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 3198.492 ; gain = 613.453 ; free physical = 3025 ; free virtual = 3553
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 3198.492 ; gain = 613.453 ; free physical = 2990 ; free virtual = 3523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'myproject_axi_master_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'myproject_axi_master_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_in0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_in0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'myproject_axi_master_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'myproject_axi_master_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_in0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_in0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 3206.496 ; gain = 621.457 ; free physical = 3768 ; free virtual = 4618
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/load_input_float_array_ap_fixed_15_11_0_3_0_60u_U0/grp_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1_fu_90/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/load_input_float_array_ap_fixed_15_11_0_3_0_60u_U0/grp_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1_fu_90/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/load_input_float_array_ap_fixed_15_11_0_3_0_60u_U0/grp_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1_fu_90/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/load_input_float_array_ap_fixed_15_11_0_3_0_60u_U0/grp_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1_fu_90/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/load_input_float_array_ap_fixed_15_11_0_3_0_60u_U0/grp_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1_fu_90/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/load_input_float_array_ap_fixed_15_11_0_3_0_60u_U0/grp_load_input_float_array_ap_fixed_60u_Pipeline_VITIS_LOOP_13_1_fu_90/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (ap_done_reg_reg)
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_42_reg_17024_reg[2]' (FDE) to 'trunc_ln17_43_reg_17029_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_42_reg_17024_reg[0]' (FDE) to 'trunc_ln17_43_reg_17029_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_42_reg_17024_reg[1]' (FDE) to 'trunc_ln17_43_reg_17029_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_42_reg_17024_reg[3]' (FDE) to 'trunc_ln17_43_reg_17029_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_42_reg_17024_reg[4]' (FDE) to 'trunc_ln17_43_reg_17029_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_42_reg_17024_reg[5]' (FDE) to 'trunc_ln17_43_reg_17029_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[10]' (FDE) to 'sub_ln17_16_reg_17017_reg[10]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[9]' (FDE) to 'sub_ln17_16_reg_17017_reg[9]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[8]' (FDE) to 'sub_ln17_16_reg_17017_reg[8]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[7]' (FDE) to 'sub_ln17_16_reg_17017_reg[7]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[6]' (FDE) to 'sub_ln17_16_reg_17017_reg[6]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[5]' (FDE) to 'sub_ln17_16_reg_17017_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[4]' (FDE) to 'sub_ln17_16_reg_17017_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[3]' (FDE) to 'sub_ln17_16_reg_17017_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[2]' (FDE) to 'sub_ln17_16_reg_17017_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[1]' (FDE) to 'sub_ln17_16_reg_17017_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_43_reg_17029_reg[0]' (FDE) to 'sub_ln17_16_reg_17017_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_58_reg_17116_reg[2]' (FDE) to 'trunc_ln17_59_reg_17121_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_58_reg_17116_reg[0]' (FDE) to 'trunc_ln17_59_reg_17121_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_58_reg_17116_reg[1]' (FDE) to 'trunc_ln17_59_reg_17121_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_58_reg_17116_reg[3]' (FDE) to 'trunc_ln17_59_reg_17121_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_58_reg_17116_reg[4]' (FDE) to 'trunc_ln17_59_reg_17121_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_58_reg_17116_reg[5]' (FDE) to 'trunc_ln17_59_reg_17121_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[10]' (FDE) to 'sub_ln17_22_reg_17109_reg[10]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[9]' (FDE) to 'sub_ln17_22_reg_17109_reg[9]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[8]' (FDE) to 'sub_ln17_22_reg_17109_reg[8]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[7]' (FDE) to 'sub_ln17_22_reg_17109_reg[7]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[6]' (FDE) to 'sub_ln17_22_reg_17109_reg[6]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[5]' (FDE) to 'sub_ln17_22_reg_17109_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[4]' (FDE) to 'sub_ln17_22_reg_17109_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[3]' (FDE) to 'sub_ln17_22_reg_17109_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[2]' (FDE) to 'sub_ln17_22_reg_17109_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[1]' (FDE) to 'sub_ln17_22_reg_17109_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_59_reg_17121_reg[0]' (FDE) to 'sub_ln17_22_reg_17109_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_82_reg_17254_reg[2]' (FDE) to 'trunc_ln17_83_reg_17259_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_82_reg_17254_reg[0]' (FDE) to 'trunc_ln17_83_reg_17259_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_82_reg_17254_reg[1]' (FDE) to 'trunc_ln17_83_reg_17259_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_82_reg_17254_reg[3]' (FDE) to 'trunc_ln17_83_reg_17259_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_82_reg_17254_reg[4]' (FDE) to 'trunc_ln17_83_reg_17259_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_82_reg_17254_reg[5]' (FDE) to 'trunc_ln17_83_reg_17259_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[10]' (FDE) to 'sub_ln17_31_reg_17247_reg[10]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[9]' (FDE) to 'sub_ln17_31_reg_17247_reg[9]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[8]' (FDE) to 'sub_ln17_31_reg_17247_reg[8]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[7]' (FDE) to 'sub_ln17_31_reg_17247_reg[7]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[6]' (FDE) to 'sub_ln17_31_reg_17247_reg[6]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[5]' (FDE) to 'sub_ln17_31_reg_17247_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[4]' (FDE) to 'sub_ln17_31_reg_17247_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[3]' (FDE) to 'sub_ln17_31_reg_17247_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[2]' (FDE) to 'sub_ln17_31_reg_17247_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[1]' (FDE) to 'sub_ln17_31_reg_17247_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_83_reg_17259_reg[0]' (FDE) to 'sub_ln17_31_reg_17247_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_122_reg_17484_reg[2]' (FDE) to 'trunc_ln17_123_reg_17489_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_122_reg_17484_reg[0]' (FDE) to 'trunc_ln17_123_reg_17489_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_122_reg_17484_reg[1]' (FDE) to 'trunc_ln17_123_reg_17489_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_122_reg_17484_reg[3]' (FDE) to 'trunc_ln17_123_reg_17489_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_122_reg_17484_reg[4]' (FDE) to 'trunc_ln17_123_reg_17489_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_122_reg_17484_reg[5]' (FDE) to 'trunc_ln17_123_reg_17489_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[10]' (FDE) to 'sub_ln17_46_reg_17477_reg[10]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[9]' (FDE) to 'sub_ln17_46_reg_17477_reg[9]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[8]' (FDE) to 'sub_ln17_46_reg_17477_reg[8]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[7]' (FDE) to 'sub_ln17_46_reg_17477_reg[7]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[6]' (FDE) to 'sub_ln17_46_reg_17477_reg[6]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[5]' (FDE) to 'sub_ln17_46_reg_17477_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[4]' (FDE) to 'sub_ln17_46_reg_17477_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[3]' (FDE) to 'sub_ln17_46_reg_17477_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[2]' (FDE) to 'sub_ln17_46_reg_17477_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[1]' (FDE) to 'sub_ln17_46_reg_17477_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_123_reg_17489_reg[0]' (FDE) to 'sub_ln17_46_reg_17477_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_186_reg_17852_reg[2]' (FDE) to 'trunc_ln17_187_reg_17857_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_186_reg_17852_reg[0]' (FDE) to 'trunc_ln17_187_reg_17857_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_186_reg_17852_reg[1]' (FDE) to 'trunc_ln17_187_reg_17857_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_186_reg_17852_reg[3]' (FDE) to 'trunc_ln17_187_reg_17857_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_186_reg_17852_reg[4]' (FDE) to 'trunc_ln17_187_reg_17857_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_186_reg_17852_reg[5]' (FDE) to 'trunc_ln17_187_reg_17857_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[10]' (FDE) to 'sub_ln17_70_reg_17845_reg[10]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[9]' (FDE) to 'sub_ln17_70_reg_17845_reg[9]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[8]' (FDE) to 'sub_ln17_70_reg_17845_reg[8]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[7]' (FDE) to 'sub_ln17_70_reg_17845_reg[7]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[6]' (FDE) to 'sub_ln17_70_reg_17845_reg[6]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[5]' (FDE) to 'sub_ln17_70_reg_17845_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[4]' (FDE) to 'sub_ln17_70_reg_17845_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[3]' (FDE) to 'sub_ln17_70_reg_17845_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[2]' (FDE) to 'sub_ln17_70_reg_17845_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[1]' (FDE) to 'sub_ln17_70_reg_17845_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_187_reg_17857_reg[0]' (FDE) to 'sub_ln17_70_reg_17845_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_306_reg_18542_reg[2]' (FDE) to 'trunc_ln17_307_reg_18547_reg[2]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_306_reg_18542_reg[0]' (FDE) to 'trunc_ln17_307_reg_18547_reg[0]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_306_reg_18542_reg[1]' (FDE) to 'trunc_ln17_307_reg_18547_reg[1]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_306_reg_18542_reg[3]' (FDE) to 'trunc_ln17_307_reg_18547_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_306_reg_18542_reg[4]' (FDE) to 'trunc_ln17_307_reg_18547_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_306_reg_18542_reg[5]' (FDE) to 'trunc_ln17_307_reg_18547_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[10]' (FDE) to 'sub_ln17_115_reg_18535_reg[10]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[9]' (FDE) to 'sub_ln17_115_reg_18535_reg[9]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[8]' (FDE) to 'sub_ln17_115_reg_18535_reg[8]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[7]' (FDE) to 'sub_ln17_115_reg_18535_reg[7]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[6]' (FDE) to 'sub_ln17_115_reg_18535_reg[6]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[5]' (FDE) to 'sub_ln17_115_reg_18535_reg[5]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[4]' (FDE) to 'sub_ln17_115_reg_18535_reg[4]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[3]' (FDE) to 'sub_ln17_115_reg_18535_reg[3]'
+INFO: [Synth 8-3886] merging instance 'trunc_ln17_307_reg_18547_reg[2]' (FDE) to 'sub_ln17_115_reg_18535_reg[2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled.
+DSP Report: Generating DSP sub_ln58_375_fu_34600_p2, operation Mode is: C+(A*(B:0x3ffe6))'+1.
+DSP Report: register mult_254_reg_8325_reg is absorbed into DSP sub_ln58_375_fu_34600_p2.
+DSP Report: operator sub_ln58_375_fu_34600_p2 is absorbed into DSP sub_ln58_375_fu_34600_p2.
+DSP Report: operator mul_15s_6s_21_1_1_U138/tmp_product is absorbed into DSP sub_ln58_375_fu_34600_p2.
+DSP Report: Generating DSP add_ln58_858_fu_39195_p2, operation Mode is: C+A*(B:0x58).
+DSP Report: operator add_ln58_858_fu_39195_p2 is absorbed into DSP add_ln58_858_fu_39195_p2.
+DSP Report: operator mul_15s_8ns_23_1_1_U136/tmp_product is absorbed into DSP add_ln58_858_fu_39195_p2.
+DSP Report: Generating DSP add_ln58_730_fu_37538_p2, operation Mode is: C+A*(B:0x68).
+DSP Report: operator add_ln58_730_fu_37538_p2 is absorbed into DSP add_ln58_730_fu_37538_p2.
+DSP Report: operator mul_15s_8ns_23_1_1_U137/tmp_product is absorbed into DSP add_ln58_730_fu_37538_p2.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sext_ln73_85_reg_41999_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sext_ln17_121_reg_41959_reg[2] )
+DSP Report: Generating DSP mult_561_reg_5683_reg, operation Mode is: (A*(B:0x16))'.
+DSP Report: register mult_561_reg_5683_reg is absorbed into DSP mult_561_reg_5683_reg.
+DSP Report: operator mul_13s_6ns_19_1_1_U205/tmp_product is absorbed into DSP mult_561_reg_5683_reg.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln58_692_reg_22048_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sext_ln17_423_reg_21910_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\add_ln58_1187_reg_22254_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sext_ln17_416_reg_21905_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB0 has port if_fifo_cap[1] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB0 has port if_fifo_cap[0] driven by constant 1
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB0 has port O138[1] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB0 has port O138[0] driven by constant 1
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_U0/ap_done_reg_reg )
+DSP Report: Generating DSP grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/add_ln58_fu_250_p2, operation Mode is: (C:0xffffffffff00)+A2*(B:0x3ffe6).
+DSP Report: register data_reg_139_reg is absorbed into DSP grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/add_ln58_fu_250_p2.
+DSP Report: operator grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/add_ln58_fu_250_p2 is absorbed into DSP grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/add_ln58_fu_250_p2.
+DSP Report: operator grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/mul_12s_6s_17_1_1_U351/tmp_product is absorbed into DSP grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/add_ln58_fu_250_p2.
+DSP Report: Generating DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/mul_13s_5ns_18_1_1_U337/tmp_product, operation Mode is: A2*(B:0xd).
+DSP Report: register data_64_reg_233_reg is absorbed into DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/mul_13s_5ns_18_1_1_U337/tmp_product.
+DSP Report: operator call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/mul_13s_5ns_18_1_1_U337/tmp_product is absorbed into DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/mul_13s_5ns_18_1_1_U337/tmp_product.
+DSP Report: Generating DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2, operation Mode is: PCIN+(A:0x0):B+(C:0x1).
+DSP Report: operator call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2 is absorbed into DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2.
+DSP Report: Generating DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2, operation Mode is: PCIN+A2:B2.
+DSP Report: register call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2 is absorbed into DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2.
+DSP Report: register call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2 is absorbed into DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2.
+DSP Report: operator call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2 is absorbed into DSP call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/add_ln58_1575_fu_917_p2.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\layer12_out_U/U_myproject_axi_master_fifo_w288_d1_S_ShiftReg/SRL_SIG_reg[0][53] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0/grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0/grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/sub_ln58_1009_reg_501_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_U0/out_data_0_2_0_0_0_load_reg_1020_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\layer13_out_U/U_myproject_axi_master_fifo_w192_d1_S_ShiftReg/SRL_SIG_reg[0][35] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0/data_68_reg_144_reg[11] )
+DSP Report: Generating DSP mul_14s_7s_21_1_1_U305/tmp_product, operation Mode is: A*(B:0x3ffd4).
+DSP Report: operator mul_14s_7s_21_1_1_U305/tmp_product is absorbed into DSP mul_14s_7s_21_1_1_U305/tmp_product.
+DSP Report: Generating DSP add_ln58_944_fu_4161_p2, operation Mode is: PCIN+A:B+(C:0x1).
+DSP Report: operator add_ln58_944_fu_4161_p2 is absorbed into DSP add_ln58_944_fu_4161_p2.
+DSP Report: Generating DSP add_ln58_944_reg_4959_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_ln58_944_reg_4959_reg is absorbed into DSP add_ln58_944_reg_4959_reg.
+DSP Report: operator add_ln58_944_fu_4161_p2 is absorbed into DSP add_ln58_944_reg_4959_reg.
+DSP Report: Generating DSP mul_14s_8s_22_1_1_U306/tmp_product, operation Mode is: A*(B:0x3ffa8).
+DSP Report: operator mul_14s_8s_22_1_1_U306/tmp_product is absorbed into DSP mul_14s_8s_22_1_1_U306/tmp_product.
+DSP Report: Generating DSP add_ln58_974_fu_4605_p2, operation Mode is: PCIN+A:B+(C:0x2).
+DSP Report: operator add_ln58_974_fu_4605_p2 is absorbed into DSP add_ln58_974_fu_4605_p2.
+DSP Report: Generating DSP add_ln58_974_reg_5019_reg, operation Mode is: (PCIN+A:B)'.
+DSP Report: register add_ln58_974_reg_5019_reg is absorbed into DSP add_ln58_974_reg_5019_reg.
+DSP Report: operator add_ln58_974_fu_4605_p2 is absorbed into DSP add_ln58_974_reg_5019_reg.
+INFO: [Synth 8-3936] Found unconnected internal register 'layer7_out_U/U_myproject_axi_master_fifo_w896_d1_S_ShiftReg/SRL_SIG_reg[0]' and it is trimmed from '896' to '854' bits. [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_fifo_w896_d1_S.v:148]
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port if_fifo_cap[1] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port if_fifo_cap[0] driven by constant 1
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[671] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[670] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[669] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[668] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[667] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[666] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[665] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[664] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[663] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[662] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[661] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[660] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[659] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[658] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[657] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[656] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[655] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[654] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[653] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[652] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[651] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[629] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[628] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[627] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[626] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[625] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[624] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[623] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[622] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[621] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[620] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[619] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[618] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[617] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[616] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[615] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[614] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[613] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[612] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[611] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[610] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[609] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[608] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[607] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[606] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[605] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[604] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[603] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[602] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[601] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[600] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[599] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[598] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[597] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[596] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[595] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[594] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[593] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[592] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[591] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[590] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[589] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[588] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[587] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[586] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[585] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[584] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[583] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[582] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[581] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[580] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[579] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[578] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[577] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[576] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[575] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[574] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[573] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[572] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[571] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[570] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[569] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[568] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[567] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[566] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[565] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[564] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[563] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[562] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[561] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[560] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[559] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[558] driven by constant 0
+INFO: [Synth 8-3917] design myproject_axi_master_myproject__GCB3 has port layer9_out_din[557] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled.
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0/grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133 /\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0/grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133 /\sub_ln58_631_reg_5029_reg[5] )
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2710]
+INFO: [Synth 8-3936] Found unconnected internal register 'bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/627e/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2731]
+RAM ("stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg") is too shallow (depth = 127) to use URAM. Choosing BRAM instead of URAM 
+RAM ("stream_out0_layer15_out_U/U_myproject_axi_master_fifo_w96_d128_A_ram/mem_reg") is too shallow (depth = 127) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\store_unit_0/tmp_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p2_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/rs_req/data_p2_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\load_unit_0/tmp_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (store_result_float_array_ap_fixed_20_11_5_3_0_3u_U0/\grp_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1_fu_81/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/rs_resp/data_p2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/start_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\entry_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\entry_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (store_result_float_array_ap_fixed_20_11_5_3_0_3u_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (control_s_axi_U/\waddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/could_multi_bursts.burst_len_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/rs_req/data_p1_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/sect_addr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/rs_req/data_p2_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/rs_req/data_p1_reg[96] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/rs_resp/data_p1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/sect_addr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/req_id_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\store_unit_0/conservative_gen.fifo_burst/U_fifo_srl/dout_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/rs_req/data_p1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/req_id_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/could_multi_bursts.burst_addr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/req_id_buf_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\store_unit_0/conservative_gen.local_BURST_WLEN_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_in0_m_axi_U/\bus_read/rreq_burst_conv/burst_sequential/req_id_buf_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_burst_conv/burst_sequential/could_multi_bursts.burst_id_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_throttle/rs_burst/data_p2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_throttle/fifo_burst_gen[0].fifo_req/U_fifo_srl/dout_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_throttle/rs_burst/data_p1_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_throttle/rs_req/data_p2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_throttle/rs_req/data_p1_reg[1] )
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module myproject_axi_master_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module myproject_axi_master_control_s_axi.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (store_result_float_array_ap_fixed_20_11_5_3_0_3u_U0/\grp_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1_fu_81/empty_74_reg_660_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (store_result_float_array_ap_fixed_20_11_5_3_0_3u_U0/\grp_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1_fu_81/empty_reg_639_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (store_result_float_array_ap_fixed_20_11_5_3_0_3u_U0/\grp_store_result_float_array_ap_fixed_3u_Pipeline_VITIS_LOOP_29_1_fu_81/empty_75_reg_676_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\store_unit_0/buff_wdata/U_fifo_srl/dout_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (gmem_out0_m_axi_U/\bus_write/wreq_throttle/local_BUS_WDATA_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:06 ; elapsed = 00:02:16 . Memory (MB): peak = 3297.453 ; gain = 712.414 ; free physical = 7899 ; free virtual = 8919
+---------------------------------------------------------------------------------
+ Sort Area is myproject_axi_master_myproject__GCB3 mul_14s_8s_22_1_1_U306/tmp_product_0 : 0 0 : 199 395 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB3 mul_14s_8s_22_1_1_U306/tmp_product_0 : 0 1 : 106 395 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB3 mul_14s_8s_22_1_1_U306/tmp_product_0 : 0 2 : 90 395 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB3 mul_14s_7s_21_1_1_U305/tmp_product_4 : 0 0 : 199 353 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB3 mul_14s_7s_21_1_1_U305/tmp_product_4 : 0 1 : 64 353 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB3 mul_14s_7s_21_1_1_U305/tmp_product_4 : 0 2 : 90 353 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB2 call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/mul_13s_5ns_18_1_1_U337/tmp_product_2 : 0 0 : 131 285 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB2 call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/mul_13s_5ns_18_1_1_U337/tmp_product_2 : 0 1 : 53 285 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB2 call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73/mul_13s_5ns_18_1_1_U337/tmp_product_2 : 0 2 : 101 285 : Used 1 time 0
+ Sort Area is myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s__GB0 sub_ln58_375_fu_34600_p2_2 : 0 0 : 279 279 : Used 1 time 0
+ Sort Area is myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s__GB0 add_ln58_858_fu_39195_p2_0 : 0 0 : 256 256 : Used 1 time 0
+ Sort Area is myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s__GB5 add_ln58_730_fu_37538_p2_0 : 0 0 : 242 242 : Used 1 time 0
+ Sort Area is myproject_axi_master_myproject__GCB2 grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55/add_ln58_fu_250_p2_0 : 0 0 : 226 226 : Used 1 time 0
+ Sort Area is myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s__GB4 mult_561_reg_5683_reg_0 : 0 0 : 210 210 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:13 ; elapsed = 00:02:23 . Memory (MB): peak = 3882.211 ; gain = 1297.172 ; free physical = 6360 ; free virtual = 7461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:58 ; elapsed = 00:04:09 . Memory (MB): peak = 4202.336 ; gain = 1617.297 ; free physical = 5770 ; free virtual = 7004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/gmem_in0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/i_30/stream_out0_layer15_out_U/U_myproject_axi_master_fifo_w96_d128_A_ram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:04:33 ; elapsed = 00:04:48 . Memory (MB): peak = 4214.262 ; gain = 1629.223 ; free physical = 5029 ; free virtual = 6312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_in0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/stream_out0_layer15_out_U/U_myproject_axi_master_fifo_w96_d128_A_ram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:04:44 ; elapsed = 00:05:00 . Memory (MB): peak = 4260.902 ; gain = 1675.863 ; free physical = 4971 ; free virtual = 6260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:45 ; elapsed = 00:05:00 . Memory (MB): peak = 4260.902 ; gain = 1675.863 ; free physical = 4971 ; free virtual = 6260
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:52 ; elapsed = 00:05:07 . Memory (MB): peak = 4270.754 ; gain = 1685.715 ; free physical = 4555 ; free virtual = 6092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:52 ; elapsed = 00:05:07 . Memory (MB): peak = 4270.754 ; gain = 1685.715 ; free physical = 4555 ; free virtual = 6092
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:53 ; elapsed = 00:05:08 . Memory (MB): peak = 4270.754 ; gain = 1685.715 ; free physical = 4558 ; free virtual = 6095
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:53 ; elapsed = 00:05:09 . Memory (MB): peak = 4270.754 ; gain = 1685.715 ; free physical = 4558 ; free virtual = 6095
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                                                                 | DSP Mapping       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s__GB4 | (A''*B)'          | 30     | 5      | -      | -      | 19     | 2    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s      | C+A''*B           | 30     | 18     | 48     | -      | 17     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s     | PCIN+A:B+C        | 0      | 18     | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s     | PCIN+A'':B''      | 30     | 18     | -      | -      | 18     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s     | A''*B             | 30     | 4      | -      | -      | 0      | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|myproject_axi_master_mul_15s_8ns_23_1_1                                                     | C+A''*B           | 30     | 7      | 48     | -      | 23     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s__GB0 | not(C')+(A'*B)'+1 | 30     | 18     | 48     | -      | 21     | 1    | 0    | 1    | -    | -     | 1    | 0    | 
+|myproject_axi_master_mul_15s_8ns_23_1_1                                                     | C'+A''*B          | 30     | 7      | 48     | -      | 23     | 2    | 0    | 1    | -    | -     | 0    | 0    | 
+|myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s      | (PCIN+A'':B'')'   | 30     | 18     | -      | -      | 21     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s      | (PCIN+A:B)'       | 30     | 18     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|myproject_axi_master_mul_14s_7s_21_1_1                                                      | C+RND+A''*B       | 30     | 18     | 48     | -      | 48     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
+|myproject_axi_master_mul_14s_8s_22_1_1                                                      | C+RND+A''*B       | 30     | 18     | 48     | -      | 48     | 2    | 0    | 0    | -    | -     | 0    | 0    | 
++--------------------------------------------------------------------------------------------+-------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |  6150|
+|2     |DSP_ALU         |    12|
+|6     |DSP_A_B_DATA    |    12|
+|10    |DSP_C_DATA      |    12|
+|12    |DSP_MULTIPLIER  |    12|
+|14    |DSP_M_DATA      |    12|
+|16    |DSP_OUTPUT      |    12|
+|18    |DSP_PREADD      |    12|
+|19    |DSP_PREADD_DATA |    12|
+|21    |LUT1            |  4785|
+|22    |LUT2            | 23917|
+|23    |LUT3            | 14328|
+|24    |LUT4            | 15539|
+|25    |LUT5            |  9672|
+|26    |LUT6            | 15700|
+|27    |MUXCY           |     4|
+|28    |MUXF7           |   756|
+|29    |MUXF8           |   280|
+|30    |RAMB18E2        |     3|
+|33    |RAMB36E2        |    14|
+|35    |SRL16E          |   319|
+|36    |SRLC32E         |    32|
+|37    |FDRE            | 24405|
+|38    |FDSE            |    54|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:54 ; elapsed = 00:05:09 . Memory (MB): peak = 4270.754 ; gain = 1685.715 ; free physical = 4558 ; free virtual = 6095
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:04:46 ; elapsed = 00:05:03 . Memory (MB): peak = 4270.754 ; gain = 1604.574 ; free physical = 6637 ; free virtual = 8377
+Synthesis Optimization Complete : Time (s): cpu = 00:04:55 ; elapsed = 00:05:13 . Memory (MB): peak = 4270.754 ; gain = 1685.715 ; free physical = 6659 ; free virtual = 8373
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.57 . Memory (MB): peak = 4270.754 ; gain = 0.000 ; free physical = 6336 ; free virtual = 8174
+INFO: [Netlist 29-17] Analyzing 7202 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4270.754 ; gain = 0.000 ; free physical = 6050 ; free virtual = 8061
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  (CARRY4) => CARRY8: 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 12 instances
+
+Synth Design complete | Checksum: 475c3995
+INFO: [Common 17-83] Releasing license: Synthesis
+687 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:05:14 ; elapsed = 00:05:36 . Memory (MB): peak = 4270.754 ; gain = 2685.145 ; free physical = 6055 ; free virtual = 8067
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 6090.339; main = 3193.414; forked = 3012.941
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 9231.414; main = 4260.906; forked = 4970.508
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.16 . Memory (MB): peak = 4270.754 ; gain = 0.000 ; free physical = 6107 ; free virtual = 8151
+INFO: [Common 17-1381] The checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vitis_design_myproject_axi_master_1_0, cache-ID = 53c2f638c7e88d60
+INFO: [Coretcl 2-1174] Renamed 172 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.18 . Memory (MB): peak = 4270.754 ; gain = 0.000 ; free physical = 6194 ; free virtual = 8365
+INFO: [Common 17-1381] The checkpoint '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file vitis_design_myproject_axi_master_1_0_utilization_synth.rpt -pb vitis_design_myproject_axi_master_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 31 12:03:03 2026...
