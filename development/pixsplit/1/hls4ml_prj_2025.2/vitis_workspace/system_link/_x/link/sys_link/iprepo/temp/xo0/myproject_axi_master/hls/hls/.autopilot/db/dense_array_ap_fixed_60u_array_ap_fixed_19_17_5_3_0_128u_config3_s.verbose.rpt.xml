@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s'" level="0">
-<item name = "Date">Tue Mar 31 11:55:00 2026
+<item name = "Date">Tue Mar 31 16:53:11 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">vitis_unified_project</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">3, 3, 15.000 ns, 15.000 ns, 3, 3, no</column>
+<column name="">4, 4, 20.000 ns, 20.000 ns, 4, 4, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165">dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165">dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,19 +50,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 3, 4329, 44769, -</column>
+<column name="Instance">-, 3, 5608, 45532, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 62, -</column>
 <column name="Register">-, -, 2674, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
-<specialColumn name="Utilization (%)">0, ~0, 2, 38, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, 3, 38, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165">dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s, 0, 3, 4329, 44769, 0</column>
+<column name="grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165">dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s, 0, 3, 5608, 45532, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -155,7 +155,7 @@
 <column name="data_8_reg_1271">15, 0, 15, 0</column>
 <column name="data_9_reg_1276">15, 0, 15, 0</column>
 <column name="data_reg_1231">15, 0, 15, 0</column>
-<column name="grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165_ap_start_reg">1, 0, 1, 0</column>
 <column name="res_10_reg_1586">19, 0, 19, 0</column>
 <column name="res_11_reg_1591">19, 0, 19, 0</column>
 <column name="res_12_reg_1596">19, 0, 19, 0</column>

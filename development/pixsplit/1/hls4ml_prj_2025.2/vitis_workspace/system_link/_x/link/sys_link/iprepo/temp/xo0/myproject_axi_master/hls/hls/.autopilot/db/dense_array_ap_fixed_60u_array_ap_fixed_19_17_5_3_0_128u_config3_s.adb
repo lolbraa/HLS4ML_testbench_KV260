@@ -4055,38 +4055,45 @@
               <type>0</type>
               <id>69</id>
               <name>call_ret_i</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165</rtlName>
+              <rtlName>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -4168,7 +4175,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.33</m_delay>
+          <m_delay>4.36</m_delay>
           <m_topoIndex>62</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -4178,32 +4185,39 @@
               <type>0</type>
               <id>70</id>
               <name>res</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4241,32 +4255,39 @@
               <type>0</type>
               <id>71</id>
               <name>res_1</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4304,32 +4325,39 @@
               <type>0</type>
               <id>72</id>
               <name>res_2</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4367,32 +4395,39 @@
               <type>0</type>
               <id>73</id>
               <name>res_3</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4430,32 +4465,39 @@
               <type>0</type>
               <id>74</id>
               <name>res_4</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4493,32 +4535,39 @@
               <type>0</type>
               <id>75</id>
               <name>res_5</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4556,32 +4605,39 @@
               <type>0</type>
               <id>76</id>
               <name>res_6</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4619,32 +4675,39 @@
               <type>0</type>
               <id>77</id>
               <name>res_7</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4682,32 +4745,39 @@
               <type>0</type>
               <id>78</id>
               <name>res_8</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4745,32 +4815,39 @@
               <type>0</type>
               <id>79</id>
               <name>res_9</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4808,32 +4885,39 @@
               <type>0</type>
               <id>80</id>
               <name>res_92</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4871,32 +4955,39 @@
               <type>0</type>
               <id>81</id>
               <name>res_10</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4934,32 +5025,39 @@
               <type>0</type>
               <id>82</id>
               <name>res_11</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -4997,32 +5095,39 @@
               <type>0</type>
               <id>83</id>
               <name>res_12</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5060,32 +5165,39 @@
               <type>0</type>
               <id>84</id>
               <name>res_13</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5123,32 +5235,39 @@
               <type>0</type>
               <id>85</id>
               <name>res_14</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5186,32 +5305,39 @@
               <type>0</type>
               <id>86</id>
               <name>res_15</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5249,32 +5375,39 @@
               <type>0</type>
               <id>87</id>
               <name>res_16</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5312,32 +5445,39 @@
               <type>0</type>
               <id>88</id>
               <name>res_17</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5375,32 +5515,39 @@
               <type>0</type>
               <id>89</id>
               <name>res_18</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5438,32 +5585,39 @@
               <type>0</type>
               <id>90</id>
               <name>res_19</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5501,32 +5655,39 @@
               <type>0</type>
               <id>91</id>
               <name>res_20</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5564,32 +5725,39 @@
               <type>0</type>
               <id>92</id>
               <name>res_21</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5627,32 +5795,39 @@
               <type>0</type>
               <id>93</id>
               <name>res_22</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5690,32 +5865,39 @@
               <type>0</type>
               <id>94</id>
               <name>res_23</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5753,32 +5935,39 @@
               <type>0</type>
               <id>95</id>
               <name>res_24</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5816,32 +6005,39 @@
               <type>0</type>
               <id>96</id>
               <name>res_25</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5879,32 +6075,39 @@
               <type>0</type>
               <id>97</id>
               <name>res_26</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -5942,32 +6145,39 @@
               <type>0</type>
               <id>98</id>
               <name>res_27</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6005,32 +6215,39 @@
               <type>0</type>
               <id>99</id>
               <name>res_28</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6068,32 +6285,39 @@
               <type>0</type>
               <id>100</id>
               <name>res_29</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6131,32 +6355,39 @@
               <type>0</type>
               <id>101</id>
               <name>res_30</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6194,32 +6425,39 @@
               <type>0</type>
               <id>102</id>
               <name>res_31</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6257,32 +6495,39 @@
               <type>0</type>
               <id>103</id>
               <name>res_32</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6320,32 +6565,39 @@
               <type>0</type>
               <id>104</id>
               <name>res_33</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6383,32 +6635,39 @@
               <type>0</type>
               <id>105</id>
               <name>res_34</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6446,32 +6705,39 @@
               <type>0</type>
               <id>106</id>
               <name>res_35</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6509,32 +6775,39 @@
               <type>0</type>
               <id>107</id>
               <name>res_36</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6572,32 +6845,39 @@
               <type>0</type>
               <id>108</id>
               <name>res_37</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6635,32 +6915,39 @@
               <type>0</type>
               <id>109</id>
               <name>res_38</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6698,32 +6985,39 @@
               <type>0</type>
               <id>110</id>
               <name>res_39</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6761,32 +7055,39 @@
               <type>0</type>
               <id>111</id>
               <name>res_40</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6824,32 +7125,39 @@
               <type>0</type>
               <id>112</id>
               <name>res_41</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6887,32 +7195,39 @@
               <type>0</type>
               <id>113</id>
               <name>res_42</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -6950,32 +7265,39 @@
               <type>0</type>
               <id>114</id>
               <name>res_43</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7013,32 +7335,39 @@
               <type>0</type>
               <id>115</id>
               <name>res_44</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7076,32 +7405,39 @@
               <type>0</type>
               <id>116</id>
               <name>res_45</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7139,32 +7475,39 @@
               <type>0</type>
               <id>117</id>
               <name>res_46</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7202,32 +7545,39 @@
               <type>0</type>
               <id>118</id>
               <name>res_47</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7265,32 +7615,39 @@
               <type>0</type>
               <id>119</id>
               <name>res_48</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7328,32 +7685,39 @@
               <type>0</type>
               <id>120</id>
               <name>res_49</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7391,32 +7755,39 @@
               <type>0</type>
               <id>121</id>
               <name>res_50</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7454,32 +7825,39 @@
               <type>0</type>
               <id>122</id>
               <name>res_51</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7517,32 +7895,39 @@
               <type>0</type>
               <id>123</id>
               <name>res_52</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7580,32 +7965,39 @@
               <type>0</type>
               <id>124</id>
               <name>res_53</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7643,32 +8035,39 @@
               <type>0</type>
               <id>125</id>
               <name>res_54</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7706,32 +8105,39 @@
               <type>0</type>
               <id>126</id>
               <name>res_55</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7769,32 +8175,39 @@
               <type>0</type>
               <id>127</id>
               <name>res_56</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7832,32 +8245,39 @@
               <type>0</type>
               <id>128</id>
               <name>res_57</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7895,32 +8315,39 @@
               <type>0</type>
               <id>129</id>
               <name>res_58</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -7958,32 +8385,39 @@
               <type>0</type>
               <id>130</id>
               <name>res_59</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8021,32 +8455,39 @@
               <type>0</type>
               <id>131</id>
               <name>res_60</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8084,32 +8525,39 @@
               <type>0</type>
               <id>132</id>
               <name>res_61</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8147,32 +8595,39 @@
               <type>0</type>
               <id>133</id>
               <name>res_62</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8210,32 +8665,39 @@
               <type>0</type>
               <id>134</id>
               <name>res_63</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8273,32 +8735,39 @@
               <type>0</type>
               <id>135</id>
               <name>res_64</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8336,32 +8805,39 @@
               <type>0</type>
               <id>136</id>
               <name>res_65</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8399,32 +8875,39 @@
               <type>0</type>
               <id>137</id>
               <name>res_66</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8462,32 +8945,39 @@
               <type>0</type>
               <id>138</id>
               <name>res_67</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8525,32 +9015,39 @@
               <type>0</type>
               <id>139</id>
               <name>res_68</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8588,32 +9085,39 @@
               <type>0</type>
               <id>140</id>
               <name>res_69</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8651,32 +9155,39 @@
               <type>0</type>
               <id>141</id>
               <name>res_70</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8714,32 +9225,39 @@
               <type>0</type>
               <id>142</id>
               <name>res_71</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8777,32 +9295,39 @@
               <type>0</type>
               <id>143</id>
               <name>res_72</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8840,32 +9365,39 @@
               <type>0</type>
               <id>144</id>
               <name>res_73</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8903,32 +9435,39 @@
               <type>0</type>
               <id>145</id>
               <name>res_74</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -8966,32 +9505,39 @@
               <type>0</type>
               <id>146</id>
               <name>res_75</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9029,32 +9575,39 @@
               <type>0</type>
               <id>147</id>
               <name>res_76</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9092,32 +9645,39 @@
               <type>0</type>
               <id>148</id>
               <name>res_77</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9155,32 +9715,39 @@
               <type>0</type>
               <id>149</id>
               <name>res_78</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9218,32 +9785,39 @@
               <type>0</type>
               <id>150</id>
               <name>res_79</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9281,32 +9855,39 @@
               <type>0</type>
               <id>151</id>
               <name>res_80</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9344,32 +9925,39 @@
               <type>0</type>
               <id>152</id>
               <name>res_81</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9407,32 +9995,39 @@
               <type>0</type>
               <id>153</id>
               <name>res_82</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9470,32 +10065,39 @@
               <type>0</type>
               <id>154</id>
               <name>res_83</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9533,32 +10135,39 @@
               <type>0</type>
               <id>155</id>
               <name>res_84</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9596,32 +10205,39 @@
               <type>0</type>
               <id>156</id>
               <name>res_85</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9659,32 +10275,39 @@
               <type>0</type>
               <id>157</id>
               <name>res_86</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9722,32 +10345,39 @@
               <type>0</type>
               <id>158</id>
               <name>res_87</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9785,32 +10415,39 @@
               <type>0</type>
               <id>159</id>
               <name>res_88</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9848,32 +10485,39 @@
               <type>0</type>
               <id>160</id>
               <name>res_89</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9911,32 +10555,39 @@
               <type>0</type>
               <id>161</id>
               <name>res_90</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -9974,32 +10625,39 @@
               <type>0</type>
               <id>162</id>
               <name>res_91</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_15_11_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_19_17_ap_q_mode_5_ap_o_mode_3_0_config3_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 60U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 128U&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;15, 11, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;19, 17, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config3&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -10036,7 +10694,7 @@
             <Obj>
               <type>0</type>
               <id>163</id>
-              <name>or_ln77_339_i</name>
+              <name>or_ln77_i1</name>
               <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
               <lineNumber>77</lineNumber>
@@ -10068,7 +10726,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>or_ln77_339_i_fu_1077_p120</rtlName>
+              <rtlName>or_ln77_i1_fu_1077_p120</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -12220,7 +12878,7 @@
             <Obj>
               <type>2</type>
               <id>409</id>
-              <name>dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s</name>
+              <name>dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -12244,7 +12902,7 @@
             <bitwidth>1767</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;&gt;</content>
+          <content>&lt;constant:dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_222">
           <Value>
@@ -15393,8 +16051,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>3</mMinLatency>
-        <mMaxLatency>3</mMaxLatency>
+        <mMinLatency>4</mMinLatency>
+        <mMaxLatency>4</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -16312,7 +16970,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165 (dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s)</first>
+          <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165 (dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -16322,11 +16980,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>4329</second>
+              <second>5608</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>44769</second>
+              <second>45532</second>
             </item>
           </second>
         </item>
@@ -17687,7 +18345,7 @@
           </second>
         </item>
         <item>
-          <first>grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165_ap_start_reg</first>
+          <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -19496,7 +20154,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165</first>
+          <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -19507,7 +20165,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165 (dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s)</first>
+          <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165 (dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -22413,7 +23071,7 @@
         </second>
       </item>
       <item>
-        <first>or_ln77_339_i_fu_1077</first>
+        <first>or_ln77_i1_fu_1077</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -23177,7 +23835,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165</first>
+        <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>

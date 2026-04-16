@@ -43,8 +43,8 @@
 <ID>90</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s_fu_165</InstName>
-<ModuleName>dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s</ModuleName>
+<InstName>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165</InstName>
+<ModuleName>dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>165</ID>
 </Instance>
@@ -63,8 +63,8 @@
 <ID>103</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s_fu_417</InstName>
-<ModuleName>dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s</ModuleName>
+<InstName>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_19_5_3_0_config6_s_fu_417</InstName>
+<ModuleName>dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_19_5_3_0_config6_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>417</ID>
 </Instance>
@@ -83,8 +83,8 @@
 <ID>115</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133</InstName>
-<ModuleName>dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s</ModuleName>
+<InstName>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133</InstName>
+<ModuleName>dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>133</ID>
 </Instance>
@@ -101,14 +101,6 @@
 <ModuleName>dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>127</ID>
-<InstancesList>
-<Instance>
-<InstName>call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73</InstName>
-<ModuleName>dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>73</ID>
-</Instance>
-</InstancesList>
 </Instance>
 <Instance>
 <InstName>relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_U0</InstName>
@@ -121,14 +113,6 @@
 <ModuleName>dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>139</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s_fu_55</InstName>
-<ModuleName>dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>55</ID>
-</Instance>
-</InstancesList>
 </Instance>
 </InstancesList>
 </Instance>
@@ -1895,12 +1879,11 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s</Name>
+<Name>dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
 <EstimatedClockPeriod>4.368</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
@@ -1911,14 +1894,13 @@
 <Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>2</PipelineDepth>
-<PipelineType>yes</PipelineType>
+<PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_mult.h:70~firmware/nnet_utils/nnet_dense_resource.h:59</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -1926,10 +1908,10 @@
 <DSP>3</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>4329</FF>
+<FF>5608</FF>
 <AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>1</UTIL_FF>
-<LUT>44769</LUT>
+<UTIL_FF>2</UTIL_FF>
+<LUT>45532</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>38</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1943,7 +1925,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1954,7 +1936,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1965,7 +1947,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1976,7 +1958,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1987,7 +1969,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1998,7 +1980,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2009,7 +1991,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2020,7 +2002,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2031,7 +2013,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2042,7 +2024,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2053,7 +2035,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2064,7 +2046,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2075,7 +2057,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2086,7 +2068,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2097,7 +2079,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_8</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2108,7 +2090,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_9</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2119,7 +2101,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_10</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2130,7 +2112,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_11</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2141,7 +2123,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_12</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2152,7 +2134,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_13</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2163,7 +2145,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_14</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2174,7 +2156,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_15</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2185,7 +2167,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_16</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2196,7 +2178,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_17</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2207,7 +2189,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_18</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2218,7 +2200,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_19</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2229,7 +2211,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_20</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2240,7 +2222,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_21</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2251,7 +2233,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_22</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2262,7 +2244,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_23</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2273,7 +2255,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_24</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2284,7 +2266,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_25</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2295,7 +2277,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_26</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2306,7 +2288,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_27</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2317,7 +2299,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_28</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2328,7 +2310,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_29</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2339,7 +2321,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_30</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2350,7 +2332,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_31</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2361,7 +2343,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_32</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2372,7 +2354,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_33</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2383,7 +2365,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_34</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2394,7 +2376,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_35</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2405,7 +2387,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_36</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2416,7 +2398,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_37</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2427,7 +2409,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_38</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2438,7 +2420,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_39</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2449,7 +2431,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_40</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2460,7 +2442,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_41</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2471,7 +2453,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_42</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2482,7 +2464,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_43</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2493,7 +2475,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_44</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2504,7 +2486,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_45</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2515,7 +2497,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_46</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2526,7 +2508,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_47</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2537,7 +2519,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_48</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2548,7 +2530,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_49</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2559,7 +2541,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_50</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2570,7 +2552,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_51</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2581,7 +2563,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_52</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2592,7 +2574,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_53</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2603,7 +2585,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_54</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2614,7 +2596,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_55</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2625,7 +2607,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_56</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2636,7 +2618,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_57</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2647,7 +2629,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_58</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2658,7 +2640,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_59</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2669,7 +2651,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_60</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2680,7 +2662,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_61</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2691,7 +2673,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_62</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2702,7 +2684,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_63</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2713,7 +2695,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_64</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2724,7 +2706,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_65</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2735,7 +2717,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_66</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2746,7 +2728,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_67</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2757,7 +2739,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_68</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2768,7 +2750,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_69</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2779,7 +2761,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_70</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2790,7 +2772,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_71</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2801,7 +2783,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_72</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2812,7 +2794,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_73</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2823,7 +2805,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_74</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2834,7 +2816,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_75</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2845,7 +2827,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_76</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2856,7 +2838,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_77</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2867,7 +2849,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_78</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2878,7 +2860,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_79</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2889,7 +2871,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_80</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2900,7 +2882,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_81</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2911,7 +2893,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_82</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2922,7 +2904,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_83</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2933,7 +2915,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_84</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2944,7 +2926,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_85</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2955,7 +2937,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_86</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2966,7 +2948,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_87</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2977,7 +2959,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_88</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2988,7 +2970,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_89</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2999,7 +2981,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_90</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3010,7 +2992,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_91</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3021,7 +3003,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_92</name>
-<Object>dense_latency&lt;ap_fixed&lt;15, 11, 0, 3, 0&gt;, ap_fixed&lt;19, 17, 5, 3, 0&gt;, config3&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;19,17,5,3,0&gt;,config3&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3701,13 +3683,13 @@
 <EstimatedClockPeriod>4.368</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>3</Best-caseLatency>
-<Average-caseLatency>3</Average-caseLatency>
-<Worst-caseLatency>3</Worst-caseLatency>
-<Best-caseRealTimeLatency>15.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>15.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>15.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>3</PipelineInitiationInterval>
+<Best-caseLatency>4</Best-caseLatency>
+<Average-caseLatency>4</Average-caseLatency>
+<Worst-caseLatency>4</Worst-caseLatency>
+<Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>20.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>20.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -3722,10 +3704,10 @@
 <DSP>3</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>7003</FF>
+<FF>8282</FF>
 <AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>2</UTIL_FF>
-<LUT>44833</LUT>
+<UTIL_FF>3</UTIL_FF>
+<LUT>45596</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>38</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -4227,12 +4209,11 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s</Name>
+<Name>dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_19_5_3_0_config6_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
 <EstimatedClockPeriod>4.357</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
@@ -4242,15 +4223,14 @@
 <Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>3</PipelineDepth>
-<PipelineType>yes</PipelineType>
+<PipelineInitiationInterval>2</PipelineInitiationInterval>
+<PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_mult.h:70~firmware/nnet_utils/nnet_dense_resource.h:59</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -4258,7 +4238,7 @@
 <DSP>1</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>3443</FF>
+<FF>2429</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
 <LUT>28452</LUT>
@@ -4275,7 +4255,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4286,7 +4266,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4297,7 +4277,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4308,7 +4288,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4319,7 +4299,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4330,7 +4310,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4341,7 +4321,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4352,7 +4332,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4363,7 +4343,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4374,7 +4354,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4385,7 +4365,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4396,7 +4376,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4407,7 +4387,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4418,7 +4398,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4429,7 +4409,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_8</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4440,7 +4420,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_9</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4451,7 +4431,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_10</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4462,7 +4442,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_11</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4473,7 +4453,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_12</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4484,7 +4464,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_13</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4495,7 +4475,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_14</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4506,7 +4486,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_15</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4517,7 +4497,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_16</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4528,7 +4508,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_17</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4539,7 +4519,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_18</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4550,7 +4530,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_19</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4561,7 +4541,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_20</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4572,7 +4552,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_21</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -4583,7 +4563,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_22</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 12, 0, 3, 0&gt;, ap_fixed&lt;21, 19, 5, 3, 0&gt;, config6&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,19,5,3,0&gt;,config6&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -5626,13 +5606,13 @@
 <EstimatedClockPeriod>4.357</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>4</Best-caseLatency>
-<Average-caseLatency>4</Average-caseLatency>
-<Worst-caseLatency>4</Worst-caseLatency>
-<Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>20.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>20.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>4</PipelineInitiationInterval>
+<Best-caseLatency>5</Best-caseLatency>
+<Average-caseLatency>5</Average-caseLatency>
+<Worst-caseLatency>5</Worst-caseLatency>
+<Best-caseRealTimeLatency>25.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>25.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>25.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>5</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -5647,10 +5627,10 @@
 <DSP>1</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>5143</FF>
+<FF>4128</FF>
 <AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>2</UTIL_FF>
-<LUT>28521</LUT>
+<UTIL_FF>1</UTIL_FF>
+<LUT>28516</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>24</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -6152,13 +6132,12 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s</Name>
+<Name>dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>4.147</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.348</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -6168,14 +6147,13 @@
 <Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>2</PipelineDepth>
-<PipelineType>yes</PipelineType>
+<PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_mult.h:70~firmware/nnet_utils/nnet_dense_resource.h:59</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -6183,7 +6161,7 @@
 <DSP>3</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>418</FF>
+<FF>330</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
 <LUT>4306</LUT>
@@ -6200,7 +6178,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6211,7 +6189,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6222,7 +6200,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6233,7 +6211,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6244,7 +6222,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6255,7 +6233,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6266,7 +6244,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6277,7 +6255,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6288,7 +6266,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6299,7 +6277,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6310,7 +6288,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6321,7 +6299,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6332,7 +6310,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6343,7 +6321,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;</Object>
+<Object>dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -6613,16 +6591,16 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.147</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.348</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>2</Best-caseLatency>
-<Average-caseLatency>2</Average-caseLatency>
-<Worst-caseLatency>2</Worst-caseLatency>
-<Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>2</PipelineInitiationInterval>
+<Best-caseLatency>4</Best-caseLatency>
+<Average-caseLatency>4</Average-caseLatency>
+<Worst-caseLatency>4</Worst-caseLatency>
+<Best-caseRealTimeLatency>20.000 ns</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>20.000 ns</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>20.000 ns</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>4</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -6637,10 +6615,10 @@
 <DSP>3</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>746</FF>
+<FF>827</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>4364</LUT>
+<LUT>4370</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>3</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -7142,209 +7120,6 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>4.049</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>0</Best-caseLatency>
-<Average-caseLatency>0</Average-caseLatency>
-<Worst-caseLatency>0</Worst-caseLatency>
-<Best-caseRealTimeLatency>0 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>1</PipelineDepth>
-<PipelineType>yes</PipelineType>
-<PerformancePragma>-</PerformancePragma>
-</SummaryOfOverallLatency>
-<SummaryOfViolations>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
-</SummaryOfViolations>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<DSP>1</DSP>
-<AVAIL_DSP>1248</AVAIL_DSP>
-<UTIL_DSP>~0</UTIL_DSP>
-<FF>0</FF>
-<AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>0</UTIL_FF>
-<LUT>892</LUT>
-<AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
-<BRAM_18K>0</BRAM_18K>
-<AVAIL_BRAM>288</AVAIL_BRAM>
-<UTIL_BRAM>0</UTIL_BRAM>
-<URAM>0</URAM>
-<AVAIL_URAM>64</AVAIL_URAM>
-<UTIL_URAM>0</UTIL_URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 11, 0, 3, 0&gt;, ap_fixed&lt;18, 14, 5, 3, 0&gt;, config12&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_0</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 11, 0, 3, 0&gt;, ap_fixed&lt;18, 14, 5, 3, 0&gt;, config12&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>18</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_1</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 11, 0, 3, 0&gt;, ap_fixed&lt;18, 14, 5, 3, 0&gt;, config12&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>18</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_2</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 11, 0, 3, 0&gt;, ap_fixed&lt;18, 14, 5, 3, 0&gt;, config12&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>18</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_3</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 11, 0, 3, 0&gt;, ap_fixed&lt;18, 14, 5, 3, 0&gt;, config12&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>18</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>dense_latency&lt;ap_fixed&lt;13, 11, 0, 3, 0&gt;, ap_fixed&lt;18, 14, 5, 3, 0&gt;, config12&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_6_val</name>
-<Object>data_6_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>13</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_7_val</name>
-<Object>data_7_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>13</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_12_val</name>
-<Object>data_12_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>13</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_15_val</name>
-<Object>data_15_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>13</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_16_val</name>
-<Object>data_16_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>13</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_17_val</name>
-<Object>data_17_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>13</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_20_val</name>
-<Object>data_20_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>13</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_30_val</name>
-<Object>data_30_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>13</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
 <Name>dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -7374,10 +7149,10 @@
 <DSP>1</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>181</FF>
+<FF>179</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>950</LUT>
+<LUT>934</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -7879,13 +7654,12 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s</Name>
+<Name>dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>3.914</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.371</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -7895,208 +7669,6 @@
 <Average-caseRealTimeLatency>5.000 ns</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>2</PipelineDepth>
-<PipelineType>yes</PipelineType>
-<PerformancePragma>-</PerformancePragma>
-</SummaryOfOverallLatency>
-<SummaryOfViolations>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
-</SummaryOfViolations>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<DSP>1</DSP>
-<AVAIL_DSP>1248</AVAIL_DSP>
-<UTIL_DSP>~0</UTIL_DSP>
-<FF>60</FF>
-<AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<LUT>369</LUT>
-<AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
-<BRAM_18K>0</BRAM_18K>
-<AVAIL_BRAM>288</AVAIL_BRAM>
-<UTIL_BRAM>0</UTIL_BRAM>
-<URAM>0</URAM>
-<AVAIL_URAM>64</AVAIL_URAM>
-<UTIL_URAM>0</UTIL_URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_0</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>20</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_1</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>20</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return_2</name>
-<Object>dense_latency&lt;ap_fixed&lt;12, 9, 0, 3, 0&gt;, ap_fixed&lt;20, 11, 5, 3, 0&gt;, config15&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>20</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_0_val</name>
-<Object>data_0_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>12</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_2_val</name>
-<Object>data_2_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>12</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_7_val</name>
-<Object>data_7_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>12</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_8_val</name>
-<Object>data_8_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>12</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>data_13_val</name>
-<Object>data_13_val</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>12</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>3.914</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>2</Best-caseLatency>
-<Average-caseLatency>2</Average-caseLatency>
-<Worst-caseLatency>2</Worst-caseLatency>
-<Best-caseRealTimeLatency>10.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>10.000 ns</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -8111,10 +7683,10 @@
 <DSP>1</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>125</FF>
+<FF>72</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>418</LUT>
+<LUT>381</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -8321,17 +7893,17 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.368</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.371</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>25</Best-caseLatency>
-<Average-caseLatency>25</Average-caseLatency>
-<Worst-caseLatency>25</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.125 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.125 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.125 us</Worst-caseRealTimeLatency>
-<DataflowPipelineThroughput>5</DataflowPipelineThroughput>
-<PipelineInitiationInterval>5</PipelineInitiationInterval>
+<Best-caseLatency>24</Best-caseLatency>
+<Average-caseLatency>24</Average-caseLatency>
+<Worst-caseLatency>24</Worst-caseLatency>
+<Best-caseRealTimeLatency>0.120 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.120 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.120 us</Worst-caseRealTimeLatency>
+<DataflowPipelineThroughput>6</DataflowPipelineThroughput>
+<PipelineInitiationInterval>6</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -8346,10 +7918,10 @@
 <DSP>9</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>17174</FF>
+<FF>17464</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>7</UTIL_FF>
-<LUT>94088</LUT>
+<LUT>94799</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>80</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -8515,7 +8087,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.368</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.371</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -8536,8 +8108,8 @@
 <isPerfectNested>0</isPerfectNested>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
-<IterationLatency>27</IterationLatency>
-<PipelineDepth>27</PipelineDepth>
+<IterationLatency>26</IterationLatency>
+<PipelineDepth>26</PipelineDepth>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
@@ -8564,12 +8136,12 @@
 <DSP>9</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>17244</FF>
+<FF>17534</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>7</UTIL_FF>
-<LUT>94225</LUT>
+<LUT>94936</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>80</UTIL_LUT>
+<UTIL_LUT>81</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -10430,10 +10002,10 @@
 <DSP>9</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>25889</FF>
+<FF>26179</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>11</UTIL_FF>
-<LUT>137490</LUT>
+<LUT>138201</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>117</UTIL_LUT>
 <URAM>0</URAM>

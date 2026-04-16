@@ -1878,8 +1878,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>25</mMinLatency>
-        <mMaxLatency>25</mMaxLatency>
+        <mMinLatency>24</mMinLatency>
+        <mMaxLatency>24</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_84">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -3083,11 +3083,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>5143</second>
+              <second>4128</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>28521</second>
+              <second>28516</second>
             </item>
           </second>
         </item>
@@ -3102,11 +3102,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>125</second>
+              <second>72</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>418</second>
+              <second>381</second>
             </item>
           </second>
         </item>
@@ -3121,11 +3121,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>181</second>
+              <second>179</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>950</second>
+              <second>934</second>
             </item>
           </second>
         </item>
@@ -3140,11 +3140,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>7003</second>
+              <second>8282</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>44833</second>
+              <second>45596</second>
             </item>
           </second>
         </item>
@@ -3159,11 +3159,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>746</second>
+              <second>827</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>4364</second>
+              <second>4370</second>
             </item>
           </second>
         </item>

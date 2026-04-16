@@ -834,7 +834,7 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>empty_76</name>
+              <name>empty_75</name>
               <fileName>firmware/myproject_axi_master.cpp</fileName>
               <fileDirectory>../../../.</fileDirectory>
               <lineNumber>29</lineNumber>
@@ -953,7 +953,7 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>empty_77</name>
+              <name>empty_76</name>
               <fileName>firmware/myproject_axi_master.cpp</fileName>
               <fileDirectory>../../../.</fileDirectory>
               <lineNumber>38</lineNumber>
@@ -3082,7 +3082,7 @@
         </second>
       </item>
       <item>
-        <first>empty_76_writereq_fu_70</first>
+        <first>empty_75_writereq_fu_70</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

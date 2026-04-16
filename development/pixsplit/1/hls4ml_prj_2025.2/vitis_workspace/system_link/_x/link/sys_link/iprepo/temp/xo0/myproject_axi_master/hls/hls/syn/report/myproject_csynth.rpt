@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'myproject'
 ================================================================
-* Date:           Tue Mar 31 11:55:02 2026
+* Date:           Tue Mar 31 16:53:13 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        vitis_unified_project
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  4.368 ns|     0.62 ns|
+    |ap_clk  |  5.00 ns|  4.371 ns|     0.62 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
     |   min   |   max   |    min   |    max   | min | max |   Type   |
     +---------+---------+----------+----------+-----+-----+----------+
-    |       25|       25|  0.125 us|  0.125 us|    5|    5|  dataflow|
+    |       24|       24|  0.120 us|  0.120 us|    6|    6|  dataflow|
     +---------+---------+----------+----------+-----+-----+----------+
 
     + Detail: 
@@ -38,15 +38,15 @@
         |                                                                         |                                                                        |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
         |                                 Instance                                |                                 Module                                 |   min   |   max   |    min    |    max    | min | max |   Type  |
         +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
-        |dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0      |dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s      |        3|        3|  15.000 ns|  15.000 ns|    3|    3|       no|
+        |dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0      |dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s      |        4|        4|  20.000 ns|  20.000 ns|    4|    4|       no|
         |relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0               |relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_s               |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
-        |dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0      |dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s      |        4|        4|  20.000 ns|  20.000 ns|    4|    4|       no|
+        |dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0      |dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s      |        5|        5|  25.000 ns|  25.000 ns|    5|    5|       no|
         |relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_U0   |relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_s   |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
-        |dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0       |dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s       |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+        |dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0       |dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s       |        4|        4|  20.000 ns|  20.000 ns|    4|    4|       no|
         |relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_U0  |relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_s  |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
         |dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0      |dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s      |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
         |relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_U0   |relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_s   |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
-        |dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0       |dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s       |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+        |dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0       |dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s       |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
         +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
 
         * Loop: 
@@ -64,12 +64,12 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|       2|    -|
 |FIFO             |        -|     -|     792|     536|    -|
-|Instance         |        -|     9|   16382|   93550|    -|
+|Instance         |        -|     9|   16672|   94261|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       -|       -|    -|
 |Register         |        -|     -|       -|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|     9|   17174|   94088|    0|
+|Total            |        0|     9|   17464|   94799|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -81,17 +81,17 @@
     +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
     |                                 Instance                                |                                 Module                                 | BRAM_18K| DSP|  FF  |  LUT  | URAM|
     +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
-    |dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0      |dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s      |        0|   1|  5143|  28521|    0|
-    |dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0       |dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s       |        0|   1|   125|    418|    0|
-    |dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0      |dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s      |        0|   1|   181|    950|    0|
-    |dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0      |dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s      |        0|   3|  7003|  44833|    0|
-    |dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0       |dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s       |        0|   3|   746|   4364|    0|
+    |dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0      |dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s      |        0|   1|  4128|  28516|    0|
+    |dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0       |dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s       |        0|   1|    72|    381|    0|
+    |dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0      |dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s      |        0|   1|   179|    934|    0|
+    |dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0      |dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s      |        0|   3|  8282|  45596|    0|
+    |dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0       |dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s       |        0|   3|   827|   4370|    0|
     |relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_U0   |relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_s   |        0|   0|   196|    932|    0|
     |relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_U0  |relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_s  |        0|   0|   420|   1972|    0|
     |relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_U0   |relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_s   |        0|   0|   900|   4084|    0|
     |relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0               |relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_s               |        0|   0|  1668|   7476|    0|
     +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
-    |Total                                                                    |                                                                        |        0|   9| 16382|  93550|    0|
+    |Total                                                                    |                                                                        |        0|   9| 16672|  94261|    0|
     +-------------------------------------------------------------------------+------------------------------------------------------------------------+---------+----+------+-------+-----+
 
     * DSP: 

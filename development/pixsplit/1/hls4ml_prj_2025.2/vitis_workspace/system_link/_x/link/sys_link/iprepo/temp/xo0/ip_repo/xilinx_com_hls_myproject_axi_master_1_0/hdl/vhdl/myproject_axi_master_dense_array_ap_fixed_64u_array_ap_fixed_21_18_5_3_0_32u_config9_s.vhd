@@ -38,13 +38,15 @@ architecture behav of myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fix
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (2 downto 0) := "001";
-    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (2 downto 0) := "010";
-    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (2 downto 0) := "100";
+    constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";
+    constant ap_ST_fsm_state2 : STD_LOGIC_VECTOR (3 downto 0) := "0010";
+    constant ap_ST_fsm_state3 : STD_LOGIC_VECTOR (3 downto 0) := "0100";
+    constant ap_ST_fsm_state4 : STD_LOGIC_VECTOR (3 downto 0) := "1000";
     constant ap_const_boolean_1 : BOOLEAN := true;
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
-    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
+    constant ap_const_lv32_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000011";
     constant ap_const_boolean_0 : BOOLEAN := false;
+    constant ap_const_lv32_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000010";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv32_E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001110";
     constant ap_const_lv32_1B : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000011011";
@@ -99,7 +101,7 @@ attribute shreg_extract : string;
     signal real_start : STD_LOGIC;
     signal start_once_reg : STD_LOGIC := '0';
     signal ap_done_reg : STD_LOGIC := '0';
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (2 downto 0) := "001";
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (3 downto 0) := "0001";
     attribute fsm_encoding : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
@@ -107,57 +109,67 @@ attribute shreg_extract : string;
     signal internal_ap_ready : STD_LOGIC;
     signal layer7_out_blk_n : STD_LOGIC;
     signal layer9_out_blk_n : STD_LOGIC;
+    signal ap_CS_fsm_state4 : STD_LOGIC;
+    attribute fsm_encoding of ap_CS_fsm_state4 : signal is "none";
+    signal data_fu_160_p1 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_reg_443 : STD_LOGIC_VECTOR (13 downto 0);
+    signal ap_block_state1 : BOOLEAN;
+    signal data_22_reg_448 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_1_reg_453 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_2_reg_458 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_3_reg_463 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_4_reg_468 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_5_reg_473 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_6_reg_478 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_7_reg_483 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_8_reg_488 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_9_reg_493 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_10_reg_498 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_11_reg_503 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_12_reg_508 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_13_reg_513 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_14_reg_518 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_15_reg_523 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_16_reg_528 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_17_reg_533 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_18_reg_538 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_19_reg_543 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_20_reg_548 : STD_LOGIC_VECTOR (13 downto 0);
+    signal data_21_reg_553 : STD_LOGIC_VECTOR (13 downto 0);
+    signal res_reg_558 : STD_LOGIC_VECTOR (20 downto 0);
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal data_fu_160_p1 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_reg_451 : STD_LOGIC_VECTOR (13 downto 0);
-    signal ap_block_state1 : BOOLEAN;
-    signal data_22_reg_456 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_1_reg_461 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_2_reg_466 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_3_reg_471 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_4_reg_476 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_5_reg_481 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_6_reg_486 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_7_reg_491 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_8_reg_496 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_9_reg_501 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_10_reg_506 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_11_reg_511 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_12_reg_516 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_13_reg_521 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_14_reg_526 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_15_reg_531 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_16_reg_536 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_17_reg_541 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_18_reg_546 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_19_reg_551 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_20_reg_556 : STD_LOGIC_VECTOR (13 downto 0);
-    signal data_21_reg_561 : STD_LOGIC_VECTOR (13 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start : STD_LOGIC;
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done : STD_LOGIC;
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_idle : STD_LOGIC;
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready : STD_LOGIC;
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0 : STD_LOGIC_VECTOR (20 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1 : STD_LOGIC_VECTOR (20 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2 : STD_LOGIC_VECTOR (20 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3 : STD_LOGIC_VECTOR (20 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4 : STD_LOGIC_VECTOR (20 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5 : STD_LOGIC_VECTOR (20 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6 : STD_LOGIC_VECTOR (20 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7 : STD_LOGIC_VECTOR (20 downto 0);
-    signal grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg : STD_LOGIC := '0';
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (2 downto 0);
-    signal ap_NS_fsm_state2 : STD_LOGIC;
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done : STD_LOGIC;
+    signal res_7_reg_563 : STD_LOGIC_VECTOR (20 downto 0);
+    signal res_1_reg_568 : STD_LOGIC_VECTOR (20 downto 0);
+    signal res_2_reg_573 : STD_LOGIC_VECTOR (20 downto 0);
+    signal res_3_reg_578 : STD_LOGIC_VECTOR (20 downto 0);
+    signal res_4_reg_583 : STD_LOGIC_VECTOR (20 downto 0);
+    signal res_5_reg_588 : STD_LOGIC_VECTOR (20 downto 0);
+    signal res_6_reg_593 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start : STD_LOGIC;
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_idle : STD_LOGIC;
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready : STD_LOGIC;
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7 : STD_LOGIC_VECTOR (20 downto 0);
+    signal grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg : STD_LOGIC := '0';
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal or_ln77_1_fu_416_p14 : STD_LOGIC_VECTOR (650 downto 0);
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (3 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
     signal ap_ST_fsm_state3_blk : STD_LOGIC;
+    signal ap_ST_fsm_state4_blk : STD_LOGIC;
     signal ap_ce_reg : STD_LOGIC;
 
-    component myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s IS
+    component myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s IS
     port (
         ap_clk : IN STD_LOGIC;
         ap_rst : IN STD_LOGIC;
@@ -201,45 +213,45 @@ attribute shreg_extract : string;
 
 
 begin
-    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133 : component myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s
+    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133 : component myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst,
-        ap_start => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start,
-        ap_done => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done,
-        ap_idle => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_idle,
-        ap_ready => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready,
-        data_0_val => data_reg_451,
-        data_1_val => data_22_reg_456,
-        data_5_val => data_1_reg_461,
-        data_6_val => data_2_reg_466,
-        data_7_val => data_3_reg_471,
-        data_12_val => data_4_reg_476,
-        data_21_val => data_5_reg_481,
-        data_22_val => data_6_reg_486,
-        data_24_val => data_7_reg_491,
-        data_25_val => data_8_reg_496,
-        data_26_val => data_9_reg_501,
-        data_30_val => data_10_reg_506,
-        data_33_val => data_11_reg_511,
-        data_35_val => data_12_reg_516,
-        data_37_val => data_13_reg_521,
-        data_39_val => data_14_reg_526,
-        data_45_val => data_15_reg_531,
-        data_46_val => data_16_reg_536,
-        data_51_val => data_17_reg_541,
-        data_52_val => data_18_reg_546,
-        data_56_val => data_19_reg_551,
-        data_58_val => data_20_reg_556,
-        data_60_val => data_21_reg_561,
-        ap_return_0 => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0,
-        ap_return_1 => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1,
-        ap_return_2 => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2,
-        ap_return_3 => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3,
-        ap_return_4 => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4,
-        ap_return_5 => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5,
-        ap_return_6 => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6,
-        ap_return_7 => grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7);
+        ap_start => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start,
+        ap_done => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done,
+        ap_idle => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_idle,
+        ap_ready => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready,
+        data_0_val => data_reg_443,
+        data_1_val => data_22_reg_448,
+        data_5_val => data_1_reg_453,
+        data_6_val => data_2_reg_458,
+        data_7_val => data_3_reg_463,
+        data_12_val => data_4_reg_468,
+        data_21_val => data_5_reg_473,
+        data_22_val => data_6_reg_478,
+        data_24_val => data_7_reg_483,
+        data_25_val => data_8_reg_488,
+        data_26_val => data_9_reg_493,
+        data_30_val => data_10_reg_498,
+        data_33_val => data_11_reg_503,
+        data_35_val => data_12_reg_508,
+        data_37_val => data_13_reg_513,
+        data_39_val => data_14_reg_518,
+        data_45_val => data_15_reg_523,
+        data_46_val => data_16_reg_528,
+        data_51_val => data_17_reg_533,
+        data_52_val => data_18_reg_538,
+        data_56_val => data_19_reg_543,
+        data_58_val => data_20_reg_548,
+        data_60_val => data_21_reg_553,
+        ap_return_0 => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0,
+        ap_return_1 => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1,
+        ap_return_2 => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2,
+        ap_return_3 => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3,
+        ap_return_4 => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4,
+        ap_return_5 => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5,
+        ap_return_6 => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6,
+        ap_return_7 => grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7);
 
 
 
@@ -265,7 +277,7 @@ begin
             else
                 if ((ap_continue = ap_const_logic_1)) then 
                     ap_done_reg <= ap_const_logic_0;
-                elsif (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+                elsif (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
                     ap_done_reg <= ap_const_logic_1;
                 end if; 
             end if;
@@ -273,16 +285,16 @@ begin
     end process;
 
 
-    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg_assign_proc : process(ap_clk)
+    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg_assign_proc : process(ap_clk)
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= ap_const_logic_0;
+                grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= ap_const_logic_0;
             else
-                if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_logic_1 = ap_NS_fsm_state2))) then 
-                    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= ap_const_logic_1;
-                elsif ((grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready = ap_const_logic_1)) then 
-                    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= ap_const_logic_0;
+                if ((ap_const_logic_1 = ap_CS_fsm_state2)) then 
+                    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= ap_const_logic_1;
+                elsif ((grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready = ap_const_logic_1)) then 
+                    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= ap_const_logic_0;
                 end if; 
             end if;
         end if;
@@ -295,7 +307,7 @@ begin
             if (ap_rst = '1') then
                 start_once_reg <= ap_const_logic_0;
             else
-                if (((real_start = ap_const_logic_1) and (internal_ap_ready = ap_const_logic_0))) then 
+                if (((internal_ap_ready = ap_const_logic_0) and (real_start = ap_const_logic_1))) then 
                     start_once_reg <= ap_const_logic_1;
                 elsif ((internal_ap_ready = ap_const_logic_1)) then 
                     start_once_reg <= ap_const_logic_0;
@@ -308,34 +320,49 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
-                data_10_reg_506 <= layer7_out_dout(433 downto 420);
-                data_11_reg_511 <= layer7_out_dout(475 downto 462);
-                data_12_reg_516 <= layer7_out_dout(503 downto 490);
-                data_13_reg_521 <= layer7_out_dout(531 downto 518);
-                data_14_reg_526 <= layer7_out_dout(559 downto 546);
-                data_15_reg_531 <= layer7_out_dout(643 downto 630);
-                data_16_reg_536 <= layer7_out_dout(657 downto 644);
-                data_17_reg_541 <= layer7_out_dout(727 downto 714);
-                data_18_reg_546 <= layer7_out_dout(741 downto 728);
-                data_19_reg_551 <= layer7_out_dout(797 downto 784);
-                data_1_reg_461 <= layer7_out_dout(83 downto 70);
-                data_20_reg_556 <= layer7_out_dout(825 downto 812);
-                data_21_reg_561 <= layer7_out_dout(853 downto 840);
-                data_22_reg_456 <= layer7_out_dout(27 downto 14);
-                data_2_reg_466 <= layer7_out_dout(97 downto 84);
-                data_3_reg_471 <= layer7_out_dout(111 downto 98);
-                data_4_reg_476 <= layer7_out_dout(181 downto 168);
-                data_5_reg_481 <= layer7_out_dout(307 downto 294);
-                data_6_reg_486 <= layer7_out_dout(321 downto 308);
-                data_7_reg_491 <= layer7_out_dout(349 downto 336);
-                data_8_reg_496 <= layer7_out_dout(363 downto 350);
-                data_9_reg_501 <= layer7_out_dout(377 downto 364);
-                data_reg_451 <= data_fu_160_p1;
+                data_10_reg_498 <= layer7_out_dout(433 downto 420);
+                data_11_reg_503 <= layer7_out_dout(475 downto 462);
+                data_12_reg_508 <= layer7_out_dout(503 downto 490);
+                data_13_reg_513 <= layer7_out_dout(531 downto 518);
+                data_14_reg_518 <= layer7_out_dout(559 downto 546);
+                data_15_reg_523 <= layer7_out_dout(643 downto 630);
+                data_16_reg_528 <= layer7_out_dout(657 downto 644);
+                data_17_reg_533 <= layer7_out_dout(727 downto 714);
+                data_18_reg_538 <= layer7_out_dout(741 downto 728);
+                data_19_reg_543 <= layer7_out_dout(797 downto 784);
+                data_1_reg_453 <= layer7_out_dout(83 downto 70);
+                data_20_reg_548 <= layer7_out_dout(825 downto 812);
+                data_21_reg_553 <= layer7_out_dout(853 downto 840);
+                data_22_reg_448 <= layer7_out_dout(27 downto 14);
+                data_2_reg_458 <= layer7_out_dout(97 downto 84);
+                data_3_reg_463 <= layer7_out_dout(111 downto 98);
+                data_4_reg_468 <= layer7_out_dout(181 downto 168);
+                data_5_reg_473 <= layer7_out_dout(307 downto 294);
+                data_6_reg_478 <= layer7_out_dout(321 downto 308);
+                data_7_reg_483 <= layer7_out_dout(349 downto 336);
+                data_8_reg_488 <= layer7_out_dout(363 downto 350);
+                data_9_reg_493 <= layer7_out_dout(377 downto 364);
+                data_reg_443 <= data_fu_160_p1;
+            end if;
+        end if;
+    end process;
+    process (ap_clk)
+    begin
+        if (ap_clk'event and ap_clk = '1') then
+            if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done = ap_const_logic_1))) then
+                res_1_reg_568 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2;
+                res_2_reg_573 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3;
+                res_3_reg_578 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4;
+                res_4_reg_583 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5;
+                res_5_reg_588 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6;
+                res_6_reg_593 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7;
+                res_7_reg_563 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1;
+                res_reg_558 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0;
             end if;
         end if;
     end process;
 
-    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, layer9_out_full_n, ap_CS_fsm_state3, ap_block_state1)
+    ap_NS_fsm_assign_proc : process (ap_CS_fsm, ap_CS_fsm_state1, layer9_out_full_n, ap_CS_fsm_state4, ap_block_state1, ap_CS_fsm_state3, grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done)
     begin
         case ap_CS_fsm is
             when ap_ST_fsm_state1 => 
@@ -347,19 +374,25 @@ begin
             when ap_ST_fsm_state2 => 
                 ap_NS_fsm <= ap_ST_fsm_state3;
             when ap_ST_fsm_state3 => 
-                if (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then
-                    ap_NS_fsm <= ap_ST_fsm_state1;
+                if (((ap_const_logic_1 = ap_CS_fsm_state3) and (grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done = ap_const_logic_1))) then
+                    ap_NS_fsm <= ap_ST_fsm_state4;
                 else
                     ap_NS_fsm <= ap_ST_fsm_state3;
                 end if;
+            when ap_ST_fsm_state4 => 
+                if (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then
+                    ap_NS_fsm <= ap_ST_fsm_state1;
+                else
+                    ap_NS_fsm <= ap_ST_fsm_state4;
+                end if;
             when others =>  
-                ap_NS_fsm <= "XXX";
+                ap_NS_fsm <= "XXXX";
         end case;
     end process;
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
-    ap_NS_fsm_state2 <= ap_NS_fsm(1);
+    ap_CS_fsm_state4 <= ap_CS_fsm(3);
 
     ap_ST_fsm_state1_blk_assign_proc : process(ap_block_state1)
     begin
@@ -372,9 +405,9 @@ begin
 
     ap_ST_fsm_state2_blk <= ap_const_logic_0;
 
-    ap_ST_fsm_state3_blk_assign_proc : process(layer9_out_full_n)
+    ap_ST_fsm_state3_blk_assign_proc : process(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done)
     begin
-        if ((layer9_out_full_n = ap_const_logic_0)) then 
+        if ((grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done = ap_const_logic_0)) then 
             ap_ST_fsm_state3_blk <= ap_const_logic_1;
         else 
             ap_ST_fsm_state3_blk <= ap_const_logic_0;
@@ -382,15 +415,25 @@ begin
     end process;
 
 
-    ap_block_state1_assign_proc : process(real_start, ap_done_reg, layer7_out_empty_n)
+    ap_ST_fsm_state4_blk_assign_proc : process(layer9_out_full_n)
     begin
-                ap_block_state1 <= ((real_start = ap_const_logic_0) or (layer7_out_empty_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1));
+        if ((layer9_out_full_n = ap_const_logic_0)) then 
+            ap_ST_fsm_state4_blk <= ap_const_logic_1;
+        else 
+            ap_ST_fsm_state4_blk <= ap_const_logic_0;
+        end if; 
     end process;
 
 
-    ap_done_assign_proc : process(ap_done_reg, layer9_out_full_n, ap_CS_fsm_state3)
+    ap_block_state1_assign_proc : process(real_start, ap_done_reg, layer7_out_empty_n)
     begin
-        if (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+                ap_block_state1 <= ((layer7_out_empty_n = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1) or (real_start = ap_const_logic_0));
+    end process;
+
+
+    ap_done_assign_proc : process(ap_done_reg, layer9_out_full_n, ap_CS_fsm_state4)
+    begin
+        if (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_done_reg;
@@ -400,7 +443,7 @@ begin
 
     ap_idle_assign_proc : process(real_start, ap_CS_fsm_state1)
     begin
-        if (((real_start = ap_const_logic_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+        if (((ap_const_logic_1 = ap_CS_fsm_state1) and (real_start = ap_const_logic_0))) then 
             ap_idle <= ap_const_logic_1;
         else 
             ap_idle <= ap_const_logic_0;
@@ -409,11 +452,11 @@ begin
 
     ap_ready <= internal_ap_ready;
     data_fu_160_p1 <= layer7_out_dout(14 - 1 downto 0);
-    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start <= grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg;
+    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg;
 
-    internal_ap_ready_assign_proc : process(layer9_out_full_n, ap_CS_fsm_state3)
+    internal_ap_ready_assign_proc : process(layer9_out_full_n, ap_CS_fsm_state4)
     begin
-        if (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+        if (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             internal_ap_ready <= ap_const_logic_1;
         else 
             internal_ap_ready <= ap_const_logic_0;
@@ -423,7 +466,7 @@ begin
 
     layer7_out_blk_n_assign_proc : process(real_start, ap_done_reg, ap_CS_fsm_state1, layer7_out_empty_n)
     begin
-        if ((not(((real_start = ap_const_logic_0) or (ap_done_reg = ap_const_logic_1))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+        if ((not(((ap_done_reg = ap_const_logic_1) or (real_start = ap_const_logic_0))) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
             layer7_out_blk_n <= layer7_out_empty_n;
         else 
             layer7_out_blk_n <= ap_const_logic_1;
@@ -441,9 +484,9 @@ begin
     end process;
 
 
-    layer9_out_blk_n_assign_proc : process(layer9_out_full_n, ap_CS_fsm_state3)
+    layer9_out_blk_n_assign_proc : process(layer9_out_full_n, ap_CS_fsm_state4)
     begin
-        if ((ap_const_logic_1 = ap_CS_fsm_state3)) then 
+        if ((ap_const_logic_1 = ap_CS_fsm_state4)) then 
             layer9_out_blk_n <= layer9_out_full_n;
         else 
             layer9_out_blk_n <= ap_const_logic_1;
@@ -452,16 +495,16 @@ begin
 
     layer9_out_din <= std_logic_vector(IEEE.numeric_std.resize(unsigned(or_ln77_1_fu_416_p14),672));
 
-    layer9_out_write_assign_proc : process(layer9_out_full_n, ap_CS_fsm_state3)
+    layer9_out_write_assign_proc : process(layer9_out_full_n, ap_CS_fsm_state4)
     begin
-        if (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state3))) then 
+        if (((layer9_out_full_n = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state4))) then 
             layer9_out_write <= ap_const_logic_1;
         else 
             layer9_out_write <= ap_const_logic_0;
         end if; 
     end process;
 
-    or_ln77_1_fu_416_p14 <= ((((((((((((grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7 & ap_const_lv189_lc_119) & grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6) & ap_const_lv42_0) & grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5) & grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4) & grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3) & ap_const_lv42_0) & grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2) & ap_const_lv84_0) & grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1) & grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0) & ap_const_lv126_0);
+    or_ln77_1_fu_416_p14 <= ((((((((((((res_6_reg_593 & ap_const_lv189_lc_119) & res_5_reg_588) & ap_const_lv42_0) & res_4_reg_583) & res_3_reg_578) & res_2_reg_573) & ap_const_lv42_0) & res_1_reg_568) & ap_const_lv84_0) & res_7_reg_563) & res_reg_558) & ap_const_lv126_0);
 
     real_start_assign_proc : process(ap_start, start_full_n, start_once_reg)
     begin
@@ -476,7 +519,7 @@ begin
 
     start_write_assign_proc : process(real_start, start_once_reg)
     begin
-        if (((real_start = ap_const_logic_1) and (start_once_reg = ap_const_logic_0))) then 
+        if (((start_once_reg = ap_const_logic_0) and (real_start = ap_const_logic_1))) then 
             start_write <= ap_const_logic_1;
         else 
             start_write <= ap_const_logic_0;

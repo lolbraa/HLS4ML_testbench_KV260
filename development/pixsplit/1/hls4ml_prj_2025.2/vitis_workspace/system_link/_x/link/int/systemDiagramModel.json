@@ -94,8 +94,8 @@
     "time_stamp": "2025-11-13-01:29:13",
     "options": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
     "xclbin_name": "myproject",
-    "uuid": "3faf8620-ae28-4032-af15-0760d72f78b9",
-    "link_uuid": "3faf8620-ae28-4032-af15-0760d72f78b9",
+    "uuid": "4a55c33c-8004-4702-a175-a9bb03d526d4",
+    "link_uuid": "4a55c33c-8004-4702-a175-a9bb03d526d4",
     "package_uuid": "",
     "system_compile_flow": false
    },

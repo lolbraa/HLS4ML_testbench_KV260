@@ -251,7 +251,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_22_reg_456</rtlName>
+              <rtlName>data_22_reg_448</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -317,7 +317,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_1_reg_461</rtlName>
+              <rtlName>data_1_reg_453</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -383,7 +383,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_2_reg_466</rtlName>
+              <rtlName>data_2_reg_458</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -449,7 +449,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_3_reg_471</rtlName>
+              <rtlName>data_3_reg_463</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -515,7 +515,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_4_reg_476</rtlName>
+              <rtlName>data_4_reg_468</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -581,7 +581,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_5_reg_481</rtlName>
+              <rtlName>data_5_reg_473</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -647,7 +647,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_6_reg_486</rtlName>
+              <rtlName>data_6_reg_478</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -713,7 +713,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_7_reg_491</rtlName>
+              <rtlName>data_7_reg_483</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -779,7 +779,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_8_reg_496</rtlName>
+              <rtlName>data_8_reg_488</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -845,7 +845,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_9_reg_501</rtlName>
+              <rtlName>data_9_reg_493</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -911,7 +911,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_10_reg_506</rtlName>
+              <rtlName>data_10_reg_498</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -977,7 +977,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_11_reg_511</rtlName>
+              <rtlName>data_11_reg_503</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1043,7 +1043,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_12_reg_516</rtlName>
+              <rtlName>data_12_reg_508</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1109,7 +1109,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_13_reg_521</rtlName>
+              <rtlName>data_13_reg_513</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1175,7 +1175,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_14_reg_526</rtlName>
+              <rtlName>data_14_reg_518</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1241,7 +1241,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_15_reg_531</rtlName>
+              <rtlName>data_15_reg_523</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1307,7 +1307,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_16_reg_536</rtlName>
+              <rtlName>data_16_reg_528</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1373,7 +1373,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_17_reg_541</rtlName>
+              <rtlName>data_17_reg_533</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1439,7 +1439,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_18_reg_546</rtlName>
+              <rtlName>data_18_reg_538</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1505,7 +1505,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_19_reg_551</rtlName>
+              <rtlName>data_19_reg_543</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1571,7 +1571,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_20_reg_556</rtlName>
+              <rtlName>data_20_reg_548</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1637,7 +1637,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>data</originalName>
-              <rtlName>data_21_reg_561</rtlName>
+              <rtlName>data_21_reg_553</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1672,38 +1672,45 @@
               <type>0</type>
               <id>29</id>
               <name>call_ret</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133</rtlName>
+              <rtlName>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1748,7 +1755,7 @@
           <m_isOnCriticalPath>0</m_isOnCriticalPath>
           <m_isLCDNode>0</m_isLCDNode>
           <m_isStartOfPath>0</m_isStartOfPath>
-          <m_delay>4.14</m_delay>
+          <m_delay>4.34</m_delay>
           <m_topoIndex>25</m_topoIndex>
           <m_clusterGroupNumber>-1</m_clusterGroupNumber>
         </item>
@@ -1758,32 +1765,39 @@
               <type>0</type>
               <id>30</id>
               <name>res</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -1821,32 +1835,39 @@
               <type>0</type>
               <id>31</id>
               <name>res_7</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -1884,32 +1905,39 @@
               <type>0</type>
               <id>32</id>
               <name>res_1</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -1947,32 +1975,39 @@
               <type>0</type>
               <id>33</id>
               <name>res_2</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -2010,32 +2045,39 @@
               <type>0</type>
               <id>34</id>
               <name>res_3</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -2073,32 +2115,39 @@
               <type>0</type>
               <id>35</id>
               <name>res_4</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -2136,32 +2185,39 @@
               <type>0</type>
               <id>36</id>
               <name>res_5</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -2199,32 +2255,39 @@
               <type>0</type>
               <id>37</id>
               <name>res_6</name>
-              <fileName>firmware/nnet_utils/nnet_dense_stream.h</fileName>
+              <fileName>firmware/nnet_utils/nnet_dense_resource.h</fileName>
               <fileDirectory>../../../.</fileDirectory>
-              <lineNumber>17</lineNumber>
-              <contextFuncName>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
-              <contextNormFuncName>dense_latency_wrapper_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
+              <lineNumber>262</lineNumber>
+              <contextFuncName>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</contextFuncName>
+              <contextNormFuncName>dense_resource_ap_fixed_14_13_ap_q_mode_0_ap_o_mode_3_0_ap_fixed_21_18_ap_q_mode_5_ap_o_mode_3_0_config9_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
                   <first>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2</first>
                   <second>
-                    <count>2</count>
+                    <count>3</count>
                     <item_version>0</item_version>
+                    <item>
+                      <first>
+                        <first>firmware/nnet_utils/nnet_dense_resource.h</first>
+                        <second>dense_resource&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                      </first>
+                      <second>262</second>
+                    </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
                         <second>dense&amp;lt;nnet::array&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, 64U&amp;gt;, nnet::array&amp;lt;ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, 32U&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>95</second>
+                      <second>97</second>
                     </item>
                     <item>
                       <first>
                         <first>firmware/nnet_utils/nnet_dense_stream.h</first>
-                        <second>dense_latency_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
+                        <second>dense_resource_wrapper&amp;lt;ap_fixed&amp;lt;14, 13, (ap_q_mode)0, (ap_o_mode)3, 0&amp;gt;, ap_fixed&amp;lt;21, 18, (ap_q_mode)5, (ap_o_mode)3, 0&amp;gt;, config9&amp;gt;</second>
                       </first>
-                      <second>17</second>
+                      <second>24</second>
                     </item>
                   </second>
                 </item>
@@ -3888,7 +3951,7 @@
             <Obj>
               <type>2</type>
               <id>180</id>
-              <name>dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s</name>
+              <name>dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -3912,7 +3975,7 @@
             <bitwidth>168</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:dense_latency&lt;ap_fixed&lt;14, 13, 0, 3, 0&gt;, ap_fixed&lt;21, 18, 5, 3, 0&gt;, config9&gt;&gt;</content>
+          <content>&lt;constant:dense_resource_rf_leq_nin&lt;ap_fixed,ap_fixed&lt;21,18,5,3,0&gt;,config9&gt;&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_85">
           <Value>
@@ -4948,15 +5011,15 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>2</mMinLatency>
-        <mMaxLatency>2</mMaxLatency>
+        <mMinLatency>4</mMinLatency>
+        <mMaxLatency>4</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
     </cdfg_regions>
     <fsm class_id="24" tracking_level="1" version="0" object_id="_207">
       <states class_id="25" tracking_level="0" version="0">
-        <count>3</count>
+        <count>4</count>
         <item_version>0</item_version>
         <item class_id="26" tracking_level="1" version="0" object_id="_208">
           <id>1</id>
@@ -5100,79 +5163,86 @@
         <item class_id_reference="26" object_id="_235">
           <id>3</id>
           <operations>
-            <count>15</count>
+            <count>9</count>
             <item_version>0</item_version>
             <item class_id_reference="28" object_id="_236">
-              <id>3</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_237">
-              <id>4</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_238">
               <id>29</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
-            <item class_id_reference="28" object_id="_239">
+            <item class_id_reference="28" object_id="_237">
               <id>30</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_240">
+            <item class_id_reference="28" object_id="_238">
               <id>31</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_241">
+            <item class_id_reference="28" object_id="_239">
               <id>32</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_242">
+            <item class_id_reference="28" object_id="_240">
               <id>33</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_243">
+            <item class_id_reference="28" object_id="_241">
               <id>34</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_244">
+            <item class_id_reference="28" object_id="_242">
               <id>35</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_245">
+            <item class_id_reference="28" object_id="_243">
               <id>36</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_246">
+            <item class_id_reference="28" object_id="_244">
               <id>37</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
+          </operations>
+        </item>
+        <item class_id_reference="26" object_id="_245">
+          <id>4</id>
+          <operations>
+            <count>6</count>
+            <item_version>0</item_version>
+            <item class_id_reference="28" object_id="_246">
+              <id>3</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
             <item class_id_reference="28" object_id="_247">
-              <id>38</id>
+              <id>4</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_248">
-              <id>39</id>
+              <id>38</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_249">
-              <id>40</id>
+              <id>39</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
             <item class_id_reference="28" object_id="_250">
+              <id>40</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_251">
               <id>41</id>
               <stage>1</stage>
               <latency>1</latency>
@@ -5181,9 +5251,9 @@
         </item>
       </states>
       <transitions class_id="29" tracking_level="0" version="0">
-        <count>2</count>
+        <count>3</count>
         <item_version>0</item_version>
-        <item class_id="30" tracking_level="1" version="0" object_id="_251">
+        <item class_id="30" tracking_level="1" version="0" object_id="_252">
           <inState>1</inState>
           <outState>2</outState>
           <condition class_id="31" tracking_level="0" version="0">
@@ -5198,7 +5268,7 @@
             </sop>
           </condition>
         </item>
-        <item class_id_reference="30" object_id="_252">
+        <item class_id_reference="30" object_id="_253">
           <inState>2</inState>
           <outState>3</outState>
           <condition>
@@ -5213,14 +5283,29 @@
             </sop>
           </condition>
         </item>
+        <item class_id_reference="30" object_id="_254">
+          <inState>3</inState>
+          <outState>4</outState>
+          <condition>
+            <id>-1</id>
+            <sop>
+              <count>1</count>
+              <item_version>0</item_version>
+              <item>
+                <count>0</count>
+                <item_version>0</item_version>
+              </item>
+            </sop>
+          </condition>
+        </item>
       </transitions>
     </fsm>
-    <res class_id="34" tracking_level="1" version="0" object_id="_253">
+    <res class_id="34" tracking_level="1" version="0" object_id="_255">
       <dp_component_resource class_id="35" tracking_level="0" version="0">
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133 (dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s)</first>
+          <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133 (dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -5230,7 +5315,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>418</second>
+              <second>330</second>
             </item>
             <item>
               <first>LUT</first>
@@ -5284,7 +5369,7 @@
             <item_version>0</item_version>
             <item>
               <first>(0Size)</first>
-              <second>4</second>
+              <second>5</second>
             </item>
             <item>
               <first>(1Bits)</first>
@@ -5292,7 +5377,7 @@
             </item>
             <item>
               <first>(2Count)</first>
-              <second>4</second>
+              <second>5</second>
             </item>
             <item>
               <first>FF</first>
@@ -5300,7 +5385,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>20</second>
+              <second>26</second>
             </item>
           </second>
         </item>
@@ -5414,7 +5499,7 @@
         </item>
       </dp_multiplexer_resource>
       <dp_register_resource>
-        <count>27</count>
+        <count>35</count>
         <item_version>0</item_version>
         <item>
           <first>ap_CS_fsm</first>
@@ -5423,7 +5508,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>3</second>
+              <second>4</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5431,7 +5516,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>3</second>
+              <second>4</second>
             </item>
           </second>
         </item>
@@ -5455,7 +5540,7 @@
           </second>
         </item>
         <item>
-          <first>data_10_reg_506</first>
+          <first>data_10_reg_498</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5474,7 +5559,7 @@
           </second>
         </item>
         <item>
-          <first>data_11_reg_511</first>
+          <first>data_11_reg_503</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5493,7 +5578,7 @@
           </second>
         </item>
         <item>
-          <first>data_12_reg_516</first>
+          <first>data_12_reg_508</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5512,7 +5597,7 @@
           </second>
         </item>
         <item>
-          <first>data_13_reg_521</first>
+          <first>data_13_reg_513</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5531,7 +5616,7 @@
           </second>
         </item>
         <item>
-          <first>data_14_reg_526</first>
+          <first>data_14_reg_518</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5550,7 +5635,7 @@
           </second>
         </item>
         <item>
-          <first>data_15_reg_531</first>
+          <first>data_15_reg_523</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5569,7 +5654,7 @@
           </second>
         </item>
         <item>
-          <first>data_16_reg_536</first>
+          <first>data_16_reg_528</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5588,7 +5673,7 @@
           </second>
         </item>
         <item>
-          <first>data_17_reg_541</first>
+          <first>data_17_reg_533</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5607,7 +5692,7 @@
           </second>
         </item>
         <item>
-          <first>data_18_reg_546</first>
+          <first>data_18_reg_538</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5626,7 +5711,7 @@
           </second>
         </item>
         <item>
-          <first>data_19_reg_551</first>
+          <first>data_19_reg_543</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5645,7 +5730,7 @@
           </second>
         </item>
         <item>
-          <first>data_1_reg_461</first>
+          <first>data_1_reg_453</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5664,7 +5749,7 @@
           </second>
         </item>
         <item>
-          <first>data_20_reg_556</first>
+          <first>data_20_reg_548</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5683,7 +5768,7 @@
           </second>
         </item>
         <item>
-          <first>data_21_reg_561</first>
+          <first>data_21_reg_553</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5702,7 +5787,7 @@
           </second>
         </item>
         <item>
-          <first>data_22_reg_456</first>
+          <first>data_22_reg_448</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5721,7 +5806,7 @@
           </second>
         </item>
         <item>
-          <first>data_2_reg_466</first>
+          <first>data_2_reg_458</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5740,7 +5825,7 @@
           </second>
         </item>
         <item>
-          <first>data_3_reg_471</first>
+          <first>data_3_reg_463</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5759,7 +5844,7 @@
           </second>
         </item>
         <item>
-          <first>data_4_reg_476</first>
+          <first>data_4_reg_468</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5778,7 +5863,7 @@
           </second>
         </item>
         <item>
-          <first>data_5_reg_481</first>
+          <first>data_5_reg_473</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5797,7 +5882,7 @@
           </second>
         </item>
         <item>
-          <first>data_6_reg_486</first>
+          <first>data_6_reg_478</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5816,7 +5901,7 @@
           </second>
         </item>
         <item>
-          <first>data_7_reg_491</first>
+          <first>data_7_reg_483</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5835,7 +5920,7 @@
           </second>
         </item>
         <item>
-          <first>data_8_reg_496</first>
+          <first>data_8_reg_488</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5854,7 +5939,7 @@
           </second>
         </item>
         <item>
-          <first>data_9_reg_501</first>
+          <first>data_9_reg_493</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5873,7 +5958,7 @@
           </second>
         </item>
         <item>
-          <first>data_reg_451</first>
+          <first>data_reg_443</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5892,7 +5977,7 @@
           </second>
         </item>
         <item>
-          <first>grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg</first>
+          <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -5907,6 +5992,158 @@
             <item>
               <first>FF</first>
               <second>1</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>res_1_reg_568</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>21</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>21</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>res_2_reg_573</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>21</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>21</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>res_3_reg_578</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>21</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>21</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>res_4_reg_583</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>21</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>21</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>res_5_reg_588</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>21</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>21</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>res_6_reg_593</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>21</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>21</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>res_7_reg_563</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>21</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>21</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>res_reg_558</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>21</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>21</second>
             </item>
           </second>
         </item>
@@ -5934,7 +6171,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item>
-          <first>grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133</first>
+          <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -5945,7 +6182,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133 (dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s)</first>
+          <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133 (dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6203,28 +6440,28 @@
       <item>
         <first>38</first>
         <second>
-          <first>2</first>
+          <first>3</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>39</first>
         <second>
-          <first>2</first>
+          <first>3</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>40</first>
         <second>
-          <first>2</first>
+          <first>3</first>
           <second>0</second>
         </second>
       </item>
       <item>
         <first>41</first>
         <second>
-          <first>2</first>
+          <first>3</first>
           <second>0</second>
         </second>
       </item>
@@ -6236,7 +6473,7 @@
         <first>42</first>
         <second class_id="46" tracking_level="0" version="0">
           <first>0</first>
-          <second>2</second>
+          <second>3</second>
         </second>
       </item>
     </bblk_ent_exit>
@@ -6529,7 +6766,7 @@
         </second>
       </item>
       <item>
-        <first>446</first>
+        <first>438</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6797,7 +7034,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln77_fu_446</first>
+        <first>zext_ln77_fu_438</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6809,7 +7046,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133</first>
+        <first>grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -6847,10 +7084,10 @@
       <item_version>0</item_version>
     </dp_mem_port_nodes>
     <dp_reg_nodes>
-      <count>23</count>
+      <count>31</count>
       <item_version>0</item_version>
       <item>
-        <first>451</first>
+        <first>443</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6858,7 +7095,7 @@
         </second>
       </item>
       <item>
-        <first>456</first>
+        <first>448</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6866,7 +7103,7 @@
         </second>
       </item>
       <item>
-        <first>461</first>
+        <first>453</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6874,7 +7111,7 @@
         </second>
       </item>
       <item>
-        <first>466</first>
+        <first>458</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6882,7 +7119,7 @@
         </second>
       </item>
       <item>
-        <first>471</first>
+        <first>463</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6890,7 +7127,7 @@
         </second>
       </item>
       <item>
-        <first>476</first>
+        <first>468</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6898,7 +7135,7 @@
         </second>
       </item>
       <item>
-        <first>481</first>
+        <first>473</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6906,7 +7143,7 @@
         </second>
       </item>
       <item>
-        <first>486</first>
+        <first>478</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6914,7 +7151,7 @@
         </second>
       </item>
       <item>
-        <first>491</first>
+        <first>483</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6922,7 +7159,7 @@
         </second>
       </item>
       <item>
-        <first>496</first>
+        <first>488</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6930,7 +7167,7 @@
         </second>
       </item>
       <item>
-        <first>501</first>
+        <first>493</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6938,7 +7175,7 @@
         </second>
       </item>
       <item>
-        <first>506</first>
+        <first>498</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6946,7 +7183,7 @@
         </second>
       </item>
       <item>
-        <first>511</first>
+        <first>503</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6954,7 +7191,7 @@
         </second>
       </item>
       <item>
-        <first>516</first>
+        <first>508</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6962,7 +7199,7 @@
         </second>
       </item>
       <item>
-        <first>521</first>
+        <first>513</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6970,7 +7207,7 @@
         </second>
       </item>
       <item>
-        <first>526</first>
+        <first>518</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6978,7 +7215,7 @@
         </second>
       </item>
       <item>
-        <first>531</first>
+        <first>523</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6986,7 +7223,7 @@
         </second>
       </item>
       <item>
-        <first>536</first>
+        <first>528</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -6994,7 +7231,7 @@
         </second>
       </item>
       <item>
-        <first>541</first>
+        <first>533</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7002,7 +7239,7 @@
         </second>
       </item>
       <item>
-        <first>546</first>
+        <first>538</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7010,7 +7247,7 @@
         </second>
       </item>
       <item>
-        <first>551</first>
+        <first>543</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7018,7 +7255,7 @@
         </second>
       </item>
       <item>
-        <first>556</first>
+        <first>548</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7026,19 +7263,83 @@
         </second>
       </item>
       <item>
-        <first>561</first>
+        <first>553</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>28</item>
+        </second>
+      </item>
+      <item>
+        <first>558</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>30</item>
+        </second>
+      </item>
+      <item>
+        <first>563</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>31</item>
+        </second>
+      </item>
+      <item>
+        <first>568</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>32</item>
+        </second>
+      </item>
+      <item>
+        <first>573</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>33</item>
+        </second>
+      </item>
+      <item>
+        <first>578</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>34</item>
+        </second>
+      </item>
+      <item>
+        <first>583</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>35</item>
+        </second>
+      </item>
+      <item>
+        <first>588</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>36</item>
+        </second>
+      </item>
+      <item>
+        <first>593</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>37</item>
         </second>
       </item>
     </dp_reg_nodes>
     <dp_regname_nodes>
-      <count>23</count>
+      <count>31</count>
       <item_version>0</item_version>
       <item>
-        <first>data_10_reg_506</first>
+        <first>data_10_reg_498</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7046,7 +7347,7 @@
         </second>
       </item>
       <item>
-        <first>data_11_reg_511</first>
+        <first>data_11_reg_503</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7054,7 +7355,7 @@
         </second>
       </item>
       <item>
-        <first>data_12_reg_516</first>
+        <first>data_12_reg_508</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7062,7 +7363,7 @@
         </second>
       </item>
       <item>
-        <first>data_13_reg_521</first>
+        <first>data_13_reg_513</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7070,7 +7371,7 @@
         </second>
       </item>
       <item>
-        <first>data_14_reg_526</first>
+        <first>data_14_reg_518</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7078,7 +7379,7 @@
         </second>
       </item>
       <item>
-        <first>data_15_reg_531</first>
+        <first>data_15_reg_523</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7086,7 +7387,7 @@
         </second>
       </item>
       <item>
-        <first>data_16_reg_536</first>
+        <first>data_16_reg_528</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7094,7 +7395,7 @@
         </second>
       </item>
       <item>
-        <first>data_17_reg_541</first>
+        <first>data_17_reg_533</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7102,7 +7403,7 @@
         </second>
       </item>
       <item>
-        <first>data_18_reg_546</first>
+        <first>data_18_reg_538</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7110,7 +7411,7 @@
         </second>
       </item>
       <item>
-        <first>data_19_reg_551</first>
+        <first>data_19_reg_543</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7118,7 +7419,7 @@
         </second>
       </item>
       <item>
-        <first>data_1_reg_461</first>
+        <first>data_1_reg_453</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7126,7 +7427,7 @@
         </second>
       </item>
       <item>
-        <first>data_20_reg_556</first>
+        <first>data_20_reg_548</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7134,7 +7435,7 @@
         </second>
       </item>
       <item>
-        <first>data_21_reg_561</first>
+        <first>data_21_reg_553</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7142,7 +7443,7 @@
         </second>
       </item>
       <item>
-        <first>data_22_reg_456</first>
+        <first>data_22_reg_448</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7150,7 +7451,7 @@
         </second>
       </item>
       <item>
-        <first>data_2_reg_466</first>
+        <first>data_2_reg_458</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7158,7 +7459,7 @@
         </second>
       </item>
       <item>
-        <first>data_3_reg_471</first>
+        <first>data_3_reg_463</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7166,7 +7467,7 @@
         </second>
       </item>
       <item>
-        <first>data_4_reg_476</first>
+        <first>data_4_reg_468</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7174,7 +7475,7 @@
         </second>
       </item>
       <item>
-        <first>data_5_reg_481</first>
+        <first>data_5_reg_473</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7182,7 +7483,7 @@
         </second>
       </item>
       <item>
-        <first>data_6_reg_486</first>
+        <first>data_6_reg_478</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7190,7 +7491,7 @@
         </second>
       </item>
       <item>
-        <first>data_7_reg_491</first>
+        <first>data_7_reg_483</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7198,7 +7499,7 @@
         </second>
       </item>
       <item>
-        <first>data_8_reg_496</first>
+        <first>data_8_reg_488</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7206,7 +7507,7 @@
         </second>
       </item>
       <item>
-        <first>data_9_reg_501</first>
+        <first>data_9_reg_493</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7214,11 +7515,75 @@
         </second>
       </item>
       <item>
-        <first>data_reg_451</first>
+        <first>data_reg_443</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>6</item>
+        </second>
+      </item>
+      <item>
+        <first>res_1_reg_568</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>32</item>
+        </second>
+      </item>
+      <item>
+        <first>res_2_reg_573</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>33</item>
+        </second>
+      </item>
+      <item>
+        <first>res_3_reg_578</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>34</item>
+        </second>
+      </item>
+      <item>
+        <first>res_4_reg_583</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>35</item>
+        </second>
+      </item>
+      <item>
+        <first>res_5_reg_588</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>36</item>
+        </second>
+      </item>
+      <item>
+        <first>res_6_reg_593</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>37</item>
+        </second>
+      </item>
+      <item>
+        <first>res_7_reg_563</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>31</item>
+        </second>
+      </item>
+      <item>
+        <first>res_reg_558</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>30</item>
         </second>
       </item>
     </dp_regname_nodes>

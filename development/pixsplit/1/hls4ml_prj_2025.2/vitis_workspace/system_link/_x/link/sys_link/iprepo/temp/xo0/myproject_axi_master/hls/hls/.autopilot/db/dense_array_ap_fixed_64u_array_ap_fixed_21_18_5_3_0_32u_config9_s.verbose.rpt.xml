@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s'" level="0">
-<item name = "Date">Tue Mar 31 11:55:01 2026
+<item name = "Date">Tue Mar 31 16:53:13 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">vitis_unified_project</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.147 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.348 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2, 2, 10.000 ns, 10.000 ns, 2, 2, no</column>
+<column name="">4, 4, 20.000 ns, 20.000 ns, 4, 4, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133">dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, yes</column>
+<column name="grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133">dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,10 +50,10 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 3, 418, 4306, -</column>
+<column name="Instance">-, 3, 330, 4306, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 56, -</column>
-<column name="Register">-, -, 328, -, -</column>
+<column name="Multiplexer">-, -, 0, 62, -</column>
+<column name="Register">-, -, 497, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
 <specialColumn name="Utilization (%)">0, ~0, ~0, 3, 0</specialColumn>
 </table>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133">dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s, 0, 3, 418, 4306, 0</column>
+<column name="grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133">dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s, 0, 3, 330, 4306, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -84,7 +84,7 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">20, 4, 1, 4</column>
+<column name="ap_NS_fsm">26, 5, 1, 5</column>
 <column name="ap_done">9, 2, 1, 2</column>
 <column name="layer7_out_blk_n">9, 2, 1, 2</column>
 <column name="layer9_out_blk_n">9, 2, 1, 2</column>
@@ -93,32 +93,40 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="data_10_reg_506">14, 0, 14, 0</column>
-<column name="data_11_reg_511">14, 0, 14, 0</column>
-<column name="data_12_reg_516">14, 0, 14, 0</column>
-<column name="data_13_reg_521">14, 0, 14, 0</column>
-<column name="data_14_reg_526">14, 0, 14, 0</column>
-<column name="data_15_reg_531">14, 0, 14, 0</column>
-<column name="data_16_reg_536">14, 0, 14, 0</column>
-<column name="data_17_reg_541">14, 0, 14, 0</column>
-<column name="data_18_reg_546">14, 0, 14, 0</column>
-<column name="data_19_reg_551">14, 0, 14, 0</column>
-<column name="data_1_reg_461">14, 0, 14, 0</column>
-<column name="data_20_reg_556">14, 0, 14, 0</column>
-<column name="data_21_reg_561">14, 0, 14, 0</column>
-<column name="data_22_reg_456">14, 0, 14, 0</column>
-<column name="data_2_reg_466">14, 0, 14, 0</column>
-<column name="data_3_reg_471">14, 0, 14, 0</column>
-<column name="data_4_reg_476">14, 0, 14, 0</column>
-<column name="data_5_reg_481">14, 0, 14, 0</column>
-<column name="data_6_reg_486">14, 0, 14, 0</column>
-<column name="data_7_reg_491">14, 0, 14, 0</column>
-<column name="data_8_reg_496">14, 0, 14, 0</column>
-<column name="data_9_reg_501">14, 0, 14, 0</column>
-<column name="data_reg_451">14, 0, 14, 0</column>
-<column name="grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg">1, 0, 1, 0</column>
+<column name="data_10_reg_498">14, 0, 14, 0</column>
+<column name="data_11_reg_503">14, 0, 14, 0</column>
+<column name="data_12_reg_508">14, 0, 14, 0</column>
+<column name="data_13_reg_513">14, 0, 14, 0</column>
+<column name="data_14_reg_518">14, 0, 14, 0</column>
+<column name="data_15_reg_523">14, 0, 14, 0</column>
+<column name="data_16_reg_528">14, 0, 14, 0</column>
+<column name="data_17_reg_533">14, 0, 14, 0</column>
+<column name="data_18_reg_538">14, 0, 14, 0</column>
+<column name="data_19_reg_543">14, 0, 14, 0</column>
+<column name="data_1_reg_453">14, 0, 14, 0</column>
+<column name="data_20_reg_548">14, 0, 14, 0</column>
+<column name="data_21_reg_553">14, 0, 14, 0</column>
+<column name="data_22_reg_448">14, 0, 14, 0</column>
+<column name="data_2_reg_458">14, 0, 14, 0</column>
+<column name="data_3_reg_463">14, 0, 14, 0</column>
+<column name="data_4_reg_468">14, 0, 14, 0</column>
+<column name="data_5_reg_473">14, 0, 14, 0</column>
+<column name="data_6_reg_478">14, 0, 14, 0</column>
+<column name="data_7_reg_483">14, 0, 14, 0</column>
+<column name="data_8_reg_488">14, 0, 14, 0</column>
+<column name="data_9_reg_493">14, 0, 14, 0</column>
+<column name="data_reg_443">14, 0, 14, 0</column>
+<column name="grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg">1, 0, 1, 0</column>
+<column name="res_1_reg_568">21, 0, 21, 0</column>
+<column name="res_2_reg_573">21, 0, 21, 0</column>
+<column name="res_3_reg_578">21, 0, 21, 0</column>
+<column name="res_4_reg_583">21, 0, 21, 0</column>
+<column name="res_5_reg_588">21, 0, 21, 0</column>
+<column name="res_6_reg_593">21, 0, 21, 0</column>
+<column name="res_7_reg_563">21, 0, 21, 0</column>
+<column name="res_reg_558">21, 0, 21, 0</column>
 <column name="start_once_reg">1, 0, 1, 0</column>
 </table>
 </item>

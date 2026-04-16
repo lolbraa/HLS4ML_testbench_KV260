@@ -70,26 +70,147 @@ reg    internal_ap_ready;
 reg    layer10_out_blk_n;
 reg    layer12_out_blk_n;
 wire    ap_CS_fsm_state3;
-reg   [12:0] data_reg_198;
+reg   [12:0] data_reg_930;
 reg    ap_block_state1;
-reg   [12:0] data_65_reg_203;
-reg   [12:0] data_59_reg_208;
-reg   [12:0] data_60_reg_213;
-reg   [12:0] data_61_reg_218;
-reg   [12:0] data_62_reg_223;
-reg   [12:0] data_63_reg_228;
-reg   [12:0] data_64_reg_233;
-reg   [17:0] res_reg_238;
+reg   [12:0] data_64_reg_937;
+reg   [12:0] data_65_reg_945;
+reg   [12:0] data_66_reg_952;
+reg   [12:0] data_67_reg_959;
+reg  signed [12:0] data_68_reg_967;
+reg   [12:0] tmp_942_reg_976;
+reg   [12:0] tmp_945_reg_985;
+reg   [17:0] res_reg_992;
 wire    ap_CS_fsm_state2;
-reg   [17:0] res_94_reg_243;
-reg   [17:0] res_92_reg_248;
-reg   [17:0] res_93_reg_253;
-wire    call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_ready;
-wire   [17:0] call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_0;
-wire   [17:0] call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_1;
-wire   [17:0] call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_2;
-wire   [17:0] call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_3;
-wire   [251:0] or_ln77_3_fu_181_p7;
+reg   [16:0] res_94_reg_997;
+reg   [16:0] res_92_reg_1002;
+reg   [17:0] res_93_reg_1007;
+wire   [15:0] shl_ln_fu_201_p3;
+wire  signed [15:0] tmp_fu_219_p3;
+wire  signed [17:0] sext_ln58_fu_226_p1;
+wire  signed [17:0] p_shl8_fu_212_p3;
+wire   [17:0] sub_ln58_fu_230_p2;
+wire  signed [17:0] sext_ln70_fu_208_p1;
+wire   [17:0] add_ln58_fu_236_p2;
+wire   [19:0] tmp_943_fu_246_p3;
+wire   [16:0] shl_ln73_s_fu_257_p3;
+wire   [18:0] tmp_944_fu_268_p3;
+wire  signed [19:0] sext_ln73_789_fu_275_p1;
+wire   [19:0] sub_ln73_fu_279_p2;
+wire  signed [20:0] sext_ln58_1476_fu_285_p1;
+wire  signed [20:0] sext_ln73_fu_253_p1;
+wire  signed [18:0] sext_ln70_17_fu_242_p1;
+wire  signed [18:0] sext_ln70_18_fu_264_p1;
+wire   [18:0] add_ln58_1538_fu_295_p2;
+wire  signed [20:0] sext_ln58_1477_fu_301_p1;
+wire   [20:0] sub_ln58_1007_fu_289_p2;
+wire   [20:0] add_ln58_1539_fu_305_p2;
+wire   [17:0] shl_ln73_131_fu_315_p3;
+wire   [16:0] tmp_946_fu_326_p3;
+wire  signed [13:0] tmp_947_fu_337_p3;
+wire  signed [17:0] sext_ln73_790_fu_333_p1;
+wire  signed [17:0] sext_ln73_791_fu_344_p1;
+wire  signed [21:0] sext_ln70_8_fu_311_p1;
+wire  signed [21:0] sext_ln58_1478_fu_322_p1;
+wire  signed [17:0] grp_fu_921_p3;
+wire  signed [21:0] sext_ln58_1479_fu_363_p1;
+wire   [21:0] add_ln58_1540_fu_357_p2;
+wire   [13:0] shl_ln73_132_fu_372_p3;
+wire  signed [14:0] sext_ln58_1480_fu_379_p1;
+wire   [14:0] add_ln58_1543_fu_383_p2;
+wire   [14:0] tmp_948_fu_404_p3;
+wire  signed [16:0] sext_ln58_1760_fu_411_p1;
+wire   [16:0] p_shl9_fu_397_p3;
+wire   [16:0] sub_ln58_1008_fu_415_p2;
+wire  signed [16:0] sext_ln73_625_fu_389_p1;
+wire   [16:0] add_ln58_1544_fu_421_p2;
+wire  signed [18:0] sext_ln58_1482_fu_427_p1;
+wire  signed [18:0] sext_ln58_1481_fu_393_p1;
+wire   [18:0] add_ln58_1545_fu_431_p2;
+wire   [17:0] tmp_950_fu_448_p3;
+wire  signed [18:0] sext_ln73_792_fu_455_p1;
+wire   [17:0] tmp_949_fu_441_p3;
+wire   [18:0] sub_ln73_463_fu_459_p2;
+wire  signed [19:0] sext_ln58_1762_fu_469_p1;
+wire  signed [19:0] sext_ln58_1761_fu_465_p1;
+wire   [19:0] sub_ln58_1009_fu_473_p2;
+wire  signed [19:0] sext_ln73_626_fu_437_p1;
+wire   [17:0] tmp_952_fu_492_p3;
+wire  signed [18:0] sext_ln73_793_fu_499_p1;
+wire  signed [18:0] sext_ln73_794_fu_503_p1;
+wire   [16:0] tmp_953_fu_513_p3;
+wire  signed [18:0] sext_ln73_795_fu_520_p1;
+wire  signed [13:0] tmp_954_fu_530_p3;
+wire   [18:0] sub_ln73_465_fu_524_p2;
+wire  signed [18:0] sext_ln73_796_fu_537_p1;
+wire   [18:0] tmp_951_fu_485_p3;
+wire   [19:0] add_ln58_1546_fu_479_p2;
+wire  signed [20:0] sext_ln58_1764_fu_551_p1;
+wire  signed [20:0] sext_ln58_1763_fu_547_p1;
+wire   [18:0] sub_ln73_464_fu_507_p2;
+wire   [18:0] sub_ln73_466_fu_541_p2;
+wire   [18:0] add_ln58_1547_fu_561_p2;
+wire  signed [20:0] sext_ln58_1486_fu_567_p1;
+wire   [20:0] sub_ln58_1010_fu_555_p2;
+wire   [17:0] tmp_955_fu_577_p3;
+wire   [13:0] tmp_956_fu_592_p3;
+wire  signed [16:0] sext_ln58_1765_fu_588_p1;
+wire  signed [16:0] sext_ln58_1766_fu_599_p1;
+wire   [16:0] add_ln58_1549_fu_603_p2;
+wire   [16:0] add_ln58_1550_fu_609_p2;
+wire  signed [18:0] sext_ln58_1487_fu_615_p1;
+wire  signed [18:0] sext_ln73_797_fu_584_p1;
+wire   [18:0] sub_ln58_1011_fu_619_p2;
+wire   [17:0] tmp_957_fu_629_p3;
+wire   [15:0] tmp_958_fu_640_p3;
+wire  signed [18:0] sext_ln73_798_fu_636_p1;
+wire  signed [18:0] sext_ln73_799_fu_647_p1;
+wire   [18:0] sub_ln73_467_fu_651_p2;
+wire  signed [19:0] sext_ln73_629_fu_625_p1;
+wire  signed [19:0] sext_ln58_1488_fu_657_p1;
+wire   [14:0] shl_ln73_133_fu_661_p3;
+wire  signed [15:0] sext_ln58_1768_fu_678_p1;
+wire  signed [15:0] sext_ln58_1767_fu_674_p1;
+wire   [15:0] sub_ln58_1012_fu_682_p2;
+wire  signed [19:0] sext_ln58_1490_fu_688_p1;
+wire   [19:0] add_ln58_1551_fu_668_p2;
+wire   [19:0] add_ln58_1552_fu_692_p2;
+wire   [19:0] tmp_959_fu_702_p3;
+wire  signed [20:0] sext_ln73_631_fu_698_p1;
+wire  signed [20:0] sext_ln73_800_fu_709_p1;
+wire   [14:0] tmp_960_fu_719_p3;
+wire  signed [18:0] sext_ln58_1769_fu_726_p1;
+wire   [15:0] tmp_961_fu_736_p3;
+wire  signed [16:0] sext_ln73_801_fu_743_p1;
+wire   [16:0] sub_ln73_468_fu_747_p2;
+wire   [16:0] tmp_962_fu_757_p3;
+wire   [14:0] tmp_963_fu_768_p3;
+wire  signed [17:0] sext_ln73_803_fu_775_p1;
+wire  signed [17:0] sext_ln73_802_fu_764_p1;
+wire   [17:0] sub_ln73_469_fu_779_p2;
+wire  signed [17:0] sext_ln73_633_fu_753_p1;
+wire   [17:0] add_ln58_1553_fu_785_p2;
+wire  signed [18:0] sext_ln58_1492_fu_791_p1;
+wire   [18:0] sub_ln58_1014_fu_730_p2;
+wire   [18:0] add_ln58_1554_fu_795_p2;
+wire  signed [20:0] sext_ln58_1493_fu_801_p1;
+wire   [20:0] add_ln58_1555_fu_805_p2;
+wire   [15:0] tmp_964_fu_815_p3;
+wire  signed [16:0] sext_ln73_805_fu_826_p1;
+wire  signed [16:0] sext_ln73_804_fu_822_p1;
+wire   [16:0] sub_ln73_470_fu_830_p2;
+wire  signed [18:0] sext_ln58_1494_fu_836_p1;
+wire   [18:0] sub_ln58_1015_fu_840_p2;
+wire  signed [21:0] sext_ln58_1495_fu_846_p1;
+wire  signed [21:0] sext_ln73_634_fu_811_p1;
+wire   [21:0] x_fu_366_p2;
+wire   [20:0] x_121_fu_571_p2;
+wire   [20:0] x_122_fu_713_p2;
+wire   [21:0] x_123_fu_850_p2;
+wire  signed [17:0] sext_ln111_90_fu_899_p1;
+wire  signed [17:0] sext_ln111_fu_896_p1;
+wire   [251:0] or_ln77_2_fu_902_p7;
+wire   [3:0] grp_fu_921_p1;
+wire  signed [17:0] grp_fu_921_p2;
 reg   [2:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -103,21 +224,18 @@ initial begin
 #0 ap_CS_fsm = 3'd1;
 end
 
-myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73(
-    .ap_ready(call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_ready),
-    .data_6_val(data_reg_198),
-    .data_7_val(data_65_reg_203),
-    .data_12_val(data_59_reg_208),
-    .data_15_val(data_60_reg_213),
-    .data_16_val(data_61_reg_218),
-    .data_17_val(data_62_reg_223),
-    .data_20_val(data_63_reg_228),
-    .data_30_val(data_64_reg_233),
-    .ap_return_0(call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_0),
-    .ap_return_1(call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_1),
-    .ap_return_2(call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_2),
-    .ap_return_3(call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_3),
-    .ap_rst(ap_rst)
+myproject_axi_master_mac_muladd_13s_4ns_18s_18_1_1 #(
+    .ID( 1 ),
+    .NUM_STAGE( 1 ),
+    .din0_WIDTH( 13 ),
+    .din1_WIDTH( 4 ),
+    .din2_WIDTH( 18 ),
+    .dout_WIDTH( 18 ))
+mac_muladd_13s_4ns_18s_18_1_1_U337(
+    .din0(data_68_reg_967),
+    .din1(grp_fu_921_p1),
+    .din2(grp_fu_921_p2),
+    .dout(grp_fu_921_p3)
 );
 
 always @ (posedge ap_clk) begin
@@ -154,23 +272,23 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        data_59_reg_208 <= {{layer10_out_dout[168:156]}};
-        data_60_reg_213 <= {{layer10_out_dout[207:195]}};
-        data_61_reg_218 <= {{layer10_out_dout[220:208]}};
-        data_62_reg_223 <= {{layer10_out_dout[233:221]}};
-        data_63_reg_228 <= {{layer10_out_dout[272:260]}};
-        data_64_reg_233 <= {{layer10_out_dout[402:390]}};
-        data_65_reg_203 <= {{layer10_out_dout[103:91]}};
-        data_reg_198 <= {{layer10_out_dout[90:78]}};
+        data_64_reg_937 <= {{layer10_out_dout[103:91]}};
+        data_65_reg_945 <= {{layer10_out_dout[207:195]}};
+        data_66_reg_952 <= {{layer10_out_dout[220:208]}};
+        data_67_reg_959 <= {{layer10_out_dout[233:221]}};
+        data_68_reg_967 <= {{layer10_out_dout[402:390]}};
+        data_reg_930 <= {{layer10_out_dout[90:78]}};
+        tmp_942_reg_976 <= {{layer10_out_dout[168:156]}};
+        tmp_945_reg_985 <= {{layer10_out_dout[272:260]}};
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        res_92_reg_248 <= call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_2;
-        res_93_reg_253 <= call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_3;
-        res_94_reg_243 <= call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_1;
-        res_reg_238 <= call_ret_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s_fu_73_ap_return_0;
+        res_92_reg_1002 <= {{x_122_fu_713_p2[20:4]}};
+        res_93_reg_1007 <= {{x_123_fu_850_p2[21:4]}};
+        res_94_reg_997 <= {{x_121_fu_571_p2[20:4]}};
+        res_reg_992 <= {{x_fu_366_p2[21:4]}};
     end
 end
 
@@ -289,6 +407,38 @@ always @ (*) begin
     endcase
 end
 
+assign add_ln58_1538_fu_295_p2 = ($signed(sext_ln70_17_fu_242_p1) + $signed(sext_ln70_18_fu_264_p1));
+
+assign add_ln58_1539_fu_305_p2 = ($signed(sext_ln58_1477_fu_301_p1) + $signed(sub_ln58_1007_fu_289_p2));
+
+assign add_ln58_1540_fu_357_p2 = ($signed(sext_ln70_8_fu_311_p1) + $signed(sext_ln58_1478_fu_322_p1));
+
+assign add_ln58_1543_fu_383_p2 = ($signed(sext_ln58_1480_fu_379_p1) + $signed(15'd256));
+
+assign add_ln58_1544_fu_421_p2 = ($signed(sub_ln58_1008_fu_415_p2) + $signed(sext_ln73_625_fu_389_p1));
+
+assign add_ln58_1545_fu_431_p2 = ($signed(sext_ln58_1482_fu_427_p1) + $signed(sext_ln58_1481_fu_393_p1));
+
+assign add_ln58_1546_fu_479_p2 = ($signed(sub_ln58_1009_fu_473_p2) + $signed(sext_ln73_626_fu_437_p1));
+
+assign add_ln58_1547_fu_561_p2 = (sub_ln73_464_fu_507_p2 + sub_ln73_466_fu_541_p2);
+
+assign add_ln58_1549_fu_603_p2 = ($signed(sext_ln58_1765_fu_588_p1) + $signed(sext_ln58_1766_fu_599_p1));
+
+assign add_ln58_1550_fu_609_p2 = (add_ln58_1549_fu_603_p2 + 17'd192);
+
+assign add_ln58_1551_fu_668_p2 = ($signed(sext_ln73_629_fu_625_p1) + $signed(sext_ln58_1488_fu_657_p1));
+
+assign add_ln58_1552_fu_692_p2 = ($signed(sext_ln58_1490_fu_688_p1) + $signed(add_ln58_1551_fu_668_p2));
+
+assign add_ln58_1553_fu_785_p2 = ($signed(sub_ln73_469_fu_779_p2) + $signed(sext_ln73_633_fu_753_p1));
+
+assign add_ln58_1554_fu_795_p2 = ($signed(sext_ln58_1492_fu_791_p1) + $signed(sub_ln58_1014_fu_730_p2));
+
+assign add_ln58_1555_fu_805_p2 = ($signed(sext_ln58_1493_fu_801_p1) + $signed(sub_ln58_1007_fu_289_p2));
+
+assign add_ln58_fu_236_p2 = ($signed(sub_ln58_fu_230_p2) + $signed(sext_ln70_fu_208_p1));
+
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
@@ -301,10 +451,228 @@ end
 
 assign ap_ready = internal_ap_ready;
 
-assign layer12_out_din = or_ln77_3_fu_181_p7;
+assign grp_fu_921_p1 = 18'd13;
 
-assign or_ln77_3_fu_181_p7 = {{{{{{res_93_reg_253}, {72'd0}}, {res_92_reg_248}}, {res_94_reg_243}}, {108'd0}}, {res_reg_238}};
+assign grp_fu_921_p2 = ($signed(sext_ln73_790_fu_333_p1) - $signed(sext_ln73_791_fu_344_p1));
+
+assign layer12_out_din = or_ln77_2_fu_902_p7;
+
+assign or_ln77_2_fu_902_p7 = {{{{{{res_93_reg_1007}, {72'd0}}, {sext_ln111_90_fu_899_p1}}, {sext_ln111_fu_896_p1}}, {108'd0}}, {res_reg_992}};
+
+assign p_shl8_fu_212_p3 = {{data_64_reg_937}, {5'd0}};
+
+assign p_shl9_fu_397_p3 = {{tmp_942_reg_976}, {4'd0}};
+
+assign sext_ln111_90_fu_899_p1 = $signed(res_92_reg_1002);
+
+assign sext_ln111_fu_896_p1 = $signed(res_94_reg_997);
+
+assign sext_ln58_1476_fu_285_p1 = $signed(sub_ln73_fu_279_p2);
+
+assign sext_ln58_1477_fu_301_p1 = $signed(add_ln58_1538_fu_295_p2);
+
+assign sext_ln58_1478_fu_322_p1 = $signed(shl_ln73_131_fu_315_p3);
+
+assign sext_ln58_1479_fu_363_p1 = grp_fu_921_p3;
+
+assign sext_ln58_1480_fu_379_p1 = $signed(shl_ln73_132_fu_372_p3);
+
+assign sext_ln58_1481_fu_393_p1 = p_shl8_fu_212_p3;
+
+assign sext_ln58_1482_fu_427_p1 = $signed(add_ln58_1544_fu_421_p2);
+
+assign sext_ln58_1486_fu_567_p1 = $signed(add_ln58_1547_fu_561_p2);
+
+assign sext_ln58_1487_fu_615_p1 = $signed(add_ln58_1550_fu_609_p2);
+
+assign sext_ln58_1488_fu_657_p1 = $signed(sub_ln73_467_fu_651_p2);
+
+assign sext_ln58_1490_fu_688_p1 = $signed(sub_ln58_1012_fu_682_p2);
+
+assign sext_ln58_1492_fu_791_p1 = $signed(add_ln58_1553_fu_785_p2);
+
+assign sext_ln58_1493_fu_801_p1 = $signed(add_ln58_1554_fu_795_p2);
+
+assign sext_ln58_1494_fu_836_p1 = $signed(sub_ln73_470_fu_830_p2);
+
+assign sext_ln58_1495_fu_846_p1 = $signed(sub_ln58_1015_fu_840_p2);
+
+assign sext_ln58_1760_fu_411_p1 = $signed(tmp_948_fu_404_p3);
+
+assign sext_ln58_1761_fu_465_p1 = $signed(tmp_949_fu_441_p3);
+
+assign sext_ln58_1762_fu_469_p1 = $signed(sub_ln73_463_fu_459_p2);
+
+assign sext_ln58_1763_fu_547_p1 = $signed(tmp_951_fu_485_p3);
+
+assign sext_ln58_1764_fu_551_p1 = $signed(add_ln58_1546_fu_479_p2);
+
+assign sext_ln58_1765_fu_588_p1 = tmp_fu_219_p3;
+
+assign sext_ln58_1766_fu_599_p1 = $signed(tmp_956_fu_592_p3);
+
+assign sext_ln58_1767_fu_674_p1 = tmp_947_fu_337_p3;
+
+assign sext_ln58_1768_fu_678_p1 = $signed(shl_ln73_133_fu_661_p3);
+
+assign sext_ln58_1769_fu_726_p1 = $signed(tmp_960_fu_719_p3);
+
+assign sext_ln58_fu_226_p1 = tmp_fu_219_p3;
+
+assign sext_ln70_17_fu_242_p1 = $signed(add_ln58_fu_236_p2);
+
+assign sext_ln70_18_fu_264_p1 = $signed(shl_ln73_s_fu_257_p3);
+
+assign sext_ln70_8_fu_311_p1 = $signed(add_ln58_1539_fu_305_p2);
+
+assign sext_ln70_fu_208_p1 = $signed(shl_ln_fu_201_p3);
+
+assign sext_ln73_625_fu_389_p1 = $signed(add_ln58_1543_fu_383_p2);
+
+assign sext_ln73_626_fu_437_p1 = $signed(add_ln58_1545_fu_431_p2);
+
+assign sext_ln73_629_fu_625_p1 = $signed(sub_ln58_1011_fu_619_p2);
+
+assign sext_ln73_631_fu_698_p1 = $signed(add_ln58_1552_fu_692_p2);
+
+assign sext_ln73_633_fu_753_p1 = $signed(sub_ln73_468_fu_747_p2);
+
+assign sext_ln73_634_fu_811_p1 = $signed(add_ln58_1555_fu_805_p2);
+
+assign sext_ln73_789_fu_275_p1 = $signed(tmp_944_fu_268_p3);
+
+assign sext_ln73_790_fu_333_p1 = $signed(tmp_946_fu_326_p3);
+
+assign sext_ln73_791_fu_344_p1 = tmp_947_fu_337_p3;
+
+assign sext_ln73_792_fu_455_p1 = $signed(tmp_950_fu_448_p3);
+
+assign sext_ln73_793_fu_499_p1 = $signed(tmp_952_fu_492_p3);
+
+assign sext_ln73_794_fu_503_p1 = tmp_947_fu_337_p3;
+
+assign sext_ln73_795_fu_520_p1 = $signed(tmp_953_fu_513_p3);
+
+assign sext_ln73_796_fu_537_p1 = tmp_954_fu_530_p3;
+
+assign sext_ln73_797_fu_584_p1 = $signed(tmp_955_fu_577_p3);
+
+assign sext_ln73_798_fu_636_p1 = $signed(tmp_957_fu_629_p3);
+
+assign sext_ln73_799_fu_647_p1 = $signed(tmp_958_fu_640_p3);
+
+assign sext_ln73_800_fu_709_p1 = $signed(tmp_959_fu_702_p3);
+
+assign sext_ln73_801_fu_743_p1 = $signed(tmp_961_fu_736_p3);
+
+assign sext_ln73_802_fu_764_p1 = $signed(tmp_962_fu_757_p3);
+
+assign sext_ln73_803_fu_775_p1 = $signed(tmp_963_fu_768_p3);
+
+assign sext_ln73_804_fu_822_p1 = $signed(tmp_964_fu_815_p3);
+
+assign sext_ln73_805_fu_826_p1 = tmp_954_fu_530_p3;
+
+assign sext_ln73_fu_253_p1 = $signed(tmp_943_fu_246_p3);
+
+assign shl_ln73_131_fu_315_p3 = {{data_67_reg_959}, {5'd0}};
+
+assign shl_ln73_132_fu_372_p3 = {{data_reg_930}, {1'd0}};
+
+assign shl_ln73_133_fu_661_p3 = {{data_66_reg_952}, {2'd0}};
+
+assign shl_ln73_s_fu_257_p3 = {{data_65_reg_945}, {4'd0}};
+
+assign shl_ln_fu_201_p3 = {{data_reg_930}, {3'd0}};
 
 assign start_out = real_start;
+
+assign sub_ln58_1007_fu_289_p2 = ($signed(sext_ln58_1476_fu_285_p1) - $signed(sext_ln73_fu_253_p1));
+
+assign sub_ln58_1008_fu_415_p2 = ($signed(sext_ln58_1760_fu_411_p1) - $signed(p_shl9_fu_397_p3));
+
+assign sub_ln58_1009_fu_473_p2 = ($signed(sext_ln58_1762_fu_469_p1) - $signed(sext_ln58_1761_fu_465_p1));
+
+assign sub_ln58_1010_fu_555_p2 = ($signed(sext_ln58_1764_fu_551_p1) - $signed(sext_ln58_1763_fu_547_p1));
+
+assign sub_ln58_1011_fu_619_p2 = ($signed(sext_ln58_1487_fu_615_p1) - $signed(sext_ln73_797_fu_584_p1));
+
+assign sub_ln58_1012_fu_682_p2 = ($signed(sext_ln58_1768_fu_678_p1) - $signed(sext_ln58_1767_fu_674_p1));
+
+assign sub_ln58_1014_fu_730_p2 = ($signed(sext_ln73_797_fu_584_p1) - $signed(sext_ln58_1769_fu_726_p1));
+
+assign sub_ln58_1015_fu_840_p2 = ($signed(sext_ln58_1494_fu_836_p1) - $signed(sext_ln73_793_fu_499_p1));
+
+assign sub_ln58_fu_230_p2 = ($signed(sext_ln58_fu_226_p1) - $signed(p_shl8_fu_212_p3));
+
+assign sub_ln73_463_fu_459_p2 = ($signed(19'd0) - $signed(sext_ln73_792_fu_455_p1));
+
+assign sub_ln73_464_fu_507_p2 = ($signed(sext_ln73_793_fu_499_p1) - $signed(sext_ln73_794_fu_503_p1));
+
+assign sub_ln73_465_fu_524_p2 = ($signed(19'd0) - $signed(sext_ln73_795_fu_520_p1));
+
+assign sub_ln73_466_fu_541_p2 = ($signed(sub_ln73_465_fu_524_p2) - $signed(sext_ln73_796_fu_537_p1));
+
+assign sub_ln73_467_fu_651_p2 = ($signed(sext_ln73_798_fu_636_p1) - $signed(sext_ln73_799_fu_647_p1));
+
+assign sub_ln73_468_fu_747_p2 = ($signed(17'd0) - $signed(sext_ln73_801_fu_743_p1));
+
+assign sub_ln73_469_fu_779_p2 = ($signed(sext_ln73_803_fu_775_p1) - $signed(sext_ln73_802_fu_764_p1));
+
+assign sub_ln73_470_fu_830_p2 = ($signed(sext_ln73_805_fu_826_p1) - $signed(sext_ln73_804_fu_822_p1));
+
+assign sub_ln73_fu_279_p2 = ($signed(20'd0) - $signed(sext_ln73_789_fu_275_p1));
+
+assign tmp_943_fu_246_p3 = {{tmp_942_reg_976}, {7'd0}};
+
+assign tmp_944_fu_268_p3 = {{data_66_reg_952}, {6'd0}};
+
+assign tmp_946_fu_326_p3 = {{tmp_945_reg_985}, {4'd0}};
+
+assign tmp_947_fu_337_p3 = {{tmp_945_reg_985}, {1'd0}};
+
+assign tmp_948_fu_404_p3 = {{tmp_942_reg_976}, {2'd0}};
+
+assign tmp_949_fu_441_p3 = {{data_65_reg_945}, {5'd0}};
+
+assign tmp_950_fu_448_p3 = {{data_66_reg_952}, {5'd0}};
+
+assign tmp_951_fu_485_p3 = {{data_67_reg_959}, {6'd0}};
+
+assign tmp_952_fu_492_p3 = {{tmp_945_reg_985}, {5'd0}};
+
+assign tmp_953_fu_513_p3 = {{data_68_reg_967}, {4'd0}};
+
+assign tmp_954_fu_530_p3 = {{data_68_reg_967}, {1'd0}};
+
+assign tmp_955_fu_577_p3 = {{data_reg_930}, {5'd0}};
+
+assign tmp_956_fu_592_p3 = {{data_64_reg_937}, {1'd0}};
+
+assign tmp_957_fu_629_p3 = {{tmp_942_reg_976}, {5'd0}};
+
+assign tmp_958_fu_640_p3 = {{tmp_942_reg_976}, {3'd0}};
+
+assign tmp_959_fu_702_p3 = {{data_68_reg_967}, {7'd0}};
+
+assign tmp_960_fu_719_p3 = {{data_64_reg_937}, {2'd0}};
+
+assign tmp_961_fu_736_p3 = {{data_65_reg_945}, {3'd0}};
+
+assign tmp_962_fu_757_p3 = {{data_67_reg_959}, {4'd0}};
+
+assign tmp_963_fu_768_p3 = {{data_67_reg_959}, {2'd0}};
+
+assign tmp_964_fu_815_p3 = {{data_68_reg_967}, {3'd0}};
+
+assign tmp_fu_219_p3 = {{data_64_reg_937}, {3'd0}};
+
+assign x_121_fu_571_p2 = ($signed(sext_ln58_1486_fu_567_p1) + $signed(sub_ln58_1010_fu_555_p2));
+
+assign x_122_fu_713_p2 = ($signed(sext_ln73_631_fu_698_p1) - $signed(sext_ln73_800_fu_709_p1));
+
+assign x_123_fu_850_p2 = ($signed(sext_ln58_1495_fu_846_p1) + $signed(sext_ln73_634_fu_811_p1));
+
+assign x_fu_366_p2 = ($signed(sext_ln58_1479_fu_363_p1) + $signed(add_ln58_1540_fu_357_p2));
 
 endmodule //myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s

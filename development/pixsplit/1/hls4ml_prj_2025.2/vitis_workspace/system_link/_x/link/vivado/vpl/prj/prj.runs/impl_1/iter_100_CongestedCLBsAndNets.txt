@@ -1,0 +1,8 @@
+List of CLB Tiles
+CLEM_R_X39Y133
+CLEL_R_X39Y133
+
+List of Congested Nets
+vitis_design_i/myproject_axi_master_1/inst/stream_in0_input_layer_18_U/U_myproject_axi_master_fifo_w960_d128_A_ram/mem_reg[269]
+vitis_design_i/myproject_axi_master_1/inst/compute_U0/grp_myproject_fu_62/dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0/grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s_fu_165/sext_ln58_998_fu_14907_p1[11]
+

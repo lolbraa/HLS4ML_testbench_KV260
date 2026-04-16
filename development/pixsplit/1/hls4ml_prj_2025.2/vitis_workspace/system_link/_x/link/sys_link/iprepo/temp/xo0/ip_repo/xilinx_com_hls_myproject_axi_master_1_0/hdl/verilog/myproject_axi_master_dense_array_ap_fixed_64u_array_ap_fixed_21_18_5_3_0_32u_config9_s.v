@@ -30,9 +30,10 @@ module myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_
         layer9_out_fifo_cap
 );
 
-parameter    ap_ST_fsm_state1 = 3'd1;
-parameter    ap_ST_fsm_state2 = 3'd2;
-parameter    ap_ST_fsm_state3 = 3'd4;
+parameter    ap_ST_fsm_state1 = 4'd1;
+parameter    ap_ST_fsm_state2 = 4'd2;
+parameter    ap_ST_fsm_state3 = 4'd4;
+parameter    ap_ST_fsm_state4 = 4'd8;
 
 input   ap_clk;
 input   ap_rst;
@@ -64,105 +65,114 @@ reg layer9_out_write;
 reg    real_start;
 reg    start_once_reg;
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [3:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    layer7_out_blk_n;
 reg    layer9_out_blk_n;
-wire    ap_CS_fsm_state3;
+wire    ap_CS_fsm_state4;
 wire   [13:0] data_fu_160_p1;
-reg   [13:0] data_reg_451;
+reg   [13:0] data_reg_443;
 reg    ap_block_state1;
-reg   [13:0] data_22_reg_456;
-reg   [13:0] data_1_reg_461;
-reg   [13:0] data_2_reg_466;
-reg   [13:0] data_3_reg_471;
-reg   [13:0] data_4_reg_476;
-reg   [13:0] data_5_reg_481;
-reg   [13:0] data_6_reg_486;
-reg   [13:0] data_7_reg_491;
-reg   [13:0] data_8_reg_496;
-reg   [13:0] data_9_reg_501;
-reg   [13:0] data_10_reg_506;
-reg   [13:0] data_11_reg_511;
-reg   [13:0] data_12_reg_516;
-reg   [13:0] data_13_reg_521;
-reg   [13:0] data_14_reg_526;
-reg   [13:0] data_15_reg_531;
-reg   [13:0] data_16_reg_536;
-reg   [13:0] data_17_reg_541;
-reg   [13:0] data_18_reg_546;
-reg   [13:0] data_19_reg_551;
-reg   [13:0] data_20_reg_556;
-reg   [13:0] data_21_reg_561;
-wire    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start;
-wire    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done;
-wire    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_idle;
-wire    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready;
-wire   [20:0] grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0;
-wire   [20:0] grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1;
-wire   [20:0] grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2;
-wire   [20:0] grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3;
-wire   [20:0] grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4;
-wire   [20:0] grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5;
-wire   [20:0] grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6;
-wire   [20:0] grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7;
-reg    grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg;
-reg   [2:0] ap_NS_fsm;
-wire    ap_NS_fsm_state2;
+reg   [13:0] data_22_reg_448;
+reg   [13:0] data_1_reg_453;
+reg   [13:0] data_2_reg_458;
+reg   [13:0] data_3_reg_463;
+reg   [13:0] data_4_reg_468;
+reg   [13:0] data_5_reg_473;
+reg   [13:0] data_6_reg_478;
+reg   [13:0] data_7_reg_483;
+reg   [13:0] data_8_reg_488;
+reg   [13:0] data_9_reg_493;
+reg   [13:0] data_10_reg_498;
+reg   [13:0] data_11_reg_503;
+reg   [13:0] data_12_reg_508;
+reg   [13:0] data_13_reg_513;
+reg   [13:0] data_14_reg_518;
+reg   [13:0] data_15_reg_523;
+reg   [13:0] data_16_reg_528;
+reg   [13:0] data_17_reg_533;
+reg   [13:0] data_18_reg_538;
+reg   [13:0] data_19_reg_543;
+reg   [13:0] data_20_reg_548;
+reg   [13:0] data_21_reg_553;
+reg   [20:0] res_reg_558;
+wire    ap_CS_fsm_state3;
+wire    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done;
+reg   [20:0] res_7_reg_563;
+reg   [20:0] res_1_reg_568;
+reg   [20:0] res_2_reg_573;
+reg   [20:0] res_3_reg_578;
+reg   [20:0] res_4_reg_583;
+reg   [20:0] res_5_reg_588;
+reg   [20:0] res_6_reg_593;
+wire    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start;
+wire    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_idle;
+wire    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready;
+wire   [20:0] grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0;
+wire   [20:0] grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1;
+wire   [20:0] grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2;
+wire   [20:0] grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3;
+wire   [20:0] grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4;
+wire   [20:0] grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5;
+wire   [20:0] grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6;
+wire   [20:0] grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7;
+reg    grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg;
 wire    ap_CS_fsm_state2;
 wire   [650:0] or_ln77_1_fu_416_p14;
+reg   [3:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
+reg    ap_ST_fsm_state4_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 start_once_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 3'd1;
-#0 grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg = 1'b0;
+#0 ap_CS_fsm = 4'd1;
+#0 grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg = 1'b0;
 end
 
-myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133(
+myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start),
-    .ap_done(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done),
-    .ap_idle(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_idle),
-    .ap_ready(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready),
-    .data_0_val(data_reg_451),
-    .data_1_val(data_22_reg_456),
-    .data_5_val(data_1_reg_461),
-    .data_6_val(data_2_reg_466),
-    .data_7_val(data_3_reg_471),
-    .data_12_val(data_4_reg_476),
-    .data_21_val(data_5_reg_481),
-    .data_22_val(data_6_reg_486),
-    .data_24_val(data_7_reg_491),
-    .data_25_val(data_8_reg_496),
-    .data_26_val(data_9_reg_501),
-    .data_30_val(data_10_reg_506),
-    .data_33_val(data_11_reg_511),
-    .data_35_val(data_12_reg_516),
-    .data_37_val(data_13_reg_521),
-    .data_39_val(data_14_reg_526),
-    .data_45_val(data_15_reg_531),
-    .data_46_val(data_16_reg_536),
-    .data_51_val(data_17_reg_541),
-    .data_52_val(data_18_reg_546),
-    .data_56_val(data_19_reg_551),
-    .data_58_val(data_20_reg_556),
-    .data_60_val(data_21_reg_561),
-    .ap_return_0(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0),
-    .ap_return_1(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1),
-    .ap_return_2(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2),
-    .ap_return_3(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3),
-    .ap_return_4(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4),
-    .ap_return_5(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5),
-    .ap_return_6(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6),
-    .ap_return_7(grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7)
+    .ap_start(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start),
+    .ap_done(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done),
+    .ap_idle(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_idle),
+    .ap_ready(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready),
+    .data_0_val(data_reg_443),
+    .data_1_val(data_22_reg_448),
+    .data_5_val(data_1_reg_453),
+    .data_6_val(data_2_reg_458),
+    .data_7_val(data_3_reg_463),
+    .data_12_val(data_4_reg_468),
+    .data_21_val(data_5_reg_473),
+    .data_22_val(data_6_reg_478),
+    .data_24_val(data_7_reg_483),
+    .data_25_val(data_8_reg_488),
+    .data_26_val(data_9_reg_493),
+    .data_30_val(data_10_reg_498),
+    .data_33_val(data_11_reg_503),
+    .data_35_val(data_12_reg_508),
+    .data_37_val(data_13_reg_513),
+    .data_39_val(data_14_reg_518),
+    .data_45_val(data_15_reg_523),
+    .data_46_val(data_16_reg_528),
+    .data_51_val(data_17_reg_533),
+    .data_52_val(data_18_reg_538),
+    .data_56_val(data_19_reg_543),
+    .data_58_val(data_20_reg_548),
+    .data_60_val(data_21_reg_553),
+    .ap_return_0(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0),
+    .ap_return_1(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1),
+    .ap_return_2(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2),
+    .ap_return_3(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3),
+    .ap_return_4(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4),
+    .ap_return_5(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5),
+    .ap_return_6(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6),
+    .ap_return_7(grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7)
 );
 
 always @ (posedge ap_clk) begin
@@ -179,7 +189,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+        end else if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -187,12 +197,12 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= 1'b0;
+        grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state1) & (1'b1 == ap_NS_fsm_state2))) begin
-            grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= 1'b1;
-        end else if ((grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready == 1'b1)) begin
-            grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state2)) begin
+            grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= 1'b1;
+        end else if ((grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_ready == 1'b1)) begin
+            grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -201,7 +211,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         start_once_reg <= 1'b0;
     end else begin
-        if (((real_start == 1'b1) & (internal_ap_ready == 1'b0))) begin
+        if (((internal_ap_ready == 1'b0) & (real_start == 1'b1))) begin
             start_once_reg <= 1'b1;
         end else if ((internal_ap_ready == 1'b1)) begin
             start_once_reg <= 1'b0;
@@ -211,29 +221,42 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        data_10_reg_506 <= {{layer7_out_dout[433:420]}};
-        data_11_reg_511 <= {{layer7_out_dout[475:462]}};
-        data_12_reg_516 <= {{layer7_out_dout[503:490]}};
-        data_13_reg_521 <= {{layer7_out_dout[531:518]}};
-        data_14_reg_526 <= {{layer7_out_dout[559:546]}};
-        data_15_reg_531 <= {{layer7_out_dout[643:630]}};
-        data_16_reg_536 <= {{layer7_out_dout[657:644]}};
-        data_17_reg_541 <= {{layer7_out_dout[727:714]}};
-        data_18_reg_546 <= {{layer7_out_dout[741:728]}};
-        data_19_reg_551 <= {{layer7_out_dout[797:784]}};
-        data_1_reg_461 <= {{layer7_out_dout[83:70]}};
-        data_20_reg_556 <= {{layer7_out_dout[825:812]}};
-        data_21_reg_561 <= {{layer7_out_dout[853:840]}};
-        data_22_reg_456 <= {{layer7_out_dout[27:14]}};
-        data_2_reg_466 <= {{layer7_out_dout[97:84]}};
-        data_3_reg_471 <= {{layer7_out_dout[111:98]}};
-        data_4_reg_476 <= {{layer7_out_dout[181:168]}};
-        data_5_reg_481 <= {{layer7_out_dout[307:294]}};
-        data_6_reg_486 <= {{layer7_out_dout[321:308]}};
-        data_7_reg_491 <= {{layer7_out_dout[349:336]}};
-        data_8_reg_496 <= {{layer7_out_dout[363:350]}};
-        data_9_reg_501 <= {{layer7_out_dout[377:364]}};
-        data_reg_451 <= data_fu_160_p1;
+        data_10_reg_498 <= {{layer7_out_dout[433:420]}};
+        data_11_reg_503 <= {{layer7_out_dout[475:462]}};
+        data_12_reg_508 <= {{layer7_out_dout[503:490]}};
+        data_13_reg_513 <= {{layer7_out_dout[531:518]}};
+        data_14_reg_518 <= {{layer7_out_dout[559:546]}};
+        data_15_reg_523 <= {{layer7_out_dout[643:630]}};
+        data_16_reg_528 <= {{layer7_out_dout[657:644]}};
+        data_17_reg_533 <= {{layer7_out_dout[727:714]}};
+        data_18_reg_538 <= {{layer7_out_dout[741:728]}};
+        data_19_reg_543 <= {{layer7_out_dout[797:784]}};
+        data_1_reg_453 <= {{layer7_out_dout[83:70]}};
+        data_20_reg_548 <= {{layer7_out_dout[825:812]}};
+        data_21_reg_553 <= {{layer7_out_dout[853:840]}};
+        data_22_reg_448 <= {{layer7_out_dout[27:14]}};
+        data_2_reg_458 <= {{layer7_out_dout[97:84]}};
+        data_3_reg_463 <= {{layer7_out_dout[111:98]}};
+        data_4_reg_468 <= {{layer7_out_dout[181:168]}};
+        data_5_reg_473 <= {{layer7_out_dout[307:294]}};
+        data_6_reg_478 <= {{layer7_out_dout[321:308]}};
+        data_7_reg_483 <= {{layer7_out_dout[349:336]}};
+        data_8_reg_488 <= {{layer7_out_dout[363:350]}};
+        data_9_reg_493 <= {{layer7_out_dout[377:364]}};
+        data_reg_443 <= data_fu_160_p1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done == 1'b1))) begin
+        res_1_reg_568 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2;
+        res_2_reg_573 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3;
+        res_3_reg_578 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4;
+        res_4_reg_583 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5;
+        res_5_reg_588 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6;
+        res_6_reg_593 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7;
+        res_7_reg_563 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1;
+        res_reg_558 <= grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0;
     end
 end
 
@@ -248,7 +271,7 @@ end
 assign ap_ST_fsm_state2_blk = 1'b0;
 
 always @ (*) begin
-    if ((layer9_out_full_n == 1'b0)) begin
+    if ((grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -256,7 +279,15 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if ((layer9_out_full_n == 1'b0)) begin
+        ap_ST_fsm_state4_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state4_blk = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -264,7 +295,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((real_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((1'b1 == ap_CS_fsm_state1) & (real_start == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -272,7 +303,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -280,7 +311,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((~((real_start == 1'b0) | (ap_done_reg == 1'b1)) & (1'b1 == ap_CS_fsm_state1))) begin
+    if ((~((ap_done_reg == 1'b1) | (real_start == 1'b0)) & (1'b1 == ap_CS_fsm_state1))) begin
         layer7_out_blk_n = layer7_out_empty_n;
     end else begin
         layer7_out_blk_n = 1'b1;
@@ -296,7 +327,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
         layer9_out_blk_n = layer9_out_full_n;
     end else begin
         layer9_out_blk_n = 1'b1;
@@ -304,7 +335,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
+    if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
         layer9_out_write = 1'b1;
     end else begin
         layer9_out_write = 1'b0;
@@ -320,7 +351,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((real_start == 1'b1) & (start_once_reg == 1'b0))) begin
+    if (((start_once_reg == 1'b0) & (real_start == 1'b1))) begin
         start_write = 1'b1;
     end else begin
         start_write = 1'b0;
@@ -340,10 +371,17 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state3))) begin
-                ap_NS_fsm = ap_ST_fsm_state1;
+            if (((1'b1 == ap_CS_fsm_state3) & (grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_done == 1'b1))) begin
+                ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
+            end
+        end
+        ap_ST_fsm_state4 : begin
+            if (((layer9_out_full_n == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+                ap_NS_fsm = ap_ST_fsm_state1;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state4;
             end
         end
         default : begin
@@ -358,21 +396,21 @@ assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
-assign ap_NS_fsm_state2 = ap_NS_fsm[32'd1];
+assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
 
 always @ (*) begin
-    ap_block_state1 = ((real_start == 1'b0) | (layer7_out_empty_n == 1'b0) | (ap_done_reg == 1'b1));
+    ap_block_state1 = ((layer7_out_empty_n == 1'b0) | (ap_done_reg == 1'b1) | (real_start == 1'b0));
 end
 
 assign ap_ready = internal_ap_ready;
 
 assign data_fu_160_p1 = layer7_out_dout[13:0];
 
-assign grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start = grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg;
+assign grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start = grp_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_start_reg;
 
 assign layer9_out_din = or_ln77_1_fu_416_p14;
 
-assign or_ln77_1_fu_416_p14 = {{{{{{{{{{{{{grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_7}, {189'd0}}, {grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_6}}, {42'd0}}, {grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_5}}, {grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_4}}, {grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_3}}, {42'd0}}, {grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_2}}, {84'd0}}, {grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_1}}, {grp_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s_fu_133_ap_return_0}}, {126'd0}};
+assign or_ln77_1_fu_416_p14 = {{{{{{{{{{{{{res_6_reg_593}, {189'd0}}, {res_5_reg_588}}, {42'd0}}, {res_4_reg_583}}, {res_3_reg_578}}, {res_2_reg_573}}, {42'd0}}, {res_1_reg_568}}, {84'd0}}, {res_7_reg_563}}, {res_reg_558}}, {126'd0}};
 
 assign start_out = real_start;
 

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject'" level="0">
-<item name = "Date">Tue Mar 31 11:55:02 2026
+<item name = "Date">Tue Mar 31 16:53:13 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">vitis_unified_project</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.368 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.371 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -24,22 +24,22 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">25, 25, 0.125 us, 0.125 us, 5, 5, dataflow</column>
+<column name="">24, 24, 0.120 us, 0.120 us, 6, 6, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0">dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s, 3, 3, 15.000 ns, 15.000 ns, 3, 3, no</column>
+<column name="dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0">dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s, 4, 4, 20.000 ns, 20.000 ns, 4, 4, no</column>
 <column name="relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_U0">relu_array_array_ap_fixed_13_12_0_3_0_128u_relu_config4_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, no</column>
-<column name="dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0">dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s, 4, 4, 20.000 ns, 20.000 ns, 4, 4, no</column>
+<column name="dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0">dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s, 5, 5, 25.000 ns, 25.000 ns, 5, 5, no</column>
 <column name="relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_U0">relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, no</column>
-<column name="dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0">dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s, 2, 2, 10.000 ns, 10.000 ns, 2, 2, no</column>
+<column name="dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0">dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s, 4, 4, 20.000 ns, 20.000 ns, 4, 4, no</column>
 <column name="relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_U0">relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, no</column>
 <column name="dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0">dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s, 2, 2, 10.000 ns, 10.000 ns, 2, 2, no</column>
 <column name="relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_U0">relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, no</column>
-<column name="dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0">dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s, 2, 2, 10.000 ns, 10.000 ns, 2, 2, no</column>
+<column name="dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0">dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -58,7 +58,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, 792, 536, -</column>
-<column name="Instance">-, 9, 16382, 93550, -</column>
+<column name="Instance">-, 9, 16672, 94261, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
@@ -70,11 +70,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0">dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s, 0, 1, 5143, 28521, 0</column>
-<column name="dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0">dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s, 0, 1, 125, 418, 0</column>
-<column name="dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0">dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s, 0, 1, 181, 950, 0</column>
-<column name="dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0">dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s, 0, 3, 7003, 44833, 0</column>
-<column name="dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0">dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s, 0, 3, 746, 4364, 0</column>
+<column name="dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_U0">dense_array_ap_fixed_128u_array_ap_fixed_21_19_5_3_0_64u_config6_s, 0, 1, 4128, 28516, 0</column>
+<column name="dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_U0">dense_array_ap_fixed_16u_array_ap_fixed_20_11_5_3_0_3u_config15_s, 0, 1, 72, 381, 0</column>
+<column name="dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_U0">dense_array_ap_fixed_32u_array_ap_fixed_18_14_5_3_0_16u_config12_s, 0, 1, 179, 934, 0</column>
+<column name="dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_U0">dense_array_ap_fixed_60u_array_ap_fixed_19_17_5_3_0_128u_config3_s, 0, 3, 8282, 45596, 0</column>
+<column name="dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_U0">dense_array_ap_fixed_64u_array_ap_fixed_21_18_5_3_0_32u_config9_s, 0, 3, 827, 4370, 0</column>
 <column name="relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_U0">relu_array_ap_fixed_16u_array_ap_fixed_12_9_0_3_0_16u_relu_config13_s, 0, 0, 196, 932, 0</column>
 <column name="relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_U0">relu_array_ap_fixed_32u_array_ap_fixed_13_11_0_3_0_32u_relu_config10_s, 0, 0, 420, 1972, 0</column>
 <column name="relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_U0">relu_array_ap_fixed_64u_array_ap_fixed_14_13_0_3_0_64u_relu_config7_s, 0, 0, 900, 4084, 0</column>

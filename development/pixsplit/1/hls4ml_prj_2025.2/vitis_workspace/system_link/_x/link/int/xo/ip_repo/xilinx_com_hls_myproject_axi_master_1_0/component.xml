@@ -1518,7 +1518,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>98711006</spirit:value>
+            <spirit:value>10df55bf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1537,7 +1537,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>03a50fe2</spirit:value>
+            <spirit:value>decdd0bd</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1556,7 +1556,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>81d587b1</spirit:value>
+            <spirit:value>d32f61a4</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1575,7 +1575,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>b9ac48da</spirit:value>
+            <spirit:value>08e0fea8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3777,23 +3777,15 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_19_5_3_0_config6_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3885,35 +3877,35 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_12s_6s_17_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_mul_sub_14s_5s_18s_19_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_13s_5ns_18_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_mul_sub_15s_6s_20s_21_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_13s_6ns_19_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_12s_6s_9s_17_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_14s_5s_19_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_13s_4ns_18s_18_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_14s_7s_21_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_13s_5ns_20s_20_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_14s_8s_22_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_14s_7s_21s_21_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_15s_6s_21_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_14s_8s_22s_22_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_15s_8ns_23_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_15s_7ns_22s_23_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4055,27 +4047,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_19_5_3_0_config6_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4190,42 +4172,42 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_12s_6s_17_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_mul_sub_14s_5s_18s_19_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_13s_5ns_18_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_mul_sub_15s_6s_20s_21_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_13s_6ns_19_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_12s_6s_9s_17_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_14s_5s_19_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_13s_4ns_18s_18_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_14s_7s_21_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_13s_5ns_20s_20_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_14s_8s_22_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_14s_7s_21s_21_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_15s_6s_21_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_14s_8s_22s_22_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/myproject_axi_master_mul_15s_8ns_23_1_1.v</spirit:name>
+        <spirit:name>hdl/verilog/myproject_axi_master_mac_muladd_15s_7ns_22s_23_1_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4383,23 +4365,15 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_19_5_3_0_config6_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4479,35 +4453,35 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_12s_6s_17_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_mul_sub_14s_5s_18s_19_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_13s_5ns_18_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_mul_sub_15s_6s_20s_21_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_13s_6ns_19_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_12s_6s_9s_17_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_14s_5s_19_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_13s_4ns_18s_18_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_14s_7s_21_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_13s_5ns_20s_20_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_14s_8s_22_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_14s_7s_21s_21_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_15s_6s_21_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_14s_8s_22s_22_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_15s_8ns_23_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_15s_7ns_22s_23_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -4585,7 +4559,7 @@
       <spirit:file>
         <spirit:name>hdl/vhdl/myproject_axi_master.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_99826925</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_6e8919f6</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -4650,27 +4624,17 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_12_9_0_3_0_ap_fixed_20_11_5_3_0_config15_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_19_17_5_3_0_config3_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_13_11_0_3_0_ap_fixed_18_14_5_3_0_config12_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_18_5_3_0_config9_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_13_12_0_3_0_ap_fixed_21_19_5_3_0_config6_s.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_14_13_0_3_0_ap_fixed_21_18_5_3_0_config9_s.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_dense_latency_ap_fixed_15_11_0_3_0_ap_fixed_19_17_5_3_0_config3_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_dense_resource_rf_leq_nin_ap_fixed_ap_fixed_21_19_5_3_0_config6_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -4770,42 +4734,42 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_12s_6s_17_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_mul_sub_14s_5s_18s_19_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_13s_5ns_18_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_mul_sub_15s_6s_20s_21_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_13s_6ns_19_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_12s_6s_9s_17_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_14s_5s_19_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_13s_4ns_18s_18_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_14s_7s_21_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_13s_5ns_20s_20_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_14s_8s_22_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_14s_7s_21s_21_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_15s_6s_21_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_14s_8s_22s_22_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/myproject_axi_master_mul_15s_8ns_23_1_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/myproject_axi_master_mac_muladd_15s_7ns_22s_23_1_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -5246,7 +5210,7 @@
       <xilinx:displayName>Myproject_axi_master</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
       <xilinx:coreRevision>0</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-03-31T09:55:16Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2026-03-31T14:53:28Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -5257,7 +5221,7 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="0f9aca0e"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="a664a125"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="edf31f8e"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4cd40663"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0801424f"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="92f62ab9"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="977f44a0"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="4a30427f"/>

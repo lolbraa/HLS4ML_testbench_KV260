@@ -100,8 +100,8 @@ HLSConfig:
     BramFactor: 1000000000
     Precision:
       default: fixed<16,6>
-    ReuseFactor: 1
-    Strategy: Latency
+    ReuseFactor: 2
+    Strategy: Resource
     TraceOutput: false
 IOType: io_stream
 InputData: null
@@ -116,7 +116,7 @@ OutputShapes:
   - 3
 Part: xck26-sfvc784-2LV-c
 ProjectName: myproject
-Stamp: d6779725
+Stamp: 559596ee
 Version: 1.0.0
 VitisUnifiedConfig:
   Board: kv260

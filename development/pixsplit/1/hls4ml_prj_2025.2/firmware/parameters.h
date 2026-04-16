@@ -32,7 +32,7 @@ struct config3 : nnet::dense_config {
     static const unsigned n_in = 60;
     static const unsigned n_out = 128;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned strategy = nnet::resource;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 6149;
     static const unsigned n_nonzeros = 1531;
@@ -43,7 +43,7 @@ struct config3 : nnet::dense_config {
     typedef dense_0_weight_t weight_t;
     typedef layer3_index index_t;
     template<class data_T, class res_T, class CONFIG_T>
-    using kernel = nnet::DenseLatency<data_T, res_T, CONFIG_T>;
+    using kernel = nnet::DenseResource_rf_leq_nin<data_T, res_T, CONFIG_T>;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };
@@ -62,7 +62,7 @@ struct config6 : nnet::dense_config {
     static const unsigned n_in = 128;
     static const unsigned n_out = 64;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned strategy = nnet::resource;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 7227;
     static const unsigned n_nonzeros = 965;
@@ -73,7 +73,7 @@ struct config6 : nnet::dense_config {
     typedef dense_1_weight_t weight_t;
     typedef layer6_index index_t;
     template<class data_T, class res_T, class CONFIG_T>
-    using kernel = nnet::DenseLatency<data_T, res_T, CONFIG_T>;
+    using kernel = nnet::DenseResource_rf_leq_nin<data_T, res_T, CONFIG_T>;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };
@@ -92,7 +92,7 @@ struct config9 : nnet::dense_config {
     static const unsigned n_in = 64;
     static const unsigned n_out = 32;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned strategy = nnet::resource;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 1918;
     static const unsigned n_nonzeros = 130;
@@ -103,7 +103,7 @@ struct config9 : nnet::dense_config {
     typedef dense_2_weight_t weight_t;
     typedef layer9_index index_t;
     template<class data_T, class res_T, class CONFIG_T>
-    using kernel = nnet::DenseLatency<data_T, res_T, CONFIG_T>;
+    using kernel = nnet::DenseResource_rf_leq_nin<data_T, res_T, CONFIG_T>;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };
@@ -122,7 +122,7 @@ struct config12 : nnet::dense_config {
     static const unsigned n_in = 32;
     static const unsigned n_out = 16;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned strategy = nnet::resource;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 482;
     static const unsigned n_nonzeros = 30;
@@ -133,7 +133,7 @@ struct config12 : nnet::dense_config {
     typedef encoder_layer_weight_t weight_t;
     typedef layer12_index index_t;
     template<class data_T, class res_T, class CONFIG_T>
-    using kernel = nnet::DenseLatency<data_T, res_T, CONFIG_T>;
+    using kernel = nnet::DenseResource_rf_leq_nin<data_T, res_T, CONFIG_T>;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };
@@ -152,7 +152,7 @@ struct config15 : nnet::dense_config {
     static const unsigned n_in = 16;
     static const unsigned n_out = 3;
     static const unsigned io_type = nnet::io_stream;
-    static const unsigned strategy = nnet::latency;
+    static const unsigned strategy = nnet::resource;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 37;
     static const unsigned n_nonzeros = 11;
@@ -163,7 +163,7 @@ struct config15 : nnet::dense_config {
     typedef dense_out_weight_t weight_t;
     typedef layer15_index index_t;
     template<class data_T, class res_T, class CONFIG_T>
-    using kernel = nnet::DenseLatency<data_T, res_T, CONFIG_T>;
+    using kernel = nnet::DenseResource_rf_leq_nin<data_T, res_T, CONFIG_T>;
     template<class x_T, class y_T>
     using product = nnet::product::mult<x_T, y_T>;
 };

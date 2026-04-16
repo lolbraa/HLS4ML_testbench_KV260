@@ -2017,11 +2017,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>17244</second>
+              <second>17534</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>94225</second>
+              <second>94936</second>
             </item>
           </second>
         </item>

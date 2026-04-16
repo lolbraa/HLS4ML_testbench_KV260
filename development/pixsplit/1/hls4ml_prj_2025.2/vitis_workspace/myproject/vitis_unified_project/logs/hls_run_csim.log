@@ -229,5 +229,5 @@ INFO: Saved inference results to file: tb_data/csim_results.log
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
-INFO: [HLS 200-112] Total CPU user time: 4.22 seconds. Total CPU system time: 0.37 seconds. Total elapsed time: 4.49 seconds; peak allocated memory: 260.484 MB.
+INFO: [HLS 200-112] Total CPU user time: 4.26 seconds. Total CPU system time: 0.37 seconds. Total elapsed time: 4.54 seconds; peak allocated memory: 260.500 MB.
 INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 7s

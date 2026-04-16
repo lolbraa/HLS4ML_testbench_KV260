@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Mar 31 11:56:08 2026
-# Process ID         : 1914608
+# Start of session at: Tue Mar 31 16:53:45 2026
+# Process ID         : 2040334
 # Current directory  : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl
 # Command line       : vivado -log vivado.log -applog -messageDb vivado.pb -mode batch -source vpl.tcl -notrace
 # Log file           : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/system_link/_x/link/vivado/vpl/vivado.log
@@ -19,6 +19,6 @@
 # Host memory        : 20906 MB
 # Swap memory        : 0 MB
 # Total Virtual      : 20906 MB
-# Available Virtual  : 11015 MB
+# Available Virtual  : 14741 MB
 #-----------------------------------------------------------
 source vpl.tcl -notrace
