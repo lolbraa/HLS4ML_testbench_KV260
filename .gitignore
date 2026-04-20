@@ -213,4 +213,4 @@ hls4ml-kv260.code-workspace
 
 # Vitis - for store filer for GitHub
 */system_link/*
-dockerbuild/installer/FPGAs_AdaptiveSoCs_Unified_SDI_2025.2_1114_2157_1.tar
+FPGAs_AdaptiveSoCs_Unified_SDI_*.tar
