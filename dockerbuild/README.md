@@ -21,6 +21,8 @@ docker run -ti
 ## Notes
 The user inside runs as root.
 
+HLS4ML-tutorial uses other FPGAs for compilation. To compile with Vivado/Vitis, KV260 needs to be explicitly set manually "part = 'xck26-sfvc784-2LV-c'"
+
 
 ## Building and maintaing container
 

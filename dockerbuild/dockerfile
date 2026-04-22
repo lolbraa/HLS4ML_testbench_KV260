@@ -10,7 +10,7 @@
 FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
-# Use bash instead of sh
+# Use bash
 SHELL ["/bin/bash", "-c"]
 
 # Declaring variables for building if you need to change something up
@@ -75,6 +75,7 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
       git \
       nano \
       vim \
+    # X11 forwarding for Vivado?
       x11-apps \
     && apt-get autoclean \
     && apt-get autoremove \
@@ -122,8 +123,7 @@ RUN  if [ -z ${CODE_RELEASE+x} ]; then \
       | awk '/tag_name/{print $4;exit}' FS='[""]' | sed 's|^v||'); \
     fi \
     && mkdir -p ${CODE_PATH} \
-    && curl -o \
-      /tmp/code-server.tar.gz -L \
+    && curl -o /tmp/code-server.tar.gz -L \
       "https://github.com/coder/code-server/releases/download/v${CODE_RELEASE}/code-server-${CODE_RELEASE}-linux-amd64.tar.gz" \
     && tar xf /tmp/code-server.tar.gz -C \
       ${CODE_PATH} --strip-components=1 \
@@ -152,32 +152,34 @@ RUN curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -
 EXPOSE 8888
 RUN mkdir /work
 
-# Setting up HLS4ML-tutorial - may be commented out
-RUN source ${CONDA_PATH}/etc/profile.d/conda.sh \
-    && conda init bash \
-    && cd /work \
-    && git clone https://github.com/fastmachinelearning/hls4ml-tutorial/ \
-    && cd hls4ml-tutorial/ \
-    && conda env create -f environment.yml \
-    && conda run -n hls4ml-tutorial pip install ipykernel \
-    && conda run -n hls4ml-tutorial python -m ipykernel install --user --name hls4ml-tutorial --display-name "hls4ml-tutorial"
+# Setting up HLS4ML-tutorial at buildtime - may be commented out
+#RUN source ${CONDA_PATH}/etc/profile.d/conda.sh \
+#    && conda init bash \
+#    && cd /work \
+#    && git clone https://github.com/fastmachinelearning/hls4ml-tutorial/ \
+#    && cd hls4ml-tutorial/ \
+#    && conda env create -f environment.yml \
+#    && conda run -n hls4ml-tutorial pip install ipykernel \
+#    && conda run -n hls4ml-tutorial python -m ipykernel install --user --name hls4ml-tutorial --display-name "hls4ml-tutorial"
 
-# Setting up custom environments by copying from development/, 
-# uses conda to install, and make ipykernels available
-COPY /environments/environment-*.yml /work/environments
-WORKDIR /work
-RUN source ${CONDA_PATH}/etc/profile.d/conda.sh \
-    && for envfile in /work/environments/environment-*.yml; do \
-        envname=$(basename "$envfile" .yml | sed 's/environment-//'); \
-        echo "Creating environment: $envname"; \
-        conda env create -f "$envfile" || true; \
-        conda run -n "$envname" pip install ipykernel || true; \
-        conda run -n "$envname" python -m ipykernel install --user --name "$envname" --display-name "$envname" || true; \
-    done 
+# Setting up custom environments at buildtime by importing from ./environments/.
+# Uses conda to install and make ipykernels available
+#COPY /environments/environment-*.yml /work/environments/
+#WORKDIR /work
+#RUN source ${CONDA_PATH}/etc/profile.d/conda.sh \
+#    && for envfile in /work/environments/environment-*.yml; do \
+#        if [ -f "$envfile" ]; then \
+#           envname=$(basename "$envfile" .yml | sed 's/environment-//'); \
+#           echo "Creating environment: $envname"; \
+#           conda env create -f "$envfile" || true; \
+#           conda run -n "$envname" pip install ipykernel || true; \
+#           conda run -n "$envname" python -m ipykernel install --user --name "$envname" --display-name "$envname" || true; \
+#        fi
+#    done 
 
     
 
-# Entrypoint sources the Vivado/Vitis files
+# Entrypoint sources the Vivado/Vitis files and offers menu for configuring environment
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]

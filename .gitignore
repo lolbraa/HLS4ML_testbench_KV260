@@ -215,3 +215,4 @@ hls4ml-kv260.code-workspace
 */system_link/*
 FPGAs_AdaptiveSoCs_Unified_SDI_*.tar
 xilinx_*.zip
+dockerbuild/qs.md
