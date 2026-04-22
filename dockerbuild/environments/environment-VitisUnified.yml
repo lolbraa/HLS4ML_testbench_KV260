@@ -1,0 +1,21 @@
+name: devenv-vu
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - keras
+  - tensorflow~=2.18.0
+  - scikit-learn
+  - numpy
+  - scipy
+  - notebook
+  - matplotlib
+  - gradio
+  - tensorflow-datasets
+  - pip
+  - pip:
+      - qkeras
+      - "hls4ml[profiling] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean" # "hls4ml[profiling,optimization,sr,hgq,qkeras] @ file:///home/ncgadmin/Bachelor/hls4ml-kv260"
+#      - "hls4ml[profiling,optimization,sr,hgq,qkeras] @ git+https://github.com/lolbraa/hls4ml-kv260.git@main"
+#      - hls4ml[profiling,optimization,sr,hgq,qkeras]==1.2.0
+      

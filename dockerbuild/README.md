@@ -6,6 +6,22 @@ For an adaptable, independent and easy to get started development environment fo
 ## Getting started using the container
 
 
+Docker internal path for work is /work. Please mount development-folders from local machine as a subfolder to /work.
+
+Failing to mount folder to local filesystem may end in work being discarded/deleted.
+
+
+```
+docker run -ti 
+    -v “../development”:”/work/development”
+    kv260-testbench-docker:v2025.2
+```
+
+
+## Notes
+The user inside runs as root.
+
+
 ## Building and maintaing container
 
 The dockerfile installs Vivado/Vitis with the archive found on [Xilinx' download page](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html), e.g. AMD Unified Installer for FPGAs & Adaptive SoCs 2025.2 SFD (TAR/GZIP - 95.68 GB).
