@@ -1,0 +1,29 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/reports/link
+	Log files: /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/myproject.xclbin.link_summary, at Thu Apr 23 06:38:21 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html', at Thu Apr 23 06:38:21 2026
+INFO: [v++ 60-895]   Target platform: /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa'
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
+INFO: [v++ 82-31] Launching aie baremetal script for: link
+WARNING: [v++ 82-11894] The baremetal_metadata.cpp file was not created successfully.
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [06:38:22] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/int --temp_dir /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/run_link
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo
+warning: failed to load external entity "/opt/Xilinx/2025.2/Vitis/scripts/xsd/k2f.xsl"
+cannot parse /opt/Xilinx/2025.2/Vitis/scripts/xsd/k2f.xsl
+ERROR: [SYSTEM_LINK 82-63] Error generating intermediate file /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/sys_link/iprepo/temp/xo0/ip_repo/xilinx_com_hls_myproject_axi_master_1_0/myproject_axi_master.fcnmap.xml
+ERROR: [SYSTEM_LINK 82-78] Unable to create function map for HLS kernel myproject_axi_master
+ERROR: [SYSTEM_LINK 82-84] Unable to process .xo file: /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo
+ERROR: [SYSTEM_LINK 82-66] Error processing .xo files
+ERROR: [SYSTEM_LINK 82-100] Error processing object files, exiting
+INFO: [v++ 60-1442] [06:38:23] Run run_link: Step system_link: Failed
+Time (s): cpu = 00:00:00.79 ; elapsed = 00:00:00.85 . Memory (MB): peak = 528.711 ; gain = 0.000 ; free physical = 2245 ; free virtual = 9445
+ERROR: [v++ 60-661] v++ link run 'run_link' failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking
+INFO: [v++ 60-1653] Closing dispatch client.

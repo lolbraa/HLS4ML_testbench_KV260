@@ -1,0 +1,218 @@
+<ENTRY>
+{
+ "thisFile": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/myproject.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Thu Apr 23 06:38:21 2026",
+ "timestampMillis": "1776926301721",
+ "buildStep": {
+  "cmdId": "c1447882-07cb-4bb8-a328-6f2bb55d5116",
+  "name": "v++",
+  "logFile": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
+  "args": [
+   "-l",
+   "-t",
+   "hw",
+   "--platform",
+   "../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa",
+   "../myproject/vitis_unified_project/myproject_axi_master.xo",
+   "--config",
+   "link_system.cfg",
+   "-o",
+   "myproject.xclbin",
+   "--save-temps"
+  ],
+  "iniFiles": [
+   {
+    "path": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/link_system.cfg",
+    "content": "\n# hls-fpga-machine-learning insert custom connection\n"
+   }
+  ],
+  "cwd": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Apr 23 06:38:21 2026",
+ "timestampMillis": "1776926301721",
+ "status": {
+  "cmdId": "c1447882-07cb-4bb8-a328-6f2bb55d5116",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Thu Apr 23 06:38:22 2026",
+ "timestampMillis": "1776926302256",
+ "buildSummary": {
+  "hardwarePlatform": "kv260_axi_all_platform.xsa",
+  "hardwareDsa": "",
+  "platformDirectory": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/kv260/tcl_scripts/output",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "myproject",
+    "file": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/myproject.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "myproject_axi_master",
+     "file": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject.cpp",
+     "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject_axi_master.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "myproject_axi_master_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2025.2. SW Build 6295257 on 2025-11-13-01:29:13"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Apr 23 06:38:22 2026",
+ "timestampMillis": "1776926302259",
+ "report": {
+  "path": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/analyzer_input/analyzer_summary.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_ANALYZE_METADATA",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Thu Apr 23 06:38:22 2026",
+ "timestampMillis": "1776926302278",
+ "buildStep": {
+  "cmdId": "73338221-67c1-44b9-844d-7c9a2e81e17c",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/int --temp_dir /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
+   "-keep",
+   "--xpfm",
+   "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/int",
+   "--temp_dir",
+   "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Apr 23 06:38:22 2026",
+ "timestampMillis": "1776926302278",
+ "status": {
+  "cmdId": "73338221-67c1-44b9-844d-7c9a2e81e17c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Apr 23 06:38:23 2026",
+ "timestampMillis": "1776926303119",
+ "status": {
+  "cmdId": "73338221-67c1-44b9-844d-7c9a2e81e17c",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Apr 23 06:38:23 2026",
+ "timestampMillis": "1776926303121",
+ "report": {
+  "path": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Thu Apr 23 06:38:23 2026",
+ "timestampMillis": "1776926303122",
+ "status": {
+  "cmdId": "c1447882-07cb-4bb8-a328-6f2bb55d5116",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Apr 23 06:38:23 2026",
+ "timestampMillis": "1776926303146",
+ "report": {
+  "path": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Thu Apr 23 06:38:23 2026",
+ "timestampMillis": "1776926303146",
+ "report": {
+  "path": "/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/v++_link_myproject_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

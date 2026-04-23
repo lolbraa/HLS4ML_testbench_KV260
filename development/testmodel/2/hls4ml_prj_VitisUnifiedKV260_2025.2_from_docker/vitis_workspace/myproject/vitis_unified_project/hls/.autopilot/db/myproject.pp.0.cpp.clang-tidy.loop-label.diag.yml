@@ -1,0 +1,1036 @@
+---
+MainSourceFile:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1010052
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1010527
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1011003
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1350622
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2107506
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_39_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      39
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2107755
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_39_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_56_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2108250
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_56_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2455819
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_307_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      307
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2456206
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_307_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_320_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      320
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2456594
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_320_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2456907
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_337_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      337
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2457130
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_337_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_339_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      339
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2457225
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_339_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_351_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      351
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2457589
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_351_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_353_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      353
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2457671
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_353_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_361_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      361
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2457896
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_361_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_377_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      377
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2458307
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_377_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_397_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      397
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2458760
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_397_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_398_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      398
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2458805
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_398_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_413_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      413
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2459214
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_413_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_420_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      420
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2459427
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_420_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_136_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      136
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2469760
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_136_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_137_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      137
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2469844
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_137_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_158_3:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      158
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2470397
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_158_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_159_4:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      159
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2470481
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_159_4: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_31_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      31
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2475220
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_31_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_43_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      43
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2475476
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_43_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_57_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      57
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2475840
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_57_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_84_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      84
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2476656
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_84_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_114_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      114
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2477320
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_114_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_151_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      151
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2478465
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_151_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_167_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      167
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2478929
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_167_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_200_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      200
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2479867
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_200_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_213_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      213
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2480409
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_213_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_246_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      246
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2481282
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_246_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_255_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      255
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2481562
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_255_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_268_3:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      268
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2482132
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_268_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_275_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      275
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2482376
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_275_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_288_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      288
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2482736
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_288_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_325_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      325
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2483696
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_325_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2483816
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_331_3:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      331
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2483873
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_331_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_348_4:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      348
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2484473
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_348_4: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_361_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      361
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2484981
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_361_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_369_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      369
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2485132
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_369_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_405_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      405
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486340
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_405_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_407_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      407
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486416
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_407_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_409_3:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      409
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486496
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_409_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_414_4:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      414
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486767
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_414_4: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_427_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      427
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2487096
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_427_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_457_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      457
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2487736
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_457_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_484_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      484
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2488575
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_484_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_498_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      498
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2488927
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_498_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_514_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      514
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2489388
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_514_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_532_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      532
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2489861
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_532_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_549_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      549
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2490267
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_549_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_566_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      566
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2490662
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_566_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_596_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      596
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2491331
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_596_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_615_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      615
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2491905
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_615_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_645_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      645
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2492574
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_645_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_664_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      664
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2493128
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_664_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_694_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      694
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2493780
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_694_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_721_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      721
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494618
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_721_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_749_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      749
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2495305
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_749_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_779_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      779
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2495993
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_779_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_808_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      808
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496836
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_808_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_828_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      828
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2497258
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_828_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_229_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      229
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2503732
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_229_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_236_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      236
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2503883
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_236_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_245_3:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      245
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2504163
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_245_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_254_4:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      254
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2504368
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_254_4: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_258_5:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      258
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2504476
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_258_5: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_269_6:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      269
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2504821
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_269_6: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_273_7:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      273
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2504942
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_273_7: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2505930
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_301_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      301
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2506027
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_301_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_320_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      320
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2506725
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_320_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_211_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      211
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2513286
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_211_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_220_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      220
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2513582
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_220_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_325_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      325
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2516876
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_325_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_2:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2517025
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_338_3:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      338
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2517240
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_338_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      33
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      107
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      189
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_14_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_dense_compressed.h'
+      FileOffset:      14
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2544996
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_14_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_74_1:  '
+      FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/nnet_utils/nnet_dense_compressed.h'
+      FileOffset:      74
+      Replacements:
+        - FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2546913
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_74_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject'
+...

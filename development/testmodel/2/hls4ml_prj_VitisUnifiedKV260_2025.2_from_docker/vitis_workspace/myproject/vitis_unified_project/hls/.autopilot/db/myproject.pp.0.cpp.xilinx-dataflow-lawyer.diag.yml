@@ -1,0 +1,20 @@
+---
+MainSourceFile:  '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '41:65'
+    FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '41:69'
+    FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '45:70'
+    FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '45:74'
+    FilePath:        '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/myproject.cpp'
+...

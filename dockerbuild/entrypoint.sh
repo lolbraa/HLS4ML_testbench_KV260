@@ -63,6 +63,10 @@ fi
 case $CHOICE in
     1)
         echo "Starting VS Code Server on http://localhost:8443"
+        echo ""
+        echo "VS Code PASSWORD:"
+        grep -i "password: " /root/.config/code-server/config.yaml
+        echo ""        
         exec /opt/code-server/bin/code-server /work --bind-addr 0.0.0.0:8443 --auth password
         ;;
     2)
