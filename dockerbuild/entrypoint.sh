@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Installed Vivado and Vitis-version is $TOOL_VERSION."
+
 # Load Xilinx binary paths
 source /opt/Xilinx/2025.2/Vivado/settings64.sh
 source /opt/Xilinx/2025.2/Vitis/settings64.sh
@@ -31,10 +33,15 @@ if [ -d /work/environments ]; then
     for envfile in /work/environments/environment-*.yml; do
         if [ -f "$envfile" ]; then
             envname=$(basename "$envfile" .yml | sed 's/environment-//');
-            echo "  Creating environment: $envname";
-            conda env create -f "$envfile" 2>/dev/null || echo "  (environment may already exist)";
-            conda run -n "$envname" pip install ipykernel 2>/dev/null || true;
-            conda run -n "$envname" python -m ipykernel install --user --name "$envname" --display-name "$envname" 2>/dev/null || true;
+            # Check if environment already exists
+            if conda env list | grep -q "^$envname "; then
+                echo "  Environment '$envname' already exists, skipping..."
+            else
+                echo "  Creating environment: $envname";
+                conda env create -f "$envfile" 2>/dev/null || echo "  (failed to create environment)";
+                conda run -n "$envname" pip install ipykernel 2>/dev/null || true;
+                conda run -n "$envname" python -m ipykernel install --user --name "$envname" --display-name "$envname" 2>/dev/null || true;
+            fi
         fi
     done
     echo "Environment setup complete."
@@ -45,43 +52,9 @@ if [ $# -gt 0 ]; then
     exec "$@"
 fi
 
-# Interactive menu
-echo "  HLS4ML for KV260 Testbench Container"
+echo "Starting VS Code Server on http://localhost:8443"
 echo ""
-echo "  1 VS Code Server        (requires forwarding of port 8443)"
-echo "  2 Jupyter Notebook      (requires forwarding of port 8888)"
-echo "  3 Bash"
-echo ""
-
-# Check for environment variable override
-if [ ! -z "$START_SERVICE" ]; then
-    CHOICE=$START_SERVICE
-else
-    read -p "Select how to initiate this instance of the container [1-3]: " CHOICE
-fi
-
-case $CHOICE in
-    1)
-        echo "Starting VS Code Server on http://localhost:8443"
-        echo ""
-        echo "VS Code PASSWORD:"
-        grep -i "password: " /root/.config/code-server/config.yaml
-        echo ""        
-        exec /opt/code-server/bin/code-server /work --bind-addr 0.0.0.0:8443 --auth password
-        ;;
-    2)
-        echo "Starting Jupyter Notebook on http://localhost:8888"
-        exec jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --no-browser
-        ;;
-    3)
-        echo "Starting interactive bash shell"
-        echo "Available kernels for Jupyter/VS Code:"
-        python -m jupyter kernelspec list 2>/dev/null | grep -E '^\s' || echo "  (no kernels found)"
-        echo ""
-        exec /bin/bash -l
-        ;;
-    *)
-        echo "Exiting..."
-        exit 0
-        ;;
-esac
+echo "VS Code PASSWORD:"
+grep -i "password: " /root/.config/code-server/config.yaml
+echo ""        
+exec /opt/code-server/bin/code-server /work --bind-addr 0.0.0.0:8443 --auth password

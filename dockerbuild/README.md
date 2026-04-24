@@ -6,22 +6,29 @@ For an adaptable, independent and easy to get started development environment fo
 ## Getting started using the container
 
 
-Docker internal path for work is /work. Please mount development-folders from local machine as a subfolder to /work.
+Docker internal path for work is /work. Please mount development-folders from local machine as a subfolder to /work. Failing to mount folder to local filesystem may end in work being discarded/deleted.
 
-Failing to mount folder to local filesystem may end in work being discarded/deleted.
-
+Conda Environments may be set up by mounting a directory with files with the filename-pattern environment-*.yml into /work/environments/ (see example above). The entrypoint is configured to install environments when initiating. You may install the environments in buildtime, however to keep the size small and allow more flexibility, we've chosen to default to install at runtime.
 
 ```
-docker run -ti 
-    -v “../development”:”/work/development”
-    kv260-testbench-docker:v2025.2
+docker run -it --name hls4ml-kv260-testbench -p 8443:8443  \
+    -v ~/Bachelor/HLS4ML_testbench_KV260/development/:/work/development/ \
+    -v ~/Bachelor/HLS4ML_testbench_KV260/dockerbuild/environments/:/work/environments/ \
+    hls4ml-kv260-testbench:v2025.2
 ```
+
+The entrypoint launches VS Code on localhost:8443. The password is printed in log.
+
 
 
 ## Notes
-The user inside runs as root.
+The user inside runs as root. Hence, files written by the container is owned by root. You may want to fix this.
 
 HLS4ML-tutorial uses other FPGAs for compilation. To compile with Vivado/Vitis, KV260 needs to be explicitly set manually "part = 'xck26-sfvc784-2LV-c'"
+
+Jupyter notebook may be configured by either installing at runtime (setting up an environment and passing ´-p 8888:8888' with appropriate command at start) or uncommenting lines in dockerfile and building.
+
+Exec into running container: ´docker exec -ti hls4ml-kv260-testbench bash´
 
 
 ## Building and maintaing container
