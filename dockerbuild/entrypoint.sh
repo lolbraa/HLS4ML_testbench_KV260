@@ -10,6 +10,9 @@ source /opt/Xilinx/2025.2/Vitis/settings64.sh
 source /opt/miniconda3/etc/profile.d/conda.sh
 conda activate base
 
+# Set LD_PRELOAD for all spawned processes
+export LD_PRELOAD=/lib/x86_64-linux-gnu/libudev.so.1
+
 # Setup HLS4ML tutorial repository at runtime if requested
 if [ ! -z "$SETUP_HLS4ML_TUTORIAL" ] && [ "$SETUP_HLS4ML_TUTORIAL" = "1" ]; then
     if [ ! -d /work/hls4ml-tutorial ]; then
