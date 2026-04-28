@@ -5,13 +5,14 @@ echo "Installed Vivado and Vitis-version is $TOOL_VERSION."
 # Load Xilinx binary paths
 source /opt/Xilinx/2025.2/Vivado/settings64.sh
 source /opt/Xilinx/2025.2/Vitis/settings64.sh
+export PATH="$XILINX_VITIS/bin:$PATH"
+# Hotfix https://community.revenera.com/s/question/0D5PL00000NwuKu0AJ/issues-when-running-xilinx-tools-or-other-vendor-tools-in-docker-environment
+export LD_PRELOAD=/lib/x86_64-linux-gnu/libudev.so.1 
 
 # Initiate Conda
 source /opt/miniconda3/etc/profile.d/conda.sh
 conda activate base
 
-# Set LD_PRELOAD for all spawned processes
-export LD_PRELOAD=/lib/x86_64-linux-gnu/libudev.so.1
 
 # Setup HLS4ML tutorial repository at runtime if requested
 if [ ! -z "$SETUP_HLS4ML_TUTORIAL" ] && [ "$SETUP_HLS4ML_TUTORIAL" = "1" ]; then

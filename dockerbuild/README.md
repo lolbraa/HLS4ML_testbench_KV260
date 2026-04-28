@@ -43,9 +43,7 @@ For building the images yourself, do the build command from ´HLS4ML_testbench_K
 - If --build-arg HOST_INSTALLER_DIR=./installer
 
 ```
-DOCKER_BUILDKIT=1 docker build  \
-    -t kv260-testbench-docker:v2025.2 \
-    . 
+docker build -t hls4ml-kv260-testbench:v2025.2 .
 docker image ls
 ```
 

@@ -7,7 +7,7 @@
 # cmu-sei (https://github.com/cmu-sei/hls4ml-docker/blob/main/Dockerfile)
 # If deviating from the default paths, please make sure the entrypoint.sh matches
 
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Use bash
@@ -18,7 +18,7 @@ ENV TOOL_VERSION=2025.2
 ARG TOOL_TARGET_INSTALL_DIR=/opt/Xilinx
 ARG HOST_TOOL_INSTALLER_ARCHIVE="./installer/xilinx_2025.2_Vitis.zip"
 #ARG HOST_TOOL_INSTALLER_ARCHIVE="./installer/FPGAs_AdaptiveSoCs_Unified_SDI_${TOOL_VERSION}_1114_2157_1.tar"
-ARG HOST_TOOL_INSTALLER_CONFIG="./installer/install_config.txt"
+ARG HOST_TOOL_INSTALLER_CONFIG="./installer/install_config_vitis_2025.2.txt"
 ARG TOOL_INSTALLER_ARCHIVE="/tmp/installer/archive.zip"
 ARG TOOL_INSTALLER_CONFIG="/tmp/installer/install_config.txt"
 ARG CONDA_PATH=/opt/miniconda3
