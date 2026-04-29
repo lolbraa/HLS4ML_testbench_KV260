@@ -4758,6 +4758,7 @@
         </FIFOInst>
     </FIFOInformation>
     <UserConfigCommands>
+        <config_cosim enable_fifo_sizing="1"/>
         <config_export format="xo" version="1.0.0"/>
         <config_schedule enable_dsp_full_reg="0"/>
     </UserConfigCommands>

@@ -1,6 +1,6 @@
 {
-    "activeTask": "system_link",
-    "runComplete": "false",
+    "completedTask": "xclbinutilinfo",
+    "runComplete": "true",
     "taskList": [
         "system_link",
         "vpl",

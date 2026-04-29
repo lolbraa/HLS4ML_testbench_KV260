@@ -62,7 +62,7 @@ WARNING: [HLS 200-616] This design uses AXI slave interface in dataflow mode, wh
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Thu Apr 23 06:36:08 2026
+  **** Start of session at: Wed Apr 29 10:16:44 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -72,7 +72,7 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
 INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
 INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 23 06:36:10 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 29 10:16:47 2026...
 INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
 INFO: [COSIM 212-323] Starting verilog simulation. 
 INFO: [COSIM 212-15] Starting XSIM ...
@@ -80,7 +80,7 @@ Vivado Simulator v2025.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 Running: /opt/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_axi_master_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj myproject_axi_master.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_21 -L floating_point_v7_0_26 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./myproject_axi_master_subsystem -s myproject_axi_master 
-Multi-threading is on. Using 10 slave threads.
+Multi-threading is on. Using 14 slave threads.
 Determining compilation order of HDL files.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
     LIBRARY_PATH
@@ -422,7 +422,7 @@ Built simulation snapshot myproject_axi_master
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Thu Apr 23 06:36:28 2026
+  **** Start of session at: Wed Apr 29 10:17:03 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -949,8 +949,8 @@ UVM_INFO /opt/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 39197500 ps : File "/opt/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 425452 KB (Peak: 482792 KB), Simulation CPU Usage: 1190 ms
-INFO: [Common 17-206] Exiting xsim at Thu Apr 23 06:36:30 2026...
+INFO: xsimkernel Simulation Memory Usage: 425384 KB (Peak: 482724 KB), Simulation CPU Usage: 1240 ms
+INFO: [Common 17-206] Exiting xsim at Wed Apr 29 10:17:05 2026...
 INFO: [COSIM 212-316] Starting C post checking ...
 Processing input 0
 Predictions
@@ -964,7 +964,7 @@ Vivado Simulator v2025.2
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 Running: /opt/Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_myproject_axi_master_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj myproject_axi_master.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_21 -L floating_point_v7_0_26 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./myproject_axi_master_subsystem -s myproject_axi_master 
-Multi-threading is on. Using 10 slave threads.
+Multi-threading is on. Using 14 slave threads.
 Determining compilation order of HDL files.
 WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
     LIBRARY_PATH
@@ -1322,7 +1322,7 @@ Built simulation snapshot myproject_axi_master
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Thu Apr 23 06:36:48 2026
+  **** Start of session at: Wed Apr 29 10:17:21 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -1849,8 +1849,8 @@ UVM_INFO /opt/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.
 ////////////////////////////////////////////////////////////////////////////////////
 $finish called at time : 39197500 ps : File "/opt/Xilinx/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
 ## quit
-INFO: xsimkernel Simulation Memory Usage: 426096 KB (Peak: 426096 KB), Simulation CPU Usage: 1250 ms
-INFO: [Common 17-206] Exiting xsim at Thu Apr 23 06:36:50 2026...
+INFO: xsimkernel Simulation Memory Usage: 426032 KB (Peak: 483372 KB), Simulation CPU Usage: 1380 ms
+INFO: [Common 17-206] Exiting xsim at Wed Apr 29 10:17:23 2026...
 INFO: [COSIM 212-316] Starting C post checking ...
 Processing input 0
 Predictions
@@ -1859,5 +1859,5 @@ Quantized predictions
 0.5 0.427734 0.0410156 0.0488281 0.104492 
 INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
 INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
-INFO: [HLS 200-112] Total CPU user time: 160.89 seconds. Total CPU system time: 4.63 seconds. Total elapsed time: 56.13 seconds; peak allocated memory: 333.375 MB.
-INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 59s
+INFO: [HLS 200-112] Total CPU user time: 166.63 seconds. Total CPU system time: 4.47 seconds. Total elapsed time: 52.96 seconds; peak allocated memory: 336.133 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 56s

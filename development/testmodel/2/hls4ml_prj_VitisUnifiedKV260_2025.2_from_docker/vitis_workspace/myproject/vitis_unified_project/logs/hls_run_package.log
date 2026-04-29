@@ -18,7 +18,7 @@ INFO: [HLS 200-1465] Applying config ini 'tb.file=/work/development/testmodel/2/
 INFO: [HLS 200-10] Adding test bench file '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/firmware/weights' to the project
 INFO: [HLS 200-1465] Applying config ini 'tb.file=/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/tb_data' from ../../hls_kernel_config.cfg(16)
 INFO: [HLS 200-10] Adding test bench file '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/tb_data' to the project
-INFO: [HLS 200-1465] Applying config ini 'tb.file_cflags=/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/myproject_test.cpp,-std=c++0x' from ../../hls_kernel_config.cfg(17)
+INFO: [HLS 200-1465] Applying config ini 'tb.file_cflags=/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/myproject_test.cpp,-DRTL_SIM' from ../../hls_kernel_config.cfg(18)
 INFO: [HLS 200-1465] Applying config ini 'syn.top=myproject_axi_master' from ../../hls_kernel_config.cfg(12)
 INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../../hls_kernel_config.cfg(6)
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -28,6 +28,7 @@ INFO: [HLS 200-1465] Applying config ini 'clock=5ns' from ../../hls_kernel_confi
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
 INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=12.5%' from ../../hls_kernel_config.cfg(5)
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1465] Applying config ini 'cosim.enable_fifo_sizing=true' from ../../hls_kernel_config.cfg(24)
 INFO: [HLS 200-1465] Applying config ini 'package.ip.version=1.0.0' from ../../hls_kernel_config.cfg(19)
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=xo' from ../../hls_kernel_config.cfg(20)
 INFO: [HLS 200-1465] Applying config ini 'syn.compile.name_max_length=80' from ../../hls_kernel_config.cfg(21)
@@ -40,7 +41,7 @@ INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Thu Apr 23 06:37:41 2026
+  **** Start of session at: Wed Apr 29 10:16:24 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -79,7 +80,7 @@ INFO: Created IP /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025
 Generating XO file: myproject_axi_master.xo in directory /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/..
 Running: package_xo -xo_path /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/../myproject_axi_master.xo -kernel_xml /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/kernel.xml -kernel_name myproject_axi_master -ip_directory /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip -kernel_files {/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/../../../../firmware/myproject_axi_master.cpp /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/../../../../firmware/myproject.cpp} -hls_directory /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/impl/misc/hls_files -kernel_json /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/hls_data.json
 INFO: Created IP archive /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/xilinx_com_hls_myproject_axi_master_1_0.zip
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 23 06:37:44 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 29 10:16:27 2026...
 INFO: [HLS 200-802] Generated output file vitis_unified_project/myproject_axi_master.xo
-INFO: [HLS 200-112] Total CPU user time: 9.67 seconds. Total CPU system time: 0.95 seconds. Total elapsed time: 6.37 seconds; peak allocated memory: 335.387 MB.
+INFO: [HLS 200-112] Total CPU user time: 9.42 seconds. Total CPU system time: 0.91 seconds. Total elapsed time: 6.33 seconds; peak allocated memory: 337.691 MB.
 INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 9s

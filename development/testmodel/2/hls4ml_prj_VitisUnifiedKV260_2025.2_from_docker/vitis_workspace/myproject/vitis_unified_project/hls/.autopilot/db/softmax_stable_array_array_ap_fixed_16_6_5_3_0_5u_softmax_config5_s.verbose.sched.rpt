@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s'
 ================================================================
-* Date:           Thu Apr 23 06:37:24 2026
+* Date:           Wed Apr 29 10:16:07 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        vitis_unified_project
@@ -237,7 +237,7 @@ The critical path consists of the following:
 
  <State 5>: 4.101ns
 The critical path consists of the following:
-	'mul' operation 26 bit ('mul_ln241', firmware/nnet_utils/nnet_activation_stream.h:241) [77]  (2.453 ns)
+	'mul' operation 26 bit ('mul_ln241_1', firmware/nnet_utils/nnet_activation_stream.h:241) [83]  (2.453 ns)
 	fifo write operation ('write_ln243', firmware/nnet_utils/nnet_activation_stream.h:243) on port 'stream_out0_layer5_out' (firmware/nnet_utils/nnet_activation_stream.h:243) [106]  (1.648 ns)
 
 

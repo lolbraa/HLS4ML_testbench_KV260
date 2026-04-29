@@ -1,0 +1,2 @@
+Compiling (synthesis checkpoint) kernel/IP: vitis_design_axi_interconnect_0_imp_m02_regslice_0
+Log file: /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/runme.log
