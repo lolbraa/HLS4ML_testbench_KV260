@@ -13,20 +13,30 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Use bash
 SHELL ["/bin/bash", "-c"]
 
-# Declaring variables for building if you need to change something up
+###### Declaring variables for building if you need to change something up
+# Version of Vivado/Vitis which is downloaded
 ENV TOOL_VERSION=2025.2
-ARG TOOL_TARGET_INSTALL_DIR=/opt/Xilinx
-ARG HOST_TOOL_INSTALLER_ARCHIVE="./installer/xilinx_2025.2_Vitis.zip"
+
+# Paths on the host machine for importing the files into the image
+# Notice: Using the Web Installer to download only which modules you need, ends in a zip. 
+# However, downloading the complete unified installer from website ends up with a .tar 
+# (https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools.html)
+ARG HOST_TOOL_INSTALLER_ARCHIVE="./installer/xilinx_2025.2_Vitis.zip" 
 #ARG HOST_TOOL_INSTALLER_ARCHIVE="./installer/FPGAs_AdaptiveSoCs_Unified_SDI_${TOOL_VERSION}_1114_2157_1.tar"
 ARG HOST_TOOL_INSTALLER_CONFIG="./installer/install_config_vitis_2025.2.txt"
+
+# Where Vivado/Vitis files are installed
 ARG TOOL_INSTALLER_ARCHIVE="/tmp/installer/archive.zip"
 ARG TOOL_INSTALLER_CONFIG="/tmp/installer/install_config.txt"
-ARG CONDA_PATH=/opt/miniconda3
+ARG TOOL_TARGET_INSTALL_PATH="/opt/Xilinx"
+
+# Misc
+ARG CONDA_PATH="/opt/miniconda3"
 ARG CODE_RELEASE
-ARG CODE_PATH=/opt/code-server
+ARG CODE_PATH="/opt/code-server"
 
 
-# Install dependencies and cache
+######## Install dependencies and cache
 RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
     --mount=target=/var/cache/apt,type=cache,sharing=locked \
     rm -f /etc/apt/apt.conf.d/docker-clean \ 
@@ -34,7 +44,7 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
     && apt-get install -y --no-install-recommends \
     # Packages required for running the installer and Vitis
       ca-certificates \
-      libtinfo5 \
+      #libtinfo5 \
       locales \
       lsb-release \
       net-tools \
@@ -50,7 +60,7 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
       #unzip \
       zip \
       # https://adaptivesupport.amd.com/s/article/76616?language=en_US
-      libtinfo5 \
+      #libtinfo5 \
       g++ \
       xvfb \
       #git \
@@ -61,7 +71,7 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
       libgdk-pixbuf2.0-dev \
       libgtk-3-dev \
       libxss-dev  \
-      libasound2   \
+      #libasound2   \
       #compat-openssl10  \
       openssl \
       fdisk  \
@@ -85,10 +95,12 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
     && rm -rf /var/lib/apt/lists/*
 
 
-  
+##### Vivado/Vitis installation
 # Bind mounts the ./installer-directory under building so they are not redundantly 
 # copied into the containers filesystem from the build context.
 # The unarchive-process is split from installation to speed up cancelled builds
+# You may want to skip importing and extracting an archive, and instead mount the extracted folder.
+# I've chosen to do it like this for maximum compatibility with e.g. the downloadable complete unified installer archive 
 RUN --mount=type=bind,source=${HOST_TOOL_INSTALLER_ARCHIVE},target=${TOOL_INSTALLER_ARCHIVE} \
     echo "Extracting archive (this takes quite a while)..." \
     && mkdir -p /tmp/installer-extract \
@@ -99,12 +111,13 @@ RUN --mount=type=bind,source=${HOST_TOOL_INSTALLER_ARCHIVE},target=${TOOL_INSTAL
 COPY $HOST_TOOL_INSTALLER_CONFIG $TOOL_INSTALLER_CONFIG
 
 # Install Vitis and Vivado. 
+# https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license
 RUN echo "Running xsetup batch install..." \
     && cd "/tmp/installer-extract/" \
 #    && cd "/tmp/installer-extract/$(ls /tmp/installer-extract)" \ # .tar installation archive
     && ./xsetup \
       --batch Install \
-      --location ${TOOL_TARGET_INSTALL_DIR} \
+      --location ${TOOL_TARGET_INSTALL_PATH} \
       --config ${TOOL_INSTALLER_CONFIG} \
       --agree XilinxEULA,3rdPartyEULA \
     && echo "Cleaning up extracted archive..." \
@@ -112,12 +125,12 @@ RUN echo "Running xsetup batch install..." \
 
 # Check dependencies missing for running Vivado and Vitis
 # This' the official method, however, we extracted the packages and installed them initially
-#RUN bash ${TOOL_TARGET_INSTALL_DIR}/${TOOL_VERSION}/Vitis/scripts/installLibs.sh \
-#	ba&& sh ${TOOL_TARGET_INSTALL_DIR}/${TOOL_VERSION}/Vivado/scripts/installLibs.sh
+#RUN bash ${TOOL_TARGET_INSTALL_PATH}/${TOOL_VERSION}/Vitis/scripts/installLibs.sh \
+#	  && bash ${TOOL_TARGET_INSTALL_PATH}/${TOOL_VERSION}/Vivado/scripts/installLibs.sh
 
-
-# VS Code server for interacting and dynamically change Python-kernel through browser or VS Code client.
-# Installs and configures
+#### VS Code server
+# Uses this for interacting and dynamically change Python-kernel through browser or VS Code client.
+# Installs and configures appropriately
 RUN  if [ -z ${CODE_RELEASE+x} ]; then \
     CODE_RELEASE=$(curl -sX GET https://api.github.com/repos/coder/code-server/releases/latest \
       | awk '/tag_name/{print $4;exit}' FS='[""]' | sed 's|^v||'); \
@@ -139,18 +152,24 @@ EXPOSE 8443
 
 
 ##### Setting up environments for running HLS4ML
-
 # Installing and configuring dependencies
 RUN curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -o Miniconda3-latest-Linux-x86_64.sh \
     && bash Miniconda3-latest-Linux-x86_64.sh -b -p ${CONDA_PATH} \
     && rm Miniconda3-latest-Linux-x86_64.sh \
+# Chose to not install jupyter by default. User may choose to install through their own environment
 #    && ${CONDA_PATH}/bin/pip install jupyter notebook ipykernel \
     && source ${CONDA_PATH}/etc/profile.d/conda.sh \
     && conda init --all \
     && conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main \
-    && conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+    && conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r \
+    # When trying Ubuntu 24.04 Conda filed solving environment if it hadn't updated, weird
+    && conda update conda
+# Expose 8888 for Jupyter notebook default
 EXPOSE 8888
 RUN mkdir /work
+
+# Notice: two following sections are commented out to save space on the shipped image.
+# Environments may easily be set up at runtime, see README.
 
 # Setting up HLS4ML-tutorial at buildtime - may be commented out
 #RUN source ${CONDA_PATH}/etc/profile.d/conda.sh \
@@ -179,11 +198,7 @@ RUN mkdir /work
 
     
 
-# Entrypoint sources the Vivado/Vitis files and offers menu for configuring environment
+# Entrypoint sources Vivado/Vitis and boots into VS Code.
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]
-
-# Defaulting to bash (can be overridden to run jupyter, code-server, etc.)
-#CMD ["/bin/bash", "-l"]
-

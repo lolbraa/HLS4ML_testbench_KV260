@@ -15,6 +15,7 @@ conda activate base
 
 
 # Setup HLS4ML tutorial repository at runtime if requested
+# TODO: Testing
 if [ ! -z "$SETUP_HLS4ML_TUTORIAL" ] && [ "$SETUP_HLS4ML_TUTORIAL" = "1" ]; then
     if [ ! -d /work/hls4ml-tutorial ]; then
         echo "Cloning hls4ml-tutorial repository..."
@@ -36,7 +37,8 @@ if [ -d /work/environments ]; then
     echo "Setting up custom conda environments..."
     for envfile in /work/environments/environment-*.yml; do
         if [ -f "$envfile" ]; then
-            envname=$(basename "$envfile" .yml | sed 's/environment-//');
+            #envname=$(basename "$envfile" .yml | sed 's/environment-//');
+            envname=$(grep -i "name: " $envfile) # TODO: Test if this works as expected
             # Check if environment already exists
             if conda env list | grep -q "^$envname "; then
                 echo "  Environment '$envname' already exists, skipping..."
