@@ -15,3 +15,8 @@ before commit, to clean the jupyter notebooks console output [(source))](https:/
 ```
 git config filter.strip-notebook-output.clean 'jupyter nbconvert --ClearOutputPreprocessor.enabled=True --to=notebook --stdin --stdout --log-level=ERROR'  
 ```
+
+
+# Docker
+For more information about the provided Docker-testbench, see [dockerbuild/](../dockerbuild/)
+
