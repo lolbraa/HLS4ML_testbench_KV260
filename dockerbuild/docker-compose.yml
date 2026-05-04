@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+    hls4ml-kv260-testbench:
+        container_name: hls4ml-kv260-testbench-ny
+        image: 'hls4ml-kv260-testbench:v2025.2'
+        volumes:
+            - '~/Bachelor/HLS4ML_testbench_KV260/dockerbuild/environments/:/work/environments/'
+            - '~/Bachelor/HLS4ML_testbench_KV260/development/:/work/development/'
+        ports:
+            - '8443:8443'
+        init: true # Needed for proper handling of Vivado-processes during synthesis
+
+    hls4ml-kv260-DAT255:
+        container_name: hls4ml-kv260-DAT255
+        image: 'hls4ml-kv260-testbench:v2025.2'
+        volumes:
+            - '~/Bachelor/HLS4ML_testbench_KV260/dockerbuild/environments/:/work/environments/'
+            - '~DAT255/DAT255-project:/work/development/'
+        ports:
+            - '8444:8443'
+        init: true

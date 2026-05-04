@@ -10,6 +10,8 @@ Docker internal path for work is /work. Please mount development-folders from lo
 
 Conda Environments may be set up by mounting a directory with files with the filename-pattern environment-*.yml into /work/environments/ (see example above). The entrypoint is configured to install environments when initiating. You may install the environments in buildtime, however to keep the size small and allow more flexibility, we've chosen to default to install at runtime.
 
+The docker may be run by using the following docker-run command, or the provided docker compose with `dokcker compose up`
+
 ```
 docker run --init -it --name hls4ml-kv260-testbench -p 8443:8443  \
     -v ~/Bachelor/HLS4ML_testbench_KV260/development/:/work/development/ \

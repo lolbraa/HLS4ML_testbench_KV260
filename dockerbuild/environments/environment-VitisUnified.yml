@@ -1,6 +1,4 @@
 name: devenv-vu
-channels:
-  - conda-forge
 dependencies:
   - python
   - keras
