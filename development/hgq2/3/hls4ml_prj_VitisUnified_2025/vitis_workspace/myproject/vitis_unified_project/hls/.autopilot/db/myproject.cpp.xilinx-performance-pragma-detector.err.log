@@ -1,0 +1,109 @@
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp:4:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/parameters.h:7:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_code_gen.h:4:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_conv1d_latency.h:4:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_common.h:5:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_helpers.h:4:
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:38:23: warning: variable templates are a C++14 extension [-Wc++14-extensions]
+constexpr std::size_t bitwidth = sizeof(T) * CHAR_BIT;
+                      ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:54:23: warning: variable templates are a C++14 extension [-Wc++14-extensions]
+constexpr std::size_t bytewidth = (bitwidth<T> + CHAR_BIT - 1) / CHAR_BIT;
+                      ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp:4:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/parameters.h:10:
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_activation.h:402:40: warning: unexpected pragma argument 'softmax', expects function/operation [-Winvalid-hls-pragmas]
+    #pragma HLS allocation instances = softmax<CONFIG_T> limit = CONFIG_T::parallelization_factor function
+                                       ^
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp:4:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/parameters.h:12:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_conv2d.h:6:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_conv2d_resource.h:5:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_dense.h:7:
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_dense_resource.h:33:21: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+        #pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+                    ^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_dense_resource.h:107:21: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+        #pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+                    ^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/nnet_utils/nnet_dense_resource.h:189:21: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+        #pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+                    ^

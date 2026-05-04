@@ -1,0 +1,28 @@
+---
+MainSourceFile:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '56:82'
+    FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '56:86'
+    FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '62:84'
+    FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '62:88'
+    FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '68:78'
+    FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '68:83'
+    FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/3/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp'
+...
