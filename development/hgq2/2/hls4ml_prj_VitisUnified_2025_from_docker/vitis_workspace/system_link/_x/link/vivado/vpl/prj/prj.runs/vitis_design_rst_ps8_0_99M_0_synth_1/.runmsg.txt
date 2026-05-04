@@ -1,0 +1,2 @@
+Compiling (synthesis checkpoint) kernel/IP: vitis_design_rst_ps8_0_99M_0
+Log file: /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/runme.log

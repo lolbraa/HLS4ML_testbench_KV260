@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Styles -->
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 1000px;
+    }
+</style>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>OPTraceViewer</title>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/serial.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/gantt.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js">
+  </script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+  <form name="userInputForm" action="javascript:userInputFormCallback()">
+    <fieldset>
+    <legend>Graph Filters:</legend>
+    <table style="width:100%">
+      <col width="50"></col>
+      <col width="20"></col>
+      <col width="60"></col>
+      <tr>
+        <td style="text-align: center"; colspan="3"><input type="number" name="userDurationFilterSecInput" id="userDurationFilterSecInput" value="2" min="0" max="6000" step="1"> sec</td>
+        <td>Filter out run durations lower than this value</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="text-align: center"><input type="checkbox" name="userGroupPidSortSelected" id="userGroupPidSortSelected"></td>
+        <td>Group sort by process ID</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#0099ff"></td>
+        <td style="text-align: center"><input type="checkbox" name="userRollupSelected" id="userRollupSelected"></td>
+        <td>Show rollup entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#8dc49f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userIndividualEntrySelected" id="userIndividualEntrySelected"></td>
+        <td>Show individual entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#cd82ad"></td>
+        <td style="text-align: center"><input type="checkbox" name="userCheckpointEntrySelected" id="userCheckpointEntrySelected"></td>
+        <td>Show checkpoints entry</td>
+      </tr>
+       <tr>
+        <td></td>
+        <td bgcolor="#b9783f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userReportEntrySelected" id="userReportEntrySelected"></td>
+        <td>Show report entry</td>
+      </tr>
+
+    </table>
+    <br>
+    <input name="Submit" type="submit" value="Update Graph">
+    </fieldset>
+  </form> 
+
+  <div id="chartdiv">
+  </div>
+
+  <script>
+  </script>
+
+</head>
+
+
+<body>
+<table id="myDynamicTable" cellpadding="2" cellspacing="2" border="1" onclick="tester()">
+  <tr>
+  <td>Task</td>
+  <td>Start</td>
+  <td>Duration</td>
+  </tr>
+</table>
+<script>
+  // Default User Selected variables
+  var m_secondFilter = 1;
+  var m_groupPidSort = true;
+  var m_showRollup = true;
+  var m_showIndividualEntry = false;
+  var m_showCheckpointEntry = false;
+  var m_showReportEntry = false;
+
+  function SetDefaultUserValues()
+  {
+    document.getElementById("userDurationFilterSecInput").value = m_secondFilter;
+    document.getElementById("userGroupPidSortSelected").checked = m_groupPidSort;
+    document.getElementById("userRollupSelected").checked = m_showRollup;
+    document.getElementById("userIndividualEntrySelected").checked = m_showIndividualEntry;
+    document.getElementById("userCheckpointEntrySelected").checked = m_showCheckpointEntry;
+    document.getElementById("userReportEntrySelected").checked = m_showReportEntry;
+  }
+
+  window.onload = function(){
+    SetDefaultUserValues();
+  }
+
+
+
+
+  // Header
+  var header = "Keyword|pid|Entry|SrcFile|Catagory|TimeStampMSec|Action|Task|Tags|Misc";
+                         
+  // Insert Raw Data Here
+  // Note: Do not change the following signature. 
+  var csvData =    [
+      "[OPTRACE]|130535|10|run|cpp|1777922717654|START|OCL_LINK|",
+      "[OPTRACE]|130535|11|setupBinaryForLink|cpp|1777922717654|START|Create Binary|",
+      "[OPTRACE]|130535|12||cpp|1777922717654|END|Create Binary|",
+      "[OPTRACE]|130535|13|setupBinaryForLink|cpp|1777922717654|START|Extract Kernels|",
+      "[OPTRACE]|130535|14||cpp|1777922717894|END|Extract Kernels|",
+      "[OPTRACE]|130535|15|launchStep_|cpp|1777922717921|START|Launch Step: system_link|",
+      "[OPTRACE]|130535|16||cpp|1777922720390|END|Launch Step: system_link|",
+      "[OPTRACE]|130535|17|launchStep_|cpp|1777922720391|START|Launch Step: cf2sw|",
+      "[OPTRACE]|130535|18||cpp|1777922721076|END|Launch Step: cf2sw|",
+      "[OPTRACE]|130535|196||cpp|1777922968299|END|Launch Step: vpl|",
+      "[OPTRACE]|130535|197|launchStep_|cpp|1777922968300|START|Launch Step: rtdgen|",
+      "[OPTRACE]|130535|198|launchCf2sw_|cpp|1777922968303|START|Launch cf2sw|",
+      "[OPTRACE]|130535|199||cpp|1777922968997|END|Launch cf2sw|",
+      "[OPTRACE]|130535|19|launchStep_|cpp|1777922721076|START|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|130535|1|main|cpp|1777922714670|START|v++|ROLLUP_0",
+      "[OPTRACE]|130535|200|writeSystemDiagram|cpp|1777922968997|START|writeSystemDiagram|",
+      "[OPTRACE]|130535|201||cpp|1777922968999|END|writeSystemDiagram|",
+      "[OPTRACE]|130535|202|writeAutomationSummary|cpp|1777922968999|START|writeAutomationSummary|",
+      "[OPTRACE]|130535|203||cpp|1777922969002|END|writeAutomationSummary|",
+      "[OPTRACE]|130535|204||cpp|1777922969003|END|Launch Step: rtdgen|",
+      "[OPTRACE]|130535|205|launchStep_|cpp|1777922969005|START|Launch Step: xclbinutil|",
+      "[OPTRACE]|130535|206||cpp|1777922969084|END|Launch Step: xclbinutil|",
+      "[OPTRACE]|130535|207|launchStep_|cpp|1777922969085|START|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|130535|208||cpp|1777922969192|END|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|130535|209||cpp|1777922969193|END|OCL_LINK|",
+      "[OPTRACE]|130535|20||cpp|1777922721115|END|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|130535|210||cpp|1777922969195|END|v++|",
+      "[OPTRACE]|130535|21|launchStep_|cpp|1777922721116|START|Launch Step: vpl|",
+      "[OPTRACE]|130535|2|run|cpp|1777922714670|START|Validate Kernels|",
+      "[OPTRACE]|130535|3||cpp|1777922714797|END|Validate Kernels|",
+      "[OPTRACE]|130535|4|prepareProject|cpp|1777922714808|START|Create Solution|",
+      "[OPTRACE]|130535|5||cpp|1777922717478|END|Create Solution|",
+      "[OPTRACE]|130535|6|prepareProject|cpp|1777922717478|START|Add Device|",
+      "[OPTRACE]|130535|7|addDevice|cpp|1777922717478|START|Find & Load Device|",
+      "[OPTRACE]|130535|8||cpp|1777922717487|END|Find & Load Device|",
+      "[OPTRACE]|130535|9||cpp|1777922717646|END|Add Device|",
+      "[OPTRACE]|131420|192|runPlatformLinker|cpp|1777922968261|START|Generate Resource Availability Report|",
+      "[OPTRACE]|131420|193||cpp|1777922968261|END|Generate Resource Availability Report|",
+      "[OPTRACE]|131420|194||cpp|1777922968261|END|runPlatformLinker|",
+      "[OPTRACE]|131420|195||cpp|1777922968280|END|vpl|",
+      "[OPTRACE]|131420|22|main|cpp|1777922721841|START|vpl|",
+      "[OPTRACE]|131420|23|runPlatformLinker|cpp|1777922721855|START|runPlatformLinker|",
+      "[OPTRACE]|131420|24|setupBinaryForLink|cpp|1777922721855|START|Create Solution|",
+      "[OPTRACE]|131420|25||cpp|1777922721859|END|Create Solution|",
+      "[OPTRACE]|131420|26|setupBinaryForLink|cpp|1777922721860|START|Add platform|",
+      "[OPTRACE]|131420|27||cpp|1777922722032|END|Add platform|",
+      "[OPTRACE]|131420|28|setupBinaryForLink|cpp|1777922722032|START|Create Binary|",
+      "[OPTRACE]|131420|29||cpp|1777922722032|END|Create Binary|",
+      "[OPTRACE]|131420|30|setupBinaryForLink|cpp|1777922722032|START|Create Kernels|",
+      "[OPTRACE]|131420|31||cpp|1777922722033|END|Create Kernels|",
+      "[OPTRACE]|131420|32|runPlatformLinker|cpp|1777922722040|START|Process Kernels|",
+      "[OPTRACE]|131420|33|runPlatformLinker|cpp|1777922722040|START|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|131420|34||cpp|1777922722040|END|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|131420|35|runPlatformLinker|cpp|1777922722040|START|Process Kernel Profiles|",
+      "[OPTRACE]|131420|36||cpp|1777922722040|END|Process Kernel Profiles|",
+      "[OPTRACE]|131420|37|runPlatformLinker|cpp|1777922722040|START|Process Trace Memory|",
+      "[OPTRACE]|131420|38||cpp|1777922722040|END|Process Trace Memory|",
+      "[OPTRACE]|131420|39|runPlatformLinker|cpp|1777922722040|START|Process AIE Trace|",
+      "[OPTRACE]|131420|40||cpp|1777922722040|END|Process AIE Trace|",
+      "[OPTRACE]|131420|41||cpp|1777922722041|END|Process Kernels|",
+      "[OPTRACE]|131420|42|runPlatformLinker|cpp|1777922722041|START|Process Kernel Debug|",
+      "[OPTRACE]|131420|43||cpp|1777922722041|END|Process Kernel Debug|",
+      "[OPTRACE]|131420|44|runPlatformLinker|cpp|1777922722041|START|Set Kernel Debug|",
+      "[OPTRACE]|131420|45||cpp|1777922722041|END|Set Kernel Debug|",
+      "[OPTRACE]|131420|46|runPlatformLinker|cpp|1777922722041|START|Set Miscellaneous|",
+      "[OPTRACE]|131420|47||cpp|1777922722041|END|Set Miscellaneous|",
+      "[OPTRACE]|131420|48|run|cpp|1777922722041|START|Extract Platform|",
+      "[OPTRACE]|131420|49||cpp|1777922722319|END|Extract Platform|",
+      "[OPTRACE]|131612|191|ipirun.tcl|vpl|1777922968150|END|Implementation|",
+      "[OPTRACE]|131612|50|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/vpl.tcl|vivado_impl|1777922725271|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|131612|51|ipirun.tcl|vpl|1777922725292|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|131612|52|ipirun.tcl|vpl|1777922725292|END|ipirun|",
+      "[OPTRACE]|131612|53|ipirun.tcl|vpl|1777922725303|START|Create project|",
+      "[OPTRACE]|131612|54|ipirun.tcl|vpl|1777922728616|END|Create project|",
+      "[OPTRACE]|131612|55|ipirun.tcl|vpl|1777922728619|START|Create IP caching environment|",
+      "[OPTRACE]|131612|56|ipirun.tcl|vpl|1777922728671|END|Create IP caching environment|",
+      "[OPTRACE]|131612|57|ipirun.tcl|vpl|1777922728672|START|Import/add dynamic BD|",
+      "[OPTRACE]|131612|58|ipirun.tcl|vpl|1777922728674|END|Import/add dynamic BD|",
+      "[OPTRACE]|131612|59|ipirun.tcl|vpl|1777922728674|START|Open BD and insert kernels|",
+      "[OPTRACE]|131612|60|ipirun.tcl|vpl|1777922731912|END|Open BD and insert kernels|",
+      "[OPTRACE]|131612|61|ipirun.tcl|vpl|1777922731915|START|Add debug/profiling support|",
+      "[OPTRACE]|131612|62|ipirun.tcl|vpl|1777922731934|END|Add debug/profiling support|",
+      "[OPTRACE]|131612|63|ipirun.tcl|vpl|1777922731934|START|IPI address assignments|",
+      "[OPTRACE]|131612|64|ipirun.tcl|vpl|1777922731950|END|IPI address assignments|",
+      "[OPTRACE]|131612|65|ipirun.tcl|vpl|1777922731953|START|Create address map and debug IP profile files|",
+      "[OPTRACE]|131612|66|ipirun.tcl|vpl|1777922731958|END|Create address map and debug IP profile files|",
+      "[OPTRACE]|131612|67|ipirun.tcl|vpl|1777922731958|START|Collect BD interface connectivity and update compute units|",
+      "[OPTRACE]|131612|68|ipirun.tcl|vpl|1777922731964|END|Collect BD interface connectivity and update compute units|",
+      "[OPTRACE]|131612|69|ipirun.tcl|vpl|1777922732006|START|Generate output products|",
+      "[OPTRACE]|131612|70|ipirun.tcl|vpl|1777922759431|END|Generate output products|",
+      "[OPTRACE]|131612|71|ipirun.tcl|vpl|1777922759431|START|Collect clock information and write automation summary report|",
+      "[OPTRACE]|131612|72|ipirun.tcl|vpl|1777922759434|END|Collect clock information and write automation summary report|",
+      "[OPTRACE]|131612|73|ipirun.tcl|vpl|1777922759438|START|Source report_commands_tcl|",
+      "[OPTRACE]|131612|74|ipirun.tcl|vpl|1777922759478|END|Source report_commands_tcl|",
+      "[OPTRACE]|131612|75|ipirun.tcl|vpl|1777922759478|START|Source synth_props_tcl|",
+      "[OPTRACE]|131612|76|ipirun.tcl|vpl|1777922763206|END|Source synth_props_tcl|",
+      "[OPTRACE]|131612|77|ipirun.tcl|vpl|1777922763217|START|Source impl_props_tcl|",
+      "[OPTRACE]|131612|78|ipirun.tcl|vpl|1777922763245|END|Source impl_props_tcl|",
+      "[OPTRACE]|131612|79|ipirun.tcl|vpl|1777922763247|START|Synthesis|ROLLUP_1,SYNTH",
+      "[OPTRACE]|131612|92|ipirun.tcl|vpl|1777922798377|END|Synthesis|",
+      "[OPTRACE]|132068|80|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922766780|START|synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|132068|81|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922766781|START|Creating in-memory project|",
+      "[OPTRACE]|132068|82|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922770585|END|Creating in-memory project|",
+      "[OPTRACE]|132068|83|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922770585|START|Adding files|",
+      "[OPTRACE]|132068|84|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922772880|END|Adding files|",
+      "[OPTRACE]|132068|85|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922772884|START|synth_design|",
+      "[OPTRACE]|132068|86|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922797758|END|synth_design|",
+      "[OPTRACE]|132068|87|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922797759|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|132068|88|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922797955|END|write_checkpoint|",
+      "[OPTRACE]|132068|89|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922797955|START|synth reports|REPORT",
+      "[OPTRACE]|132068|90|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922797955|END|synth reports|",
+      "[OPTRACE]|132068|91|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1777922797956|END|synth_1|",
+      "[OPTRACE]|132534|100|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922803760|END|create in-memory project|",
+      "[OPTRACE]|132534|101|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922803760|START|set parameters|",
+      "[OPTRACE]|132534|102|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922803887|END|set parameters|",
+      "[OPTRACE]|132534|103|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922803888|START|add files|",
+      "[OPTRACE]|132534|104|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922806648|START|read constraints: implementation|",
+      "[OPTRACE]|132534|105|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922806649|END|read constraints: implementation|",
+      "[OPTRACE]|132534|106|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922806649|START|read constraints: implementation_pre|",
+      "[OPTRACE]|132534|107|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922806649|END|read constraints: implementation_pre|",
+      "[OPTRACE]|132534|108|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922806650|END|add files|",
+      "[OPTRACE]|132534|109|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922806650|START|link_design|",
+      "[OPTRACE]|132534|110|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825332|END|link_design|",
+      "[OPTRACE]|132534|111|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825332|START|gray box cells|",
+      "[OPTRACE]|132534|112|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825333|END|gray box cells|",
+      "[OPTRACE]|132534|113|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825333|START|init_design_reports|REPORT",
+      "[OPTRACE]|132534|114|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825333|END|init_design_reports|",
+      "[OPTRACE]|132534|115|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825333|START|Design Initialization: post hook|",
+      "[OPTRACE]|132534|116|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825345|END|Design Initialization: post hook|",
+      "[OPTRACE]|132534|117|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825345|START|init_design_write_hwdef|",
+      "[OPTRACE]|132534|118|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825345|END|init_design_write_hwdef|",
+      "[OPTRACE]|132534|119|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825346|END|Phase: Init Design|",
+      "[OPTRACE]|132534|120|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825346|START|Phase: Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|132534|121|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922825346|START|Opt Design: pre hook|",
+      "[OPTRACE]|132534|122|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922826107|END|Opt Design: pre hook|",
+      "[OPTRACE]|132534|123|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922826107|START|read constraints: opt_design|",
+      "[OPTRACE]|132534|124|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922826107|END|read constraints: opt_design|",
+      "[OPTRACE]|132534|125|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922826107|START|opt_design|",
+      "[OPTRACE]|132534|126|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837604|END|opt_design|",
+      "[OPTRACE]|132534|127|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837604|START|read constraints: opt_design_post|",
+      "[OPTRACE]|132534|128|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837604|END|read constraints: opt_design_post|",
+      "[OPTRACE]|132534|129|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837604|START|opt_design reports|REPORT",
+      "[OPTRACE]|132534|130|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837604|END|opt_design reports|",
+      "[OPTRACE]|132534|131|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837605|START|Opt Design: post hook|",
+      "[OPTRACE]|132534|132|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837605|END|Opt Design: post hook|",
+      "[OPTRACE]|132534|133|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837606|END|Phase: Opt Design|",
+      "[OPTRACE]|132534|134|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837606|START|Phase: Place Design|ROLLUP_AUTO",
+      "[OPTRACE]|132534|135|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837607|START|Place Design: pre hook|",
+      "[OPTRACE]|132534|136|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837675|END|Place Design: pre hook|",
+      "[OPTRACE]|132534|137|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837676|START|read constraints: place_design|",
+      "[OPTRACE]|132534|138|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837676|END|read constraints: place_design|",
+      "[OPTRACE]|132534|139|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922837676|START|place_design|",
+      "[OPTRACE]|132534|140|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922904030|END|place_design|",
+      "[OPTRACE]|132534|141|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922904030|START|read constraints: place_design_post|",
+      "[OPTRACE]|132534|142|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922904030|END|read constraints: place_design_post|",
+      "[OPTRACE]|132534|143|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922904030|START|place_design reports|REPORT",
+      "[OPTRACE]|132534|144|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922904030|END|place_design reports|",
+      "[OPTRACE]|132534|145|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922904030|START|Place Design: post hook|",
+      "[OPTRACE]|132534|146|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922905779|END|Place Design: post hook|",
+      "[OPTRACE]|132534|147|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922905779|END|Phase: Place Design|",
+      "[OPTRACE]|132534|148|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922905780|START|Phase: Physical Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|132534|149|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922905780|START|read constraints: phys_opt_design|",
+      "[OPTRACE]|132534|150|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922905780|END|read constraints: phys_opt_design|",
+      "[OPTRACE]|132534|151|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922905780|START|phys_opt_design|",
+      "[OPTRACE]|132534|152|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908255|END|phys_opt_design|",
+      "[OPTRACE]|132534|153|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908255|START|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|132534|154|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908255|END|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|132534|155|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908255|START|phys_opt_design report|REPORT",
+      "[OPTRACE]|132534|156|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908256|END|phys_opt_design report|",
+      "[OPTRACE]|132534|157|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908256|END|Phase: Physical Opt Design|",
+      "[OPTRACE]|132534|158|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908256|START|Phase: Route Design|ROLLUP_AUTO",
+      "[OPTRACE]|132534|159|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908257|START|read constraints: route_design|",
+      "[OPTRACE]|132534|160|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908257|END|read constraints: route_design|",
+      "[OPTRACE]|132534|161|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922908257|START|route_design|",
+      "[OPTRACE]|132534|162|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922934359|END|route_design|",
+      "[OPTRACE]|132534|163|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922934359|START|read constraints: route_design_post|",
+      "[OPTRACE]|132534|164|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922934359|END|read constraints: route_design_post|",
+      "[OPTRACE]|132534|165|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922934360|START|route_design reports|REPORT",
+      "[OPTRACE]|132534|166|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922936667|END|route_design reports|",
+      "[OPTRACE]|132534|167|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922936667|START|Route Design: post hook|",
+      "[OPTRACE]|132534|168|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922939944|END|Route Design: post hook|",
+      "[OPTRACE]|132534|169|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922939944|START|Route Design: write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|132534|170|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942259|END|Route Design: write_checkpoint|",
+      "[OPTRACE]|132534|171|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942259|START|route_design misc|",
+      "[OPTRACE]|132534|172|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942260|END|route_design misc|",
+      "[OPTRACE]|132534|173|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942260|END|Phase: Route Design|",
+      "[OPTRACE]|132534|174|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942260|START|Phase: Write Bitstream|ROLLUP_AUTO",
+      "[OPTRACE]|132534|175|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942260|START|write_bitstream setup|",
+      "[OPTRACE]|132534|176|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942261|START|Write Bitstream: pre hook|",
+      "[OPTRACE]|132534|177|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942870|END|Write Bitstream: pre hook|",
+      "[OPTRACE]|132534|178|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942870|START|read constraints: write_bitstream|",
+      "[OPTRACE]|132534|179|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942870|END|read constraints: write_bitstream|",
+      "[OPTRACE]|132534|180|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942958|END|write_bitstream setup|",
+      "[OPTRACE]|132534|181|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922942958|START|write_bitstream|",
+      "[OPTRACE]|132534|182|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967567|END|write_bitstream|",
+      "[OPTRACE]|132534|183|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967567|START|write_bitstream misc|",
+      "[OPTRACE]|132534|184|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967567|START|read constraints: write_bitstream_post|",
+      "[OPTRACE]|132534|185|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967567|END|read constraints: write_bitstream_post|",
+      "[OPTRACE]|132534|186|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967572|START|Write Bitstream: post hook|",
+      "[OPTRACE]|132534|187|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967574|END|Write Bitstream: post hook|",
+      "[OPTRACE]|132534|188|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967574|END|write_bitstream misc|",
+      "[OPTRACE]|132534|189|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967574|END|Phase: Write Bitstream|",
+      "[OPTRACE]|132534|190|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922967574|END|impl_1|",
+      "[OPTRACE]|132534|93|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922802639|START|impl_1|ROLLUP_1",
+      "[OPTRACE]|132534|94|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922802639|START|Phase: Init Design|ROLLUP_AUTO",
+      "[OPTRACE]|132534|95|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922802640|START|Design Initialization: pre hook|",
+      "[OPTRACE]|132534|96|ipirun.tcl|vpl|1777922802667|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|132534|97|ipirun.tcl|vpl|1777922802667|END|ipirun|",
+      "[OPTRACE]|132534|98|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922802668|END|Design Initialization: pre hook|",
+      "[OPTRACE]|132534|99|/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1777922802669|START|create in-memory project|"
+      ];
+
+  var legendData = [
+  { "title": "Report Generation",
+    "color": "#b9783f"
+  }, {
+    "title": "Write Checkpoint",
+    "color": "#cd82ad"
+  },
+  {
+    "title": "Incomplete Data",
+    "color": "#cc4748"
+  } ];
+
+  // -- Convert Raw data into something we can use ---------------------------
+  console.log("Convert log data (%s entries) to Javascript 'JSON' objects...", csvData.length);
+  var jsonData = csvArrayToJSON(header, csvData, "|");
+
+  // -- Clean up the JSON objects --------------------------------------------
+  for (var i = 0; i < jsonData.length; i++) {
+    jsonData[i].Action = jsonData[i].Action.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.trim();
+    jsonData[i].TimeStampMSec = parseInt(jsonData[i].TimeStampMSec, 10);
+    jsonData[i].pid = parseInt(jsonData[i].pid, 10);
+  }
+
+  // -- Sort JSON array ------------------------------------------------------
+  console.log("Sorting JSON objects (%s objects) according to timestamps...", jsonData.length);
+  jsonData.sort(compareByTimeStamp);
+
+  // Record the PID grouping order
+  var pidOrder = new Map();
+  for (var i = 0; i < jsonData.length; i++) {
+    if (pidOrder.has(jsonData[i].pid) == false) {
+      pidOrder.set(jsonData[i].pid, i);    // Simple ordering (lower is first)
+    }
+  }
+
+  // -- Create secondary data array for the chart data array -----------------
+  console.log("Preparing graph data...");
+
+  // Task limits
+  var m_startTS = 0;      // Earliest Timestamp
+  var m_endTS = 0;        // Latest Timestamp
+
+  if (jsonData.length > 0) {
+    m_startTS = jsonData[0].TimeStampMSec;
+    m_endTS = jsonData[jsonData.length - 1].TimeStampMSec;
+  }
+
+
+  var chartData = [ ];   // Empty JSON array
+
+
+  populateChartData();
+  tableCreate( chartData );
+
+  filterChartEntries();
+
+  // -- Search for "holes"
+  // -- Sort by common PID
+  // -- Create groupings by process
+
+  console.log("done");
+
+  var chart = AmCharts.makeChart("chartdiv", {
+    "type": "gantt",
+    "theme": "light",
+    "titles": [
+    { "text": "OPTrace", "size": 15}],
+    "marginRight": 70,
+    "period": "fff",                                     // X-Axis
+    "balloonDateFormat": "JJ:NN:SS",
+    "columnWidth": 0.5,                                 // Bar thickness
+    "valueAxis": {
+      "type": "numeric",
+      "title": "Time [HH:MM:SS]",
+      "duration": "ss",
+      "durationUnits": { DD: 'd. ', hh: ':', mm: ':', ss: '' },
+    },
+    "brightnessStep": 10,
+    "graph": {
+      "fillAlphas": 1,
+      "labelFunction": barLabelCallBack,
+      "labelText": " ",
+      "labelPosition": "right",
+      "balloonFunction": ballonLabelCallBack,
+      "balloonText": "<p align='left'> Task: [[task]]<br/>Start:[[start]]<br/>End:[[end]]<br/>Duration:[[duration]]</p>",
+      "bulletField": "bullet",
+      "bulletSize": 8
+    },
+    "rotate": true,
+    "categoryField": "category",
+    "segmentsField": "segments",
+    "colorField": "color",
+    "startDate": "2015-01-01 00:00:00",
+    "startField": "start",
+    "endField": "end",
+    "durationField": "duration",
+    "dataProvider": chartData,
+    "valueScrollbar": {
+      "autoGridCount": true
+    },
+    "chartScrollbar": {
+      "enable": true
+    },
+    "chartCursor": {
+      "cursorColor": "#55bb76",
+      "valueBalloonsEnabled": false,
+      "cursorAlpha": 0.1,
+      "valueLineAlpha": 0.5,
+      "valueLineBalloonEnabled": true,
+      "valueLineEnabled": true,
+      "zoomable": true,
+      "valueZoomable": true,
+      "fullWidth": true
+    },
+    "legend": {
+      "data": legendData,
+    },
+    "export": {
+      "enabled": true
+    }
+  });
+
+  // =========================================================================
+  // Call back methods
+  // =========================================================================
+function ballonLabelCallBack( _graphDataItem )
+{
+  var start = _graphDataItem.values.open;
+  var end = _graphDataItem.values.value;
+  var duration = end - start;
+
+  var result = "<p align='left'>Task: " + _graphDataItem.category + "<br/>Start: " + secondsToHHMMSS(start) + "<br/>End: " + secondsToHHMMSS( end ) + "<br/>Duration: " + secondsToHHMMSS( duration ) + "</p>";
+  return result;
+}
+
+
+function barLabelCallBack( _graphDataItem )
+{
+   var duration = _graphDataItem.values.value - _graphDataItem.values.open;
+
+   return secondsToHHMMSS( duration);
+}
+
+
+function userInputFormCallback()
+{
+  // Second filter
+  m_secondFilter = document.getElementById("userDurationFilterSecInput").value;
+  console.log("Setting second filter to: " + m_secondFilter + " seconds");
+
+  // Group PID Sort
+  m_groupPidSort = document.getElementById("userGroupPidSortSelected").checked;
+  console.log("Group PID filter is set to: " + m_groupPidSort);
+
+  // Rollup filter
+  m_showRollup = document.getElementById("userRollupSelected").checked;
+  console.log("Rollup filter is set to: " + m_showRollup);
+
+  // Individual filter
+  m_showIndividualEntry = document.getElementById("userIndividualEntrySelected").checked;
+  console.log("Individual filter is set to: " + m_showIndividualEntry);
+
+  // Checkpoint Report Entries filter
+  m_showCheckpointEntry = document.getElementById("userCheckpointEntrySelected").checked;
+  console.log("Checkpoint Entry filter is set to: " + m_showCheckpointEntry);
+
+  // Checkpoint Report Entries filter
+  m_showReportEntry = document.getElementById("userReportEntrySelected").checked;
+  console.log("Report Entry filter is set to: " + m_showReportEntry);
+
+  populateChartData();
+  filterChartEntries()
+  chart.dataProvider = chartData;
+  chart.validateData();
+}
+
+  // =========================================================================
+  // Utilities
+  // =========================================================================
+
+
+function populateChartData()
+{
+  chartData = [ ];
+  if (m_groupPidSort == false) {
+    jsonData.sort(compareByTimeStamp);
+  } else {
+    jsonData.sort(compareByGroupTimeStamp);
+  }
+
+  for (var i = 0; i < jsonData.length; i++) {
+    var timestamp = parseInt(jsonData[0].TimeStampMSec, 10);
+
+    if (m_startTS > timestamp) m_startTS = timestamp;
+    if (m_endTS < timestamp) m_endTS = timestamp;
+
+    for (var i = 0; i < jsonData.length; i++) {
+      switch (jsonData[i].Action) {
+      case "START":
+        var categoryEntry = { };
+        categoryEntry["category"] = jsonData[i].Task;
+        categoryEntry["pid"] = jsonData[i].pid;
+
+        var segmentEntry = { };
+        // Normalize entry and convert to seconds
+        segmentEntry["start"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+        segmentEntry["color"] = getTaskBarColor(jsonData[i].Tags)
+        segmentEntry["task"] = jsonData[i].Task;
+        segmentEntry["tags"] = jsonData[i].Tags;
+        segmentEntry["duration"] = -1;
+
+        categoryEntry["segments"] = [ ];
+        categoryEntry["segments"].push(segmentEntry);
+        chartData.push(categoryEntry);
+        break;
+
+      case "END":
+        var catagory = findCatagory(jsonData[i].pid, jsonData[i].Task, chartData);
+        if (catagory != null) {
+          var segmentsEntry = catagory.segments[0];
+          segmentsEntry["end"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+          segmentsEntry["duration"] = segmentsEntry.end - segmentsEntry.start;
+        } else {
+          console.log("Null entry found: pid:%s, Task: %s", jsonData[i].pid, jsonData[i].Task);
+        }
+
+        break;
+
+      default:
+        console.log("Default");
+        break;
+      }
+    }
+  }
+}
+
+function filterChartEntries()
+{
+  for(var i = chartData.length - 1; i >= 0; i--) {
+    var segment = chartData[i].segments[0];
+
+    // -- Remove entries less than 1 seconds
+    if ( segment["duration"] == -1) {
+      segment["bullet"] = "xError";
+      segment["color"] = "#cc4748";
+      segment["duration"] = ((m_endTS - m_startTS) / 1000) - segment["start"];
+    } else if (segment["duration"] <  m_secondFilter) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  
+
+    // Filter by tags
+    var bHasRollup = false;
+    var bHasCheckpoint = false;
+    var bHasReport = false;
+
+    var tags = segment["tags"];
+    console.log("Tag: " + tags);
+    if (tags.search(/ROLLUP_/i) != -1) { bHasRollup = true; }
+    if (tags.search(/CHECKPOINT/i) != -1) { bHasCheckpoint = true; }
+    if (tags.search(/REPORT/i) != -1) { bHasReport = true; }
+
+    var bRemoveEntry = false;
+
+    // Remove rollups
+    if ((m_showRollup == false) && (bHasRollup == true)) {
+      bRemoveEntry = true;
+    }
+    
+    // Remove checkpoints    
+    if ((m_showCheckpointEntry == false) && (bHasCheckpoint == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove reports
+    if ((m_showReportEntry == false) && (bHasReport == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove individual entry
+    if (((m_showIndividualEntry == false) && 
+         ((bHasRollup == false) &&
+          (bHasCheckpoint == false) &&
+          (bHasReport == false)))) {
+      bRemoveEntry = true;
+    }
+
+    if (bRemoveEntry == true) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  }
+
+  console.log("ChartData.length: " + chartData.length);
+}
+
+
+function getTaskBarColor( _tags )
+{
+  if (_tags == null)
+    return "#8dc49f";
+
+  if (_tags.search(/ROLLUP_AUTO/i) != -1){ return "#0099ff"; }
+  if (_tags.search(/ROLLUP_0/i) != -1)   { return "#006699"; }
+  if (_tags.search(/ROLLUP_1/i) != -1)   { return "#009933"; }
+  if (_tags.search(/ROLLUP_2/i) != -1)   { return "#66ccff"; }
+  if (_tags.search(/REPORT/i) != -1)     { return "#b9783f"; }
+  if (_tags.search(/CHECKPOINT/i) != -1) { return "#cd82ad"; }
+
+  return "#8dc49f"
+}
+
+
+function tableCreate( _chartData ){
+    var myTableDiv = document.getElementById("myDynamicTable");
+
+
+    for ( var i = 0; i < _chartData.length; i++) {
+      var tr = myTableDiv.insertRow();
+
+      var td_task = tr.insertCell();
+      td_task.appendChild(document.createTextNode( _chartData[i].category ));
+
+      var segmentEntry = _chartData[i].segments;
+      var td_start = tr.insertCell();
+      td_start.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].start) ));
+
+      var td_duration = tr.insertCell();
+      td_duration.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].duration) ));
+
+    }
+}
+
+function secondsToHHMMSS( _seconds )
+{
+  var hours = Math.floor(_seconds / 3600);
+  var minutes = Math.floor(_seconds % 3600 / 60);
+  var seconds = Math.floor(_seconds % 3600 % 60);
+
+  var result = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds; 
+
+  return result;
+}
+
+
+  function findCatagory(_pid, _category, _catagoryArray) {
+    for (var i = (_catagoryArray.length - 1); i >= 0; i--) {
+      if (_pid == _catagoryArray[i].pid) {
+        if (_catagoryArray[i].category == _category) {
+          return  _catagoryArray[i];
+        }
+      }
+    }
+    return null;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByTimeStamp(_a, _b) {
+    if (_a.TimeStampMSec < _b.TimeStampMSec) return -1;
+    if (_a.TimeStampMSec > _b.TimeStampMSec) return 1;
+
+    if (_a.pid == _b.pid) {
+      if ((_a.Action == "START") && (_b.Action == "END")) return -1;
+      if ((_a.Action == "END") && (_b.Action == "START")) return 1;
+
+      if(_a.Entry < _b.Entry) return -1;
+      if(_a.Entry > _b.Entry) return 1;
+    }
+
+    return 0;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByGroupTimeStamp(_a, _b) {
+    if (pidOrder.get(_a.pid) < pidOrder.get(_b.pid)) return -1;
+
+    if (pidOrder.get(_a.pid) > pidOrder.get(_b.pid)) return 1;
+
+    return compareByTimeStamp(_a, _b);
+  }
+
+
+  // Return array of string values, or NULL if CSV string not well formed.
+  function CSVtoArray(_text, _sep) {
+    // Regex expressions
+    var re_valid_default = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+    var re_value_default = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+    var re_special_default = /,\s*$/;
+
+    // Algorithm:
+    //   1) Convert regex expression to a string.
+    //   2) Remove leading regex escape character (e.g., '\')
+    //   3) Remove training regex escape character(s) (e.g., '\' or "\g")
+    //   4) Replace the comma (',') character witht he new delimiter character
+    //   5) Build the regex command
+
+    // Check delimiter, if special insert escapes
+    if (_sep == "|") _sep = "\\|";
+
+    var re_valid = new RegExp(re_valid_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+    var re_value = new RegExp(re_value_default.toString().substr(1).slice(0, -2).replace(/,/g, _sep), 'g');
+    var re_special = new RegExp(re_special_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+
+    // Validate the input string to determine if it is well formed
+    if (!re_valid.test(_text)) return null;
+
+    var a = [ ];                     // Initialize array to receive values.
+    _text.replace(re_value,           // "Walk" the string using replace with callback.
+                  function(m0, m1, m2, m3) {
+                      // Remove backslash from \' in single quoted values.
+                      if      (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+                      // Remove backslash from \" in double quoted values.
+                      else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+                      else if (m3 !== undefined) a.push(m3);
+                      return ''; // Return empty string.
+                  });
+
+    // Handle special case of empty last value.
+    if (re_special.test(_text)) a.push('');
+
+    return a;
+  };
+
+
+  // Converts the given CSV array & header into a JSON array
+  function csvArrayToJSON(_header, _csvArray, _sep) {
+    var result = [ ];
+    var headers = CSVtoArray(_header, _sep);
+
+    for (var i = 0; i < _csvArray.length; i++) {
+
+      var obj = { };
+      var currentline = CSVtoArray(_csvArray[i], _sep);
+
+      for (var j = 0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
+
+      result.push(obj);
+
+    }
+
+    return result; //JavaScript object
+  }
+
+
+</script>
+</body>
+
+</html>
+

@@ -6,8 +6,8 @@ echo "Installed Vivado and Vitis-version is $TOOL_VERSION."
 source /opt/Xilinx/2025.2/Vivado/settings64.sh
 source /opt/Xilinx/2025.2/Vitis/settings64.sh
 export PATH="$XILINX_VITIS/bin:$PATH"
-# Hotfix https://community.revenera.com/s/question/0D5PL00000NwuKu0AJ/issues-when-running-xilinx-tools-or-other-vendor-tools-in-docker-environment
-#export LD_PRELOAD=/lib/x86_64-linux-gnu/libudev.so.1 
+# Hotfix for libudev-crashes during synthesis https://community.revenera.com/s/question/0D5PL00000NwuKu0AJ/issues-when-running-xilinx-tools-or-other-vendor-tools-in-docker-environment
+export LD_PRELOAD=/lib/x86_64-linux-gnu/libudev.so.1 
 
 # Initiate Conda
 source /opt/miniconda3/etc/profile.d/conda.sh

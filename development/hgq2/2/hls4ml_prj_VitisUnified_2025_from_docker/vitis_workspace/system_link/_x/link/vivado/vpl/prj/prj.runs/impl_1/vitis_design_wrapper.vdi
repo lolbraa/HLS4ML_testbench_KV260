@@ -1,0 +1,853 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon May  4 18:49:22 2026
+# Process ID         : 16525
+# Current directory  : /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1
+# Command line       : vivado -log vitis_design_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source vitis_design_wrapper.tcl -notrace
+# Log file           : /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.vdi
+# Journal file       : /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vivado.jou
+# Running On         : e9c8bcc06360
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.952 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 65838 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 65838 MB
+# Available Virtual  : 38949 MB
+#-----------------------------------------------------------
+source vitis_design_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 45255
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/2025.2/Vitis/data/vitis/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+Command: link_design -top vitis_design_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0.dcp' for cell 'vitis_design_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0.dcp' for cell 'vitis_design_i/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/vitis_design_axi_smc_0.dcp' for cell 'vitis_design_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/vitis_design_myproject_axi_master_1_0.dcp' for cell 'vitis_design_i/myproject_axi_master_1'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_rst_ps8_0_99M_0/vitis_design_rst_ps8_0_99M_0.dcp' for cell 'vitis_design_i/rst_ps8_0_99M'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.dcp' for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_zynq_ultra_ps_e_0_0/vitis_design_zynq_ultra_ps_e_0_0.dcp' for cell 'vitis_design_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/m02_couplers/m02_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_auto_pc_0/vitis_design_axi_interconnect_0_imp_auto_pc_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.36 . Memory (MB): peak = 2670.426 ; gain = 0.000 ; free physical = 18829 ; free virtual = 35677
+INFO: [Netlist 29-17] Analyzing 1213 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0.xdc] for cell 'vitis_design_i/axi_dma_0/U0'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0.xdc] for cell 'vitis_design_i/axi_dma_0/U0'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0.xdc] for cell 'vitis_design_i/axi_intc_0/U0'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0.xdc] for cell 'vitis_design_i/axi_intc_0/U0'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/bd_0/ip/ip_1/bd_8c12_psr_aclk_0_board.xdc] for cell 'vitis_design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/bd_0/ip/ip_1/bd_8c12_psr_aclk_0_board.xdc] for cell 'vitis_design_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/smartconnect.xdc] for cell 'vitis_design_i/axi_smc/inst'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_smc_0/smartconnect.xdc] for cell 'vitis_design_i/axi_smc/inst'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_rst_ps8_0_99M_0/vitis_design_rst_ps8_0_99M_0_board.xdc] for cell 'vitis_design_i/rst_ps8_0_99M/U0'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_rst_ps8_0_99M_0/vitis_design_rst_ps8_0_99M_0_board.xdc] for cell 'vitis_design_i/rst_ps8_0_99M/U0'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_zynq_ultra_ps_e_0_0/vitis_design_zynq_ultra_ps_e_0_0.xdc] for cell 'vitis_design_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_zynq_ultra_ps_e_0_0/vitis_design_zynq_ultra_ps_e_0_0.xdc] for cell 'vitis_design_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/bd_0/ip/ip_1/bd_b0ea_psr_aclk_0_board.xdc] for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/bd_0/ip/ip_1/bd_b0ea_psr_aclk_0_board.xdc] for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/smartconnect.xdc] for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0/smartconnect.xdc] for cell 'vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0_clocks.xdc] for cell 'vitis_design_i/axi_dma_0/U0'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_dma_0_0/vitis_design_axi_dma_0_0_clocks.xdc] for cell 'vitis_design_i/axi_dma_0/U0'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0_clocks.xdc] for cell 'vitis_design_i/axi_intc_0/U0'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0_clocks.xdc] for cell 'vitis_design_i/axi_intc_0/U0'
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_clocks.xdc] for cell 'vitis_design_i/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_clocks.xdc] for cell 'vitis_design_i/axi_interconnect_0/m02_couplers/m02_regslice/inst'
+INFO: [Project 1-1714] 93 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3541.945 ; gain = 0.000 ; free physical = 18161 ; free virtual = 35010
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 167 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 11 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 9 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 137 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 8 instances
+
+24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3541.980 ; gain = 1914.969 ; free physical = 18157 ; free virtual = 35006
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl
+Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/output/_user_impl_clk.xdc]
+Finished Parsing XDC File [/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/output/_user_impl_clk.xdc]
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_pre.tcl
+Post-synthesis utilization DRC check...
+available resources:
+   luts      : -1
+   registers : -1
+   brams     : -1
+   dsps      : -1
+required resources:
+   luts      : 10841
+   registers : 7369
+   brams     : 5.5
+   dsps      : 11
+WARNING: There is no resource utilization data in hardware platform, utilization DRC is skipped
+INFO: System Diagram: Run step: synthed
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3541.980 ; gain = 0.000 ; free physical = 18125 ; free virtual = 34975
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1b60814dc
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.91 . Memory (MB): peak = 3541.980 ; gain = 0.000 ; free physical = 18124 ; free virtual = 34974
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1b60814dc
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3890.758 ; gain = 0.000 ; free physical = 17779 ; free virtual = 34630
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1b60814dc
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3890.758 ; gain = 0.000 ; free physical = 17781 ; free virtual = 34632
+Phase 1 Initialization | Checksum: 1b60814dc
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3890.758 ; gain = 0.000 ; free physical = 17781 ; free virtual = 34632
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1b60814dc
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3906.758 ; gain = 16.000 ; free physical = 17748 ; free virtual = 34599
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1b60814dc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.52 . Memory (MB): peak = 3906.758 ; gain = 16.000 ; free physical = 17763 ; free virtual = 34614
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1b60814dc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.56 . Memory (MB): peak = 3906.758 ; gain = 16.000 ; free physical = 17764 ; free virtual = 34615
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1b60814dc
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.56 . Memory (MB): peak = 3906.758 ; gain = 16.000 ; free physical = 17764 ; free virtual = 34615
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 8 inverters resulting in an inversion of 124 pins
+INFO: [Opt 31-138] Pushed 101 inverter(s) to 3060 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 2712dcdc5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3906.758 ; gain = 16.000 ; free physical = 17766 ; free virtual = 34617
+Retarget | Checksum: 2712dcdc5
+INFO: [Opt 31-389] Phase Retarget created 144 cells and removed 601 cells
+INFO: [Opt 31-1021] In phase Retarget, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+Phase 4 Constant propagation | Checksum: 1fa189d53
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3906.758 ; gain = 16.000 ; free physical = 17770 ; free virtual = 34621
+Constant propagation | Checksum: 1fa189d53
+INFO: [Opt 31-389] Phase Constant propagation created 859 cells and removed 3945 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3906.758 ; gain = 0.000 ; free physical = 17767 ; free virtual = 34618
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3906.758 ; gain = 0.000 ; free physical = 17769 ; free virtual = 34620
+Phase 5 Sweep | Checksum: 1b491a8f1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3906.758 ; gain = 16.000 ; free physical = 17771 ; free virtual = 34622
+Sweep | Checksum: 1b491a8f1
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 772 cells
+INFO: [Opt 31-1021] In phase Sweep, 106 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 1b491a8f1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3938.773 ; gain = 48.016 ; free physical = 17763 ; free virtual = 34614
+BUFG optimization | Checksum: 1b491a8f1
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1b491a8f1
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3938.773 ; gain = 48.016 ; free physical = 17764 ; free virtual = 34615
+Shift Register Optimization | Checksum: 1b491a8f1
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 22d085152
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3938.773 ; gain = 48.016 ; free physical = 17767 ; free virtual = 34617
+Post Processing Netlist | Checksum: 22d085152
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 12d72b987
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3938.773 ; gain = 48.016 ; free physical = 17770 ; free virtual = 34621
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3938.773 ; gain = 0.000 ; free physical = 17771 ; free virtual = 34621
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 12d72b987
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3938.773 ; gain = 48.016 ; free physical = 17771 ; free virtual = 34621
+Phase 9 Finalization | Checksum: 12d72b987
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3938.773 ; gain = 48.016 ; free physical = 17771 ; free virtual = 34621
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             144  |             601  |                                             82  |
+|  Constant propagation         |             859  |            3945  |                                             82  |
+|  Sweep                        |               0  |             772  |                                            106  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             82  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 12d72b987
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3938.773 ; gain = 48.016 ; free physical = 17771 ; free virtual = 34621
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 9 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
+Number of BRAM Ports augmented: 3 newly gated: 7 Total Ports: 18
+Ending PowerOpt Patch Enables Task | Checksum: 162397c4c
+
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.25 . Memory (MB): peak = 4106.824 ; gain = 0.000 ; free physical = 17711 ; free virtual = 34567
+Ending Power Optimization Task | Checksum: 162397c4c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 4106.824 ; gain = 168.051 ; free physical = 17711 ; free virtual = 34567
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 162397c4c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4106.824 ; gain = 0.000 ; free physical = 17710 ; free virtual = 34566
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4106.824 ; gain = 0.000 ; free physical = 17710 ; free virtual = 34566
+INFO: [Common 17-83] Releasing license: Implementation
+56 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 4106.824 ; gain = 564.844 ; free physical = 17710 ; free virtual = 34566
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl
+CRITICAL WARNING: [Vivado 12-4430] You are lowering the severity from an ERROR. This can potentially lead to board damage or other functionality issues on hardware. If this is not desired, please run 'reset_property SEVERITY [get_drc_checks HDPR-5]' to undo this change.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -hierarchical -filter VITIS_REGION!=\"\"'.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4169.906 ; gain = 0.000 ; free physical = 17707 ; free virtual = 34565
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 13430149c
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4169.906 ; gain = 0.000 ; free physical = 17707 ; free virtual = 34565
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4169.906 ; gain = 0.000 ; free physical = 17707 ; free virtual = 34565
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 123fc642b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 4449.340 ; gain = 279.434 ; free physical = 17232 ; free virtual = 34225
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 15d45d97d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 4481.355 ; gain = 311.449 ; free physical = 17233 ; free virtual = 34227
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 15d45d97d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 4481.355 ; gain = 311.449 ; free physical = 17233 ; free virtual = 34228
+Phase 1 Placer Initialization | Checksum: 15d45d97d
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 4481.355 ; gain = 311.449 ; free physical = 17233 ; free virtual = 34227
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 188d53dbc
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 4481.355 ; gain = 311.449 ; free physical = 17231 ; free virtual = 34227
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 188d53dbc
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 4481.355 ; gain = 311.449 ; free physical = 17230 ; free virtual = 34227
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 188d53dbc
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 4718.340 ; gain = 548.434 ; free physical = 16358 ; free virtual = 33782
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 20455ca03
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:22 . Memory (MB): peak = 4750.355 ; gain = 580.449 ; free physical = 16381 ; free virtual = 33805
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 20455ca03
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:22 . Memory (MB): peak = 4750.355 ; gain = 580.449 ; free physical = 16381 ; free virtual = 33805
+Phase 2.1.1 Partition Driven Placement | Checksum: 20455ca03
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 4750.355 ; gain = 580.449 ; free physical = 16381 ; free virtual = 33805
+Phase 2.1 Floorplanning | Checksum: 175271cb8
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 4750.355 ; gain = 580.449 ; free physical = 16381 ; free virtual = 33805
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 175271cb8
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 4750.355 ; gain = 580.449 ; free physical = 16381 ; free virtual = 33805
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 175271cb8
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 4750.355 ; gain = 580.449 ; free physical = 16382 ; free virtual = 33806
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 1b604b80e
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:37 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16336 ; free virtual = 33762
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1e7bafca0
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16340 ; free virtual = 33766
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 1878 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 684 nets or LUTs. Breaked 0 LUT, combined 684 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-670] No setup violation found.  Equivalent Driver Rewiring was not performed.
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4810.355 ; gain = 0.000 ; free physical = 16336 ; free virtual = 33764
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            684  |                   684  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            684  |                   684  |           0  |           4  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1f3db3b09
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:00:41 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16335 ; free virtual = 33763
+Phase 2.5 Global Place Phase2 | Checksum: 27375f9eb
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:43 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16331 ; free virtual = 33760
+Phase 2 Global Placement | Checksum: 27375f9eb
+
+Time (s): cpu = 00:01:34 ; elapsed = 00:00:43 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16333 ; free virtual = 33762
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2298a7198
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:47 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16329 ; free virtual = 33758
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 26bdab9f4
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:00:49 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16325 ; free virtual = 33754
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 207104253
+
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:51 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16330 ; free virtual = 33760
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 1f12fec35
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:54 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16329 ; free virtual = 33758
+Phase 3.3.2 Slice Area Swap | Checksum: 1f12fec35
+
+Time (s): cpu = 00:02:00 ; elapsed = 00:00:54 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16329 ; free virtual = 33759
+Phase 3.3 Small Shape DP | Checksum: 22a0844f6
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:00:56 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16327 ; free virtual = 33757
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1fa8230c0
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:56 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16324 ; free virtual = 33754
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 169d5ad70
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:57 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16326 ; free virtual = 33756
+Phase 3 Detail Placement | Checksum: 169d5ad70
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:00:57 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16324 ; free virtual = 33754
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 147d85039
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.107 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: e64a3ae3
+
+Time (s): cpu = 00:00:00.98 ; elapsed = 00:00:00.3 . Memory (MB): peak = 4810.355 ; gain = 0.000 ; free physical = 16319 ; free virtual = 33749
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 1afe0acc8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.48 . Memory (MB): peak = 4810.355 ; gain = 0.000 ; free physical = 16323 ; free virtual = 33752
+Phase 4.1.1.1 BUFG Insertion | Checksum: 147d85039
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:04 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16323 ; free virtual = 33752
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.107. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1a2d3c894
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:04 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16328 ; free virtual = 33758
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:04 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16328 ; free virtual = 33758
+Phase 4.1 Post Commit Optimization | Checksum: 1a2d3c894
+
+Time (s): cpu = 00:02:28 ; elapsed = 00:01:04 . Memory (MB): peak = 4810.355 ; gain = 640.449 ; free physical = 16324 ; free virtual = 33754
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16268 ; free virtual = 33698
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 10076863b
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:01:08 . Memory (MB): peak = 4833.340 ; gain = 663.434 ; free physical = 16266 ; free virtual = 33696
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                2x2|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 10076863b
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:01:08 . Memory (MB): peak = 4833.340 ; gain = 663.434 ; free physical = 16262 ; free virtual = 33692
+Phase 4.3 Placer Reporting | Checksum: 10076863b
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:08 . Memory (MB): peak = 4833.340 ; gain = 663.434 ; free physical = 16268 ; free virtual = 33698
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16268 ; free virtual = 33698
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:08 . Memory (MB): peak = 4833.340 ; gain = 663.434 ; free physical = 16268 ; free virtual = 33698
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 19fcaadb6
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:09 . Memory (MB): peak = 4833.340 ; gain = 663.434 ; free physical = 16270 ; free virtual = 33700
+Ending Placer Task | Checksum: 10f8ac166
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:01:09 . Memory (MB): peak = 4833.340 ; gain = 663.434 ; free physical = 16273 ; free virtual = 33703
+87 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:45 ; elapsed = 00:01:11 . Memory (MB): peak = 4833.340 ; gain = 726.516 ; free physical = 16272 ; free virtual = 33702
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl
+INFO: System Diagram: Run step: placed
+
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:02 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16255 ; free virtual = 33686
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 2.106 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+92 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 38c35f8e ConstDB: 0 ShapeSum: b30d1de5 RouteDB: 23ba43f3
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.35 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16259 ; free virtual = 33692
+Post Restoration Checksum: NetGraph: 4c7894b5 | NumContArr: f80e38d5 | Constraints: 7274cd7a | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 279a495a1
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16264 ; free virtual = 33699
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 279a495a1
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16264 ; free virtual = 33699
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 279a495a1
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16262 ; free virtual = 33697
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 29b1ec3f2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16261 ; free virtual = 33697
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2234112a3
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16263 ; free virtual = 33700
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.263  | TNS=0.000  | WHS=-0.094 | THS=-222.060|
+
+
+Phase 2.5 Soft Constraint Pins - Fast Budgeting
+Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 1e3c67ecd
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16257 ; free virtual = 33693
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 28489
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 24459
+  Number of Partially Routed Nets     = 4030
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 225be3299
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:08 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16258 ; free virtual = 33694
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 225be3299
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:08 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16258 ; free virtual = 33694
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 1d4acf348
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:10 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16259 ; free virtual = 33696
+Phase 4 Initial Routing | Checksum: 1fbc84433
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:10 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16261 ; free virtual = 33698
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 5112
+ Number of Nodes with overlaps = 355
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.920  | TNS=0.000  | WHS=-0.030 | THS=-0.461 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2034e495f
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:23 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16256 ; free virtual = 33693
+
+Phase 5.2 Additional Iteration for Hold
+Phase 5.2 Additional Iteration for Hold | Checksum: 16c02eb45
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:23 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16257 ; free virtual = 33694
+Phase 5 Rip-up And Reroute | Checksum: 16c02eb45
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:23 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16256 ; free virtual = 33694
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.920  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.920  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 6.1 Delay CleanUp | Checksum: 28616bfc0
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:24 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16253 ; free virtual = 33690
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 28616bfc0
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:24 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16256 ; free virtual = 33693
+Phase 6 Delay and Skew Optimization | Checksum: 28616bfc0
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:24 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16256 ; free virtual = 33693
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.920  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1bc8b1a00
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:26 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16261 ; free virtual = 33698
+Phase 7 Post Hold Fix | Checksum: 1bc8b1a00
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:26 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16260 ; free virtual = 33698
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.47991 %
+  Global Horizontal Routing Utilization  = 3.08908 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 1bc8b1a00
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:26 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16260 ; free virtual = 33697
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1bc8b1a00
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:26 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16259 ; free virtual = 33696
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1bc8b1a00
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:27 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16258 ; free virtual = 33695
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 1bc8b1a00
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:27 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16258 ; free virtual = 33696
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 1bc8b1a00
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:27 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16259 ; free virtual = 33696
+
+Phase 13 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.920  | TNS=0.000  | WHS=0.004  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 13 Post Router Timing | Checksum: 1bc8b1a00
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:27 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16259 ; free virtual = 33697
+Total Elapsed time in route_design: 27.26 secs
+
+Phase 14 Post-Route Event Processing
+Phase 14 Post-Route Event Processing | Checksum: 18bcbaaa1
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:27 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16259 ; free virtual = 33696
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 18bcbaaa1
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:28 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16259 ; free virtual = 33697
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+103 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:21 ; elapsed = 00:00:28 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16251 ; free virtual = 33688
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -file vitis_design_wrapper_timing_summary_routed.rpt -pb vitis_design_wrapper_timing_summary_routed.pb -rpx vitis_design_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_route_post.tcl
+INFO: System Diagram: Run step: routed
+
+WARNING: Unable to find metadata file: /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/debug_ip_layout.rtd
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.13 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16221 ; free virtual = 33670
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.98 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16204 ; free virtual = 33679
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16204 ; free virtual = 33679
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.95 ; elapsed = 00:00:00.4 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16199 ; free virtual = 33678
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16195 ; free virtual = 33678
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16192 ; free virtual = 33678
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16191 ; free virtual = 33677
+INFO: [Common 17-1381] The checkpoint '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper_routed.dcp' has been generated.
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl
+INFO: [OCL_UTIL] clock frequency scaling is disabled for this flow, perform the normal timing check instead
+INFO: [OCL_UTIL] get_timing_paths -quiet -slack_lesser_than 0
+INFO: [OCL_UTIL] report_pulse_width -all_violators
+INFO: [OCL_UTIL] No pulse width violation is detected.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/s01_nodes/s01_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/s01_nodes/s01_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/s01_nodes/s01_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <vitis_design_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <vitis_design_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <vitis_design_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force vitis_design_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./vitis_design_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+145 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 4833.340 ; gain = 0.000 ; free physical = 16208 ; free virtual = 33675
+source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl
+INFO: [Common 17-206] Exiting Vivado at Mon May  4 18:52:19 2026...

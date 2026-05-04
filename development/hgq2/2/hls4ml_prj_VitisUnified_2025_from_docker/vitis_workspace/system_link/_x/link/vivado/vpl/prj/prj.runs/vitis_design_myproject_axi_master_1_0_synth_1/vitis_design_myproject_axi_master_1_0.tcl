@@ -65,6 +65,7 @@ set_param bd.open.in_stealth_mode 1
 set_param project.gatelevelSubdesign 1
 set_param bd.enable_dpa 1
 set_param bd.ForceAppCoreUpgrade 1
+set_param general.maxThreads 1
 set_param project.loadTopLevelOOCConstrs 1
 set_param general.usePosixSpawnForFork 1
 set_param project.vivado.isBlockSynthRun true
@@ -110,14 +111,14 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cacheID [config_ip_cache -export -no_bom  -dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1 -new_name vitis_design_myproject_axi_master_1_0 -ip [get_ips vitis_design_myproject_axi_master_1_0]]
+set cacheID [config_ip_cache -export -no_bom  -synth_opts { -directive sdx_optimization_effort_high }  -dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1 -new_name vitis_design_myproject_axi_master_1_0 -ip [get_ips vitis_design_myproject_axi_master_1_0]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cacheID == "" } {
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top vitis_design_myproject_axi_master_1_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+synth_design -top vitis_design_myproject_axi_master_1_0 -part xck26-sfvc784-2LV-c -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
 OPTRACE "synth_design" END { }
 OPTRACE "Write IP Cache" START { }
 
@@ -145,7 +146,7 @@ catch {
  set TIME_taken [expr [clock seconds] - $TIME_start]
 
  if { [get_msg_config -count -severity {CRITICAL WARNING}] == 0 } {
-  config_ip_cache -add -dcp vitis_design_myproject_axi_master_1_0.dcp -move_files $ipCachedFiles   -synth_runtime $TIME_taken  -ip [get_ips vitis_design_myproject_axi_master_1_0]
+  config_ip_cache -add -dcp vitis_design_myproject_axi_master_1_0.dcp -move_files $ipCachedFiles  -synth_opts { -directive sdx_optimization_effort_high }   -synth_runtime $TIME_taken  -ip [get_ips vitis_design_myproject_axi_master_1_0]
  }
 OPTRACE "Write IP Cache" END { }
 }

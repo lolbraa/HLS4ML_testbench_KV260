@@ -1,0 +1,2 @@
+Compiling (bitstream) accelerator binary: myproject
+Log file: /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log

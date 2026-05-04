@@ -1,0 +1,157 @@
+<ENTRY>
+{
+ "thisFile": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/myproject/vitis_unified_project/vitis_unified_project.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon May  4 19:25:06 2026",
+ "timestampMillis": "1777922706812",
+ "buildStep": {
+  "cmdId": "f4340b86-1dbc-48fc-b19b-172b23dd7493",
+  "name": "vitis-run",
+  "logFile": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/myproject/vitis_unified_project/logs/vitis_unified_project.steps.log",
+  "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/hls_kernel_config.cfg --work_dir vitis_unified_project ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/hls_kernel_config.cfg",
+   "--work_dir",
+   "vitis_unified_project"
+  ],
+  "iniFiles": [],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/myproject"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 19:25:06 2026",
+ "timestampMillis": "1777922706812",
+ "status": {
+  "cmdId": "f4340b86-1dbc-48fc-b19b-172b23dd7493",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon May  4 19:25:08 2026",
+ "timestampMillis": "1777922708507",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_XO",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "myproject_axi_master",
+     "file": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/firmware/myproject_axi_master.cpp",
+     "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/firmware/myproject.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May  4 19:25:08 2026",
+ "timestampMillis": "1777922708508",
+ "buildStep": {
+  "cmdId": "7f6ad039-e17b-482a-b2b6-29f37fb79bf0",
+  "name": "",
+  "logFile": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/myproject/vitis_unified_project/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/vitis_workspace/myproject"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 19:25:08 2026",
+ "timestampMillis": "1777922708508",
+ "status": {
+  "cmdId": "7f6ad039-e17b-482a-b2b6-29f37fb79bf0",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 19:25:13 2026",
+ "timestampMillis": "1777922713835",
+ "status": {
+  "cmdId": "7f6ad039-e17b-482a-b2b6-29f37fb79bf0",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 19:25:13 2026",
+ "timestampMillis": "1777922713903",
+ "status": {
+  "cmdId": "f4340b86-1dbc-48fc-b19b-172b23dd7493",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 19:25:13 2026",
+ "timestampMillis": "1777922713903",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 19:25:13 2026",
+ "timestampMillis": "1777922713904",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

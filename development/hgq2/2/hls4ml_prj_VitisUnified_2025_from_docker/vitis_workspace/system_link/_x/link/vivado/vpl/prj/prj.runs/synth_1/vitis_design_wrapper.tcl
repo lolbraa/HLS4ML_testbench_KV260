@@ -65,6 +65,7 @@ set_param bd.open.in_stealth_mode 1
 set_param project.gatelevelSubdesign 1
 set_param bd.enable_dpa 1
 set_param bd.ForceAppCoreUpgrade 1
+set_param general.maxThreads 1
 set_param project.loadTopLevelOOCConstrs 1
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }

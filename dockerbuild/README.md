@@ -5,10 +5,15 @@ For an adaptable, independent and easy to get started development environment fo
 
 ## Getting started using the container
 
-
 Docker internal path for work is /work. Please mount development-folders from local machine as a subfolder to /work. Failing to mount folder to local filesystem may end in work being discarded/deleted.
 
 Conda Environments may be set up by mounting a directory with files with the filename-pattern environment-*.yml into /work/environments/ (see example above). The entrypoint is configured to install environments when initiating. You may install the environments in buildtime, however to keep the size small and allow more flexibility, we've chosen to default to install at runtime.
+
+### Import
+
+
+
+### Run
 
 The docker may be run by using the following docker-run command, or the provided docker compose with `dokcker compose up`
 

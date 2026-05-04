@@ -1,6 +1,6 @@
 Execute       source -notrace -encoding utf-8 /opt/Xilinx/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
 Execute         source -encoding utf-8 /opt/Xilinx/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls opened at Mon May 04 13:35:12 UTC 2026
+INFO-FLOW: Workspace /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls opened at Mon May 04 18:44:15 +0000 2026
 Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Execute       send_msg_by_id INFO @200-2174@%s%s component ../../hls_kernel_config.cfg 
@@ -50,7 +50,7 @@ DBG:HLSDevice: Trying to load device library: /opt/Xilinx/2025.2/Vitis/lib/lnx64
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/2025.2/Vivado/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
-Command           create_platform done; 0.13 sec.
+Command           create_platform done; 0.15 sec.
 Execute           source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
 Execute             source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
 Execute             source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
@@ -65,7 +65,7 @@ Execute             source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/
 Execute             source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
 Execute           ap_part_info -name xck26-sfvc784-2LV-c -data info 
 Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 0.17 sec.
+Command         set_part done; 0.2 sec.
 Execute         send_msg_by_id INFO @200-1465@%s 'clock=5' from ../../hls_kernel_config.cfg(4) 
 INFO: [HLS 200-1465] Applying config ini 'clock=5' from ../../hls_kernel_config.cfg(4)
 Execute         create_clock -period 5ns 
@@ -89,12 +89,12 @@ INFO: [XFORM 203-1161] The maximum of name length is set to 80.
 Execute         send_msg_by_id INFO @200-1465@%s 'syn.schedule.enable_dsp_full_reg=0' from ../../hls_kernel_config.cfg(22) 
 INFO: [HLS 200-1465] Applying config ini 'syn.schedule.enable_dsp_full_reg=0' from ../../hls_kernel_config.cfg(22)
 Execute         config_schedule -enable_dsp_full_reg=0 
-Command       apply_ini done; 0.21 sec.
+Command       apply_ini done; 0.24 sec.
 Execute       write_component -config /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/hls_kernel_config.cfg 
 Execute         send_msg_by_id INFO @200-2176@%s /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/vitis-comp.json 
 INFO: [HLS 200-2176] Writing Vitis IDE component file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/vitis-comp.json
-Command     open_solution done; 0.22 sec.
-Command   open_component done; 0.22 sec.
+Command     open_solution done; 0.25 sec.
+Command   open_component done; 0.26 sec.
 Execute   apply_ini /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline -iscmdline 
 Execute   ::AP::init_summary_file csynth-xo 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
@@ -108,7 +108,7 @@ Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info
 INFO-FLOW: run_clang myproject_axi_master.cpp.xilinx-performance-pragma-detector exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/xilinx-performance-pragma-detector /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp -- -fhls -std=c++0x -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/2025.2/Vitis/common/technology/autopilot -I /opt/Xilinx/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -target fpga64-xilinx-linux-gnu -I /usr/include/x86_64-linux-gnu --gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0 -hls-platform-db-name=/opt/Xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.cpp.xilinx-performance-pragma-detector.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.cpp.xilinx-performance-pragma-detector.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=1
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2.02 seconds. CPU system time: 0.43 seconds. Elapsed time: 2.37 seconds; current allocated memory: 259.172 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 2.23 seconds. CPU system time: 0.49 seconds. Elapsed time: 2.65 seconds; current allocated memory: 257.355 MB.
 Execute       send_msg_by_id INFO @200-2191@%s%s C-Synthesis clang-16 
 INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
 Execute       set_directive_top myproject_axi_master -name=myproject_axi_master 
@@ -120,7 +120,7 @@ INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang myproject.cpp.clang exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject.cpp -foptimization-record-file=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/all.directive.json -hls-directive-location -E -std=c++0x -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Xclang -no-opaque-pointers -Xclang -fmerge-all-constants -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=5 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/2025.2/Vitis/common/technology/autopilot -I /opt/Xilinx/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.cpp.clang.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.cpp.clang.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds 
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds 
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang clang exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang -foptimization-record-file=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/clang.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/clang.err.log
 WARNING: [HLS 207-7036] unexpected pragma argument 'softmax', expects function/operation (/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/nnet_utils/nnet_activation.h:402:36)
@@ -130,12 +130,12 @@ WARNING: [HLS 207-6996] 'Resource pragma' is deprecated, use 'bind_op/bind_stora
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga -directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/.systemc_flag -fix-errors /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.93 sec.
+Command       clang_tidy done; 0.96 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga -directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/all.directive.json -fix-errors /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.95 sec.
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.9 seconds 
+Command       clang_tidy done; 0.99 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1 seconds 
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp std=c++0x -target fpga 
@@ -143,7 +143,7 @@ INFO-FLOW: run_clang loop-label exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang
 Execute         source /opt/Xilinx/2025.2/Vitis/tps/tcl/tcllib2.0/yaml/yaml.tcl 
 Execute           source /opt/Xilinx/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/cmdline.tcl 
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=434
-Command       clang_tidy done; 1.89 sec.
+Command       clang_tidy done; 2.11 sec.
 INFO-FLOW: run_clang myproject.pp.0.cpp.xilinx-dataflow-lawyer exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/xilinx-dataflow-lawyer -export-fixes=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject.cpp:54:81)
 WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject.cpp:54:85)
@@ -209,24 +209,24 @@ INFO-FLOW: Running: GCC PP 39
 INFO-FLOW: Source preprocessing
 INFO-FLOW: run_clang myproject_axi_master.cpp.clang exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp -foptimization-record-file=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0 -fhls -fno-exceptions -insert-hls-directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/all.directive.json -hls-directive-location -E -std=c++0x -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Xclang -no-opaque-pointers -Xclang -fmerge-all-constants -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=5 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -fno-threadsafe-statics -fno-use-cxa-atexit -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I /opt/Xilinx/2025.2/Vitis/common/technology/autopilot -I /opt/Xilinx/2025.2/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -I /usr/include/x86_64-linux-gnu -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.cpp.clang.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.cpp.clang.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds 
+INFO-FLOW: Done: GCC PP 39 time: 0.1 seconds 
 INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang clang exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang -foptimization-record-file=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp -hls-platform-db-name=/opt/Xilinx/2025.2/Vitis/common/technology/xilinx/common/platform.db -hls-platform-name=zynquplus_medium -device-resource-info=BRAM_288.000000_DSP_1248.000000_FF_234240.000000_LUT_117120.000000_SLICE_14640.000000_URAM_64.000000 -device-name-info=xck26-sfvc784-2LV-c > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/clang.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/clang.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp std=c++0x -target fpga -directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/.systemc_flag -fix-errors /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.41 sec.
+Command       clang_tidy done; 0.44 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp std=c++0x -target fpga -directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/all.directive.json 
 INFO-FLOW: exec /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/all.directive.json -fix-errors /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.69 sec.
-INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.7 seconds 
+Command       clang_tidy done; 0.76 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.8 seconds 
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp std=c++0x -target fpga 
 INFO-FLOW: run_clang loop-label exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang-tidy -export-fixes=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp.clang-tidy.loop-label.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp.clang-tidy.loop-label.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=73
-Command       clang_tidy done; 0.9 sec.
+Command       clang_tidy done; 0.99 sec.
 INFO-FLOW: run_clang myproject_axi_master.pp.0.cpp.xilinx-dataflow-lawyer exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/xilinx-dataflow-lawyer -export-fixes=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp -- -std=c++0x -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 Execute       ap_part_info -name xck26-sfvc784-2LV-c -data info 
@@ -236,7 +236,7 @@ INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
 INFO-FLOW: converting llvm 16.0.4 bc to downstrem bc
 INFO-FLOW: run_clang myproject_axi_master.bc.llvm-converter exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/llvm-converter -opaque-pointers=0 /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pre.g.bc -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.bc > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.bc.llvm-converter.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.bc.llvm-converter.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 9.68 seconds. CPU system time: 0.81 seconds. Elapsed time: 10.51 seconds; current allocated memory: 265.988 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 10.28 seconds. CPU system time: 1.02 seconds. Elapsed time: 11.32 seconds; current allocated memory: 264.816 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.0.bc -args /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.bc /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.bc 
@@ -251,7 +251,7 @@ INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.2.m1.bc -args /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/2025.2/Vitis/lnx64/lib/libhlsm_39.bc /opt/Xilinx/2025.2/Vitis/lnx64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang a.g.ld.2.m1.bc.llvm-link exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/llvm-link /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed /opt/Xilinx/2025.2/Vitis/lnx64/lib/libhlsm_39.bc /opt/Xilinx/2025.2/Vitis/lnx64/lib/libhlsmc++_39.bc -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.2.m1.bc > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
-Command       run_link_or_opt done; 1.41 sec.
+Command       run_link_or_opt done; 1.4 sec.
 Execute       run_link_or_opt -opt -out /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.3.fpc.bc -args /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=myproject_axi_master -reflow-float-conversion 
 INFO-FLOW: run_clang a.g.ld.3.fpc.bc.opt exec: /opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=myproject_axi_master -reflow-float-conversion -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.3.fpc.bc > /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=0
@@ -420,24 +420,24 @@ INFO: [HLS 214-115] Multiple burst reads of variable length and bit width 32 in 
 INFO: [HLS 214-115] Multiple burst writes of variable length and bit width 32 in loop 'VITIS_LOOP_29_1'(firmware/myproject_axi_master.cpp:29:22) has been inferred on bundle 'gmem_out0'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (firmware/myproject_axi_master.cpp:29:22)
 INFO-FLOW: run_clang result=success num-err-msgs=0 num-stderr-lines=589
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: copying raw kernel.xml: /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/../../kernel.xml -> /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 36.55 seconds. CPU system time: 0.56 seconds. Elapsed time: 38.97 seconds; current allocated memory: 276.953 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 276.953 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 39.13 seconds. CPU system time: 0.61 seconds. Elapsed time: 44.15 seconds; current allocated memory: 276.715 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 276.715 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -reassociate -gvn -reassociate -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top myproject_axi_master -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.0.bc -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
-Command         transform done; 0.19 sec.
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 283.547 MB.
+Command         transform done; 0.2 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.19 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 283.312 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.1.bc -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.2.prechk.bc -f 
-Command         transform done; 0.63 sec.
+Command         transform done; 0.62 sec.
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.2.prechk.bc -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
 WARNING: [SYNCHK 200-23] firmware/myproject_axi_master.cpp:17: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.64 seconds. CPU system time: 0 seconds. Elapsed time: 0.64 seconds; current allocated memory: 289.938 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.63 seconds. CPU system time: 0 seconds. Elapsed time: 0.64 seconds; current allocated memory: 289.699 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.g.1.bc to /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -455,7 +455,7 @@ INFO: [XFORM 203-712] Applying dataflow to function 'myproject_axi_master' (firm
 	 'load_input<float, nnet::array<ap_fixed<11, 5, (ap_q_mode)0, (ap_o_mode)3, 0>, 16u> >'
 	 'compute'
 	 'store_result<float, nnet::array<ap_fixed<17, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u> >'.
-Command         transform done; 0.9 sec.
+Command         transform done; 0.95 sec.
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.o.1.tmp.bc -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (firmware/myproject_axi_master.cpp:28:9) to (firmware/myproject_axi_master.cpp:29:22) in function 'store_result<float, nnet::array<ap_fixed<17, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, 5u> >'... converting 11 basic blocks.
@@ -467,17 +467,17 @@ INFO: [XFORM 203-11] Balancing expressions in function 'nnet::dense_latency<ap_f
 INFO: [XFORM 203-11] Balancing expressions in function 'nnet::dense_latency<ap_fixed<11, 5, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>' (firmware/nnet_utils/nnet_mult.h:17:12)...34 expression(s) balanced.
 INFO: [XFORM 203-11] Balancing expressions in function 'nnet::dense_latency<ap_fixed<10, 9, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<14, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, config9>' (firmware/nnet_utils/nnet_mult.h:17:12)...6 expression(s) balanced.
 Command         transform done; 0.3 sec.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.16 seconds. CPU system time: 0.04 seconds. Elapsed time: 1.21 seconds; current allocated memory: 316.602 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1.23 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.25 seconds; current allocated memory: 316.363 MB.
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -gvn -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -drop-inferred-ii -dump-complexity-metric /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.o.2.bc -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 Execute           AP::auto_get_db
 Command         transform done; 0.53 sec.
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -cdfg-build /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.o.3.bc -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform done; 0.12 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.62 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.65 seconds; current allocated memory: 482.227 MB.
+Command         transform done; 0.13 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.63 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.66 seconds; current allocated memory: 481.988 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 2.69 sec.
-Command     elaborate done; 52.18 sec.
+Command       opt_and_import_c done; 2.76 sec.
+Command     elaborate done; 58.24 sec.
 Execute     ap_eval exec zip -j /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO-FLOW: Synthesizing C/C++ design AP::SynTopModule=myproject_axi_master
@@ -654,7 +654,7 @@ Execute     set_default_model entry_proc
 Execute     schedule -model entry_proc 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.05 seconds; current allocated memory: 482.594 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.06 seconds; current allocated memory: 482.359 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/entry_proc.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -668,7 +668,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 482.594 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 482.359 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/entry_proc.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -685,8 +685,8 @@ INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_13_1'.
 WARNING: [HLS 200-448] Lower bound of II is 16 due to multiple bus read operation ('gmem_in0_addr_read', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_1', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_2', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_3', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_4', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_5', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_6', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_7', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_8', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_9', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_10', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_11', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_12', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_13', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_14', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17), bus read operation ('gmem_in0_addr_read_15', firmware/myproject_axi_master.cpp:17) on port 'gmem_in0' (firmware/myproject_axi_master.cpp:17) accessing 'gmem_in0' m_axi read
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 16, Depth = 29, loop 'VITIS_LOOP_13_1'
 INFO: [SCHED 204-11] Finished scheduling.
-Command     schedule done; 0.16 sec.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 489.914 MB.
+Command     schedule done; 0.2 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.2 seconds; current allocated memory: 490.285 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/load_input_float_array_ap_fixed_11_5_0_3_0_16u_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -700,7 +700,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 489.914 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 490.285 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/load_input_float_array_ap_fixed_11_5_0_3_0_16u_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -716,7 +716,8 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'dense_latency<ap_fixed<11, 5, 0, 3, 0>, ap_fixed<13, 9, 5, 3, 0>, config3>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'dense_latency<ap_fixed<11, 5, 0, 3, 0>, ap_fixed<13, 9, 5, 3, 0>, config3>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 494.164 MB.
+Command     schedule done; 0.13 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 493.953 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_11_5_0_3_0_ap_fixed_13_9_5_3_0_config3_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -731,7 +732,7 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Starting global binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 494.164 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 493.953 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_11_5_0_3_0_ap_fixed_13_9_5_3_0_config3_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -745,7 +746,7 @@ Execute     set_default_model dense<array<ap_fixed,16u>,array<ap_fixed<13,9,5,3,
 Execute     schedule -model dense<array<ap_fixed,16u>,array<ap_fixed<13,9,5,3,0>,64u>,config3> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 494.367 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 494.105 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_16u_array_ap_fixed_13_9_5_3_0_64u_config3_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -759,7 +760,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 494.367 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 494.105 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_16u_array_ap_fixed_13_9_5_3_0_64u_config3_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -773,7 +774,7 @@ Execute     set_default_model relu<array<ap_fixed,64u>,array<ap_fixed<11,8,0,3,0
 Execute     schedule -model relu<array<ap_fixed,64u>,array<ap_fixed<11,8,0,3,0>,64u>,relu_config4> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 497.855 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 497.590 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_64u_array_ap_fixed_11_8_0_3_0_64u_relu_config4_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -787,7 +788,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 497.855 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 497.590 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_64u_array_ap_fixed_11_8_0_3_0_64u_relu_config4_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -803,7 +804,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'dense_latency<ap_fixed<11, 8, 0, 3, 0>, ap_fixed<15, 13, 5, 3, 0>, config6>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'dense_latency<ap_fixed<11, 8, 0, 3, 0>, ap_fixed<15, 13, 5, 3, 0>, config6>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 500.797 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 500.594 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_11_8_0_3_0_ap_fixed_15_13_5_3_0_config6_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -817,7 +818,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 500.797 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 500.594 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_11_8_0_3_0_ap_fixed_15_13_5_3_0_config6_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -831,7 +832,7 @@ Execute     set_default_model dense<array<ap_fixed,64u>,array<ap_fixed<15,13,5,3
 Execute     schedule -model dense<array<ap_fixed,64u>,array<ap_fixed<15,13,5,3,0>,32u>,config6> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 501.770 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 501.578 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_64u_array_ap_fixed_15_13_5_3_0_32u_config6_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -845,7 +846,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 501.770 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 501.578 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_64u_array_ap_fixed_15_13_5_3_0_32u_config6_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -859,7 +860,7 @@ Execute     set_default_model relu<array<ap_fixed,32u>,array<ap_fixed<10,9,0,3,0
 Execute     schedule -model relu<array<ap_fixed,32u>,array<ap_fixed<10,9,0,3,0>,32u>,relu_config7> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 503.754 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 503.516 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_32u_array_ap_fixed_10_9_0_3_0_32u_relu_config7_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -873,7 +874,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 503.754 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 503.516 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_32u_array_ap_fixed_10_9_0_3_0_32u_relu_config7_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -889,7 +890,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'dense_latency<ap_fixed<10, 9, 0, 3, 0>, ap_fixed<14, 12, 5, 3, 0>, config9>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'dense_latency<ap_fixed<10, 9, 0, 3, 0>, ap_fixed<14, 12, 5, 3, 0>, config9>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 504.602 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 504.363 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_10_9_0_3_0_ap_fixed_14_12_5_3_0_config9_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -904,7 +905,7 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Starting global binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 504.602 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 504.363 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_10_9_0_3_0_ap_fixed_14_12_5_3_0_config9_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -918,7 +919,7 @@ Execute     set_default_model dense<array<ap_fixed,32u>,array<ap_fixed<14,12,5,3
 Execute     schedule -model dense<array<ap_fixed,32u>,array<ap_fixed<14,12,5,3,0>,32u>,config9> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 505.762 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 505.527 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -932,7 +933,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 505.762 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 505.527 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -946,7 +947,7 @@ Execute     set_default_model relu<array<ap_fixed,32u>,array<ap_fixed<9,8,0,3,0>
 Execute     schedule -model relu<array<ap_fixed,32u>,array<ap_fixed<9,8,0,3,0>,32u>,relu_config10> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 507.676 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 507.395 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -960,7 +961,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 507.676 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 507.395 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -976,7 +977,7 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'dense_latency<ap_fixed<9, 8, 0, 3, 0>, ap_fixed<17, 9, 5, 3, 0>, config12>'.
 INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, function 'dense_latency<ap_fixed<9, 8, 0, 3, 0>, ap_fixed<17, 9, 5, 3, 0>, config12>'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 507.957 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 507.719 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_9_8_0_3_0_ap_fixed_17_9_5_3_0_config12_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -991,7 +992,7 @@ INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Starting global binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 507.957 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 507.719 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_9_8_0_3_0_ap_fixed_17_9_5_3_0_config12_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1005,7 +1006,7 @@ Execute     set_default_model dense<array<ap_fixed,32u>,array<ap_fixed<17,9,5,3,
 Execute     schedule -model dense<array<ap_fixed,32u>,array<ap_fixed<17,9,5,3,0>,5u>,config12> 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 509.105 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 508.898 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1019,7 +1020,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 509.105 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 508.898 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1039,7 +1040,7 @@ WARNING: [HLS 200-1018] Consider increasing the depth of FIFO layer6_out (from d
 WARNING: [HLS 200-1018] Consider increasing the depth of FIFO layer7_out (from relu_array_ap_fixed_32u_array_ap_fixed_10_9_0_3_0_32u_relu_config7_U0 to dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_U0) to 2 to improve performance and/or avoid deadlocks.
 WARNING: [HLS 200-1018] Consider increasing the depth of FIFO layer9_out (from dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_U0 to relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_U0) to 2 to improve performance and/or avoid deadlocks.
 WARNING: [HLS 200-1018] Consider increasing the depth of FIFO layer10_out (from relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_U0 to dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_U0) to 2 to improve performance and/or avoid deadlocks.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 509.523 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 509.289 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1053,7 +1054,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 509.523 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 509.289 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1067,7 +1068,7 @@ Execute     set_default_model compute
 Execute     schedule -model compute 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 509.855 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 509.590 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/compute.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1081,7 +1082,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 509.855 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 509.590 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/compute.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1098,7 +1099,7 @@ INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
 WARNING: [HLS 200-448] Lower bound of II is 5 due to multiple bus write operation ('gmem_out0_addr_write_ln33', firmware/myproject_axi_master.cpp:33) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:33), bus write operation ('gmem_out0_addr_write_ln33', firmware/myproject_axi_master.cpp:33) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:33), bus write operation ('gmem_out0_addr_write_ln33', firmware/myproject_axi_master.cpp:33) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:33), bus write operation ('gmem_out0_addr_write_ln33', firmware/myproject_axi_master.cpp:33) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:33), bus write operation ('gmem_out0_addr_write_ln33', firmware/myproject_axi_master.cpp:33) on port 'gmem_out0' (firmware/myproject_axi_master.cpp:33) accessing 'gmem_out0' m_axi write
 INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 5, Depth = 8, loop 'VITIS_LOOP_29_1'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 511.098 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 510.863 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1112,7 +1113,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 511.098 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 510.863 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1126,7 +1127,7 @@ Execute     set_default_model store_result<float, array<ap_fixed<17, 9, 5, 3, 0>
 Execute     schedule -model store_result<float, array<ap_fixed<17, 9, 5, 3, 0>, 5u> > 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 511.285 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 511.051 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/store_result_float_array_ap_fixed_17_9_5_3_0_5u_s.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1140,7 +1141,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 511.285 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 511.051 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/store_result_float_array_ap_fixed_17_9_5_3_0_5u_s.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1155,7 +1156,7 @@ Execute     schedule -model myproject_axi_master
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
 WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_store_result_float_array_ap_fixed_17_9_5_3_0_5u_U0 (from entry_proc_U0 to store_result_float_array_ap_fixed_17_9_5_3_0_5u_U0) to 3 to improve performance and/or avoid deadlocks.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 511.621 MB.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 511.383 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.verbose.sched.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1169,7 +1170,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 511.621 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 511.383 MB.
 Execute     syn_report -verbosereport -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.verbose.bind.rpt 
 Execute       list_part -family xck26-sfvc784-2LV-c 
 Execute         ap_family_info -name xck26-sfvc784-2LV-c -data names 
@@ -1202,7 +1203,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model entry_proc -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/entry_proc.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 511.621 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 511.383 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl entry_proc -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_entry_proc 
 Execute     gen_rtl entry_proc -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_entry_proc 
@@ -1230,7 +1231,8 @@ INFO: [RTGEN 206-100] Generating core module 'bitselect_1ns_54ns_6ns_1_1_1': 16 
 INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_11_1_1': 16 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'load_input_float_array_ap_fixed_11_5_0_3_0_16u_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 519.090 MB.
+Command     create_rtl_model done; 0.11 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 518.883 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl load_input<float, array<ap_fixed<11, 5, 0, 3, 0>, 16u> > -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_load_input_float_array_ap_fixed_11_5_0_3_0_16u_s 
 Execute     gen_rtl load_input<float, array<ap_fixed<11, 5, 0, 3, 0>, 16u> > -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_load_input_float_array_ap_fixed_11_5_0_3_0_16u_s 
@@ -1258,7 +1260,7 @@ INFO: [RTGEN 206-100] Generating core module 'mul_11s_8ns_18_1_1': 1 instance(s)
 INFO: [RTGEN 206-100] Generating core module 'mul_11s_8ns_19_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_11s_8s_18_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_latency_ap_fixed_11_5_0_3_0_ap_fixed_13_9_5_3_0_config3_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.25 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.26 seconds; current allocated memory: 538.125 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.28 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.31 seconds; current allocated memory: 537.891 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl dense_latency<ap_fixed<11, 5, 0, 3, 0>, ap_fixed<13, 9, 5, 3, 0>, config3> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_dense_latency_ap_fixed_11_5_0_3_0_ap_fixed_13_9_5_3_0_config3_s 
 Execute     gen_rtl dense_latency<ap_fixed<11, 5, 0, 3, 0>, ap_fixed<13, 9, 5, 3, 0>, config3> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_dense_latency_ap_fixed_11_5_0_3_0_ap_fixed_13_9_5_3_0_config3_s 
@@ -1282,7 +1284,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'dense_array_ap_fixed_16u_array_
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model dense<array<ap_fixed,16u>,array<ap_fixed<13,9,5,3,0>,64u>,config3> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_16u_array_ap_fixed_13_9_5_3_0_64u_config3_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_array_ap_fixed_16u_array_ap_fixed_13_9_5_3_0_64u_config3_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 544.918 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 544.652 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl dense<array<ap_fixed,16u>,array<ap_fixed<13,9,5,3,0>,64u>,config3> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_13_9_5_3_0_64u_config3_s 
 Execute     gen_rtl dense<array<ap_fixed,16u>,array<ap_fixed<13,9,5,3,0>,64u>,config3> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_13_9_5_3_0_64u_config3_s 
@@ -1306,7 +1308,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'relu_array_ap_fixed_64u_array_a
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model relu<array<ap_fixed,64u>,array<ap_fixed<11,8,0,3,0>,64u>,relu_config4> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_64u_array_ap_fixed_11_8_0_3_0_64u_relu_config4_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_array_ap_fixed_64u_array_ap_fixed_11_8_0_3_0_64u_relu_config4_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 547.906 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 547.672 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl relu<array<ap_fixed,64u>,array<ap_fixed<11,8,0,3,0>,64u>,relu_config4> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_11_8_0_3_0_64u_relu_config4_s 
 Execute     gen_rtl relu<array<ap_fixed,64u>,array<ap_fixed<11,8,0,3,0>,64u>,relu_config4> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_relu_array_ap_fixed_64u_array_ap_fixed_11_8_0_3_0_64u_relu_config4_s 
@@ -1330,7 +1332,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'dense_latency_ap_fixed_11_8_0_3
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model dense_latency<ap_fixed<11, 8, 0, 3, 0>, ap_fixed<15, 13, 5, 3, 0>, config6> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_11_8_0_3_0_ap_fixed_15_13_5_3_0_config6_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_latency_ap_fixed_11_8_0_3_0_ap_fixed_15_13_5_3_0_config6_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 559.598 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 559.363 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl dense_latency<ap_fixed<11, 8, 0, 3, 0>, ap_fixed<15, 13, 5, 3, 0>, config6> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_dense_latency_ap_fixed_11_8_0_3_0_ap_fixed_15_13_5_3_0_config6_s 
 Execute     gen_rtl dense_latency<ap_fixed<11, 8, 0, 3, 0>, ap_fixed<15, 13, 5, 3, 0>, config6> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_dense_latency_ap_fixed_11_8_0_3_0_ap_fixed_15_13_5_3_0_config6_s 
@@ -1354,7 +1356,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'dense_array_ap_fixed_64u_array_
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model dense<array<ap_fixed,64u>,array<ap_fixed<15,13,5,3,0>,32u>,config6> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_64u_array_ap_fixed_15_13_5_3_0_32u_config6_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_array_ap_fixed_64u_array_ap_fixed_15_13_5_3_0_32u_config6_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 569.266 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.1 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 569.059 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl dense<array<ap_fixed,64u>,array<ap_fixed<15,13,5,3,0>,32u>,config6> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_15_13_5_3_0_32u_config6_s 
 Execute     gen_rtl dense<array<ap_fixed,64u>,array<ap_fixed<15,13,5,3,0>,32u>,config6> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_dense_array_ap_fixed_64u_array_ap_fixed_15_13_5_3_0_32u_config6_s 
@@ -1378,7 +1380,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'relu_array_ap_fixed_32u_array_a
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model relu<array<ap_fixed,32u>,array<ap_fixed<10,9,0,3,0>,32u>,relu_config7> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_32u_array_ap_fixed_10_9_0_3_0_32u_relu_config7_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_array_ap_fixed_32u_array_ap_fixed_10_9_0_3_0_32u_relu_config7_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 571.730 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 571.418 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl relu<array<ap_fixed,32u>,array<ap_fixed<10,9,0,3,0>,32u>,relu_config7> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_fixed_10_9_0_3_0_32u_relu_config7_s 
 Execute     gen_rtl relu<array<ap_fixed,32u>,array<ap_fixed<10,9,0,3,0>,32u>,relu_config7> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_fixed_10_9_0_3_0_32u_relu_config7_s 
@@ -1403,7 +1405,7 @@ INFO: [HLS 200-10] -------------------------------------------------------------
 Execute     create_rtl_model dense_latency<ap_fixed<10, 9, 0, 3, 0>, ap_fixed<14, 12, 5, 3, 0>, config9> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_10_9_0_3_0_ap_fixed_14_12_5_3_0_config9_s.compgen.tcl 
 INFO: [RTGEN 206-100] Generating core module 'mul_10s_6s_16_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_latency_ap_fixed_10_9_0_3_0_ap_fixed_14_12_5_3_0_config9_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 577.711 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 577.473 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl dense_latency<ap_fixed<10, 9, 0, 3, 0>, ap_fixed<14, 12, 5, 3, 0>, config9> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_dense_latency_ap_fixed_10_9_0_3_0_ap_fixed_14_12_5_3_0_config9_s 
 Execute     gen_rtl dense_latency<ap_fixed<10, 9, 0, 3, 0>, ap_fixed<14, 12, 5, 3, 0>, config9> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_dense_latency_ap_fixed_10_9_0_3_0_ap_fixed_14_12_5_3_0_config9_s 
@@ -1427,7 +1429,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'dense_array_ap_fixed_32u_array_
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model dense<array<ap_fixed,32u>,array<ap_fixed<14,12,5,3,0>,32u>,config9> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 582.512 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 582.273 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl dense<array<ap_fixed,32u>,array<ap_fixed<14,12,5,3,0>,32u>,config9> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_s 
 Execute     gen_rtl dense<array<ap_fixed,32u>,array<ap_fixed<14,12,5,3,0>,32u>,config9> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_s 
@@ -1451,7 +1453,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'relu_array_ap_fixed_32u_array_a
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model relu<array<ap_fixed,32u>,array<ap_fixed<9,8,0,3,0>,32u>,relu_config10> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 584.008 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 583.801 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl relu<array<ap_fixed,32u>,array<ap_fixed<9,8,0,3,0>,32u>,relu_config10> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_s 
 Execute     gen_rtl relu<array<ap_fixed,32u>,array<ap_fixed<9,8,0,3,0>,32u>,relu_config10> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_s 
@@ -1478,7 +1480,7 @@ INFO: [RTGEN 206-100] Generating core module 'mul_9s_5ns_14_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_9s_6ns_14_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_9s_7ns_15_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_latency_ap_fixed_9_8_0_3_0_ap_fixed_17_9_5_3_0_config12_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 590.000 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 589.766 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl dense_latency<ap_fixed<9, 8, 0, 3, 0>, ap_fixed<17, 9, 5, 3, 0>, config12> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_dense_latency_ap_fixed_9_8_0_3_0_ap_fixed_17_9_5_3_0_config12_s 
 Execute     gen_rtl dense_latency<ap_fixed<9, 8, 0, 3, 0>, ap_fixed<17, 9, 5, 3, 0>, config12> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_dense_latency_ap_fixed_9_8_0_3_0_ap_fixed_17_9_5_3_0_config12_s 
@@ -1502,7 +1504,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'dense_array_ap_fixed_32u_array_
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model dense<array<ap_fixed,32u>,array<ap_fixed<17,9,5,3,0>,5u>,config12> -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 593.141 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 592.934 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl dense<array<ap_fixed,32u>,array<ap_fixed<17,9,5,3,0>,5u>,config12> -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_s 
 Execute     gen_rtl dense<array<ap_fixed,32u>,array<ap_fixed<17,9,5,3,0>,5u>,config12> -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_s 
@@ -1538,7 +1540,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'start_for_relu_array_ap_fixed_32u_array_
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_U0_U(myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_14_12_5_3_0_32u_config9_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_U0_U(myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_fixed_9_8_0_3_0_32u_relu_config10_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_U0_U(myproject_axi_master_start_for_dense_array_ap_fixed_32u_array_ap_fixed_17_9_5_3_0_5u_config12_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 594.234 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 594.027 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl myproject -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_myproject 
 Execute     gen_rtl myproject -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_myproject 
@@ -1562,7 +1564,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'compute'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model compute -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/compute.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'compute'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 595.793 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 595.559 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl compute -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_compute 
 Execute     gen_rtl compute -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_compute 
@@ -1601,7 +1603,7 @@ WARNING: [RTGEN 206-101] Setting dangling out port 'store_result_float_array_ap_
 WARNING: [RTGEN 206-101] Setting dangling out port 'store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1/m_axi_gmem_out0_0_BREADY' to 0.
 INFO: [RTGEN 206-100] Generating core module 'ctlz_17_17_1_1': 5 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 596.477 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 596.211 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl store_result<float,array<ap_fixed,5u>>_Pipeline_VITIS_LOOP_29_1 -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 
 Execute     gen_rtl store_result<float,array<ap_fixed,5u>>_Pipeline_VITIS_LOOP_29_1 -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 
@@ -1625,7 +1627,7 @@ INFO: [HLS 200-10] -- Generating RTL for module 'store_result_float_array_ap_fix
 INFO: [HLS 200-10] ----------------------------------------------------------------
 Execute     create_rtl_model store_result<float, array<ap_fixed<17, 9, 5, 3, 0>, 5u> > -top_prefix myproject_axi_master_ -sub_prefix myproject_axi_master_ -mg_file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/store_result_float_array_ap_fixed_17_9_5_3_0_5u_s.compgen.tcl 
 INFO: [RTGEN 206-100] Finished creating RTL model for 'store_result_float_array_ap_fixed_17_9_5_3_0_5u_s'.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 600.211 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 599.973 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl store_result<float, array<ap_fixed<17, 9, 5, 3, 0>, 5u> > -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master_store_result_float_array_ap_fixed_17_9_5_3_0_5u_s 
 Execute     gen_rtl store_result<float, array<ap_fixed<17, 9, 5, 3, 0>, 5u> > -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master_store_result_float_array_ap_fixed_17_9_5_3_0_5u_s 
@@ -1664,7 +1666,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'batch_size_c_U(myproject_axi_master_fifo
 INFO: [RTMG 210-285] Implementing FIFO 'stream_out0_layer12_out_U(myproject_axi_master_fifo_w160_d128_A)' using Vivado Default RAMs.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_store_result_float_array_ap_fixed_17_9_5_3_0_5u_U0_U(myproject_axi_master_start_for_store_result_float_array_ap_fixed_17_9_5_3_0_5u_U0)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'start_for_compute_U0_U(myproject_axi_master_start_for_compute_U0)' using Shift Registers.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 601.691 MB.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 601.480 MB.
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
 Execute     gen_rtl myproject_axi_master -istop -style xilinx -f -lang vhdl -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/vhdl/myproject_axi_master 
 Execute     gen_rtl myproject_axi_master -istop -style xilinx -f -lang vlog -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/syn/verilog/myproject_axi_master 
@@ -1981,7 +1983,7 @@ Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_do
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/store_result_float_array_ap_fixed_17_9_5_3_0_5u_s.compgen.tcl 
 Execute     source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.compgen.tcl 
 Execute       source ./control.slave.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.2 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.23 seconds; current allocated memory: 603.844 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.23 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.26 seconds; current allocated memory: 603.641 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='myproject_axi_master_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds 
@@ -2107,14 +2109,14 @@ INFO: [HLS 200-2225] Wrote inferred directives to file /work/development/hgq2/2/
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
 INFO-FLOW: Done: add_csynth_report_sections time: 0.3 seconds 
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.55 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.59 seconds; current allocated memory: 618.699 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.62 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.67 seconds; current allocated memory: 618.441 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for myproject_axi_master.
 INFO: [VLOG 209-307] Generating Verilog RTL for myproject_axi_master.
 Execute     syn_report -model myproject_axi_master -printsummary 
 INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
 INFO: [HLS 200-789] **** Estimated Fmax: 228.57 MHz
 Execute     AP::msg_collection_file -close 
-Command   csynth_design done; 57.08 sec.
+Command   csynth_design done; 64.05 sec.
 Execute   export_design -flow none -format xo 
 Execute     config_export -flow=none -format=xo 
 INFO-FLOW: DBG:PUTS: export_design_wrap: -format xo -rtl verilog -version 1.0.0
@@ -2287,14 +2289,14 @@ INFO-FLOW: DBG:PUTS:     IP package: exec /work/development/hgq2/2/hls4ml_prj_Vi
 INFO-FLOW: DBG:PUTS:     IP package: success /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/pack.sh
 Execute     send_msg_by_id INFO @200-802@%s vitis_unified_project/myproject_axi_master.xo 
 INFO: [HLS 200-802] Generated output file vitis_unified_project/myproject_axi_master.xo
-Command   export_design done; 5.31 sec.
+Command   export_design done; 5.49 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 
 Execute       cleanup_all 
 Execute       source -notrace -encoding utf-8 /opt/Xilinx/2025.2/Vitis/tps/tcl/tcl8.6/clock.tcl 
 Execute         source -encoding utf-8 /opt/Xilinx/2025.2/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
-INFO-FLOW: Workspace /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls opened at Mon May 04 13:36:20 UTC 2026
+INFO-FLOW: Workspace /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls opened at Mon May 04 18:45:30 +0000 2026
 Execute       source /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl 
 Execute       set_part xck26-sfvc784-2LV-c 
 Execute         create_platform xck26-sfvc784-2LV-c -board  
@@ -2302,7 +2304,7 @@ DBG:HLSDevice: Trying to load device library: /opt/Xilinx/2025.2/Vitis/lib/lnx64
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /opt/Xilinx/2025.2/Vivado/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
-Command         create_platform done; 0.12 sec.
+Command         create_platform done; 0.15 sec.
 Execute         source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
 Execute           source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
 Execute           source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
@@ -2317,7 +2319,7 @@ Execute           source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/ut
 Execute           source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
 Execute         ap_part_info -name xck26-sfvc784-2LV-c -data info 
 Execute         config_compile -quiet -complex-mul-dsp=0 
-Command       set_part done; 0.17 sec.
+Command       set_part done; 0.2 sec.
 Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Execute       send_msg_by_id INFO @200-2174@%s%s component ../../hls_kernel_config.cfg 
@@ -2400,12 +2402,12 @@ INFO: [XFORM 203-1161] The maximum of name length is set to 80.
 Execute         send_msg_by_id INFO @200-1465@%s 'syn.schedule.enable_dsp_full_reg=0' from ../../hls_kernel_config.cfg(22) 
 INFO: [HLS 200-1465] Applying config ini 'syn.schedule.enable_dsp_full_reg=0' from ../../hls_kernel_config.cfg(22)
 Execute         config_schedule -enable_dsp_full_reg=0 
-Command       apply_ini done; 0.14 sec.
+Command       apply_ini done; 0.13 sec.
 Execute       write_component -config /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/hls_kernel_config.cfg 
 Execute         send_msg_by_id INFO @200-2176@%s /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/vitis-comp.json 
 INFO: [HLS 200-2176] Writing Vitis IDE component file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/vitis-comp.json
-Command     open_solution done; 0.32 sec.
-Command   open_component done; 0.32 sec.
+Command     open_solution done; 0.33 sec.
+Command   open_component done; 0.34 sec.
 Execute   apply_ini /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/config.cmdline -iscmdline 
 Execute   ::AP::init_summary_file package-xo 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
@@ -2585,7 +2587,7 @@ INFO-FLOW: DBG:PUTS:     IP package: exec /work/development/hgq2/2/hls4ml_prj_Vi
 INFO-FLOW: DBG:PUTS:     IP package: success /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/pack.sh
 Execute     send_msg_by_id INFO @200-802@%s vitis_unified_project/myproject_axi_master.xo 
 INFO: [HLS 200-802] Generated output file vitis_unified_project/myproject_axi_master.xo
-Command   export_design done; 4.97 sec.
+Command   export_design done; 5.37 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 

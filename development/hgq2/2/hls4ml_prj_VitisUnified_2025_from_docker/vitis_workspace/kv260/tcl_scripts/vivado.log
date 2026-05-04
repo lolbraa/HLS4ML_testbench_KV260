@@ -3,15 +3,15 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon May  4 08:49:00 2026
-# Process ID         : 18648
+# Start of session at: Mon May  4 17:01:30 2026
+# Process ID         : 4803
 # Current directory  : /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts
 # Command line       : vivado -mode batch -source create_xsa.tcl
 # Log file           : /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/vivado.log
 # Journal file       : /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/vivado.jou
-# Running On         : 0d7cbc05563f
+# Running On         : e9c8bcc06360
 # Platform           : Ubuntu
-# Operating System   : Ubuntu 24.04.4 LTS
+# Operating System   : Ubuntu 22.04.5 LTS
 # Processor Detail   : QEMU Virtual CPU version 2.5+
 # CPU Frequency      : 4291.952 MHz
 # CPU Physical cores : 16
@@ -19,7 +19,7 @@
 # Host memory        : 65838 MB
 # Swap memory        : 0 MB
 # Total Virtual      : 65838 MB
-# Available Virtual  : 42229 MB
+# Available Virtual  : 43541 MB
 #-----------------------------------------------------------
 source create_xsa.tcl
 # set script_dir [file dirname [file normalize [info script]]]
@@ -1357,8 +1357,8 @@ Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH' is being assigned into 
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
 Slave segment '/zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM' is being assigned into address space '/axi_dma_0/Data_S2MM' at <0xFF00_0000 [ 16M ]>.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
-WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
 WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM> is excluded from all addressing paths.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_MM2S.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
@@ -1410,11 +1410,11 @@ Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address sp
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
-WARNING: [xilinx.com:ip:axi_intc:4.1-6] /axi_intc_0: Property SENSITIVITY = "NULL" for interrupt input 1 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
 CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-11] /axi_dma_0
                    #################################### 
                    S_AXIS_S2MM interface is unconnected
                    ####################################
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /axi_intc_0: Property SENSITIVITY = "NULL" for interrupt input 1 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
 WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
@@ -1461,7 +1461,7 @@ Generated Hardware Definition File /work/development/hgq2/2/hls4ml_prj_VitisUnif
 INFO: [BD 41-3262] Generated VHDL Instantiation Template file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design.vho
 INFO: [BD 41-3262] Generated Verilog Instantiation Template file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design.veo
 INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design_sv.sveo
-generate_target: Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1970.469 ; gain = 4.781 ; free physical = 16871 ; free virtual = 39549
+generate_target: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1970.555 ; gain = 4.781 ; free physical = 1456 ; free virtual = 40871
 # set_property platform.default_output_type "sd_card" [current_project]
 # set_property platform.design_intent.embedded "true" [current_project]
 # set_property platform.design_intent.server_managed "false" [current_project]
@@ -1479,11 +1479,11 @@ INFO: [PFM-62] PFM.AXI_PORT for axi_interconnect_0/M06_AXI does not have an spta
 INFO: [PFM-62] PFM.AXI_PORT for axi_interconnect_0/M07_AXI does not have an sptag specified, so is being assigned an auto generated name of GP
 CRITICAL WARNING: [PFM-48] Interrupt pin /customIntr_0/In1 does not have an assigned id.  It is being assigned ID 1.
 INFO: [Projectvivado 1-1042] Successfully generated hpfm file
-write_project_tcl: Time (s): cpu = 00:00:31 ; elapsed = 00:00:09 . Memory (MB): peak = 2282.645 ; gain = 192.117 ; free physical = 16408 ; free virtual = 39142
+write_project_tcl: Time (s): cpu = 00:00:34 ; elapsed = 00:00:10 . Memory (MB): peak = 2275.727 ; gain = 185.113 ; free physical = 1053 ; free virtual = 40567
 INFO: [Projectvivado 1-1943] The Hardware Platform can be used for Hardware
 INFO: [Projectvivado 1-1941] Successfully created Hardware Platform: /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
 INFO: [Hsi 55-2053] elapsed time for repository (/opt/Xilinx/2025.2/data/embeddedsw) loading 0 seconds
-write_hw_platform: Time (s): cpu = 00:00:36 ; elapsed = 00:00:14 . Memory (MB): peak = 2282.645 ; gain = 312.176 ; free physical = 16664 ; free virtual = 39362
+write_hw_platform: Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 2275.727 ; gain = 305.172 ; free physical = 1174 ; free virtual = 40655
 # puts "INFO: XSA written to $xsa_path"
 INFO: XSA written to /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
-INFO: [Common 17-206] Exiting Vivado at Mon May  4 08:49:40 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon May  4 17:02:20 2026...

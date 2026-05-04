@@ -1,0 +1,9 @@
+{
+  "name": "myproject",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker_ubuntu24/hls_kernel_config.cfg"],
+    "work_dir": "vitis_unified_project"
+  }
+}
