@@ -1,0 +1,18 @@
+{
+    "kernelContainerValues": [
+        "myproject_axi_master:xo"
+    ],
+    "compile": "false",
+    "debug": "false",
+    "exportScript": "false",
+    "gccHostCompile": "false",
+    "generateEstimateRpt": "false",
+    "keepSolution": "false",
+    "link": "false",
+    "logDir": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/hgq2\/2\/hls4ml_prj_VitisUnified_2025\/vitis_workspace\/system_link\/_x\/logs\/link",
+    "package": "false",
+    "reportDir": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/hgq2\/2\/hls4ml_prj_VitisUnified_2025\/vitis_workspace\/system_link\/_x\/reports\/link",
+    "saveTemps": "false",
+    "verbose": "false",
+    "vplNoIpCache": "false"
+}

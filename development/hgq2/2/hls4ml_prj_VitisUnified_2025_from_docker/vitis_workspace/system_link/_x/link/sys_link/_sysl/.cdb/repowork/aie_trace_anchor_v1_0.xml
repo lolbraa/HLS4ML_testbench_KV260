@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xd:vendor="xilinx.com" xd:library="xd" xd:name="xd_ip" xd:version="2.01.a" xmlns:xd="http://www.xilinx.com/xd" >
+    <xd:fcnMap xd:fcnName="aie_trace_anchor" xd:type="RTLKernel" xd:clockId="0" xd:flow="aie" xd:componentRef="aie_trace_anchor">
+        <xd:ctrlReg xd:busInterface="S_AXI" xd:portInterfaceType="axilite" xd:name="control" xd:type="user_managed" xd:offset="0x0"/>
+        <xd:arg xd:name="M_AXI" xd:swRootName="M_AXI" xd:dataWidth="64" xd:offset="0x10" xd:portInterfaceType="axilite" xd:direction="in" xd:id="0" xd:busInterfaceRef="S_AXI" xd:aximmMasterRef="M_AXI" xd:aximmMasterDirection="inout" xd:aximmMasterDataWidth="64"/>
+        <xd:arg xd:name="S_AXIS" xd:swRootName="S_AXIS" xd:dataWidth="64" xd:offset="0x0" xd:portInterfaceType="axis" xd:direction="in" xd:busInterfaceRef="S_AXIS"/>
+    </xd:fcnMap>
+    <xd:component xd:vendor="xilinx.com" xd:library="ip" xd:name="aie_trace_anchor" xd:version="1.0" xd:type="accelerator" xd:cellType="ip">
+        <xd:busInterface xd:name="S_AXIS" xd:busTypeRef="axis" xd:mode="slave" xd:direction="in" xd:dataWidth="64" xd:hasTlast="true" xd:clockRef="S_AXIS_ACLK"/>
+        <xd:busInterface xd:name="S_AXI" xd:busTypeRef="aximm" xd:mode="slave" xd:clockRef="S_AXIS_ACLK" xd:resetRef="s_axis_aresetn"/>
+        <xd:busInterface xd:name="M_AXI" xd:busTypeRef="aximm" xd:mode="master" xd:clockRef="S_AXIS_ACLK" xd:resetRef="s_axis_aresetn" xd:dataWidth="64"/>
+        <xd:busInterface xd:name="S_AXIS_ACLK" xd:busTypeRef="clock" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="s_axis_aclk" xd:resetRef="S_AXIS_ARESETN"/>
+        <xd:busInterface xd:name="S_AXIS_ARESETN" xd:busTypeRef="reset" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="s_axis_aresetn" xd:clockRef="S_AXIS_ACLK" xd:activeLevel="low"/>
+        <xd:busInterface xd:name="S_AXI_ACLK" xd:busTypeRef="clock" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="s_axi_aclk" xd:resetRef="S_AXI_ARESETN"/>
+        <xd:busInterface xd:name="M_AXI_ARESETN" xd:busTypeRef="reset" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="m_axi_aresetn" xd:clockRef="M_AXI_ACLK" xd:activeLevel="low"/>
+        <xd:busInterface xd:name="M_AXI_ACLK" xd:busTypeRef="clock" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="m_axi_aclk" xd:resetRef="M_AXI_ARESETN"/>
+        <xd:busInterface xd:name="S_AXI_ARESETN" xd:busTypeRef="reset" xd:mode="slave" xd:direction="in" xd:library="signal" xd:port="s_axi_aresetn" xd:clockRef="S_AXI_ACLK" xd:activeLevel="low"/>
+    </xd:component>
+</xd:repository>
+

@@ -7,7 +7,7 @@
 # cmu-sei (https://github.com/cmu-sei/hls4ml-docker/blob/main/Dockerfile)
 # If deviating from the default paths, please make sure the entrypoint.sh matches
 
-FROM ubuntu:24.04
+FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Use bash
@@ -44,12 +44,10 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
     && apt-get install -y --no-install-recommends \
     # Packages required for running the installer and Vitis
       ca-certificates \
-      #libtinfo5 \
       locales \
       lsb-release \
       net-tools \
       patch \
-      unzip \
       wget \
     # From installLibs.sh:
       ### AIE Tools prerequisite libraries
@@ -57,14 +55,13 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
       graphviz \
       make \
       ### Vitis Tools prerequisite libraries
-      #unzip \
+      unzip \
       zip \
-      # https://adaptivesupport.amd.com/s/article/76616?language=en_US
-      #libtinfo5 \
       g++ \
       xvfb \
-      #git \
-      #libncurses5 \
+      # https://adaptivesupport.amd.com/s/article/76616?language=en_US
+      libtinfo5 \
+      libncurses5 \
       libncurses5-dev \
       libc6-dev-i386 \
       libnss3-dev \
@@ -85,8 +82,6 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
       git \
       nano \
       vim \
-    # X11 forwarding for Vivado?
-      x11-apps \
     && apt-get autoclean \
     && apt-get autoremove \
   # && Vivado needs locale EN_us

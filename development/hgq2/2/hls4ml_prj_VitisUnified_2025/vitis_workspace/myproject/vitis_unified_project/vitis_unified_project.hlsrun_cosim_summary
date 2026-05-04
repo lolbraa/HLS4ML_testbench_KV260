@@ -1,0 +1,227 @@
+<ENTRY>
+{
+ "thisFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/vitis_unified_project.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon May  4 16:08:16 2026",
+ "timestampMillis": "1777903696814",
+ "buildStep": {
+  "cmdId": "80fc03bf-1aed-44a8-87c9-e8e723b425aa",
+  "name": "vitis-run",
+  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/logs/vitis_unified_project.steps.log",
+  "commandLine": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --cosim --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/hls_kernel_config.cfg --work_dir vitis_unified_project ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/hls_kernel_config.cfg",
+   "--work_dir",
+   "vitis_unified_project"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 16:08:16 2026",
+ "timestampMillis": "1777903696814",
+ "status": {
+  "cmdId": "80fc03bf-1aed-44a8-87c9-e8e723b425aa",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon May  4 16:08:18 2026",
+ "timestampMillis": "1777903698423",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "myproject_axi_master",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/firmware/myproject_axi_master.cpp",
+     "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/firmware/myproject.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May  4 16:08:18 2026",
+ "timestampMillis": "1777903698424",
+ "buildStep": {
+  "cmdId": "cd3c597f-3203-4aec-841f-ba1043eae07c",
+  "name": "",
+  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 16:08:18 2026",
+ "timestampMillis": "1777903698424",
+ "status": {
+  "cmdId": "cd3c597f-3203-4aec-841f-ba1043eae07c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 16:08:18 2026",
+ "timestampMillis": "1777903698425",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/hls/sim/report/myproject_axi_master_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 16:08:18 2026",
+ "timestampMillis": "1777903698425",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 16:08:18 2026",
+ "timestampMillis": "1777903698425",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 16:08:18 2026",
+ "timestampMillis": "1777903698425",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 16:08:18 2026",
+ "timestampMillis": "1777903698425",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/2/hls4ml_prj_VitisUnified_2025/vitis_workspace/myproject/vitis_unified_project/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 16:09:22 2026",
+ "timestampMillis": "1777903762548",
+ "status": {
+  "cmdId": "cd3c597f-3203-4aec-841f-ba1043eae07c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 16:09:22 2026",
+ "timestampMillis": "1777903762627",
+ "status": {
+  "cmdId": "80fc03bf-1aed-44a8-87c9-e8e723b425aa",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 16:09:22 2026",
+ "timestampMillis": "1777903762628",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 16:09:22 2026",
+ "timestampMillis": "1777903762628",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

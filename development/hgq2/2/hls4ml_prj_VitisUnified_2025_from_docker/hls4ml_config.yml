@@ -1,0 +1,98 @@
+Backend: VitisUnified
+ClockPeriod: '5'
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    dense_0:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_0_iq:
+      Precision:
+        result: auto
+      Trace: false
+    dense_0_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense_1:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_1_iq:
+      Precision:
+        result: auto
+      Trace: false
+    dense_1_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense_2:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_2_iq:
+      Precision:
+        result: auto
+      Trace: false
+    dense_2_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense_3:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_3_iq:
+      Precision:
+        result: auto
+      Trace: false
+    input_layer_1:
+      Precision:
+        result: auto
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: /work/development/hgq2/x_test_sim.npy
+InputShapes:
+  input_layer_1:
+  - 16
+KerasModel: !keras_model '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/keras_model.keras'
+OutputDir: /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker
+OutputPredictions: /work/development/hgq2/y_test_sim.npy
+OutputShapes:
+  layer12_out:
+  - 5
+Part: xck26-sfvc784-2LV-c
+ProjectName: myproject
+Stamp: 5fd21442
+Version: 1.0.0
+VitisUnifiedConfig:
+  Board: kv260
+  Driver: python
+  InputDtype: float
+  OutputDtype: float
+  axi_mode: axi_master
+  in_stream_buf_size: 128
+  out_stream_buf_size: 128
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

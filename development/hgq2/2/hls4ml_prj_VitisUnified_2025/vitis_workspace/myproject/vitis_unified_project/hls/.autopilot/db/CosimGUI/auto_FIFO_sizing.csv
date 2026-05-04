@@ -1,0 +1,11 @@
+,gmem_out0_ptr_layer12_out_c_U,2,ScalarPro
+,batch_size_c1_U,2,ScalarPro
+,stream_in0_input_layer_1_U,2,Stream
+,batch_size_c_U,2,ScalarPro
+,stream_out0_layer12_out_U,2,Stream
+compute_U0.grp_myproject_fu_62,layer3_out_U,1,Stream
+compute_U0.grp_myproject_fu_62,layer4_out_U,1,Stream
+compute_U0.grp_myproject_fu_62,layer6_out_U,1,Stream
+compute_U0.grp_myproject_fu_62,layer7_out_U,1,Stream
+compute_U0.grp_myproject_fu_62,layer9_out_U,1,Stream
+compute_U0.grp_myproject_fu_62,layer10_out_U,1,Stream

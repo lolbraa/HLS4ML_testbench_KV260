@@ -1,0 +1,418 @@
+<ENTRY>
+{
+ "thisFile": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/myproject.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon May  4 13:36:28 2026",
+ "timestampMillis": "1777901788863",
+ "buildStep": {
+  "cmdId": "de245e0c-4919-491b-bb8f-3415902878ab",
+  "name": "v++",
+  "logFile": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
+  "args": [
+   "-l",
+   "-t",
+   "hw",
+   "--platform",
+   "../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa",
+   "../myproject/vitis_unified_project/myproject_axi_master.xo",
+   "--config",
+   "link_system.cfg",
+   "-o",
+   "myproject.xclbin",
+   "--save-temps"
+  ],
+  "iniFiles": [
+   {
+    "path": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/link_system.cfg",
+    "content": "\n# hls-fpga-machine-learning insert custom connection\n"
+   }
+  ],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:28 2026",
+ "timestampMillis": "1777901788864",
+ "status": {
+  "cmdId": "de245e0c-4919-491b-bb8f-3415902878ab",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon May  4 13:36:29 2026",
+ "timestampMillis": "1777901789441",
+ "buildSummary": {
+  "hardwarePlatform": "kv260_axi_all_platform.xsa",
+  "hardwareDsa": "",
+  "platformDirectory": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/output",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "myproject",
+    "file": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/myproject.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "myproject_axi_master",
+     "file": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject.cpp",
+     "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject_axi_master.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "myproject_axi_master_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2025.2. SW Build 6295257 on 2025-11-13-01:29:13"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 13:36:29 2026",
+ "timestampMillis": "1777901789445",
+ "report": {
+  "path": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/analyzer_input/analyzer_summary.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_ANALYZE_METADATA",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May  4 13:36:29 2026",
+ "timestampMillis": "1777901789471",
+ "buildStep": {
+  "cmdId": "215af2d1-2467-4992-8dd4-8b15aaae3610",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int --temp_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
+   "-keep",
+   "--xpfm",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int",
+   "--temp_dir",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:29 2026",
+ "timestampMillis": "1777901789472",
+ "status": {
+  "cmdId": "215af2d1-2467-4992-8dd4-8b15aaae3610",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:31 2026",
+ "timestampMillis": "1777901791794",
+ "status": {
+  "cmdId": "215af2d1-2467-4992-8dd4-8b15aaae3610",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May  4 13:36:31 2026",
+ "timestampMillis": "1777901791796",
+ "buildStep": {
+  "cmdId": "83f651cf-0c81-4bbf-96ae-a709bbdd6427",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:31 2026",
+ "timestampMillis": "1777901791796",
+ "status": {
+  "cmdId": "83f651cf-0c81-4bbf-96ae-a709bbdd6427",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:32 2026",
+ "timestampMillis": "1777901792439",
+ "status": {
+  "cmdId": "83f651cf-0c81-4bbf-96ae-a709bbdd6427",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May  4 13:36:32 2026",
+ "timestampMillis": "1777901792443",
+ "buildStep": {
+  "cmdId": "ff2964ca-9b7c-42e8-86e8-9f2d9d51144f",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:32 2026",
+ "timestampMillis": "1777901792443",
+ "status": {
+  "cmdId": "ff2964ca-9b7c-42e8-86e8-9f2d9d51144f",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 13:36:32 2026",
+ "timestampMillis": "1777901792481",
+ "report": {
+  "path": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:32 2026",
+ "timestampMillis": "1777901792481",
+ "status": {
+  "cmdId": "ff2964ca-9b7c-42e8-86e8-9f2d9d51144f",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May  4 13:36:32 2026",
+ "timestampMillis": "1777901792483",
+ "buildStep": {
+  "cmdId": "1cc6e24d-6a86-41c5-9dec-29d45e594e0a",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/.ipcache --output_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int --log_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/logs/link --report_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/reports/link --config /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link --no-info --iprepo /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/run_link/vpl.pb /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa",
+   "-s",
+   "--remote_ip_cache",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/.ipcache",
+   "--output_dir",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int",
+   "--log_dir",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/logs/link",
+   "--report_dir",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/reports/link",
+   "--config",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/vplConfig.ini",
+   "-k",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0",
+   "--messageDb",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/run_link/vpl.pb",
+   "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link\nmisc=BinaryName=myproject\n\n[connectivity]\nnk=myproject_axi_master:1:myproject_axi_master_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:32 2026",
+ "timestampMillis": "1777901792483",
+ "status": {
+  "cmdId": "1cc6e24d-6a86-41c5-9dec-29d45e594e0a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon May  4 13:36:33 2026",
+ "timestampMillis": "1777901793201",
+ "buildStep": {
+  "cmdId": "68cbe342-ace9-4d82-92db-8f3786e80471",
+  "name": "vpl",
+  "logFile": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/link.steps.log",
+  "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vpl -t hw -f /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/.ipcache --output_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int --log_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/logs/link --report_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/reports/link --config /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link --no-info --iprepo /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/run_link/vpl.pb /work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:33 2026",
+ "timestampMillis": "1777901793201",
+ "status": {
+  "cmdId": "68cbe342-ace9-4d82-92db-8f3786e80471",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Mon May  4 13:36:33 2026",
+ "timestampMillis": "1777901793598",
+ "vivadoProject": {
+  "openDir": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon May  4 13:36:33 2026",
+ "timestampMillis": "1777901793599",
+ "buildStep": {
+  "cmdId": "e5d2f072-3e79-46bd-be25-d4ffc622838d",
+  "name": "vivado",
+  "logFile": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon May  4 13:36:33 2026",
+ "timestampMillis": "1777901793599",
+ "status": {
+  "cmdId": "e5d2f072-3e79-46bd-be25-d4ffc622838d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon May  4 13:37:09 2026",
+ "timestampMillis": "1777901829499",
+ "report": {
+  "path": "/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/system_link/_x/link/int/automation_summary_pre_synthesis.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>

@@ -1,0 +1,128 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,   4733, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 227557 *, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  70147, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  68473, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  67022, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,  40614, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,   8801, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate,   8813, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,   8892, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,   8655, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,   8035, loop and instruction simplification</column>
+            <column name="">(2) parallelization,   8804, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,   8663, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,   8559, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,   8071, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,   8812, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="myproject_axi_master" col1="myproject_axi_master.cpp:47" col2="4733" col3="67022" col4="8655" col5="8559" col6="8812">
+                    <row id="9" col0="load_input&lt;float, nnet::array&lt;ap_fixed&lt;11, 5, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 16U&gt; &gt;" col1="myproject_axi_master.cpp:10" col2="514" col3="128" col4="135" col5="914" col6="945">
+                        <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="3" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="31" col0="compute" col1="myproject_axi_master.cpp:41" col2="4019" col3="66781" col4="8398" col5="7311" col6="7539">
+                        <row id="27" col0="myproject" col1="myproject.cpp:7" col2="4008" col3="66771" col4="8388" col5="7302" col6="7530">
+                            <row id="33" col0="dense&lt;nnet::array&lt;ap_fixed&lt;11, 5, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 16U&gt;, nnet::array&lt;ap_fixed&lt;13, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64U&gt;, config3&gt;" col1="nnet_dense_stream.h:82" col2="810" col3="16281" col4="2058" col5="1546" col6="1608">
+                                <row id="28" col0="data_prepare&lt;nnet::array&lt;ap_fixed&lt;11, 5, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 16U&gt;, config3&gt;" col1="nnet_dense_stream.h:28" col2="75" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="6" col2_disp="   6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="30" col0="dense_latency_wrapper&lt;ap_fixed&lt;11, 5, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;13, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config3&gt;" col1="nnet_dense_stream.h:13" col2="644" col3="" col4="" col5="" col6="">
+                                    <row id="10" col0="dense_latency&lt;ap_fixed&lt;11, 5, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;13, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config3&gt;" col1="nnet_dense_latency.h:13" col2="642" col3="" col4="" col5="" col6="">
+                                        <row id="13" col0="product" col1="nnet_mult.h:70" col2="141" col3="" col4="" col5="" col6=""/>
+                                        <row id="25" col0="cast&lt;ap_fixed&lt;11, 5, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;13, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config3&gt;" col1="nnet_mult.h:110" col2="59" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="32" col0="res_write&lt;nnet::array&lt;ap_fixed&lt;13, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64U&gt;, config3&gt;" col1="nnet_dense_stream.h:53" col2="71" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="6" col2_disp="   6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="10" col0="dense_latency&lt;ap_fixed&lt;11, 5, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;13, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config3&gt;" col1="nnet_dense_latency.h:13" col2="" col3="16032" col4="1365" col5="885" col6="886">
+                                    <row id="25" col0="cast&lt;ap_fixed&lt;11, 5, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;13, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config3&gt;" col1="nnet_mult.h:110" col2="" col3="256" col3_disp="  256 (64 calls)" col4="256" col4_disp=" 256 (64 calls)" col5="" col6=""/>
+                                </row>
+                            </row>
+                            <row id="4" col0="relu&lt;nnet::array&lt;ap_fixed&lt;13, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 64U&gt;, nnet::array&lt;ap_fixed&lt;11, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 64U&gt;, relu_config4&gt;" col1="nnet_activation_stream.h:39" col2="307" col3="1099" col4="1669" col5="1669" col6="1725">
+                                <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="12" col2_disp="  12 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="6" col0="dense&lt;nnet::array&lt;ap_fixed&lt;11, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 64U&gt;, nnet::array&lt;ap_fixed&lt;15, 13, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32U&gt;, config6&gt;" col1="nnet_dense_stream.h:82" col2="759" col3="31321" col4="1588" col5="1309" col6="1333">
+                                <row id="21" col0="data_prepare&lt;nnet::array&lt;ap_fixed&lt;11, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 64U&gt;, config6&gt;" col1="nnet_dense_stream.h:28" col2="75" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="6" col2_disp="   6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="20" col0="dense_latency_wrapper&lt;ap_fixed&lt;11, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;15, 13, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;" col1="nnet_dense_stream.h:13" col2="593" col3="" col4="" col5="" col6="">
+                                    <row id="29" col0="dense_latency&lt;ap_fixed&lt;11, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;15, 13, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;" col1="nnet_dense_latency.h:13" col2="591" col3="" col4="" col5="" col6="">
+                                        <row id="13" col0="product" col1="nnet_mult.h:70" col2="141" col3="" col4="" col5="" col6=""/>
+                                        <row id="23" col0="cast&lt;ap_fixed&lt;11, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;15, 13, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;" col1="nnet_mult.h:110" col2="59" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="12" col0="res_write&lt;nnet::array&lt;ap_fixed&lt;15, 13, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32U&gt;, config6&gt;" col1="nnet_dense_stream.h:53" col2="71" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="6" col2_disp="   6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="29" col0="dense_latency&lt;ap_fixed&lt;11, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;15, 13, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config6&gt;" col1="nnet_dense_latency.h:13" col2="" col3="31023" col4="800" col5="774" col6="775"/>
+                            </row>
+                            <row id="7" col0="relu&lt;nnet::array&lt;ap_fixed&lt;15, 13, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32U&gt;, nnet::array&lt;ap_fixed&lt;10, 9, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 32U&gt;, relu_config7&gt;" col1="nnet_activation_stream.h:39" col2="307" col3="555" col4="837" col5="837" col6="861">
+                                <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="12" col2_disp="  12 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="2" col0="dense&lt;nnet::array&lt;ap_fixed&lt;10, 9, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 32U&gt;, nnet::array&lt;ap_fixed&lt;14, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32U&gt;, config9&gt;" col1="nnet_dense_stream.h:82" col2="759" col3="15689" col4="942" col5="802" col6="826">
+                                <row id="19" col0="data_prepare&lt;nnet::array&lt;ap_fixed&lt;10, 9, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 32U&gt;, config9&gt;" col1="nnet_dense_stream.h:28" col2="75" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="6" col2_disp="   6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="18" col0="dense_latency_wrapper&lt;ap_fixed&lt;10, 9, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;14, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config9&gt;" col1="nnet_dense_stream.h:13" col2="593" col3="" col4="" col5="" col6="">
+                                    <row id="22" col0="dense_latency&lt;ap_fixed&lt;10, 9, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;14, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config9&gt;" col1="nnet_dense_latency.h:13" col2="591" col3="" col4="" col5="" col6="">
+                                        <row id="13" col0="product" col1="nnet_mult.h:70" col2="141" col3="" col4="" col5="" col6=""/>
+                                        <row id="17" col0="cast&lt;ap_fixed&lt;10, 9, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;14, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config9&gt;" col1="nnet_mult.h:110" col2="59" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="26" col0="res_write&lt;nnet::array&lt;ap_fixed&lt;14, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32U&gt;, config9&gt;" col1="nnet_dense_stream.h:53" col2="71" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="6" col2_disp="   6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="22" col0="dense_latency&lt;ap_fixed&lt;10, 9, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;14, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config9&gt;" col1="nnet_dense_latency.h:13" col2="" col3="15487" col4="385" col5="372" col6="373"/>
+                            </row>
+                            <row id="3" col0="relu&lt;nnet::array&lt;ap_fixed&lt;14, 12, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 32U&gt;, nnet::array&lt;ap_fixed&lt;9, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 32U&gt;, relu_config10&gt;" col1="nnet_activation_stream.h:39" col2="307" col3="555" col4="837" col5="837" col6="861">
+                                <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="12" col2_disp="  12 (4 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="11" col0="dense&lt;nnet::array&lt;ap_fixed&lt;9, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 32U&gt;, nnet::array&lt;ap_fixed&lt;17, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5U&gt;, config12&gt;" col1="nnet_dense_stream.h:82" col2="703" col3="1241" col4="431" col5="276" col6="288">
+                                <row id="14" col0="data_prepare&lt;nnet::array&lt;ap_fixed&lt;9, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 32U&gt;, config12&gt;" col1="nnet_dense_stream.h:28" col2="75" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="6" col2_disp="   6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="15" col0="dense_latency_wrapper&lt;ap_fixed&lt;9, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;17, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config12&gt;" col1="nnet_dense_stream.h:13" col2="537" col3="" col4="" col5="" col6="">
+                                    <row id="16" col0="dense_latency&lt;ap_fixed&lt;9, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;17, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config12&gt;" col1="nnet_dense_latency.h:13" col2="535" col3="" col4="" col5="" col6="">
+                                        <row id="13" col0="product" col1="nnet_mult.h:70" col2="141" col3="" col4="" col5="" col6=""/>
+                                        <row id="5" col0="cast&lt;ap_fixed&lt;9, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;17, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config12&gt;" col1="nnet_mult.h:110" col2="3" col3="" col4="" col5="" col6=""/>
+                                    </row>
+                                </row>
+                                <row id="8" col0="res_write&lt;nnet::array&lt;ap_fixed&lt;17, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5U&gt;, config12&gt;" col1="nnet_dense_stream.h:53" col2="71" col3="" col4="" col5="" col6="">
+                                    <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="6" col2_disp="   6 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                </row>
+                                <row id="16" col0="dense_latency&lt;ap_fixed&lt;9, 8, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;17, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config12&gt;" col1="nnet_dense_latency.h:13" col2="" col3="1121" col4="192" col5="183" col6="184"/>
+                            </row>
+                        </row>
+                    </row>
+                    <row id="24" col0="store_result&lt;float, nnet::array&lt;ap_fixed&lt;17, 9, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 5U&gt; &gt;" col1="myproject_axi_master.cpp:26" col2="176" col3="99" col4="106" col5="318" col6="305">
+                        <row id="1" col0="operator[]" col1="nnet_types.h:17" col2="3" col3="" col4="" col5="" col6=""/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>

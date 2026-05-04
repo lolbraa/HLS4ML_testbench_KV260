@@ -65,7 +65,7 @@ HLSConfig:
     Precision:
       default: fixed<16,6>
     ReuseFactor: 1
-    Strategy: Distributed Arithmetic
+    Strategy: Latency
     TraceOutput: false
 IOType: io_stream
 InputData: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/hgq2/x_test_sim.npy
@@ -80,7 +80,7 @@ OutputShapes:
   - 5
 Part: xck26-sfvc784-2LV-c
 ProjectName: myproject
-Stamp: cad36470
+Stamp: 86d73a24
 Version: 1.0.0
 VitisUnifiedConfig:
   Board: kv260

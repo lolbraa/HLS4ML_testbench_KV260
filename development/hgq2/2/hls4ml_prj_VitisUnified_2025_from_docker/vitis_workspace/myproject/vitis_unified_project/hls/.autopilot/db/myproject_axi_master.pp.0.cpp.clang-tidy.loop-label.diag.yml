@@ -1,0 +1,172 @@
+---
+MainSourceFile:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          1017127
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          1017602
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          1018078
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          1357697
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2114473
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_39_1:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      39
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2114722
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_39_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_56_1:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2115217
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_56_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_13_1:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp'
+      FileOffset:      13
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2186825
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_13_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_14_2:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp'
+      FileOffset:      14
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2186872
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_14_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_16_3:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp'
+      FileOffset:      16
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2186981
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_16_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_29_1:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp'
+      FileOffset:      29
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2187374
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_29_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_30_2:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp'
+      FileOffset:      30
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2187421
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_30_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_32_3:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp'
+      FileOffset:      32
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2187546
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_32_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_42_1:  '
+      FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/firmware/myproject_axi_master.cpp'
+      FileOffset:      42
+      Replacements:
+        - FilePath:        '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp'
+          Offset:          2187837
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_42_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/hgq2/2/hls4ml_prj_VitisUnified_2025_from_docker/vitis_workspace/myproject'
+...
