@@ -1,0 +1,6 @@
+name: devenv-plots
+dependencies:
+    - matplotlib
+    - pandas
+    - ipykernel
+    - scikit-learn

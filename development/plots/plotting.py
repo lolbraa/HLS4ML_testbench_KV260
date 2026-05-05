@@ -1,9 +1,13 @@
+# Based on https://github.com/fastmachinelearning/hls4ml-tutorial/blob/main/plotting.py
 import itertools
 
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.metrics import auc, roc_curve
+
+colors = [ "#3e6990", "#aabd8c", "#8a8565", "#f39b6d","#381d2a"]
+
 
 
 # confusion matrix code from Maurizio
@@ -35,22 +39,27 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     plt.xlabel('Predicted label')
 
 
+# Changed axis to match convention
 def plotRoc(fpr, tpr, auc, labels, linestyle, legend=True):
     for _i, label in enumerate(labels):
         plt.plot(
-            tpr[label],
             fpr[label],
-            label='{} tagger, AUC = {:.1f}%'.format(label.replace('j_', ''), auc[label] * 100.0),
+            tpr[label],
+            label='{}, AUC = {:.1f}%'.format(label.replace('j_', ''), auc[label] * 100.0),
             linestyle=linestyle,
         )
-    plt.semilogy()
-    plt.xlabel("Signal Efficiency")
-    plt.ylabel("Background Efficiency")
-    plt.ylim(0.001, 1)
-    plt.grid(True)
+    plt.semilogx()
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
+    plt.xlim(0.001, 1)
+    plt.grid(True,which="both")
+    ax = plt.gca()
+    for spine in ("right", "top"):
+        ax.spines[spine].set_visible(False)
     if legend:
-        plt.legend(loc='upper left')
-    plt.figtext(0.25, 0.90, 'hls4ml', fontweight='bold', wrap=True, horizontalalignment='right', fontsize=14)
+        plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
+          fancybox=True, shadow=True, ncol=5)
+    #plt.figtext(0.25, 0.90, 'hls4ml', fontweight='bold', wrap=True, horizontalalignment='right', fontsize=14)
 
 
 def rocData(y, predict_test, labels):
