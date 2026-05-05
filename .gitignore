@@ -217,3 +217,7 @@ FPGAs_AdaptiveSoCs_Unified_SDI_*.tar
 xilinx_*.zip
 dockerbuild/qs.md
 dockerbuild/*.tar.gz
+
+#PixSplit data
+nparticles_resampled.h5
+processed_data
