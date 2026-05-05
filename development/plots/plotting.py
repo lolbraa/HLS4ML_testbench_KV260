@@ -21,19 +21,23 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
 
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    # plt.title(title)
+    plt.title(title)
     cbar = plt.colorbar()
     plt.clim(0, 1)
-    cbar.set_label(title)
+    #cbar.set_label(title)
     tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
+    plt.xticks(tick_marks, classes,color=cmap(0.95))
+    plt.yticks(tick_marks, classes,color=cmap(0.95))
 
-    fmt = '.2f' if normalize else 'd'
+    fmt = ".2f" if normalize else "d"
     thresh = cm.max() / 2.0
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         plt.text(j, i, format(cm[i, j], fmt), horizontalalignment="center", color="white" if cm[i, j] > thresh else "black")
 
+    ax = plt.gca()
+    for spine in ("right", "top", "bottom", "left"):
+        ax.spines[spine].set_visible(False)
+        
     # plt.tight_layout()
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
@@ -89,13 +93,3 @@ def makeRoc(y, predict_test, labels, linestyle='-', legend=True, style_semilogx=
     fpr, tpr, auc1 = rocData(y, predict_test, labels)
     plotRoc(fpr, tpr, auc1, labels, linestyle, legend=legend, style_semilogx=style_semilogx, style_legends=style_legends)
     return predict_test
-
-
-def print_dict(d, indent=0):
-    for key, value in d.items():
-        print('  ' * indent + str(key), end='')
-        if isinstance(value, dict):
-            print()
-            print_dict(value, indent + 1)
-        else:
-            print(':' + ' ' * (20 - len(key) - 2 * indent) + str(value))
