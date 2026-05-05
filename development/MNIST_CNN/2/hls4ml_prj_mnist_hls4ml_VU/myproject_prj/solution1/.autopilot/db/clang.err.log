@@ -1,0 +1,36 @@
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:10:
+firmware/nnet_utils/nnet_activation.h:402:36: warning: unexpected pragma argument 'softmax', expects function/operation [-Winvalid-hls-pragmas]
+#pragma HLS allocation instances = softmax<CONFIG_T> limit = CONFIG_T::parallelization_factor function
+                                   ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:12:
+In file included from firmware/nnet_utils/nnet_conv2d.h:6:
+In file included from firmware/nnet_utils/nnet_conv2d_resource.h:5:
+In file included from firmware/nnet_utils/nnet_dense.h:7:
+firmware/nnet_utils/nnet_dense_resource.h:33:13: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+firmware/nnet_utils/nnet_dense_resource.h:107:13: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+firmware/nnet_utils/nnet_dense_resource.h:189:13: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:17:
+firmware/nnet_utils/nnet_pooling.h:180:43: warning: ALLOCATION pragma is ignored, because Instances value is not valid function pointer expression  [-Winvalid-hls-pragmas]
+#pragma HLS ALLOCATION function instances=pool_op<data_T, CONFIG_T::pool_height*CONFIG_T::pool_width, CONFIG_T::pool_op, typename CONFIG_T::accum_t> limit=limit
+                                          ^
+firmware/myproject.cpp:59:11: note: in instantiation of function template specialization 'nnet::pooling2d_cl<ap_ufixed<7, 4>, ap_ufixed<4, 2, AP_RND>, config5>' requested here
+    nnet::pooling2d_cl<conv0_relu_t, pool0_t, config5>(layer4_out, layer5_out);
+          ^
+In file included from firmware/myproject.cpp:4:
+In file included from firmware/parameters.h:17:
+firmware/nnet_utils/nnet_pooling.h:180:43: warning: ALLOCATION pragma is ignored, because Instances value is not valid function pointer expression  [-Winvalid-hls-pragmas]
+#pragma HLS ALLOCATION function instances=pool_op<data_T, CONFIG_T::pool_height*CONFIG_T::pool_width, CONFIG_T::pool_op, typename CONFIG_T::accum_t> limit=limit
+                                          ^
+firmware/myproject.cpp:65:11: note: in instantiation of function template specialization 'nnet::pooling2d_cl<ap_ufixed<9, 3>, ap_ufixed<4, 2, AP_RND>, config9>' requested here
+    nnet::pooling2d_cl<conv1_relu_t, pool1_t, config9>(layer8_out, layer9_out);
+          ^
+6 warnings generated.

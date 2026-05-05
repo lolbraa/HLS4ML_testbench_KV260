@@ -1,0 +1,43 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 32, 32, 3)]       0         
+                                                                 
+ sequential (Sequential)     (None, 32, 32, 3)         0         
+                                                                 
+ qconv0 (QConv2D)            (None, 30, 30, 32)        896       
+                                                                 
+ relu0 (QActivation)         (None, 30, 30, 32)        0         
+                                                                 
+ pool0 (MaxPooling2D)        (None, 15, 15, 32)        0         
+                                                                 
+ qconv1 (QConv2D)            (None, 13, 13, 64)        18496     
+                                                                 
+ relu1 (QActivation)         (None, 13, 13, 64)        0         
+                                                                 
+ pool1 (MaxPooling2D)        (None, 6, 6, 64)          0         
+                                                                 
+ qconv2 (QConv2D)            (None, 4, 4, 128)         73856     
+                                                                 
+ relu2 (QActivation)         (None, 4, 4, 128)         0         
+                                                                 
+ pool2 (MaxPooling2D)        (None, 2, 2, 128)         0         
+                                                                 
+ flatten (Flatten)           (None, 512)               0         
+                                                                 
+ qdense0 (QDense)            (None, 512)               262656    
+                                                                 
+ relu3 (QActivation)         (None, 512)               0         
+                                                                 
+ dropout (Dropout)           (None, 512)               0         
+                                                                 
+ qdense1 (QDense)            (None, 10)                5130      
+                                                                 
+ softmax (Activation)        (None, 10)                0         
+                                                                 
+=================================================================
+Total params: 361034 (1.38 MB)
+Trainable params: 361034 (1.38 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

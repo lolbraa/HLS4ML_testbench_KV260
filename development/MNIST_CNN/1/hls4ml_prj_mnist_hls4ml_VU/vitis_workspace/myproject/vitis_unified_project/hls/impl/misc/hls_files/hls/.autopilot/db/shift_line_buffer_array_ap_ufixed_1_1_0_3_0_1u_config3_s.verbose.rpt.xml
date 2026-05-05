@@ -1,0 +1,137 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'shift_line_buffer_array_ap_ufixed_1_1_0_3_0_1u_config3_s'" level="0">
+<item name = "Date">Mon May  4 22:35:33 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">vitis_unified_project</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 1.434 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, 128, 64, -</column>
+<column name="Multiplexer">-, -, 0, 45, -</column>
+<column name="Register">-, -, 1, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1_U">shift_line_buffer_array_ap_ufixed_1_1_0_3_0_1u_config3_s_void_conv_2d_buffer_bkb, 0, 64, 32, 0, 28, 1, 1, 28</column>
+<column name="void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_U">shift_line_buffer_array_ap_ufixed_1_1_0_3_0_1u_config3_s_void_conv_2d_buffer_bkb, 0, 64, 32, 0, 28, 1, 1, 28</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2_o">9, 2, 1, 2</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3_o">9, 2, 1, 2</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5_o">9, 2, 1, 2</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6_o">9, 2, 1, 2</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8_o">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, shift_line_buffer&lt;array&lt;ap_ufixed&lt;1, 1, 0, 3, 0&gt;, 1u&gt;, config3&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, shift_line_buffer&lt;array&lt;ap_ufixed&lt;1, 1, 0, 3, 0&gt;, 1u&gt;, config3&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, shift_line_buffer&lt;array&lt;ap_ufixed&lt;1, 1, 0, 3, 0&gt;, 1u&gt;, config3&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, shift_line_buffer&lt;array&lt;ap_ufixed&lt;1, 1, 0, 3, 0&gt;, 1u&gt;, config3&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, shift_line_buffer&lt;array&lt;ap_ufixed&lt;1, 1, 0, 3, 0&gt;, 1u&gt;, config3&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, shift_line_buffer&lt;array&lt;ap_ufixed&lt;1, 1, 0, 3, 0&gt;, 1u&gt;, config3&gt;, return value</column>
+<column name="ap_ce">in, 1, ap_ctrl_hs, shift_line_buffer&lt;array&lt;ap_ufixed&lt;1, 1, 0, 3, 0&gt;, 1u&gt;, config3&gt;, return value</column>
+<column name="in_elem_0_0_0_0_0_val">in, 1, ap_none, in_elem_0_0_0_0_0_val, scalar</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6_i">in, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6_o">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6_o_ap_vld">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7">out, 1, ap_vld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7_ap_vld">out, 1, ap_vld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3_i">in, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3_o">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3_o_ap_vld">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4">out, 1, ap_vld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4_ap_vld">out, 1, ap_vld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8_i">in, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8_o">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8_o_ap_vld">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9">out, 1, ap_vld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9_ap_vld">out, 1, ap_vld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5_i">in, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5_o">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5_o_ap_vld">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2_i">in, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2_o">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2, pointer</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2_o_ap_vld">out, 1, ap_ovld, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2, pointer</column>
+</table>
+</item>
+</section>
+</profile>

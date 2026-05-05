@@ -1,0 +1,72 @@
+<design_size title="Design Size Report">
+    <item name="C-Synthesis has not completed!">
+        <item name="Unroll/Inline"/>
+        <item name="Array/Struct"/>
+        <item name="Performance"/>
+        <item name="HW Transforms"/>
+    </item>
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="3">Phase, Instructions, Description</keys>
+            <column name="Compile/Link">120525 *, After all functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">pending, After user unroll and inline pragmas are applied</column>
+            <column name="Array/Struct">, After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="Performance">, After transformations are applied to meet performance pragma targets</column>
+            <column name="HW Transforms">, After hardware transfomations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="3" col0="Function" col1="Location" col2="Compile/Link"/>
+            <rows>
+                <row id="0" col0="myproject" col1="myproject.cpp:7" col2="120525" col2_note="*">
+                    <row id="18" col0="conv_2d_cl&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config3&gt;" col1="nnet_conv2d.h:42" col2="31046">
+                        <row id="12" col0="conv_2d_latency_cl&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config3&gt;" col1="nnet_conv2d_latency.h:11" col2="31044">
+                            <row id="9" col0="fill_buffer" col1="nnet_code_gen.h:28" col2="30424"/>
+                            <row id="21" col0="product" col1="nnet_mult.h:70" col2="141"/>
+                            <row id="22" col0="cast&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config3_mult&gt;" col1="nnet_mult.h:110" col2="3"/>
+                        </row>
+                    </row>
+                    <row id="1" col0="relu&lt;ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, relu_config4&gt;" col1="nnet_activation.h:39" col2="177"/>
+                    <row id="23" col0="pooling2d_cl&lt;ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, config5&gt;" col1="nnet_pooling.h:174" col2="336">
+                        <row id="16" col0="pad_val&lt;ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, (nnet::Pool_Op)0&gt;" col1="nnet_pooling.h:45" col2="86"/>
+                        <row id="2" col0="pool_op&lt;ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, (nnet::Pool_Op)0, ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;" col1="nnet_pooling.h:31" col2="39">
+                            <row id="4" col0="max&lt;ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, ap_ufixed&lt;7, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;" col1="nnet_pooling.h:11" col2="36"/>
+                        </row>
+                    </row>
+                    <row id="19" col0="conv_2d_cl&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;10, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config7&gt;" col1="nnet_conv2d.h:42" col2="87746">
+                        <row id="20" col0="conv_2d_latency_cl&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;10, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config7&gt;" col1="nnet_conv2d_latency.h:11" col2="87744">
+                            <row id="14" col0="fill_buffer" col1="nnet_code_gen.h:717" col2="87124"/>
+                            <row id="21" col0="product" col1="nnet_mult.h:70" col2="141"/>
+                            <row id="3" col0="cast&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;10, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config7_mult&gt;" col1="nnet_mult.h:110" col2="3"/>
+                        </row>
+                    </row>
+                    <row id="17" col0="relu&lt;ap_fixed&lt;10, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_ufixed&lt;9, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, relu_config8&gt;" col1="nnet_activation.h:39" col2="228"/>
+                    <row id="7" col0="pooling2d_cl&lt;ap_ufixed&lt;9, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, config9&gt;" col1="nnet_pooling.h:174" col2="342">
+                        <row id="10" col0="pad_val&lt;ap_ufixed&lt;9, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, (nnet::Pool_Op)0&gt;" col1="nnet_pooling.h:45" col2="86"/>
+                        <row id="11" col0="pool_op&lt;ap_ufixed&lt;9, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, (nnet::Pool_Op)0, ap_ufixed&lt;9, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;" col1="nnet_pooling.h:31" col2="39">
+                            <row id="15" col0="max&lt;ap_ufixed&lt;9, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 4, ap_ufixed&lt;9, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; &gt;" col1="nnet_pooling.h:11" col2="36"/>
+                        </row>
+                    </row>
+                    <row id="5" col0="dense&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;17, 10, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config13&gt;" col1="nnet_dense.h:41" col2="590">
+                        <row id="13" col0="dense" col1="nnet_dense.h:50" col2="588">
+                            <row id="8" col0="dense_latency&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;17, 10, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config13&gt;" col1="nnet_dense_latency.h:13" col2="586">
+                                <row id="21" col0="product" col1="nnet_mult.h:70" col2="141"/>
+                                <row id="6" col0="cast&lt;ap_ufixed&lt;4, 2, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, ap_fixed&lt;17, 10, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, config13&gt;" col1="nnet_mult.h:110" col2="3"/>
+                            </row>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes>
+                <note name="*" desc="Exceeded design size warning message threshold"/>
+            </notes>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>

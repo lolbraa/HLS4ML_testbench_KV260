@@ -1,0 +1,205 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute_output_buffer_2d_array_array_ap_fixed_10_5_5_3_0_16u_config7_s'
+================================================================
+* Date:           Mon May  4 23:39:30 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        vitis_unified_project
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.125 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        2|        2|  10.000 ns|  10.000 ns|    3|    3|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                                                                 |                                                                      |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                                     Instance                                    |                                Module                                |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |call_ln281_shift_line_buffer_array_ap_ufixed_4_2_0_3_0_16u_config7_s_fu_273      |shift_line_buffer_array_ap_ufixed_4_2_0_3_0_16u_config7_s             |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        |tmp_dense_latency_ap_ufixed_4_2_0_3_0_ap_fixed_10_5_5_3_0_config7_mult_s_fu_391  |dense_latency_ap_ufixed_4_2_0_3_0_ap_fixed_10_5_5_3_0_config7_mult_s  |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+        +---------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     503|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|     129|     741|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      70|    -|
+|Register         |        -|     -|     347|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     476|    1314|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|       1|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+----+-----+-----+-----+
+    |                                     Instance                                    |                                Module                                | BRAM_18K| DSP|  FF | LUT | URAM|
+    +---------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+----+-----+-----+-----+
+    |tmp_dense_latency_ap_ufixed_4_2_0_3_0_ap_fixed_10_5_5_3_0_config7_mult_s_fu_391  |dense_latency_ap_ufixed_4_2_0_3_0_ap_fixed_10_5_5_3_0_config7_mult_s  |        0|   0|    0|  623|    0|
+    |call_ln281_shift_line_buffer_array_ap_ufixed_4_2_0_3_0_16u_config7_s_fu_273      |shift_line_buffer_array_ap_ufixed_4_2_0_3_0_16u_config7_s             |        0|   0|  129|  118|    0|
+    +---------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+----+-----+-----+-----+
+    |Total                                                                            |                                                                      |        0|   0|  129|  741|    0|
+    +---------------------------------------------------------------------------------+----------------------------------------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |add_ln303_fu_527_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln307_fu_574_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln313_fu_596_p2             |         +|   0|  0|  39|          32|           1|
+    |add_ln318_fu_544_p2             |         +|   0|  0|  39|          32|           1|
+    |and_ln284_2_fu_479_p2           |       and|   0|  0|   2|           1|           1|
+    |and_ln284_fu_473_p2             |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3                 |       and|   0|  0|   2|           1|           1|
+    |ap_condition_181                |       and|   0|  0|   2|           1|           1|
+    |ap_condition_237                |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op44_write_state3  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln284_4_fu_435_p2          |      icmp|   0|  0|  39|          32|           2|
+    |icmp_ln284_5_fu_451_p2          |      icmp|   0|  0|  38|          31|           1|
+    |icmp_ln284_6_fu_467_p2          |      icmp|   0|  0|  38|          31|           1|
+    |icmp_ln284_fu_417_p2            |      icmp|   0|  0|  39|          32|           2|
+    |icmp_ln303_fu_532_p2            |      icmp|   0|  0|  39|          32|           4|
+    |icmp_ln307_fu_579_p2            |      icmp|   0|  0|  39|          32|           4|
+    |icmp_ln313_fu_591_p2            |      icmp|   0|  0|  39|          32|           2|
+    |select_ln313_fu_601_p3          |    select|   0|  0|  32|           1|           2|
+    |select_ln318_fu_549_p3          |    select|   0|  0|  32|           1|           2|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |Total                           |          |   0|  0| 503|         358|          30|
+    +--------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------+----+-----------+-----+-----------+
+    |                 Name                | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                            |  20|          4|    1|          4|
+    |ap_phi_mux_storemerge_phi_fu_266_p4  |  14|          3|   32|         96|
+    |layer7_out_blk_n                     |   9|          2|    1|          2|
+    |pX_3                                 |   9|          2|   32|         64|
+    |pY_3                                 |   9|          2|   32|         64|
+    |sX_3                                 |   9|          2|   32|         64|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |Total                                |  70|         15|  130|        294|
+    +-------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                         Name                                        | FF | LUT| Bits| Const Bits|
+    +-------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |and_ln284_2_reg_648                                                                  |   1|   0|    1|          0|
+    |ap_CS_fsm                                                                            |   3|   0|    3|          0|
+    |icmp_ln284_reg_627                                                                   |   1|   0|    1|          0|
+    |pX_3                                                                                 |  32|   0|   32|          0|
+    |pX_3_load_reg_643                                                                    |  32|   0|   32|          0|
+    |pY_3                                                                                 |  32|   0|   32|          0|
+    |pY_3_load_reg_638                                                                    |  32|   0|   32|          0|
+    |p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9    |   4|   0|    4|          0|
+    |p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_1  |   4|   0|    4|          0|
+    |p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_2  |   4|   0|    4|          0|
+    |p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_3  |   4|   0|    4|          0|
+    |p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_4  |   4|   0|    4|          0|
+    |p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_5  |   4|   0|    4|          0|
+    |p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_6  |   4|   0|    4|          0|
+    |p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_7  |   4|   0|    4|          0|
+    |res_out_1_reg_657                                                                    |  10|   0|   10|          0|
+    |res_out_2_reg_662                                                                    |  10|   0|   10|          0|
+    |res_out_3_reg_667                                                                    |  10|   0|   10|          0|
+    |res_out_4_reg_672                                                                    |  10|   0|   10|          0|
+    |res_out_reg_652                                                                      |  10|   0|   10|          0|
+    |sX_3                                                                                 |  32|   0|   32|          0|
+    |sX_3_load_reg_622                                                                    |  32|   0|   32|          0|
+    |sY_3                                                                                 |  32|   0|   32|          0|
+    |sY_3_load_reg_632                                                                    |  32|   0|   32|          0|
+    |void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3          |   4|   0|    4|          0|
+    +-------------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                                | 347|   0|  347|          0|
+    +-------------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |                              Source Object                              |    C Type    |
++---------------------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+|ap_clk                     |   in|    1|  ap_ctrl_hs|  compute_output_buffer_2d<array,array<ap_fixed<10,5,5,3,0>,16u>,config7>|  return value|
+|ap_rst                     |   in|    1|  ap_ctrl_hs|  compute_output_buffer_2d<array,array<ap_fixed<10,5,5,3,0>,16u>,config7>|  return value|
+|ap_start                   |   in|    1|  ap_ctrl_hs|  compute_output_buffer_2d<array,array<ap_fixed<10,5,5,3,0>,16u>,config7>|  return value|
+|ap_done                    |  out|    1|  ap_ctrl_hs|  compute_output_buffer_2d<array,array<ap_fixed<10,5,5,3,0>,16u>,config7>|  return value|
+|ap_idle                    |  out|    1|  ap_ctrl_hs|  compute_output_buffer_2d<array,array<ap_fixed<10,5,5,3,0>,16u>,config7>|  return value|
+|ap_ready                   |  out|    1|  ap_ctrl_hs|  compute_output_buffer_2d<array,array<ap_fixed<10,5,5,3,0>,16u>,config7>|  return value|
+|layer7_out_blk_n           |  out|    1|  ap_ctrl_hs|  compute_output_buffer_2d<array,array<ap_fixed<10,5,5,3,0>,16u>,config7>|  return value|
+|ap_ce                      |   in|    1|  ap_ctrl_hs|  compute_output_buffer_2d<array,array<ap_fixed<10,5,5,3,0>,16u>,config7>|  return value|
+|p_read                     |   in|    4|     ap_none|                                                                   p_read|        scalar|
+|p_read1                    |   in|    4|     ap_none|                                                                  p_read1|        scalar|
+|p_read2                    |   in|    4|     ap_none|                                                                  p_read2|        scalar|
+|p_read3                    |   in|    4|     ap_none|                                                                  p_read3|        scalar|
+|p_read4                    |   in|    4|     ap_none|                                                                  p_read4|        scalar|
+|p_read5                    |   in|    4|     ap_none|                                                                  p_read5|        scalar|
+|p_read6                    |   in|    4|     ap_none|                                                                  p_read6|        scalar|
+|p_read7                    |   in|    4|     ap_none|                                                                  p_read7|        scalar|
+|p_read8                    |   in|    4|     ap_none|                                                                  p_read8|        scalar|
+|p_read9                    |   in|    4|     ap_none|                                                                  p_read9|        scalar|
+|p_read10                   |   in|    4|     ap_none|                                                                 p_read10|        scalar|
+|p_read11                   |   in|    4|     ap_none|                                                                 p_read11|        scalar|
+|p_read12                   |   in|    4|     ap_none|                                                                 p_read12|        scalar|
+|p_read13                   |   in|    4|     ap_none|                                                                 p_read13|        scalar|
+|p_read14                   |   in|    4|     ap_none|                                                                 p_read14|        scalar|
+|p_read15                   |   in|    4|     ap_none|                                                                 p_read15|        scalar|
+|layer7_out_din             |  out|  160|     ap_fifo|                                                               layer7_out|       pointer|
+|layer7_out_full_n          |   in|    1|     ap_fifo|                                                               layer7_out|       pointer|
+|layer7_out_write           |  out|    1|     ap_fifo|                                                               layer7_out|       pointer|
+|layer7_out_num_data_valid  |   in|    8|     ap_fifo|                                                               layer7_out|       pointer|
+|layer7_out_fifo_cap        |   in|    8|     ap_fifo|                                                               layer7_out|       pointer|
++---------------------------+-----+-----+------------+-------------------------------------------------------------------------+--------------+
+

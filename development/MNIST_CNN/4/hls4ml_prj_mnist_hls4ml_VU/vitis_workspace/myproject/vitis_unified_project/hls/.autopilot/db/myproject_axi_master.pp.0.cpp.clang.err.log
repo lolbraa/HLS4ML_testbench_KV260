@@ -1,0 +1,32 @@
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp:1:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.h:6:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.h:8:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/defines.h:6:
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_types.h:28:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=operator=_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=name=myproject_axi_master_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=myproject_axi_master
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp:55:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=m_axi port=gmem_in0_ptr_hw_input bundle=gmem_in0 depth=3072_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=gmem_in0_ptr_hw_input bundle=gmem_in0 depth=3072
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp:56:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=m_axi port=gmem_out0_ptr_layer20_out bundle=gmem_out0 depth=10_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=gmem_out0_ptr_layer20_out bundle=gmem_out0 depth=10
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp:57:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=s_axilite port=batch_size bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=batch_size bundle=control
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp:58:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp:63:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=variable=stream_in0_hw_input depth=128_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=stream_in0_hw_input depth=128
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp:64:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=variable=stream_out0_layer20_out depth=128_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=stream_out0_layer20_out depth=128
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp:66:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS dataflow
+^
+9 warnings generated.

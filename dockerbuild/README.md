@@ -2,6 +2,11 @@
 
 For an adaptable, independent and easy to get started development environment for continous development towards the KV260, we chose to create an container with the required software pre-configured.
 
+This may serve as a resource if you want to install it straight in the host OS.
+
+Keep in mind, this Docker is not optimized for GPU-accelerated training of Deep Learning models with GPU-passthrough. Likewise, it does not feature GUI passthrough (X11), e.g. for viewing the Vivado block-diagram/reports/area-diagrams. Though we wished to expand and incorporate these features, they simply were out of scope.
+
+
 
 ## Getting started using the container
 
@@ -34,10 +39,8 @@ Restart (e.g. to install new environment) `docker restart hls4ml-kv260-testbench
 
 
 
-## Notes
+## Notes on the Docker-structure
 The user inside runs as root. Hence, files written by the container is owned by root. You may want to fix this.
-
-HLS4ML-tutorial uses other FPGAs for compilation. To compile with Vivado/Vitis, KV260 needs to be explicitly set manually "part = 'xck26-sfvc784-2LV-c'"
 
 Jupyter notebook may be configured by either installing at runtime (setting up an environment and passing `-p 8888:8888' with appropriate command at start) or uncommenting lines in dockerfile and building.
 

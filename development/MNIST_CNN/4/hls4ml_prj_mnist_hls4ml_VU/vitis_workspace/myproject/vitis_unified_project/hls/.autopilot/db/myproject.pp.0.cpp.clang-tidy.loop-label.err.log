@@ -1,0 +1,5 @@
+21 warnings and 3 errors generated.
+Error while processing /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp.
+clang-tidy applied 103 of 103 suggested fixes.
+Suppressed 271 warnings (250 in non-user code, 21 with check filters).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.

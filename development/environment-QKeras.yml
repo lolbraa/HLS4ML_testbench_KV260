@@ -1,0 +1,15 @@
+name: devenv-qkeras
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.16
+  - tensorflow==2.14.0
+  - numpy
+  - notebook
+  - scikit-learn
+  - pip
+  - matplotlib
+  - pandas
+  - pip:
+    - "hls4ml[qkeras] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
+    - qkeras

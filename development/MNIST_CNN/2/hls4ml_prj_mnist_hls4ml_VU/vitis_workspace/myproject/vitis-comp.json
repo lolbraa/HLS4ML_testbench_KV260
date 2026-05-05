@@ -1,0 +1,9 @@
+{
+  "name": "myproject",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/hls_kernel_config.cfg"],
+    "work_dir": "vitis_unified_project"
+  }
+}

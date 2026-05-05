@@ -1,0 +1,1264 @@
+---
+MainSourceFile:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1018030
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1018505
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1018981
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1358640
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2115993
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_39_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      39
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2116242
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_39_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_56_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2116737
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_56_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2465374
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_307_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      307
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2465761
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_307_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_320_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      320
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2466149
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_320_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2466462
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_337_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      337
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2466685
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_337_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_339_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      339
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2466780
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_339_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_351_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      351
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2467144
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_351_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_353_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      353
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2467226
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_353_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_361_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      361
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2467451
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_361_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_377_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      377
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2467862
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_377_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_397_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      397
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2468315
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_397_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_398_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      398
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2468360
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_398_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_413_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      413
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2468769
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_413_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_420_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      420
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2468982
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_420_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_136_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      136
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2479478
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_136_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_137_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      137
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2479562
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_137_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_158_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      158
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2480115
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_158_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_159_4:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      159
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2480199
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_159_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_31_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      31
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2485080
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_31_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_43_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      43
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2485336
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_43_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_57_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      57
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2485700
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_57_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_84_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      84
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486516
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_84_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_114_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      114
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2487180
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_114_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_151_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      151
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2488325
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_151_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_167_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      167
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2488789
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_167_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_200_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      200
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2489727
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_200_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_213_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      213
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2490269
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_213_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_246_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      246
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2491142
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_246_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_255_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      255
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2491422
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_255_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_268_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      268
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2491992
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_268_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_275_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      275
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2492236
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_275_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_288_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      288
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2492596
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_288_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_325_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      325
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2493556
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_325_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2493676
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_331_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      331
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2493733
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_331_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_348_4:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      348
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494333
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_348_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_361_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      361
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494841
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_361_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_369_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      369
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494992
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_369_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_405_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      405
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496200
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_405_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_407_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      407
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496276
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_407_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_409_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      409
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496356
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_409_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_414_4:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      414
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496627
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_414_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_427_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      427
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496956
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_427_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_457_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      457
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2497596
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_457_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_484_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      484
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2498435
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_484_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_498_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      498
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2498787
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_498_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_514_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      514
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2499248
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_514_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_532_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      532
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2499721
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_532_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_549_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      549
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2500127
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_549_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_566_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      566
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2500522
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_566_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_596_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      596
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2501191
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_596_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_615_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      615
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2501765
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_615_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_645_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      645
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2502434
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_645_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_664_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      664
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2502988
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_664_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_694_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      694
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2503640
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_694_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_721_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      721
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2504478
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_721_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_749_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      749
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2505165
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_749_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_779_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      779
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2505853
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_779_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_808_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      808
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2506696
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_808_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_828_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      828
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2507118
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_828_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_229_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      229
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2513672
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_229_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_236_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      236
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2513823
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_236_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_245_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      245
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2514103
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_245_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_254_4:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      254
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2514308
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_254_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_258_5:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      258
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2514416
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_258_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_269_6:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      269
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2514761
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_269_6: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_273_7:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      273
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2514882
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_273_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2515870
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_301_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      301
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2515967
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_301_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_320_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      320
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2516665
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_320_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_211_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      211
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2523268
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_211_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_220_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      220
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2523564
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_220_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_325_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      325
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2526858
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_325_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2527007
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_338_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      338
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2527222
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_338_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      33
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      107
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      189
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_68_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_shift_reg.h'
+      FileOffset:      68
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2566426
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_68_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_75_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_shift_reg.h'
+      FileOffset:      75
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2566630
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_75_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_14_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_dense_compressed.h'
+      FileOffset:      14
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2584742
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_14_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_74_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_dense_compressed.h'
+      FileOffset:      74
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2586659
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_74_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_13_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      13
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2591631
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_13_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_22_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      22
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2591830
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_22_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_97_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      97
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2593764
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_97_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_99_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      99
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2593821
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_99_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_104_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      104
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2594057
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_104_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_132_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      132
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2595380
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_132_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_135_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      135
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2595530
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_135_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_190_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      190
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2597813
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_190_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_192_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      192
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2597870
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_192_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_194_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      194
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2597964
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_194_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_201_4:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      201
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2598238
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_201_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_203_5:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      203
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2598312
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_203_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_244_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      244
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2600683
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_244_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_246_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      246
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2600740
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_246_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_248_3:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      248
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2600834
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_248_3: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_254_4:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      254
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2601105
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_254_4: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_256_5:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_pooling.h'
+      FileOffset:      256
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2601181
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_256_5: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/2/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject'
+...

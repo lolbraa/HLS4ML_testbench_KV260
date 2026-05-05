@@ -1,0 +1,59 @@
+================================================================
+== Design Size Report
+================================================================
+
+* C-Synthesis has not completed!
+
+* Total Instructions per Compilation Phase
++---------------+--------------+----------------------------------------------------------------------------------+
+| Phase         | Instructions | Description                                                                      |
++---------------+--------------+----------------------------------------------------------------------------------+
+| Compile/Link  | 120,525 *    | After all functions are compiled and linked into a single design                 |
+| Unroll/Inline | pending      | After user unroll and inline pragmas are applied                                 |
+| Array/Struct  |              | After user array partition and struct aggregate/disaggregate pragmas are applied |
+| Performance   |              | After transformations are applied to meet performance pragma targets             |
+| HW Transforms |              | After hardware transfomations                                                    |
++---------------+--------------+----------------------------------------------------------------------------------+
+    * - Exceeded design size warning message threshold
+
+* Instructions per Function for each Compilation Phase
++---------------------------------------+--------------------------+--------------+
+| Function                              | Location                 | Compile/Link |
++---------------------------------------+--------------------------+--------------+
+| + myproject                           | myproject.cpp:7          | 120,525 *    |
+|  + conv_2d_cl<ap_ufixed<4, 2, (...    | nnet_conv2d.h:42         | 31,046       |
+|   + conv_2d_latency_cl<ap_ufixed...   | nnet_conv2d_latency.h:11 | 31,044       |
+|      fill_buffer                      | nnet_code_gen.h:28       | 30,424       |
+|      product                          | nnet_mult.h:70           |    141       |
+|      cast<ap_ufixed<4, 2, (ap_q_m...  | nnet_mult.h:110          |      3       |
+|    relu<ap_ufixed<7, 4, (ap_q_m...    | nnet_activation.h:39     |    177       |
+|  + pooling2d_cl<ap_ufixed<7, 4,...    | nnet_pooling.h:174       |    336       |
+|     pad_val<ap_ufixed<7, 4, (ap_...   | nnet_pooling.h:45        |     86       |
+|   + pool_op<ap_ufixed<7, 4, (ap_...   | nnet_pooling.h:31        |     39       |
+|      max<ap_ufixed<7, 4, (ap_q_mo...  | nnet_pooling.h:11        |     36       |
+|  + conv_2d_cl<ap_ufixed<4, 2, (...    | nnet_conv2d.h:42         | 87,746       |
+|   + conv_2d_latency_cl<ap_ufixed...   | nnet_conv2d_latency.h:11 | 87,744       |
+|      fill_buffer                      | nnet_code_gen.h:717      | 87,124       |
+|      product                          | nnet_mult.h:70           |    141       |
+|      cast<ap_ufixed<4, 2, (ap_q_m...  | nnet_mult.h:110          |      3       |
+|    relu<ap_fixed<10, 4, (ap_q_m...    | nnet_activation.h:39     |    228       |
+|  + pooling2d_cl<ap_ufixed<9, 3,...    | nnet_pooling.h:174       |    342       |
+|     pad_val<ap_ufixed<9, 3, (ap_...   | nnet_pooling.h:45        |     86       |
+|   + pool_op<ap_ufixed<9, 3, (ap_...   | nnet_pooling.h:31        |     39       |
+|      max<ap_ufixed<9, 3, (ap_q_mo...  | nnet_pooling.h:11        |     36       |
+|  + dense<ap_ufixed<4, 2, (ap_q_...    | nnet_dense.h:41          |    590       |
+|   + dense                             | nnet_dense.h:50          |    588       |
+|    + dense_latency<ap_ufixed<4, 2...  | nnet_dense_latency.h:13  |    586       |
+|       product                         | nnet_mult.h:70           |    141       |
+|       cast<ap_ufixed<4, 2, (ap_q_m... | nnet_mult.h:110          |      3       |
++---------------------------------------+--------------------------+--------------+
+    * - Exceeded design size warning message threshold
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

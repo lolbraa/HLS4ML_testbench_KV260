@@ -1,0 +1,108 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file ../../hls_kernel_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp' from ../../hls_kernel_config.cfg(7)
+INFO: [HLS 200-10] Adding design file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp' from ../../hls_kernel_config.cfg(8)
+INFO: [HLS 200-10] Adding design file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file_cflags=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp,-std=c++0x' from ../../hls_kernel_config.cfg(9)
+INFO: [HLS 200-1465] Applying config ini 'syn.file_cflags=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp,-std=c++0x' from ../../hls_kernel_config.cfg(10)
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/myproject_test.cpp' from ../../hls_kernel_config.cfg(14)
+INFO: [HLS 200-10] Adding test bench file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/myproject_test.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/weights' from ../../hls_kernel_config.cfg(15)
+INFO: [HLS 200-10] Adding test bench file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/weights' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/tb_data' from ../../hls_kernel_config.cfg(16)
+INFO: [HLS 200-10] Adding test bench file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/tb_data' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file_cflags=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/myproject_test.cpp,-std=c++0x' from ../../hls_kernel_config.cfg(17)
+INFO: [HLS 200-1465] Applying config ini 'syn.top=myproject_axi_master' from ../../hls_kernel_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from ../../hls_kernel_config.cfg(6)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xck26-sfvc784-2LV-c' from ../../hls_kernel_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying config ini 'clock=5' from ../../hls_kernel_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying config ini 'clock_uncertainty=12.5%' from ../../hls_kernel_config.cfg(5)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.625ns.
+INFO: [HLS 200-1465] Applying config ini 'package.ip.version=1.0.0' from ../../hls_kernel_config.cfg(19)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=xo' from ../../hls_kernel_config.cfg(20)
+INFO: [HLS 200-1465] Applying config ini 'syn.compile.name_max_length=80' from ../../hls_kernel_config.cfg(21)
+INFO: [XFORM 203-1161] The maximum of name length is set to 80.
+INFO: [HLS 200-1465] Applying config ini 'syn.schedule.enable_dsp_full_reg=0' from ../../hls_kernel_config.cfg(22)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 8.99 seconds. CPU system time: 0.62 seconds. Elapsed time: 9.99 seconds; current allocated memory: 260.551 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp' ... 
+WARNING: [HLS 207-7036] unexpected pragma argument 'softmax', expects function/operation (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_activation.h:402:36)
+WARNING: [HLS 207-6996] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_dense_resource.h:33:13)
+WARNING: [HLS 207-6996] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_dense_resource.h:107:13)
+WARNING: [HLS 207-6996] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_dense_resource.h:189:13)
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:75:79)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:75:83)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:81:82)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:81:86)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:87:84)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:87:89)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:93:82)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:93:87)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:97:82)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp:97:87)
+Resolution: For help on HLS 214-113 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 200-471] Dataflow form checks found 10 issue(s) in file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject.cpp
+Resolution: For help on HLS 200-471 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+WARNING: [HLS 207-4982] variable templates are a C++14 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:38:23)
+WARNING: [HLS 207-4982] variable templates are a C++14 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:54:23)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:219:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:220:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:221:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:222:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:223:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:224:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:238:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:239:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:240:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:241:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:242:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:243:8)
+WARNING: [HLS 207-1655] constexpr if is a C++17 extension (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:244:8)
+WARNING: [HLS 207-6591] unused parameter 'keep' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_helpers.h:329:99)
+WARNING: [HLS 207-6591] unused parameter 'data' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:14:36)
+WARNING: [HLS 207-6591] unused parameter 'buffer' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:15:36)
+WARNING: [HLS 207-6591] unused parameter 'partition' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:16:44)
+WARNING: [HLS 207-6591] unused parameter 'data' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:24:24)
+WARNING: [HLS 207-6591] unused parameter 'buffer' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:25:24)
+WARNING: [HLS 207-6591] unused parameter 'partition' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:26:32)
+WARNING: [HLS 207-6591] unused parameter 'data' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:33:30)
+WARNING: [HLS 207-6591] unused parameter 'res' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:33:58)
+WARNING: [HLS 207-6591] unused parameter 'weights' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:34:51)
+WARNING: [HLS 207-6591] unused parameter 'biases' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:35:49)
+WARNING: [HLS 207-6591] unused parameter 'data' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:42:30)
+WARNING: [HLS 207-6591] unused parameter 'res' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:42:58)
+WARNING: [HLS 207-6591] unused parameter 'weights' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:43:51)
+WARNING: [HLS 207-6591] unused parameter 'biases' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:44:49)
+WARNING: [HLS 207-6591] unused parameter 'data' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:51:29)
+WARNING: [HLS 207-6591] unused parameter 'res' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:51:80)
+WARNING: [HLS 207-6591] unused parameter 'weights' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:52:50)
+WARNING: [HLS 207-6591] unused parameter 'biases' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_function_stubs.h:53:48)
+WARNING: [HLS 207-6591] unused parameter 'data' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_code_gen.h:16:39)
+WARNING: [HLS 207-6591] unused parameter 'res' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_code_gen.h:17:38)
+WARNING: [HLS 207-6591] unused parameter 'weights' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_code_gen.h:18:60)
+WARNING: [HLS 207-6591] unused parameter 'biases' (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/nnet_utils/nnet_code_gen.h:19:58)
+WARNING: [HLS 207-7050] there are more than one pragma inline in the function scope, ignore the pragma  (/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_shift_reg.h:51:1)
+INFO: [HLS 200-10] Analyzing design file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/firmware/myproject_axi_master.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 52.99 seconds. CPU system time: 2.19 seconds. Elapsed time: 55.21 seconds; current allocated memory: 270.164 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 16,261 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/vitis_workspace/myproject/vitis_unified_project/hls/syn/report/csynth_design_size.rpt:2)

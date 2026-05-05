@@ -1,0 +1,195 @@
+Backend: VitisUnified
+ClockPeriod: '5'
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    flatten:
+      Precision:
+        result: auto
+      Trace: false
+    hw_input:
+      Precision:
+        result: auto
+      Trace: false
+    pool0:
+      ConvImplementation: LineBuffer
+      Precision:
+        accum: auto
+        result: auto
+      ReuseFactor: 1
+      Trace: false
+    pool1:
+      ConvImplementation: LineBuffer
+      Precision:
+        accum: auto
+        result: auto
+      ReuseFactor: 1
+      Trace: false
+    pool2:
+      ConvImplementation: LineBuffer
+      Precision:
+        accum: auto
+        result: auto
+      ReuseFactor: 1
+      Trace: false
+    qconv0:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: auto
+        bias: fixed<4,1,TRN,WRAP,0>
+        result: auto
+        weight: fixed<4,1,TRN,WRAP,0>
+      ReuseFactor: 1
+      Trace: false
+    qconv0_linear:
+      Precision:
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    qconv1:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: auto
+        bias: fixed<4,1,TRN,WRAP,0>
+        result: auto
+        weight: fixed<4,1,TRN,WRAP,0>
+      ReuseFactor: 1
+      Trace: false
+    qconv1_linear:
+      Precision:
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    qconv2:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: auto
+        bias: fixed<4,1,TRN,WRAP,0>
+        result: auto
+        weight: fixed<4,1,TRN,WRAP,0>
+      ReuseFactor: 1
+      Trace: false
+    qconv2_linear:
+      Precision:
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    qdense0:
+      Precision:
+        accum: auto
+        bias: fixed<4,1,TRN,WRAP,0>
+        result: auto
+        weight: fixed<4,1,TRN,WRAP,0>
+      ReuseFactor: 1
+      Trace: false
+    qdense0_linear:
+      Precision:
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    qdense1:
+      Precision:
+        accum: auto
+        bias: fixed<4,1,TRN,WRAP,0>
+        result: auto
+        weight: fixed<4,1,TRN,WRAP,0>
+      ReuseFactor: 1
+      Trace: false
+    qdense1_linear:
+      Precision:
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    relu0:
+      Precision:
+        result: ufixed<4,0,RND_CONV,SAT,0>
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    relu1:
+      Precision:
+        result: ufixed<4,0,RND_CONV,SAT,0>
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    relu2:
+      Precision:
+        result: ufixed<4,0,RND_CONV,SAT,0>
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    relu3:
+      Precision:
+        result: ufixed<4,0,RND_CONV,SAT,0>
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    softmax:
+      Implementation: stable
+      Precision:
+        accum: fixed<18,8,RND,SAT,0>
+        exp_table: fixed<18,8,RND,SAT,0>
+        inv_inp: fixed<18,8,RND,SAT,0>
+        inv_table: fixed<18,8,RND,SAT,0>
+        result: auto
+        table: fixed<18,8,TRN,WRAP,0>
+      ReuseFactor: 1
+      Skip: false
+      TableSize: 1024
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+InputShapes:
+  hw_input:
+  - 32
+  - 32
+  - 3
+KerasModel: !keras_model '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU/keras_model.keras'
+OutputDir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/4/hls4ml_prj_mnist_hls4ml_VU
+OutputPredictions: null
+OutputShapes:
+  layer20_out:
+  - 10
+Part: xck26-sfvc784-2LV-c
+ProjectName: myproject
+Stamp: 2c0e0299
+Version: 1.0.0
+VitisUnifiedConfig:
+  Board: kv260
+  Driver: python
+  InputDtype: float
+  OutputDtype: float
+  axi_mode: axi_master
+  in_stream_buf_size: 128
+  out_stream_buf_size: 128
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

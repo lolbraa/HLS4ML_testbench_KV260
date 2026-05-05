@@ -1,0 +1,125 @@
+
+
+================================================================
+== Vitis HLS Report for 'dense_latency_ap_ufixed_1_1_0_3_0_ap_ufixed_5_5_5_3_0_config3_mult_s'
+================================================================
+* Date:           Mon May  4 22:35:33 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        vitis_unified_project
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  1.470 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      88|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       -|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|       0|      88|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|       0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+----+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |add_ln58_2947_fu_190_p2  |         +|   0|  0|   7|           4|           4|
+    |add_ln58_2948_fu_212_p2  |         +|   0|  0|  12|           4|           4|
+    |add_ln58_2949_fu_222_p2  |         +|   0|  0|  12|           5|           5|
+    |add_ln58_2950_fu_228_p2  |         +|   0|  0|  12|           4|           4|
+    |add_ln58_2951_fu_238_p2  |         +|   0|  0|   7|           4|           4|
+    |add_ln58_2952_fu_244_p2  |         +|   0|  0|   7|           4|           4|
+    |add_ln58_2953_fu_254_p2  |         +|   0|  0|  12|           5|           5|
+    |add_ln58_2954_fu_260_p2  |         +|   0|  0|  12|           5|           5|
+    |add_ln58_fu_184_p2       |         +|   0|  0|   7|           4|           4|
+    +-------------------------+----------+----+---+----+------------+------------+
+    |Total                    |          |   0|  0|  88|          39|          39|
+    +-------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+|                                  RTL Ports                                  | Dir | Bits|  Protocol  |                                  Source Object                                  |    C Type    |
++-----------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+|ap_ready                                                                     |  out|    1|  ap_ctrl_hs|  dense_latency<ap_ufixed<1, 1, 0, 3, 0>, ap_ufixed<5, 5, 5, 3, 0>, config3_mult>|  return value|
+|ap_return_0                                                                  |  out|    5|  ap_ctrl_hs|  dense_latency<ap_ufixed<1, 1, 0, 3, 0>, ap_ufixed<5, 5, 5, 3, 0>, config3_mult>|  return value|
+|ap_return_1                                                                  |  out|    5|  ap_ctrl_hs|  dense_latency<ap_ufixed<1, 1, 0, 3, 0>, ap_ufixed<5, 5, 5, 3, 0>, config3_mult>|  return value|
+|ap_return_2                                                                  |  out|    5|  ap_ctrl_hs|  dense_latency<ap_ufixed<1, 1, 0, 3, 0>, ap_ufixed<5, 5, 5, 3, 0>, config3_mult>|  return value|
+|ap_rst                                                                       |   in|    1|  ap_ctrl_hs|  dense_latency<ap_ufixed<1, 1, 0, 3, 0>, ap_ufixed<5, 5, 5, 3, 0>, config3_mult>|  return value|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9  |   in|    1|     ap_none|      void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_9|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8  |   in|    1|     ap_none|      void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_8|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7  |   in|    1|     ap_none|      void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_7|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6  |   in|    1|     ap_none|      void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_6|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5  |   in|    1|     ap_none|      void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_5|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4  |   in|    1|     ap_none|      void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_4|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3  |   in|    1|     ap_none|      void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2  |   in|    1|     ap_none|      void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2|       pointer|
++-----------------------------------------------------------------------------+-----+-----+------------+---------------------------------------------------------------------------------+--------------+
+
