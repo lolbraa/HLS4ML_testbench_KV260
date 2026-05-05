@@ -3,7 +3,7 @@
   "type": "HLS",
   "configuration": {
     "componentType": "HLS",
-    "configFiles": ["/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/hls_kernel_config.cfg"],
+    "configFiles": ["/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/hls_kernel_config.cfg"],
     "work_dir": "vitis_unified_project"
   }
 }

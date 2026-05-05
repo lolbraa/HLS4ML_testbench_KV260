@@ -7,19 +7,19 @@ HLSConfig:
     Precision: fixed<16,6>
     ReuseFactor: 1
 IOType: io_stream
-InputData: /work/development/testmodel/x_test_sim.npy
+InputData: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/x_test_sim.npy
 InputShapes:
   linput:
   - 16
-KerasModel: !keras_model '/work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/keras_model.keras'
-OutputDir: /work/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker
-OutputPredictions: /work/development/testmodel/y_test_sim.npy
+KerasModel: !keras_model '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker/keras_model.keras'
+OutputDir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker
+OutputPredictions: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/testmodel/y_test_sim.npy
 OutputShapes:
   layer5_out:
   - 5
 Part: xck26-sfvc784-2LV-c
 ProjectName: myproject
-Stamp: e14be43a
+Stamp: 72658ae8
 Version: 1.0.0
 VitisUnifiedConfig:
   Board: kv260
