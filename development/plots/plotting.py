@@ -40,7 +40,7 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
 
 # Changed axis to match convention
-def plotRoc(fpr, tpr, auc, labels, linestyle, legend=True):
+def plotRoc(fpr, tpr, auc, labels, linestyle, legend=True, style_semilogx=True, style_legends='default'):
     for _i, label in enumerate(labels):
         plt.plot(
             fpr[label],
@@ -48,7 +48,8 @@ def plotRoc(fpr, tpr, auc, labels, linestyle, legend=True):
             label='{}, AUC = {:.1f}%'.format(label.replace('j_', ''), auc[label] * 100.0),
             linestyle=linestyle,
         )
-    plt.semilogx()
+    if style_semilogx:
+        plt.semilogx()
     plt.xlabel("False Positive Rate")
     plt.ylabel("True Positive Rate")
     plt.xlim(0.001, 1)
@@ -57,8 +58,10 @@ def plotRoc(fpr, tpr, auc, labels, linestyle, legend=True):
     for spine in ("right", "top"):
         ax.spines[spine].set_visible(False)
     if legend:
-        plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
-          fancybox=True, shadow=True, ncol=5)
+        if style_legends == 'default':
+            plt.legend(loc='lower right')
+        if style_legends =='under':
+            plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1), fancybox=True, shadow=True, ncol=5)
     #plt.figtext(0.25, 0.90, 'hls4ml', fontweight='bold', wrap=True, horizontalalignment='right', fontsize=14)
 
 
@@ -79,12 +82,12 @@ def rocData(y, predict_test, labels):
     return fpr, tpr, auc1
 
 
-def makeRoc(y, predict_test, labels, linestyle='-', legend=True):
+def makeRoc(y, predict_test, labels, linestyle='-', legend=True, style_semilogx=True, style_legends='default'):
     if 'j_index' in labels:
         labels.remove('j_index')
 
     fpr, tpr, auc1 = rocData(y, predict_test, labels)
-    plotRoc(fpr, tpr, auc1, labels, linestyle, legend=legend)
+    plotRoc(fpr, tpr, auc1, labels, linestyle, legend=legend, style_semilogx=style_semilogx, style_legends=style_legends)
     return predict_test
 
 

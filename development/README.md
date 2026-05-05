@@ -56,3 +56,6 @@ and if changes to the environment are required:
 ```
 conda env update -f environment-HGQ.yml
 ```
+
+
+# Training

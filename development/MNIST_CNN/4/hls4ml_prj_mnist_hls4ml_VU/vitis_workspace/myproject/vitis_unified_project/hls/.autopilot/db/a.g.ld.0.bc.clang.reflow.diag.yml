@@ -24679,4 +24679,977 @@ Args:
   - Factor:          '512'
 ...
 --- !Passed
-Pass:   
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function:        _ZN4nnet13dense_latencyI9ap_ufixedILi4ELi0EL9ap_q_mode4EL9ap_o_mode0ELi0EE8ap_fixedILi18ELi11ELS2_5ELS3_3ELi0EE8config15EEvPT_PT0_PNT1_8weight_tEPNSC_6bias_tE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Accum2
+  - String:          ''' ('
+  - LoopLoc:         'firmware/nnet_utils/nnet_dense_latency.h:56:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          'nnet::dense_latency<ap_ufixed<4, 0, (ap_q_mode)4, (ap_o_mode)0, 0>, ap_fixed<18, 11, (ap_q_mode)5, (ap_o_mode)3, 0>, config15>'
+  - String:          ''' completely with a factor of '
+  - Factor:          '512'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: firmware/nnet_utils/nnet_dense_latency.h, Line: 15, 
+                   Column: 0 }
+Function: 
