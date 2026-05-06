@@ -44,27 +44,31 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
 
 # Changed axis to match convention
-def plotRoc(fpr, tpr, auc, labels, linestyle, legend=True, style_semilogx=True, style_legends='default'):
+def plotRoc(fpr, tpr, auc, labels, linestyle, linewidth, legend=True, semilogx=True, legends='default'):
     for _i, label in enumerate(labels):
         plt.plot(
             fpr[label],
             tpr[label],
             label='{}, AUC = {:.1f}%'.format(label.replace('j_', ''), auc[label] * 100.0),
             linestyle=linestyle,
+            linewidth=linewidth,
         )
-    if style_semilogx:
+    if semilogx:
         plt.semilogx()
-    plt.xlabel("False Positive Rate")
-    plt.ylabel("True Positive Rate")
+    plt.xlabel("False Positive Rate", size='large')
+    plt.ylabel("True Positive Rate", size='large')
+    plt.ylim(0,1)
     plt.xlim(0.001, 1)
     plt.grid(True,which="both")
     ax = plt.gca()
-    for spine in ("right", "top"):
+    for spine in ("right", "top",
+                  "left", "bottom"
+                  ):
         ax.spines[spine].set_visible(False)
     if legend:
-        if style_legends == 'default':
+        if legends == 'default':
             plt.legend(loc='lower right')
-        if style_legends =='under':
+        if legends =='under':
             plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1), fancybox=True, shadow=True, ncol=5)
     #plt.figtext(0.25, 0.90, 'hls4ml', fontweight='bold', wrap=True, horizontalalignment='right', fontsize=14)
 
@@ -86,10 +90,10 @@ def rocData(y, predict_test, labels):
     return fpr, tpr, auc1
 
 
-def makeRoc(y, predict_test, labels, linestyle='-', legend=True, style_semilogx=True, style_legends='default'):
+def makeRoc(y, predict_test, labels, linestyle='-',linewidth=2, legend=True, semilogx=True, legends='default'):
     if 'j_index' in labels:
         labels.remove('j_index')
 
     fpr, tpr, auc1 = rocData(y, predict_test, labels)
-    plotRoc(fpr, tpr, auc1, labels, linestyle, legend=legend, style_semilogx=style_semilogx, style_legends=style_legends)
+    plotRoc(fpr, tpr, auc1, labels, linestyle=linestyle,linewidth=linewidth, legend=legend, semilogx=semilogx, legends=legends)
     return predict_test
