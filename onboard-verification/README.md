@@ -7,7 +7,16 @@ The KV260 (and some other platforms) support the [PYNQ](https://www.pynq.io/)-ec
 The components Vitis Unified wraps around the Neural Network-IP are described
 
 
-## Minimal Example
+## Running Inference
+
+A template for rapid testing multiple synthesized models on device is provided in the inference-template. 
+
+We established two methodologies for testing on device which both rely on :
+1. Our preferred method is pulling/pushing this repository to device, allowing for easy set up by just copying files into corresponding directory on main computer. Though it requires establishing a internet-connection on the Starter Kit, which may not be straight forward.
+2. Copying files manually with USB. Easy to get started, frustrating in the long run.
+
+
+### Minimal Example
 
 ```python
 # import the library
@@ -25,10 +34,11 @@ overlay = NeuralNetworkOverlay(bitfile_name="system.bit", x_shape=x_test.shape, 
 y_hardware = overlay.predict(x_test, debug=False, profile=True, encode=np.float32, decode=np.float32)
 ```
 
+### Provided Runs
+
+We've run inference on some models of the datasets Jet Tagging classifier (`jettag/`), convolutional network trained on MNIST (`mnist/`), and Pixel Cluster Splitting algorithm (`pixsplit/`), provided as references. The "testmodel" and "playground" are just experiments provided for historical context.
+
+
 ## Details
 
 Vitis Unified wraps the Neural Network with components making it able to 
-
-
-The 
-Based on [fastmachinelearning/hls4ml-tutorial/part7b_deployment.ipynb](https://github.com/fastmachinelearning/hls4ml-tutorial/blob/main/part7b_deployment.ipynb), [Tanawin1701d/vitisUnifiedTutorial/part8b_testOnHw.ipynbxt](https://github.com/Tanawin1701d/vitisUnifiedTutorial/blob/main/part8b_testOnHw.ipynb) and earlier experimentation. For syntax, see driverclass in directory and [pynq-package documentation](https://pynq.readthedocs.io/en/v2.5.1/pynq_package/pynq.overlay.html).
