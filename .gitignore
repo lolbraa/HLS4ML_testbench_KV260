@@ -218,3 +218,7 @@ xilinx_*.zip
 dockerbuild/qs.md
 dockerbuild/*.tar.gz
 .Xil
+
+#PixSplit data
+nparticles_resampled.h5
+processed_data
