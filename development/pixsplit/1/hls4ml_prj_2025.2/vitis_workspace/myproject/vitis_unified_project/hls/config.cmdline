@@ -1,3 +1,0 @@
-relativeroot=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/vitis_workspace/myproject
-original_argv=--mode hls --csim --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/1/hls4ml_prj_2025.2/hls_kernel_config.cfg --work_dir vitis_unified_project 
-
