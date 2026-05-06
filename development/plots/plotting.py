@@ -21,44 +21,55 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
 
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    # plt.title(title)
+    plt.title(title)
     cbar = plt.colorbar()
     plt.clim(0, 1)
-    cbar.set_label(title)
+    #cbar.set_label(title)
     tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
+    plt.xticks(tick_marks, classes,color=cmap(0.95))
+    plt.yticks(tick_marks, classes,color=cmap(0.95))
 
-    fmt = '.2f' if normalize else 'd'
+    fmt = ".2f" if normalize else "d"
     thresh = cm.max() / 2.0
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         plt.text(j, i, format(cm[i, j], fmt), horizontalalignment="center", color="white" if cm[i, j] > thresh else "black")
 
+    ax = plt.gca()
+    for spine in ("right", "top", "bottom", "left"):
+        ax.spines[spine].set_visible(False)
+        
     # plt.tight_layout()
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
 
 
 # Changed axis to match convention
-def plotRoc(fpr, tpr, auc, labels, linestyle, legend=True):
+def plotRoc(fpr, tpr, auc, labels, linestyle, linewidth, legend=True, semilogx=True, legends='default'):
     for _i, label in enumerate(labels):
         plt.plot(
             fpr[label],
             tpr[label],
             label='{}, AUC = {:.1f}%'.format(label.replace('j_', ''), auc[label] * 100.0),
             linestyle=linestyle,
+            linewidth=linewidth,
         )
-    plt.semilogx()
-    plt.xlabel("False Positive Rate")
-    plt.ylabel("True Positive Rate")
+    if semilogx:
+        plt.semilogx()
+    plt.xlabel("False Positive Rate", size='large')
+    plt.ylabel("True Positive Rate", size='large')
+    plt.ylim(0,1)
     plt.xlim(0.001, 1)
     plt.grid(True,which="both")
     ax = plt.gca()
-    for spine in ("right", "top"):
+    for spine in ("right", "top",
+                  "left", "bottom"
+                  ):
         ax.spines[spine].set_visible(False)
     if legend:
-        plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
-          fancybox=True, shadow=True, ncol=5)
+        if legends == 'default':
+            plt.legend(loc='lower right')
+        if legends =='under':
+            plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1), fancybox=True, shadow=True, ncol=5)
     #plt.figtext(0.25, 0.90, 'hls4ml', fontweight='bold', wrap=True, horizontalalignment='right', fontsize=14)
 
 
@@ -79,20 +90,10 @@ def rocData(y, predict_test, labels):
     return fpr, tpr, auc1
 
 
-def makeRoc(y, predict_test, labels, linestyle='-', legend=True):
+def makeRoc(y, predict_test, labels, linestyle='-',linewidth=2, legend=True, semilogx=True, legends='default'):
     if 'j_index' in labels:
         labels.remove('j_index')
 
     fpr, tpr, auc1 = rocData(y, predict_test, labels)
-    plotRoc(fpr, tpr, auc1, labels, linestyle, legend=legend)
+    plotRoc(fpr, tpr, auc1, labels, linestyle=linestyle,linewidth=linewidth, legend=legend, semilogx=semilogx, legends=legends)
     return predict_test
-
-
-def print_dict(d, indent=0):
-    for key, value in d.items():
-        print('  ' * indent + str(key), end='')
-        if isinstance(value, dict):
-            print()
-            print_dict(value, indent + 1)
-        else:
-            print(':' + ' ' * (20 - len(key) - 2 * indent) + str(value))
