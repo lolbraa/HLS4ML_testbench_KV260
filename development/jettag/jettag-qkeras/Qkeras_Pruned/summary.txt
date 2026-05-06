@@ -1,0 +1,27 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_layer (InputLayer)    [(None, 16)]              0         
+                                                                 
+ qdense0 (QDense)            (None, 64)                1088      
+                                                                 
+ relu0 (QActivation)         (None, 64)                0         
+                                                                 
+ qdense1 (QDense)            (None, 32)                2080      
+                                                                 
+ relu1 (QActivation)         (None, 32)                0         
+                                                                 
+ qdense2 (QDense)            (None, 32)                1056      
+                                                                 
+ relu2 (QActivation)         (None, 32)                0         
+                                                                 
+ qdense3 (QDense)            (None, 5)                 165       
+                                                                 
+ softmax (Activation)        (None, 5)                 0         
+                                                                 
+=================================================================
+Total params: 4389 (17.14 KB)
+Trainable params: 4389 (17.14 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
