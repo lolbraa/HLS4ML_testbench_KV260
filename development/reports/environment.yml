@@ -1,0 +1,8 @@
+name: devenv-reports
+dependencies:
+    - matplotlib
+    - pandas
+    - ipykernel
+    - scikit-learn
+    - pip:
+        - "hls4ml @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
