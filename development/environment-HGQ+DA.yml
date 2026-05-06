@@ -10,4 +10,3 @@ dependencies:
     - hgq2
     - "hls4ml[profiling, hgq2, da] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
 #    - hls4ml[profiling,hgq2,da]
-#     - "hls4ml[profiling,hgq2] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
