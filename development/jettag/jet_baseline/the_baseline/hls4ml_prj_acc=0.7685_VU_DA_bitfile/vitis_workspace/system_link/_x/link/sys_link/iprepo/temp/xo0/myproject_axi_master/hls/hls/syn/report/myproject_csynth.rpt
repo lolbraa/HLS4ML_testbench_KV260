@@ -1,0 +1,154 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Thu May  7 13:44:16 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        vitis_unified_project
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.318 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+------+------+----------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval  | Pipeline |
+    |   min   |   max   |    min   |    max   |  min |  max |   Type   |
+    +---------+---------+----------+----------+------+------+----------+
+    |     1067|     1067|  5.335 us|  5.335 us|  1049|  1049|  dataflow|
+    +---------+---------+----------+----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |                                                                       |                                                                      |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+        |                                Instance                               |                                Module                                |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+        +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+        |dense_array_ap_fixed_16u_array_ap_fixed_37_17_5_3_0_64u_config2_U0     |dense_array_ap_fixed_16u_array_ap_fixed_37_17_5_3_0_64u_config2_s     |        2|        2|  10.000 ns|  10.000 ns|     2|     2|       no|
+        |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0  |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |        1|        1|   5.000 ns|   5.000 ns|     1|     1|       no|
+        |dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_U0     |dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_s     |        3|        3|  15.000 ns|  15.000 ns|     3|     3|       no|
+        |relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_U0  |relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_s  |        1|        1|   5.000 ns|   5.000 ns|     1|     1|       no|
+        |dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_U0     |dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_s     |        3|        3|  15.000 ns|  15.000 ns|     3|     3|       no|
+        |relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_U0  |relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_s  |        1|        1|   5.000 ns|   5.000 ns|     1|     1|       no|
+        |dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_U0      |dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_s      |        2|        2|  10.000 ns|  10.000 ns|     2|     2|       no|
+        |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s          |     1048|     1048|   5.240 us|   5.240 us|  1048|  1048|       no|
+        +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+---------+-----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       2|    -|
+|FIFO             |        -|     -|     693|     469|    -|
+|Instance         |        2|  3478|   29121|  131363|    0|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       -|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        2|  3478|   29814|  131834|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       ~0|   278|      12|     112|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+------+-------+-------+-----+
+    |                                Instance                               |                                Module                                | BRAM_18K|  DSP |   FF  |  LUT  | URAM|
+    +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+------+-------+-------+-----+
+    |dense_array_ap_fixed_16u_array_ap_fixed_37_17_5_3_0_64u_config2_U0     |dense_array_ap_fixed_16u_array_ap_fixed_37_17_5_3_0_64u_config2_s     |        0|   804|   5023|  29147|    0|
+    |dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_U0     |dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_s     |        0|   849|   7226|  28554|    0|
+    |dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_U0      |dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_s      |        0|   141|   1360|   4267|    0|
+    |dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_U0     |dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_s     |        0|  1672|  12186|  57698|    0|
+    |relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_U0  |relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_s  |        0|     0|    516|   2036|    0|
+    |relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_U0  |relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_s  |        0|     0|    516|   2004|    0|
+    |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0  |relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |        0|     0|   1028|   3892|    0|
+    |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_U0          |softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s          |        2|    12|   1266|   3765|    0|
+    +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+------+-------+-------+-----+
+    |Total                                                                  |                                                                      |        2|  3478|  29121| 131363|    0|
+    +-----------------------------------------------------------------------+----------------------------------------------------------------------+---------+------+-------+-------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------+---------+----+----+-----+------+------+---------+
+    |     Name     | BRAM_18K| FF | LUT| URAM| Depth| Bits | Size:D*B|
+    +--------------+---------+----+----+-----+------+------+---------+
+    |layer2_out_U  |        0|  99|   0|    -|     1|  2368|     2368|
+    |layer3_out_U  |        0|  99|   0|    -|     1|  1024|     1024|
+    |layer4_out_U  |        0|  99|   0|    -|     1|  1248|     1248|
+    |layer5_out_U  |        0|  99|   0|    -|     1|   512|      512|
+    |layer6_out_U  |        0|  99|   0|    -|     1|  1216|     1216|
+    |layer7_out_U  |        0|  99|   0|    -|     1|   512|      512|
+    |layer8_out_U  |        0|  99|   0|    -|     1|   190|      190|
+    +--------------+---------+----+----+-----+------+------+---------+
+    |Total         |        0| 693|   0|    0|     7|  7070|     7070|
+    +--------------+---------+----+----+-----+------+------+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++--------------------------------+-----+-----+------------+------------------------+--------------+
+|stream_in0_input_layer_dout     |   in|  256|     ap_fifo|  stream_in0_input_layer|       pointer|
+|stream_in0_input_layer_empty_n  |   in|    1|     ap_fifo|  stream_in0_input_layer|       pointer|
+|stream_in0_input_layer_read     |  out|    1|     ap_fifo|  stream_in0_input_layer|       pointer|
+|stream_out0_layer9_out_din      |  out|   80|     ap_fifo|  stream_out0_layer9_out|       pointer|
+|stream_out0_layer9_out_full_n   |   in|    1|     ap_fifo|  stream_out0_layer9_out|       pointer|
+|stream_out0_layer9_out_write    |  out|    1|     ap_fifo|  stream_out0_layer9_out|       pointer|
+|ap_clk                          |   in|    1|  ap_ctrl_hs|               myproject|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|               myproject|  return value|
+|ap_start                        |   in|    1|  ap_ctrl_hs|               myproject|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|               myproject|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|               myproject|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|               myproject|  return value|
+|ap_continue                     |   in|    1|  ap_ctrl_hs|               myproject|  return value|
++--------------------------------+-----+-----+------------+------------------------+--------------+
+

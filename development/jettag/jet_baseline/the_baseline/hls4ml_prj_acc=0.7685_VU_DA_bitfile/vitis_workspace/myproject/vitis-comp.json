@@ -1,0 +1,9 @@
+{
+  "name": "myproject",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7685_VU_DA_bitfile/hls_kernel_config.cfg"],
+    "work_dir": "vitis_unified_project"
+  }
+}
