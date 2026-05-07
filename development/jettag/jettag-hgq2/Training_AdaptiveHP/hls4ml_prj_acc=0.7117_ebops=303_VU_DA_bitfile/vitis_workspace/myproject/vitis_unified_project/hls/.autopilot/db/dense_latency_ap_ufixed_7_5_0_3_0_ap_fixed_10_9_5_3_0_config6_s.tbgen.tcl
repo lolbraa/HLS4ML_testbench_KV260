@@ -1,0 +1,89 @@
+set moduleName dense_latency_ap_ufixed_7_5_0_3_0_ap_fixed_10_9_5_3_0_config6_s
+set isTopModule 0
+set isCombinational 1
+set isDatapathOnly 0
+set isPipelined 0
+set isPipelined_legacy 0
+set pipeline_type function
+set FunctionProtocol ap_ctrl_hs
+set restart_counter_num 0
+set isOneStateSeq 0
+set ProfileFlag 0
+set StallSigGenFlag 0
+set isEnableWaveformDebug 1
+set hasInterrupt 0
+set DLRegFirstOffset 0
+set DLRegItemOffset 0
+set svuvm_can_support 1
+set cdfgNum 20
+set C_modelName {dense_latency<ap_ufixed<7, 5, 0, 3, 0>, ap_fixed<10, 9, 5, 3, 0>, config6>}
+set C_modelType { int 30 }
+set ap_memory_interface_dict [dict create]
+set C_modelArgList {
+	{ data_1_val int 7 regular  }
+	{ data_16_val int 7 regular  }
+	{ data_42_val int 7 regular  }
+	{ data_44_val int 7 regular  }
+	{ data_51_val int 7 regular  }
+}
+set hasAXIMCache 0
+set l_AXIML2Cache [list]
+set AXIMCacheInstDict [dict create]
+set C_modelArgMapList {[ 
+	{ "Name" : "data_1_val", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_16_val", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_42_val", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_44_val", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_51_val", "interface" : "wire", "bitwidth" : 7, "direction" : "READONLY"} , 
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 30} ]}
+# RTL Port declarations: 
+set portNum 10
+set portList { 
+	{ ap_ready sc_out sc_logic 1 ready -1 } 
+	{ data_1_val sc_in sc_lv 7 signal 0 } 
+	{ data_16_val sc_in sc_lv 7 signal 1 } 
+	{ data_42_val sc_in sc_lv 7 signal 2 } 
+	{ data_44_val sc_in sc_lv 7 signal 3 } 
+	{ data_51_val sc_in sc_lv 7 signal 4 } 
+	{ ap_return_0 sc_out sc_lv 10 signal -1 } 
+	{ ap_return_1 sc_out sc_lv 10 signal -1 } 
+	{ ap_return_2 sc_out sc_lv 10 signal -1 } 
+	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
+}
+set NewPortList {[ 
+	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "data_1_val", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "data_1_val", "role": "default" }} , 
+ 	{ "name": "data_16_val", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "data_16_val", "role": "default" }} , 
+ 	{ "name": "data_42_val", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "data_42_val", "role": "default" }} , 
+ 	{ "name": "data_44_val", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "data_44_val", "role": "default" }} , 
+ 	{ "name": "data_51_val", "direction": "in", "datatype": "sc_lv", "bitwidth":7, "type": "signal", "bundle":{"name": "data_51_val", "role": "default" }} , 
+ 	{ "name": "ap_return_0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "ap_return_0", "role": "default" }} , 
+ 	{ "name": "ap_return_1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "ap_return_1", "role": "default" }} , 
+ 	{ "name": "ap_return_2", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "ap_return_2", "role": "default" }} , 
+ 	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }}  ]}
+
+set ArgLastReadFirstWriteLatency {
+	dense_latency_ap_ufixed_7_5_0_3_0_ap_fixed_10_9_5_3_0_config6_s {
+		data_1_val {Type I LastRead 0 FirstWrite -1}
+		data_16_val {Type I LastRead 0 FirstWrite -1}
+		data_42_val {Type I LastRead 0 FirstWrite -1}
+		data_44_val {Type I LastRead 0 FirstWrite -1}
+		data_51_val {Type I LastRead 0 FirstWrite -1}}}
+
+set hasDtUnsupportedChannel 0
+
+set PerformanceInfo {[
+	{"Name" : "Latency", "Min" : "0", "Max" : "0"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "1"}
+]}
+
+set PipelineEnableSignalInfo {[
+]}
+
+set Spec2ImplPortList { 
+	data_1_val { ap_none {  { data_1_val in_data 0 7 } } }
+	data_16_val { ap_none {  { data_16_val in_data 0 7 } } }
+	data_42_val { ap_none {  { data_42_val in_data 0 7 } } }
+	data_44_val { ap_none {  { data_44_val in_data 0 7 } } }
+	data_51_val { ap_none {  { data_51_val in_data 0 7 } } }
+}

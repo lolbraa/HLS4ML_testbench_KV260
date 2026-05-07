@@ -1,0 +1,54 @@
+{
+    "Used Resources": [
+        {
+            "ip_instance": "vitis_design_myproject_axi_master_1_0",
+            "resources": [
+                {
+                    "LUT": "14266"
+                },
+                {
+                    "LUTAsLogic": "13825"
+                },
+                {
+                    "LUTAsMem": "441"
+                },
+                {
+                    "REG": "7188"
+                },
+                {
+                    "CARRY8": "525"
+                },
+                {
+                    "F7MUX": "512"
+                },
+                {
+                    "F8MUX": "252"
+                },
+                {
+                    "F9MUX": "0"
+                },
+                {
+                    "BRAM": "10"
+                },
+                {
+                    "URAM": "0"
+                },
+                {
+                    "DSP": "0"
+                },
+                {
+                    "PLL": "0"
+                },
+                {
+                    "MMCM": "0"
+                },
+                {
+                    "GTHE4_CHANNEL": "0"
+                },
+                {
+                    "GTHE4_COMMON": "0"
+                }
+            ]
+        }
+    ]
+}

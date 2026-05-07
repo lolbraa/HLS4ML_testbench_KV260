@@ -1,0 +1,122 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "build_metadata": {
+        "dsa": {
+            "vendor": "vendor",
+            "board_id": "kv260_som_som240_1_connector_kv260_carrier_som240_1_connector",
+            "name": "kv260pf",
+            "version_major": "0",
+            "version_minor": "0",
+            "description": "",
+            "generated_by": {
+                "name": "Vivado",
+                "version": "2025.2",
+                "cl": "6299465",
+                "time_stamp": "Thu May  7 11:31:32 2026"
+            },
+            "board": {
+                "name": "xilinx.com:kv260_som:1.4",
+                "vendor": "xilinx.com",
+                "part": "xck26-sfvc784-2LV-c",
+                "board_part": "xilinx.com:kv260_som:part0:1.4"
+            },
+            "feature_roms": [
+                {
+                    "time_epoch": "0"
+                }
+            ]
+        },
+        "xclbin": {
+            "generated_by": {
+                "name": "v++",
+                "version": "2025.2",
+                "cl": "6295257",
+                "time_stamp": "2025-11-13-01:29:13",
+                "options": "\/opt\/Xilinx\/2025.2\/Vitis\/bin\/unwrapped\/lnx64.o\/v++ --config link_system.cfg --input_files ..\/myproject\/vitis_unified_project\/myproject_axi_master.xo --link --optimize 0 --output myproject.xclbin --platform ..\/kv260\/tcl_scripts\/output\/kv260_axi_all_platform.xsa --report_level 0 --save-temps --target hw "
+            },
+            "user_regions": [
+                {
+                    "name": "OCL_REGION_0",
+                    "type": "clc_region",
+                    "instance_path": "",
+                    "base_address": "",
+                    "kernels": [
+                        {
+                            "name": "myproject_axi_master",
+                            "ports": [
+                                {
+                                    "name": "M_AXI_GMEM_IN0",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "M_AXI_GMEM_OUT0",
+                                    "mode": "master",
+                                    "range": "0xFFFFFFFF",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                },
+                                {
+                                    "name": "S_AXI_CONTROL",
+                                    "mode": "slave",
+                                    "range": "0x30",
+                                    "data_width": "32",
+                                    "port_type": "addressable",
+                                    "base": "0x0"
+                                }
+                            ],
+                            "arguments": [
+                                {
+                                    "name": "gmem_in0_ptr_input_layer",
+                                    "address_qualifier": "1",
+                                    "id": "0",
+                                    "port": "M_AXI_GMEM_IN0",
+                                    "size": "0x8",
+                                    "offset": "0x10",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "void*"
+                                },
+                                {
+                                    "name": "gmem_out0_ptr_layer15_out",
+                                    "address_qualifier": "1",
+                                    "id": "1",
+                                    "port": "M_AXI_GMEM_OUT0",
+                                    "size": "0x8",
+                                    "offset": "0x1C",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x8",
+                                    "type": "void*"
+                                },
+                                {
+                                    "name": "batch_size",
+                                    "address_qualifier": "0",
+                                    "id": "2",
+                                    "port": "S_AXI_CONTROL",
+                                    "size": "0x4",
+                                    "offset": "0x28",
+                                    "host_offset": "0x0",
+                                    "host_size": "0x4",
+                                    "type": "unsigned int"
+                                }
+                            ],
+                            "instances": [
+                                {
+                                    "name": "myproject_axi_master_1"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

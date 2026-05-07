@@ -1,0 +1,32 @@
+In file included from /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.cpp:1:
+In file included from /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.h:6:
+In file included from /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject.h:8:
+In file included from /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/defines.h:6:
+/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/nnet_utils/nnet_types.h:28:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=operator=_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=name=myproject_axi_master_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=myproject_axi_master
+^
+/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.cpp:55:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=m_axi port=gmem_in0_ptr_input_layer bundle=gmem_in0 depth=16_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=gmem_in0_ptr_input_layer bundle=gmem_in0 depth=16
+^
+/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.cpp:56:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=m_axi port=gmem_out0_ptr_layer12_out bundle=gmem_out0 depth=5_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi port=gmem_out0_ptr_layer12_out bundle=gmem_out0 depth=5
+^
+/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.cpp:57:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=s_axilite port=batch_size bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=batch_size bundle=control
+^
+/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.cpp:58:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+^
+/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.cpp:63:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=variable=stream_in0_input_layer depth=128_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=stream_in0_input_layer depth=128
+^
+/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.cpp:64:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=variable=stream_out0_layer12_out depth=128_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=stream_out0_layer12_out depth=128
+^
+/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/firmware/myproject_axi_master.cpp:66:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_master_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS dataflow
+^
+9 warnings generated.

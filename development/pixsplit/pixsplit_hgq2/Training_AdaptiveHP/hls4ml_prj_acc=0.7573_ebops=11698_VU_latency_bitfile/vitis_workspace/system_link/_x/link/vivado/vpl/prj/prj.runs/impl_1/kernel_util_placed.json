@@ -1,0 +1,45 @@
+{
+    "schema_version": {
+        "major": "1",
+        "minor": "0",
+        "patch": "0"
+    },
+    "design_state": "Fully Placed",
+    "user_budget": {
+        "actual_resources": {
+            "LUT": "22917",
+            "LUTAsMem": "196",
+            "REG": "10683",
+            "BRAM": "15",
+            "URAM": "0",
+            "DSP": "7"
+        },
+        "supply_resources": {
+            "LUT": "111016",
+            "LUTAsMem": "56233",
+            "REG": "223711",
+            "BRAM": "142",
+            "URAM": "64",
+            "DSP": "1248"
+        }
+    },
+    "kernels": [
+        {
+            "name": "myproject_axi_master",
+            "compute_unit_count": "1",
+            "compute_units": [
+                {
+                    "cu_name": "myproject_axi_master_1",
+                    "actual_resources": {
+                        "LUT": "22917",
+                        "LUTAsMem": "196",
+                        "REG": "10683",
+                        "BRAM": "15",
+                        "URAM": "0",
+                        "DSP": "7"
+                    }
+                }
+            ]
+        }
+    ]
+}

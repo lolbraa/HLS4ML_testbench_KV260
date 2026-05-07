@@ -1,0 +1,151 @@
+
+
+================================================================
+== Vitis HLS Report for 'myproject'
+================================================================
+* Date:           Thu May  7 10:16:27 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        vitis_unified_project
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.273 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |       17|       17|  85.000 ns|  85.000 ns|    3|    3|  dataflow|
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                                        |                                                                       |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                                Instance                                |                                 Module                                |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |dense_array_ap_fixed_16u_array_ap_fixed_14_9_5_3_0_64u_config3_U0       |dense_array_ap_fixed_16u_array_ap_fixed_14_9_5_3_0_64u_config3_s       |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+        |relu_array_ap_fixed_64u_array_ap_ufixed_10_6_0_3_0_64u_relu_config4_U0  |relu_array_ap_fixed_64u_array_ap_ufixed_10_6_0_3_0_64u_relu_config4_s  |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
+        |dense_array_ap_ufixed_64u_array_ap_fixed_16_13_5_3_0_32u_config6_U0     |dense_array_ap_ufixed_64u_array_ap_fixed_16_13_5_3_0_32u_config6_s     |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+        |relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0   |relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s   |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
+        |dense_array_ap_ufixed_32u_array_ap_fixed_14_11_5_3_0_32u_config9_U0     |dense_array_ap_ufixed_32u_array_ap_fixed_14_11_5_3_0_32u_config9_s     |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+        |relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_U0  |relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s  |        1|        1|   5.000 ns|   5.000 ns|    1|    1|       no|
+        |dense_array_ap_ufixed_32u_array_ap_fixed_17_8_5_3_0_5u_config12_U0      |dense_array_ap_ufixed_32u_array_ap_fixed_17_8_5_3_0_5u_config12_s      |        2|        2|  10.000 ns|  10.000 ns|    2|    2|       no|
+        +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|       2|    -|
+|FIFO             |        -|     -|     594|     402|    -|
+|Instance         |        -|    15|    3780|   28019|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|       -|    -|
+|Register         |        -|     -|       -|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|    15|    4374|   28423|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     1|       1|      24|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----+-----+------+-----+
+    |                                Instance                                |                                 Module                                | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----+-----+------+-----+
+    |dense_array_ap_fixed_16u_array_ap_fixed_14_9_5_3_0_64u_config3_U0       |dense_array_ap_fixed_16u_array_ap_fixed_14_9_5_3_0_64u_config3_s       |        0|  15|  806|  6339|    0|
+    |dense_array_ap_ufixed_32u_array_ap_fixed_14_11_5_3_0_32u_config9_U0     |dense_array_ap_ufixed_32u_array_ap_fixed_14_11_5_3_0_32u_config9_s     |        0|   0|  557|  5684|    0|
+    |dense_array_ap_ufixed_32u_array_ap_fixed_17_8_5_3_0_5u_config12_U0      |dense_array_ap_ufixed_32u_array_ap_fixed_17_8_5_3_0_5u_config12_s      |        0|   0|  269|  1994|    0|
+    |dense_array_ap_ufixed_64u_array_ap_fixed_16_13_5_3_0_32u_config6_U0     |dense_array_ap_ufixed_64u_array_ap_fixed_16_13_5_3_0_32u_config6_s     |        0|   0|  984|  7894|    0|
+    |relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_U0  |relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s  |        0|   0|  260|  1460|    0|
+    |relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0   |relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s   |        0|   0|  260|  1524|    0|
+    |relu_array_ap_fixed_64u_array_ap_ufixed_10_6_0_3_0_64u_relu_config4_U0  |relu_array_ap_fixed_64u_array_ap_ufixed_10_6_0_3_0_64u_relu_config4_s  |        0|   0|  644|  3124|    0|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----+-----+------+-----+
+    |Total                                                                   |                                                                       |        0|  15| 3780| 28019|    0|
+    +------------------------------------------------------------------------+-----------------------------------------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +---------------+---------+----+----+-----+------+-----+---------+
+    |      Name     | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +---------------+---------+----+----+-----+------+-----+---------+
+    |layer10_out_U  |        0|  99|   0|    -|     1|  256|      256|
+    |layer3_out_U   |        0|  99|   0|    -|     1|  896|      896|
+    |layer4_out_U   |        0|  99|   0|    -|     1|  640|      640|
+    |layer6_out_U   |        0|  99|   0|    -|     1|  512|      512|
+    |layer7_out_U   |        0|  99|   0|    -|     1|  256|      256|
+    |layer9_out_U   |        0|  99|   0|    -|     1|  448|      448|
+    +---------------+---------+----+----+-----+------+-----+---------+
+    |Total          |        0| 594|   0|    0|     6| 3008|     3008|
+    +---------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+|stream_in0_input_layer_dout     |   in|  256|     ap_fifo|   stream_in0_input_layer|       pointer|
+|stream_in0_input_layer_empty_n  |   in|    1|     ap_fifo|   stream_in0_input_layer|       pointer|
+|stream_in0_input_layer_read     |  out|    1|     ap_fifo|   stream_in0_input_layer|       pointer|
+|stream_out0_layer12_out_din     |  out|  160|     ap_fifo|  stream_out0_layer12_out|       pointer|
+|stream_out0_layer12_out_full_n  |   in|    1|     ap_fifo|  stream_out0_layer12_out|       pointer|
+|stream_out0_layer12_out_write   |  out|    1|     ap_fifo|  stream_out0_layer12_out|       pointer|
+|ap_clk                          |   in|    1|  ap_ctrl_hs|                myproject|  return value|
+|ap_rst                          |   in|    1|  ap_ctrl_hs|                myproject|  return value|
+|ap_start                        |   in|    1|  ap_ctrl_hs|                myproject|  return value|
+|ap_done                         |  out|    1|  ap_ctrl_hs|                myproject|  return value|
+|ap_ready                        |  out|    1|  ap_ctrl_hs|                myproject|  return value|
+|ap_idle                         |  out|    1|  ap_ctrl_hs|                myproject|  return value|
+|ap_continue                     |   in|    1|  ap_ctrl_hs|                myproject|  return value|
++--------------------------------+-----+-----+------------+-------------------------+--------------+
+

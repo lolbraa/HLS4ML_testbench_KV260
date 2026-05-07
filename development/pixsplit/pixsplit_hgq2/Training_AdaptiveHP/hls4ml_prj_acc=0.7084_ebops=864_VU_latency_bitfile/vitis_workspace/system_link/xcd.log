@@ -1,0 +1,59 @@
+Thu May  7 11:42:20 2026: Running xcd server. This server was built by gradle.
+Thu May  7 11:42:20 2026: Server was asked to start on port: '42855'
+Thu May  7 11:42:20 2026: Server is using token UUID: 'f85a1b93-4bdc-435e-b317-d7e5e7d5b48f'
+Thu May  7 11:42:20 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Thu May  7 11:42:20 2026: Attempting to start server on port '42855'
+Thu May  7 11:42:20 2026: XCD main fifo: created main fifo '/tmp/xcdmainf85a1b93-4bdc-435e-b317-d7e5e7d5b48f', fd read = 12
+Thu May  7 11:42:20 2026: Running Dispatch Server
+Thu May  7 11:42:20 2026: Version 2.2.0
+Thu May  7 11:42:22 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:22 2026: Starting Socket connection
+Thu May  7 11:42:22 2026: EXCHANGE_TOKEN received, server token: f85a1b93-4bdc-435e-b317-d7e5e7d5b48f, passed token: f85a1b93-4bdc-435e-b317-d7e5e7d5b48f
+Thu May  7 11:42:22 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Thu May  7 11:42:22 2026: SESSION_MGR: creating session with session uuid: '979f1d28-7192-4cd7-9755-7066169d894c' and name 'v++_link_myproject'
+Thu May  7 11:42:22 2026: KERNEL_SVC: creating session with uuid: '979f1d28-7192-4cd7-9755-7066169d894c' and name 'v++_link_myproject'
+Thu May  7 11:42:22 2026: GUIDANCE_SMGR: creating guidance session with uuid: '979f1d28-7192-4cd7-9755-7066169d894c' and name 'v++_link_myproject'
+Thu May  7 11:42:22 2026: SYSTEM_DIAGRAM: creating session with uuid: '979f1d28-7192-4cd7-9755-7066169d894c' and name 'v++_link_myproject'
+Thu May  7 11:42:26 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:26 2026: Starting Socket connection
+Thu May  7 11:42:29 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:29 2026: Starting Socket connection
+Thu May  7 11:42:56 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:56 2026: Starting Socket connection
+Thu May  7 11:42:56 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:56 2026: Starting Socket connection
+Thu May  7 11:42:56 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:56 2026: Starting Socket connection
+Thu May  7 11:42:56 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:56 2026: Starting Socket connection
+Thu May  7 11:42:56 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:56 2026: Starting Socket connection
+Thu May  7 11:42:56 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:56 2026: Starting Socket connection
+Thu May  7 11:42:56 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:56 2026: Starting Socket connection
+Thu May  7 11:42:56 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:42:56 2026: Starting Socket connection
+Thu May  7 11:43:24 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:43:24 2026: Starting Socket connection
+Thu May  7 11:43:25 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:43:25 2026: Starting Socket connection
+Thu May  7 11:45:03 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:45:03 2026: Starting Socket connection
+Thu May  7 11:45:32 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 11:45:32 2026: Starting Socket connection
+Thu May  7 11:47:36 2026: SESSION_MGR: closing session for UUID '979f1d28-7192-4cd7-9755-7066169d894c' with name 'v++_link_myproject'
+Thu May  7 11:47:36 2026: KERNEL_SVC: closing session for UUID '979f1d28-7192-4cd7-9755-7066169d894c' with name 'v++_link_myproject'
+Thu May  7 11:47:36 2026: GUIDANCE_SMGR: closing session for UUID '979f1d28-7192-4cd7-9755-7066169d894c' with name 'v++_link_myproject'
+Thu May  7 11:47:36 2026: SYSTEM_DIAGRAM: closing session for UUID '979f1d28-7192-4cd7-9755-7066169d894c' with name 'v++_link_myproject'
+Thu May  7 11:47:36 2026: STOP_SERVER received, server token: f85a1b93-4bdc-435e-b317-d7e5e7d5b48f, passed token: f85a1b93-4bdc-435e-b317-d7e5e7d5b48f
+Thu May  7 11:47:36 2026: Socket received request to stop server.
+Thu May  7 11:47:36 2026: Dispatch Server: do_await_stop
+Thu May  7 11:47:36 2026: Dispatch Server: stopping mainFifo_
+Thu May  7 11:47:36 2026: XCD main fifo: Stopping
+Thu May  7 11:47:36 2026: XCD main fifo: do_read error code: Operation canceled
+Thu May  7 11:47:36 2026: XCD main fifo: bytes_transferred: 0
+Thu May  7 11:47:36 2026: SERVER: destructor for server bound to port 42855
+Thu May  7 11:47:36 2026: XCD main fifo: Good unlink of /tmp/xcdmainf85a1b93-4bdc-435e-b317-d7e5e7d5b48f
+Thu May  7 11:47:36 2026: Server exiting with status 0.
+Thu May  7 11:47:36 2026: Closing log file.

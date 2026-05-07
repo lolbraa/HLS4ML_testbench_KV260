@@ -1,0 +1,726 @@
+
+*** Running vivado
+    with args -log vitis_design_myproject_axi_master_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_myproject_axi_master_1_0.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu May  7 10:11:28 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source vitis_design_myproject_axi_master_1_0.tcl -notrace
+INFO: Dispatch client connection id - 42309
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/2025.2/Vitis/data/vitis/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+Command: synth_design -top vitis_design_myproject_axi_master_1_0 -part xck26-sfvc784-2LV-c -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 660889
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2711.594 ; gain = 142.688 ; free physical = 5187 ; free virtual = 27223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_myproject_axi_master_1_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/synth/vitis_design_myproject_axi_master_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_control_s_axi' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_control_s_axi.v:224]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_control_s_axi' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_load' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_srl' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_srl' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo__parameterized0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_mem' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_mem' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2410]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo__parameterized0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_load' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:284]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_read' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:796]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo__parameterized1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_srl__parameterized0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_srl__parameterized0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2370]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_fifo__parameterized1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_burst_converter' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_burst_sequential' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:1656]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_reg_slice' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_reg_slice' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_burst_sequential' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:1656]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_burst_converter' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:1050]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_in0_m_axi_reg_slice__parameterized0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_reg_slice__parameterized0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:2053]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi_read' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:796]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_in0_m_axi' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_in0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_store' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized2' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized2' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized2' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized2' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized3' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized3' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized3' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized3' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_store' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:318]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_write' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:1112]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_burst_converter' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_burst_sequential' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2013]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_burst_sequential' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2013]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_burst_converter' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:1407]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_throttle' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized4' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized4' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_srl__parameterized4' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2994]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_fifo__parameterized4' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2781]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_throttle' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2408]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized2' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized2' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2677]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi_write' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:1112]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_gmem_out0_m_axi' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_entry_proc' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_entry_proc.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_entry_proc' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_load_input_float_array_ap_fixed_10_5_0_3_0_16u_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_load_input_float_array_ap_fixed_10_5_0_3_0_16u_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-638] synthesizing module 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/synth/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_PART bound to: xck26-sfvc784-2LV-c - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/synth/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.vhd:203]
+INFO: [Synth 8-256] done synthesizing module 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/synth/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_sparsemux_9_3_10_1_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_sparsemux_9_3_10_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_sparsemux_9_3_10_1_1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_sparsemux_9_3_10_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_flow_control_loop_pipe' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_flow_control_loop_pipe' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_flow_control_loop_pipe.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_load_input_float_array_ap_fixed_10_5_0_3_0_16u_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_load_input_float_array_ap_fixed_10_5_0_3_0_16u_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_compute' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_compute.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_myproject' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_myproject.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_12_9_5_3_0_64u_config3_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_12_9_5_3_0_64u_config3_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_10_5_0_3_0_ap_fixed_12_9_5_3_0_config3_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_10_5_0_3_0_ap_fixed_12_9_5_3_0_config3_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_fixed_10_5_0_3_0_ap_fixed_12_9_5_3_0_config3_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_latency_ap_fixed_10_5_0_3_0_ap_fixed_12_9_5_3_0_config3_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_12_9_5_3_0_64u_config3_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_array_ap_fixed_16u_array_ap_fixed_12_9_5_3_0_64u_config3_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_11_5_3_0_config6_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_11_5_3_0_config6_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_11_5_3_0_config6_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_11_5_3_0_config6_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_15_8_5_3_0_config12_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_15_8_5_3_0_config12_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_15_8_5_3_0_config12_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_15_8_5_3_0_config12_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w768_d1_S' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w768_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w768_d1_S_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w768_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w768_d1_S_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w768_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w768_d1_S' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w768_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w512_d1_S' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w512_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w512_d1_S_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w512_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w512_d1_S_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w512_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w512_d1_S' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w512_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w448_d1_S' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w448_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w448_d1_S_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w448_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w448_d1_S_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w448_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w448_d1_S' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w448_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w256_d1_S' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w256_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w256_d1_S_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w256_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w256_d1_S_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w256_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w256_d1_S' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w256_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w384_d1_S' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w384_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w384_d1_S_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w384_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w384_d1_S_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w384_d1_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w384_d1_S' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w384_d1_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_U0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_U0_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_U0_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_U0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_8_6_0_3_0_64u_relu_config4_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_U0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_U0_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_U0_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_U0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_14_11_5_3_0_32u_config6_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_U0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_U0_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_U0_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_U0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10bkb' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10bkb.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10bkb_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10bkb.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10bkb_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10bkb.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10bkb' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10bkb.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_U0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_U0_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_U0_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_U0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_15_8_5_3_0_5u_config12_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_myproject' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_myproject.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_compute' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_compute.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_store_result_float_array_ap_fixed_15_8_5_3_0_5u_s' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_store_result_float_array_ap_fixed_15_8_5_3_0_5u_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_ctlz_15_15_1_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_ctlz_15_15_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_ctlz_15_15_1_1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_ctlz_15_15_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_flow_control_loop_pipe_sequential_init' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_flow_control_loop_pipe_sequential_init' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_store_result_float_array_ap_fixed_15_8_5_3_0_5u_s' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_store_result_float_array_ap_fixed_15_8_5_3_0_5u_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w64_d4_S' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w64_d4_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w64_d4_S_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w64_d4_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w64_d4_S_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w64_d4_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w64_d4_S' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w64_d4_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w32_d2_S' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w32_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w32_d2_S_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w32_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w32_d2_S_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w32_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w32_d2_S' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w32_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w256_d128_A' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w256_d128_A.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w256_d128_A_ram' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w256_d128_A.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w256_d128_A_ram' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w256_d128_A.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w256_d128_A' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w256_d128_A.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w80_d128_A' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w80_d128_A.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_fifo_w80_d128_A_ram' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w80_d128_A.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w80_d128_A_ram' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w80_d128_A.v:200]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_fifo_w80_d128_A' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w80_d128_A.v:9]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_store_result_float_array_ap_fixed_15_8_5_3_0_5u_U0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_store_result_float_array_ap_fixed_15_8_5_3_0_5u_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_store_result_float_array_ap_fixed_15_8_5_3_0_5u_U0_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_store_result_float_array_ap_fixed_15_8_5_3_0_5u_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_store_result_float_array_ap_fixed_15_8_5_3_0_5u_U0_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_store_result_float_array_ap_fixed_15_8_5_3_0_5u_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_store_result_float_array_ap_fixed_15_8_5_3_0_5u_U0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_store_result_float_array_ap_fixed_15_8_5_3_0_5u_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_compute_U0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_compute_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_master_start_for_compute_U0_ShiftReg' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_compute_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_compute_U0_ShiftReg' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_compute_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master_start_for_compute_U0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_start_for_compute_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_master' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_myproject_axi_master_1_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/synth/vitis_design_myproject_axi_master_1_0.v:53]
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_control_s_axi.v:299]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7129] Port addr[1] in module myproject_axi_master_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_AWREADY in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_ARREADY in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RVALID in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[31] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[30] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[29] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[28] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[27] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[26] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[25] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[24] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[23] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[22] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[21] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[20] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[19] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[18] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[17] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[16] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[15] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[14] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[13] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[12] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[11] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[10] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[9] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[8] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[7] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[6] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[5] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[4] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[3] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[2] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[1] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RDATA[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RLAST in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RID[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[8] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[7] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[6] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[5] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[4] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[3] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[2] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[1] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RFIFONUM[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RUSER[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RRESP[1] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_RRESP[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BVALID in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BRESP[1] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BRESP[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BID[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_gmem_out0_0_BUSER[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_dout[79] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_dout[63] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_dout[47] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_dout[31] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_dout[15] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_num_data_valid[7] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_num_data_valid[6] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_num_data_valid[5] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_num_data_valid[4] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_num_data_valid[3] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_num_data_valid[2] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_num_data_valid[1] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_num_data_valid[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_fifo_cap[7] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_fifo_cap[6] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_fifo_cap[5] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_fifo_cap[4] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_fifo_cap[3] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_fifo_cap[2] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_fifo_cap[1] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port stream_out0_layer12_out_fifo_cap[0] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[61] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[60] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[59] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[58] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[57] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[56] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[55] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[54] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[53] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[52] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[51] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[50] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[49] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[48] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[47] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[46] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[45] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[44] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[43] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[42] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[41] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[40] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[39] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Synth 8-7129] Port sext_ln29[38] in module myproject_axi_master_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2941.531 ; gain = 372.625 ; free physical = 3909 ; free virtual = 25954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2941.531 ; gain = 372.625 ; free physical = 3917 ; free virtual = 25962
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2941.531 ; gain = 372.625 ; free physical = 3917 ; free virtual = 25962
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2941.531 ; gain = 0.000 ; free physical = 3870 ; free virtual = 25922
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/constraints/myproject_axi_master_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_myproject_axi_master_1_0/constraints/myproject_axi_master_ooc.xdc] for cell 'inst'
+Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2981.750 ; gain = 0.000 ; free physical = 3885 ; free virtual = 25941
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2981.785 ; gain = 0.000 ; free physical = 3870 ; free virtual = 25925
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2981.785 ; gain = 412.879 ; free physical = 2415 ; free virtual = 24474
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2989.754 ; gain = 420.848 ; free physical = 2415 ; free virtual = 24474
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2989.754 ; gain = 420.848 ; free physical = 2415 ; free virtual = 24474
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'myproject_axi_master_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'myproject_axi_master_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_in0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_in0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-3936] Found unconnected internal register 'zext_ln13_reg_4695_reg' and it is trimmed from '31' to '28' bits. [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_load_input_float_array_ap_fixed_10_5_0_3_0_16u_s.v:2278]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'myproject_axi_master_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'myproject_axi_master_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_in0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_in0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'myproject_axi_master_gmem_out0_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2989.754 ; gain = 420.848 ; free physical = 732 ; free virtual = 22496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/load_input_float_array_ap_fixed_10_5_0_3_0_16u_U0/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/load_input_float_array_ap_fixed_10_5_0_3_0_16u_U0/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/load_input_float_array_ap_fixed_10_5_0_3_0_16u_U0/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/load_input_float_array_ap_fixed_10_5_0_3_0_16u_U0/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/load_input_float_array_ap_fixed_10_5_0_3_0_16u_U0/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/load_input_float_array_ap_fixed_10_5_0_3_0_16u_U0/fpext_32ns_64_2_no_dsp_1_U3/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'layer4_out_U/U_myproject_axi_master_fifo_w512_d1_S_ShiftReg/SRL_SIG_reg[0]' and it is trimmed from '512' to '440' bits. [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_fifo_w512_d1_S.v:148]
+INFO: [Synth 8-3936] Found unconnected internal register 'gmem_out0_m_axi_U/bus_write/wreq_throttle/rs_req/data_p1_reg' and it is trimmed from '73' to '72' bits. [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2710]
+INFO: [Synth 8-3936] Found unconnected internal register 'gmem_out0_m_axi_U/bus_write/wreq_throttle/rs_req/data_p2_reg' and it is trimmed from '73' to '72' bits. [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/1f42/hdl/verilog/myproject_axi_master_gmem_out0_m_axi.v:2731]
+RAM ("inst/stream_in0_input_layer_U/U_myproject_axi_master_fifo_w256_d128_A_ram/mem_reg") is too shallow (depth = 127) to use URAM. Choosing BRAM instead of URAM 
+RAM ("inst/i_1/stream_out0_layer12_out_U/U_myproject_axi_master_fifo_w80_d128_A_ram/mem_reg") is too shallow (depth = 127) to use URAM. Choosing BRAM instead of URAM 
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module myproject_axi_master_control_s_axi.
+INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module myproject_axi_master_control_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 3249.957 ; gain = 681.051 ; free physical = 15854 ; free virtual = 37683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 3686.066 ; gain = 1117.160 ; free physical = 18340 ; free virtual = 40165
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 3763.684 ; gain = 1194.777 ; free physical = 18274 ; free virtual = 40099
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem_in0_m_axi_U/load_unit_0/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/stream_out0_layer12_out_U/U_myproject_axi_master_fifo_w80_d128_A_ram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:07 ; elapsed = 00:01:08 . Memory (MB): peak = 3763.684 ; gain = 1194.777 ; free physical = 18280 ; free virtual = 40105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 3854.496 ; gain = 1285.590 ; free physical = 18219 ; free virtual = 40044
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 3854.496 ; gain = 1285.590 ; free physical = 18219 ; free virtual = 40044
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 3854.496 ; gain = 1285.590 ; free physical = 18214 ; free virtual = 40039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 3854.496 ; gain = 1285.590 ; free physical = 18214 ; free virtual = 40039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 3854.496 ; gain = 1285.590 ; free physical = 18215 ; free virtual = 40040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 3854.496 ; gain = 1285.590 ; free physical = 18215 ; free virtual = 40040
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |   543|
+|2     |LUT1     |  1121|
+|3     |LUT2     |  1895|
+|4     |LUT3     |  1692|
+|5     |LUT4     |  1530|
+|6     |LUT5     |  2061|
+|7     |LUT6     |  2959|
+|8     |MUXCY    |     4|
+|9     |MUXF7    |   241|
+|10    |MUXF8    |    64|
+|11    |RAMB18E2 |     2|
+|13    |RAMB36E2 |     5|
+|15    |SRL16E   |   315|
+|16    |SRLC32E  |    36|
+|17    |FDRE     |  6767|
+|18    |FDSE     |    47|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 3854.496 ; gain = 1285.590 ; free physical = 18215 ; free virtual = 40040
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 3854.496 ; gain = 1245.336 ; free physical = 18215 ; free virtual = 40040
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 3854.496 ; gain = 1285.590 ; free physical = 18215 ; free virtual = 40040
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3854.496 ; gain = 0.000 ; free physical = 18403 ; free virtual = 40227
+INFO: [Netlist 29-17] Analyzing 852 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3854.496 ; gain = 0.000 ; free physical = 18384 ; free virtual = 40209
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  (CARRY4) => CARRY8: 1 instance 
+
+Synth Design complete | Checksum: 8dc344ce
+INFO: [Common 17-83] Releasing license: Synthesis
+379 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:20 . Memory (MB): peak = 3854.496 ; gain = 2293.020 ; free physical = 18385 ; free virtual = 40210
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3221.273; main = 3004.372; forked = 287.978
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4811.668; main = 3824.688; forked = 986.980
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3854.496 ; gain = 0.000 ; free physical = 18387 ; free virtual = 40215
+INFO: [Common 17-1381] The checkpoint '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vitis_design_myproject_axi_master_1_0, cache-ID = e671f2dc5a8144b5
+INFO: [Coretcl 2-1174] Renamed 114 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3854.496 ; gain = 0.000 ; free physical = 18389 ; free virtual = 40237
+INFO: [Common 17-1381] The checkpoint '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file vitis_design_myproject_axi_master_1_0_utilization_synth.rpt -pb vitis_design_myproject_axi_master_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 10:12:57 2026...

@@ -1,0 +1,3 @@
+model,time_seconds,time_minutes
+FixedHP acc=0.7659 ebops=21624 Distributed Arithmetic,418.1106901168823,6.968511501948039
+FixedHP acc=0.7659 ebops=21624 latency,727.9265871047974,12.132109785079956
