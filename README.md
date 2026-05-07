@@ -25,6 +25,14 @@ Getting started developing for FPGAs is not straight forward.
 [`dockerbuild/`](dockerbuild/) contains resources to build and run a docker image with the required software for a runing start. The software (Vivado/Vitis) is required to synthesize the models with HLS4ML.
 
 
-## 
+## Notes
 
-The development is done with development builds between HLS4ML v1.2 and v1.3.
+The work in this project has only been done in Linux environment, native, in a VM/container, or through WSL. 
+
+Some jargon/glossaries we keep using throughout the project:
+- VU is Vitis Unified, the HLS4ML backend that leveragin Vitis' system design flow to easily create a complete bitfile.
+- Bitfile is what programs the logic blocks on the FPGA.
+- DA stands for [Distributed Arithmetic](https://fastmachinelearning.org/hls4ml/advanced/da.html), an implementation of optimized operations in layers.
+- [HGQ/HGQ2](https://calad0i.github.io/HGQ2/) (we use both interchangebly for HGQ2) is an quantization technique under training, yielding really good performance 
+- Jet Tagging/jettag is a classification problem from CERN, often used as a benchmark in affiliated research
+- Pixel Cluster Splitting/pixsplit is another, more niche problem which we've researched to diversify our effort.
