@@ -1,0 +1,2 @@
+Compiling (top level synthesis checkpoint) dynamic region
+Log file: /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/runme.log

@@ -2511,3 +2511,147 @@ Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_
 Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl 
 Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.tbgen.tcl 
 Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/cosimDB.tcl 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to myproject_axi_master
+INFO-FLOW: DBG:PUTS:       generate_datafile_ip_script ip_types={vitis sysgen} #gSsdmPorts=0
+INFO-FLOW: DBG:PUTS:       kernel.xml check internal_kernel_xml(1)=/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/kernel.internal.xml top=myproject_axi_master
+INFO-FLOW: DBG:PUTS:       kernel.xml check proj_kernel_xml    (1)=/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/../../kernel.xml
+INFO-FLOW: DBG:PUTS:       copy internal kernel.xml to project: /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/../../kernel.xml
+INFO-FLOW: DBG:PUTS:       update_final_kernel_xml /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/../../kernel.xml
+INFO-FLOW: DBG:PUTS: Updating /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/../../kernel.xml with values: interrupt true debug false compileOptions -std=c++0x name myproject_axi_master vlnv xilinx.com:hls:myproject_axi_master:1.0 swReset false mailbox none countedAutoRestart 0 deadlockDetection local
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=5
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=true #modelList=59 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='true' modelList='myproject_axi_master_fpext_32ns_64_2_no_dsp_1
+myproject_axi_master_bitselect_1ns_54ns_6ns_1_1_1
+myproject_axi_master_sparsemux_9_3_11_1_1
+myproject_axi_master_flow_control_loop_pipe
+myproject_axi_master_mul_11s_9s_20_1_1
+myproject_axi_master_mul_11s_9ns_20_1_1
+myproject_axi_master_mul_11s_7s_18_1_1
+myproject_axi_master_mul_11s_10s_21_1_1
+myproject_axi_master_mul_11s_9ns_19_1_1
+myproject_axi_master_mul_11s_10ns_20_1_1
+myproject_axi_master_mul_11s_8s_19_1_1
+myproject_axi_master_mul_11s_10ns_21_1_1
+myproject_axi_master_mul_11s_8s_18_1_1
+myproject_axi_master_mul_11s_10s_20_1_1
+myproject_axi_master_mul_8ns_8ns_15_1_1
+myproject_axi_master_mul_8ns_7s_15_1_1
+myproject_axi_master_mul_8ns_7ns_14_1_1
+myproject_axi_master_fifo_w896_d1_S
+myproject_axi_master_fifo_w640_d1_S
+myproject_axi_master_fifo_w512_d1_S
+myproject_axi_master_fifo_w256_d1_S
+myproject_axi_master_fifo_w448_d1_S
+myproject_axi_master_fifo_w256_d1_S
+myproject_axi_master_start_for_relu_array_ap_fixed_64u_array_ap_ufixed_10_6_0_3_0_64u_relu_config4bkb
+myproject_axi_master_start_for_dense_array_ap_ufixed_64u_array_ap_fixed_16_13_5_3_0_32u_config6_U0
+myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_U0
+myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_14_11_5_3_0_32u_config9_U0
+myproject_axi_master_start_for_relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10cud
+myproject_axi_master_start_for_dense_array_ap_ufixed_32u_array_ap_fixed_18_8_5_3_0_5u_config12_U0
+myproject_axi_master_ctlz_18_18_1_1
+myproject_axi_master_flow_control_loop_pipe_sequential_init
+myproject_axi_master_fifo_w64_d4_S
+myproject_axi_master_fifo_w32_d2_S
+myproject_axi_master_fifo_w256_d128_A
+myproject_axi_master_fifo_w32_d2_S
+myproject_axi_master_fifo_w160_d128_A
+myproject_axi_master_start_for_store_result_float_array_ap_fixed_18_8_5_3_0_5u_U0
+myproject_axi_master_start_for_compute_U0
+myproject_axi_master_gmem_in0_m_axi
+myproject_axi_master_gmem_out0_m_axi
+myproject_axi_master_control_s_axi
+entry_proc
+load_input_float_array_ap_fixed_11_5_0_3_0_16u_s
+dense_latency_ap_fixed_11_5_0_3_0_ap_fixed_14_9_5_3_0_config3_s
+dense_array_ap_fixed_16u_array_ap_fixed_14_9_5_3_0_64u_config3_s
+relu_array_ap_fixed_64u_array_ap_ufixed_10_6_0_3_0_64u_relu_config4_s
+dense_latency_ap_ufixed_10_6_0_3_0_ap_fixed_16_13_5_3_0_config6_s
+dense_array_ap_ufixed_64u_array_ap_fixed_16_13_5_3_0_32u_config6_s
+relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s
+dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_11_5_3_0_config9_s
+dense_array_ap_ufixed_32u_array_ap_fixed_14_11_5_3_0_32u_config9_s
+relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s
+dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_18_8_5_3_0_config12_s
+dense_array_ap_ufixed_32u_array_ap_fixed_18_8_5_3_0_5u_config12_s
+myproject
+compute
+store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1
+store_result_float_array_ap_fixed_18_8_5_3_0_5u_s
+myproject_axi_master
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/top-io-be.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.compgen.dataonly.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.compgen.dataonly.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.rtl_wrap.cfg.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.compgen.dataonly.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/entry_proc.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/load_input_float_array_ap_fixed_11_5_0_3_0_16u_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_fixed_11_5_0_3_0_ap_fixed_14_9_5_3_0_config3_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_fixed_16u_array_ap_fixed_14_9_5_3_0_64u_config3_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_64u_array_ap_ufixed_10_6_0_3_0_64u_relu_config4_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_ufixed_10_6_0_3_0_ap_fixed_16_13_5_3_0_config6_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_ufixed_64u_array_ap_fixed_16_13_5_3_0_32u_config6_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_11_5_3_0_config9_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_ufixed_32u_array_ap_fixed_14_11_5_3_0_32u_config9_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_18_8_5_3_0_config12_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/dense_array_ap_ufixed_32u_array_ap_fixed_18_8_5_3_0_5u_config12_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/compute.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/store_result_float_array_ap_fixed_18_8_5_3_0_5u_s.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.tbgen.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.constraint.tcl 
+Execute     sc_get_clocks myproject_axi_master 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/2025.2/Vitis/tps/tcl/tcllib2.0/fileutil/fileutil.tcl 
+Execute       source /opt/Xilinx/2025.2/Vitis/tps/tcl/tcllib2.0/cmdline/cmdline.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/misc/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.tcl 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.constraint.tcl 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs pwd=/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data names -quiet 
+Execute     ap_part_info -name xck26-sfvc784-2LV-c -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl
+Execute     source /opt/Xilinx/2025.2/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /opt/Xilinx/2025.2/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source /opt/Xilinx/2025.2/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /opt/Xilinx/2025.2/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/global.setting.tcl 
+Execute     source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source /opt/Xilinx/2025.2/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/pack.sh
+Execute     send_msg_by_id INFO @200-802@%s vitis_unified_project/myproject_axi_master.xo 
+INFO: [HLS 200-802] Generated output file vitis_unified_project/myproject_axi_master.xo
+Command   export_design done; 5.8 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 

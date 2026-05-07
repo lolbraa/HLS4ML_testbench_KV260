@@ -77,6 +77,11 @@ Reports:
 - HLS compile report with timing/resource estimates: `vitis_workspace/myproject/vitis_unified_project/reports/hls_compile.rpt`
 
 
+The process flow is synthesis, place, route, bitfile.
+
+In kernel-reports, platform is the 
+
+
 
 
 ## Getting started

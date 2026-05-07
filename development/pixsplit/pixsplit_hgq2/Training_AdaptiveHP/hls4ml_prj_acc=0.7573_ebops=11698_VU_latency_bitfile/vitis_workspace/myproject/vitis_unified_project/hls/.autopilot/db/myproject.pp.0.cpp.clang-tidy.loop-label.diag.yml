@@ -1,0 +1,1036 @@
+---
+MainSourceFile:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1010196
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1010671
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1011147
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          1350766
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2107974
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_39_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      39
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2108223
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_39_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_56_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2108718
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_56_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2457950
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_307_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      307
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2458337
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_307_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_320_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      320
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2458725
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_320_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2459038
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_337_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      337
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2459261
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_337_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_339_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      339
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2459356
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_339_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_351_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      351
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2459720
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_351_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_353_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      353
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2459802
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_353_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_361_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      361
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2460027
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_361_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_377_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      377
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2460438
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_377_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_397_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      397
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2460891
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_397_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_398_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      398
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2460936
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_398_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_413_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      413
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2461345
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_413_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_420_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_helpers.h'
+      FileOffset:      420
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2461558
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_420_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_136_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      136
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2472179
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_136_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_137_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      137
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2472263
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_137_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_158_3:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      158
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2472816
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_158_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_159_4:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_conv1d_latency.h'
+      FileOffset:      159
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2472900
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_159_4: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_31_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      31
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2477891
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_31_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_43_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      43
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2478147
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_43_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_57_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      57
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2478511
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_57_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_84_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      84
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2479327
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_84_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_114_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      114
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2479991
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_114_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_151_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      151
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2481136
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_151_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_167_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      167
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2481600
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_167_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_200_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      200
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2482538
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_200_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_213_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      213
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2483080
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_213_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_246_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      246
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2483953
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_246_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_255_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      255
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2484233
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_255_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_268_3:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      268
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2484803
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_268_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_275_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      275
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2485047
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_275_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_288_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      288
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2485407
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_288_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_325_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      325
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486367
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_325_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486487
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_331_3:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      331
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2486544
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_331_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_348_4:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      348
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2487144
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_348_4: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_361_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      361
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2487652
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_361_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_369_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      369
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2487803
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_369_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_405_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      405
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2489011
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_405_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_407_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      407
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2489087
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_407_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_409_3:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      409
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2489167
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_409_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_414_4:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      414
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2489438
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_414_4: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_427_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      427
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2489767
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_427_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_457_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      457
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2490407
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_457_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_484_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      484
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2491246
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_484_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_498_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      498
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2491598
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_498_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_514_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      514
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2492059
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_514_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_532_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      532
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2492532
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_532_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_549_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      549
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2492938
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_549_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_566_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      566
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2493333
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_566_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_596_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      596
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494002
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_596_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_615_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      615
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2494576
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_615_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_645_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      645
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2495245
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_645_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_664_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      664
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2495799
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_664_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_694_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      694
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2496451
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_694_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_721_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      721
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2497289
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_721_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_749_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      749
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2497976
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_749_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_779_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      779
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2498664
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_779_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_808_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      808
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2499507
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_808_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_828_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation.h'
+      FileOffset:      828
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2499929
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_828_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_229_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      229
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2506547
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_229_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_236_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      236
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2506698
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_236_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_245_3:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      245
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2506978
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_245_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_254_4:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      254
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2507183
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_254_4: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_258_5:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      258
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2507291
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_258_5: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_269_6:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      269
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2507636
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_269_6: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_273_7:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      273
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2507757
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_273_7: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2508745
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_301_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      301
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2508842
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_301_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_320_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_stream.h'
+      FileOffset:      320
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2509540
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_320_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_211_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      211
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2516173
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_211_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_220_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      220
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2516469
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_220_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_325_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      325
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2519763
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_325_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_330_2:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      330
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2519912
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_330_2: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_338_3:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_activation_stream.h'
+      FileOffset:      338
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2520127
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_338_3: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      33
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      107
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn''t exist at all '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_dense_resource.h'
+      FileOffset:      189
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_14_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_dense_compressed.h'
+      FileOffset:      14
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2548351
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_14_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_74_1:  '
+      FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/firmware/nnet_utils/nnet_dense_compressed.h'
+      FileOffset:      74
+      Replacements:
+        - FilePath:        '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+          Offset:          2550268
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_74_1: '
+    Level:           Remark
+    BuildDirectory:  '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_latency_bitfile/vitis_workspace/myproject'
+...

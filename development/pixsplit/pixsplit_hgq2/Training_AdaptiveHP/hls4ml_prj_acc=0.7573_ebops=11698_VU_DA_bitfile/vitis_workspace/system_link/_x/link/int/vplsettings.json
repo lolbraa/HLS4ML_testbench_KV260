@@ -1,0 +1,18 @@
+{
+    "kernelContainerValues": [
+        "myproject_axi_master:xo"
+    ],
+    "compile": "false",
+    "debug": "false",
+    "exportScript": "false",
+    "gccHostCompile": "false",
+    "generateEstimateRpt": "false",
+    "keepSolution": "false",
+    "link": "false",
+    "logDir": "\/work\/development\/pixsplit\/pixsplit_hgq2\/Training_AdaptiveHP\/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile\/vitis_workspace\/system_link\/_x\/logs\/link",
+    "package": "false",
+    "reportDir": "\/work\/development\/pixsplit\/pixsplit_hgq2\/Training_AdaptiveHP\/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile\/vitis_workspace\/system_link\/_x\/reports\/link",
+    "saveTemps": "false",
+    "verbose": "false",
+    "vplNoIpCache": "false"
+}

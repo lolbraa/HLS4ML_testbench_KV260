@@ -49,3 +49,18 @@ Thu May  7 12:19:06 2026: GUIDANCE_SMGR: creating guidance session with uuid: 'd
 Thu May  7 12:19:06 2026: SYSTEM_DIAGRAM: creating session with uuid: 'd787c716-3745-41ee-9bbc-364ebcee5e3a' and name 'vitis-run_compile_vitis_unified_project'
 Thu May  7 12:19:08 2026: Dispatch Server: Accepted socket connection from client
 Thu May  7 12:19:08 2026: Starting Socket connection
+Thu May  7 12:19:14 2026: SESSION_MGR: closing session for UUID 'd787c716-3745-41ee-9bbc-364ebcee5e3a' with name 'vitis-run_compile_vitis_unified_project'
+Thu May  7 12:19:14 2026: KERNEL_SVC: closing session for UUID 'd787c716-3745-41ee-9bbc-364ebcee5e3a' with name 'vitis-run_compile_vitis_unified_project'
+Thu May  7 12:19:14 2026: GUIDANCE_SMGR: closing session for UUID 'd787c716-3745-41ee-9bbc-364ebcee5e3a' with name 'vitis-run_compile_vitis_unified_project'
+Thu May  7 12:19:14 2026: SYSTEM_DIAGRAM: closing session for UUID 'd787c716-3745-41ee-9bbc-364ebcee5e3a' with name 'vitis-run_compile_vitis_unified_project'
+Thu May  7 12:19:14 2026: STOP_SERVER received, server token: c3a2dc7f-aeef-4cfe-957b-c4aac32b7209, passed token: c3a2dc7f-aeef-4cfe-957b-c4aac32b7209
+Thu May  7 12:19:14 2026: Socket received request to stop server.
+Thu May  7 12:19:14 2026: Dispatch Server: do_await_stop
+Thu May  7 12:19:14 2026: Dispatch Server: stopping mainFifo_
+Thu May  7 12:19:14 2026: XCD main fifo: Stopping
+Thu May  7 12:19:14 2026: XCD main fifo: do_read error code: Operation canceled
+Thu May  7 12:19:14 2026: XCD main fifo: bytes_transferred: 0
+Thu May  7 12:19:14 2026: SERVER: destructor for server bound to port 46429
+Thu May  7 12:19:14 2026: XCD main fifo: Good unlink of /tmp/xcdmainc3a2dc7f-aeef-4cfe-957b-c4aac32b7209
+Thu May  7 12:19:14 2026: Server exiting with status 0.
+Thu May  7 12:19:14 2026: Closing log file.
