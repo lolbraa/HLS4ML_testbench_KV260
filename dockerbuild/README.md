@@ -51,7 +51,7 @@ Jupyter notebook may be configured by either installing at runtime (setting up a
 
 
 
-## Building and maintaing container
+## Building and maintaining container
 
 ### Preparing Xilinx Installer Archive
 
@@ -73,7 +73,7 @@ However, to keep the required disk space to a minimum, use the appropriate Web I
 ### Building
 
 For building the images yourself, do the build command from `HLS4ML_testbench_KV260/dockerbuild/`-directory.
-
+It takes a lot of time and diskspace.
 
 ```bash
 docker build -t hls4ml-kv260-testbench:v2025.2 .
@@ -86,6 +86,7 @@ Exporting image for others to import ([documentation](https://docs.docker.com/re
 docker save hls4ml-kv260-testbench:final | gzip > hls4ml-kv260-testbench.tar.gz
 ```
 
+#### Time and Space
 
 | Step                        | Est        |
 | --------------------------- | ---------- |
@@ -97,3 +98,21 @@ docker save hls4ml-kv260-testbench:final | gzip > hls4ml-kv260-testbench.tar.gz
 |                             |            |
 |                             |            |
 |                             |            |
+
+
+## Problems encountered
+
+
+When running in the Docker, we encoountered problems with crashes of the vpl-engine during compilation of the project to blockdiagram, seemingly with a webtalk-/telemetry-
+Hotfix for libudev-crashes during synthesis ([post1](https://adaptivesupport.amd.com/s/article/000034450?language=en_US), [post2](https://community.revenera.com/s/question/0D5PL00000NwuKu0AJ/issues-when-running-xilinx-tools-or-other-vendor-tools-in-docker-environment))
+Should be applied per process, in our cases in notebook when running hls4ml.build()
+```python
+import os
+os.environ['LD_PRELOAD'] = '/lib/x86_64-linux-gnu/libudev.so.1'
+```
+
+Processes hung without ending properly when running block-level synthesis, silently stopping the synthesis. After some troubleshooting we figured we needed a [init process](https://docs.docker.com/reference/cli/docker/container/run/#init) (`--init` flag).
+
+The user inside is root, so `chown` may be needed to fix permissions when working with host OS' user.
+
+Dependency issues. After a lot of trial and error, the current buildfile works for Vitis Unified Software Platform, though no guarantees for the future. This is the main motivation for using Docker in the first place, trying to eliminating platform-specific dependency issues.
