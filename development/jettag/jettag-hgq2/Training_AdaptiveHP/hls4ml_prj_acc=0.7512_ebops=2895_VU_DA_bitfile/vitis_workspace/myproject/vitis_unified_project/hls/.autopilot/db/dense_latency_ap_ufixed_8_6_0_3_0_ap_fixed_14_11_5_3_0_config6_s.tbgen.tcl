@@ -1,0 +1,226 @@
+set moduleName dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_11_5_3_0_config6_s
+set isTopModule 0
+set isCombinational 0
+set isDatapathOnly 0
+set isPipelined 1
+set isPipelined_legacy 1
+set pipeline_type function
+set FunctionProtocol ap_ctrl_hs
+set restart_counter_num 0
+set isOneStateSeq 0
+set ProfileFlag 0
+set StallSigGenFlag 0
+set isEnableWaveformDebug 1
+set hasInterrupt 0
+set DLRegFirstOffset 0
+set DLRegItemOffset 0
+set svuvm_can_support 1
+set cdfgNum 20
+set C_modelName {dense_latency<ap_ufixed<8, 6, 0, 3, 0>, ap_fixed<14, 11, 5, 3, 0>, config6>}
+set C_modelType { int 182 }
+set ap_memory_interface_dict [dict create]
+set C_modelArgList {
+	{ data_0_val int 8 regular  }
+	{ data_1_val int 8 regular  }
+	{ data_2_val int 8 regular  }
+	{ data_4_val int 8 regular  }
+	{ data_7_val int 8 regular  }
+	{ data_10_val int 8 regular  }
+	{ data_12_val int 8 regular  }
+	{ data_16_val int 8 regular  }
+	{ data_20_val int 8 regular  }
+	{ data_22_val int 8 regular  }
+	{ data_28_val int 8 regular  }
+	{ data_35_val int 8 regular  }
+	{ data_37_val int 8 regular  }
+	{ data_39_val int 8 regular  }
+	{ data_40_val int 8 regular  }
+	{ data_42_val int 8 regular  }
+	{ data_44_val int 8 regular  }
+	{ data_45_val int 8 regular  }
+	{ data_46_val int 8 regular  }
+	{ data_47_val int 8 regular  }
+	{ data_48_val int 8 regular  }
+	{ data_51_val int 8 regular  }
+	{ data_54_val int 8 regular  }
+}
+set hasAXIMCache 0
+set l_AXIML2Cache [list]
+set AXIMCacheInstDict [dict create]
+set C_modelArgMapList {[ 
+	{ "Name" : "data_0_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_1_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_2_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_4_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_7_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_10_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_12_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_16_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_20_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_22_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_28_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_35_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_37_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_39_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_40_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_42_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_44_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_45_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_46_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_47_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_48_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_51_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "data_54_val", "interface" : "wire", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 182} ]}
+# RTL Port declarations: 
+set portNum 42
+set portList { 
+	{ ap_clk sc_in sc_logic 1 clock -1 } 
+	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
+	{ ap_start sc_in sc_logic 1 start -1 } 
+	{ ap_done sc_out sc_logic 1 predone -1 } 
+	{ ap_idle sc_out sc_logic 1 done -1 } 
+	{ ap_ready sc_out sc_logic 1 ready -1 } 
+	{ data_0_val sc_in sc_lv 8 signal 0 } 
+	{ data_1_val sc_in sc_lv 8 signal 1 } 
+	{ data_2_val sc_in sc_lv 8 signal 2 } 
+	{ data_4_val sc_in sc_lv 8 signal 3 } 
+	{ data_7_val sc_in sc_lv 8 signal 4 } 
+	{ data_10_val sc_in sc_lv 8 signal 5 } 
+	{ data_12_val sc_in sc_lv 8 signal 6 } 
+	{ data_16_val sc_in sc_lv 8 signal 7 } 
+	{ data_20_val sc_in sc_lv 8 signal 8 } 
+	{ data_22_val sc_in sc_lv 8 signal 9 } 
+	{ data_28_val sc_in sc_lv 8 signal 10 } 
+	{ data_35_val sc_in sc_lv 8 signal 11 } 
+	{ data_37_val sc_in sc_lv 8 signal 12 } 
+	{ data_39_val sc_in sc_lv 8 signal 13 } 
+	{ data_40_val sc_in sc_lv 8 signal 14 } 
+	{ data_42_val sc_in sc_lv 8 signal 15 } 
+	{ data_44_val sc_in sc_lv 8 signal 16 } 
+	{ data_45_val sc_in sc_lv 8 signal 17 } 
+	{ data_46_val sc_in sc_lv 8 signal 18 } 
+	{ data_47_val sc_in sc_lv 8 signal 19 } 
+	{ data_48_val sc_in sc_lv 8 signal 20 } 
+	{ data_51_val sc_in sc_lv 8 signal 21 } 
+	{ data_54_val sc_in sc_lv 8 signal 22 } 
+	{ ap_return_0 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_1 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_2 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_3 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_4 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_5 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_6 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_7 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_8 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_9 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_10 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_11 sc_out sc_lv 14 signal -1 } 
+	{ ap_return_12 sc_out sc_lv 14 signal -1 } 
+}
+set NewPortList {[ 
+	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
+ 	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
+ 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
+ 	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
+ 	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
+ 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "data_0_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_0_val", "role": "default" }} , 
+ 	{ "name": "data_1_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_1_val", "role": "default" }} , 
+ 	{ "name": "data_2_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_2_val", "role": "default" }} , 
+ 	{ "name": "data_4_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_4_val", "role": "default" }} , 
+ 	{ "name": "data_7_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_7_val", "role": "default" }} , 
+ 	{ "name": "data_10_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_10_val", "role": "default" }} , 
+ 	{ "name": "data_12_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_12_val", "role": "default" }} , 
+ 	{ "name": "data_16_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_16_val", "role": "default" }} , 
+ 	{ "name": "data_20_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_20_val", "role": "default" }} , 
+ 	{ "name": "data_22_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_22_val", "role": "default" }} , 
+ 	{ "name": "data_28_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_28_val", "role": "default" }} , 
+ 	{ "name": "data_35_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_35_val", "role": "default" }} , 
+ 	{ "name": "data_37_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_37_val", "role": "default" }} , 
+ 	{ "name": "data_39_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_39_val", "role": "default" }} , 
+ 	{ "name": "data_40_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_40_val", "role": "default" }} , 
+ 	{ "name": "data_42_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_42_val", "role": "default" }} , 
+ 	{ "name": "data_44_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_44_val", "role": "default" }} , 
+ 	{ "name": "data_45_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_45_val", "role": "default" }} , 
+ 	{ "name": "data_46_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_46_val", "role": "default" }} , 
+ 	{ "name": "data_47_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_47_val", "role": "default" }} , 
+ 	{ "name": "data_48_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_48_val", "role": "default" }} , 
+ 	{ "name": "data_51_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_51_val", "role": "default" }} , 
+ 	{ "name": "data_54_val", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "data_54_val", "role": "default" }} , 
+ 	{ "name": "ap_return_0", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_0", "role": "default" }} , 
+ 	{ "name": "ap_return_1", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_1", "role": "default" }} , 
+ 	{ "name": "ap_return_2", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_2", "role": "default" }} , 
+ 	{ "name": "ap_return_3", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_3", "role": "default" }} , 
+ 	{ "name": "ap_return_4", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_4", "role": "default" }} , 
+ 	{ "name": "ap_return_5", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_5", "role": "default" }} , 
+ 	{ "name": "ap_return_6", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_6", "role": "default" }} , 
+ 	{ "name": "ap_return_7", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_7", "role": "default" }} , 
+ 	{ "name": "ap_return_8", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_8", "role": "default" }} , 
+ 	{ "name": "ap_return_9", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_9", "role": "default" }} , 
+ 	{ "name": "ap_return_10", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_10", "role": "default" }} , 
+ 	{ "name": "ap_return_11", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_11", "role": "default" }} , 
+ 	{ "name": "ap_return_12", "direction": "out", "datatype": "sc_lv", "bitwidth":14, "type": "signal", "bundle":{"name": "ap_return_12", "role": "default" }}  ]}
+
+set ArgLastReadFirstWriteLatency {
+	dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_11_5_3_0_config6_s {
+		data_0_val {Type I LastRead 0 FirstWrite -1}
+		data_1_val {Type I LastRead 0 FirstWrite -1}
+		data_2_val {Type I LastRead 0 FirstWrite -1}
+		data_4_val {Type I LastRead 0 FirstWrite -1}
+		data_7_val {Type I LastRead 0 FirstWrite -1}
+		data_10_val {Type I LastRead 0 FirstWrite -1}
+		data_12_val {Type I LastRead 0 FirstWrite -1}
+		data_16_val {Type I LastRead 0 FirstWrite -1}
+		data_20_val {Type I LastRead 0 FirstWrite -1}
+		data_22_val {Type I LastRead 0 FirstWrite -1}
+		data_28_val {Type I LastRead 0 FirstWrite -1}
+		data_35_val {Type I LastRead 0 FirstWrite -1}
+		data_37_val {Type I LastRead 0 FirstWrite -1}
+		data_39_val {Type I LastRead 0 FirstWrite -1}
+		data_40_val {Type I LastRead 0 FirstWrite -1}
+		data_42_val {Type I LastRead 0 FirstWrite -1}
+		data_44_val {Type I LastRead 0 FirstWrite -1}
+		data_45_val {Type I LastRead 0 FirstWrite -1}
+		data_46_val {Type I LastRead 0 FirstWrite -1}
+		data_47_val {Type I LastRead 0 FirstWrite -1}
+		data_48_val {Type I LastRead 0 FirstWrite -1}
+		data_51_val {Type I LastRead 0 FirstWrite -1}
+		data_54_val {Type I LastRead 0 FirstWrite -1}}}
+
+set hasDtUnsupportedChannel 0
+
+set PerformanceInfo {[
+	{"Name" : "Latency", "Min" : "1", "Max" : "1"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "1"}
+]}
+
+set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
+]}
+
+set Spec2ImplPortList { 
+	data_0_val { ap_none {  { data_0_val in_data 0 8 } } }
+	data_1_val { ap_none {  { data_1_val in_data 0 8 } } }
+	data_2_val { ap_none {  { data_2_val in_data 0 8 } } }
+	data_4_val { ap_none {  { data_4_val in_data 0 8 } } }
+	data_7_val { ap_none {  { data_7_val in_data 0 8 } } }
+	data_10_val { ap_none {  { data_10_val in_data 0 8 } } }
+	data_12_val { ap_none {  { data_12_val in_data 0 8 } } }
+	data_16_val { ap_none {  { data_16_val in_data 0 8 } } }
+	data_20_val { ap_none {  { data_20_val in_data 0 8 } } }
+	data_22_val { ap_none {  { data_22_val in_data 0 8 } } }
+	data_28_val { ap_none {  { data_28_val in_data 0 8 } } }
+	data_35_val { ap_none {  { data_35_val in_data 0 8 } } }
+	data_37_val { ap_none {  { data_37_val in_data 0 8 } } }
+	data_39_val { ap_none {  { data_39_val in_data 0 8 } } }
+	data_40_val { ap_none {  { data_40_val in_data 0 8 } } }
+	data_42_val { ap_none {  { data_42_val in_data 0 8 } } }
+	data_44_val { ap_none {  { data_44_val in_data 0 8 } } }
+	data_45_val { ap_none {  { data_45_val in_data 0 8 } } }
+	data_46_val { ap_none {  { data_46_val in_data 0 8 } } }
+	data_47_val { ap_none {  { data_47_val in_data 0 8 } } }
+	data_48_val { ap_none {  { data_48_val in_data 0 8 } } }
+	data_51_val { ap_none {  { data_51_val in_data 0 8 } } }
+	data_54_val { ap_none {  { data_54_val in_data 0 8 } } }
+}

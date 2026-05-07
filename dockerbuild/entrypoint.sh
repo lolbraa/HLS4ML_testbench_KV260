@@ -16,23 +16,6 @@ export PATH="$XILINX_VITIS/bin:$PATH"
 source /opt/miniconda3/etc/profile.d/conda.sh
 conda activate base
 
-# Setup HLS4ML tutorial repository at runtime if requested #TODO: Test
-if [ ! -z "$SETUP_HLS4ML_TUTORIAL" ] && [ "$SETUP_HLS4ML_TUTORIAL" = "1" ]; then
-    if [ ! -d /work/hls4ml-tutorial ]; then
-        echo "Cloning hls4ml-tutorial repository..."
-        cd /work
-        git clone https://github.com/fastmachinelearning/hls4ml-tutorial/
-        cd hls4ml-tutorial
-        echo "Setting up hls4ml-tutorial conda environment..."
-        conda env create -f environment.yml 2>/dev/null || echo "  (environment setup attempted)"
-        conda run -n hls4ml-tutorial pip install ipykernel 2>/dev/null || true
-        conda run -n hls4ml-tutorial python -m ipykernel install --user --name hls4ml-tutorial --display-name "hls4ml-tutorial" 2>/dev/null || true
-        echo "hls4ml-tutorial setup complete."
-    else
-        echo "hls4ml-tutorial already exists at /work/hls4ml-tutorial"
-    fi
-fi
-
 # Setup userprovided environments from mounted directory at runtime
 if [ -d /work/environments ]; then
     echo "Setting up custom conda environments..."

@@ -1,0 +1,36 @@
+---
+MainSourceFile:  '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '54:77'
+    FilePath:        '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '54:81'
+    FilePath:        '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '58:77'
+    FilePath:        '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '58:81'
+    FilePath:        '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '62:77'
+    FilePath:        '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '62:81'
+    FilePath:        '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '66:79'
+    FilePath:        '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '66:84'
+    FilePath:        '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/firmware/myproject.cpp'
+...

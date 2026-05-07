@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu May  7 10:18:22 2026
+# Process ID         : 730141
+# Current directory  : /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1
+# Command line       : vivado -log vitis_design_axi_interconnect_0_imp_m02_regslice_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl
+# Log file           : /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.vds
+# Journal file       : /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vivado.jou
+# Running On         : 11c2efc5f272
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.952 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 65838 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 65838 MB
+# Available Virtual  : 28150 MB
+#-----------------------------------------------------------
+source vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl -notrace
+INFO: Dispatch client connection id - 35885
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/2025.2/Vitis/data/vitis/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+Command: synth_design -top vitis_design_axi_interconnect_0_imp_m02_regslice_0 -part xck26-sfvc784-2LV-c -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 730287
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2710.070 ; gain = 149.688 ; free physical = 6409 ; free virtual = 28026
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/synth/vitis_design_axi_interconnect_0_imp_m02_regslice_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice' [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice' [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice' (0#1) [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized0' [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized0' (0#1) [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized1' [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized1' (0#1) [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized2' [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized2' (0#1) [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice' (0#1) [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/synth/vitis_design_axi_interconnect_0_imp_m02_regslice_0.v:53]
+INFO: [Synth 8-7129] Port m_axi_bid[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rid[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_rlast in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[7] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[6] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[5] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[4] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlock[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wlast in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[7] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[6] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[5] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[4] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arsize[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arsize[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arsize[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arburst[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arburst[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlock[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arcache[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arcache[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arcache[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arcache[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arregion[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arqos[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arqos[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arqos[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arqos[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+INFO: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2804.008 ; gain = 243.625 ; free physical = 6214 ; free virtual = 27838
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2804.008 ; gain = 243.625 ; free physical = 6217 ; free virtual = 27836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2804.008 ; gain = 243.625 ; free physical = 6217 ; free virtual = 27836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2804.008 ; gain = 0.000 ; free physical = 6213 ; free virtual = 27832
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_clocks.xdc] for cell 'inst'
+Finished Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_clocks.xdc] for cell 'inst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2867.656 ; gain = 0.000 ; free physical = 8775 ; free virtual = 30395
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2867.691 ; gain = 0.000 ; free physical = 8775 ; free virtual = 30395
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2867.691 ; gain = 307.309 ; free physical = 8851 ; free virtual = 30467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xck26-sfvc784-2LV-c
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2875.660 ; gain = 315.277 ; free physical = 8851 ; free virtual = 30467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2875.660 ; gain = 315.277 ; free physical = 8851 ; free virtual = 30467
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2875.660 ; gain = 315.277 ; free physical = 8881 ; free virtual = 30497
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 1     
+	               34 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awid[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[7] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[6] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[5] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[4] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[3] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[2] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[1] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlen[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[2] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[1] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awsize[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[1] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awburst[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awlock[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[3] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[2] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[1] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awcache[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[3] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[2] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[1] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awregion[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[3] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[2] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[1] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awqos[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_awuser[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wid[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wlast in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_wuser[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arid[0] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[7] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Synth 8-7129] Port s_axi_arlen[6] in module axi_register_slice_v2_1_36_axi_register_slice is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2875.660 ; gain = 315.277 ; free physical = 8889 ; free virtual = 30506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3479.949 ; gain = 919.566 ; free physical = 8332 ; free virtual = 29950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3489.965 ; gain = 929.582 ; free physical = 8324 ; free virtual = 29942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3489.965 ; gain = 929.582 ; free physical = 8324 ; free virtual = 29942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3677.777 ; gain = 1117.395 ; free physical = 7679 ; free virtual = 29297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3677.777 ; gain = 1117.395 ; free physical = 7679 ; free virtual = 29297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3677.777 ; gain = 1117.395 ; free physical = 7679 ; free virtual = 29297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3677.777 ; gain = 1117.395 ; free physical = 7679 ; free virtual = 29297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3677.777 ; gain = 1117.395 ; free physical = 7683 ; free virtual = 29301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3677.777 ; gain = 1117.395 ; free physical = 7683 ; free virtual = 29301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     8|
+|2     |LUT3 |     5|
+|3     |LUT4 |     5|
+|4     |FDRE |   102|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 3677.777 ; gain = 1117.395 ; free physical = 7683 ; free virtual = 29301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3677.777 ; gain = 1053.711 ; free physical = 7601 ; free virtual = 29219
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3677.777 ; gain = 1117.395 ; free physical = 7601 ; free virtual = 29219
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3677.777 ; gain = 0.000 ; free physical = 7799 ; free virtual = 29417
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3677.777 ; gain = 0.000 ; free physical = 7694 ; free virtual = 29312
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 45403039
+INFO: [Common 17-83] Releasing license: Synthesis
+136 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3677.777 ; gain = 2116.145 ; free physical = 7631 ; free virtual = 29249
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2564.040; main = 2564.040; forked = 201.290
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3936.332; main = 3604.094; forked = 986.980
+INFO: [Common 17-1381] The checkpoint '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP vitis_design_axi_interconnect_0_imp_m02_regslice_0, cache-ID = 7e0045e29ee27715
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint '/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7590_ebops=11634_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file vitis_design_axi_interconnect_0_imp_m02_regslice_0_utilization_synth.rpt -pb vitis_design_axi_interconnect_0_imp_m02_regslice_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 10:18:49 2026...

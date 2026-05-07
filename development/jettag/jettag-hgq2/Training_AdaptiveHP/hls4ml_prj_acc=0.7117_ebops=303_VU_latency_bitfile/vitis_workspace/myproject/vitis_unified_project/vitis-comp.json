@@ -1,0 +1,9 @@
+{
+  "name": "vitis_unified_project",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["..\/..\/..\/hls_kernel_config.cfg"],
+    "work_dir": "."
+  }
+}
