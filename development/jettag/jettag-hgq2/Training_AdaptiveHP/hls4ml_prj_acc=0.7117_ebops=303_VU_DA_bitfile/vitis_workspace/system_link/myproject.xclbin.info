@@ -11,7 +11,7 @@ xclbin Information
    Kernels:                myproject_axi_master
    Signature:              
    Content:                Bitstream
-   UUID (xclbin):          8f016ec2-9c3e-6d2d-4116-e782ceffabf1
+   UUID (xclbin):          b2a0723c-c81c-59dd-1045-4d8d6bedd280
    Sections:               BITSTREAM, MEM_TOPOLOGY, IP_LAYOUT, CONNECTIVITY, 
                            BUILD_METADATA, EMBEDDED_METADATA, SYSTEM_METADATA, 
                            GROUP_CONNECTIVITY, GROUP_TOPOLOGY
@@ -24,7 +24,7 @@ Hardware Platform (Shell) Information
    Version:                0.0
    Generated Version:      Vivado 2025.2 (SW Build: 6299465)
    Created:
-               Thu May  7 09:44:14 2026   FPGA Device:            xck26
+               Thu May  7 15:12:44 2026   FPGA Device:            xck26
    Board Vendor:           xilinx.com
    Board Name:             xilinx.com:kv260_som:1.4
    Board Part:             xilinx.com:kv260_som:part0:1.4

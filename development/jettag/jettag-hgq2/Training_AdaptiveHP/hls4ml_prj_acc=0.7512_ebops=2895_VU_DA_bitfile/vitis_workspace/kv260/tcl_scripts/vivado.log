@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu May  7 10:10:20 2026
-# Process ID         : 659050
+# Start of session at: Thu May  7 15:29:39 2026
+# Process ID         : 579918
 # Current directory  : /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts
 # Command line       : vivado -mode batch -source create_xsa.tcl
 # Log file           : /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/vivado.log
@@ -19,7 +19,7 @@
 # Host memory        : 65838 MB
 # Swap memory        : 0 MB
 # Total Virtual      : 65838 MB
-# Available Virtual  : 46097 MB
+# Available Virtual  : 36197 MB
 #-----------------------------------------------------------
 source create_xsa.tcl
 # set script_dir [file dirname [file normalize [info script]]]
@@ -1410,11 +1410,11 @@ Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address sp
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_DDR_HIGH from address space /axi_dma_0/Data_S2MM.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_MM2S.
 Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP0/HPC0_LPS_OCM from address space /axi_dma_0/Data_S2MM.
-WARNING: [xilinx.com:ip:axi_intc:4.1-6] /axi_intc_0: Property SENSITIVITY = "NULL" for interrupt input 1 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
 CRITICAL WARNING: [xilinx.com:ip:axi_dma:7.1-11] /axi_dma_0
                    #################################### 
                    S_AXIS_S2MM interface is unconnected
                    ####################################
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /axi_intc_0: Property SENSITIVITY = "NULL" for interrupt input 1 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
 WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HPC0_FPD(1) and /axi_smc/M00_AXI(0)
 WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_pc/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_LPD(16)
@@ -1461,7 +1461,7 @@ Generated Hardware Definition File /work/development/jettag/jettag-hgq2/Training
 INFO: [BD 41-3262] Generated VHDL Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design.vho
 INFO: [BD 41-3262] Generated Verilog Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design.veo
 INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design_sv.sveo
-generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1970.094 ; gain = 2.812 ; free physical = 21603 ; free virtual = 43395
+generate_target: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1967.746 ; gain = 3.781 ; free physical = 14905 ; free virtual = 34007
 # set_property platform.default_output_type "sd_card" [current_project]
 # set_property platform.design_intent.embedded "true" [current_project]
 # set_property platform.design_intent.server_managed "false" [current_project]
@@ -1479,11 +1479,11 @@ INFO: [PFM-62] PFM.AXI_PORT for axi_interconnect_0/M06_AXI does not have an spta
 INFO: [PFM-62] PFM.AXI_PORT for axi_interconnect_0/M07_AXI does not have an sptag specified, so is being assigned an auto generated name of GP
 CRITICAL WARNING: [PFM-48] Interrupt pin /customIntr_0/In1 does not have an assigned id.  It is being assigned ID 1.
 INFO: [Projectvivado 1-1042] Successfully generated hpfm file
-write_project_tcl: Time (s): cpu = 00:00:29 ; elapsed = 00:00:08 . Memory (MB): peak = 2282.270 ; gain = 192.117 ; free physical = 20768 ; free virtual = 42619
+write_project_tcl: Time (s): cpu = 00:00:34 ; elapsed = 00:00:11 . Memory (MB): peak = 2281.922 ; gain = 194.117 ; free physical = 13260 ; free virtual = 32428
 INFO: [Projectvivado 1-1943] The Hardware Platform can be used for Hardware
 INFO: [Projectvivado 1-1941] Successfully created Hardware Platform: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
-INFO: [Hsi 55-2053] elapsed time for repository (/opt/Xilinx/2025.2/data/embeddedsw) loading 0 seconds
-write_hw_platform: Time (s): cpu = 00:00:33 ; elapsed = 00:00:12 . Memory (MB): peak = 2282.270 ; gain = 312.176 ; free physical = 20952 ; free virtual = 42767
+INFO: [Hsi 55-2053] elapsed time for repository (/opt/Xilinx/2025.2/data/embeddedsw) loading 1 seconds
+write_hw_platform: Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 2281.922 ; gain = 314.176 ; free physical = 13469 ; free virtual = 32603
 # puts "INFO: XSA written to $xsa_path"
 INFO: XSA written to /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
-INFO: [Common 17-206] Exiting Vivado at Thu May  7 10:10:52 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 15:30:29 2026...

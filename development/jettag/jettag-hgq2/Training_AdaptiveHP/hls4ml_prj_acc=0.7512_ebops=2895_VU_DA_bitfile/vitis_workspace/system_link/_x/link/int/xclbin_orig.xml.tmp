@@ -29,7 +29,7 @@
           <compileWorkGroupSize x="1" y="1" z="1"/>
           <maxWorkGroupSize x="1" y="1" z="1"/>
           <string_table/>
-          <instance name="myproject_axi_master_1"><addrRemap base="0x0080020000" range="0x10000" port="S_AXI_CONTROL"/></instance>
+          <instance name="myproject_axi_master_1"><addrRemap base="0x0" range="0x0" port="none"/></instance>
         </kernel><connection srcType="core" srcInst="OCL_REGION_0" srcPort="axi_interconnect_0_M02_AXI" dstType="kernel" dstInst="myproject_axi_master_1" dstPort="S_AXI_CONTROL"/><connection srcType="core" srcInst="OCL_REGION_0" srcPort="zynq_ultra_ps_e_0_S_AXI_HP0_FPD" dstType="kernel" dstInst="myproject_axi_master_1" dstPort="M_AXI_GMEM_IN0"/><connection srcType="core" srcInst="OCL_REGION_0" srcPort="zynq_ultra_ps_e_0_S_AXI_HP0_FPD" dstType="kernel" dstInst="myproject_axi_master_1" dstPort="M_AXI_GMEM_OUT0"/><connection srcType="core" srcInst="OCL_REGION_0" srcPort="axi_interconnect_0_M02_AXI" dstType="kernel" dstInst="myproject_axi_master_1" dstPort="S_AXI_CONTROL"/></core>
     </device>
   </platform>

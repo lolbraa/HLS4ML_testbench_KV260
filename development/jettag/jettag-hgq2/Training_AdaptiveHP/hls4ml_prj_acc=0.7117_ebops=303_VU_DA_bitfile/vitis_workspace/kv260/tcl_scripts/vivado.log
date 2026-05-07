@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu May  7 09:43:55 2026
-# Process ID         : 377170
+# Start of session at: Thu May  7 15:12:14 2026
+# Process ID         : 364950
 # Current directory  : /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts
 # Command line       : vivado -mode batch -source create_xsa.tcl
 # Log file           : /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/vivado.log
@@ -19,7 +19,7 @@
 # Host memory        : 65838 MB
 # Swap memory        : 0 MB
 # Total Virtual      : 65838 MB
-# Available Virtual  : 46442 MB
+# Available Virtual  : 43332 MB
 #-----------------------------------------------------------
 source create_xsa.tcl
 # set script_dir [file dirname [file normalize [info script]]]
@@ -1461,7 +1461,7 @@ Generated Hardware Definition File /work/development/jettag/jettag-hgq2/Training
 INFO: [BD 41-3262] Generated VHDL Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design.vho
 INFO: [BD 41-3262] Generated Verilog Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design.veo
 INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/myproj/project_1.gen/sources_1/bd/vitis_design/vitis_design_sv.sveo
-generate_target: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1969.121 ; gain = 1.812 ; free physical = 22772 ; free virtual = 43685
+generate_target: Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1967.148 ; gain = 0.000 ; free physical = 16492 ; free virtual = 40710
 # set_property platform.default_output_type "sd_card" [current_project]
 # set_property platform.design_intent.embedded "true" [current_project]
 # set_property platform.design_intent.server_managed "false" [current_project]
@@ -1479,11 +1479,11 @@ INFO: [PFM-62] PFM.AXI_PORT for axi_interconnect_0/M06_AXI does not have an spta
 INFO: [PFM-62] PFM.AXI_PORT for axi_interconnect_0/M07_AXI does not have an sptag specified, so is being assigned an auto generated name of GP
 CRITICAL WARNING: [PFM-48] Interrupt pin /customIntr_0/In1 does not have an assigned id.  It is being assigned ID 1.
 INFO: [Projectvivado 1-1042] Successfully generated hpfm file
-write_project_tcl: Time (s): cpu = 00:00:29 ; elapsed = 00:00:08 . Memory (MB): peak = 2285.297 ; gain = 196.117 ; free physical = 21597 ; free virtual = 42568
+write_project_tcl: Time (s): cpu = 00:00:32 ; elapsed = 00:00:10 . Memory (MB): peak = 2307.164 ; gain = 220.113 ; free physical = 15757 ; free virtual = 40033
 INFO: [Projectvivado 1-1943] The Hardware Platform can be used for Hardware
 INFO: [Projectvivado 1-1941] Successfully created Hardware Platform: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
 INFO: [Hsi 55-2053] elapsed time for repository (/opt/Xilinx/2025.2/data/embeddedsw) loading 0 seconds
-write_hw_platform: Time (s): cpu = 00:00:33 ; elapsed = 00:00:12 . Memory (MB): peak = 2285.297 ; gain = 316.176 ; free physical = 21731 ; free virtual = 42665
+write_hw_platform: Time (s): cpu = 00:00:36 ; elapsed = 00:00:14 . Memory (MB): peak = 2307.164 ; gain = 340.016 ; free physical = 16034 ; free virtual = 40273
 # puts "INFO: XSA written to $xsa_path"
 INFO: XSA written to /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
-INFO: [Common 17-206] Exiting Vivado at Thu May  7 09:44:26 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 15:12:58 2026...

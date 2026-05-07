@@ -7,7 +7,7 @@
 <Project Product="Vivado" Version="7" Minor="71" Path="/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="2d1f0ade0a4540ae9be8381d3f146ac2"/>
+    <Option Name="Id" Val="a7b4ebd1427248b0b33ac2788a54ece3"/>
     <Option Name="Part" Val="xck26-sfvc784-2LV-c"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -109,7 +109,7 @@
       <File Path="$PSRCDIR/sources_1/bd/vitis_design/vitis_design.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../.local/hw_platform/prj/project_1.srcs/sources_1/bd/vitis_design/vitis_design.bd"/>
-          <Attr Name="ImportTime" Val="1778148284"/>
+          <Attr Name="ImportTime" Val="1778167306"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -284,24 +284,6 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="vitis_design_axi_dma_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vitis_design_axi_dma_0_0" RelGenDir="$PGENDIR/vitis_design_axi_dma_0_0">
-      <Config>
-        <Option Name="TopModule" Val="vitis_design_axi_dma_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="vitis_design_axi_intc_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vitis_design_axi_intc_0_0" RelGenDir="$PGENDIR/vitis_design_axi_intc_0_0">
-      <Config>
-        <Option Name="TopModule" Val="vitis_design_axi_intc_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="vitis_design_axi_smc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vitis_design_axi_smc_0" RelGenDir="$PGENDIR/vitis_design_axi_smc_0">
-      <Config>
-        <Option Name="TopModule" Val="vitis_design_axi_smc_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="vitis_design_zynq_ultra_ps_e_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vitis_design_zynq_ultra_ps_e_0_0" RelGenDir="$PGENDIR/vitis_design_zynq_ultra_ps_e_0_0">
       <Config>
         <Option Name="TopModule" Val="vitis_design_zynq_ultra_ps_e_0_0"/>
@@ -311,6 +293,24 @@
     <FileSet Name="vitis_design_rst_ps8_0_99M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vitis_design_rst_ps8_0_99M_0" RelGenDir="$PGENDIR/vitis_design_rst_ps8_0_99M_0">
       <Config>
         <Option Name="TopModule" Val="vitis_design_rst_ps8_0_99M_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="vitis_design_axi_smc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vitis_design_axi_smc_0" RelGenDir="$PGENDIR/vitis_design_axi_smc_0">
+      <Config>
+        <Option Name="TopModule" Val="vitis_design_axi_smc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="vitis_design_axi_intc_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vitis_design_axi_intc_0_0" RelGenDir="$PGENDIR/vitis_design_axi_intc_0_0">
+      <Config>
+        <Option Name="TopModule" Val="vitis_design_axi_intc_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="vitis_design_axi_dma_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vitis_design_axi_dma_0_0" RelGenDir="$PGENDIR/vitis_design_axi_dma_0_0">
+      <Config>
+        <Option Name="TopModule" Val="vitis_design_axi_dma_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -383,7 +383,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="vitis_design_axi_dma_0_0_synth_1" Type="Ft3:Synth" SrcSet="vitis_design_axi_dma_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_axi_dma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vitis_design_axi_dma_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_axi_dma_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_axi_dma_0_0_synth_1" ParallelReportGen="true">
+    <Run Id="vitis_design_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="vitis_design_zynq_ultra_ps_e_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vitis_design_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_zynq_ultra_ps_e_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_zynq_ultra_ps_e_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -395,7 +395,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="vitis_design_axi_intc_0_0_synth_1" Type="Ft3:Synth" SrcSet="vitis_design_axi_intc_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_axi_intc_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vitis_design_axi_intc_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_axi_intc_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_axi_intc_0_0_synth_1" ParallelReportGen="true">
+    <Run Id="vitis_design_rst_ps8_0_99M_0_synth_1" Type="Ft3:Synth" SrcSet="vitis_design_rst_ps8_0_99M_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_rst_ps8_0_99M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vitis_design_rst_ps8_0_99M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_rst_ps8_0_99M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_rst_ps8_0_99M_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -419,7 +419,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="vitis_design_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="vitis_design_zynq_ultra_ps_e_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vitis_design_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_zynq_ultra_ps_e_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_zynq_ultra_ps_e_0_0_synth_1" ParallelReportGen="true">
+    <Run Id="vitis_design_axi_intc_0_0_synth_1" Type="Ft3:Synth" SrcSet="vitis_design_axi_intc_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_axi_intc_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vitis_design_axi_intc_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_axi_intc_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_axi_intc_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -431,7 +431,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="vitis_design_rst_ps8_0_99M_0_synth_1" Type="Ft3:Synth" SrcSet="vitis_design_rst_ps8_0_99M_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_rst_ps8_0_99M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vitis_design_rst_ps8_0_99M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_rst_ps8_0_99M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_rst_ps8_0_99M_0_synth_1" ParallelReportGen="true">
+    <Run Id="vitis_design_axi_dma_0_0_synth_1" Type="Ft3:Synth" SrcSet="vitis_design_axi_dma_0_0" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_axi_dma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/vitis_design_axi_dma_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_axi_dma_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_axi_dma_0_0_synth_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -542,7 +542,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="vitis_design_axi_dma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_axi_dma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="vitis_design_axi_dma_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_axi_dma_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_axi_dma_0_0_impl_1" ParallelReportGen="true">
+    <Run Id="vitis_design_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="vitis_design_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_zynq_ultra_ps_e_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_zynq_ultra_ps_e_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
           <Desc>Default settings for Implementation.</Desc>
@@ -561,7 +561,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="vitis_design_axi_intc_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_axi_intc_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="vitis_design_axi_intc_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_axi_intc_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_axi_intc_0_0_impl_1" ParallelReportGen="true">
+    <Run Id="vitis_design_rst_ps8_0_99M_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_rst_ps8_0_99M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="vitis_design_rst_ps8_0_99M_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_rst_ps8_0_99M_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_rst_ps8_0_99M_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
           <Desc>Default settings for Implementation.</Desc>
@@ -599,7 +599,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="vitis_design_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="vitis_design_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_zynq_ultra_ps_e_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_zynq_ultra_ps_e_0_0_impl_1" ParallelReportGen="true">
+    <Run Id="vitis_design_axi_intc_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_axi_intc_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="vitis_design_axi_intc_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_axi_intc_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_axi_intc_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
           <Desc>Default settings for Implementation.</Desc>
@@ -618,7 +618,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="vitis_design_rst_ps8_0_99M_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_rst_ps8_0_99M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="vitis_design_rst_ps8_0_99M_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_rst_ps8_0_99M_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_rst_ps8_0_99M_0_impl_1" ParallelReportGen="true">
+    <Run Id="vitis_design_axi_dma_0_0_impl_1" Type="Ft2:EntireDesign" Part="xck26-sfvc784-2LV-c" ConstrsSet="vitis_design_axi_dma_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="vitis_design_axi_dma_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/vitis_design_axi_dma_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/vitis_design_axi_dma_0_0_impl_1" ParallelReportGen="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
           <Desc>Default settings for Implementation.</Desc>

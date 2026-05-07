@@ -1,0 +1,205 @@
+<stg><name>shift_line_buffer<array<ap_ufixed<4, 2, 0, 3, 0>, 1u>, config3></name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
+<![CDATA[
+entry:0 %specpipeline_ln221 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_15
+
+]]></Node>
+<StgValue><ssdm name="specpipeline_ln221"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="4" op_0_bw="4" op_1_bw="4">
+<![CDATA[
+entry:1 %in_elem_0_0_0_0_0_val_read = read i4 @_ssdm_op_Read.ap_auto.i4, i4 %in_elem_0_0_0_0_0_val
+
+]]></Node>
+<StgValue><ssdm name="in_elem_0_0_0_0_0_val_read"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>ShiftReg</core>
+<MemPortIdVec>0 </MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="4" op_0_bw="4" op_1_bw="4" op_2_bw="4" op_3_bw="1">
+<![CDATA[
+entry:2 %p_i = memshiftread i4 @_ssdm_op_MemShiftRead.[28 x i4]P0A, i4 27, i4 %in_elem_0_0_0_0_0_val_read, i1 1
+
+]]></Node>
+<StgValue><ssdm name="p_i"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>ShiftReg</core>
+<MemPortIdVec>0 </MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="4" op_0_bw="4" op_1_bw="4" op_2_bw="4" op_3_bw="1">
+<![CDATA[
+entry:3 %p_0_i = memshiftread i4 @_ssdm_op_MemShiftRead.[28 x i4]P0A, i4 27, i4 %p_i, i1 1
+
+]]></Node>
+<StgValue><ssdm name="p_0_i"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="4" op_0_bw="4">
+<![CDATA[
+entry:4 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2 = load i4 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig
+
+]]></Node>
+<StgValue><ssdm name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="0" op_0_bw="4" op_1_bw="4">
+<![CDATA[
+entry:5 %store_ln196 = store i4 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2, i4 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1
+
+]]></Node>
+<StgValue><ssdm name="store_ln196"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="0" op_0_bw="4" op_1_bw="4" op_2_bw="0">
+<![CDATA[
+entry:6 %store_ln209 = store i4 %in_elem_0_0_0_0_0_val_read, i4 %void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig
+
+]]></Node>
+<StgValue><ssdm name="store_ln209"/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="0">
+<![CDATA[
+entry:7 %ret_ln221 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln221"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="11" name="in_elem_0_0_0_0_0_val" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="in_elem_0_0_0_0_0_val"/></StgValue>
+</port>
+<port id="12" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig"/></StgValue>
+</port>
+<port id="13" name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1" dir="1" iftype="0">
+<core>NULL</core><StgValue><ssdm name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1"/></StgValue>
+</port>
+<port id="14" name="void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1" dir="3" iftype="1">
+<core>ShiftReg</core><StgValue><ssdm name="void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer_1"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="15" name="void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer" dir="3" iftype="1">
+<core>ShiftReg</core><StgValue><ssdm name="void_conv_2d_buffer_latency_cl_stream_stream_weight_t_bias_t_line_buffer"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="17" from="_ssdm_op_SpecPipeline" to="specpipeline_ln221" fromId="16" toId="2">
+</dataflow>
+<dataflow id="19" from="StgValue_18" to="specpipeline_ln221" fromId="18" toId="2">
+</dataflow>
+<dataflow id="21" from="StgValue_20" to="specpipeline_ln221" fromId="20" toId="2">
+</dataflow>
+<dataflow id="22" from="StgValue_20" to="specpipeline_ln221" fromId="20" toId="2">
+</dataflow>
+<dataflow id="23" from="StgValue_20" to="specpipeline_ln221" fromId="20" toId="2">
+</dataflow>
+<dataflow id="24" from="StgValue_18" to="specpipeline_ln221" fromId="18" toId="2">
+</dataflow>
+<dataflow id="26" from="empty_15" to="specpipeline_ln221" fromId="25" toId="2">
+</dataflow>
+<dataflow id="28" from="_ssdm_op_Read.ap_auto.i4" to="in_elem_0_0_0_0_0_val_read" fromId="27" toId="3">
+</dataflow>
+<dataflow id="29" from="in_elem_0_0_0_0_0_val" to="in_elem_0_0_0_0_0_val_read" fromId="11" toId="3">
+</dataflow>
+<dataflow id="31" from="_ssdm_op_MemShiftRead.[28 x i4]P0A" to="p_i" fromId="30" toId="4">
+</dataflow>
+<dataflow id="33" from="StgValue_32" to="p_i" fromId="32" toId="4">
+</dataflow>
+<dataflow id="34" from="in_elem_0_0_0_0_0_val_read" to="p_i" fromId="3" toId="4">
+</dataflow>
+<dataflow id="36" from="StgValue_35" to="p_i" fromId="35" toId="4">
+</dataflow>
+<dataflow id="37" from="_ssdm_op_MemShiftRead.[28 x i4]P0A" to="p_0_i" fromId="30" toId="5">
+</dataflow>
+<dataflow id="39" from="StgValue_38" to="p_0_i" fromId="38" toId="5">
+</dataflow>
+<dataflow id="40" from="p_i" to="p_0_i" fromId="4" toId="5">
+</dataflow>
+<dataflow id="41" from="StgValue_35" to="p_0_i" fromId="35" toId="5">
+</dataflow>
+<dataflow id="42" from="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig" to="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2" fromId="12" toId="6">
+</dataflow>
+<dataflow id="43" from="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_2" to="store_ln196" fromId="6" toId="7">
+</dataflow>
+<dataflow id="44" from="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1" to="store_ln196" fromId="13" toId="7">
+</dataflow>
+<dataflow id="45" from="in_elem_0_0_0_0_0_val_read" to="store_ln209" fromId="3" toId="8">
+</dataflow>
+<dataflow id="46" from="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig" to="store_ln209" fromId="12" toId="8">
+</dataflow>
+</dataflows>
+
+
+</stg>

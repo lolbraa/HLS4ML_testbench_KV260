@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Styles -->
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 1000px;
+    }
+</style>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>OPTraceViewer</title>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/serial.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/gantt.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js">
+  </script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+  <form name="userInputForm" action="javascript:userInputFormCallback()">
+    <fieldset>
+    <legend>Graph Filters:</legend>
+    <table style="width:100%">
+      <col width="50"></col>
+      <col width="20"></col>
+      <col width="60"></col>
+      <tr>
+        <td style="text-align: center"; colspan="3"><input type="number" name="userDurationFilterSecInput" id="userDurationFilterSecInput" value="2" min="0" max="6000" step="1"> sec</td>
+        <td>Filter out run durations lower than this value</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="text-align: center"><input type="checkbox" name="userGroupPidSortSelected" id="userGroupPidSortSelected"></td>
+        <td>Group sort by process ID</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#0099ff"></td>
+        <td style="text-align: center"><input type="checkbox" name="userRollupSelected" id="userRollupSelected"></td>
+        <td>Show rollup entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#8dc49f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userIndividualEntrySelected" id="userIndividualEntrySelected"></td>
+        <td>Show individual entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#cd82ad"></td>
+        <td style="text-align: center"><input type="checkbox" name="userCheckpointEntrySelected" id="userCheckpointEntrySelected"></td>
+        <td>Show checkpoints entry</td>
+      </tr>
+       <tr>
+        <td></td>
+        <td bgcolor="#b9783f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userReportEntrySelected" id="userReportEntrySelected"></td>
+        <td>Show report entry</td>
+      </tr>
+
+    </table>
+    <br>
+    <input name="Submit" type="submit" value="Update Graph">
+    </fieldset>
+  </form> 
+
+  <div id="chartdiv">
+  </div>
+
+  <script>
+  </script>
+
+</head>
+
+
+<body>
+<table id="myDynamicTable" cellpadding="2" cellspacing="2" border="1" onclick="tester()">
+  <tr>
+  <td>Task</td>
+  <td>Start</td>
+  <td>Duration</td>
+  </tr>
+</table>
+<script>
+  // Default User Selected variables
+  var m_secondFilter = 1;
+  var m_groupPidSort = true;
+  var m_showRollup = true;
+  var m_showIndividualEntry = false;
+  var m_showCheckpointEntry = false;
+  var m_showReportEntry = false;
+
+  function SetDefaultUserValues()
+  {
+    document.getElementById("userDurationFilterSecInput").value = m_secondFilter;
+    document.getElementById("userGroupPidSortSelected").checked = m_groupPidSort;
+    document.getElementById("userRollupSelected").checked = m_showRollup;
+    document.getElementById("userIndividualEntrySelected").checked = m_showIndividualEntry;
+    document.getElementById("userCheckpointEntrySelected").checked = m_showCheckpointEntry;
+    document.getElementById("userReportEntrySelected").checked = m_showReportEntry;
+  }
+
+  window.onload = function(){
+    SetDefaultUserValues();
+  }
+
+
+
+
+  // Header
+  var header = "Keyword|pid|Entry|SrcFile|Catagory|TimeStampMSec|Action|Task|Tags|Misc";
+                         
+  // Insert Raw Data Here
+  // Note: Do not change the following signature. 
+  var csvData =    [
+      "[OPTRACE]|14133|10|run|cpp|1778164946128|START|OCL_LINK|",
+      "[OPTRACE]|14133|11|setupBinaryForLink|cpp|1778164946128|START|Create Binary|",
+      "[OPTRACE]|14133|12||cpp|1778164946129|END|Create Binary|",
+      "[OPTRACE]|14133|13|setupBinaryForLink|cpp|1778164946129|START|Extract Kernels|",
+      "[OPTRACE]|14133|14||cpp|1778164946387|END|Extract Kernels|",
+      "[OPTRACE]|14133|15|launchStep_|cpp|1778164946420|START|Launch Step: system_link|",
+      "[OPTRACE]|14133|16||cpp|1778164949360|END|Launch Step: system_link|",
+      "[OPTRACE]|14133|17|launchStep_|cpp|1778164949360|START|Launch Step: cf2sw|",
+      "[OPTRACE]|14133|18||cpp|1778164950112|END|Launch Step: cf2sw|",
+      "[OPTRACE]|14133|19|launchStep_|cpp|1778164950112|START|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|14133|1|main|cpp|1778164943206|START|v++|ROLLUP_0",
+      "[OPTRACE]|14133|20||cpp|1778164950154|END|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|14133|21|launchStep_|cpp|1778164950155|START|Launch Step: vpl|",
+      "[OPTRACE]|14133|2|run|cpp|1778164943206|START|Validate Kernels|",
+      "[OPTRACE]|14133|356||cpp|1778165369852|END|Launch Step: vpl|",
+      "[OPTRACE]|14133|357|launchStep_|cpp|1778165369852|START|Launch Step: rtdgen|",
+      "[OPTRACE]|14133|358|launchCf2sw_|cpp|1778165369855|START|Launch cf2sw|",
+      "[OPTRACE]|14133|359||cpp|1778165370618|END|Launch cf2sw|",
+      "[OPTRACE]|14133|360|writeSystemDiagram|cpp|1778165370619|START|writeSystemDiagram|",
+      "[OPTRACE]|14133|361||cpp|1778165370621|END|writeSystemDiagram|",
+      "[OPTRACE]|14133|362|writeAutomationSummary|cpp|1778165370621|START|writeAutomationSummary|",
+      "[OPTRACE]|14133|363||cpp|1778165370622|END|writeAutomationSummary|",
+      "[OPTRACE]|14133|364||cpp|1778165370623|END|Launch Step: rtdgen|",
+      "[OPTRACE]|14133|365|launchStep_|cpp|1778165370624|START|Launch Step: xclbinutil|",
+      "[OPTRACE]|14133|366||cpp|1778165370757|END|Launch Step: xclbinutil|",
+      "[OPTRACE]|14133|367|launchStep_|cpp|1778165370757|START|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|14133|368||cpp|1778165370904|END|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|14133|369||cpp|1778165370905|END|OCL_LINK|",
+      "[OPTRACE]|14133|370||cpp|1778165370907|END|v++|",
+      "[OPTRACE]|14133|3||cpp|1778164943220|END|Validate Kernels|",
+      "[OPTRACE]|14133|4|prepareProject|cpp|1778164943232|START|Create Solution|",
+      "[OPTRACE]|14133|5||cpp|1778164945952|END|Create Solution|",
+      "[OPTRACE]|14133|6|prepareProject|cpp|1778164945952|START|Add Device|",
+      "[OPTRACE]|14133|7|addDevice|cpp|1778164945952|START|Find & Load Device|",
+      "[OPTRACE]|14133|8||cpp|1778164945961|END|Find & Load Device|",
+      "[OPTRACE]|14133|9||cpp|1778164946120|END|Add Device|",
+      "[OPTRACE]|14598|22|main|cpp|1778164950954|START|vpl|",
+      "[OPTRACE]|14598|23|runPlatformLinker|cpp|1778164950965|START|runPlatformLinker|",
+      "[OPTRACE]|14598|24|setupBinaryForLink|cpp|1778164950965|START|Create Solution|",
+      "[OPTRACE]|14598|25||cpp|1778164950969|END|Create Solution|",
+      "[OPTRACE]|14598|26|setupBinaryForLink|cpp|1778164950969|START|Add platform|",
+      "[OPTRACE]|14598|27||cpp|1778164951142|END|Add platform|",
+      "[OPTRACE]|14598|28|setupBinaryForLink|cpp|1778164951142|START|Create Binary|",
+      "[OPTRACE]|14598|29||cpp|1778164951143|END|Create Binary|",
+      "[OPTRACE]|14598|30|setupBinaryForLink|cpp|1778164951143|START|Create Kernels|",
+      "[OPTRACE]|14598|31||cpp|1778164951144|END|Create Kernels|",
+      "[OPTRACE]|14598|32|runPlatformLinker|cpp|1778164951152|START|Process Kernels|",
+      "[OPTRACE]|14598|33|runPlatformLinker|cpp|1778164951152|START|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|14598|34||cpp|1778164951152|END|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|14598|352|runPlatformLinker|cpp|1778165369811|START|Generate Resource Availability Report|",
+      "[OPTRACE]|14598|353||cpp|1778165369811|END|Generate Resource Availability Report|",
+      "[OPTRACE]|14598|354||cpp|1778165369811|END|runPlatformLinker|",
+      "[OPTRACE]|14598|355||cpp|1778165369830|END|vpl|",
+      "[OPTRACE]|14598|35|runPlatformLinker|cpp|1778164951152|START|Process Kernel Profiles|",
+      "[OPTRACE]|14598|36||cpp|1778164951152|END|Process Kernel Profiles|",
+      "[OPTRACE]|14598|37|runPlatformLinker|cpp|1778164951152|START|Process Trace Memory|",
+      "[OPTRACE]|14598|38||cpp|1778164951152|END|Process Trace Memory|",
+      "[OPTRACE]|14598|39|runPlatformLinker|cpp|1778164951152|START|Process AIE Trace|",
+      "[OPTRACE]|14598|40||cpp|1778164951152|END|Process AIE Trace|",
+      "[OPTRACE]|14598|41||cpp|1778164951153|END|Process Kernels|",
+      "[OPTRACE]|14598|42|runPlatformLinker|cpp|1778164951153|START|Process Kernel Debug|",
+      "[OPTRACE]|14598|43||cpp|1778164951153|END|Process Kernel Debug|",
+      "[OPTRACE]|14598|44|runPlatformLinker|cpp|1778164951153|START|Set Kernel Debug|",
+      "[OPTRACE]|14598|45||cpp|1778164951153|END|Set Kernel Debug|",
+      "[OPTRACE]|14598|46|runPlatformLinker|cpp|1778164951153|START|Set Miscellaneous|",
+      "[OPTRACE]|14598|47||cpp|1778164951153|END|Set Miscellaneous|",
+      "[OPTRACE]|14598|48|run|cpp|1778164951153|START|Extract Platform|",
+      "[OPTRACE]|14598|49||cpp|1778164951321|END|Extract Platform|",
+      "[OPTRACE]|14706|252|ipirun.tcl|vpl|1778165178192|END|Synthesis|",
+      "[OPTRACE]|14706|351|ipirun.tcl|vpl|1778165369471|END|Implementation|",
+      "[OPTRACE]|14706|50|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/vpl.tcl|vivado_impl|1778164954318|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|14706|51|ipirun.tcl|vpl|1778164954350|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|14706|52|ipirun.tcl|vpl|1778164954350|END|ipirun|",
+      "[OPTRACE]|14706|53|ipirun.tcl|vpl|1778164954358|START|Create project|",
+      "[OPTRACE]|14706|54|ipirun.tcl|vpl|1778164957594|END|Create project|",
+      "[OPTRACE]|14706|55|ipirun.tcl|vpl|1778164957596|START|Create IP caching environment|",
+      "[OPTRACE]|14706|56|ipirun.tcl|vpl|1778164957671|END|Create IP caching environment|",
+      "[OPTRACE]|14706|57|ipirun.tcl|vpl|1778164957671|START|Import/add dynamic BD|",
+      "[OPTRACE]|14706|58|ipirun.tcl|vpl|1778164957672|END|Import/add dynamic BD|",
+      "[OPTRACE]|14706|59|ipirun.tcl|vpl|1778164957672|START|Open BD and insert kernels|",
+      "[OPTRACE]|14706|60|ipirun.tcl|vpl|1778164961063|END|Open BD and insert kernels|",
+      "[OPTRACE]|14706|61|ipirun.tcl|vpl|1778164961065|START|Add debug/profiling support|",
+      "[OPTRACE]|14706|62|ipirun.tcl|vpl|1778164961085|END|Add debug/profiling support|",
+      "[OPTRACE]|14706|63|ipirun.tcl|vpl|1778164961085|START|IPI address assignments|",
+      "[OPTRACE]|14706|64|ipirun.tcl|vpl|1778164961106|END|IPI address assignments|",
+      "[OPTRACE]|14706|65|ipirun.tcl|vpl|1778164961109|START|Create address map and debug IP profile files|",
+      "[OPTRACE]|14706|66|ipirun.tcl|vpl|1778164961113|END|Create address map and debug IP profile files|",
+      "[OPTRACE]|14706|67|ipirun.tcl|vpl|1778164961113|START|Collect BD interface connectivity and update compute units|",
+      "[OPTRACE]|14706|68|ipirun.tcl|vpl|1778164961119|END|Collect BD interface connectivity and update compute units|",
+      "[OPTRACE]|14706|69|ipirun.tcl|vpl|1778164961156|START|Generate output products|",
+      "[OPTRACE]|14706|70|ipirun.tcl|vpl|1778164989069|END|Generate output products|",
+      "[OPTRACE]|14706|71|ipirun.tcl|vpl|1778164989069|START|Collect clock information and write automation summary report|",
+      "[OPTRACE]|14706|72|ipirun.tcl|vpl|1778164989072|END|Collect clock information and write automation summary report|",
+      "[OPTRACE]|14706|73|ipirun.tcl|vpl|1778164989075|START|Source report_commands_tcl|",
+      "[OPTRACE]|14706|74|ipirun.tcl|vpl|1778164989109|END|Source report_commands_tcl|",
+      "[OPTRACE]|14706|75|ipirun.tcl|vpl|1778164989110|START|Source synth_props_tcl|",
+      "[OPTRACE]|14706|76|ipirun.tcl|vpl|1778164991078|END|Source synth_props_tcl|",
+      "[OPTRACE]|14706|77|ipirun.tcl|vpl|1778164991082|START|Source impl_props_tcl|",
+      "[OPTRACE]|14706|78|ipirun.tcl|vpl|1778164991123|END|Source impl_props_tcl|",
+      "[OPTRACE]|14706|79|ipirun.tcl|vpl|1778164991125|START|Synthesis|ROLLUP_1,SYNTH",
+      "[OPTRACE]|15410|112|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164999437|END|Creating in-memory project|",
+      "[OPTRACE]|15410|113|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164999437|START|Adding files|",
+      "[OPTRACE]|15410|132|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164999993|END|Adding files|",
+      "[OPTRACE]|15410|133|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164999994|START|Configure IP Cache|",
+      "[OPTRACE]|15410|134|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164999999|END|Configure IP Cache|",
+      "[OPTRACE]|15410|135|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164999999|START|synth_design|",
+      "[OPTRACE]|15410|160|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778165030328|END|synth_design|",
+      "[OPTRACE]|15410|161|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778165030328|START|Write IP Cache|",
+      "[OPTRACE]|15410|162|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778165031343|END|Write IP Cache|",
+      "[OPTRACE]|15410|163|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778165031344|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|15410|164|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778165031613|END|write_checkpoint|",
+      "[OPTRACE]|15410|165|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778165031613|START|synth reports|REPORT",
+      "[OPTRACE]|15410|166|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778165031765|END|synth reports|",
+      "[OPTRACE]|15410|167|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778165032480|END|vitis_design_zynq_ultra_ps_e_0_0_synth_1|",
+      "[OPTRACE]|15410|84|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164994836|START|vitis_design_zynq_ultra_ps_e_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|15410|85|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164994837|START|Creating in-memory project|",
+      "[OPTRACE]|15412|110|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164999357|END|Creating in-memory project|",
+      "[OPTRACE]|15412|111|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164999357|START|Adding files|",
+      "[OPTRACE]|15412|118|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164999539|END|Adding files|",
+      "[OPTRACE]|15412|119|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164999540|START|Configure IP Cache|",
+      "[OPTRACE]|15412|120|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164999542|END|Configure IP Cache|",
+      "[OPTRACE]|15412|121|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164999542|START|synth_design|",
+      "[OPTRACE]|15412|144|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778165028207|END|synth_design|",
+      "[OPTRACE]|15412|145|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778165028207|START|Write IP Cache|",
+      "[OPTRACE]|15412|148|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778165028999|END|Write IP Cache|",
+      "[OPTRACE]|15412|149|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778165029001|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|15412|152|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778165029175|END|write_checkpoint|",
+      "[OPTRACE]|15412|153|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778165029176|START|synth reports|REPORT",
+      "[OPTRACE]|15412|156|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778165029324|END|synth reports|",
+      "[OPTRACE]|15412|158|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778165029828|END|vitis_design_axi_intc_0_0_synth_1|",
+      "[OPTRACE]|15412|88|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164995004|START|vitis_design_axi_intc_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|15412|89|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164995004|START|Creating in-memory project|",
+      "[OPTRACE]|15413|100|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164999205|END|Adding files|",
+      "[OPTRACE]|15413|101|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164999206|START|Configure IP Cache|",
+      "[OPTRACE]|15413|102|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164999207|END|Configure IP Cache|",
+      "[OPTRACE]|15413|103|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164999208|START|synth_design|",
+      "[OPTRACE]|15413|146|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778165028289|END|synth_design|",
+      "[OPTRACE]|15413|147|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778165028290|START|Write IP Cache|",
+      "[OPTRACE]|15413|150|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778165029038|END|Write IP Cache|",
+      "[OPTRACE]|15413|151|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778165029039|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|15413|154|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778165029210|END|write_checkpoint|",
+      "[OPTRACE]|15413|155|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778165029210|START|synth reports|REPORT",
+      "[OPTRACE]|15413|157|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778165029365|END|synth reports|",
+      "[OPTRACE]|15413|159|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778165029831|END|vitis_design_rst_ps8_0_99M_0_synth_1|",
+      "[OPTRACE]|15413|82|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164994813|START|vitis_design_rst_ps8_0_99M_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|15413|83|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164994814|START|Creating in-memory project|",
+      "[OPTRACE]|15413|98|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164999062|END|Creating in-memory project|",
+      "[OPTRACE]|15413|99|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164999062|START|Adding files|",
+      "[OPTRACE]|15414|122|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164999626|END|Creating in-memory project|",
+      "[OPTRACE]|15414|123|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164999626|START|Adding files|",
+      "[OPTRACE]|15414|128|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164999799|END|Adding files|",
+      "[OPTRACE]|15414|129|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164999800|START|Configure IP Cache|",
+      "[OPTRACE]|15414|130|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164999850|END|Configure IP Cache|",
+      "[OPTRACE]|15414|131|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164999850|START|synth_design|",
+      "[OPTRACE]|15414|172|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778165034785|END|synth_design|",
+      "[OPTRACE]|15414|173|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778165034785|START|Write IP Cache|",
+      "[OPTRACE]|15414|174|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778165035542|END|Write IP Cache|",
+      "[OPTRACE]|15414|175|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778165035544|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|15414|176|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778165035745|END|write_checkpoint|",
+      "[OPTRACE]|15414|177|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778165035746|START|synth reports|REPORT",
+      "[OPTRACE]|15414|178|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778165035869|END|synth reports|",
+      "[OPTRACE]|15414|179|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778165036369|END|vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1|",
+      "[OPTRACE]|15414|92|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164995128|START|vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|15414|93|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164995128|START|Creating in-memory project|",
+      "[OPTRACE]|15416|116|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164999501|END|Creating in-memory project|",
+      "[OPTRACE]|15416|117|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164999501|START|Adding files|",
+      "[OPTRACE]|15416|140|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165000598|END|Adding files|",
+      "[OPTRACE]|15416|141|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165000600|START|Configure IP Cache|",
+      "[OPTRACE]|15416|142|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165000726|END|Configure IP Cache|",
+      "[OPTRACE]|15416|143|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165000729|START|synth_design|",
+      "[OPTRACE]|15416|218|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165079734|END|synth_design|",
+      "[OPTRACE]|15416|219|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165079734|START|Write IP Cache|",
+      "[OPTRACE]|15416|225|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165082418|END|Write IP Cache|",
+      "[OPTRACE]|15416|226|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165082423|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|15416|227|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165083284|END|write_checkpoint|",
+      "[OPTRACE]|15416|228|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165083285|START|synth reports|REPORT",
+      "[OPTRACE]|15416|229|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165083443|END|synth reports|",
+      "[OPTRACE]|15416|231|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778165085074|END|vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1|",
+      "[OPTRACE]|15416|90|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164995009|START|vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|15416|91|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164995010|START|Creating in-memory project|",
+      "[OPTRACE]|15417|104|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164999265|END|Adding files|",
+      "[OPTRACE]|15417|105|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164999266|START|Configure IP Cache|",
+      "[OPTRACE]|15417|106|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164999275|END|Configure IP Cache|",
+      "[OPTRACE]|15417|107|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164999275|START|synth_design|",
+      "[OPTRACE]|15417|192|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778165045692|END|synth_design|",
+      "[OPTRACE]|15417|193|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778165045692|START|Write IP Cache|",
+      "[OPTRACE]|15417|194|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778165046726|END|Write IP Cache|",
+      "[OPTRACE]|15417|195|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778165046729|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|15417|196|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778165047083|END|write_checkpoint|",
+      "[OPTRACE]|15417|197|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778165047084|START|synth reports|REPORT",
+      "[OPTRACE]|15417|198|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778165047230|END|synth reports|",
+      "[OPTRACE]|15417|199|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778165047913|END|vitis_design_axi_dma_0_0_synth_1|",
+      "[OPTRACE]|15417|80|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164994746|START|vitis_design_axi_dma_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|15417|81|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164994746|START|Creating in-memory project|",
+      "[OPTRACE]|15417|96|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164999034|END|Creating in-memory project|",
+      "[OPTRACE]|15417|97|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164999034|START|Adding files|",
+      "[OPTRACE]|15418|114|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164999453|END|Creating in-memory project|",
+      "[OPTRACE]|15418|115|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164999453|START|Adding files|",
+      "[OPTRACE]|15418|124|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164999660|END|Adding files|",
+      "[OPTRACE]|15418|125|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164999661|START|Configure IP Cache|",
+      "[OPTRACE]|15418|126|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164999662|END|Configure IP Cache|",
+      "[OPTRACE]|15418|127|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164999663|START|synth_design|",
+      "[OPTRACE]|15418|232|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165134934|END|synth_design|",
+      "[OPTRACE]|15418|233|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165134934|START|Write IP Cache|",
+      "[OPTRACE]|15418|234|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165137851|END|Write IP Cache|",
+      "[OPTRACE]|15418|235|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165137856|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|15418|236|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165139106|END|write_checkpoint|",
+      "[OPTRACE]|15418|237|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165139107|START|synth reports|REPORT",
+      "[OPTRACE]|15418|238|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165139289|END|synth reports|",
+      "[OPTRACE]|15418|239|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165141053|END|vitis_design_myproject_axi_master_1_0_synth_1|",
+      "[OPTRACE]|15418|94|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164995310|START|vitis_design_myproject_axi_master_1_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|15418|95|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164995311|START|Creating in-memory project|",
+      "[OPTRACE]|15419|108|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164999289|END|Creating in-memory project|",
+      "[OPTRACE]|15419|109|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164999289|START|Adding files|",
+      "[OPTRACE]|15419|136|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165000312|END|Adding files|",
+      "[OPTRACE]|15419|137|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165000314|START|Configure IP Cache|",
+      "[OPTRACE]|15419|138|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165000425|END|Configure IP Cache|",
+      "[OPTRACE]|15419|139|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165000425|START|synth_design|",
+      "[OPTRACE]|15419|216|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165078933|END|synth_design|",
+      "[OPTRACE]|15419|217|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165078934|START|Write IP Cache|",
+      "[OPTRACE]|15419|220|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165081299|END|Write IP Cache|",
+      "[OPTRACE]|15419|221|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165081304|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|15419|222|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165082158|END|write_checkpoint|",
+      "[OPTRACE]|15419|223|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165082158|START|synth reports|REPORT",
+      "[OPTRACE]|15419|224|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165082331|END|synth reports|",
+      "[OPTRACE]|15419|230|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778165083843|END|vitis_design_axi_smc_0_synth_1|",
+      "[OPTRACE]|15419|86|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164994872|START|vitis_design_axi_smc_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|15419|87|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164994873|START|Creating in-memory project|",
+      "[OPTRACE]|16174|168|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165033085|START|vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|16174|169|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165033086|START|Creating in-memory project|",
+      "[OPTRACE]|16174|180|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165037440|END|Creating in-memory project|",
+      "[OPTRACE]|16174|181|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165037440|START|Adding files|",
+      "[OPTRACE]|16174|184|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165037611|END|Adding files|",
+      "[OPTRACE]|16174|185|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165037612|START|Configure IP Cache|",
+      "[OPTRACE]|16174|186|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165037615|END|Configure IP Cache|",
+      "[OPTRACE]|16174|187|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165037615|START|synth_design|",
+      "[OPTRACE]|16174|200|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165064137|END|synth_design|",
+      "[OPTRACE]|16174|201|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165064137|START|Write IP Cache|",
+      "[OPTRACE]|16174|202|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165064864|END|Write IP Cache|",
+      "[OPTRACE]|16174|203|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165064866|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|16174|204|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165065042|END|write_checkpoint|",
+      "[OPTRACE]|16174|205|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165065042|START|synth reports|REPORT",
+      "[OPTRACE]|16174|206|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165065188|END|synth reports|",
+      "[OPTRACE]|16174|207|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778165065651|END|vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1|",
+      "[OPTRACE]|16175|170|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165033149|START|vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|16175|171|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165033150|START|Creating in-memory project|",
+      "[OPTRACE]|16175|182|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165037588|END|Creating in-memory project|",
+      "[OPTRACE]|16175|183|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165037589|START|Adding files|",
+      "[OPTRACE]|16175|188|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165037936|END|Adding files|",
+      "[OPTRACE]|16175|189|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165037938|START|Configure IP Cache|",
+      "[OPTRACE]|16175|190|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165037979|END|Configure IP Cache|",
+      "[OPTRACE]|16175|191|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165037979|START|synth_design|",
+      "[OPTRACE]|16175|208|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165068188|END|synth_design|",
+      "[OPTRACE]|16175|209|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165068189|START|Write IP Cache|",
+      "[OPTRACE]|16175|210|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165068927|END|Write IP Cache|",
+      "[OPTRACE]|16175|211|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165068929|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|16175|212|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165069112|END|write_checkpoint|",
+      "[OPTRACE]|16175|213|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165069112|START|synth reports|REPORT",
+      "[OPTRACE]|16175|214|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165069248|END|synth reports|",
+      "[OPTRACE]|16175|215|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778165069814|END|vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1|",
+      "[OPTRACE]|17286|240|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165144097|START|synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|17286|241|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165144098|START|Creating in-memory project|",
+      "[OPTRACE]|17286|242|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165148262|END|Creating in-memory project|",
+      "[OPTRACE]|17286|243|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165148263|START|Adding files|",
+      "[OPTRACE]|17286|244|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165150866|END|Adding files|",
+      "[OPTRACE]|17286|245|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165150871|START|synth_design|",
+      "[OPTRACE]|17286|246|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165177609|END|synth_design|",
+      "[OPTRACE]|17286|247|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165177610|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|17286|248|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165177795|END|write_checkpoint|",
+      "[OPTRACE]|17286|249|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165177795|START|synth reports|REPORT",
+      "[OPTRACE]|17286|250|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165177795|END|synth reports|",
+      "[OPTRACE]|17286|251|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165177796|END|synth_1|",
+      "[OPTRACE]|17635|253|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165182691|START|impl_1|ROLLUP_1",
+      "[OPTRACE]|17635|254|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165182691|START|Phase: Init Design|ROLLUP_AUTO",
+      "[OPTRACE]|17635|255|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165182692|START|Design Initialization: pre hook|",
+      "[OPTRACE]|17635|256|ipirun.tcl|vpl|1778165182717|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|17635|257|ipirun.tcl|vpl|1778165182717|END|ipirun|",
+      "[OPTRACE]|17635|258|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165182718|END|Design Initialization: pre hook|",
+      "[OPTRACE]|17635|259|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165182718|START|create in-memory project|",
+      "[OPTRACE]|17635|260|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165183854|END|create in-memory project|",
+      "[OPTRACE]|17635|261|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165183855|START|set parameters|",
+      "[OPTRACE]|17635|262|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165183981|END|set parameters|",
+      "[OPTRACE]|17635|263|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165183982|START|add files|",
+      "[OPTRACE]|17635|264|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165186897|START|read constraints: implementation|",
+      "[OPTRACE]|17635|265|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165186899|END|read constraints: implementation|",
+      "[OPTRACE]|17635|266|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165186900|START|read constraints: implementation_pre|",
+      "[OPTRACE]|17635|267|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165186900|END|read constraints: implementation_pre|",
+      "[OPTRACE]|17635|268|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165186900|END|add files|",
+      "[OPTRACE]|17635|269|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165186900|START|link_design|",
+      "[OPTRACE]|17635|270|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207129|END|link_design|",
+      "[OPTRACE]|17635|271|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207129|START|gray box cells|",
+      "[OPTRACE]|17635|272|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207130|END|gray box cells|",
+      "[OPTRACE]|17635|273|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207130|START|init_design_reports|REPORT",
+      "[OPTRACE]|17635|274|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207130|END|init_design_reports|",
+      "[OPTRACE]|17635|275|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207130|START|Design Initialization: post hook|",
+      "[OPTRACE]|17635|276|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207147|END|Design Initialization: post hook|",
+      "[OPTRACE]|17635|277|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207148|START|init_design_write_hwdef|",
+      "[OPTRACE]|17635|278|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207148|END|init_design_write_hwdef|",
+      "[OPTRACE]|17635|279|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207148|END|Phase: Init Design|",
+      "[OPTRACE]|17635|280|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207148|START|Phase: Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|17635|281|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207149|START|Opt Design: pre hook|",
+      "[OPTRACE]|17635|282|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207927|END|Opt Design: pre hook|",
+      "[OPTRACE]|17635|283|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207927|START|read constraints: opt_design|",
+      "[OPTRACE]|17635|284|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207927|END|read constraints: opt_design|",
+      "[OPTRACE]|17635|285|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165207928|START|opt_design|",
+      "[OPTRACE]|17635|286|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222681|END|opt_design|",
+      "[OPTRACE]|17635|287|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222682|START|read constraints: opt_design_post|",
+      "[OPTRACE]|17635|288|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222682|END|read constraints: opt_design_post|",
+      "[OPTRACE]|17635|289|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222682|START|opt_design reports|REPORT",
+      "[OPTRACE]|17635|290|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222682|END|opt_design reports|",
+      "[OPTRACE]|17635|291|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222682|START|Opt Design: post hook|",
+      "[OPTRACE]|17635|292|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222683|END|Opt Design: post hook|",
+      "[OPTRACE]|17635|293|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222683|END|Phase: Opt Design|",
+      "[OPTRACE]|17635|294|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222683|START|Phase: Place Design|ROLLUP_AUTO",
+      "[OPTRACE]|17635|295|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222684|START|Place Design: pre hook|",
+      "[OPTRACE]|17635|296|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222769|END|Place Design: pre hook|",
+      "[OPTRACE]|17635|297|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222769|START|read constraints: place_design|",
+      "[OPTRACE]|17635|298|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222769|END|read constraints: place_design|",
+      "[OPTRACE]|17635|299|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165222770|START|place_design|",
+      "[OPTRACE]|17635|300|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165295528|END|place_design|",
+      "[OPTRACE]|17635|301|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165295529|START|read constraints: place_design_post|",
+      "[OPTRACE]|17635|302|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165295529|END|read constraints: place_design_post|",
+      "[OPTRACE]|17635|303|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165295529|START|place_design reports|REPORT",
+      "[OPTRACE]|17635|304|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165295529|END|place_design reports|",
+      "[OPTRACE]|17635|305|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165295529|START|Place Design: post hook|",
+      "[OPTRACE]|17635|306|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165297314|END|Place Design: post hook|",
+      "[OPTRACE]|17635|307|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165297315|END|Phase: Place Design|",
+      "[OPTRACE]|17635|308|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165297315|START|Phase: Physical Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|17635|309|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165297315|START|read constraints: phys_opt_design|",
+      "[OPTRACE]|17635|310|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165297315|END|read constraints: phys_opt_design|",
+      "[OPTRACE]|17635|311|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165297315|START|phys_opt_design|",
+      "[OPTRACE]|17635|312|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299742|END|phys_opt_design|",
+      "[OPTRACE]|17635|313|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299743|START|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|17635|314|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299743|END|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|17635|315|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299743|START|phys_opt_design report|REPORT",
+      "[OPTRACE]|17635|316|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299743|END|phys_opt_design report|",
+      "[OPTRACE]|17635|317|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299744|END|Phase: Physical Opt Design|",
+      "[OPTRACE]|17635|318|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299744|START|Phase: Route Design|ROLLUP_AUTO",
+      "[OPTRACE]|17635|319|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299744|START|read constraints: route_design|",
+      "[OPTRACE]|17635|320|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299746|END|read constraints: route_design|",
+      "[OPTRACE]|17635|321|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165299746|START|route_design|",
+      "[OPTRACE]|17635|322|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165330265|END|route_design|",
+      "[OPTRACE]|17635|323|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165330265|START|read constraints: route_design_post|",
+      "[OPTRACE]|17635|324|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165330266|END|read constraints: route_design_post|",
+      "[OPTRACE]|17635|325|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165330266|START|route_design reports|REPORT",
+      "[OPTRACE]|17635|326|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165332768|END|route_design reports|",
+      "[OPTRACE]|17635|327|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165332768|START|Route Design: post hook|",
+      "[OPTRACE]|17635|328|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165336357|END|Route Design: post hook|",
+      "[OPTRACE]|17635|329|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165336357|START|Route Design: write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|17635|330|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165338485|END|Route Design: write_checkpoint|",
+      "[OPTRACE]|17635|331|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165338485|START|route_design misc|",
+      "[OPTRACE]|17635|332|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165338485|END|route_design misc|",
+      "[OPTRACE]|17635|333|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165338485|END|Phase: Route Design|",
+      "[OPTRACE]|17635|334|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165338486|START|Phase: Write Bitstream|ROLLUP_AUTO",
+      "[OPTRACE]|17635|335|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165338486|START|write_bitstream setup|",
+      "[OPTRACE]|17635|336|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165338486|START|Write Bitstream: pre hook|",
+      "[OPTRACE]|17635|337|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165339101|END|Write Bitstream: pre hook|",
+      "[OPTRACE]|17635|338|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165339101|START|read constraints: write_bitstream|",
+      "[OPTRACE]|17635|339|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165339101|END|read constraints: write_bitstream|",
+      "[OPTRACE]|17635|340|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165339191|END|write_bitstream setup|",
+      "[OPTRACE]|17635|341|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165339192|START|write_bitstream|",
+      "[OPTRACE]|17635|342|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364083|END|write_bitstream|",
+      "[OPTRACE]|17635|343|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364083|START|write_bitstream misc|",
+      "[OPTRACE]|17635|344|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364084|START|read constraints: write_bitstream_post|",
+      "[OPTRACE]|17635|345|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364084|END|read constraints: write_bitstream_post|",
+      "[OPTRACE]|17635|346|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364094|START|Write Bitstream: post hook|",
+      "[OPTRACE]|17635|347|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364095|END|Write Bitstream: post hook|",
+      "[OPTRACE]|17635|348|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364096|END|write_bitstream misc|",
+      "[OPTRACE]|17635|349|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364096|END|Phase: Write Bitstream|",
+      "[OPTRACE]|17635|350|/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165364096|END|impl_1|"
+      ];
+
+  var legendData = [
+  { "title": "Report Generation",
+    "color": "#b9783f"
+  }, {
+    "title": "Write Checkpoint",
+    "color": "#cd82ad"
+  },
+  {
+    "title": "Incomplete Data",
+    "color": "#cc4748"
+  } ];
+
+  // -- Convert Raw data into something we can use ---------------------------
+  console.log("Convert log data (%s entries) to Javascript 'JSON' objects...", csvData.length);
+  var jsonData = csvArrayToJSON(header, csvData, "|");
+
+  // -- Clean up the JSON objects --------------------------------------------
+  for (var i = 0; i < jsonData.length; i++) {
+    jsonData[i].Action = jsonData[i].Action.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.trim();
+    jsonData[i].TimeStampMSec = parseInt(jsonData[i].TimeStampMSec, 10);
+    jsonData[i].pid = parseInt(jsonData[i].pid, 10);
+  }
+
+  // -- Sort JSON array ------------------------------------------------------
+  console.log("Sorting JSON objects (%s objects) according to timestamps...", jsonData.length);
+  jsonData.sort(compareByTimeStamp);
+
+  // Record the PID grouping order
+  var pidOrder = new Map();
+  for (var i = 0; i < jsonData.length; i++) {
+    if (pidOrder.has(jsonData[i].pid) == false) {
+      pidOrder.set(jsonData[i].pid, i);    // Simple ordering (lower is first)
+    }
+  }
+
+  // -- Create secondary data array for the chart data array -----------------
+  console.log("Preparing graph data...");
+
+  // Task limits
+  var m_startTS = 0;      // Earliest Timestamp
+  var m_endTS = 0;        // Latest Timestamp
+
+  if (jsonData.length > 0) {
+    m_startTS = jsonData[0].TimeStampMSec;
+    m_endTS = jsonData[jsonData.length - 1].TimeStampMSec;
+  }
+
+
+  var chartData = [ ];   // Empty JSON array
+
+
+  populateChartData();
+  tableCreate( chartData );
+
+  filterChartEntries();
+
+  // -- Search for "holes"
+  // -- Sort by common PID
+  // -- Create groupings by process
+
+  console.log("done");
+
+  var chart = AmCharts.makeChart("chartdiv", {
+    "type": "gantt",
+    "theme": "light",
+    "titles": [
+    { "text": "OPTrace", "size": 15}],
+    "marginRight": 70,
+    "period": "fff",                                     // X-Axis
+    "balloonDateFormat": "JJ:NN:SS",
+    "columnWidth": 0.5,                                 // Bar thickness
+    "valueAxis": {
+      "type": "numeric",
+      "title": "Time [HH:MM:SS]",
+      "duration": "ss",
+      "durationUnits": { DD: 'd. ', hh: ':', mm: ':', ss: '' },
+    },
+    "brightnessStep": 10,
+    "graph": {
+      "fillAlphas": 1,
+      "labelFunction": barLabelCallBack,
+      "labelText": " ",
+      "labelPosition": "right",
+      "balloonFunction": ballonLabelCallBack,
+      "balloonText": "<p align='left'> Task: [[task]]<br/>Start:[[start]]<br/>End:[[end]]<br/>Duration:[[duration]]</p>",
+      "bulletField": "bullet",
+      "bulletSize": 8
+    },
+    "rotate": true,
+    "categoryField": "category",
+    "segmentsField": "segments",
+    "colorField": "color",
+    "startDate": "2015-01-01 00:00:00",
+    "startField": "start",
+    "endField": "end",
+    "durationField": "duration",
+    "dataProvider": chartData,
+    "valueScrollbar": {
+      "autoGridCount": true
+    },
+    "chartScrollbar": {
+      "enable": true
+    },
+    "chartCursor": {
+      "cursorColor": "#55bb76",
+      "valueBalloonsEnabled": false,
+      "cursorAlpha": 0.1,
+      "valueLineAlpha": 0.5,
+      "valueLineBalloonEnabled": true,
+      "valueLineEnabled": true,
+      "zoomable": true,
+      "valueZoomable": true,
+      "fullWidth": true
+    },
+    "legend": {
+      "data": legendData,
+    },
+    "export": {
+      "enabled": true
+    }
+  });
+
+  // =========================================================================
+  // Call back methods
+  // =========================================================================
+function ballonLabelCallBack( _graphDataItem )
+{
+  var start = _graphDataItem.values.open;
+  var end = _graphDataItem.values.value;
+  var duration = end - start;
+
+  var result = "<p align='left'>Task: " + _graphDataItem.category + "<br/>Start: " + secondsToHHMMSS(start) + "<br/>End: " + secondsToHHMMSS( end ) + "<br/>Duration: " + secondsToHHMMSS( duration ) + "</p>";
+  return result;
+}
+
+
+function barLabelCallBack( _graphDataItem )
+{
+   var duration = _graphDataItem.values.value - _graphDataItem.values.open;
+
+   return secondsToHHMMSS( duration);
+}
+
+
+function userInputFormCallback()
+{
+  // Second filter
+  m_secondFilter = document.getElementById("userDurationFilterSecInput").value;
+  console.log("Setting second filter to: " + m_secondFilter + " seconds");
+
+  // Group PID Sort
+  m_groupPidSort = document.getElementById("userGroupPidSortSelected").checked;
+  console.log("Group PID filter is set to: " + m_groupPidSort);
+
+  // Rollup filter
+  m_showRollup = document.getElementById("userRollupSelected").checked;
+  console.log("Rollup filter is set to: " + m_showRollup);
+
+  // Individual filter
+  m_showIndividualEntry = document.getElementById("userIndividualEntrySelected").checked;
+  console.log("Individual filter is set to: " + m_showIndividualEntry);
+
+  // Checkpoint Report Entries filter
+  m_showCheckpointEntry = document.getElementById("userCheckpointEntrySelected").checked;
+  console.log("Checkpoint Entry filter is set to: " + m_showCheckpointEntry);
+
+  // Checkpoint Report Entries filter
+  m_showReportEntry = document.getElementById("userReportEntrySelected").checked;
+  console.log("Report Entry filter is set to: " + m_showReportEntry);
+
+  populateChartData();
+  filterChartEntries()
+  chart.dataProvider = chartData;
+  chart.validateData();
+}
+
+  // =========================================================================
+  // Utilities
+  // =========================================================================
+
+
+function populateChartData()
+{
+  chartData = [ ];
+  if (m_groupPidSort == false) {
+    jsonData.sort(compareByTimeStamp);
+  } else {
+    jsonData.sort(compareByGroupTimeStamp);
+  }
+
+  for (var i = 0; i < jsonData.length; i++) {
+    var timestamp = parseInt(jsonData[0].TimeStampMSec, 10);
+
+    if (m_startTS > timestamp) m_startTS = timestamp;
+    if (m_endTS < timestamp) m_endTS = timestamp;
+
+    for (var i = 0; i < jsonData.length; i++) {
+      switch (jsonData[i].Action) {
+      case "START":
+        var categoryEntry = { };
+        categoryEntry["category"] = jsonData[i].Task;
+        categoryEntry["pid"] = jsonData[i].pid;
+
+        var segmentEntry = { };
+        // Normalize entry and convert to seconds
+        segmentEntry["start"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+        segmentEntry["color"] = getTaskBarColor(jsonData[i].Tags)
+        segmentEntry["task"] = jsonData[i].Task;
+        segmentEntry["tags"] = jsonData[i].Tags;
+        segmentEntry["duration"] = -1;
+
+        categoryEntry["segments"] = [ ];
+        categoryEntry["segments"].push(segmentEntry);
+        chartData.push(categoryEntry);
+        break;
+
+      case "END":
+        var catagory = findCatagory(jsonData[i].pid, jsonData[i].Task, chartData);
+        if (catagory != null) {
+          var segmentsEntry = catagory.segments[0];
+          segmentsEntry["end"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+          segmentsEntry["duration"] = segmentsEntry.end - segmentsEntry.start;
+        } else {
+          console.log("Null entry found: pid:%s, Task: %s", jsonData[i].pid, jsonData[i].Task);
+        }
+
+        break;
+
+      default:
+        console.log("Default");
+        break;
+      }
+    }
+  }
+}
+
+function filterChartEntries()
+{
+  for(var i = chartData.length - 1; i >= 0; i--) {
+    var segment = chartData[i].segments[0];
+
+    // -- Remove entries less than 1 seconds
+    if ( segment["duration"] == -1) {
+      segment["bullet"] = "xError";
+      segment["color"] = "#cc4748";
+      segment["duration"] = ((m_endTS - m_startTS) / 1000) - segment["start"];
+    } else if (segment["duration"] <  m_secondFilter) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  
+
+    // Filter by tags
+    var bHasRollup = false;
+    var bHasCheckpoint = false;
+    var bHasReport = false;
+
+    var tags = segment["tags"];
+    console.log("Tag: " + tags);
+    if (tags.search(/ROLLUP_/i) != -1) { bHasRollup = true; }
+    if (tags.search(/CHECKPOINT/i) != -1) { bHasCheckpoint = true; }
+    if (tags.search(/REPORT/i) != -1) { bHasReport = true; }
+
+    var bRemoveEntry = false;
+
+    // Remove rollups
+    if ((m_showRollup == false) && (bHasRollup == true)) {
+      bRemoveEntry = true;
+    }
+    
+    // Remove checkpoints    
+    if ((m_showCheckpointEntry == false) && (bHasCheckpoint == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove reports
+    if ((m_showReportEntry == false) && (bHasReport == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove individual entry
+    if (((m_showIndividualEntry == false) && 
+         ((bHasRollup == false) &&
+          (bHasCheckpoint == false) &&
+          (bHasReport == false)))) {
+      bRemoveEntry = true;
+    }
+
+    if (bRemoveEntry == true) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  }
+
+  console.log("ChartData.length: " + chartData.length);
+}
+
+
+function getTaskBarColor( _tags )
+{
+  if (_tags == null)
+    return "#8dc49f";
+
+  if (_tags.search(/ROLLUP_AUTO/i) != -1){ return "#0099ff"; }
+  if (_tags.search(/ROLLUP_0/i) != -1)   { return "#006699"; }
+  if (_tags.search(/ROLLUP_1/i) != -1)   { return "#009933"; }
+  if (_tags.search(/ROLLUP_2/i) != -1)   { return "#66ccff"; }
+  if (_tags.search(/REPORT/i) != -1)     { return "#b9783f"; }
+  if (_tags.search(/CHECKPOINT/i) != -1) { return "#cd82ad"; }
+
+  return "#8dc49f"
+}
+
+
+function tableCreate( _chartData ){
+    var myTableDiv = document.getElementById("myDynamicTable");
+
+
+    for ( var i = 0; i < _chartData.length; i++) {
+      var tr = myTableDiv.insertRow();
+
+      var td_task = tr.insertCell();
+      td_task.appendChild(document.createTextNode( _chartData[i].category ));
+
+      var segmentEntry = _chartData[i].segments;
+      var td_start = tr.insertCell();
+      td_start.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].start) ));
+
+      var td_duration = tr.insertCell();
+      td_duration.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].duration) ));
+
+    }
+}
+
+function secondsToHHMMSS( _seconds )
+{
+  var hours = Math.floor(_seconds / 3600);
+  var minutes = Math.floor(_seconds % 3600 / 60);
+  var seconds = Math.floor(_seconds % 3600 % 60);
+
+  var result = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds; 
+
+  return result;
+}
+
+
+  function findCatagory(_pid, _category, _catagoryArray) {
+    for (var i = (_catagoryArray.length - 1); i >= 0; i--) {
+      if (_pid == _catagoryArray[i].pid) {
+        if (_catagoryArray[i].category == _category) {
+          return  _catagoryArray[i];
+        }
+      }
+    }
+    return null;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByTimeStamp(_a, _b) {
+    if (_a.TimeStampMSec < _b.TimeStampMSec) return -1;
+    if (_a.TimeStampMSec > _b.TimeStampMSec) return 1;
+
+    if (_a.pid == _b.pid) {
+      if ((_a.Action == "START") && (_b.Action == "END")) return -1;
+      if ((_a.Action == "END") && (_b.Action == "START")) return 1;
+
+      if(_a.Entry < _b.Entry) return -1;
+      if(_a.Entry > _b.Entry) return 1;
+    }
+
+    return 0;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByGroupTimeStamp(_a, _b) {
+    if (pidOrder.get(_a.pid) < pidOrder.get(_b.pid)) return -1;
+
+    if (pidOrder.get(_a.pid) > pidOrder.get(_b.pid)) return 1;
+
+    return compareByTimeStamp(_a, _b);
+  }
+
+
+  // Return array of string values, or NULL if CSV string not well formed.
+  function CSVtoArray(_text, _sep) {
+    // Regex expressions
+    var re_valid_default = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+    var re_value_default = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+    var re_special_default = /,\s*$/;
+
+    // Algorithm:
+    //   1) Convert regex expression to a string.
+    //   2) Remove leading regex escape character (e.g., '\')
+    //   3) Remove training regex escape character(s) (e.g., '\' or "\g")
+    //   4) Replace the comma (',') character witht he new delimiter character
+    //   5) Build the regex command
+
+    // Check delimiter, if special insert escapes
+    if (_sep == "|") _sep = "\\|";
+
+    var re_valid = new RegExp(re_valid_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+    var re_value = new RegExp(re_value_default.toString().substr(1).slice(0, -2).replace(/,/g, _sep), 'g');
+    var re_special = new RegExp(re_special_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+
+    // Validate the input string to determine if it is well formed
+    if (!re_valid.test(_text)) return null;
+
+    var a = [ ];                     // Initialize array to receive values.
+    _text.replace(re_value,           // "Walk" the string using replace with callback.
+                  function(m0, m1, m2, m3) {
+                      // Remove backslash from \' in single quoted values.
+                      if      (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+                      // Remove backslash from \" in double quoted values.
+                      else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+                      else if (m3 !== undefined) a.push(m3);
+                      return ''; // Return empty string.
+                  });
+
+    // Handle special case of empty last value.
+    if (re_special.test(_text)) a.push('');
+
+    return a;
+  };
+
+
+  // Converts the given CSV array & header into a JSON array
+  function csvArrayToJSON(_header, _csvArray, _sep) {
+    var result = [ ];
+    var headers = CSVtoArray(_header, _sep);
+
+    for (var i = 0; i < _csvArray.length; i++) {
+
+      var obj = { };
+      var currentline = CSVtoArray(_csvArray[i], _sep);
+
+      for (var j = 0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
+
+      result.push(obj);
+
+    }
+
+    return result; //JavaScript object
+  }
+
+
+</script>
+</body>
+
+</html>
+

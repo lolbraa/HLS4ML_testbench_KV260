@@ -1,6 +1,7 @@
 {
-    "completedTask": "xclbinutilinfo",
-    "runComplete": "true",
+"completedTask": "vpl.synth",
+"activeTask": "vpl.impl",
+    "runComplete": "false",
     "taskList": [
         "system_link",
         "vpl",

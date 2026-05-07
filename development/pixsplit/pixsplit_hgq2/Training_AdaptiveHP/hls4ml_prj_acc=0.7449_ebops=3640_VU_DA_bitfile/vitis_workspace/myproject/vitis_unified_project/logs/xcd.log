@@ -64,3 +64,21 @@ Thu May  7 11:52:19 2026: SERVER: destructor for server bound to port 43291
 Thu May  7 11:52:19 2026: XCD main fifo: Good unlink of /tmp/xcdmain1461ff86-b795-4914-9de6-0aa31e45379f
 Thu May  7 11:52:19 2026: Server exiting with status 0.
 Thu May  7 11:52:19 2026: Closing log file.
+Thu May  7 15:31:08 2026: Running xcd server. This server was built by gradle.
+Thu May  7 15:31:08 2026: Server was asked to start on port: '34191'
+Thu May  7 15:31:08 2026: Server is using token UUID: '9fb37dbb-f048-493b-9835-3339a36e4e14'
+Thu May  7 15:31:08 2026: SESSION_MGR: creating session with session uuid: '6d04a3e9-ade5-4ab9-8d63-1f78fcd2ec76' and name 'default'
+Thu May  7 15:31:08 2026: Attempting to start server on port '34191'
+Thu May  7 15:31:08 2026: XCD main fifo: created main fifo '/tmp/xcdmain9fb37dbb-f048-493b-9835-3339a36e4e14', fd read = 12
+Thu May  7 15:31:08 2026: Running Dispatch Server
+Thu May  7 15:31:08 2026: Version 2.2.0
+Thu May  7 15:31:10 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 15:31:10 2026: Starting Socket connection
+Thu May  7 15:31:10 2026: EXCHANGE_TOKEN received, server token: 9fb37dbb-f048-493b-9835-3339a36e4e14, passed token: 9fb37dbb-f048-493b-9835-3339a36e4e14
+Thu May  7 15:31:10 2026: DISPATCH_HANDLER: Adding handler from function makeHandler in library libxv_system_diagram
+Thu May  7 15:31:10 2026: SESSION_MGR: creating session with session uuid: '01d8da3c-356b-43f6-a3c4-af1ed221caae' and name 'v++_compile_vitis_unified_project'
+Thu May  7 15:31:10 2026: KERNEL_SVC: creating session with uuid: '01d8da3c-356b-43f6-a3c4-af1ed221caae' and name 'v++_compile_vitis_unified_project'
+Thu May  7 15:31:10 2026: GUIDANCE_SMGR: creating guidance session with uuid: '01d8da3c-356b-43f6-a3c4-af1ed221caae' and name 'v++_compile_vitis_unified_project'
+Thu May  7 15:31:10 2026: SYSTEM_DIAGRAM: creating session with uuid: '01d8da3c-356b-43f6-a3c4-af1ed221caae' and name 'v++_compile_vitis_unified_project'
+Thu May  7 15:31:11 2026: Dispatch Server: Accepted socket connection from client
+Thu May  7 15:31:11 2026: Starting Socket connection

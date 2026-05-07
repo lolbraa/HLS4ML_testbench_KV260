@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'myproject_axi_master'
 ================================================================
 + General Information: 
-    * Date:           Thu May  7 09:53:15 2026
+    * Date:           Thu May  7 15:11:56 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        vitis_unified_project
     * Solution:       hls (Vivado IP Flow Target)

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu May  7 16:44:05 2026
+# Process ID         : 3612965
+# Current directory  : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1
+# Command line       : vivado -log vitis_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_wrapper.tcl
+# Log file           : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.vds
+# Journal file       : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vivado.jou
+# Running On         : KrissDEV
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.952 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 65838 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 65838 MB
+# Available Virtual  : 29532 MB
+#-----------------------------------------------------------
+source vitis_design_wrapper.tcl -notrace

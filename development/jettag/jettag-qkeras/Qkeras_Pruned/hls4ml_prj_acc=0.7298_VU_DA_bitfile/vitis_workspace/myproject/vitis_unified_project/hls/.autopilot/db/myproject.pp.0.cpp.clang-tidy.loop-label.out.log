@@ -1,0 +1,429 @@
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:29286:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:29286:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:29300:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:29300:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:29314:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:29314:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:32791:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:32791:7: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:47621:9: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_27_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:47621:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:47633:9: remark: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_39_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:47633:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:47650:9: remark: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_56_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:47650:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59805:5: remark: Added loop label VITIS_LOOP_297_1:   [xilinx-label-all-loops]
+    for (typename std::vector<src_T>::const_iterator i = in_begin; i != in_end; ++i) {
+    ^
+    VITIS_LOOP_297_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59805:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59815:5: remark: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+    for (auto i = 0; i < SIZE; i++)
+    ^
+    VITIS_LOOP_307_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59815:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59828:5: remark: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^
+    VITIS_LOOP_320_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59828:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59838:5: remark: Added loop label VITIS_LOOP_330_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^
+    VITIS_LOOP_330_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59838:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59845:5: remark: Added loop label VITIS_LOOP_337_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / res_T::size; i++) {
+    ^
+    VITIS_LOOP_337_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59845:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59847:9: remark: Added loop label VITIS_LOOP_339_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < res_T::size; j++) {
+        ^
+        VITIS_LOOP_339_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59847:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59859:5: remark: Added loop label VITIS_LOOP_351_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE / data_T::size; i++) {
+    ^
+    VITIS_LOOP_351_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59859:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59861:9: remark: Added loop label VITIS_LOOP_353_2:   [xilinx-label-all-loops]
+        for (int j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_353_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59861:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59869:5: remark: Added loop label VITIS_LOOP_361_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < SIZE; i++) {
+    ^
+    VITIS_LOOP_361_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59869:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59885:5: remark: Added loop label VITIS_LOOP_377_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^
+    VITIS_LOOP_377_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59885:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59905:5: remark: Added loop label VITIS_LOOP_397_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < nrows; ii++) {
+    ^
+    VITIS_LOOP_397_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59905:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59906:9: remark: Added loop label VITIS_LOOP_398_2:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < ncols; jj++) {
+        ^
+        VITIS_LOOP_398_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59906:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59921:5: remark: Added loop label VITIS_LOOP_413_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^
+    VITIS_LOOP_413_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59921:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59928:5: remark: Added loop label VITIS_LOOP_420_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_IN; ii++) {
+    ^
+    VITIS_LOOP_420_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:59928:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60238:5: remark: Added loop label VITIS_LOOP_136_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^
+    VITIS_LOOP_136_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60238:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60239:9: remark: Added loop label VITIS_LOOP_137_2:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^
+        VITIS_LOOP_137_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60239:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60260:5: remark: Added loop label VITIS_LOOP_158_3:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::out_width / CONFIG_T::n_partitions; ii++) {
+    ^
+    VITIS_LOOP_158_3: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60260:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60261:9: remark: Added loop label VITIS_LOOP_159_4:   [xilinx-label-all-loops]
+        for (int ff = 0; ff < CONFIG_T::n_filt; ff++) {
+        ^
+        VITIS_LOOP_159_4: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60261:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60408:5: remark: Added loop label VITIS_LOOP_31_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_31_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60408:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60420:5: remark: Added loop label VITIS_LOOP_43_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_43_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60420:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60434:5: remark: Added loop label VITIS_LOOP_57_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_57_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60434:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60461:5: remark: Added loop label VITIS_LOOP_84_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_84_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60461:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60491:5: remark: Added loop label VITIS_LOOP_114_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_114_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60491:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60528:5: remark: Added loop label VITIS_LOOP_151_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::exp_table_size; i++) {
+    ^
+    VITIS_LOOP_151_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60528:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60544:5: remark: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::inv_table_size; i++) {
+    ^
+    VITIS_LOOP_167_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60544:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60577:5: remark: Added loop label VITIS_LOOP_200_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_200_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60577:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60590:5: remark: Added loop label VITIS_LOOP_213_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_213_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60590:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60623:5: remark: Added loop label VITIS_LOOP_246_1:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_246_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60623:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60632:5: remark: Added loop label VITIS_LOOP_255_2:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_255_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60632:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60645:5: remark: Added loop label VITIS_LOOP_268_3:   [xilinx-label-all-loops]
+    for (unsigned i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_268_3: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60645:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60652:5: remark: Added loop label VITIS_LOOP_275_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_275_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60652:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60665:5: remark: Added loop label VITIS_LOOP_288_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_288_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60665:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60702:5: remark: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_325_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60702:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60707:5: remark: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_330_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60707:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60708:9: remark: Added loop label VITIS_LOOP_331_3:   [xilinx-label-all-loops]
+        for (int jj = 0; jj < CONFIG_T::n_slice; jj++) {
+        ^
+        VITIS_LOOP_331_3: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60708:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60725:5: remark: Added loop label VITIS_LOOP_348_4:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_slice; ii++) {
+    ^
+    VITIS_LOOP_348_4: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60725:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60738:5: remark: Added loop label VITIS_LOOP_361_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_361_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60738:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60746:5: remark: Added loop label VITIS_LOOP_369_2:   [xilinx-label-all-loops]
+    for (int i = 1; i < CONFIG_T::n_slice; i++) {
+    ^
+    VITIS_LOOP_369_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60746:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60782:5: remark: Added loop label VITIS_LOOP_405_1:   [xilinx-label-all-loops]
+    for (signed i = 0; i < CONFIG_T::n_outer; i++) {
+    ^
+    VITIS_LOOP_405_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60782:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60784:9: remark: Added loop label VITIS_LOOP_407_2:   [xilinx-label-all-loops]
+        for (signed k = 0; k < CONFIG_T::n_inner; k++) {
+        ^
+        VITIS_LOOP_407_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60784:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60786:13: remark: Added loop label VITIS_LOOP_409_3:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^
+            VITIS_LOOP_409_3: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60786:13: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60791:13: remark: Added loop label VITIS_LOOP_414_4:   [xilinx-label-all-loops]
+            for (signed j = 0; j < CONFIG_T::n_slice; j++) {
+            ^
+            VITIS_LOOP_414_4: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60791:13: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60804:5: remark: Added loop label VITIS_LOOP_427_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_427_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60804:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60834:5: remark: Added loop label VITIS_LOOP_457_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_457_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60834:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60861:5: remark: Added loop label VITIS_LOOP_484_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_484_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60861:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60875:5: remark: Added loop label VITIS_LOOP_498_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_498_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60875:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60891:5: remark: Added loop label VITIS_LOOP_514_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_514_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60891:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60909:5: remark: Added loop label VITIS_LOOP_532_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_532_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60909:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60926:5: remark: Added loop label VITIS_LOOP_549_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_549_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60926:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60943:5: remark: Added loop label VITIS_LOOP_566_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_566_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60943:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60973:5: remark: Added loop label VITIS_LOOP_596_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_596_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60973:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60992:5: remark: Added loop label VITIS_LOOP_615_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_615_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:60992:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61022:5: remark: Added loop label VITIS_LOOP_645_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_645_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61022:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61041:5: remark: Added loop label VITIS_LOOP_664_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_664_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61041:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61071:5: remark: Added loop label VITIS_LOOP_694_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_694_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61071:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61098:5: remark: Added loop label VITIS_LOOP_721_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < N_TABLE; ii++) {
+    ^
+    VITIS_LOOP_721_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61098:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61126:5: remark: Added loop label VITIS_LOOP_749_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_749_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61126:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61156:5: remark: Added loop label VITIS_LOOP_779_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_779_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61156:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61185:5: remark: Added loop label VITIS_LOOP_808_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_808_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61185:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61205:5: remark: Added loop label VITIS_LOOP_828_1:   [xilinx-label-all-loops]
+    for (int ii = 0; ii < CONFIG_T::n_in; ii++) {
+    ^
+    VITIS_LOOP_828_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61205:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61450:9: remark: Added loop label VITIS_LOOP_229_1:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_229_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61450:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61457:13: remark: Added loop label VITIS_LOOP_236_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^
+            VITIS_LOOP_236_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61457:13: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61466:9: remark: Added loop label VITIS_LOOP_245_3:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_245_3: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61466:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61475:13: remark: Added loop label VITIS_LOOP_254_4:   [xilinx-label-all-loops]
+            for (int j = 0; j < pack_diff; j++) {
+            ^
+            VITIS_LOOP_254_4: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61475:13: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61479:17: remark: Added loop label VITIS_LOOP_258_5:   [xilinx-label-all-loops]
+                for (int k = 0; k < res_T::size; k++) {
+                ^
+                VITIS_LOOP_258_5: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61479:17: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61490:9: remark: Added loop label VITIS_LOOP_269_6:   [xilinx-label-all-loops]
+        for (int i = 0; i < N / data_T::size; i++) {
+        ^
+        VITIS_LOOP_269_6: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61490:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61494:13: remark: Added loop label VITIS_LOOP_273_7:   [xilinx-label-all-loops]
+            for (int j = 0; j < data_T::size; j++) {
+            ^
+            VITIS_LOOP_273_7: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61494:13: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61518:9: remark: Added loop label VITIS_LOOP_297_1:   [xilinx-label-all-loops]
+        for (int j = 0; j < n_dupl; j++) {
+        ^
+        VITIS_LOOP_297_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61518:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61522:13: remark: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+            for (int k = 0; k < res_T::size; k++) {
+            ^
+            VITIS_LOOP_301_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61522:13: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61541:9: remark: Added loop label VITIS_LOOP_320_1:   [xilinx-label-all-loops]
+        for (int k = 0; k < res_T::size; k++) {
+        ^
+        VITIS_LOOP_320_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61541:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61765:9: remark: Added loop label VITIS_LOOP_211_1:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_211_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61765:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61774:9: remark: Added loop label VITIS_LOOP_220_2:   [xilinx-label-all-loops]
+        for (unsigned j = 0; j < data_T::size; j++) {
+        ^
+        VITIS_LOOP_220_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61774:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61879:5: remark: Added loop label VITIS_LOOP_325_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < CONFIG_T::n_in / res_T::size; i++) {
+    ^
+    VITIS_LOOP_325_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61879:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61884:9: remark: Added loop label VITIS_LOOP_330_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < res_T::size; i++) {
+        ^
+        VITIS_LOOP_330_2: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61884:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61892:9: remark: Added loop label VITIS_LOOP_338_3:   [xilinx-label-all-loops]
+        for (int i = 1; i < res_T::size; i++) {
+        ^
+        VITIS_LOOP_338_3: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:61892:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:62474:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:62548:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:62630:13: error: Resource with core_name: ROM_nP_BRAM pragma is ignored, because this core doesn't exist at all  [clang-diagnostic-error]
+#pragma HLS RESOURCE variable=weights core=ROM_nP_BRAM
+            ^
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:62803:5: remark: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for (unsigned k = 0; k < CONFIG_T::n_out; k++) {
+    ^
+    VITIS_LOOP_14_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:62803:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:62863:9: remark: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+        for (int im = 0; im < CONFIG_T::n_out; im++) {
+        ^
+        VITIS_LOOP_74_1: 
+/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp:62863:9: note: FIX-IT applied suggested code changes

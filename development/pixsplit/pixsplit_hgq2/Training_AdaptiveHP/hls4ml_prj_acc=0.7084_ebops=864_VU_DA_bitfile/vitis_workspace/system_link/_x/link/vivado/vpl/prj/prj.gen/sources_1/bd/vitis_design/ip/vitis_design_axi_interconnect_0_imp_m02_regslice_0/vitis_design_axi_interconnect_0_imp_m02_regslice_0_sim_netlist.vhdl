@@ -2,10 +2,11 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Thu May  7 11:33:15 2026
+-- Date        : Thu May  7 11:33:14 2026
 -- Host        : 11c2efc5f272 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7084_ebops=864_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top vitis_design_axi_interconnect_0_imp_m02_regslice_0 -prefix
+--               vitis_design_axi_interconnect_0_imp_m02_regslice_0_
+--               vitis_design_axi_interconnect_0_imp_m02_regslice_0_sim_netlist.vhdl
 -- Design      : vitis_design_axi_interconnect_0_imp_m02_regslice_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -28,8 +29,6 @@ entity vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_
     s_ready_i_reg_0 : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 8 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_1_36_axic_register_slice : entity is "axi_register_slice_v2_1_36_axic_register_slice";
 end vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_1_36_axic_register_slice;
 
 architecture STRUCTURE of vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_1_36_axic_register_slice is
@@ -1516,8 +1515,6 @@ entity vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_
   attribute G_AXI_WUSER_INDEX of vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_1_36_axi_register_slice : entity is 36;
   attribute G_AXI_WUSER_WIDTH : integer;
   attribute G_AXI_WUSER_WIDTH of vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_1_36_axi_register_slice : entity is 0;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_1_36_axi_register_slice : entity is "axi_register_slice_v2_1_36_axi_register_slice";
   attribute P_FORWARD : integer;
   attribute P_FORWARD of vitis_design_axi_interconnect_0_imp_m02_regslice_0_axi_register_slice_v2_1_36_axi_register_slice : entity is 0;
   attribute P_RESPONSE : integer;

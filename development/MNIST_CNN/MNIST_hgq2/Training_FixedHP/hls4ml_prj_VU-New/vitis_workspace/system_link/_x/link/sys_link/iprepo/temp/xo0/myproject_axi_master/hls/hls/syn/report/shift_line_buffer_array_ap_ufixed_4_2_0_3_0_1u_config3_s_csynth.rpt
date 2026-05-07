@@ -1,0 +1,123 @@
+
+
+================================================================
+== Vitis HLS Report for 'shift_line_buffer_array_ap_ufixed_4_2_0_3_0_1u_config3_s'
+================================================================
+* Date:           Thu May  7 16:38:27 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        vitis_unified_project
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  1.434 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       -|       -|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|       9|    -|
+|Register         |        -|     -|       1|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|       1|       9|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                     Name                                    | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_o  |   9|          2|    4|          8|
+    +-----------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                        |   9|          2|    4|          8|
+    +-----------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------+---+----+-----+-----------+
+    |    Name   | FF| LUT| Bits| Const Bits|
+    +-----------+---+----+-----+-----------+
+    |ap_CS_fsm  |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+    |Total      |  1|   0|    1|          0|
+    +-----------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------------------------------------------------------+-----+-----+------------+-----------------------------------------------------------------------------+--------------+
+|                                      RTL Ports                                     | Dir | Bits|  Protocol  |                                Source Object                                |    C Type    |
++------------------------------------------------------------------------------------+-----+-----+------------+-----------------------------------------------------------------------------+--------------+
+|ap_clk                                                                              |   in|    1|  ap_ctrl_hs|              shift_line_buffer<array<ap_ufixed<4, 2, 0, 3, 0>, 1u>, config3>|  return value|
+|ap_rst                                                                              |   in|    1|  ap_ctrl_hs|              shift_line_buffer<array<ap_ufixed<4, 2, 0, 3, 0>, 1u>, config3>|  return value|
+|ap_start                                                                            |   in|    1|  ap_ctrl_hs|              shift_line_buffer<array<ap_ufixed<4, 2, 0, 3, 0>, 1u>, config3>|  return value|
+|ap_done                                                                             |  out|    1|  ap_ctrl_hs|              shift_line_buffer<array<ap_ufixed<4, 2, 0, 3, 0>, 1u>, config3>|  return value|
+|ap_idle                                                                             |  out|    1|  ap_ctrl_hs|              shift_line_buffer<array<ap_ufixed<4, 2, 0, 3, 0>, 1u>, config3>|  return value|
+|ap_ready                                                                            |  out|    1|  ap_ctrl_hs|              shift_line_buffer<array<ap_ufixed<4, 2, 0, 3, 0>, 1u>, config3>|  return value|
+|ap_ce                                                                               |   in|    1|  ap_ctrl_hs|              shift_line_buffer<array<ap_ufixed<4, 2, 0, 3, 0>, 1u>, config3>|  return value|
+|in_elem_0_0_0_0_0_val                                                               |   in|    4|     ap_none|                                                        in_elem_0_0_0_0_0_val|        scalar|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_i         |   in|    4|     ap_ovld|    void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_o         |  out|    4|     ap_ovld|    void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_o_ap_vld  |  out|    1|     ap_ovld|    void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1         |  out|    4|      ap_vld|  void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1|       pointer|
+|void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1_ap_vld  |  out|    1|      ap_vld|  void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_1|       pointer|
++------------------------------------------------------------------------------------+-----+-----+------------+-----------------------------------------------------------------------------+--------------+
+

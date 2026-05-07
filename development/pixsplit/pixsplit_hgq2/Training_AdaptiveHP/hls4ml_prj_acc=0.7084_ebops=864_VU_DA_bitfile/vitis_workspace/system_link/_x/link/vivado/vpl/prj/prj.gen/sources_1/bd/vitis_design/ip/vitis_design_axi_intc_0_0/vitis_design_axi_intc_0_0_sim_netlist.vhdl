@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Thu May  7 11:32:48 2026
+-- Date        : Thu May  7 11:32:47 2026
 -- Host        : 11c2efc5f272 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7084_ebops=864_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_intc_0_0/vitis_design_axi_intc_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top vitis_design_axi_intc_0_0 -prefix
+--               vitis_design_axi_intc_0_0_ vitis_design_axi_intc_0_0_sim_netlist.vhdl
 -- Design      : vitis_design_axi_intc_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -61,8 +61,6 @@ entity vitis_design_axi_intc_0_0_address_decoder is
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC;
     Bus_RNW_reg_reg_5 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_address_decoder : entity is "address_decoder";
 end vitis_design_axi_intc_0_0_address_decoder;
 
 architecture STRUCTURE of vitis_design_axi_intc_0_0_address_decoder is
@@ -984,8 +982,6 @@ entity vitis_design_axi_intc_0_0_intc_core is
     intr : in STD_LOGIC_VECTOR ( 1 downto 0 );
     \REG_GEN[0].ier_reg[0]_1\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_intc_core : entity is "intc_core";
 end vitis_design_axi_intc_0_0_intc_core;
 
 architecture STRUCTURE of vitis_design_axi_intc_0_0_intc_core is
@@ -1411,8 +1407,6 @@ entity vitis_design_axi_intc_0_0_slave_attachment is
     p_0_in3_in : in STD_LOGIC;
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_slave_attachment : entity is "slave_attachment";
 end vitis_design_axi_intc_0_0_slave_attachment;
 
 architecture STRUCTURE of vitis_design_axi_intc_0_0_slave_attachment is
@@ -2262,8 +2256,6 @@ entity vitis_design_axi_intc_0_0_axi_lite_ipif is
     p_0_in3_in : in STD_LOGIC;
     \CIE_GEN.CIE_BIT_GEN[0].cie_reg[0]\ : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_axi_lite_ipif : entity is "axi_lite_ipif";
 end vitis_design_axi_intc_0_0_axi_lite_ipif;
 
 architecture STRUCTURE of vitis_design_axi_intc_0_0_axi_lite_ipif is
@@ -2414,8 +2406,6 @@ entity vitis_design_axi_intc_0_0_axi_intc is
   attribute C_S_AXI_ADDR_WIDTH of vitis_design_axi_intc_0_0_axi_intc : entity is 9;
   attribute C_S_AXI_DATA_WIDTH : integer;
   attribute C_S_AXI_DATA_WIDTH of vitis_design_axi_intc_0_0_axi_intc : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_intc_0_0_axi_intc : entity is "axi_intc";
   attribute hdl : string;
   attribute hdl of vitis_design_axi_intc_0_0_axi_intc : entity is "VHDL";
   attribute imp_netlist : string;

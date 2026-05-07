@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+
+<html>
+<!-- Styles -->
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 1000px;
+    }
+</style>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>OPTraceViewer</title>
+  <script src="https://www.amcharts.com/lib/3/amcharts.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/serial.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/gantt.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/themes/light.js">
+  </script>
+  <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js">
+  </script>
+  <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+
+  <form name="userInputForm" action="javascript:userInputFormCallback()">
+    <fieldset>
+    <legend>Graph Filters:</legend>
+    <table style="width:100%">
+      <col width="50"></col>
+      <col width="20"></col>
+      <col width="60"></col>
+      <tr>
+        <td style="text-align: center"; colspan="3"><input type="number" name="userDurationFilterSecInput" id="userDurationFilterSecInput" value="2" min="0" max="6000" step="1"> sec</td>
+        <td>Filter out run durations lower than this value</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td style="text-align: center"><input type="checkbox" name="userGroupPidSortSelected" id="userGroupPidSortSelected"></td>
+        <td>Group sort by process ID</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#0099ff"></td>
+        <td style="text-align: center"><input type="checkbox" name="userRollupSelected" id="userRollupSelected"></td>
+        <td>Show rollup entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#8dc49f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userIndividualEntrySelected" id="userIndividualEntrySelected"></td>
+        <td>Show individual entries</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td bgcolor="#cd82ad"></td>
+        <td style="text-align: center"><input type="checkbox" name="userCheckpointEntrySelected" id="userCheckpointEntrySelected"></td>
+        <td>Show checkpoints entry</td>
+      </tr>
+       <tr>
+        <td></td>
+        <td bgcolor="#b9783f"></td>
+        <td style="text-align: center"><input type="checkbox" name="userReportEntrySelected" id="userReportEntrySelected"></td>
+        <td>Show report entry</td>
+      </tr>
+
+    </table>
+    <br>
+    <input name="Submit" type="submit" value="Update Graph">
+    </fieldset>
+  </form> 
+
+  <div id="chartdiv">
+  </div>
+
+  <script>
+  </script>
+
+</head>
+
+
+<body>
+<table id="myDynamicTable" cellpadding="2" cellspacing="2" border="1" onclick="tester()">
+  <tr>
+  <td>Task</td>
+  <td>Start</td>
+  <td>Duration</td>
+  </tr>
+</table>
+<script>
+  // Default User Selected variables
+  var m_secondFilter = 1;
+  var m_groupPidSort = true;
+  var m_showRollup = true;
+  var m_showIndividualEntry = false;
+  var m_showCheckpointEntry = false;
+  var m_showReportEntry = false;
+
+  function SetDefaultUserValues()
+  {
+    document.getElementById("userDurationFilterSecInput").value = m_secondFilter;
+    document.getElementById("userGroupPidSortSelected").checked = m_groupPidSort;
+    document.getElementById("userRollupSelected").checked = m_showRollup;
+    document.getElementById("userIndividualEntrySelected").checked = m_showIndividualEntry;
+    document.getElementById("userCheckpointEntrySelected").checked = m_showCheckpointEntry;
+    document.getElementById("userReportEntrySelected").checked = m_showReportEntry;
+  }
+
+  window.onload = function(){
+    SetDefaultUserValues();
+  }
+
+
+
+
+  // Header
+  var header = "Keyword|pid|Entry|SrcFile|Catagory|TimeStampMSec|Action|Task|Tags|Misc";
+                         
+  // Insert Raw Data Here
+  // Note: Do not change the following signature. 
+  var csvData =    [
+      "[OPTRACE]|3603180|10|run|cpp|1778164770219|START|OCL_LINK|",
+      "[OPTRACE]|3603180|11|setupBinaryForLink|cpp|1778164770219|START|Create Binary|",
+      "[OPTRACE]|3603180|12||cpp|1778164770219|END|Create Binary|",
+      "[OPTRACE]|3603180|13|setupBinaryForLink|cpp|1778164770219|START|Extract Kernels|",
+      "[OPTRACE]|3603180|14||cpp|1778164770503|END|Extract Kernels|",
+      "[OPTRACE]|3603180|15|launchStep_|cpp|1778164770533|START|Launch Step: system_link|",
+      "[OPTRACE]|3603180|16||cpp|1778164773033|END|Launch Step: system_link|",
+      "[OPTRACE]|3603180|17|launchStep_|cpp|1778164773034|START|Launch Step: cf2sw|",
+      "[OPTRACE]|3603180|18||cpp|1778164773723|END|Launch Step: cf2sw|",
+      "[OPTRACE]|3603180|19|launchStep_|cpp|1778164773723|START|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|3603180|1|main|cpp|1778164767362|START|v++|ROLLUP_0",
+      "[OPTRACE]|3603180|20||cpp|1778164773763|END|Launch Step: rtd2_system_diagram|",
+      "[OPTRACE]|3603180|21|launchStep_|cpp|1778164773763|START|Launch Step: vpl|",
+      "[OPTRACE]|3603180|2|run|cpp|1778164767363|START|Validate Kernels|",
+      "[OPTRACE]|3603180|356||cpp|1778165319174|END|Launch Step: vpl|",
+      "[OPTRACE]|3603180|357|launchStep_|cpp|1778165319175|START|Launch Step: rtdgen|",
+      "[OPTRACE]|3603180|358|launchCf2sw_|cpp|1778165319177|START|Launch cf2sw|",
+      "[OPTRACE]|3603180|359||cpp|1778165319901|END|Launch cf2sw|",
+      "[OPTRACE]|3603180|360|writeSystemDiagram|cpp|1778165319901|START|writeSystemDiagram|",
+      "[OPTRACE]|3603180|361||cpp|1778165319904|END|writeSystemDiagram|",
+      "[OPTRACE]|3603180|362|writeAutomationSummary|cpp|1778165319904|START|writeAutomationSummary|",
+      "[OPTRACE]|3603180|363||cpp|1778165319905|END|writeAutomationSummary|",
+      "[OPTRACE]|3603180|364||cpp|1778165319906|END|Launch Step: rtdgen|",
+      "[OPTRACE]|3603180|365|launchStep_|cpp|1778165319906|START|Launch Step: xclbinutil|",
+      "[OPTRACE]|3603180|366||cpp|1778165319982|END|Launch Step: xclbinutil|",
+      "[OPTRACE]|3603180|367|launchStep_|cpp|1778165319983|START|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|3603180|368||cpp|1778165320084|END|Launch Step: xclbinutilinfo|",
+      "[OPTRACE]|3603180|369||cpp|1778165320086|END|OCL_LINK|",
+      "[OPTRACE]|3603180|370||cpp|1778165320088|END|v++|",
+      "[OPTRACE]|3603180|3||cpp|1778164767373|END|Validate Kernels|",
+      "[OPTRACE]|3603180|4|prepareProject|cpp|1778164767383|START|Create Solution|",
+      "[OPTRACE]|3603180|5||cpp|1778164770059|END|Create Solution|",
+      "[OPTRACE]|3603180|6|prepareProject|cpp|1778164770059|START|Add Device|",
+      "[OPTRACE]|3603180|7|addDevice|cpp|1778164770060|START|Find & Load Device|",
+      "[OPTRACE]|3603180|8||cpp|1778164770067|END|Find & Load Device|",
+      "[OPTRACE]|3603180|9||cpp|1778164770213|END|Add Device|",
+      "[OPTRACE]|3604073|22|main|cpp|1778164774460|START|vpl|",
+      "[OPTRACE]|3604073|23|runPlatformLinker|cpp|1778164774474|START|runPlatformLinker|",
+      "[OPTRACE]|3604073|24|setupBinaryForLink|cpp|1778164774474|START|Create Solution|",
+      "[OPTRACE]|3604073|25||cpp|1778164774478|END|Create Solution|",
+      "[OPTRACE]|3604073|26|setupBinaryForLink|cpp|1778164774478|START|Add platform|",
+      "[OPTRACE]|3604073|27||cpp|1778164774645|END|Add platform|",
+      "[OPTRACE]|3604073|28|setupBinaryForLink|cpp|1778164774646|START|Create Binary|",
+      "[OPTRACE]|3604073|29||cpp|1778164774646|END|Create Binary|",
+      "[OPTRACE]|3604073|30|setupBinaryForLink|cpp|1778164774646|START|Create Kernels|",
+      "[OPTRACE]|3604073|31||cpp|1778164774647|END|Create Kernels|",
+      "[OPTRACE]|3604073|32|runPlatformLinker|cpp|1778164774657|START|Process Kernels|",
+      "[OPTRACE]|3604073|33|runPlatformLinker|cpp|1778164774658|START|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|3604073|34||cpp|1778164774658|END|Set Board Repo Paths and Connections|",
+      "[OPTRACE]|3604073|352|runPlatformLinker|cpp|1778165319110|START|Generate Resource Availability Report|",
+      "[OPTRACE]|3604073|353||cpp|1778165319110|END|Generate Resource Availability Report|",
+      "[OPTRACE]|3604073|354||cpp|1778165319110|END|runPlatformLinker|",
+      "[OPTRACE]|3604073|355||cpp|1778165319138|END|vpl|",
+      "[OPTRACE]|3604073|35|runPlatformLinker|cpp|1778164774658|START|Process Kernel Profiles|",
+      "[OPTRACE]|3604073|36||cpp|1778164774658|END|Process Kernel Profiles|",
+      "[OPTRACE]|3604073|37|runPlatformLinker|cpp|1778164774658|START|Process Trace Memory|",
+      "[OPTRACE]|3604073|38||cpp|1778164774658|END|Process Trace Memory|",
+      "[OPTRACE]|3604073|39|runPlatformLinker|cpp|1778164774658|START|Process AIE Trace|",
+      "[OPTRACE]|3604073|40||cpp|1778164774658|END|Process AIE Trace|",
+      "[OPTRACE]|3604073|41||cpp|1778164774658|END|Process Kernels|",
+      "[OPTRACE]|3604073|42|runPlatformLinker|cpp|1778164774658|START|Process Kernel Debug|",
+      "[OPTRACE]|3604073|43||cpp|1778164774658|END|Process Kernel Debug|",
+      "[OPTRACE]|3604073|44|runPlatformLinker|cpp|1778164774658|START|Set Kernel Debug|",
+      "[OPTRACE]|3604073|45||cpp|1778164774659|END|Set Kernel Debug|",
+      "[OPTRACE]|3604073|46|runPlatformLinker|cpp|1778164774659|START|Set Miscellaneous|",
+      "[OPTRACE]|3604073|47||cpp|1778164774659|END|Set Miscellaneous|",
+      "[OPTRACE]|3604073|48|run|cpp|1778164774659|START|Extract Platform|",
+      "[OPTRACE]|3604073|49||cpp|1778164774801|END|Extract Platform|",
+      "[OPTRACE]|3604265|252|ipirun.tcl|vpl|1778165082579|END|Synthesis|",
+      "[OPTRACE]|3604265|351|ipirun.tcl|vpl|1778165318770|END|Implementation|",
+      "[OPTRACE]|3604265|50|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/vpl.tcl|vivado_impl|1778164777428|START|Implementation|ROLLUP_1",
+      "[OPTRACE]|3604265|51|ipirun.tcl|vpl|1778164777449|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|3604265|52|ipirun.tcl|vpl|1778164777450|END|ipirun|",
+      "[OPTRACE]|3604265|53|ipirun.tcl|vpl|1778164777462|START|Create project|",
+      "[OPTRACE]|3604265|54|ipirun.tcl|vpl|1778164780429|END|Create project|",
+      "[OPTRACE]|3604265|55|ipirun.tcl|vpl|1778164780431|START|Create IP caching environment|",
+      "[OPTRACE]|3604265|56|ipirun.tcl|vpl|1778164780490|END|Create IP caching environment|",
+      "[OPTRACE]|3604265|57|ipirun.tcl|vpl|1778164780490|START|Import/add dynamic BD|",
+      "[OPTRACE]|3604265|58|ipirun.tcl|vpl|1778164780492|END|Import/add dynamic BD|",
+      "[OPTRACE]|3604265|59|ipirun.tcl|vpl|1778164780492|START|Open BD and insert kernels|",
+      "[OPTRACE]|3604265|60|ipirun.tcl|vpl|1778164784346|END|Open BD and insert kernels|",
+      "[OPTRACE]|3604265|61|ipirun.tcl|vpl|1778164784348|START|Add debug/profiling support|",
+      "[OPTRACE]|3604265|62|ipirun.tcl|vpl|1778164784364|END|Add debug/profiling support|",
+      "[OPTRACE]|3604265|63|ipirun.tcl|vpl|1778164784365|START|IPI address assignments|",
+      "[OPTRACE]|3604265|64|ipirun.tcl|vpl|1778164784381|END|IPI address assignments|",
+      "[OPTRACE]|3604265|65|ipirun.tcl|vpl|1778164784383|START|Create address map and debug IP profile files|",
+      "[OPTRACE]|3604265|66|ipirun.tcl|vpl|1778164784387|END|Create address map and debug IP profile files|",
+      "[OPTRACE]|3604265|67|ipirun.tcl|vpl|1778164784388|START|Collect BD interface connectivity and update compute units|",
+      "[OPTRACE]|3604265|68|ipirun.tcl|vpl|1778164784393|END|Collect BD interface connectivity and update compute units|",
+      "[OPTRACE]|3604265|69|ipirun.tcl|vpl|1778164784433|START|Generate output products|",
+      "[OPTRACE]|3604265|70|ipirun.tcl|vpl|1778164813341|END|Generate output products|",
+      "[OPTRACE]|3604265|71|ipirun.tcl|vpl|1778164813342|START|Collect clock information and write automation summary report|",
+      "[OPTRACE]|3604265|72|ipirun.tcl|vpl|1778164813344|END|Collect clock information and write automation summary report|",
+      "[OPTRACE]|3604265|73|ipirun.tcl|vpl|1778164813346|START|Source report_commands_tcl|",
+      "[OPTRACE]|3604265|74|ipirun.tcl|vpl|1778164813378|END|Source report_commands_tcl|",
+      "[OPTRACE]|3604265|75|ipirun.tcl|vpl|1778164813378|START|Source synth_props_tcl|",
+      "[OPTRACE]|3604265|76|ipirun.tcl|vpl|1778164815235|END|Source synth_props_tcl|",
+      "[OPTRACE]|3604265|77|ipirun.tcl|vpl|1778164815238|START|Source impl_props_tcl|",
+      "[OPTRACE]|3604265|78|ipirun.tcl|vpl|1778164815279|END|Source impl_props_tcl|",
+      "[OPTRACE]|3604265|79|ipirun.tcl|vpl|1778164815281|START|Synthesis|ROLLUP_1,SYNTH",
+      "[OPTRACE]|3605809|106|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164823485|END|Creating in-memory project|",
+      "[OPTRACE]|3605809|107|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164823485|START|Adding files|",
+      "[OPTRACE]|3605809|114|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164823684|END|Adding files|",
+      "[OPTRACE]|3605809|115|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164823686|START|Configure IP Cache|",
+      "[OPTRACE]|3605809|116|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164823687|END|Configure IP Cache|",
+      "[OPTRACE]|3605809|117|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164823688|START|synth_design|",
+      "[OPTRACE]|3605809|232|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165035524|END|synth_design|",
+      "[OPTRACE]|3605809|233|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165035525|START|Write IP Cache|",
+      "[OPTRACE]|3605809|234|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165039649|END|Write IP Cache|",
+      "[OPTRACE]|3605809|235|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165039653|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3605809|236|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165041303|END|write_checkpoint|",
+      "[OPTRACE]|3605809|237|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165041303|START|synth reports|REPORT",
+      "[OPTRACE]|3605809|238|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165041542|END|synth reports|",
+      "[OPTRACE]|3605809|239|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778165044146|END|vitis_design_myproject_axi_master_1_0_synth_1|",
+      "[OPTRACE]|3605809|86|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164819291|START|vitis_design_myproject_axi_master_1_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3605809|87|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.tcl|vivado_synth|1778164819292|START|Creating in-memory project|",
+      "[OPTRACE]|3605810|118|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164823692|END|Adding files|",
+      "[OPTRACE]|3605810|119|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164823694|START|Configure IP Cache|",
+      "[OPTRACE]|3605810|120|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164823699|END|Configure IP Cache|",
+      "[OPTRACE]|3605810|121|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164823700|START|synth_design|",
+      "[OPTRACE]|3605810|153|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164855079|END|synth_design|",
+      "[OPTRACE]|3605810|154|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164855079|START|Write IP Cache|",
+      "[OPTRACE]|3605810|161|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164856225|END|Write IP Cache|",
+      "[OPTRACE]|3605810|162|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164856227|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3605810|164|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164856538|END|write_checkpoint|",
+      "[OPTRACE]|3605810|165|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164856541|START|synth reports|REPORT",
+      "[OPTRACE]|3605810|166|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164856751|END|synth reports|",
+      "[OPTRACE]|3605810|167|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164857699|END|vitis_design_zynq_ultra_ps_e_0_0_synth_1|",
+      "[OPTRACE]|3605810|80|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164819000|START|vitis_design_zynq_ultra_ps_e_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3605810|81|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164819000|START|Creating in-memory project|",
+      "[OPTRACE]|3605810|98|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164823185|END|Creating in-memory project|",
+      "[OPTRACE]|3605810|99|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/vitis_design_zynq_ultra_ps_e_0_0.tcl|vivado_synth|1778164823185|START|Adding files|",
+      "[OPTRACE]|3605811|126|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164823969|END|Creating in-memory project|",
+      "[OPTRACE]|3605811|127|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164823969|START|Adding files|",
+      "[OPTRACE]|3605811|140|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164825119|END|Adding files|",
+      "[OPTRACE]|3605811|141|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164825121|START|Configure IP Cache|",
+      "[OPTRACE]|3605811|142|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164825246|END|Configure IP Cache|",
+      "[OPTRACE]|3605811|143|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164825247|START|synth_design|",
+      "[OPTRACE]|3605811|218|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164906746|END|synth_design|",
+      "[OPTRACE]|3605811|219|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164906746|START|Write IP Cache|",
+      "[OPTRACE]|3605811|225|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164909201|END|Write IP Cache|",
+      "[OPTRACE]|3605811|226|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164909206|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3605811|227|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164910097|END|write_checkpoint|",
+      "[OPTRACE]|3605811|228|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164910097|START|synth reports|REPORT",
+      "[OPTRACE]|3605811|229|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164910234|END|synth reports|",
+      "[OPTRACE]|3605811|231|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164911720|END|vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1|",
+      "[OPTRACE]|3605811|94|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164819512|START|vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3605811|95|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0.tcl|vivado_synth|1778164819513|START|Creating in-memory project|",
+      "[OPTRACE]|3605814|104|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164823401|END|Creating in-memory project|",
+      "[OPTRACE]|3605814|105|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164823401|START|Adding files|",
+      "[OPTRACE]|3605814|108|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164823558|END|Adding files|",
+      "[OPTRACE]|3605814|109|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164823559|START|Configure IP Cache|",
+      "[OPTRACE]|3605814|110|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164823560|END|Configure IP Cache|",
+      "[OPTRACE]|3605814|111|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164823560|START|synth_design|",
+      "[OPTRACE]|3605814|144|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164853713|END|synth_design|",
+      "[OPTRACE]|3605814|145|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164853713|START|Write IP Cache|",
+      "[OPTRACE]|3605814|146|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164854511|END|Write IP Cache|",
+      "[OPTRACE]|3605814|147|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164854512|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3605814|148|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164854698|END|write_checkpoint|",
+      "[OPTRACE]|3605814|149|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164854699|START|synth reports|REPORT",
+      "[OPTRACE]|3605814|150|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164854866|END|synth reports|",
+      "[OPTRACE]|3605814|155|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164855365|END|vitis_design_rst_ps8_0_99M_0_synth_1|",
+      "[OPTRACE]|3605814|84|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164819274|START|vitis_design_rst_ps8_0_99M_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3605814|85|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/vitis_design_rst_ps8_0_99M_0.tcl|vivado_synth|1778164819275|START|Creating in-memory project|",
+      "[OPTRACE]|3605815|122|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164823801|END|Creating in-memory project|",
+      "[OPTRACE]|3605815|123|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164823801|START|Adding files|",
+      "[OPTRACE]|3605815|132|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164824061|END|Adding files|",
+      "[OPTRACE]|3605815|133|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164824062|START|Configure IP Cache|",
+      "[OPTRACE]|3605815|134|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164824074|END|Configure IP Cache|",
+      "[OPTRACE]|3605815|135|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164824074|START|synth_design|",
+      "[OPTRACE]|3605815|192|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164872287|END|synth_design|",
+      "[OPTRACE]|3605815|193|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164872287|START|Write IP Cache|",
+      "[OPTRACE]|3605815|194|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164873240|END|Write IP Cache|",
+      "[OPTRACE]|3605815|195|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164873242|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3605815|196|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164873564|END|write_checkpoint|",
+      "[OPTRACE]|3605815|197|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164873565|START|synth reports|REPORT",
+      "[OPTRACE]|3605815|198|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164873705|END|synth reports|",
+      "[OPTRACE]|3605815|199|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164874313|END|vitis_design_axi_dma_0_0_synth_1|",
+      "[OPTRACE]|3605815|88|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164819374|START|vitis_design_axi_dma_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3605815|89|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/vitis_design_axi_dma_0_0.tcl|vivado_synth|1778164819375|START|Creating in-memory project|",
+      "[OPTRACE]|3605816|100|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164823280|END|Adding files|",
+      "[OPTRACE]|3605816|101|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164823281|START|Configure IP Cache|",
+      "[OPTRACE]|3605816|102|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164823312|END|Configure IP Cache|",
+      "[OPTRACE]|3605816|103|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164823313|START|synth_design|",
+      "[OPTRACE]|3605816|172|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164860866|END|synth_design|",
+      "[OPTRACE]|3605816|173|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164860866|START|Write IP Cache|",
+      "[OPTRACE]|3605816|174|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164861635|END|Write IP Cache|",
+      "[OPTRACE]|3605816|175|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164861636|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3605816|176|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164861840|END|write_checkpoint|",
+      "[OPTRACE]|3605816|177|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164861841|START|synth reports|REPORT",
+      "[OPTRACE]|3605816|178|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164861964|END|synth reports|",
+      "[OPTRACE]|3605816|179|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164862465|END|vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1|",
+      "[OPTRACE]|3605816|82|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164819091|START|vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3605816|83|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164819091|START|Creating in-memory project|",
+      "[OPTRACE]|3605816|96|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164823127|END|Creating in-memory project|",
+      "[OPTRACE]|3605816|97|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/vitis_design_axi_interconnect_0_imp_auto_pc_0.tcl|vivado_synth|1778164823127|START|Adding files|",
+      "[OPTRACE]|3605817|124|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164823824|END|Creating in-memory project|",
+      "[OPTRACE]|3605817|125|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164823824|START|Adding files|",
+      "[OPTRACE]|3605817|128|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164824015|END|Adding files|",
+      "[OPTRACE]|3605817|129|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164824017|START|Configure IP Cache|",
+      "[OPTRACE]|3605817|130|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164824019|END|Configure IP Cache|",
+      "[OPTRACE]|3605817|131|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164824020|START|synth_design|",
+      "[OPTRACE]|3605817|151|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164854920|END|synth_design|",
+      "[OPTRACE]|3605817|152|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164854920|START|Write IP Cache|",
+      "[OPTRACE]|3605817|156|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164855567|END|Write IP Cache|",
+      "[OPTRACE]|3605817|157|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164855568|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3605817|158|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164855761|END|write_checkpoint|",
+      "[OPTRACE]|3605817|159|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164855761|START|synth reports|REPORT",
+      "[OPTRACE]|3605817|160|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164855884|END|synth reports|",
+      "[OPTRACE]|3605817|163|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164856332|END|vitis_design_axi_intc_0_0_synth_1|",
+      "[OPTRACE]|3605817|92|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164819437|START|vitis_design_axi_intc_0_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3605817|93|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/vitis_design_axi_intc_0_0.tcl|vivado_synth|1778164819438|START|Creating in-memory project|",
+      "[OPTRACE]|3605818|112|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164823647|END|Creating in-memory project|",
+      "[OPTRACE]|3605818|113|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164823647|START|Adding files|",
+      "[OPTRACE]|3605818|136|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164824742|END|Adding files|",
+      "[OPTRACE]|3605818|137|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164824744|START|Configure IP Cache|",
+      "[OPTRACE]|3605818|138|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164824864|END|Configure IP Cache|",
+      "[OPTRACE]|3605818|139|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164824865|START|synth_design|",
+      "[OPTRACE]|3605818|216|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164905675|END|synth_design|",
+      "[OPTRACE]|3605818|217|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164905675|START|Write IP Cache|",
+      "[OPTRACE]|3605818|220|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164907998|END|Write IP Cache|",
+      "[OPTRACE]|3605818|221|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164908002|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3605818|222|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164908841|END|write_checkpoint|",
+      "[OPTRACE]|3605818|223|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164908841|START|synth reports|REPORT",
+      "[OPTRACE]|3605818|224|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164908976|END|synth reports|",
+      "[OPTRACE]|3605818|230|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164910352|END|vitis_design_axi_smc_0_synth_1|",
+      "[OPTRACE]|3605818|90|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164819379|START|vitis_design_axi_smc_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3605818|91|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/vitis_design_axi_smc_0.tcl|vivado_synth|1778164819379|START|Creating in-memory project|",
+      "[OPTRACE]|3607539|168|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164859330|START|vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3607539|169|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164859330|START|Creating in-memory project|",
+      "[OPTRACE]|3607539|180|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164863844|END|Creating in-memory project|",
+      "[OPTRACE]|3607539|181|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164863845|START|Adding files|",
+      "[OPTRACE]|3607539|184|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164864035|END|Adding files|",
+      "[OPTRACE]|3607539|185|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164864037|START|Configure IP Cache|",
+      "[OPTRACE]|3607539|186|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164864038|END|Configure IP Cache|",
+      "[OPTRACE]|3607539|187|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164864039|START|synth_design|",
+      "[OPTRACE]|3607539|200|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164891753|END|synth_design|",
+      "[OPTRACE]|3607539|201|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164891753|START|Write IP Cache|",
+      "[OPTRACE]|3607539|202|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164892488|END|Write IP Cache|",
+      "[OPTRACE]|3607539|203|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164892489|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3607539|204|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164892631|END|write_checkpoint|",
+      "[OPTRACE]|3607539|205|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164892631|START|synth reports|REPORT",
+      "[OPTRACE]|3607539|206|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164892744|END|synth reports|",
+      "[OPTRACE]|3607539|207|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/vitis_design_axi_interconnect_0_imp_m02_regslice_0.tcl|vivado_synth|1778164893157|END|vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1|",
+      "[OPTRACE]|3607759|170|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164859632|START|vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3607759|171|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164859633|START|Creating in-memory project|",
+      "[OPTRACE]|3607759|182|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164863847|END|Creating in-memory project|",
+      "[OPTRACE]|3607759|183|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164863847|START|Adding files|",
+      "[OPTRACE]|3607759|188|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164864226|END|Adding files|",
+      "[OPTRACE]|3607759|189|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164864228|START|Configure IP Cache|",
+      "[OPTRACE]|3607759|190|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164864280|END|Configure IP Cache|",
+      "[OPTRACE]|3607759|191|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164864280|START|synth_design|",
+      "[OPTRACE]|3607759|208|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164894894|END|synth_design|",
+      "[OPTRACE]|3607759|209|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164894895|START|Write IP Cache|",
+      "[OPTRACE]|3607759|210|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164895517|END|Write IP Cache|",
+      "[OPTRACE]|3607759|211|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164895519|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3607759|212|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164895670|END|write_checkpoint|",
+      "[OPTRACE]|3607759|213|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164895670|START|synth reports|REPORT",
+      "[OPTRACE]|3607759|214|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164895777|END|synth reports|",
+      "[OPTRACE]|3607759|215|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.tcl|vivado_synth|1778164896198|END|vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1|",
+      "[OPTRACE]|3612965|240|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165047161|START|synth_1|ROLLUP_AUTO",
+      "[OPTRACE]|3612965|241|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165047162|START|Creating in-memory project|",
+      "[OPTRACE]|3612965|242|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165051230|END|Creating in-memory project|",
+      "[OPTRACE]|3612965|243|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165051230|START|Adding files|",
+      "[OPTRACE]|3612965|244|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165054388|END|Adding files|",
+      "[OPTRACE]|3612965|245|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165054394|START|synth_design|",
+      "[OPTRACE]|3612965|246|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165081860|END|synth_design|",
+      "[OPTRACE]|3612965|247|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165081861|START|write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3612965|248|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165082081|END|write_checkpoint|",
+      "[OPTRACE]|3612965|249|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165082082|START|synth reports|REPORT",
+      "[OPTRACE]|3612965|250|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165082082|END|synth reports|",
+      "[OPTRACE]|3612965|251|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.tcl|vivado_synth|1778165082082|END|synth_1|",
+      "[OPTRACE]|3613933|253|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165086698|START|impl_1|ROLLUP_1",
+      "[OPTRACE]|3613933|254|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165086698|START|Phase: Init Design|ROLLUP_AUTO",
+      "[OPTRACE]|3613933|255|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165086699|START|Design Initialization: pre hook|",
+      "[OPTRACE]|3613933|256|ipirun.tcl|vpl|1778165086737|START|ipirun|ROLLUP_0",
+      "[OPTRACE]|3613933|257|ipirun.tcl|vpl|1778165086737|END|ipirun|",
+      "[OPTRACE]|3613933|258|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165086738|END|Design Initialization: pre hook|",
+      "[OPTRACE]|3613933|259|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165086739|START|create in-memory project|",
+      "[OPTRACE]|3613933|260|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165087702|END|create in-memory project|",
+      "[OPTRACE]|3613933|261|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165087702|START|set parameters|",
+      "[OPTRACE]|3613933|262|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165087819|END|set parameters|",
+      "[OPTRACE]|3613933|263|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165087819|START|add files|",
+      "[OPTRACE]|3613933|264|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165090464|START|read constraints: implementation|",
+      "[OPTRACE]|3613933|265|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165090465|END|read constraints: implementation|",
+      "[OPTRACE]|3613933|266|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165090466|START|read constraints: implementation_pre|",
+      "[OPTRACE]|3613933|267|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165090466|END|read constraints: implementation_pre|",
+      "[OPTRACE]|3613933|268|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165090466|END|add files|",
+      "[OPTRACE]|3613933|269|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165090466|START|link_design|",
+      "[OPTRACE]|3613933|270|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110555|END|link_design|",
+      "[OPTRACE]|3613933|271|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110555|START|gray box cells|",
+      "[OPTRACE]|3613933|272|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110556|END|gray box cells|",
+      "[OPTRACE]|3613933|273|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110556|START|init_design_reports|REPORT",
+      "[OPTRACE]|3613933|274|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110556|END|init_design_reports|",
+      "[OPTRACE]|3613933|275|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110556|START|Design Initialization: post hook|",
+      "[OPTRACE]|3613933|276|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110572|END|Design Initialization: post hook|",
+      "[OPTRACE]|3613933|277|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110573|START|init_design_write_hwdef|",
+      "[OPTRACE]|3613933|278|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110573|END|init_design_write_hwdef|",
+      "[OPTRACE]|3613933|279|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110573|END|Phase: Init Design|",
+      "[OPTRACE]|3613933|280|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110573|START|Phase: Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|3613933|281|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165110574|START|Opt Design: pre hook|",
+      "[OPTRACE]|3613933|282|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165111443|END|Opt Design: pre hook|",
+      "[OPTRACE]|3613933|283|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165111444|START|read constraints: opt_design|",
+      "[OPTRACE]|3613933|284|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165111444|END|read constraints: opt_design|",
+      "[OPTRACE]|3613933|285|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165111444|START|opt_design|",
+      "[OPTRACE]|3613933|286|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123918|END|opt_design|",
+      "[OPTRACE]|3613933|287|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123918|START|read constraints: opt_design_post|",
+      "[OPTRACE]|3613933|288|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123918|END|read constraints: opt_design_post|",
+      "[OPTRACE]|3613933|289|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123918|START|opt_design reports|REPORT",
+      "[OPTRACE]|3613933|290|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123918|END|opt_design reports|",
+      "[OPTRACE]|3613933|291|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123918|START|Opt Design: post hook|",
+      "[OPTRACE]|3613933|292|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123921|END|Opt Design: post hook|",
+      "[OPTRACE]|3613933|293|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123922|END|Phase: Opt Design|",
+      "[OPTRACE]|3613933|294|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123922|START|Phase: Place Design|ROLLUP_AUTO",
+      "[OPTRACE]|3613933|295|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165123922|START|Place Design: pre hook|",
+      "[OPTRACE]|3613933|296|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165124000|END|Place Design: pre hook|",
+      "[OPTRACE]|3613933|297|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165124000|START|read constraints: place_design|",
+      "[OPTRACE]|3613933|298|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165124000|END|read constraints: place_design|",
+      "[OPTRACE]|3613933|299|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165124000|START|place_design|",
+      "[OPTRACE]|3613933|300|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165215253|END|place_design|",
+      "[OPTRACE]|3613933|301|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165215253|START|read constraints: place_design_post|",
+      "[OPTRACE]|3613933|302|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165215253|END|read constraints: place_design_post|",
+      "[OPTRACE]|3613933|303|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165215253|START|place_design reports|REPORT",
+      "[OPTRACE]|3613933|304|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165215253|END|place_design reports|",
+      "[OPTRACE]|3613933|305|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165215253|START|Place Design: post hook|",
+      "[OPTRACE]|3613933|306|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165217718|END|Place Design: post hook|",
+      "[OPTRACE]|3613933|307|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165217718|END|Phase: Place Design|",
+      "[OPTRACE]|3613933|308|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165217718|START|Phase: Physical Opt Design|ROLLUP_AUTO",
+      "[OPTRACE]|3613933|309|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165217719|START|read constraints: phys_opt_design|",
+      "[OPTRACE]|3613933|310|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165217719|END|read constraints: phys_opt_design|",
+      "[OPTRACE]|3613933|311|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165217719|START|phys_opt_design|",
+      "[OPTRACE]|3613933|312|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221861|END|phys_opt_design|",
+      "[OPTRACE]|3613933|313|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221861|START|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|3613933|314|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221861|END|read constraints: phys_opt_design_post|",
+      "[OPTRACE]|3613933|315|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221861|START|phys_opt_design report|REPORT",
+      "[OPTRACE]|3613933|316|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221861|END|phys_opt_design report|",
+      "[OPTRACE]|3613933|317|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221862|END|Phase: Physical Opt Design|",
+      "[OPTRACE]|3613933|318|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221862|START|Phase: Route Design|ROLLUP_AUTO",
+      "[OPTRACE]|3613933|319|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221862|START|read constraints: route_design|",
+      "[OPTRACE]|3613933|320|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221863|END|read constraints: route_design|",
+      "[OPTRACE]|3613933|321|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165221863|START|route_design|",
+      "[OPTRACE]|3613933|322|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165275530|END|route_design|",
+      "[OPTRACE]|3613933|323|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165275530|START|read constraints: route_design_post|",
+      "[OPTRACE]|3613933|324|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165275530|END|read constraints: route_design_post|",
+      "[OPTRACE]|3613933|325|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165275530|START|route_design reports|REPORT",
+      "[OPTRACE]|3613933|326|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165278959|END|route_design reports|",
+      "[OPTRACE]|3613933|327|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165278960|START|Route Design: post hook|",
+      "[OPTRACE]|3613933|328|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165283395|END|Route Design: post hook|",
+      "[OPTRACE]|3613933|329|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165283395|START|Route Design: write_checkpoint|CHECKPOINT",
+      "[OPTRACE]|3613933|330|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286025|END|Route Design: write_checkpoint|",
+      "[OPTRACE]|3613933|331|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286026|START|route_design misc|",
+      "[OPTRACE]|3613933|332|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286026|END|route_design misc|",
+      "[OPTRACE]|3613933|333|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286026|END|Phase: Route Design|",
+      "[OPTRACE]|3613933|334|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286027|START|Phase: Write Bitstream|ROLLUP_AUTO",
+      "[OPTRACE]|3613933|335|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286027|START|write_bitstream setup|",
+      "[OPTRACE]|3613933|336|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286027|START|Write Bitstream: pre hook|",
+      "[OPTRACE]|3613933|337|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286811|END|Write Bitstream: pre hook|",
+      "[OPTRACE]|3613933|338|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286811|START|read constraints: write_bitstream|",
+      "[OPTRACE]|3613933|339|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286811|END|read constraints: write_bitstream|",
+      "[OPTRACE]|3613933|340|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286929|END|write_bitstream setup|",
+      "[OPTRACE]|3613933|341|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165286929|START|write_bitstream|",
+      "[OPTRACE]|3613933|342|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313046|END|write_bitstream|",
+      "[OPTRACE]|3613933|343|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313047|START|write_bitstream misc|",
+      "[OPTRACE]|3613933|344|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313047|START|read constraints: write_bitstream_post|",
+      "[OPTRACE]|3613933|345|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313047|END|read constraints: write_bitstream_post|",
+      "[OPTRACE]|3613933|346|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313059|START|Write Bitstream: post hook|",
+      "[OPTRACE]|3613933|347|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313061|END|Write Bitstream: post hook|",
+      "[OPTRACE]|3613933|348|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313061|END|write_bitstream misc|",
+      "[OPTRACE]|3613933|349|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313062|END|Phase: Write Bitstream|",
+      "[OPTRACE]|3613933|350|/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_FixedHP/hls4ml_prj_VU-New/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper.tcl|vivado_impl|1778165313062|END|impl_1|"
+      ];
+
+  var legendData = [
+  { "title": "Report Generation",
+    "color": "#b9783f"
+  }, {
+    "title": "Write Checkpoint",
+    "color": "#cd82ad"
+  },
+  {
+    "title": "Incomplete Data",
+    "color": "#cc4748"
+  } ];
+
+  // -- Convert Raw data into something we can use ---------------------------
+  console.log("Convert log data (%s entries) to Javascript 'JSON' objects...", csvData.length);
+  var jsonData = csvArrayToJSON(header, csvData, "|");
+
+  // -- Clean up the JSON objects --------------------------------------------
+  for (var i = 0; i < jsonData.length; i++) {
+    jsonData[i].Action = jsonData[i].Action.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.toUpperCase();
+    jsonData[i].Tags = jsonData[i].Tags.trim();
+    jsonData[i].TimeStampMSec = parseInt(jsonData[i].TimeStampMSec, 10);
+    jsonData[i].pid = parseInt(jsonData[i].pid, 10);
+  }
+
+  // -- Sort JSON array ------------------------------------------------------
+  console.log("Sorting JSON objects (%s objects) according to timestamps...", jsonData.length);
+  jsonData.sort(compareByTimeStamp);
+
+  // Record the PID grouping order
+  var pidOrder = new Map();
+  for (var i = 0; i < jsonData.length; i++) {
+    if (pidOrder.has(jsonData[i].pid) == false) {
+      pidOrder.set(jsonData[i].pid, i);    // Simple ordering (lower is first)
+    }
+  }
+
+  // -- Create secondary data array for the chart data array -----------------
+  console.log("Preparing graph data...");
+
+  // Task limits
+  var m_startTS = 0;      // Earliest Timestamp
+  var m_endTS = 0;        // Latest Timestamp
+
+  if (jsonData.length > 0) {
+    m_startTS = jsonData[0].TimeStampMSec;
+    m_endTS = jsonData[jsonData.length - 1].TimeStampMSec;
+  }
+
+
+  var chartData = [ ];   // Empty JSON array
+
+
+  populateChartData();
+  tableCreate( chartData );
+
+  filterChartEntries();
+
+  // -- Search for "holes"
+  // -- Sort by common PID
+  // -- Create groupings by process
+
+  console.log("done");
+
+  var chart = AmCharts.makeChart("chartdiv", {
+    "type": "gantt",
+    "theme": "light",
+    "titles": [
+    { "text": "OPTrace", "size": 15}],
+    "marginRight": 70,
+    "period": "fff",                                     // X-Axis
+    "balloonDateFormat": "JJ:NN:SS",
+    "columnWidth": 0.5,                                 // Bar thickness
+    "valueAxis": {
+      "type": "numeric",
+      "title": "Time [HH:MM:SS]",
+      "duration": "ss",
+      "durationUnits": { DD: 'd. ', hh: ':', mm: ':', ss: '' },
+    },
+    "brightnessStep": 10,
+    "graph": {
+      "fillAlphas": 1,
+      "labelFunction": barLabelCallBack,
+      "labelText": " ",
+      "labelPosition": "right",
+      "balloonFunction": ballonLabelCallBack,
+      "balloonText": "<p align='left'> Task: [[task]]<br/>Start:[[start]]<br/>End:[[end]]<br/>Duration:[[duration]]</p>",
+      "bulletField": "bullet",
+      "bulletSize": 8
+    },
+    "rotate": true,
+    "categoryField": "category",
+    "segmentsField": "segments",
+    "colorField": "color",
+    "startDate": "2015-01-01 00:00:00",
+    "startField": "start",
+    "endField": "end",
+    "durationField": "duration",
+    "dataProvider": chartData,
+    "valueScrollbar": {
+      "autoGridCount": true
+    },
+    "chartScrollbar": {
+      "enable": true
+    },
+    "chartCursor": {
+      "cursorColor": "#55bb76",
+      "valueBalloonsEnabled": false,
+      "cursorAlpha": 0.1,
+      "valueLineAlpha": 0.5,
+      "valueLineBalloonEnabled": true,
+      "valueLineEnabled": true,
+      "zoomable": true,
+      "valueZoomable": true,
+      "fullWidth": true
+    },
+    "legend": {
+      "data": legendData,
+    },
+    "export": {
+      "enabled": true
+    }
+  });
+
+  // =========================================================================
+  // Call back methods
+  // =========================================================================
+function ballonLabelCallBack( _graphDataItem )
+{
+  var start = _graphDataItem.values.open;
+  var end = _graphDataItem.values.value;
+  var duration = end - start;
+
+  var result = "<p align='left'>Task: " + _graphDataItem.category + "<br/>Start: " + secondsToHHMMSS(start) + "<br/>End: " + secondsToHHMMSS( end ) + "<br/>Duration: " + secondsToHHMMSS( duration ) + "</p>";
+  return result;
+}
+
+
+function barLabelCallBack( _graphDataItem )
+{
+   var duration = _graphDataItem.values.value - _graphDataItem.values.open;
+
+   return secondsToHHMMSS( duration);
+}
+
+
+function userInputFormCallback()
+{
+  // Second filter
+  m_secondFilter = document.getElementById("userDurationFilterSecInput").value;
+  console.log("Setting second filter to: " + m_secondFilter + " seconds");
+
+  // Group PID Sort
+  m_groupPidSort = document.getElementById("userGroupPidSortSelected").checked;
+  console.log("Group PID filter is set to: " + m_groupPidSort);
+
+  // Rollup filter
+  m_showRollup = document.getElementById("userRollupSelected").checked;
+  console.log("Rollup filter is set to: " + m_showRollup);
+
+  // Individual filter
+  m_showIndividualEntry = document.getElementById("userIndividualEntrySelected").checked;
+  console.log("Individual filter is set to: " + m_showIndividualEntry);
+
+  // Checkpoint Report Entries filter
+  m_showCheckpointEntry = document.getElementById("userCheckpointEntrySelected").checked;
+  console.log("Checkpoint Entry filter is set to: " + m_showCheckpointEntry);
+
+  // Checkpoint Report Entries filter
+  m_showReportEntry = document.getElementById("userReportEntrySelected").checked;
+  console.log("Report Entry filter is set to: " + m_showReportEntry);
+
+  populateChartData();
+  filterChartEntries()
+  chart.dataProvider = chartData;
+  chart.validateData();
+}
+
+  // =========================================================================
+  // Utilities
+  // =========================================================================
+
+
+function populateChartData()
+{
+  chartData = [ ];
+  if (m_groupPidSort == false) {
+    jsonData.sort(compareByTimeStamp);
+  } else {
+    jsonData.sort(compareByGroupTimeStamp);
+  }
+
+  for (var i = 0; i < jsonData.length; i++) {
+    var timestamp = parseInt(jsonData[0].TimeStampMSec, 10);
+
+    if (m_startTS > timestamp) m_startTS = timestamp;
+    if (m_endTS < timestamp) m_endTS = timestamp;
+
+    for (var i = 0; i < jsonData.length; i++) {
+      switch (jsonData[i].Action) {
+      case "START":
+        var categoryEntry = { };
+        categoryEntry["category"] = jsonData[i].Task;
+        categoryEntry["pid"] = jsonData[i].pid;
+
+        var segmentEntry = { };
+        // Normalize entry and convert to seconds
+        segmentEntry["start"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+        segmentEntry["color"] = getTaskBarColor(jsonData[i].Tags)
+        segmentEntry["task"] = jsonData[i].Task;
+        segmentEntry["tags"] = jsonData[i].Tags;
+        segmentEntry["duration"] = -1;
+
+        categoryEntry["segments"] = [ ];
+        categoryEntry["segments"].push(segmentEntry);
+        chartData.push(categoryEntry);
+        break;
+
+      case "END":
+        var catagory = findCatagory(jsonData[i].pid, jsonData[i].Task, chartData);
+        if (catagory != null) {
+          var segmentsEntry = catagory.segments[0];
+          segmentsEntry["end"] = (jsonData[i].TimeStampMSec - m_startTS) / 1000;
+          segmentsEntry["duration"] = segmentsEntry.end - segmentsEntry.start;
+        } else {
+          console.log("Null entry found: pid:%s, Task: %s", jsonData[i].pid, jsonData[i].Task);
+        }
+
+        break;
+
+      default:
+        console.log("Default");
+        break;
+      }
+    }
+  }
+}
+
+function filterChartEntries()
+{
+  for(var i = chartData.length - 1; i >= 0; i--) {
+    var segment = chartData[i].segments[0];
+
+    // -- Remove entries less than 1 seconds
+    if ( segment["duration"] == -1) {
+      segment["bullet"] = "xError";
+      segment["color"] = "#cc4748";
+      segment["duration"] = ((m_endTS - m_startTS) / 1000) - segment["start"];
+    } else if (segment["duration"] <  m_secondFilter) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  
+
+    // Filter by tags
+    var bHasRollup = false;
+    var bHasCheckpoint = false;
+    var bHasReport = false;
+
+    var tags = segment["tags"];
+    console.log("Tag: " + tags);
+    if (tags.search(/ROLLUP_/i) != -1) { bHasRollup = true; }
+    if (tags.search(/CHECKPOINT/i) != -1) { bHasCheckpoint = true; }
+    if (tags.search(/REPORT/i) != -1) { bHasReport = true; }
+
+    var bRemoveEntry = false;
+
+    // Remove rollups
+    if ((m_showRollup == false) && (bHasRollup == true)) {
+      bRemoveEntry = true;
+    }
+    
+    // Remove checkpoints    
+    if ((m_showCheckpointEntry == false) && (bHasCheckpoint == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove reports
+    if ((m_showReportEntry == false) && (bHasReport == true)) {
+      bRemoveEntry = true;
+    }
+
+    // Remove individual entry
+    if (((m_showIndividualEntry == false) && 
+         ((bHasRollup == false) &&
+          (bHasCheckpoint == false) &&
+          (bHasReport == false)))) {
+      bRemoveEntry = true;
+    }
+
+    if (bRemoveEntry == true) {
+      chartData.splice(i, 1);
+      continue;
+    }
+  }
+
+  console.log("ChartData.length: " + chartData.length);
+}
+
+
+function getTaskBarColor( _tags )
+{
+  if (_tags == null)
+    return "#8dc49f";
+
+  if (_tags.search(/ROLLUP_AUTO/i) != -1){ return "#0099ff"; }
+  if (_tags.search(/ROLLUP_0/i) != -1)   { return "#006699"; }
+  if (_tags.search(/ROLLUP_1/i) != -1)   { return "#009933"; }
+  if (_tags.search(/ROLLUP_2/i) != -1)   { return "#66ccff"; }
+  if (_tags.search(/REPORT/i) != -1)     { return "#b9783f"; }
+  if (_tags.search(/CHECKPOINT/i) != -1) { return "#cd82ad"; }
+
+  return "#8dc49f"
+}
+
+
+function tableCreate( _chartData ){
+    var myTableDiv = document.getElementById("myDynamicTable");
+
+
+    for ( var i = 0; i < _chartData.length; i++) {
+      var tr = myTableDiv.insertRow();
+
+      var td_task = tr.insertCell();
+      td_task.appendChild(document.createTextNode( _chartData[i].category ));
+
+      var segmentEntry = _chartData[i].segments;
+      var td_start = tr.insertCell();
+      td_start.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].start) ));
+
+      var td_duration = tr.insertCell();
+      td_duration.appendChild(document.createTextNode( secondsToHHMMSS(segmentEntry[0].duration) ));
+
+    }
+}
+
+function secondsToHHMMSS( _seconds )
+{
+  var hours = Math.floor(_seconds / 3600);
+  var minutes = Math.floor(_seconds % 3600 / 60);
+  var seconds = Math.floor(_seconds % 3600 % 60);
+
+  var result = hours + ":" + (minutes < 10 ? "0" : "") + minutes + ":" + (seconds < 10 ? "0" : "") + seconds; 
+
+  return result;
+}
+
+
+  function findCatagory(_pid, _category, _catagoryArray) {
+    for (var i = (_catagoryArray.length - 1); i >= 0; i--) {
+      if (_pid == _catagoryArray[i].pid) {
+        if (_catagoryArray[i].category == _category) {
+          return  _catagoryArray[i];
+        }
+      }
+    }
+    return null;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByTimeStamp(_a, _b) {
+    if (_a.TimeStampMSec < _b.TimeStampMSec) return -1;
+    if (_a.TimeStampMSec > _b.TimeStampMSec) return 1;
+
+    if (_a.pid == _b.pid) {
+      if ((_a.Action == "START") && (_b.Action == "END")) return -1;
+      if ((_a.Action == "END") && (_b.Action == "START")) return 1;
+
+      if(_a.Entry < _b.Entry) return -1;
+      if(_a.Entry > _b.Entry) return 1;
+    }
+
+    return 0;
+  }
+
+
+  // Compares the timestamps between to JSON objects
+  function compareByGroupTimeStamp(_a, _b) {
+    if (pidOrder.get(_a.pid) < pidOrder.get(_b.pid)) return -1;
+
+    if (pidOrder.get(_a.pid) > pidOrder.get(_b.pid)) return 1;
+
+    return compareByTimeStamp(_a, _b);
+  }
+
+
+  // Return array of string values, or NULL if CSV string not well formed.
+  function CSVtoArray(_text, _sep) {
+    // Regex expressions
+    var re_valid_default = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+    var re_value_default = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+    var re_special_default = /,\s*$/;
+
+    // Algorithm:
+    //   1) Convert regex expression to a string.
+    //   2) Remove leading regex escape character (e.g., '\')
+    //   3) Remove training regex escape character(s) (e.g., '\' or "\g")
+    //   4) Replace the comma (',') character witht he new delimiter character
+    //   5) Build the regex command
+
+    // Check delimiter, if special insert escapes
+    if (_sep == "|") _sep = "\\|";
+
+    var re_valid = new RegExp(re_valid_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+    var re_value = new RegExp(re_value_default.toString().substr(1).slice(0, -2).replace(/,/g, _sep), 'g');
+    var re_special = new RegExp(re_special_default.toString().substr(1).slice(0, -1).replace(/,/g, _sep));
+
+    // Validate the input string to determine if it is well formed
+    if (!re_valid.test(_text)) return null;
+
+    var a = [ ];                     // Initialize array to receive values.
+    _text.replace(re_value,           // "Walk" the string using replace with callback.
+                  function(m0, m1, m2, m3) {
+                      // Remove backslash from \' in single quoted values.
+                      if      (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+                      // Remove backslash from \" in double quoted values.
+                      else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+                      else if (m3 !== undefined) a.push(m3);
+                      return ''; // Return empty string.
+                  });
+
+    // Handle special case of empty last value.
+    if (re_special.test(_text)) a.push('');
+
+    return a;
+  };
+
+
+  // Converts the given CSV array & header into a JSON array
+  function csvArrayToJSON(_header, _csvArray, _sep) {
+    var result = [ ];
+    var headers = CSVtoArray(_header, _sep);
+
+    for (var i = 0; i < _csvArray.length; i++) {
+
+      var obj = { };
+      var currentline = CSVtoArray(_csvArray[i], _sep);
+
+      for (var j = 0; j < headers.length; j++) {
+        obj[headers[j]] = currentline[j];
+      }
+
+      result.push(obj);
+
+    }
+
+    return result; //JavaScript object
+  }
+
+
+</script>
+</body>
+
+</html>
+

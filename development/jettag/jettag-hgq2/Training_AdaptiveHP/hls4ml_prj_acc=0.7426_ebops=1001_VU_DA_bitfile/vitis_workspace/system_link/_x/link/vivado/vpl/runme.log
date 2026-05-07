@@ -7,13 +7,13 @@
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Thu May  7 10:04:39 2026
+  **** Start of session at: Thu May  7 15:21:41 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source vpl.tcl -notrace
-INFO: Dispatch client connection id - 42985
-[10:04:41] Run vpl: Step create_project: Started
+INFO: Dispatch client connection id - 35605
+[15:21:43] Run vpl: Step create_project: Started
 INFO: [OCL_UTIL] current step: vpl.create_project
 Creating Vivado project.
 INFO: [OCL_UTIL] set ::origin_dir_loc .local/hw_platform/prj
@@ -29,8 +29,8 @@ More information on inline hdl is available in UG994.
 Utility IP Component Instances:
  vitis_design_customIntr_0_0
 INFO: Project created:prj
-[10:04:44] Run vpl: Step create_project: Completed
-[10:04:44] Run vpl: Step create_bd: Started
+[15:21:46] Run vpl: Step create_project: Completed
+[15:21:46] Run vpl: Step create_bd: Started
 INFO: [OCL_UTIL] current step: vpl.create_bd
 INFO: [OCL_UTIL] set_property ip_repo_paths /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 .local/hw_platform/ipcache /opt/Xilinx/2025.2/Vitis/data/vitis/ip [current_project]
 INFO: [OCL_UTIL] internal step: update_ip_catalog
@@ -64,8 +64,8 @@ INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other periphera
 INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
 INFO: [OCL_UTIL] internal step: save_bd_design
 Wrote  : </work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd> 
-[10:04:46] Run vpl: Step create_bd: Completed
-[10:04:46] Run vpl: Step update_bd: Started
+[15:21:50] Run vpl: Step create_bd: Completed
+[15:21:50] Run vpl: Step update_bd: Started
 INFO: [OCL_UTIL] current step: vpl.update_bd
 INFO: [OCL_UTIL] internal step: inserting profiling and debug cores
 --- DPA: insert_chipscope_debug: No chipscope_debugs dict name - nothing to insert
@@ -102,8 +102,8 @@ INFO: [OCL_UTIL] internal step: writing address_map.xml
 INFO: [OCL_UTIL] internal step: collect BD interface connectivity and update compute units
 INFO: [OCL_UTIL] internal step: save_bd_design
 Wrote  : </work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.srcs/sources_1/bd/vitis_design/vitis_design.bd> 
-[10:04:46] Run vpl: Step update_bd: Completed
-[10:04:46] Run vpl: Step generate_target: Started
+[15:21:50] Run vpl: Step update_bd: Completed
+[15:21:50] Run vpl: Step generate_target: Started
 INFO: [OCL_UTIL] current step: vpl.generate_target
 INFO: [BD 41-1799] The block design contains upgradeable cell(s), automatically upgrading to newest version...
 INFO: [IP_Flow 19-3420] Updated vitis_design_axi_interconnect_0_0 to use current project options
@@ -235,14 +235,14 @@ Generated Hardware Definition File /work/development/jettag/jettag-hgq2/Training
 INFO: [BD 41-3262] Generated VHDL Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/vitis_design.vho
 INFO: [BD 41-3262] Generated Verilog Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/vitis_design.veo
 INFO: [BD 41-3262] Generated System Verilog Instantiation Template file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/vitis_design_sv.sveo
-generate_target: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2022.145 ; gain = 134.250 ; free physical = 20395 ; free virtual = 42632
+generate_target: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2023.551 ; gain = 135.281 ; free physical = 15507 ; free virtual = 38567
 INFO: [OCL_UTIL] internal step: writing user synth clock constraints in /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc
 INFO: [OCL_UTIL] internal step: add_files /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc -fileset [current_fileset -constrset]
 INFO: [OCL_UTIL] set_property used_in synthesis implementation out_of_context /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc
 INFO: [OCL_UTIL] set_property processing_order early /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/vitis_design_ooc_copy.xdc
 INFO: [OCL_UTIL] internal step: collect clock information and write automation summary report
-[10:05:05] Run vpl: Step generate_target: Completed
-[10:05:05] Run vpl: Step config_hw_runs: Started
+[15:22:19] Run vpl: Step generate_target: Completed
+[15:22:19] Run vpl: Step config_hw_runs: Started
 INFO: [OCL_UTIL] current step: vpl.config_hw_runs
 INFO: [OCL_UTIL] internal step: creating vpl tcl hooks for implementation run
 INFO: [OCL_UTIL] internal step: source scripts/_vivado_report_commands.tcl
@@ -264,27 +264,27 @@ INFO: [OCL_UTIL] internal step: source scripts/_vivado_synth_props.tcl
 WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
 INFO: [OCL_UTIL] set_property GEN_FULL_BITSTREAM 0 [get_runs impl_1]
 INFO: [OCL_UTIL] internal step: source scripts/_vivado_impl_props.tcl
-[10:05:07] Run vpl: Step config_hw_runs: Completed
-[10:05:07] Run vpl: Step synth: Started
+[15:22:21] Run vpl: Step config_hw_runs: Completed
+[15:22:21] Run vpl: Step synth: Started
 INFO: [OCL_UTIL] current step: vpl.synth
 INFO: [OCL_UTIL] parameter general.maxThreads has value 8, set it to 1 for synthesis runs to reduce cpu and memory usage
 INFO: [OCL_UTIL] internal step: launch_runs synth_1 -jobs 8  
 WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
-[Thu May  7 10:05:07 2026] Launched vitis_design_axi_dma_0_0_synth_1, vitis_design_axi_intc_0_0_synth_1, vitis_design_axi_smc_0_synth_1, vitis_design_zynq_ultra_ps_e_0_0_synth_1, vitis_design_rst_ps8_0_99M_0_synth_1, vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1, vitis_design_myproject_axi_master_1_0_synth_1, vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1, vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1, vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1...
+[Thu May  7 15:22:22 2026] Launched vitis_design_zynq_ultra_ps_e_0_0_synth_1, vitis_design_rst_ps8_0_99M_0_synth_1, vitis_design_axi_smc_0_synth_1, vitis_design_axi_intc_0_0_synth_1, vitis_design_axi_dma_0_0_synth_1, vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1, vitis_design_myproject_axi_master_1_0_synth_1, vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1, vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1, vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1...
 Run output will be captured here:
-vitis_design_axi_dma_0_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/runme.log
-vitis_design_axi_intc_0_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/runme.log
-vitis_design_axi_smc_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/runme.log
 vitis_design_zynq_ultra_ps_e_0_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_zynq_ultra_ps_e_0_0_synth_1/runme.log
 vitis_design_rst_ps8_0_99M_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_rst_ps8_0_99M_0_synth_1/runme.log
+vitis_design_axi_smc_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_smc_0_synth_1/runme.log
+vitis_design_axi_intc_0_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_intc_0_0_synth_1/runme.log
+vitis_design_axi_dma_0_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_dma_0_0_synth_1/runme.log
 vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1/runme.log
 vitis_design_myproject_axi_master_1_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/runme.log
 vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/runme.log
 vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1/runme.log
 vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/runme.log
-[Thu May  7 10:05:07 2026] Launched synth_1...
+[Thu May  7 15:22:22 2026] Launched synth_1...
 Run output will be captured here: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/runme.log
-[Thu May  7 10:05:07 2026] Waiting for synth_1 to finish...
+[Thu May  7 15:22:22 2026] Waiting for synth_1 to finish...
 
 *** Running vivado
     with args -log vitis_design_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_wrapper.tcl
@@ -294,12 +294,12 @@ Run output will be captured here: /work/development/jettag/jettag-hgq2/Training_
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Thu May  7 10:06:37 2026
+  **** Start of session at: Thu May  7 15:24:20 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source vitis_design_wrapper.tcl -notrace
-INFO: Dispatch client connection id - 42985
+INFO: Dispatch client connection id - 35605
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
@@ -317,14 +317,14 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 588352
+INFO: [Synth 8-7075] Helper process launched with PID 438386
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2788.418 ; gain = 139.688 ; free physical = 19147 ; free virtual = 40710
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2789.121 ; gain = 148.688 ; free physical = 19374 ; free virtual = 37064
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'vitis_design_wrapper' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/hdl/vitis_design_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'vitis_design' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:643]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_dma_0_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_dma_0_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_dma_0_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_dma_0_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_dma_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_prmry_reset_out_n' of module 'vitis_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:874]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tdata' of module 'vitis_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:874]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'vitis_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:874]
@@ -335,35 +335,35 @@ WARNING: [Synth 8-7071] port 's_axis_s2mm_tready' of module 'vitis_design_axi_dm
 WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'vitis_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:874]
 WARNING: [Synth 8-7071] port 'axi_dma_tstvec' of module 'vitis_design_axi_dma_0_0' is unconnected for instance 'axi_dma_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:874]
 WARNING: [Synth 8-7023] instance 'axi_dma_0' of module 'vitis_design_axi_dma_0_0' has 64 connections declared, but only 55 given [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:874]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_intc_0_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_intc_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_intc_0_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_intc_0_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_intc_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_intc_0_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_intc_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_interconnect_0_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1392]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_RMPSRL' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_RMPSRL' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:13]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_WE2J35' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:128]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_WE2J35' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:128]
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_LKUGDD' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:237]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_imp_m02_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_imp_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_imp_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_imp_m02_regslice_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' is unconnected for instance 'm02_regslice' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:358]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' is unconnected for instance 'm02_regslice' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:358]
 WARNING: [Synth 8-7023] instance 'm02_regslice' of module 'vitis_design_axi_interconnect_0_imp_m02_regslice_0' has 40 connections declared, but only 38 given [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:358]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_LKUGDD' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:237]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_Z6MSZ6' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:399]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_interconnect_0_imp_auto_pc_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_interconnect_0_imp_auto_pc_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_interconnect_0_imp_auto_pc_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_interconnect_0_imp_auto_pc_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_imp_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_Z6MSZ6' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:399]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_interconnect_0_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1392]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_smc_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_smc_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_axi_smc_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_axi_smc_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_axi_smc_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'vitis_design_customIntr_0_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_customIntr_0_0/synth/vitis_design_customIntr_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'vitis_design_customIntr_0_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_customIntr_0_0/synth/vitis_design_customIntr_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_myproject_axi_master_1_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_myproject_axi_master_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_myproject_axi_master_1_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_myproject_axi_master_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_myproject_axi_master_1_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_myproject_axi_master_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_myproject_axi_master_1_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_myproject_axi_master_1_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_in0_ARREGION' of module 'vitis_design_myproject_axi_master_1_0' is unconnected for instance 'myproject_axi_master_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1123]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_in0_AWADDR' of module 'vitis_design_myproject_axi_master_1_0' is unconnected for instance 'myproject_axi_master_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1123]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_in0_AWBURST' of module 'vitis_design_myproject_axi_master_1_0' is unconnected for instance 'myproject_axi_master_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1123]
@@ -397,17 +397,17 @@ WARNING: [Synth 8-7071] port 'm_axi_gmem_out0_AWREGION' of module 'vitis_design_
 WARNING: [Synth 8-7071] port 'm_axi_gmem_out0_RREADY' of module 'vitis_design_myproject_axi_master_1_0' is unconnected for instance 'myproject_axi_master_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1123]
 WARNING: [Synth 8-7071] port 'm_axi_gmem_out0_WID' of module 'vitis_design_myproject_axi_master_1_0' is unconnected for instance 'myproject_axi_master_1' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1123]
 WARNING: [Synth 8-7023] instance 'myproject_axi_master_1' of module 'vitis_design_myproject_axi_master_1_0' has 100 connections declared, but only 68 given [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1123]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_rst_ps8_0_99M_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_rst_ps8_0_99M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_rst_ps8_0_99M_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_rst_ps8_0_99M_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_rst_ps8_0_99M_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_rst_ps8_0_99M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'vitis_design_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1192]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'vitis_design_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1192]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'vitis_design_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1192]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'vitis_design_rst_ps8_0_99M_0' is unconnected for instance 'rst_ps8_0_99M' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1192]
 WARNING: [Synth 8-7023] instance 'rst_ps8_0_99M' of module 'vitis_design_rst_ps8_0_99M_0' has 10 connections declared, but only 6 given [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1192]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'vitis_design_zynq_ultra_ps_e_0_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'vitis_design_zynq_ultra_ps_e_0_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-588282-11c2efc5f272/realtime/vitis_design_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vitis_design_zynq_ultra_ps_e_0_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vitis_design_zynq_ultra_ps_e_0_0' (0#1) [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/.Xil/Vivado-438310-11c2efc5f272/realtime/vitis_design_zynq_ultra_ps_e_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'vitis_design_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1272]
 WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'vitis_design_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1272]
 WARNING: [Synth 8-7071] port 'saxigp0_bid' of module 'vitis_design_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/synth/vitis_design.v:1272]
@@ -520,18 +520,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_7_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2888.387 ; gain = 239.656 ; free physical = 19039 ; free virtual = 40602
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2888.059 ; gain = 247.625 ; free physical = 19160 ; free virtual = 36852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2888.387 ; gain = 239.656 ; free physical = 19039 ; free virtual = 40602
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2888.059 ; gain = 247.625 ; free physical = 19159 ; free virtual = 36852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2888.387 ; gain = 239.656 ; free physical = 19039 ; free virtual = 40602
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2888.059 ; gain = 247.625 ; free physical = 19159 ; free virtual = 36852
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2888.387 ; gain = 0.000 ; free physical = 19039 ; free virtual = 40602
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2888.059 ; gain = 0.000 ; free physical = 19143 ; free virtual = 36835
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -560,13 +560,13 @@ Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4m
 Finished Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2888.387 ; gain = 0.000 ; free physical = 19012 ; free virtual = 40575
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2888.059 ; gain = 0.000 ; free physical = 18206 ; free virtual = 35898
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2888.422 ; gain = 0.000 ; free physical = 19011 ; free virtual = 40575
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2888.094 ; gain = 0.000 ; free physical = 18197 ; free virtual = 35889
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2888.422 ; gain = 239.691 ; free physical = 19026 ; free virtual = 40590
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2888.094 ; gain = 247.660 ; free physical = 16501 ; free virtual = 34194
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -574,16 +574,16 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2888.422 ; gain = 239.691 ; free physical = 19026 ; free virtual = 40590
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2888.094 ; gain = 247.660 ; free physical = 16494 ; free virtual = 34186
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2888.422 ; gain = 239.691 ; free physical = 19026 ; free virtual = 40590
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2888.094 ; gain = 247.660 ; free physical = 16479 ; free virtual = 34171
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2888.422 ; gain = 239.691 ; free physical = 19025 ; free virtual = 40590
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2888.094 ; gain = 247.660 ; free physical = 16469 ; free virtual = 34163
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -605,25 +605,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2888.422 ; gain = 239.691 ; free physical = 19020 ; free virtual = 40590
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2888.094 ; gain = 247.660 ; free physical = 15964 ; free virtual = 33662
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3544.879 ; gain = 896.148 ; free physical = 18390 ; free virtual = 39961
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3537.551 ; gain = 897.117 ; free physical = 16484 ; free virtual = 34183
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3544.879 ; gain = 896.148 ; free physical = 18390 ; free virtual = 39961
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3537.551 ; gain = 897.117 ; free physical = 16484 ; free virtual = 34183
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3555.895 ; gain = 907.164 ; free physical = 18375 ; free virtual = 39945
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3548.566 ; gain = 908.133 ; free physical = 16461 ; free virtual = 34160
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -641,37 +641,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3742.707 ; gain = 1093.977 ; free physical = 18256 ; free virtual = 39826
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.379 ; gain = 1101.945 ; free physical = 15297 ; free virtual = 32996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3742.707 ; gain = 1093.977 ; free physical = 18256 ; free virtual = 39826
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.379 ; gain = 1101.945 ; free physical = 15297 ; free virtual = 32996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3742.707 ; gain = 1093.977 ; free physical = 18256 ; free virtual = 39826
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.379 ; gain = 1101.945 ; free physical = 15297 ; free virtual = 32996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3742.707 ; gain = 1093.977 ; free physical = 18256 ; free virtual = 39826
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.379 ; gain = 1101.945 ; free physical = 15289 ; free virtual = 32988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3742.707 ; gain = 1093.977 ; free physical = 18256 ; free virtual = 39826
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.379 ; gain = 1101.945 ; free physical = 15289 ; free virtual = 32988
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3742.707 ; gain = 1093.977 ; free physical = 18256 ; free virtual = 39826
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.379 ; gain = 1101.945 ; free physical = 15281 ; free virtual = 32980
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -709,16 +709,16 @@ Report Cell Usage:
 |10    |vitis_design_zynq_ultra_ps_e_0                        |     1|
 +------+------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 3742.707 ; gain = 1093.977 ; free physical = 18256 ; free virtual = 39826
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.379 ; gain = 1101.945 ; free physical = 15281 ; free virtual = 32980
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 3742.707 ; gain = 1093.941 ; free physical = 18256 ; free virtual = 39826
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 3742.707 ; gain = 1093.977 ; free physical = 18256 ; free virtual = 39826
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 3742.379 ; gain = 1101.910 ; free physical = 14999 ; free virtual = 32698
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.379 ; gain = 1101.945 ; free physical = 14999 ; free virtual = 32698
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3742.707 ; gain = 0.000 ; free physical = 18393 ; free virtual = 39963
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3742.379 ; gain = 0.000 ; free physical = 15128 ; free virtual = 32827
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3742.707 ; gain = 0.000 ; free physical = 18394 ; free virtual = 39964
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3742.379 ; gain = 0.000 ; free physical = 14862 ; free virtual = 32562
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -726,34 +726,34 @@ Synth Design complete | Checksum: 5f7c0503
 INFO: [Common 17-83] Releasing license: Synthesis
 58 Infos, 159 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 3742.707 ; gain = 2159.941 ; free physical = 18394 ; free virtual = 39964
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2838.721; main = 2838.721; forked = 290.546
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3875.367; main = 3669.023; forked = 986.977
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 3742.379 ; gain = 2158.832 ; free physical = 14809 ; free virtual = 32508
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2989.600; main = 2840.842; forked = 290.674
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4595.547; main = 3668.695; forked = 986.977
 INFO: [Common 17-1381] The checkpoint '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.dcp' has been generated.
-INFO: [Common 17-206] Exiting Vivado at Thu May  7 10:07:06 2026...
-[Thu May  7 10:07:06 2026] synth_1 finished
-wait_on_runs: Time (s): cpu = 00:08:34 ; elapsed = 00:01:59 . Memory (MB): peak = 2238.250 ; gain = 0.000 ; free physical = 21001 ; free virtual = 42565
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 15:24:57 2026...
+[Thu May  7 15:24:58 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:10:44 ; elapsed = 00:02:36 . Memory (MB): peak = 2239.656 ; gain = 0.000 ; free physical = 20303 ; free virtual = 37996
 INFO: [OCL_UTIL] restore parameter general.maxThreads to 8
 INFO: [OCL_UTIL] internal step: generating resource usage report '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/resource.json'
 INFO: [OCL_UTIL] internal step: log_generated_reports for synthesis '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/generated_reports.log'
 INFO: [OCL_UTIL] internal step: launched run synth_1
-INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_dma_0_0_synth_1
-INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_intc_0_0_synth_1
-INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_smc_0_synth_1
 INFO: [OCL_UTIL] internal step: launched run vitis_design_zynq_ultra_ps_e_0_0_synth_1
 INFO: [OCL_UTIL] internal step: launched run vitis_design_rst_ps8_0_99M_0_synth_1
+INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_smc_0_synth_1
+INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_intc_0_0_synth_1
+INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_dma_0_0_synth_1
 INFO: [OCL_UTIL] internal step: launched run vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1
 INFO: [OCL_UTIL] internal step: launched run vitis_design_myproject_axi_master_1_0_synth_1
 INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1
 INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1
 INFO: [OCL_UTIL] internal step: launched run vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1
-[10:07:06] Run vpl: Step synth: Completed
-[10:07:06] Run vpl: Step impl: Started
+[15:24:58] Run vpl: Step synth: Completed
+[15:24:58] Run vpl: Step impl: Started
 INFO: [OCL_UTIL] current step: vpl.impl
 INFO: [OCL_UTIL] internal step: launch_runs impl_1 -to_step write_bitstream -jobs 8  
-[Thu May  7 10:07:07 2026] Launched impl_1...
+[Thu May  7 15:24:59 2026] Launched impl_1...
 Run output will be captured here: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log
-[Thu May  7 10:07:07 2026] Waiting for impl_1 to finish...
+[Thu May  7 15:24:59 2026] Waiting for impl_1 to finish...
 
 *** Running vivado
     with args -log vitis_design_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source vitis_design_wrapper.tcl -notrace
@@ -763,12 +763,12 @@ Run output will be captured here: /work/development/jettag/jettag-hgq2/Training_
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Thu May  7 10:07:09 2026
+  **** Start of session at: Thu May  7 15:25:01 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source vitis_design_wrapper.tcl -notrace
-INFO: Dispatch client connection id - 42985
+INFO: Dispatch client connection id - 35605
 source /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_pre.tcl
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
@@ -790,7 +790,7 @@ INFO: [Project 1-454] Reading design checkpoint '/work/development/jettag/jettag
 INFO: [Project 1-454] Reading design checkpoint '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/xbar'
 INFO: [Project 1-454] Reading design checkpoint '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/m02_couplers/m02_regslice'
 INFO: [Project 1-454] Reading design checkpoint '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_auto_pc_0/vitis_design_axi_interconnect_0_imp_auto_pc_0.dcp' for cell 'vitis_design_i/axi_interconnect_0/s00_couplers/auto_pc'
-Netlist sorting complete. Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2662.332 ; gain = 0.000 ; free physical = 19427 ; free virtual = 40991
+Netlist sorting complete. Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2669.820 ; gain = 0.000 ; free physical = 20474 ; free virtual = 38174
 INFO: [Netlist 29-17] Analyzing 822 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2025.2
@@ -819,7 +819,7 @@ Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4m
 Finished Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_clocks.xdc] for cell 'vitis_design_i/axi_interconnect_0/m02_couplers/m02_regslice/inst'
 INFO: [Project 1-1714] 93 XPM XDC files have been applied to the design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3495.180 ; gain = 0.000 ; free physical = 18806 ; free virtual = 40369
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3495.730 ; gain = 0.000 ; free physical = 19083 ; free virtual = 36957
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 156 instances were transformed.
   RAM16X1D => RAM32X1D (RAMD32(x2)): 2 instances
@@ -829,7 +829,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 24 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 3495.215 ; gain = 1868.617 ; free physical = 18805 ; free virtual = 40369
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3495.766 ; gain = 1869.711 ; free physical = 19072 ; free virtual = 36946
 source /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_init_post.tcl
 Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/_user_impl_clk.xdc]
 Finished Parsing XDC File [/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/_user_impl_clk.xdc]
@@ -858,13 +858,13 @@ INFO: [DRC 23-27] Running DRC with 8 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:00.7 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3515.992 ; gain = 20.777 ; free physical = 18787 ; free virtual = 40351
+Time (s): cpu = 00:00:00.99 ; elapsed = 00:00:00.35 . Memory (MB): peak = 3517.543 ; gain = 21.777 ; free physical = 18889 ; free virtual = 36764
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 Ending Cache Timing Information Task | Checksum: 1b8198990
 
-Time (s): cpu = 00:00:00.92 ; elapsed = 00:00:00.43 . Memory (MB): peak = 3515.992 ; gain = 0.000 ; free physical = 18780 ; free virtual = 40344
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.76 . Memory (MB): peak = 3517.543 ; gain = 0.000 ; free physical = 18628 ; free virtual = 36503
 
 Starting Logic Optimization Task
 
@@ -873,35 +873,35 @@ Phase 1 Initialization
 Phase 1.1 Core Generation And Design Setup
 Phase 1.1 Core Generation And Design Setup | Checksum: 1b8198990
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18444 ; free virtual = 40007
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 18180 ; free virtual = 36068
 
 Phase 1.2 Setup Constraints And Sort Netlist
 Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1b8198990
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18444 ; free virtual = 40007
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 18179 ; free virtual = 36069
 Phase 1 Initialization | Checksum: 1b8198990
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18444 ; free virtual = 40007
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 18178 ; free virtual = 36068
 
 Phase 2 Timer Update And Timing Data Collection
 
 Phase 2.1 Detect if minReqCache needed
 Phase 2.1 Detect if minReqCache needed | Checksum: 1b8198990
 
-Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18428 ; free virtual = 39992
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 18161 ; free virtual = 36052
 
 Phase 2.2 Timer Update
 Phase 2.2 Timer Update | Checksum: 1b8198990
 
-Time (s): cpu = 00:00:00.81 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18443 ; free virtual = 40007
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.49 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 18403 ; free virtual = 36297
 
 Phase 2.3 Timing Data Collection
 Phase 2.3 Timing Data Collection | Checksum: 1b8198990
 
-Time (s): cpu = 00:00:00.83 ; elapsed = 00:00:00.31 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18441 ; free virtual = 40005
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.53 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 18646 ; free virtual = 36541
 Phase 2 Timer Update And Timing Data Collection | Checksum: 1b8198990
 
-Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:00.31 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18441 ; free virtual = 40005
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.53 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 18646 ; free virtual = 36541
 
 Phase 3 Retarget
 INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
@@ -911,7 +911,7 @@ INFO: [Opt 31-138] Pushed 101 inverter(s) to 3056 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
 Phase 3 Retarget | Checksum: 1c1a2f4d5
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.77 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18429 ; free virtual = 39992
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 19359 ; free virtual = 37283
 Retarget | Checksum: 1c1a2f4d5
 INFO: [Opt 31-389] Phase Retarget created 144 cells and removed 595 cells
 INFO: [Opt 31-1021] In phase Retarget, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
@@ -920,19 +920,19 @@ Phase 4 Constant propagation
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
 Phase 4 Constant propagation | Checksum: 1fcb1d905
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18434 ; free virtual = 39998
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 19224 ; free virtual = 37190
 Constant propagation | Checksum: 1fcb1d905
 INFO: [Opt 31-389] Phase Constant propagation created 916 cells and removed 3982 cells
 INFO: [Opt 31-1021] In phase Constant propagation, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
 
 Phase 5 Sweep
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18436 ; free virtual = 40000
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 19162 ; free virtual = 37132
 INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
-Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18437 ; free virtual = 40001
+Done building netlist checker database: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 19158 ; free virtual = 37128
 Phase 5 Sweep | Checksum: 1545d22f2
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3849.805 ; gain = 0.000 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3856.355 ; gain = 0.000 ; free physical = 19159 ; free virtual = 37130
 Sweep | Checksum: 1545d22f2
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 785 cells
 INFO: [Opt 31-1021] In phase Sweep, 106 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
@@ -941,7 +941,7 @@ Phase 6 BUFG optimization
 INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
 Phase 6 BUFG optimization | Checksum: 1545d22f2
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3881.820 ; gain = 32.016 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3888.371 ; gain = 32.016 ; free physical = 19174 ; free virtual = 37144
 BUFG optimization | Checksum: 1545d22f2
 INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
 
@@ -949,14 +949,14 @@ Phase 7 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
 Phase 7 Shift Register Optimization | Checksum: 1545d22f2
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3881.820 ; gain = 32.016 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3888.371 ; gain = 32.016 ; free physical = 19176 ; free virtual = 37146
 Shift Register Optimization | Checksum: 1545d22f2
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 8 Post Processing Netlist
 Phase 8 Post Processing Netlist | Checksum: 226da6fb6
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3881.820 ; gain = 32.016 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3888.371 ; gain = 32.016 ; free physical = 19175 ; free virtual = 37145
 Post Processing Netlist | Checksum: 226da6fb6
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 INFO: [Opt 31-1021] In phase Post Processing Netlist, 82 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
@@ -966,19 +966,19 @@ Phase 9 Finalization
 Phase 9.1 Finalizing Design Cores and Updating Shapes
 Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 28470d6bf
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3881.820 ; gain = 32.016 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3888.371 ; gain = 32.016 ; free physical = 19200 ; free virtual = 37170
 
 Phase 9.2 Verifying Netlist Connectivity
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3881.820 ; gain = 0.000 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3888.371 ; gain = 0.000 ; free physical = 19210 ; free virtual = 37180
 Phase 9.2 Verifying Netlist Connectivity | Checksum: 28470d6bf
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3881.820 ; gain = 32.016 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3888.371 ; gain = 32.016 ; free physical = 19210 ; free virtual = 37180
 Phase 9 Finalization | Checksum: 28470d6bf
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3881.820 ; gain = 32.016 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3888.371 ; gain = 32.016 ; free physical = 19210 ; free virtual = 37180
 Opt_design Change Summary
 =========================
 
@@ -997,7 +997,7 @@ Opt_design Change Summary
 
 Ending Logic Optimization Task | Checksum: 28470d6bf
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3881.820 ; gain = 32.016 ; free physical = 18437 ; free virtual = 40001
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3888.371 ; gain = 32.016 ; free physical = 19210 ; free virtual = 37180
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -1015,20 +1015,20 @@ INFO: [Pwropt 34-201] Structural ODC has moved 1 WE to EN ports
 Number of BRAM Ports augmented: 4 newly gated: 5 Total Ports: 14
 Ending PowerOpt Patch Enables Task | Checksum: 20eea596b
 
-Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.16 . Memory (MB): peak = 4049.871 ; gain = 0.000 ; free physical = 18376 ; free virtual = 39940
+Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.24 . Memory (MB): peak = 4072.438 ; gain = 0.000 ; free physical = 18609 ; free virtual = 36583
 Ending Power Optimization Task | Checksum: 20eea596b
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 4049.871 ; gain = 168.051 ; free physical = 18376 ; free virtual = 39940
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 4072.438 ; gain = 184.066 ; free physical = 18602 ; free virtual = 36576
 
 Starting Final Cleanup Task
 Ending Final Cleanup Task | Checksum: 20eea596b
 
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4049.871 ; gain = 0.000 ; free physical = 18376 ; free virtual = 39940
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4049.871 ; gain = 0.000 ; free physical = 18376 ; free virtual = 39940
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4072.438 ; gain = 0.000 ; free physical = 18594 ; free virtual = 36568
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4072.438 ; gain = 0.000 ; free physical = 18586 ; free virtual = 36560
 INFO: [Common 17-83] Releasing license: Implementation
 56 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 4049.871 ; gain = 554.656 ; free physical = 18376 ; free virtual = 39940
+opt_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 4072.438 ; gain = 576.672 ; free physical = 18578 ; free virtual = 36552
 source /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_opt_post.tcl
 source /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_pre.tcl
 CRITICAL WARNING: [Vivado 12-4430] You are lowering the severity from an ERROR. This can potentially lead to board damage or other functionality issues on hardware. If this is not desired, please run 'reset_property SEVERITY [get_drc_checks HDPR-5]' to undo this change.
@@ -1052,29 +1052,29 @@ Starting Placer Task
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4112.953 ; gain = 0.000 ; free physical = 18342 ; free virtual = 39906
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4135.520 ; gain = 0.000 ; free physical = 18387 ; free virtual = 36373
 Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 16e63be19
 
-Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4112.953 ; gain = 0.000 ; free physical = 18342 ; free virtual = 39906
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4112.953 ; gain = 0.000 ; free physical = 18342 ; free virtual = 39906
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4135.520 ; gain = 0.000 ; free physical = 18387 ; free virtual = 36373
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4135.520 ; gain = 0.000 ; free physical = 18387 ; free virtual = 36372
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 17a6a52f9
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4413.965 ; gain = 301.012 ; free physical = 18011 ; free virtual = 39575
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 4410.953 ; gain = 275.434 ; free physical = 18654 ; free virtual = 36766
 
 Phase 1.3 Build Placer Netlist Model
 Phase 1.3 Build Placer Netlist Model | Checksum: 234ac7ed4
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 4445.980 ; gain = 333.027 ; free physical = 18018 ; free virtual = 39581
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 4442.969 ; gain = 307.449 ; free physical = 18159 ; free virtual = 36338
 
 Phase 1.4 Constrain Clocks/Macros
 Phase 1.4 Constrain Clocks/Macros | Checksum: 234ac7ed4
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 4445.980 ; gain = 333.027 ; free physical = 18018 ; free virtual = 39582
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 4442.969 ; gain = 307.449 ; free physical = 18133 ; free virtual = 36312
 Phase 1 Placer Initialization | Checksum: 234ac7ed4
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 4445.980 ; gain = 333.027 ; free physical = 18018 ; free virtual = 39582
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 4442.969 ; gain = 307.449 ; free physical = 18126 ; free virtual = 36305
 
 Phase 2 Global Placement
 
@@ -1085,56 +1085,56 @@ Phase 2.1.1 Partition Driven Placement
 Phase 2.1.1.1 PBP: Partition Driven Placement
 Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1bfa2914c
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 4445.980 ; gain = 333.027 ; free physical = 18068 ; free virtual = 39631
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:17 . Memory (MB): peak = 4442.969 ; gain = 307.449 ; free physical = 18020 ; free virtual = 36199
 
 Phase 2.1.1.2 PBP: Clock Region Placement
 INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
 Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1bfa2914c
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 4445.980 ; gain = 333.027 ; free physical = 18030 ; free virtual = 39594
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 4442.969 ; gain = 307.449 ; free physical = 17864 ; free virtual = 36101
 
 Phase 2.1.1.3 PBP: Compute Congestion
 Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1bfa2914c
 
-Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 4677.965 ; gain = 565.012 ; free physical = 17693 ; free virtual = 39257
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:20 . Memory (MB): peak = 4673.953 ; gain = 538.434 ; free physical = 17319 ; free virtual = 35556
 
 Phase 2.1.1.4 PBP: UpdateTiming
 Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 21e85d683
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 4709.980 ; gain = 597.027 ; free physical = 17692 ; free virtual = 39256
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 4705.969 ; gain = 570.449 ; free physical = 17247 ; free virtual = 35485
 
 Phase 2.1.1.5 PBP: Add part constraints
 Phase 2.1.1.5 PBP: Add part constraints | Checksum: 21e85d683
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 4709.980 ; gain = 597.027 ; free physical = 17692 ; free virtual = 39256
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 4705.969 ; gain = 570.449 ; free physical = 17247 ; free virtual = 35485
 Phase 2.1.1 Partition Driven Placement | Checksum: 21e85d683
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 4709.980 ; gain = 597.027 ; free physical = 17692 ; free virtual = 39256
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 4705.969 ; gain = 570.449 ; free physical = 17247 ; free virtual = 35484
 Phase 2.1 Floorplanning | Checksum: 18fd2b1d8
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 4709.980 ; gain = 597.027 ; free physical = 17692 ; free virtual = 39256
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 4705.969 ; gain = 570.449 ; free physical = 17247 ; free virtual = 35484
 
 Phase 2.2 Update Timing before SLR Path Opt
 Phase 2.2 Update Timing before SLR Path Opt | Checksum: 18fd2b1d8
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:18 . Memory (MB): peak = 4709.980 ; gain = 597.027 ; free physical = 17692 ; free virtual = 39256
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 4705.969 ; gain = 570.449 ; free physical = 17247 ; free virtual = 35484
 
 Phase 2.3 Post-Processing in Floorplanning
 Phase 2.3 Post-Processing in Floorplanning | Checksum: 18fd2b1d8
 
-Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 4709.980 ; gain = 597.027 ; free physical = 17692 ; free virtual = 39256
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 4705.969 ; gain = 570.449 ; free physical = 17262 ; free virtual = 35499
 
 Phase 2.4 Global Place Phase1
 Phase 2.4 Global Place Phase1 | Checksum: 1ab242065
 
-Time (s): cpu = 00:00:57 ; elapsed = 00:00:27 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17604 ; free virtual = 39168
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:36 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17207 ; free virtual = 35431
 
 Phase 2.5 Global Place Phase2
 
 Phase 2.5.1 UpdateTiming Before Physical Synthesis
 Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 266555af5
 
-Time (s): cpu = 00:00:58 ; elapsed = 00:00:27 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17604 ; free virtual = 39168
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:37 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17213 ; free virtual = 35436
 
 Phase 2.5.2 Physical Synthesis In Placer
 INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 1429 LUT instances to create LUTNM shape
@@ -1151,7 +1151,7 @@ INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was
 INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4770.980 ; gain = 0.000 ; free physical = 17604 ; free virtual = 39168
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4769.969 ; gain = 0.000 ; free physical = 17187 ; free virtual = 35410
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -1160,7 +1160,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |            0  |            538  |                   538  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |            0  |            538  |                   538  |           0  |           1  |  00:00:01  |
 |  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -1170,64 +1170,64 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |            0  |            538  |                   538  |           0  |           4  |  00:00:00  |
+|  Total                                            |            0  |            538  |                   538  |           0  |           4  |  00:00:01  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Phase 2.5.2 Physical Synthesis In Placer | Checksum: 27f703b1a
 
-Time (s): cpu = 00:01:00 ; elapsed = 00:00:28 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17606 ; free virtual = 39169
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:39 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17224 ; free virtual = 35447
 Phase 2.5 Global Place Phase2 | Checksum: 2b54293d6
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:30 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17610 ; free virtual = 39174
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:42 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17218 ; free virtual = 35442
 Phase 2 Global Placement | Checksum: 2b54293d6
 
-Time (s): cpu = 00:01:07 ; elapsed = 00:00:30 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17610 ; free virtual = 39174
+Time (s): cpu = 00:01:29 ; elapsed = 00:00:42 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17218 ; free virtual = 35442
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
 Phase 3.1 Commit Multi Column Macros | Checksum: 1e75dea76
 
-Time (s): cpu = 00:01:14 ; elapsed = 00:00:32 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17596 ; free virtual = 39160
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:44 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17185 ; free virtual = 35408
 
 Phase 3.2 Commit Most Macros & LUTRAMs
 Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 3079160e2
 
-Time (s): cpu = 00:01:16 ; elapsed = 00:00:33 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17606 ; free virtual = 39170
+Time (s): cpu = 00:01:42 ; elapsed = 00:00:46 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17209 ; free virtual = 35432
 
 Phase 3.3 Small Shape DP
 
 Phase 3.3.1 Small Shape Clustering
 Phase 3.3.1 Small Shape Clustering | Checksum: 23a527a2e
 
-Time (s): cpu = 00:01:22 ; elapsed = 00:00:35 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17598 ; free virtual = 39162
+Time (s): cpu = 00:01:51 ; elapsed = 00:00:49 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17082 ; free virtual = 35306
 
 Phase 3.3.2 Slice Area Swap
 
 Phase 3.3.2.1 Slice Area Swap Initial
 Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 25d6dd011
 
-Time (s): cpu = 00:01:24 ; elapsed = 00:00:37 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17599 ; free virtual = 39163
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:52 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17094 ; free virtual = 35345
 Phase 3.3.2 Slice Area Swap | Checksum: 25d6dd011
 
-Time (s): cpu = 00:01:25 ; elapsed = 00:00:37 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17599 ; free virtual = 39163
+Time (s): cpu = 00:01:54 ; elapsed = 00:00:52 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17104 ; free virtual = 35355
 Phase 3.3 Small Shape DP | Checksum: 25a30aeef
 
-Time (s): cpu = 00:01:27 ; elapsed = 00:00:38 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17582 ; free virtual = 39146
+Time (s): cpu = 00:01:57 ; elapsed = 00:00:53 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 17036 ; free virtual = 35328
 
 Phase 3.4 Re-assign LUT pins
 Phase 3.4 Re-assign LUT pins | Checksum: 2bf9f47a8
 
-Time (s): cpu = 00:01:28 ; elapsed = 00:00:39 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17581 ; free virtual = 39145
+Time (s): cpu = 00:01:58 ; elapsed = 00:00:53 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 16957 ; free virtual = 35257
 
 Phase 3.5 Pipeline Register Optimization
 Phase 3.5 Pipeline Register Optimization | Checksum: 2c61f02ae
 
-Time (s): cpu = 00:01:28 ; elapsed = 00:00:39 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17583 ; free virtual = 39147
+Time (s): cpu = 00:01:58 ; elapsed = 00:00:53 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 16977 ; free virtual = 35277
 Phase 3 Detail Placement | Checksum: 2c61f02ae
 
-Time (s): cpu = 00:01:28 ; elapsed = 00:00:39 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17593 ; free virtual = 39157
+Time (s): cpu = 00:01:58 ; elapsed = 00:00:54 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 16995 ; free virtual = 35295
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -1246,31 +1246,31 @@ INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximu
 INFO: [Physopt 32-619] Estimated Timing Summary | WNS=5.393 | TNS=0.000 |
 Phase 1 Physical Synthesis Initialization | Checksum: 17d6f4f43
 
-Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.18 . Memory (MB): peak = 4770.980 ; gain = 0.000 ; free physical = 17576 ; free virtual = 39140
+Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.25 . Memory (MB): peak = 4769.969 ; gain = 0.000 ; free physical = 16516 ; free virtual = 34866
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
 Ending Physical Synthesis Task | Checksum: 20830170c
 
-Time (s): cpu = 00:00:00.94 ; elapsed = 00:00:00.28 . Memory (MB): peak = 4770.980 ; gain = 0.000 ; free physical = 17577 ; free virtual = 39141
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.37 . Memory (MB): peak = 4769.969 ; gain = 0.000 ; free physical = 16499 ; free virtual = 34850
 Phase 4.1.1.1 BUFG Insertion | Checksum: 20cd2d689
 
-Time (s): cpu = 00:01:41 ; elapsed = 00:00:43 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17577 ; free virtual = 39141
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:59 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 16498 ; free virtual = 34848
 
 Phase 4.1.1.2 Post Placement Timing Optimization
 INFO: [Place 30-746] Post Placement Timing Summary WNS=5.393. For the most accurate timing information please run report_timing.
 Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1ca329912
 
-Time (s): cpu = 00:01:42 ; elapsed = 00:00:43 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:59 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 16436 ; free virtual = 34786
 
-Time (s): cpu = 00:01:42 ; elapsed = 00:00:43 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:59 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 16436 ; free virtual = 34786
 Phase 4.1 Post Commit Optimization | Checksum: 1ca329912
 
-Time (s): cpu = 00:01:42 ; elapsed = 00:00:43 . Memory (MB): peak = 4770.980 ; gain = 658.027 ; free physical = 17584 ; free virtual = 39148
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:02:15 ; elapsed = 00:00:59 . Memory (MB): peak = 4769.969 ; gain = 634.449 ; free physical = 16427 ; free virtual = 34778
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 16464 ; free virtual = 34815
 
 Phase 4.2 Post Placement Cleanup
 Phase 4.2 Post Placement Cleanup | Checksum: 1a37b0648
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:00:46 . Memory (MB): peak = 4780.965 ; gain = 668.012 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:03 . Memory (MB): peak = 4780.953 ; gain = 645.434 ; free physical = 16456 ; free virtual = 34807
 
 Phase 4.3 Placer Reporting
 
@@ -1291,24 +1291,24 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 
 Phase 4.3.1 Print Estimated Congestion | Checksum: 1a37b0648
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:00:46 . Memory (MB): peak = 4780.965 ; gain = 668.012 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:03 . Memory (MB): peak = 4780.953 ; gain = 645.434 ; free physical = 16449 ; free virtual = 34800
 Phase 4.3 Placer Reporting | Checksum: 1a37b0648
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:00:46 . Memory (MB): peak = 4780.965 ; gain = 668.012 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:03 . Memory (MB): peak = 4780.953 ; gain = 645.434 ; free physical = 16426 ; free virtual = 34778
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17544 ; free virtual = 39108
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 16410 ; free virtual = 34762
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:00:46 . Memory (MB): peak = 4780.965 ; gain = 668.012 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:03 . Memory (MB): peak = 4780.953 ; gain = 645.434 ; free physical = 16410 ; free virtual = 34762
 Phase 4 Post Placement Optimization and Clean-Up | Checksum: 18d5afd0b
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:00:47 . Memory (MB): peak = 4780.965 ; gain = 668.012 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:03 . Memory (MB): peak = 4780.953 ; gain = 645.434 ; free physical = 16402 ; free virtual = 34753
 Ending Placer Task | Checksum: 186a02a0d
 
-Time (s): cpu = 00:01:50 ; elapsed = 00:00:47 . Memory (MB): peak = 4780.965 ; gain = 668.012 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:02:26 ; elapsed = 00:01:03 . Memory (MB): peak = 4780.953 ; gain = 645.434 ; free physical = 16401 ; free virtual = 34752
 87 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:01:53 ; elapsed = 00:00:48 . Memory (MB): peak = 4780.965 ; gain = 731.094 ; free physical = 17544 ; free virtual = 39108
+place_design: Time (s): cpu = 00:02:31 ; elapsed = 00:01:05 . Memory (MB): peak = 4780.953 ; gain = 708.516 ; free physical = 16402 ; free virtual = 34753
 source /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_place_post.tcl
 INFO: System Diagram: Run step: placed
 
@@ -1318,7 +1318,7 @@ INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc
 
 Starting Initial Update Timing Task
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:01 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17551 ; free virtual = 39115
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 16080 ; free virtual = 34431
 INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 5.392 | TNS= 0.000 | 
 INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
 INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
@@ -1335,41 +1335,41 @@ INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 
 
 Phase 1 Build RT Design
 Checksum: PlaceDB: e0451f2 ConstDB: 0 ShapeSum: d93be499 RouteDB: 9f5ff382
-Nodegraph reading from file.  Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.26 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17535 ; free virtual = 39099
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.39 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15926 ; free virtual = 34277
 Post Restoration Checksum: NetGraph: 1562df94 | NumContArr: f30b60aa | Constraints: 64d77233 | Timing: c2a8fa9d
 Phase 1 Build RT Design | Checksum: 22feead0e
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15303 ; free virtual = 33655
 
 Phase 2 Router Initialization
 
 Phase 2.1 Fix Topology Constraints
 Phase 2.1 Fix Topology Constraints | Checksum: 22feead0e
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15302 ; free virtual = 33653
 
 Phase 2.2 Pre Route Cleanup
 Phase 2.2 Pre Route Cleanup | Checksum: 22feead0e
 
-Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17544 ; free virtual = 39108
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15265 ; free virtual = 33617
 
 Phase 2.3 Global Clock Net Routing
  Number of Nodes with overlaps = 0
 Phase 2.3 Global Clock Net Routing | Checksum: 1d3802453
 
-Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17544 ; free virtual = 39109
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15188 ; free virtual = 33539
 
 Phase 2.4 Update Timing
 Phase 2.4 Update Timing | Checksum: 2076091af
 
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17550 ; free virtual = 39114
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:06 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14927 ; free virtual = 33279
 INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.630  | TNS=0.000  | WHS=-0.079 | THS=-186.276|
 
 
 Phase 2.5 Soft Constraint Pins - Fast Budgeting
 Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 1e2add7e9
 
-Time (s): cpu = 00:00:15 ; elapsed = 00:00:05 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17583 ; free virtual = 39147
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14815 ; free virtual = 33167
 
 Router Utilization Summary
   Global Vertical Routing Utilization    = 0 %
@@ -1385,22 +1385,22 @@ Router Utilization Summary
 
 Phase 2 Router Initialization | Checksum: 1e2776bef
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17583 ; free virtual = 39147
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14815 ; free virtual = 33167
 
 Phase 3 Global Routing
 Phase 3 Global Routing | Checksum: 1e2776bef
 
-Time (s): cpu = 00:00:16 ; elapsed = 00:00:05 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17583 ; free virtual = 39147
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:08 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14815 ; free virtual = 33167
 
 Phase 4 Initial Routing
 
 Phase 4.1 Initial Net Routing Pass
 Phase 4.1 Initial Net Routing Pass | Checksum: 13bfecda8
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17568 ; free virtual = 39132
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:10 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14832 ; free virtual = 33185
 Phase 4 Initial Routing | Checksum: 1703d0d8b
 
-Time (s): cpu = 00:00:19 ; elapsed = 00:00:06 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17568 ; free virtual = 39132
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:10 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14832 ; free virtual = 33185
 
 Phase 5 Rip-up And Reroute
 
@@ -1413,7 +1413,7 @@ INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.553  | TNS=0.000  | WHS
 
 Phase 5.1 Global Iteration 0 | Checksum: 1ff246c19
 
-Time (s): cpu = 00:00:37 ; elapsed = 00:00:11 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17583 ; free virtual = 39148
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:19 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14603 ; free virtual = 32962
 
 Phase 5.2 Global Iteration 1
  Number of Nodes with overlaps = 0
@@ -1421,25 +1421,25 @@ INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.553  | TNS=0.000  | WHS
 
 Phase 5.2 Global Iteration 1 | Checksum: f566d904
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:20 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14571 ; free virtual = 32930
 Phase 5 Rip-up And Reroute | Checksum: f566d904
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:20 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14571 ; free virtual = 32930
 
 Phase 6 Delay and Skew Optimization
 
 Phase 6.1 Delay CleanUp
 Phase 6.1 Delay CleanUp | Checksum: 1595c2cc8
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:20 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14572 ; free virtual = 32931
 
 Phase 6.2 Clock Skew Optimization
 Phase 6.2 Clock Skew Optimization | Checksum: 1595c2cc8
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:20 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14564 ; free virtual = 32923
 Phase 6 Delay and Skew Optimization | Checksum: 1595c2cc8
 
-Time (s): cpu = 00:00:39 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:20 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14564 ; free virtual = 32923
 
 Phase 7 Post Hold Fix
 
@@ -1448,10 +1448,10 @@ INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.553  | TNS=0.000  | WHS
 
 Phase 7.1 Hold Fix Iter | Checksum: 17371c9a2
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17583 ; free virtual = 39147
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:21 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14433 ; free virtual = 32793
 Phase 7 Post Hold Fix | Checksum: 17371c9a2
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17583 ; free virtual = 39147
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:21 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14433 ; free virtual = 32793
 
 Phase 8 Route finalize
 
@@ -1469,29 +1469,29 @@ Router Utilization Summary
 
 Phase 8 Route finalize | Checksum: 17371c9a2
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17583 ; free virtual = 39147
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:21 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14433 ; free virtual = 32792
 
 Phase 9 Verifying routed nets
 
  Verification completed successfully
 Phase 9 Verifying routed nets | Checksum: 17371c9a2
 
-Time (s): cpu = 00:00:42 ; elapsed = 00:00:12 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17583 ; free virtual = 39147
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:22 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14435 ; free virtual = 32795
 
 Phase 10 Depositing Routes
 Phase 10 Depositing Routes | Checksum: 17371c9a2
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14397 ; free virtual = 32756
 
 Phase 11 Resolve XTalk
 Phase 11 Resolve XTalk | Checksum: 17371c9a2
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14399 ; free virtual = 32759
 
 Phase 12 Post Process Routing
 Phase 12 Post Process Routing | Checksum: 17371c9a2
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14337 ; free virtual = 32696
 
 Phase 13 Post Router Timing
 INFO: [Route 35-57] Estimated Timing Summary | WNS=4.553  | TNS=0.000  | WHS=0.011  | THS=0.000  |
@@ -1499,23 +1499,23 @@ INFO: [Route 35-57] Estimated Timing Summary | WNS=4.553  | TNS=0.000  | WHS=0.0
 INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
 Phase 13 Post Router Timing | Checksum: 17371c9a2
 
-Time (s): cpu = 00:00:43 ; elapsed = 00:00:13 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
-Total Elapsed time in route_design: 13.25 secs
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14337 ; free virtual = 32697
+Total Elapsed time in route_design: 22.81 secs
 
 Phase 14 Post-Route Event Processing
 Phase 14 Post-Route Event Processing | Checksum: 1b334d94f
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:13 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:23 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14321 ; free virtual = 32681
 INFO: [Route 35-16] Router Completed Successfully
 Ending Routing Task | Checksum: 1b334d94f
 
-Time (s): cpu = 00:00:44 ; elapsed = 00:00:13 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:23 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14289 ; free virtual = 32649
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
 102 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:14 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17584 ; free virtual = 39148
+route_design: Time (s): cpu = 00:01:12 ; elapsed = 00:00:23 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 14277 ; free virtual = 32637
 INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -file vitis_design_wrapper_timing_summary_routed.rpt -pb vitis_design_wrapper_timing_summary_routed.pb -rpx vitis_design_wrapper_timing_summary_routed.rpx -warn_on_violation 
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
@@ -1524,16 +1524,16 @@ INFO: System Diagram: Run step: routed
 
 WARNING: Unable to find metadata file: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/debug_ip_layout.rtd
 INFO: [Timing 38-480] Writing timing data to binary archive.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.07 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17567 ; free virtual = 39141
-Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.52 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17555 ; free virtual = 39149
-Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17555 ; free virtual = 39149
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15845 ; free virtual = 34290
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.71 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15859 ; free virtual = 34325
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15859 ; free virtual = 34325
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Wrote RouteStorage: Time (s): cpu = 00:00:00.6 ; elapsed = 00:00:00.22 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17555 ; free virtual = 39153
-Wrote Netlist Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17554 ; free virtual = 39154
-Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17548 ; free virtual = 39151
-Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.79 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17549 ; free virtual = 39152
+Wrote RouteStorage: Time (s): cpu = 00:00:00.96 ; elapsed = 00:00:00.33 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15824 ; free virtual = 34295
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15823 ; free virtual = 34296
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15823 ; free virtual = 34299
+Write Physdb Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 15831 ; free virtual = 34308
 INFO: [Common 17-1381] The checkpoint '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/vitis_design_wrapper_routed.dcp' has been generated.
 source /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_pre.tcl
 INFO: [OCL_UTIL] clock frequency scaling is disabled for this flow, perform the normal timing check instead
@@ -1595,13 +1595,13 @@ INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Common 17-83] Releasing license: Implementation
 144 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:08 ; elapsed = 00:00:23 . Memory (MB): peak = 4780.965 ; gain = 0.000 ; free physical = 17909 ; free virtual = 39494
+write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 4780.953 ; gain = 0.000 ; free physical = 12981 ; free virtual = 31508
 source /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/scripts/impl_1/_full_write_bitstream_post.tcl
-INFO: [Common 17-206] Exiting Vivado at Thu May  7 10:09:09 2026...
-[Thu May  7 10:09:10 2026] impl_1 finished
-wait_on_runs: Time (s): cpu = 00:03:41 ; elapsed = 00:02:02 . Memory (MB): peak = 2238.250 ; gain = 0.000 ; free physical = 21423 ; free virtual = 43008
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 15:27:48 2026...
+[Thu May  7 15:27:53 2026] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00.71 ; elapsed = 00:02:54 . Memory (MB): peak = 2239.656 ; gain = 0.000 ; free physical = 16512 ; free virtual = 35039
 INFO: [OCL_UTIL] internal step: log_generated_reports for implementation '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/output/generated_reports.log'
 INFO: [OCL_UTIL] internal step: copy implementation run (impl_1) output files
 Check VPL, containing 6 checks, has run: 0 errors
-[10:09:10] Run vpl: Step impl: Completed
-INFO: [Common 17-206] Exiting Vivado at Thu May  7 10:09:10 2026...
+[15:27:53] Run vpl: Step impl: Completed
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 15:27:53 2026...

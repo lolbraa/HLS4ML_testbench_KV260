@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Thu May  7 09:54:16 2026
-# Process ID         : 448623
+# Start of session at: Thu May  7 15:15:56 2026
+# Process ID         : 368079
 # Current directory  : /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1
 # Command line       : vivado -log vitis_design_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_wrapper.tcl
 # Log file           : /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7117_ebops=303_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/synth_1/vitis_design_wrapper.vds
@@ -19,6 +19,6 @@
 # Host memory        : 65838 MB
 # Swap memory        : 0 MB
 # Total Virtual      : 65838 MB
-# Available Virtual  : 45096 MB
+# Available Virtual  : 42177 MB
 #-----------------------------------------------------------
 source vitis_design_wrapper.tcl -notrace

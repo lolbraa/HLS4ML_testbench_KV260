@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu May  7 10:09:18 2026",
- "timestampMillis": "1778148558247",
+ "dateTimestamp": "Thu May  7 15:28:11 2026",
+ "timestampMillis": "1778167691612",
  "buildStep": {
-  "cmdId": "627d2db7-d7e7-46ca-87e4-c9d9cc3192a9",
+  "cmdId": "d65451e5-3e33-40fa-9880-c3432c3041ea",
   "name": "v++",
   "logFile": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/logs/vitis_unified_project.steps.log",
   "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/hls_kernel_config.cfg --work_dir vitis_unified_project ",
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 10:09:18 2026",
- "timestampMillis": "1778148558248",
+ "dateTimestamp": "Thu May  7 15:28:11 2026",
+ "timestampMillis": "1778167691612",
  "status": {
-  "cmdId": "627d2db7-d7e7-46ca-87e4-c9d9cc3192a9",
+  "cmdId": "d65451e5-3e33-40fa-9880-c3432c3041ea",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Thu May  7 10:09:19 2026",
- "timestampMillis": "1778148559624",
+ "dateTimestamp": "Thu May  7 15:28:13 2026",
+ "timestampMillis": "1778167693617",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -86,10 +86,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 10:09:19 2026",
- "timestampMillis": "1778148559625",
+ "dateTimestamp": "Thu May  7 15:28:13 2026",
+ "timestampMillis": "1778167693619",
  "buildStep": {
-  "cmdId": "8e92ba44-54c4-4528-b43e-797a4aab671c",
+  "cmdId": "70fb5b02-8827-49d6-a07e-405ac75bdbf3",
   "name": "",
   "logFile": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/hls.log",
   "commandLine": "",
@@ -102,10 +102,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 10:09:19 2026",
- "timestampMillis": "1778148559625",
+ "dateTimestamp": "Thu May  7 15:28:13 2026",
+ "timestampMillis": "1778167693620",
  "status": {
-  "cmdId": "8e92ba44-54c4-4528-b43e-797a4aab671c",
+  "cmdId": "70fb5b02-8827-49d6-a07e-405ac75bdbf3",
   "state": "CS_RUNNING"
  }
 }
@@ -113,8 +113,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 10:09:19 2026",
- "timestampMillis": "1778148559625",
+ "dateTimestamp": "Thu May  7 15:28:13 2026",
+ "timestampMillis": "1778167693620",
  "report": {
   "path": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/hls_data.json",
   "name": "",
@@ -127,8 +127,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 10:09:19 2026",
- "timestampMillis": "1778148559625",
+ "dateTimestamp": "Thu May  7 15:28:13 2026",
+ "timestampMillis": "1778167693620",
  "report": {
   "path": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/syn/report/csynth.rpt",
   "name": "",
@@ -141,8 +141,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 10:09:19 2026",
- "timestampMillis": "1778148559626",
+ "dateTimestamp": "Thu May  7 15:28:13 2026",
+ "timestampMillis": "1778167693621",
  "report": {
   "path": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/syn/report/csynth.xml",
   "name": "",
@@ -155,8 +155,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 10:10:06 2026",
- "timestampMillis": "1778148606674",
+ "dateTimestamp": "Thu May  7 15:29:20 2026",
+ "timestampMillis": "1778167760596",
  "report": {
   "path": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls",
   "name": "",
@@ -169,8 +169,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 10:10:06 2026",
- "timestampMillis": "1778148606674",
+ "dateTimestamp": "Thu May  7 15:29:20 2026",
+ "timestampMillis": "1778167760596",
  "report": {
   "path": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls",
   "name": "",
@@ -183,8 +183,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 10:10:06 2026",
- "timestampMillis": "1778148606675",
+ "dateTimestamp": "Thu May  7 15:29:20 2026",
+ "timestampMillis": "1778167760596",
  "report": {
   "path": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls",
   "name": "",
@@ -197,10 +197,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 10:10:06 2026",
- "timestampMillis": "1778148606675",
+ "dateTimestamp": "Thu May  7 15:29:20 2026",
+ "timestampMillis": "1778167760596",
  "status": {
-  "cmdId": "8e92ba44-54c4-4528-b43e-797a4aab671c",
+  "cmdId": "70fb5b02-8827-49d6-a07e-405ac75bdbf3",
   "state": "CS_PASSED"
  }
 }
@@ -208,10 +208,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 10:10:10 2026",
- "timestampMillis": "1778148610830",
+ "dateTimestamp": "Thu May  7 15:29:26 2026",
+ "timestampMillis": "1778167766975",
  "status": {
-  "cmdId": "627d2db7-d7e7-46ca-87e4-c9d9cc3192a9",
+  "cmdId": "d65451e5-3e33-40fa-9880-c3432c3041ea",
   "state": "CS_PASSED"
  }
 }
@@ -219,8 +219,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 10:10:10 2026",
- "timestampMillis": "1778148610856",
+ "dateTimestamp": "Thu May  7 15:29:27 2026",
+ "timestampMillis": "1778167767024",
  "report": {
   "path": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/reports/v++_compile_vitis_unified_project_guidance.html",
   "name": "",
@@ -233,8 +233,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 10:10:10 2026",
- "timestampMillis": "1778148610856",
+ "dateTimestamp": "Thu May  7 15:29:27 2026",
+ "timestampMillis": "1778167767025",
  "report": {
   "path": "/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/reports/.db/v++_compile_vitis_unified_project_guidance.pb3",
   "name": "",

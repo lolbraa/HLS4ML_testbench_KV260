@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.2
-| Date         : Thu May  7 10:14:05 2026
+| Date         : Thu May  7 15:35:13 2026
 | Host         : 11c2efc5f272
 | Design       : design_1
 | Device       : xck26-sfvc784-2LV-C-
@@ -19,7 +19,7 @@ Number of global clocks: 1
 	Number of BUFG_GT: 0
 	Number of BUFG_PS: 1
 	Number of BUFG_FABRIC: 0
-Pre-CRP Checker took 0 secs
+Pre-CRP Checker took 0.01 secs
 
 **************************************
 Clock Nets/Source Overview (CRP Input)

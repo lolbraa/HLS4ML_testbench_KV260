@@ -1,0 +1,70 @@
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29448:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29448:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29462:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29462:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29476:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29476:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:32953:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:32953:7: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47783:9: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_27_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47783:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47795:9: remark: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_39_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47795:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47812:9: remark: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_56_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47812:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49968:5: remark: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+    for (int q = 0; q < batch_size; q++) {
+    ^
+    VITIS_LOOP_13_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49968:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49969:9: remark: Added loop label VITIS_LOOP_14_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < TENSOR_SIZE / INPUT_LAYER_ARR::size; i++) {
+        ^
+        VITIS_LOOP_14_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49969:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49971:13: remark: Added loop label VITIS_LOOP_16_3:   [xilinx-label-all-loops]
+            for (int j = 0; j < INPUT_LAYER_ARR::size; j++) {
+            ^
+            VITIS_LOOP_16_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49971:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49984:5: remark: Added loop label VITIS_LOOP_29_1:   [xilinx-label-all-loops]
+    for (int q = 0; q < batch_size; q++) {
+    ^
+    VITIS_LOOP_29_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49984:5: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49985:9: remark: Added loop label VITIS_LOOP_30_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < TENSOR_SIZE / OUT_LAYER_ARR::size; i++) {
+        ^
+        VITIS_LOOP_30_2: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49985:9: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49987:13: remark: Added loop label VITIS_LOOP_32_3:   [xilinx-label-all-loops]
+            for (int j = 0; j < OUT_LAYER_ARR::size; j++) {
+            ^
+            VITIS_LOOP_32_3: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49987:13: note: FIX-IT applied suggested code changes
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49997:5: remark: Added loop label VITIS_LOOP_42_1:   [xilinx-label-all-loops]
+    for (int q = 0; q < batch_size; q++) {
+    ^
+    VITIS_LOOP_42_1: 
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU-New/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49997:5: note: FIX-IT applied suggested code changes

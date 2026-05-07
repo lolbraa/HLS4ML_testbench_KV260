@@ -1,0 +1,3 @@
+model,time_seconds,time_minutes
+qkeras acc=0.7298 Distributed Arithmetic,591.0117943286896,9.850196572144826
+qkeras acc=0.7298 latency,556.89794754982,9.281632459163665

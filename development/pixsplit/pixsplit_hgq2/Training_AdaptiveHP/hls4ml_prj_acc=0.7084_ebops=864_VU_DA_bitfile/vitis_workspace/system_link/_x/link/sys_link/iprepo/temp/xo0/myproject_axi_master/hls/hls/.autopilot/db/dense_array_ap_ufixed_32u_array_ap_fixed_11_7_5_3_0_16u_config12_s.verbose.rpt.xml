@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'dense_array_ap_ufixed_32u_array_ap_fixed_11_7_5_3_0_16u_config12_s'" level="0">
-<item name = "Date">Thu May  7 11:30:57 2026
+<item name = "Date">Thu May  7 15:25:24 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">vitis_unified_project</item>

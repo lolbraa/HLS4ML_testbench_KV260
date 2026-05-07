@@ -1,0 +1,3 @@
+relativeroot=/work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_latency_bitfile/vitis_workspace/myproject
+original_argv=--mode hls --package --config /work/development/jettag/jettag-qkeras/Qkeras_Pruned/hls4ml_prj_acc=0.7298_VU_latency_bitfile/hls_kernel_config.cfg --work_dir vitis_unified_project 
+

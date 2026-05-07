@@ -1,8 +1,8 @@
 INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
 	Reports: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link
 	Log files: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/link
-INFO: [v++ 60-1548] Creating build summary session with primary output /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin.link_summary, at Thu May  7 10:04:34 2026
-INFO: [v++ 60-1315] Creating rulecheck session with output '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html', at Thu May  7 10:04:34 2026
+INFO: [v++ 60-1548] Creating build summary session with primary output /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin.link_summary, at Thu May  7 15:21:34 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html', at Thu May  7 15:21:34 2026
 INFO: [v++ 60-895]   Target platform: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
 INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa'
 INFO: [v++ 60-629] Linking for hardware target
@@ -10,180 +10,182 @@ INFO: [v++ 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_ca
 INFO: [v++ 82-31] Launching aie baremetal script for: link
 WARNING: [v++ 82-11894] The baremetal_metadata.cpp file was not created successfully.
 INFO: [v++ 60-1332] Run 'run_link' status: Not started
-INFO: [v++ 60-1443] [10:04:34] Run run_link: Step system_link: Started
+INFO: [v++ 60-1443] [15:21:35] Run run_link: Step system_link: Started
 INFO: [v++ 60-1453] Command Line: system_link --xo /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int --temp_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link
 INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
 INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo
 INFO: [SYSTEM_LINK 82-53] Creating IP database /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-INFO: [SYSTEM_LINK 82-38] [10:04:35] build_xd_ip_db started: /opt/Xilinx/2025.2/Vitis/bin/build_xd_ip_db -ip_search 0  -sds-pf /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/kv260_axi_all_platform.hpfm -clkid 0 -ip /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/iprepo/xilinx_com_hls_myproject_axi_master_1_0,myproject_axi_master -o /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
-INFO: [SYSTEM_LINK 82-37] [10:04:35] build_xd_ip_db finished successfully
-Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 21351 ; free virtual = 43434
+INFO: [SYSTEM_LINK 82-38] [15:21:36] build_xd_ip_db started: /opt/Xilinx/2025.2/Vitis/bin/build_xd_ip_db -ip_search 0  -sds-pf /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/kv260_axi_all_platform.hpfm -clkid 0 -ip /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/iprepo/xilinx_com_hls_myproject_axi_master_1_0,myproject_axi_master -o /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [15:21:36] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.16 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 16976 ; free virtual = 39643
 INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
 INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
-INFO: [SYSTEM_LINK 82-38] [10:04:35] cfgen started: /opt/Xilinx/2025.2/Vitis/bin/cfgen  -dpa_mem_offload false -dpa_aie_mem_offload false -dmclkid 0 -r /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [15:21:36] cfgen started: /opt/Xilinx/2025.2/Vitis/bin/cfgen  -dpa_mem_offload false -dpa_aie_mem_offload false -dmclkid 0 -r /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
 INFO: [CFGEN 83-0] Kernel Specs: 
 INFO: [CFGEN 83-0]   kernel: myproject_axi_master, num: 1  {myproject_axi_master_1}
 INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_in0_ptr_input_layer to HP0
 INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_out0_ptr_layer12_out to HP0
-INFO: [SYSTEM_LINK 82-37] [10:04:35] cfgen finished successfully
-Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.58 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 21352 ; free virtual = 43435
+INFO: [SYSTEM_LINK 82-37] [15:21:36] cfgen finished successfully
+Time (s): cpu = 00:00:00.6 ; elapsed = 00:00:00.65 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 17036 ; free virtual = 39731
 INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
-INFO: [SYSTEM_LINK 82-38] [10:04:35] cf2bd started: /opt/Xilinx/2025.2/Vitis/bin/cf2bd  --linux --trace_buffer 1024 --input_file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd --temp_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link --output_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int
+INFO: [SYSTEM_LINK 82-38] [15:21:36] cf2bd started: /opt/Xilinx/2025.2/Vitis/bin/cf2bd  --linux --trace_buffer 1024 --input_file /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd --temp_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link --output_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int
 INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
 INFO: [CF2BD 82-28] cf2xd finished successfully
 INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -dn dr -dp /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd
 INFO: [CF2BD 82-28] cf_xsd finished successfully
-INFO: [SYSTEM_LINK 82-37] [10:04:36] cf2bd finished successfully
-Time (s): cpu = 00:00:00.75 ; elapsed = 00:00:00.86 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 21333 ; free virtual = 43416
-INFO: [v++ 60-1441] [10:04:36] Run run_link: Step system_link: Completed
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 21419 ; free virtual = 43503
-INFO: [v++ 60-1443] [10:04:36] Run run_link: Step cf2sw: Started
+INFO: [SYSTEM_LINK 82-37] [15:21:37] cf2bd finished successfully
+Time (s): cpu = 00:00:00.84 ; elapsed = 00:00:01 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 16825 ; free virtual = 39587
+INFO: [v++ 60-1441] [15:21:37] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 16895 ; free virtual = 39657
+INFO: [v++ 60-1443] [15:21:37] Run run_link: Step cf2sw: Started
 INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml
 INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
-INFO: [v++ 60-1441] [10:04:37] Run run_link: Step cf2sw: Completed
-Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.65 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 21436 ; free virtual = 43520
-INFO: [v++ 60-1443] [10:04:37] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1441] [15:21:38] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.78 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 16885 ; free virtual = 39673
+INFO: [v++ 60-1443] [15:21:38] Run run_link: Step rtd2_system_diagram: Started
 INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
 INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
-INFO: [v++ 60-1441] [10:04:37] Run run_link: Step rtd2_system_diagram: Completed
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.03 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 21433 ; free virtual = 43517
-INFO: [v++ 60-1443] [10:04:37] Run run_link: Step vpl: Started
+INFO: [v++ 60-1441] [15:21:38] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.04 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 16880 ; free virtual = 39667
+INFO: [v++ 60-1443] [15:21:38] Run run_link: Step vpl: Started
 INFO: [v++ 60-1453] Command Line: vpl -t hw -f /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/.ipcache --output_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int --log_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/link --report_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link --config /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link --no-info --iprepo /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link/vpl.pb /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/dr.bd.tcl
 INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
 
 ****** vpl v2025.2 (64-bit)
   **** SW Build 6295257 on 2025-11-13-01:29:13
-  **** Start of session at: Thu May  7 10:04:38 2026
+  **** Start of session at: Thu May  7 15:21:39 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 INFO: [VPL 60-839] Read in kernel information from file '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/kernel_info.dat'.
 INFO: [VPL 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
 INFO: [VPL 60-1032] Extracting hardware platform to /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform
-[10:04:41] Run vpl: Step create_project: Started
+[15:21:43] Run vpl: Step create_project: Started
 Creating Vivado project.
-[10:04:44] Run vpl: Step create_project: Completed
-[10:04:44] Run vpl: Step create_bd: Started
-[10:04:46] Run vpl: Step create_bd: Completed
-[10:04:46] Run vpl: Step update_bd: Started
-[10:04:46] Run vpl: Step update_bd: Completed
-[10:04:46] Run vpl: Step generate_target: Started
-[10:05:05] Run vpl: Step generate_target: Completed
-[10:05:05] Run vpl: Step config_hw_runs: Started
-[10:05:07] Run vpl: Step config_hw_runs: Completed
-[10:05:07] Run vpl: Step synth: Started
-[10:05:38] Block-level synthesis in progress, 1 of 10 jobs complete, 7 jobs running.
-[10:06:08] Block-level synthesis in progress, 5 of 10 jobs complete, 5 jobs running.
-[10:06:38] Block-level synthesis in progress, 10 of 10 jobs complete, 0 jobs running.
-[10:07:06] Run vpl: Step synth: Completed
-[10:07:06] Run vpl: Step impl: Started
-[10:07:37] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 02m 59s 
+[15:21:46] Run vpl: Step create_project: Completed
+[15:21:46] Run vpl: Step create_bd: Started
+[15:21:50] Run vpl: Step create_bd: Completed
+[15:21:50] Run vpl: Step update_bd: Started
+[15:21:50] Run vpl: Step update_bd: Completed
+[15:21:50] Run vpl: Step generate_target: Started
+[15:22:19] Run vpl: Step generate_target: Completed
+[15:22:19] Run vpl: Step config_hw_runs: Started
+[15:22:21] Run vpl: Step config_hw_runs: Completed
+[15:22:21] Run vpl: Step synth: Started
+[15:22:52] Block-level synthesis in progress, 0 of 10 jobs complete, 8 jobs running.
+[15:23:22] Block-level synthesis in progress, 5 of 10 jobs complete, 5 jobs running.
+[15:23:52] Block-level synthesis in progress, 7 of 10 jobs complete, 3 jobs running.
+[15:24:22] Top-level synthesis in progress.
+[15:24:52] Top-level synthesis in progress.
+[15:24:58] Run vpl: Step synth: Completed
+[15:24:58] Run vpl: Step impl: Started
+[15:25:29] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 03m 49s 
 
-[10:07:37] Starting logic optimization..
-[10:07:37] Phase 1 Initialization
-[10:07:37] Phase 1.1 Core Generation And Design Setup
-[10:07:37] Phase 1.2 Setup Constraints And Sort Netlist
-[10:07:37] Phase 2 Timer Update And Timing Data Collection
-[10:07:37] Phase 2.1 Detect if minReqCache needed
-[10:07:37] Phase 2.2 Timer Update
-[10:07:37] Phase 2.3 Timing Data Collection
-[10:07:37] Phase 3 Retarget
-[10:07:37] Phase 4 Constant propagation
-[10:07:37] Phase 5 Sweep
-[10:07:37] Phase 6 BUFG optimization
-[10:07:37] Phase 7 Shift Register Optimization
-[10:07:37] Phase 8 Post Processing Netlist
-[10:07:37] Phase 9 Finalization
-[10:07:37] Phase 9.1 Finalizing Design Cores and Updating Shapes
-[10:07:37] Phase 9.2 Verifying Netlist Connectivity
-[10:08:07] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 00m 30s 
+[15:25:29] Starting logic optimization..
+[15:25:59] Phase 1 Initialization
+[15:25:59] Phase 1.1 Core Generation And Design Setup
+[15:25:59] Phase 1.2 Setup Constraints And Sort Netlist
+[15:25:59] Phase 2 Timer Update And Timing Data Collection
+[15:25:59] Phase 2.1 Detect if minReqCache needed
+[15:25:59] Phase 2.2 Timer Update
+[15:25:59] Phase 2.3 Timing Data Collection
+[15:25:59] Phase 3 Retarget
+[15:25:59] Phase 4 Constant propagation
+[15:25:59] Phase 5 Sweep
+[15:25:59] Phase 6 BUFG optimization
+[15:25:59] Phase 7 Shift Register Optimization
+[15:25:59] Phase 8 Post Processing Netlist
+[15:25:59] Phase 9 Finalization
+[15:25:59] Phase 9.1 Finalizing Design Cores and Updating Shapes
+[15:25:59] Phase 9.2 Verifying Netlist Connectivity
+[15:25:59] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 00m 30s 
 
-[10:08:07] Starting logic placement..
-[10:08:07] Phase 1 Placer Initialization
-[10:08:07] Phase 1.1 Placer Initialization Netlist Sorting
-[10:08:07] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-[10:08:07] Phase 1.3 Build Placer Netlist Model
-[10:08:07] Phase 1.4 Constrain Clocks/Macros
-[10:08:07] Phase 2 Global Placement
-[10:08:07] Phase 2.1 Floorplanning
-[10:08:07] Phase 2.1.1 Partition Driven Placement
-[10:08:07] Phase 2.1.1.1 PBP: Partition Driven Placement
-[10:08:07] Phase 2.1.1.2 PBP: Clock Region Placement
-[10:08:07] Phase 2.1.1.3 PBP: Compute Congestion
-[10:08:07] Phase 2.1.1.4 PBP: UpdateTiming
-[10:08:07] Phase 2.1.1.5 PBP: Add part constraints
-[10:08:07] Phase 2.2 Update Timing before SLR Path Opt
-[10:08:07] Phase 2.3 Post-Processing in Floorplanning
-[10:08:07] Phase 2.4 Global Place Phase1
-[10:08:07] Phase 2.5 Global Place Phase2
-[10:08:07] Phase 2.5.1 UpdateTiming Before Physical Synthesis
-[10:08:07] Phase 2.5.2 Physical Synthesis In Placer
-[10:08:37] Phase 3 Detail Placement
-[10:08:37] Phase 3.1 Commit Multi Column Macros
-[10:08:37] Phase 3.2 Commit Most Macros & LUTRAMs
-[10:08:37] Phase 3.3 Small Shape DP
-[10:08:37] Phase 3.3.1 Small Shape Clustering
-[10:08:37] Phase 3.3.2 Slice Area Swap
-[10:08:37] Phase 3.3.2.1 Slice Area Swap Initial
-[10:08:37] Phase 3.4 Re-assign LUT pins
-[10:08:37] Phase 3.5 Pipeline Register Optimization
-[10:08:37] Phase 4 Post Placement Optimization and Clean-Up
-[10:08:37] Phase 4.1 Post Commit Optimization
-[10:08:37] Phase 4.1.1 Post Placement Optimization
-[10:08:37] Phase 4.1.1.1 BUFG Insertion
-[10:08:37] Phase 1 Physical Synthesis Initialization
-[10:08:37] Phase 4.1.1.2 Post Placement Timing Optimization
-[10:08:37] Phase 4.2 Post Placement Cleanup
-[10:08:37] Phase 4.3 Placer Reporting
-[10:08:37] Phase 4.3.1 Print Estimated Congestion
-[10:08:37] Phase 4.4 Final Placement Cleanup
-[10:08:37] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 00m 30s 
+[15:25:59] Starting logic placement..
+[15:25:59] Phase 1 Placer Initialization
+[15:25:59] Phase 1.1 Placer Initialization Netlist Sorting
+[15:25:59] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[15:25:59] Phase 1.3 Build Placer Netlist Model
+[15:25:59] Phase 1.4 Constrain Clocks/Macros
+[15:25:59] Phase 2 Global Placement
+[15:25:59] Phase 2.1 Floorplanning
+[15:25:59] Phase 2.1.1 Partition Driven Placement
+[15:25:59] Phase 2.1.1.1 PBP: Partition Driven Placement
+[15:26:29] Phase 2.1.1.2 PBP: Clock Region Placement
+[15:26:29] Phase 2.1.1.3 PBP: Compute Congestion
+[15:26:29] Phase 2.1.1.4 PBP: UpdateTiming
+[15:26:29] Phase 2.1.1.5 PBP: Add part constraints
+[15:26:29] Phase 2.2 Update Timing before SLR Path Opt
+[15:26:29] Phase 2.3 Post-Processing in Floorplanning
+[15:26:29] Phase 2.4 Global Place Phase1
+[15:26:29] Phase 2.5 Global Place Phase2
+[15:26:29] Phase 2.5.1 UpdateTiming Before Physical Synthesis
+[15:26:29] Phase 2.5.2 Physical Synthesis In Placer
+[15:26:29] Phase 3 Detail Placement
+[15:26:29] Phase 3.1 Commit Multi Column Macros
+[15:26:29] Phase 3.2 Commit Most Macros & LUTRAMs
+[15:26:59] Phase 3.3 Small Shape DP
+[15:26:59] Phase 3.3.1 Small Shape Clustering
+[15:26:59] Phase 3.3.2 Slice Area Swap
+[15:26:59] Phase 3.3.2.1 Slice Area Swap Initial
+[15:26:59] Phase 3.4 Re-assign LUT pins
+[15:26:59] Phase 3.5 Pipeline Register Optimization
+[15:26:59] Phase 4 Post Placement Optimization and Clean-Up
+[15:26:59] Phase 4.1 Post Commit Optimization
+[15:26:59] Phase 4.1.1 Post Placement Optimization
+[15:26:59] Phase 4.1.1.1 BUFG Insertion
+[15:26:59] Phase 1 Physical Synthesis Initialization
+[15:26:59] Phase 4.1.1.2 Post Placement Timing Optimization
+[15:26:59] Phase 4.2 Post Placement Cleanup
+[15:26:59] Phase 4.3 Placer Reporting
+[15:26:59] Phase 4.3.1 Print Estimated Congestion
+[15:26:59] Phase 4.4 Final Placement Cleanup
+[15:26:59] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 01m 00s 
 
-[10:08:37] Starting logic routing..
-[10:08:37] Phase 1 Build RT Design
-[10:08:37] Phase 2 Router Initialization
-[10:08:37] Phase 2.1 Fix Topology Constraints
-[10:08:37] Phase 2.2 Pre Route Cleanup
-[10:08:37] Phase 2.3 Global Clock Net Routing
-[10:08:37] Phase 2.4 Update Timing
-[10:08:37] Phase 2.5 Soft Constraint Pins - Fast Budgeting
-[10:08:37] Phase 3 Global Routing
-[10:08:37] Phase 4 Initial Routing
-[10:08:37] Phase 4.1 Initial Net Routing Pass
-[10:08:37] Phase 5 Rip-up And Reroute
-[10:08:37] Phase 5.1 Global Iteration 0
-[10:09:07] Phase 5.2 Global Iteration 1
-[10:09:07] Phase 6 Delay and Skew Optimization
-[10:09:07] Phase 6.1 Delay CleanUp
-[10:09:07] Phase 6.2 Clock Skew Optimization
-[10:09:07] Phase 7 Post Hold Fix
-[10:09:07] Phase 7.1 Hold Fix Iter
-[10:09:07] Phase 8 Route finalize
-[10:09:07] Phase 9 Verifying routed nets
-[10:09:07] Phase 10 Depositing Routes
-[10:09:07] Phase 11 Resolve XTalk
-[10:09:07] Phase 12 Post Process Routing
-[10:09:07] Phase 13 Post Router Timing
-[10:09:07] Phase 14 Post-Route Event Processing
-[10:09:07] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 00m 30s 
+[15:26:59] Starting logic routing..
+[15:26:59] Phase 1 Build RT Design
+[15:26:59] Phase 2 Router Initialization
+[15:26:59] Phase 2.1 Fix Topology Constraints
+[15:26:59] Phase 2.2 Pre Route Cleanup
+[15:26:59] Phase 2.3 Global Clock Net Routing
+[15:26:59] Phase 2.4 Update Timing
+[15:26:59] Phase 2.5 Soft Constraint Pins - Fast Budgeting
+[15:26:59] Phase 3 Global Routing
+[15:26:59] Phase 4 Initial Routing
+[15:26:59] Phase 4.1 Initial Net Routing Pass
+[15:27:29] Phase 5 Rip-up And Reroute
+[15:27:29] Phase 5.1 Global Iteration 0
+[15:27:29] Phase 5.2 Global Iteration 1
+[15:27:29] Phase 6 Delay and Skew Optimization
+[15:27:29] Phase 6.1 Delay CleanUp
+[15:27:29] Phase 6.2 Clock Skew Optimization
+[15:27:29] Phase 7 Post Hold Fix
+[15:27:29] Phase 7.1 Hold Fix Iter
+[15:27:29] Phase 8 Route finalize
+[15:27:29] Phase 9 Verifying routed nets
+[15:27:29] Phase 10 Depositing Routes
+[15:27:29] Phase 11 Resolve XTalk
+[15:27:29] Phase 12 Post Process Routing
+[15:27:29] Phase 13 Post Router Timing
+[15:27:29] Phase 14 Post-Route Event Processing
+[15:27:29] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 00m 30s 
 
-[10:09:07] Starting bitstream generation..
-[10:09:10] Creating bitmap...
-[10:09:10] Writing bitstream ./vitis_design_wrapper.bit...
-[10:09:10] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 00m 03s 
+[15:27:29] Starting bitstream generation..
+[15:27:54] Creating bitmap...
+[15:27:54] Writing bitstream ./vitis_design_wrapper.bit...
+[15:27:54] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 00m 24s 
 Check VPL, containing 6 checks, has run: 0 errors
-[10:09:10] Run vpl: Step impl: Completed
-[10:09:10] Run vpl: FINISHED. Run Status: impl Complete!
-INFO: [v++ 60-1441] [10:09:10] Run run_link: Step vpl: Completed
-Time (s): cpu = 00:12:51 ; elapsed = 00:04:33 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 22450 ; free virtual = 44044
-INFO: [v++ 60-1443] [10:09:10] Run run_link: Step rtdgen: Started
+[15:27:53] Run vpl: Step impl: Completed
+[15:27:54] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [15:27:54] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:11:34 ; elapsed = 00:06:15 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 17393 ; free virtual = 35929
+INFO: [v++ 60-1443] [15:27:54] Run run_link: Step rtdgen: Started
 INFO: [v++ 60-1453] Command Line: rtdgen
 INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
 INFO: [v++ 60-1453] Command Line: cf2sw -a /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/address_map.xml -sdsl /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/sdsl.dat -xclbin /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -rtd /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.rtd -o /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.xml
 INFO: [v++ 60-1652] Cf2sw returned exit code: 0
-INFO: [v++ 60-1441] [10:09:11] Run run_link: Step rtdgen: Completed
-Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.64 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 22404 ; free virtual = 43999
-INFO: [v++ 60-1443] [10:09:11] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1441] [15:27:55] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:00.69 ; elapsed = 00:00:00.8 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 17780 ; free virtual = 36316
+INFO: [v++ 60-1443] [15:27:55] Run run_link: Step xclbinutil: Started
 INFO: [v++ 60-1453] Command Line: xclbinutil --add-section BITSTREAM:RAW:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/system.bit --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd --add-section BUILD_METADATA:JSON:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_build.rtd --add-section EMBEDDED_METADATA:RAW:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.xml --add-section SYSTEM_METADATA:RAW:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0 --output /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin
 INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
 XRT Build Version: 2.19.0 (Vitis)
@@ -230,13 +232,13 @@ Format : RAW
 File   : '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json'
 Successfully wrote (7820844 bytes) to the output file: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin
 Leaving xclbinutil.
-INFO: [v++ 60-1441] [10:09:11] Run run_link: Step xclbinutil: Completed
-Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.09 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 22395 ; free virtual = 43996
-INFO: [v++ 60-1443] [10:09:11] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1441] [15:27:55] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.13 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 17820 ; free virtual = 36363
+INFO: [v++ 60-1443] [15:27:55] Run run_link: Step xclbinutilinfo: Started
 INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin.info --input /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin
 INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
-INFO: [v++ 60-1441] [10:09:11] Run run_link: Step xclbinutilinfo: Completed
-Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.1 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 22387 ; free virtual = 43988
+INFO: [v++ 60-1441] [15:27:55] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 17814 ; free virtual = 36358
 INFO: [v++ 60-2397] Platform default or user specified output type sd_card detected but is not a supported output for v++ --link. Use the v++ --package option instead to create SD card output.
 INFO: [v++ 60-586] Created myproject.xclbin
 INFO: [v++ 60-1307] Run completed. Additional information can be found in:
@@ -247,5 +249,5 @@ INFO: [v++ 60-1307] Run completed. Additional information can be found in:
 
 INFO: [v++ 60-2343] Use the Vitis Unified IDE to visualize and navigate the reports. Run the following command. 
     vitis -a/ --analyze /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin.link_summary 
-INFO: [v++ 60-791] Total elapsed time: 0h 4m 40s
+INFO: [v++ 60-791] Total elapsed time: 0h 6m 23s
 INFO: [v++ 60-1653] Closing dispatch client.
