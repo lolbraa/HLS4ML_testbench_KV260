@@ -1,0 +1,108 @@
+Loading and testing Training_AdaptiveHP_acc=0.7084_ebops=864_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3bd00000 with elements: 24782040
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3ae00000 with elements: 1239102
+amount of queries will be set to: 413034 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.157 ms
+accelerator has finished
+Processed elements: 413034, Execution time: 0.0012 seconds, Performance rate: 357002155.16 inferences/second
+
+accuracy of hardware inference: 0.4439997675736138
+
+
+Loading and testing Training_AdaptiveHP_acc=0.7573_ebops=11698_VU_latency_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3bd00000 with elements: 24782040
+output gmem_out0_ptr_layer5_out will be set to addr: 0x41c00000 with elements: 1239102
+amount of queries will be set to: 413034 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.891 ms
+accelerator has finished
+Processed elements: 413034, Execution time: 0.0019 seconds, Performance rate: 218464957.58 inferences/second
+
+accuracy of hardware inference: 0.7578577066294785
+
+
+Loading and testing Training_AdaptiveHP_acc=0.7449_ebops=3640_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3bd00000 with elements: 24782040
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3ae00000 with elements: 1239102
+amount of queries will be set to: 413034 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       0.547 ms
+accelerator has finished
+Processed elements: 413034, Execution time: 0.0005 seconds, Performance rate: 754598472.91 inferences/second
+
+accuracy of hardware inference: 0.6751889674942014
+
+
+Loading and testing Training_AdaptiveHP_acc=0.7084_ebops=864_VU_latency_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3bd00000 with elements: 24782040
+output gmem_out0_ptr_layer5_out will be set to addr: 0x41c00000 with elements: 1239102
+amount of queries will be set to: 413034 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.022 ms
+accelerator has finished
+Processed elements: 413034, Execution time: 0.0010 seconds, Performance rate: 404214049.26 inferences/second
+
+accuracy of hardware inference: 0.451710997157619
+
+
+Loading and testing Training_AdaptiveHP_acc=0.7573_ebops=11698_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3bd00000 with elements: 24782040
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3ac00000 with elements: 1239102
+amount of queries will be set to: 413034 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.070 ms
+accelerator has finished
+Processed elements: 413034, Execution time: 0.0011 seconds, Performance rate: 386052771.60 inferences/second
+
+accuracy of hardware inference: 0.5174682955882567

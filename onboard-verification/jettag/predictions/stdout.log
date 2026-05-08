@@ -1,0 +1,185 @@
+Loading and testing Training_FixedHP_acc=0.7590_ebops=11634_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3ae00000 with elements: 2656000
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3b900000 with elements: 830000
+amount of queries will be set to: 166000 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.258 ms
+accelerator has finished
+Processed elements: 166000, Execution time: 0.0013 seconds, Performance rate: 131986750.56 inferences/second
+
+accuracy of hardware inference: 0.7590481927710844
+
+
+Loading and testing Training_AdaptiveHP_acc=0.7426_ebops=1001_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3ae00000 with elements: 2656000
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3bd00000 with elements: 830000
+amount of queries will be set to: 166000 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.216 ms
+accelerator has finished
+Processed elements: 166000, Execution time: 0.0012 seconds, Performance rate: 136493851.54 inferences/second
+
+accuracy of hardware inference: 0.7425903614457832
+
+
+Loading and testing Training_AdaptiveHP_acc=0.7512_ebops=2895_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3ae00000 with elements: 2656000
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3b900000 with elements: 830000
+amount of queries will be set to: 166000 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.274 ms
+accelerator has finished
+Processed elements: 166000, Execution time: 0.0013 seconds, Performance rate: 130254003.00 inferences/second
+
+accuracy of hardware inference: 0.7512289156626506
+
+
+Loading and testing QKeras_acc=0.7298_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3ae00000 with elements: 2656000
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3bd00000 with elements: 830000
+amount of queries will be set to: 166000 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       0.541 ms
+accelerator has finished
+Processed elements: 166000, Execution time: 0.0005 seconds, Performance rate: 306807995.37 inferences/second
+
+accuracy of hardware inference: 0.729789156626506
+
+
+Loading and testing Training_AdaptiveHP_acc=0.7117_ebops=303_VU_latency_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3ae00000 with elements: 2656000
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3b900000 with elements: 830000
+amount of queries will be set to: 166000 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.067 ms
+accelerator has finished
+Processed elements: 166000, Execution time: 0.0011 seconds, Performance rate: 155564572.79 inferences/second
+
+accuracy of hardware inference: 0.7117168674698795
+
+
+Loading and testing Training_AdaptiveHP_acc=0.7117_ebops=303_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3ae00000 with elements: 2656000
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3bd00000 with elements: 830000
+amount of queries will be set to: 166000 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.246 ms
+accelerator has finished
+Processed elements: 166000, Execution time: 0.0012 seconds, Performance rate: 133213173.99 inferences/second
+
+accuracy of hardware inference: 0.7117168674698795
+
+
+Loading and testing Training_FixedHP_acc=0.7659_ebops=21624_VU_DA_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3ae00000 with elements: 2656000
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3b900000 with elements: 830000
+amount of queries will be set to: 166000 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.249 ms
+accelerator has finished
+Processed elements: 166000, Execution time: 0.0012 seconds, Performance rate: 132892280.27 inferences/second
+
+accuracy of hardware inference: 0.765867469879518
+
+
+Loading and testing Training_FixedHP_acc=0.7659_ebops=21624_VU_latency_bitfile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x3bd00000 with elements: 2656000
+output gmem_out0_ptr_layer5_out will be set to addr: 0x3ae00000 with elements: 830000
+amount of queries will be set to: 166000 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       0.840 ms
+accelerator has finished
+Processed elements: 166000, Execution time: 0.0008 seconds, Performance rate: 197513707.09 inferences/second
+
+accuracy of hardware inference: 0.765867469879518
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/ipykernel_launcher.py", line 17, in <module>
+    app.launch_new_instance()
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/traitlets/config/application.py", line 976, in launch_instance
+    app.start()
+  File "/usr/local/share/pynq-venv/lib/python3.10/site-packages/ipykernel/kernelapp.py", line 712, in start
+    self.io_loop.start()

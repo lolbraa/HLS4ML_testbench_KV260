@@ -1,0 +1,20 @@
+Loading and testing HGQ-AdaptiveHP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input gmem_in0_ptr_linput will be set to addr: 0x38200000 with elements: 235200
+output gmem_out0_ptr_layer5_out will be set to addr: 0x375b0000 with elements: 3000
+amount of queries will be set to: 300 at address: 0x28
+prepare your interrupt
+global interrupt enable register
+enable gie successful
+ap_done interrupt enable register
+enable ap_done interrupt successful
+ap_done register clear
+clear ap_done interrupt successful
+----------------------
+starting the accelerator
+Accelerator execution time:                       1.501 ms
+accelerator has finished
+Processed elements: 300, Execution time: 0.0015 seconds, Performance rate: 199838.13 inferences/second
+
+accuracy of hardware inference: 0.73
