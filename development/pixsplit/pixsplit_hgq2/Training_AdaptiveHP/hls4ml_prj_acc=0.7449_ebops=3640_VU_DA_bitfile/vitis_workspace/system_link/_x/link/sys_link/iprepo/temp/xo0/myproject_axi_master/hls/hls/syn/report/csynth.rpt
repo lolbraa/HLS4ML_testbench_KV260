@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'myproject_axi_master'
 ================================================================
 + General Information: 
-    * Date:           Thu May  7 11:52:05 2026
+    * Date:           Thu May  7 15:45:10 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        vitis_unified_project
     * Solution:       hls (Vivado IP Flow Target)
@@ -117,31 +117,6 @@
 | batch_size                | s_axi_control   | register  |          | name=batch_size offset=0x28 range=32                  |
 +---------------------------+-----------------+-----------+----------+-------------------------------------------------------+
 
-
-================================================================
-== M_AXI Burst Information
-================================================================
- Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
-
-* Inferred Burst Summary
-+-----------------+-----------+----------+-------+-----------------+-----------------------------------------+
-| HW Interface    | Direction | Length   | Width | Loop            | Loop Location                           |
-+-----------------+-----------+----------+-------+-----------------+-----------------------------------------+
-| m_axi_gmem_in0  | read      | variable | 32    | VITIS_LOOP_13_1 | firmware/myproject_axi_master.cpp:13:22 |
-| m_axi_gmem_out0 | write     | variable | 32    | VITIS_LOOP_29_1 | firmware/myproject_axi_master.cpp:29:22 |
-+-----------------+-----------+----------+-------+-----------------+-----------------------------------------+
-
-* All M_AXI Variable Accesses
-+-----------------+----------+-----------------------------------------+-----------+--------------+----------+-----------------+-----------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
-| HW Interface    | Variable | Access Location                         | Direction | Burst Status | Length   | Loop            | Loop Location                           | Resolution | Problem                                                                                                 |
-+-----------------+----------+-----------------------------------------+-----------+--------------+----------+-----------------+-----------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
-| m_axi_gmem_in0  | in       | firmware/myproject_axi_master.cpp:17:26 | read      | Widen Fail   |          | VITIS_LOOP_16_3 | firmware/myproject_axi_master.cpp:16:30 | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem_in0  | in       | firmware/myproject_axi_master.cpp:17:26 | read      | Inferred     | variable | VITIS_LOOP_13_1 | firmware/myproject_axi_master.cpp:13:22 |            |                                                                                                         |
-| m_axi_gmem_out0 | out      | firmware/myproject_axi_master.cpp:33:32 | write     | Widen Fail   |          | VITIS_LOOP_32_3 | firmware/myproject_axi_master.cpp:32:30 | 214-353    | Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0 |
-| m_axi_gmem_out0 | out      | firmware/myproject_axi_master.cpp:33:32 | write     | Inferred     | variable | VITIS_LOOP_29_1 | firmware/myproject_axi_master.cpp:29:22 |            |                                                                                                         |
-+-----------------+----------+-----------------------------------------+-----------+--------------+----------+-----------------+-----------------------------------------+------------+---------------------------------------------------------------------------------------------------------+
-
-    * Resolution URL: docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=XXX-YYY.html (replace XXX-YYY with column value)
 
 ================================================================
 == Bind Op Report
@@ -2900,14 +2875,6 @@
 | RESOURCE | variable=weights core=ROM_nP_BRAM | in dense_resource_rf_gt_nin_rem0 (../../firmware/nnet_utils/nnet_dense_resource.h:107) | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
 | RESOURCE | variable=weights core=ROM_nP_BRAM | in dense_resource_rf_gt_nin (../../firmware/nnet_utils/nnet_dense_resource.h:189)      | 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead |
 +----------+-----------------------------------+----------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-
-* Inferred Pragmas
-+----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
-| Type     | Options | Location                                                                                                                                                                                       | Inferred From                 |
-+----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
-| PIPELINE |         | loop VITIS_LOOP_29_1 (firmware/myproject_axi_master.cpp:29:22) in store_result<float, nnet::array<ap_fixed<16, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 3u> > (firmware/myproject_axi_master.cpp:29) | syn.compile.pipeline_loops=64 |
-| PIPELINE |         | loop VITIS_LOOP_13_1 (firmware/myproject_axi_master.cpp:13:22) in load_input<float, nnet::array<ap_fixed<11, 7, (ap_q_mode)0, (ap_o_mode)3, 0>, 60u> > (firmware/myproject_axi_master.cpp:13)  | syn.compile.pipeline_loops=64 |
-+----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
 
 * Valid Pragma Syntax
 +----------------------+-----------------------------------------------------------------------+----------------------------------------------------------------------------------------+

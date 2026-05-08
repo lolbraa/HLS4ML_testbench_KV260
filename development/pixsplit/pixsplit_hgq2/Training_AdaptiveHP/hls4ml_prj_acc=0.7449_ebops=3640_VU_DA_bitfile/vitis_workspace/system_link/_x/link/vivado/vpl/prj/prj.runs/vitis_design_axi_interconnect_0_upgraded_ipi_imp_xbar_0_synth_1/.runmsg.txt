@@ -1,2 +1,0 @@
-Compiling (synthesis checkpoint) kernel/IP: vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0
-Log file: /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1/runme.log

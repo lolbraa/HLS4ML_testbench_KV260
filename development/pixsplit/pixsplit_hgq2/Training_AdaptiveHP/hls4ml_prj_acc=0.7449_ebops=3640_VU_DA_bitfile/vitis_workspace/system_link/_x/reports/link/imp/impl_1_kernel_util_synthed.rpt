@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Thu May  7 11:56:32 2026
+| Date         : Thu May  7 15:47:39 2026
 | Host         : 11c2efc5f272 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_accelerator_utilization -kernels { myproject_axi_master:vitis_design_i/myproject_axi_master_1/inst:myproject_axi_master_1} -file kernel_util_synthed.rpt -name kernel_util_synthed -json
 | Design       : vitis_design_wrapper

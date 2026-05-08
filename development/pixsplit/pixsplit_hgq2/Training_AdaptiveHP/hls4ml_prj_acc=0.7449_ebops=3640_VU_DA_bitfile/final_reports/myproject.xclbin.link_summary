@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu May  7 11:52:53 2026",
- "timestampMillis": "1778154773744",
+ "dateTimestamp": "Thu May  7 15:45:34 2026",
+ "timestampMillis": "1778168734003",
  "buildStep": {
-  "cmdId": "4c336dc2-2009-4265-8f7b-e946a23791a2",
+  "cmdId": "0a772379-fa33-4aa7-b339-76aef7e226bd",
   "name": "v++",
   "logFile": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/link.steps.log",
   "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
@@ -42,10 +42,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:53 2026",
- "timestampMillis": "1778154773744",
+ "dateTimestamp": "Thu May  7 15:45:34 2026",
+ "timestampMillis": "1778168734003",
  "status": {
-  "cmdId": "4c336dc2-2009-4265-8f7b-e946a23791a2",
+  "cmdId": "0a772379-fa33-4aa7-b339-76aef7e226bd",
   "state": "CS_RUNNING"
  }
 }
@@ -53,8 +53,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Thu May  7 11:52:54 2026",
- "timestampMillis": "1778154774244",
+ "dateTimestamp": "Thu May  7 15:45:34 2026",
+ "timestampMillis": "1778168734691",
  "buildSummary": {
   "hardwarePlatform": "kv260_axi_all_platform.xsa",
   "hardwareDsa": "",
@@ -102,8 +102,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:52:54 2026",
- "timestampMillis": "1778154774246",
+ "dateTimestamp": "Thu May  7 15:45:34 2026",
+ "timestampMillis": "1778168734695",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/analyzer_input/analyzer_summary.json",
   "name": "",
@@ -116,10 +116,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:52:54 2026",
- "timestampMillis": "1778154774265",
+ "dateTimestamp": "Thu May  7 15:45:34 2026",
+ "timestampMillis": "1778168734727",
  "buildStep": {
-  "cmdId": "f6ccac68-548f-4cd1-b0a4-f6c943a2ae97",
+  "cmdId": "03580d77-ac74-4145-bb9b-620ad529917a",
   "name": "system_link",
   "logFile": "",
   "commandLine": "system_link --xo /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int --temp_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link",
@@ -144,10 +144,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:54 2026",
- "timestampMillis": "1778154774265",
+ "dateTimestamp": "Thu May  7 15:45:34 2026",
+ "timestampMillis": "1778168734727",
  "status": {
-  "cmdId": "f6ccac68-548f-4cd1-b0a4-f6c943a2ae97",
+  "cmdId": "03580d77-ac74-4145-bb9b-620ad529917a",
   "state": "CS_RUNNING"
  }
 }
@@ -155,10 +155,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:56 2026",
- "timestampMillis": "1778154776516",
+ "dateTimestamp": "Thu May  7 15:45:37 2026",
+ "timestampMillis": "1778168737748",
  "status": {
-  "cmdId": "f6ccac68-548f-4cd1-b0a4-f6c943a2ae97",
+  "cmdId": "03580d77-ac74-4145-bb9b-620ad529917a",
   "state": "CS_PASSED"
  }
 }
@@ -166,10 +166,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:52:56 2026",
- "timestampMillis": "1778154776518",
+ "dateTimestamp": "Thu May  7 15:45:37 2026",
+ "timestampMillis": "1778168737753",
  "buildStep": {
-  "cmdId": "f106856c-bc37-4d91-b1aa-b5c02cf2ae18",
+  "cmdId": "79af5255-88ca-45dc-8632-13da0b381d65",
   "name": "cf2sw",
   "logFile": "",
   "commandLine": "cf2sw -sdsl /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml",
@@ -193,10 +193,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:56 2026",
- "timestampMillis": "1778154776518",
+ "dateTimestamp": "Thu May  7 15:45:37 2026",
+ "timestampMillis": "1778168737753",
  "status": {
-  "cmdId": "f106856c-bc37-4d91-b1aa-b5c02cf2ae18",
+  "cmdId": "79af5255-88ca-45dc-8632-13da0b381d65",
   "state": "CS_RUNNING"
  }
 }
@@ -204,10 +204,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777146",
+ "dateTimestamp": "Thu May  7 15:45:38 2026",
+ "timestampMillis": "1778168738534",
  "status": {
-  "cmdId": "f106856c-bc37-4d91-b1aa-b5c02cf2ae18",
+  "cmdId": "79af5255-88ca-45dc-8632-13da0b381d65",
   "state": "CS_PASSED"
  }
 }
@@ -215,10 +215,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777148",
+ "dateTimestamp": "Thu May  7 15:45:38 2026",
+ "timestampMillis": "1778168738537",
  "buildStep": {
-  "cmdId": "bf446b46-6fef-4a08-a604-4d4874752dc0",
+  "cmdId": "985b3bd3-de4c-4907-a1df-011dec598b5b",
   "name": "rtd2_system_diagram",
   "logFile": "",
   "commandLine": "rtd2SystemDiagram",
@@ -231,10 +231,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777148",
+ "dateTimestamp": "Thu May  7 15:45:38 2026",
+ "timestampMillis": "1778168738539",
  "status": {
-  "cmdId": "bf446b46-6fef-4a08-a604-4d4874752dc0",
+  "cmdId": "985b3bd3-de4c-4907-a1df-011dec598b5b",
   "state": "CS_RUNNING"
  }
 }
@@ -242,8 +242,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777178",
+ "dateTimestamp": "Thu May  7 15:45:38 2026",
+ "timestampMillis": "1778168738577",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/systemDiagramModel.json",
   "name": "",
@@ -256,10 +256,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777178",
+ "dateTimestamp": "Thu May  7 15:45:38 2026",
+ "timestampMillis": "1778168738578",
  "status": {
-  "cmdId": "bf446b46-6fef-4a08-a604-4d4874752dc0",
+  "cmdId": "985b3bd3-de4c-4907-a1df-011dec598b5b",
   "state": "CS_PASSED"
  }
 }
@@ -267,10 +267,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777179",
+ "dateTimestamp": "Thu May  7 15:45:38 2026",
+ "timestampMillis": "1778168738604",
  "buildStep": {
-  "cmdId": "4175daf4-09f1-4af3-bbca-71a03cda7f5e",
+  "cmdId": "deec6139-e31f-43e0-bb09-8fda1f72fc15",
   "name": "vpl",
   "logFile": "",
   "commandLine": "vpl -t hw -f /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/.ipcache --output_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int --log_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/link --report_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link --config /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link --no-info --iprepo /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link/vpl.pb /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/dr.bd.tcl",
@@ -316,10 +316,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777179",
+ "dateTimestamp": "Thu May  7 15:45:38 2026",
+ "timestampMillis": "1778168738605",
  "status": {
-  "cmdId": "4175daf4-09f1-4af3-bbca-71a03cda7f5e",
+  "cmdId": "deec6139-e31f-43e0-bb09-8fda1f72fc15",
   "state": "CS_RUNNING"
  }
 }
@@ -327,10 +327,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777854",
+ "dateTimestamp": "Thu May  7 15:45:39 2026",
+ "timestampMillis": "1778168739469",
  "buildStep": {
-  "cmdId": "f7e58591-491a-4118-b52b-d8277ac11b84",
+  "cmdId": "e8079a57-8e15-4a99-8830-2a4af85a3e37",
   "name": "vpl",
   "logFile": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/link.steps.log",
   "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vpl -t hw -f /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/.ipcache --output_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int --log_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/link --report_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link --config /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link --no-info --iprepo /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link/vpl.pb /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/dr.bd.tcl ",
@@ -343,10 +343,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:57 2026",
- "timestampMillis": "1778154777854",
+ "dateTimestamp": "Thu May  7 15:45:39 2026",
+ "timestampMillis": "1778168739469",
  "status": {
-  "cmdId": "f7e58591-491a-4118-b52b-d8277ac11b84",
+  "cmdId": "e8079a57-8e15-4a99-8830-2a4af85a3e37",
   "state": "CS_RUNNING"
  }
 }
@@ -354,8 +354,8 @@
 <ENTRY>
 {
  "type": "ET_VivadoProject",
- "dateTimestamp": "Thu May  7 11:52:58 2026",
- "timestampMillis": "1778154778159",
+ "dateTimestamp": "Thu May  7 15:45:39 2026",
+ "timestampMillis": "1778168739859",
  "vivadoProject": {
   "openDir": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl",
   "openScript": "openprj.tcl",
@@ -366,10 +366,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:52:58 2026",
- "timestampMillis": "1778154778159",
+ "dateTimestamp": "Thu May  7 15:45:39 2026",
+ "timestampMillis": "1778168739860",
  "buildStep": {
-  "cmdId": "a0c54c24-b9e1-4af6-b246-d82db911e9e5",
+  "cmdId": "74fb6270-26c1-432b-b2ff-43fbda8b9d50",
   "name": "vivado",
   "logFile": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/vivado.log",
   "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
@@ -394,10 +394,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:52:58 2026",
- "timestampMillis": "1778154778159",
+ "dateTimestamp": "Thu May  7 15:45:39 2026",
+ "timestampMillis": "1778168739861",
  "status": {
-  "cmdId": "a0c54c24-b9e1-4af6-b246-d82db911e9e5",
+  "cmdId": "74fb6270-26c1-432b-b2ff-43fbda8b9d50",
   "state": "CS_RUNNING"
  }
 }
@@ -405,8 +405,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:53:22 2026",
- "timestampMillis": "1778154802369",
+ "dateTimestamp": "Thu May  7 15:46:25 2026",
+ "timestampMillis": "1778168785775",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/automation_summary_pre_synthesis.txt",
   "name": "",
@@ -419,10 +419,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu May  7 11:56:10 2026",
- "timestampMillis": "1778154970491",
+ "dateTimestamp": "Thu May  7 15:47:07 2026",
+ "timestampMillis": "1778168827903",
  "buildStep": {
-  "cmdId": "f0d8d4ed-e17f-4855-88d3-1d3d0b5e22b9",
+  "cmdId": "7f88813f-2396-43fa-b34a-62f5191f5906",
   "name": "vivado.impl",
   "logFile": "",
   "commandLine": "",
@@ -435,10 +435,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:56:10 2026",
- "timestampMillis": "1778154970491",
+ "dateTimestamp": "Thu May  7 15:47:07 2026",
+ "timestampMillis": "1778168827903",
  "status": {
-  "cmdId": "f0d8d4ed-e17f-4855-88d3-1d3d0b5e22b9",
+  "cmdId": "7f88813f-2396-43fa-b34a-62f5191f5906",
   "state": "CS_RUNNING"
  }
 }
@@ -446,10 +446,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu May  7 11:56:10 2026",
- "timestampMillis": "1778154970492",
+ "dateTimestamp": "Thu May  7 15:47:07 2026",
+ "timestampMillis": "1778168827904",
  "buildStep": {
-  "cmdId": "e842b6c1-faff-4f78-91d5-870e9f874109",
+  "cmdId": "e0fbe154-b8d3-40b4-9d68-dbd7ad7bf812",
   "name": "vivado.impl.impl_1",
   "logFile": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
   "commandLine": "",
@@ -462,10 +462,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:56:10 2026",
- "timestampMillis": "1778154970492",
+ "dateTimestamp": "Thu May  7 15:47:07 2026",
+ "timestampMillis": "1778168827904",
  "status": {
-  "cmdId": "e842b6c1-faff-4f78-91d5-870e9f874109",
+  "cmdId": "e0fbe154-b8d3-40b4-9d68-dbd7ad7bf812",
   "state": "CS_RUNNING"
  }
 }
@@ -473,8 +473,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:04 2026",
- "timestampMillis": "1778155084628",
+ "dateTimestamp": "Thu May  7 15:50:17 2026",
+ "timestampMillis": "1778169017225",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
   "name": "",
@@ -487,8 +487,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:06 2026",
- "timestampMillis": "1778155086248",
+ "dateTimestamp": "Thu May  7 15:50:20 2026",
+ "timestampMillis": "1778169020055",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/kernel_service.json",
   "name": "",
@@ -501,8 +501,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:06 2026",
- "timestampMillis": "1778155086249",
+ "dateTimestamp": "Thu May  7 15:50:20 2026",
+ "timestampMillis": "1778169020056",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/kernel_service.pb",
   "name": "",
@@ -515,10 +515,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118553",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055206",
  "status": {
-  "cmdId": "a0c54c24-b9e1-4af6-b246-d82db911e9e5",
+  "cmdId": "74fb6270-26c1-432b-b2ff-43fbda8b9d50",
   "state": "CS_PASSED"
  }
 }
@@ -526,8 +526,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118558",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055212",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_routed.pb",
   "name": "",
@@ -540,8 +540,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118559",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055213",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_routed.xutil",
   "name": "",
@@ -554,8 +554,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118559",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055213",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_synthed.rpt",
   "name": "",
@@ -568,8 +568,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118559",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055214",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_synthed.xutil",
   "name": "",
@@ -582,8 +582,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118559",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055214",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_synthed.rpt",
   "name": "",
@@ -596,8 +596,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118560",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055215",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_routed.rpt",
   "name": "",
@@ -610,8 +610,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118560",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055215",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_placed.rpt",
   "name": "",
@@ -624,8 +624,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118560",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055216",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_routed.pb",
   "name": "",
@@ -638,8 +638,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118560",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055216",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
   "name": "",
@@ -652,8 +652,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118561",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055217",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_placed.rpt",
   "name": "",
@@ -666,8 +666,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118561",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055217",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_placed.xutil",
   "name": "",
@@ -680,8 +680,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118561",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055217",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_placed.pb",
   "name": "",
@@ -694,8 +694,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118561",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055218",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
   "name": "",
@@ -708,8 +708,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118562",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055218",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_routed.rpt",
   "name": "",
@@ -722,8 +722,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118562",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055218",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_placed.pb",
   "name": "",
@@ -736,8 +736,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118562",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055219",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_synthed.pb",
   "name": "",
@@ -750,192 +750,52 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118566",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_zynq_ultra_ps_e_0_0_synth_1_vitis_design_zynq_ultra_ps_e_0_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118566",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_rst_ps8_0_99M_0_synth_1_vitis_design_rst_ps8_0_99M_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118567",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_smc_0_synth_1_vitis_design_axi_smc_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118567",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_intc_0_0_synth_1_vitis_design_axi_intc_0_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118567",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_dma_0_0_synth_1_vitis_design_axi_dma_0_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118567",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1_vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118567",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_myproject_axi_master_1_0_synth_1_vitis_design_myproject_axi_master_1_0_utilization_synth.rpt",
-  "name": "myproject_axi_master",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118568",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1_vitis_design_axi_interconnect_0_imp_auto_pc_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118568",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1_vitis_design_axi_interconnect_0_imp_m02_regslice_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118568",
- "report": {
-  "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1_vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_utilization_synth.rpt",
-  "name": "",
-  "fileType": "TEXT",
-  "reportType": "GLOBAL_REPORT_UTILIZATION",
-  "cmdId": ""
- }
-}
-</ENTRY>
-<ENTRY>
-{
- "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118568",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055223",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_system_diagram.json",
   "name": "",
   "fileType": "JSON",
   "reportType": "SYSTEM_DIAGRAM_PLUS",
-  "cmdId": "e842b6c1-faff-4f78-91d5-870e9f874109"
+  "cmdId": "e0fbe154-b8d3-40b4-9d68-dbd7ad7bf812"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118569",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055224",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
-  "cmdId": "e842b6c1-faff-4f78-91d5-870e9f874109"
+  "cmdId": "e0fbe154-b8d3-40b4-9d68-dbd7ad7bf812"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118569",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055224",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpx",
   "name": "",
   "fileType": "BINARY_PROTOBUF",
   "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
-  "cmdId": "e842b6c1-faff-4f78-91d5-870e9f874109"
+  "cmdId": "e0fbe154-b8d3-40b4-9d68-dbd7ad7bf812"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118581",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055245",
  "status": {
-  "cmdId": "f7e58591-491a-4118-b52b-d8277ac11b84",
+  "cmdId": "e8079a57-8e15-4a99-8830-2a4af85a3e37",
   "state": "CS_PASSED"
  }
 }
@@ -943,10 +803,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118594",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055262",
  "status": {
-  "cmdId": "4175daf4-09f1-4af3-bbca-71a03cda7f5e",
+  "cmdId": "deec6139-e31f-43e0-bb09-8fda1f72fc15",
   "state": "CS_PASSED"
  }
 }
@@ -954,10 +814,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118595",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055264",
  "buildStep": {
-  "cmdId": "3289acef-6842-440b-9de5-e943a69d2541",
+  "cmdId": "be46f4ef-55c7-4a2a-a1dc-cf06e7afa4b1",
   "name": "rtdgen",
   "logFile": "",
   "commandLine": "rtdgen",
@@ -970,10 +830,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118595",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055264",
  "status": {
-  "cmdId": "3289acef-6842-440b-9de5-e943a69d2541",
+  "cmdId": "be46f4ef-55c7-4a2a-a1dc-cf06e7afa4b1",
   "state": "CS_RUNNING"
  }
 }
@@ -981,8 +841,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118596",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055265",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd",
   "name": "",
@@ -995,10 +855,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118596",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055267",
  "buildStep": {
-  "cmdId": "9826fab7-76d7-4d0b-bd13-5072ae0dd2a9",
+  "cmdId": "66508cce-b4d1-41ab-839e-f70dd1859d24",
   "name": "cf2sw",
   "logFile": "",
   "commandLine": "cf2sw -a /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/address_map.xml -sdsl /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/sdsl.dat -xclbin /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -rtd /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.rtd -o /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.xml",
@@ -1022,10 +882,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:38 2026",
- "timestampMillis": "1778155118596",
+ "dateTimestamp": "Thu May  7 15:50:55 2026",
+ "timestampMillis": "1778169055267",
  "status": {
-  "cmdId": "9826fab7-76d7-4d0b-bd13-5072ae0dd2a9",
+  "cmdId": "66508cce-b4d1-41ab-839e-f70dd1859d24",
   "state": "CS_RUNNING"
  }
 }
@@ -1033,10 +893,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119219",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056013",
  "status": {
-  "cmdId": "9826fab7-76d7-4d0b-bd13-5072ae0dd2a9",
+  "cmdId": "66508cce-b4d1-41ab-839e-f70dd1859d24",
   "state": "CS_PASSED"
  }
 }
@@ -1044,10 +904,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119219",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056015",
  "buildStep": {
-  "cmdId": "0ce80b1a-70a2-41c7-bc0e-5de4815f55ff",
+  "cmdId": "06c60c50-3cef-480c-be52-c0f1740e1708",
   "name": "rtdgen",
   "logFile": "",
   "commandLine": "writeSystemDiagram",
@@ -1063,10 +923,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119220",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056015",
  "status": {
-  "cmdId": "0ce80b1a-70a2-41c7-bc0e-5de4815f55ff",
+  "cmdId": "06c60c50-3cef-480c-be52-c0f1740e1708",
   "state": "CS_RUNNING"
  }
 }
@@ -1074,8 +934,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119221",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056017",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json",
   "name": "",
@@ -1088,10 +948,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119221",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056018",
  "status": {
-  "cmdId": "0ce80b1a-70a2-41c7-bc0e-5de4815f55ff",
+  "cmdId": "06c60c50-3cef-480c-be52-c0f1740e1708",
   "state": "CS_PASSED"
  }
 }
@@ -1099,10 +959,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119221",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056018",
  "buildStep": {
-  "cmdId": "c817aa04-19b2-40e4-8948-ef4621629ea4",
+  "cmdId": "5a345503-913c-45d9-9a4f-3be3d439463c",
   "name": "rtdgen",
   "logFile": "",
   "commandLine": "writeAutomationSummary",
@@ -1117,10 +977,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119221",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056018",
  "status": {
-  "cmdId": "c817aa04-19b2-40e4-8948-ef4621629ea4",
+  "cmdId": "5a345503-913c-45d9-9a4f-3be3d439463c",
   "state": "CS_RUNNING"
  }
 }
@@ -1128,8 +988,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119222",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056019",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/automation_summary.txt",
   "name": "",
@@ -1142,10 +1002,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119222",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056019",
  "status": {
-  "cmdId": "c817aa04-19b2-40e4-8948-ef4621629ea4",
+  "cmdId": "5a345503-913c-45d9-9a4f-3be3d439463c",
   "state": "CS_PASSED"
  }
 }
@@ -1153,10 +1013,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119222",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056020",
  "status": {
-  "cmdId": "3289acef-6842-440b-9de5-e943a69d2541",
+  "cmdId": "be46f4ef-55c7-4a2a-a1dc-cf06e7afa4b1",
   "state": "CS_PASSED"
  }
 }
@@ -1164,10 +1024,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119223",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056021",
  "buildStep": {
-  "cmdId": "ea9aa4b4-f712-46d7-9d47-fd725240b5bb",
+  "cmdId": "4f1b60a3-d402-4343-b527-267032aa587a",
   "name": "xclbinutil",
   "logFile": "",
   "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/system.bit --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd --add-section BUILD_METADATA:JSON:/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_build.rtd --add-section EMBEDDED_METADATA:RAW:/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.xml --add-section SYSTEM_METADATA:RAW:/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0 --output /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin",
@@ -1202,10 +1062,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119223",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056021",
  "status": {
-  "cmdId": "ea9aa4b4-f712-46d7-9d47-fd725240b5bb",
+  "cmdId": "4f1b60a3-d402-4343-b527-267032aa587a",
   "state": "CS_RUNNING"
  }
 }
@@ -1213,10 +1073,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119301",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056152",
  "status": {
-  "cmdId": "ea9aa4b4-f712-46d7-9d47-fd725240b5bb",
+  "cmdId": "4f1b60a3-d402-4343-b527-267032aa587a",
   "state": "CS_PASSED"
  }
 }
@@ -1224,10 +1084,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119302",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056155",
  "buildStep": {
-  "cmdId": "b4abf898-ea35-41e8-a152-b03c81948fc5",
+  "cmdId": "1b9c75ff-e778-465a-81cf-aba7a98ad924",
   "name": "xclbinutilinfo",
   "logFile": "",
   "commandLine": "xclbinutil --quiet --force --info /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin.info --input /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin",
@@ -1247,10 +1107,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119302",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056156",
  "status": {
-  "cmdId": "b4abf898-ea35-41e8-a152-b03c81948fc5",
+  "cmdId": "1b9c75ff-e778-465a-81cf-aba7a98ad924",
   "state": "CS_RUNNING"
  }
 }
@@ -1258,10 +1118,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119397",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056300",
  "status": {
-  "cmdId": "b4abf898-ea35-41e8-a152-b03c81948fc5",
+  "cmdId": "1b9c75ff-e778-465a-81cf-aba7a98ad924",
   "state": "CS_PASSED"
  }
 }
@@ -1269,8 +1129,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119401",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056307",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/optraceViewer.html",
   "name": "",
@@ -1283,10 +1143,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119402",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056307",
  "status": {
-  "cmdId": "4c336dc2-2009-4265-8f7b-e946a23791a2",
+  "cmdId": "0a772379-fa33-4aa7-b339-76aef7e226bd",
   "state": "CS_PASSED"
  }
 }
@@ -1294,8 +1154,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119424",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056346",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html",
   "name": "",
@@ -1308,8 +1168,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu May  7 11:58:39 2026",
- "timestampMillis": "1778155119425",
+ "dateTimestamp": "Thu May  7 15:50:56 2026",
+ "timestampMillis": "1778169056346",
  "report": {
   "path": "/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/v++_link_myproject_guidance.pb3",
   "name": "",

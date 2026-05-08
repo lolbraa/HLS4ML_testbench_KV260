@@ -5,13 +5,15 @@
 
 
 void myproject(
-    hls::stream<input_layer_t> &input_layer,
-    hls::stream<result_t> &layer15_out
+    input_layer_t input_layer[60],
+    result_t layer15_out[3]
 ) {
 
     // hls-fpga-machine-learning insert IO
-    #pragma HLS INTERFACE axis port=input_layer,layer15_out 
-    #pragma HLS DATAFLOW
+    #pragma HLS ARRAY_RESHAPE variable=input_layer complete dim=0
+    #pragma HLS ARRAY_PARTITION variable=layer15_out complete dim=0
+    #pragma HLS INTERFACE ap_vld port=input_layer,layer15_out 
+    #pragma HLS PIPELINE
 
     // hls-fpga-machine-learning insert load weights
 #ifndef __SYNTHESIS__
@@ -35,29 +37,29 @@ void myproject(
 
     // hls-fpga-machine-learning insert layers
 
-    hls::stream<dense_0_t> layer3_out("layer3_out");
-    #pragma HLS STREAM variable=layer3_out depth=1
+    dense_0_t layer3_out[128];
+    #pragma HLS ARRAY_PARTITION variable=layer3_out complete dim=0
 
-    hls::stream<dense_0_relu_t> layer4_out("layer4_out");
-    #pragma HLS STREAM variable=layer4_out depth=1
+    dense_0_relu_t layer4_out[128];
+    #pragma HLS ARRAY_PARTITION variable=layer4_out complete dim=0
 
-    hls::stream<dense_1_t> layer6_out("layer6_out");
-    #pragma HLS STREAM variable=layer6_out depth=1
+    dense_1_t layer6_out[64];
+    #pragma HLS ARRAY_PARTITION variable=layer6_out complete dim=0
 
-    hls::stream<dense_1_relu_t> layer7_out("layer7_out");
-    #pragma HLS STREAM variable=layer7_out depth=1
+    dense_1_relu_t layer7_out[64];
+    #pragma HLS ARRAY_PARTITION variable=layer7_out complete dim=0
 
-    hls::stream<dense_2_t> layer9_out("layer9_out");
-    #pragma HLS STREAM variable=layer9_out depth=1
+    dense_2_t layer9_out[32];
+    #pragma HLS ARRAY_PARTITION variable=layer9_out complete dim=0
 
-    hls::stream<dense_2_relu_t> layer10_out("layer10_out");
-    #pragma HLS STREAM variable=layer10_out depth=1
+    dense_2_relu_t layer10_out[32];
+    #pragma HLS ARRAY_PARTITION variable=layer10_out complete dim=0
 
-    hls::stream<dense_3_t> layer12_out("layer12_out");
-    #pragma HLS STREAM variable=layer12_out depth=1
+    dense_3_t layer12_out[16];
+    #pragma HLS ARRAY_PARTITION variable=layer12_out complete dim=0
 
-    hls::stream<dense_3_relu_t> layer13_out("layer13_out");
-    #pragma HLS STREAM variable=layer13_out depth=1
+    dense_3_relu_t layer13_out[16];
+    #pragma HLS ARRAY_PARTITION variable=layer13_out complete dim=0
 
     nnet::dense<input_layer_t, dense_0_t, config3>(input_layer, layer3_out, w3, b3); // dense_0
 

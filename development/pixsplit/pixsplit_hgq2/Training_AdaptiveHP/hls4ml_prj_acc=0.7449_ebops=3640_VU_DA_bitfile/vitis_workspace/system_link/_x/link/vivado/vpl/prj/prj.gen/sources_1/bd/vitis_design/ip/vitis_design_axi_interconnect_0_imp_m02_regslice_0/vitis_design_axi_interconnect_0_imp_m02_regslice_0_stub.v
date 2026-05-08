@@ -4,8 +4,8 @@
 // Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
 // Date        : Thu May  7 11:54:19 2026
 // Host        : 11c2efc5f272 running 64-bit Ubuntu 22.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7449_ebops=3640_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_imp_m02_regslice_0/vitis_design_axi_interconnect_0_imp_m02_regslice_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top vitis_design_axi_interconnect_0_imp_m02_regslice_0 -prefix
+//               vitis_design_axi_interconnect_0_imp_m02_regslice_0_ vitis_design_axi_interconnect_0_imp_m02_regslice_0_stub.v
 // Design      : vitis_design_axi_interconnect_0_imp_m02_regslice_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xck26-sfvc784-2LV-c

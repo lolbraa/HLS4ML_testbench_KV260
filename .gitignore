@@ -211,6 +211,12 @@ hls4ml-kv260.code-workspace
 #hls4ml-dev-testenv/testmodel
 #hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1
 
+
+#PixSplit data
+nparticles_resampled.h5
+processed_data
+
+
 # Vitis - for store filer for GitHub
 */system_link/*
 FPGAs_AdaptiveSoCs_Unified_SDI_*.tar
@@ -218,7 +224,27 @@ xilinx_*.zip
 dockerbuild/qs.md
 dockerbuild/*.tar.gz
 .Xil
+*.adb
+*.verbose.rpt
+#find . -size +100M | cat >> .gitignore
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.bind.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_40_20_5_3_0_config4_s.bind.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_40_20_5_3_0_config4_s.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.verbose.rpt
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_39_19_5_3_0_config2_s.bind.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_39_19_5_3_0_config2_s.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.verbose.bind.rpt
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.sched.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_DA_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.bind.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_40_20_5_3_0_config4_s.bind.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_40_20_5_3_0_config4_s.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.verbose.rpt
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_39_19_5_3_0_config2_s.bind.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_39_19_5_3_0_config2_s.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.verbose.bind.rpt
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.sched.adb
+./development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/myproject_prj/solution1/.autopilot/db/init_exp_table_ap_ufixed_36_16_5_3_0_softmax_config11_s.adb
+./development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7685_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0_sim_netlist.v
+./development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7685_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0_sim_netlist.vhdl
 
-#PixSplit data
-nparticles_resampled.h5
-processed_data

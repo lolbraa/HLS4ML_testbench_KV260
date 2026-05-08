@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Thu May  7 12:20:40 2026
+-- Date        : Thu May  7 12:20:39 2026
 -- Host        : 11c2efc5f272 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_zynq_ultra_ps_e_0_0/vitis_design_zynq_ultra_ps_e_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top vitis_design_zynq_ultra_ps_e_0_0 -prefix
+--               vitis_design_zynq_ultra_ps_e_0_0_ vitis_design_zynq_ultra_ps_e_0_0_sim_netlist.vhdl
 -- Design      : vitis_design_zynq_ultra_ps_e_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -1587,8 +1587,6 @@ entity vitis_design_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e i
   attribute C_USE_DIFF_RW_CLK_GP6 of vitis_design_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e : entity is 0;
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of vitis_design_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e : entity is "vitis_design_zynq_ultra_ps_e_0_0.hwdef";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e : entity is "zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e";
   attribute PSS_IO : string;
   attribute PSS_IO of vitis_design_zynq_ultra_ps_e_0_0_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e : entity is "Signal Name, DiffPair Type, DiffPair Signal,Direction, Site Type, IO Standard, Drive (mA), Slew Rate, Pull Type, IBIS Model, ODT, OUTPUT_IMPEDANCE " & LF &
  "QSPI_X4_SCLK_OUT, , , OUT, PS_MIO0_500, LVCMOS18, 4, SLOW, PULLUP, PS_MIO_LVCMOS18_S_4,,  " & LF &

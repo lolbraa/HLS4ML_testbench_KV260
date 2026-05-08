@@ -31,7 +31,7 @@
 struct config3 : nnet::dense_config {
     static const unsigned n_in = 60;
     static const unsigned n_out = 128;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 7638;
@@ -52,7 +52,7 @@ struct config3 : nnet::dense_config {
 struct relu_config4 : nnet::activ_config {
     static const unsigned n_in = 128;
     static const unsigned table_size = 131072;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
     typedef dense_0_relu_table_t table_t;
 };
@@ -61,7 +61,7 @@ struct relu_config4 : nnet::activ_config {
 struct config6 : nnet::dense_config {
     static const unsigned n_in = 128;
     static const unsigned n_out = 64;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 8175;
@@ -82,7 +82,7 @@ struct config6 : nnet::dense_config {
 struct relu_config7 : nnet::activ_config {
     static const unsigned n_in = 64;
     static const unsigned table_size = 65536;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
     typedef dense_1_relu_table_t table_t;
 };
@@ -91,7 +91,7 @@ struct relu_config7 : nnet::activ_config {
 struct config9 : nnet::dense_config {
     static const unsigned n_in = 64;
     static const unsigned n_out = 32;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 2044;
@@ -112,7 +112,7 @@ struct config9 : nnet::dense_config {
 struct relu_config10 : nnet::activ_config {
     static const unsigned n_in = 32;
     static const unsigned table_size = 65536;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
     typedef dense_2_relu_table_t table_t;
 };
@@ -121,7 +121,7 @@ struct relu_config10 : nnet::activ_config {
 struct config12 : nnet::dense_config {
     static const unsigned n_in = 32;
     static const unsigned n_out = 16;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 509;
@@ -142,7 +142,7 @@ struct config12 : nnet::dense_config {
 struct relu_config13 : nnet::activ_config {
     static const unsigned n_in = 16;
     static const unsigned table_size = 16384;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned reuse_factor = 1;
     typedef dense_3_relu_table_t table_t;
 };
@@ -151,7 +151,7 @@ struct relu_config13 : nnet::activ_config {
 struct config15 : nnet::dense_config {
     static const unsigned n_in = 16;
     static const unsigned n_out = 3;
-    static const unsigned io_type = nnet::io_stream;
+    static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
     static const unsigned n_zeros = 43;

@@ -1,0 +1,9 @@
+{
+  "name": "myproject",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile_troubleshooting/hls_kernel_config.cfg"],
+    "work_dir": "vitis_unified_project"
+  }
+}

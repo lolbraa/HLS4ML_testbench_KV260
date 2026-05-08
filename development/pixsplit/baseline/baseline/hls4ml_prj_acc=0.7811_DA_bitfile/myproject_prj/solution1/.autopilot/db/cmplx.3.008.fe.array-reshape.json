@@ -1,0 +1,264 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "6 1 14 8 7 13 11 4 2 10",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 499,
+    "memory_accesses": 10,
+    "name": "myproject",
+    "total_instructions": 280713
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 769,
+    "loads": {
+      "L": 128
+    },
+    "memory_accesses": 256,
+    "name": "relu<ap_fixed<39, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config3>",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 769
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "5",
+    "control_depth": 0,
+    "def_use_depth": 16,
+    "file": "nnet_activation.h",
+    "fileloc": 220,
+    "instructions": 66,
+    "loads": {
+      "G": 1,
+      "L": 6
+    },
+    "memory_accesses": 11,
+    "name": "softmax_stable<ap_fixed<37, 17, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, softmax_config11>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 206915
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 36,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 2161,
+    "loads": {
+      "L": 32
+    },
+    "memory_accesses": 48,
+    "name": "dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<38, 18, (ap_q_mode)5, (ap_o_mode)3, 0>, config8>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 2161
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<40, 20, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 193,
+    "loads": {
+      "L": 32
+    },
+    "memory_accesses": 64,
+    "name": "relu<ap_fixed<39, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config7>",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 193
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12",
+    "control_depth": 0,
+    "def_use_depth": 131,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 31936,
+    "loads": {
+      "L": 192
+    },
+    "memory_accesses": 320,
+    "name": "dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<40, 20, (ap_q_mode)5, (ap_o_mode)3, 0>, config4>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 32192
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_activation.h",
+    "fileloc": 131,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "exp_fcn_float",
+    "total_instructions": 2
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 20,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 235,
+    "loads": {
+      "L": 16
+    },
+    "memory_accesses": 19,
+    "name": "dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<37, 17, (ap_q_mode)5, (ap_o_mode)3, 0>, config10>",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 235
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "nnet_activation.h",
+    "fileloc": 133,
+    "instructions": 55,
+    "memory_accesses": 0,
+    "name": "softmax_real_val_from_idx<ap_ufixed<36, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, 1024U>",
+    "total_instructions": 55
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 97,
+    "loads": {
+      "L": 16
+    },
+    "memory_accesses": 32,
+    "name": "relu<ap_fixed<38, 18, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config9>",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 97
+  },
+  "5": {
+    "basicblocks": 28673,
+    "calls": "3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15 3 15",
+    "control_depth": 0,
+    "def_use_depth": 6,
+    "file": "nnet_activation.h",
+    "fileloc": 149,
+    "instructions": 148481,
+    "memory_accesses": 0,
+    "name": "init_exp_table<ap_ufixed<36, 16, (ap_q_mode)5, (ap_o_mode)3, 0>, softmax_config11>",
+    "stores": {
+      "L": 1024
+    },
+    "total_instructions": 206849
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9 9",
+    "control_depth": 0,
+    "def_use_depth": 65,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 28517,
+    "loads": {
+      "L": 188
+    },
+    "memory_accesses": 444,
+    "name": "dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<39, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 29029
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 68,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 8238,
+    "loads": {
+      "L": 64
+    },
+    "memory_accesses": 96,
+    "name": "dense_latency<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<39, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 8238
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 385,
+    "loads": {
+      "L": 64
+    },
+    "memory_accesses": 128,
+    "name": "relu<ap_fixed<40, 20, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, relu_config5>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 385
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "cast<ap_fixed<16, 6, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<39, 19, (ap_q_mode)5, (ap_o_mode)3, 0>, config2>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  }
+}

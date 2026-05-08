@@ -1,7 +1,7 @@
 #ifndef MYPROJECT_BRIDGE_H_
 #define MYPROJECT_BRIDGE_H_
 
-#include "firmware/myproject_axi_master.h"
+#include "firmware/myproject.h"
 #include "firmware/nnet_utils/nnet_helpers.h"
 #include <algorithm>
 #include <map>
@@ -51,21 +51,33 @@ void collect_trace_output(struct trace_data *c_trace_outputs) {
 
 // Wrapper of top level function for Python bridge
 void myproject_float(
-    float gmem_in0_ptr_input_layer[60],
-    float gmem_out0_ptr_layer15_out[3]
+    float *input_layer,
+    float *layer15_out
 ) {
 
-    myproject_axi_master(
-    gmem_in0_ptr_input_layer,
-    gmem_out0_ptr_layer15_out,
-    1);
+    input_layer_t input_layer_ap[60];
+    nnet::convert_data<float, input_layer_t, 60>(input_layer, input_layer_ap);
+
+    result_t layer15_out_ap[3];
+
+    myproject(input_layer_ap,layer15_out_ap);
+
+    nnet::convert_data<result_t, float, 3>(layer15_out_ap, layer15_out);
 }
 
 void myproject_double(
-    double gmem_in0_ptr_input_layer[60],
-    double gmem_out0_ptr_layer15_out[3]
+    double *input_layer,
+    double *layer15_out
 ) {
 
+    input_layer_t input_layer_ap[60];
+    nnet::convert_data<double, input_layer_t, 60>(input_layer, input_layer_ap);
+
+    result_t layer15_out_ap[3];
+
+    myproject(input_layer_ap,layer15_out_ap);
+
+    nnet::convert_data<result_t, double, 3>(layer15_out_ap, layer15_out);
 }
 }
 

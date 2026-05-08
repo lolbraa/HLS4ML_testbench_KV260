@@ -1,0 +1,88 @@
+Backend: Vitis
+ClockPeriod: '5'
+ClockUncertainty: 27%
+HLSConfig:
+  LayerName:
+    dense0:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense0_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense1:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense1_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense2:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense2_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense3:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense3_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense_3:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_3_softmax:
+      Precision:
+        result: auto
+      Trace: false
+    input_layer_3:
+      Precision:
+        result: auto
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: latency
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+InputShapes:
+  input_layer_3:
+  - 60
+KerasModel: !keras_model '/work/development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile/keras_model.keras'
+OutputDir: /work/development/pixsplit/baseline/baseline/hls4ml_prj_acc=0.7811_latency_bitfile
+OutputPredictions: null
+OutputShapes:
+  layer11_out:
+  - 3
+Part: xck26-sfvc784-2LV-c
+ProjectName: myproject
+Stamp: '90029103'
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

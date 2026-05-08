@@ -2,10 +2,11 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Thu May  7 12:21:19 2026
+-- Date        : Thu May  7 12:21:17 2026
 -- Host        : 11c2efc5f272 running 64-bit Ubuntu 22.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim
---               /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.gen/sources_1/bd/vitis_design/ip/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0 -prefix
+--               vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_
+--               vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_sim_netlist.vhdl
 -- Design      : vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -72,8 +73,6 @@ entity vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1
     mi_bvalid : in STD_LOGIC_VECTOR ( 0 to 0 );
     mi_wready : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_addr_arbiter_sasd : entity is "axi_crossbar_v2_1_38_addr_arbiter_sasd";
 end vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_addr_arbiter_sasd;
 
 architecture STRUCTURE of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_addr_arbiter_sasd is
@@ -1731,8 +1730,6 @@ entity vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1
     \gen_axilite.s_axi_bvalid_i_reg_1\ : in STD_LOGIC;
     aa_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_decerr_slave : entity is "axi_crossbar_v2_1_38_decerr_slave";
 end vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_decerr_slave;
 
 architecture STRUCTURE of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_decerr_slave is
@@ -1923,8 +1920,6 @@ entity vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1
     D : in STD_LOGIC_VECTOR ( 2 downto 0 );
     aclk : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_splitter : entity is "axi_crossbar_v2_1_38_splitter";
 end vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_splitter;
 
 architecture STRUCTURE of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_splitter is
@@ -2059,8 +2054,6 @@ entity vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_register_slic
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_register_slice_v2_1_36_axic_register_slice : entity is "axi_register_slice_v2_1_36_axic_register_slice";
 end vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_register_slice_v2_1_36_axic_register_slice;
 
 architecture STRUCTURE of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_register_slice_v2_1_36_axic_register_slice is
@@ -3642,8 +3635,6 @@ entity vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1
     s_axi_araddr : in STD_LOGIC_VECTOR ( 39 downto 0 );
     s_axi_awaddr : in STD_LOGIC_VECTOR ( 39 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_crossbar_sasd : entity is "axi_crossbar_v2_1_38_crossbar_sasd";
 end vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_crossbar_sasd;
 
 architecture STRUCTURE of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_crossbar_sasd is
@@ -4111,8 +4102,6 @@ entity vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1
   attribute C_S_AXI_WRITE_ACCEPTANCE of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_axi_crossbar : entity is 1;
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_axi_crossbar : entity is "yes";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_axi_crossbar : entity is "axi_crossbar_v2_1_38_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_axi_crossbar_v2_1_38_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;

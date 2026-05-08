@@ -86,15 +86,15 @@ InputData: null
 InputShapes:
   input_layer:
   - 60
-KerasModel: !keras_model '/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile/keras_model.keras'
-OutputDir: /work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile
+KerasModel: !keras_model '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile/keras_model.keras'
+OutputDir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7573_ebops=11698_VU_DA_bitfile
 OutputPredictions: null
 OutputShapes:
   layer15_out:
   - 3
 Part: xck26-sfvc784-2LV-c
 ProjectName: myproject
-Stamp: f9c85085
+Stamp: fe9b1d01
 Version: 1.0.0
 VitisUnifiedConfig:
   Board: kv260

@@ -1,0 +1,3 @@
+model,time_seconds,time_minutes
+Baseline acc=0.7811 Distributed Arithmetic,7821.06210231781,130.35103503863016
+Baseline acc=0.7811 latency,7071.363123178482,117.8560520529747

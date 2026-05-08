@@ -3,7 +3,7 @@
   "type": "HLS",
   "configuration": {
     "componentType": "HLS",
-    "configFiles": ["/work/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7084_ebops=864_VU_DA_bitfile/hls_kernel_config.cfg"],
+    "configFiles": ["/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/pixsplit/pixsplit_hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7084_ebops=864_VU_DA_bitfile/hls_kernel_config.cfg"],
     "work_dir": "vitis_unified_project"
   }
 }

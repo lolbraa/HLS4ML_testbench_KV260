@@ -5825,26 +5825,6 @@
         </section>
     </ReportSWInterface>
     <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
-    <ReportBurst>
-        <section name="M_AXI Burst Information" level="0" HEADER_NOTE="Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.">
-            <item name="Inferred Burst Summary">
-                <table>
-                    <keys size="6">HW Interface, Direction, Length, Width, Loop, Loop Location</keys>
-                    <column name="m_axi_gmem_in0">read, variable, 32, VITIS_LOOP_13_1, firmware/myproject_axi_master.cpp:13:22</column>
-                    <column name="m_axi_gmem_out0">write, variable, 32, VITIS_LOOP_29_1, firmware/myproject_axi_master.cpp:29:22</column>
-                </table>
-            </item>
-            <item name="All M_AXI Variable Accesses">
-                <table>
-                    <keys size="10">HW Interface, Variable, Access Location, Direction, Burst Status, Length, Loop, Loop Location, Resolution, Problem</keys>
-                    <column name="m_axi_gmem_in0">in, firmware/myproject_axi_master.cpp:17:26, read, Widen Fail, , VITIS_LOOP_16_3, firmware/myproject_axi_master.cpp:16:30, 214-353, Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0</column>
-                    <column name="m_axi_gmem_in0">in, firmware/myproject_axi_master.cpp:17:26, read, Inferred, variable, VITIS_LOOP_13_1, firmware/myproject_axi_master.cpp:13:22, , </column>
-                    <column name="m_axi_gmem_out0">out, firmware/myproject_axi_master.cpp:33:32, write, Widen Fail, , VITIS_LOOP_32_3, firmware/myproject_axi_master.cpp:32:30, 214-353, Could not widen since type float size is greater than or equal to the max_widen_bitwidth threshold of 0</column>
-                    <column name="m_axi_gmem_out0">out, firmware/myproject_axi_master.cpp:33:32, write, Inferred, variable, VITIS_LOOP_29_1, firmware/myproject_axi_master.cpp:29:22, , </column>
-                </table>
-            </item>
-        </section>
-    </ReportBurst>
     <PragmaReport>
         <Pragma type="interface" location="../../firmware/myproject.cpp:13" status="valid" parentFunction="myproject" variable="input_layer,layer15_out" isDirective="0" options="axis port=input_layer,layer15_out"/>
         <Pragma type="dataflow" location="../../firmware/myproject.cpp:14" status="valid" parentFunction="myproject" variable="" isDirective="0" options=""/>
@@ -6090,8 +6070,4 @@
         <Pragma type="unroll" location="../../firmware/nnet_utils/nnet_stream.h:321" status="valid" parentFunction="broadcast_stream_hxwx1" variable="" isDirective="0" options=""/>
         <Pragma type="unroll" location="../../firmware/nnet_utils/nnet_types.h:28" status="valid" parentFunction="operator=" variable="" isDirective="0" options=""/>
     </PragmaReport>
-    <AutoPragmaReport>
-        <AutoPragma type="pipeline" parentFunction="store_result&lt;float, nnet::array&lt;ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3u&gt; &gt;" options="" pragmaLocId="firmware/myproject_axi_master.cpp:29:0" pragmaLocOpt="store_result&lt;float, nnet::array&lt;ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3u&gt; &gt;/VITIS_LOOP_29_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=store_result&lt;float, nnet::array&lt;ap_fixed&lt;16, 8, (ap_q_mode)5, (ap_o_mode)3, 0&gt;, 3u&gt; &gt;/VITIS_LOOP_29_1 " loopName="VITIS_LOOP_29_1" loopLoc="firmware/myproject_axi_master.cpp:29:22"/>
-        <AutoPragma type="pipeline" parentFunction="load_input&lt;float, nnet::array&lt;ap_fixed&lt;11, 7, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 60u&gt; &gt;" options="" pragmaLocId="firmware/myproject_axi_master.cpp:13:0" pragmaLocOpt="load_input&lt;float, nnet::array&lt;ap_fixed&lt;11, 7, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 60u&gt; &gt;/VITIS_LOOP_13_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=load_input&lt;float, nnet::array&lt;ap_fixed&lt;11, 7, (ap_q_mode)0, (ap_o_mode)3, 0&gt;, 60u&gt; &gt;/VITIS_LOOP_13_1 " loopName="VITIS_LOOP_13_1" loopLoc="firmware/myproject_axi_master.cpp:13:22"/>
-    </AutoPragmaReport>
 </profile>
