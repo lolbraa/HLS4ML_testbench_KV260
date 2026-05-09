@@ -1,0 +1,86 @@
+Backend: Vitis
+ClockPeriod: '5'
+ClockUncertainty: 27%
+HLSConfig:
+  LayerName:
+    conv2d:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    conv2d_1:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    conv2d_1_relu:
+      Precision:
+        result: auto
+      Trace: false
+    conv2d_relu:
+      Precision:
+        result: auto
+      Trace: false
+    dense:
+      Precision:
+        bias: auto
+        result: auto
+        weight: auto
+      Trace: false
+    dense_softmax:
+      Precision:
+        result: auto
+      Trace: false
+    dropout:
+      Precision:
+        result: auto
+      Trace: false
+    flatten:
+      Precision:
+        result: auto
+      Trace: false
+    input_layer:
+      Precision:
+        result: auto
+      Trace: false
+    max_pooling2d:
+      Precision:
+        result: auto
+      Trace: false
+    max_pooling2d_1:
+      Precision:
+        result: auto
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    Precision:
+      default: fixed<16,6>
+    ReuseFactor: 1
+    Strategy: Latency
+    TraceOutput: false
+IOType: io_stream
+InputData: null
+InputShapes:
+  input_layer:
+  - 28
+  - 28
+  - 1
+KerasModel: !keras_model 'hls4ml_prj_MNIST_baseline/keras_model.keras'
+OutputDir: hls4ml_prj_MNIST_baseline
+OutputPredictions: null
+OutputShapes:
+  layer11_out:
+  - 10
+Part: xck26-sfvc784-2LV-c
+ProjectName: myproject
+Stamp: e35962cd
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

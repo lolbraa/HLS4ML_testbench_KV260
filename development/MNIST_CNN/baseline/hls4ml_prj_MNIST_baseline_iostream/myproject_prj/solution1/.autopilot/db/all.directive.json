@@ -1,0 +1,24 @@
+[
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "myproject",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "myproject"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/ncgadmin/DAT255/DAT255-project/MNIST/baseline/hls4ml_prj_MNIST_baseline/build_prj.tcl",
+    "sourceLine": 169,
+    "success": true
+  }
+]
