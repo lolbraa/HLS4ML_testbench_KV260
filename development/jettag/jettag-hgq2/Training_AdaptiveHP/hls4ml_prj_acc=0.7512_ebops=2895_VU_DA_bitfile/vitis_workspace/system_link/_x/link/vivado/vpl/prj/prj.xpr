@@ -527,8 +527,8 @@
         </ReportConfig>
         <ReportConfig DisplayName="impl_report_timing_summary_route_design_summary" Name="impl_report_timing_summary_route_design_summary" Spec="report_timing_summary" RunStep="route_design" ReportFile="vitis_design_wrapper_timing_summary_routed.rpt" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>
-          <ReportConfigOutputOption Name="pb" Type="string" Value=""/>
-          <ReportConfigOutputOption Name="rpx" Type="string" Value=""/>
+          <ReportConfigOutputOption Name="pb" Type="string" Value="vitis_design_wrapper_timing_summary_routed.pb"/>
+          <ReportConfigOutputOption Name="rpx" Type="string" Value="vitis_design_wrapper_timing_summary_routed.rpx"/>
         </ReportConfig>
         <ReportConfig DisplayName="impl_report_timing_summary_post_route_phys_opt_design_summary" Name="impl_report_timing_summary_post_route_phys_opt_design_summary" Spec="report_timing_summary" RunStep="post_route_phys_opt_design" Version="1" Minor="0">
           <ReportConfigOption Name="dummy_option" Type="string"/>

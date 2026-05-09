@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu May  7 15:50:54 2026
+# Process ID         : 773778
+# Current directory  : /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip
+# Command line       : vivado -notrace -mode batch -source run_ippack.tcl
+# Log file           : /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/vivado.log
+# Journal file       : /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/vivado.jou
+# Running On         : 11c2efc5f272
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.952 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 63558 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 63558 MB
+# Available Virtual  : 36678 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/hls_data.json outdir=/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip srcdir=/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/misc
+INFO: Copied 60 verilog file(s) to /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/verilog
+INFO: Copied 57 vhdl file(s) to /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/drivers
+Generating 1 subcores in /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/subcore_prj:
+impl/misc/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: Using COE_DIR=/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/verilog
+INFO: Generating myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: Done generating myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+INFO: Copied 1 subcore files: /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.xci
+INFO: Import ports from HDL: /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/vhdl/myproject_axi_master.vhd (myproject_axi_master)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+INFO: Add axi4full interface m_axi_gmem_in0
+INFO: Add axi4full interface m_axi_gmem_out0
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/component.xml
+Generating XO file: myproject_axi_master.xo in directory /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/..
+Running: package_xo -xo_path /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/../myproject_axi_master.xo -kernel_xml /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/kernel.xml -kernel_name myproject_axi_master -ip_directory /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip -kernel_files {/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/../../../../firmware/myproject_axi_master.cpp /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/../../../../firmware/myproject.cpp} -hls_directory /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/impl/misc/hls_files -kernel_json /work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/hls_data.json

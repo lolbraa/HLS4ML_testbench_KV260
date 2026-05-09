@@ -170,3 +170,84 @@ Creating Vivado project.
 [15:36:47] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 00m 30s 
 
 [15:36:47] Starting bitstream generation..
+[15:37:17] Creating bitmap...
+[15:37:24] Writing bitstream ./vitis_design_wrapper.bit...
+[15:37:24] Finished 6th of 6 tasks (FPGA bitstream generation). Elapsed time: 00h 00m 37s 
+Check VPL, containing 6 checks, has run: 0 errors
+[15:37:23] Run vpl: Step impl: Completed
+[15:37:24] Run vpl: FINISHED. Run Status: impl Complete!
+INFO: [v++ 60-1441] [15:37:24] Run run_link: Step vpl: Completed
+Time (s): cpu = 00:11:47 ; elapsed = 00:06:47 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 16437 ; free virtual = 38443
+INFO: [v++ 60-1443] [15:37:24] Run run_link: Step rtdgen: Started
+INFO: [v++ 60-1453] Command Line: rtdgen
+INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1453] Command Line: cf2sw -a /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/address_map.xml -sdsl /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/sdsl.dat -xclbin /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -rtd /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.rtd -o /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.xml
+INFO: [v++ 60-1652] Cf2sw returned exit code: 0
+INFO: [v++ 60-1441] [15:37:24] Run run_link: Step rtdgen: Completed
+Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.76 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 16434 ; free virtual = 38441
+INFO: [v++ 60-1443] [15:37:24] Run run_link: Step xclbinutil: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --add-section BITSTREAM:RAW:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/system.bit --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd --add-section BUILD_METADATA:JSON:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_build.rtd --add-section EMBEDDED_METADATA:RAW:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.xml --add-section SYSTEM_METADATA:RAW:/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0 --output /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin
+INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
+XRT Build Version: 2.19.0 (Vitis)
+       Build Date: 2025-02-07 10:52:04
+          Hash ID: f02de266f785111094b02d32a9012bd0da3abd58
+Creating a default 'in-memory' xclbin image.
+
+Section: 'BITSTREAM'(0) was successfully added.
+Size   : 7797832 bytes
+Format : RAW
+File   : '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/system.bit'
+
+Section: 'MEM_TOPOLOGY'(6) was successfully added.
+Format : JSON
+File   : 'mem_topology'
+
+Section: 'IP_LAYOUT'(8) was successfully added.
+Format : JSON
+File   : 'ip_layout'
+
+Section: 'CONNECTIVITY'(7) was successfully added.
+Format : JSON
+File   : 'connectivity'
+WARNING: Skipping CLOCK_FREQ_TOPOLOGY section for count size is zero.
+WARNING: Section 'CLOCK_FREQ_TOPOLOGY' content is empty.  No data in the given JSON file.
+
+Section: 'CLOCK_FREQ_TOPOLOGY'(11) was empty.  No action taken.
+Format : JSON
+File   : '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd'
+
+Section: 'BUILD_METADATA'(14) was successfully added.
+Size   : 2214 bytes
+Format : JSON
+File   : '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject_build.rtd'
+
+Section: 'EMBEDDED_METADATA'(2) was successfully added.
+Size   : 3006 bytes
+Format : RAW
+File   : '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/myproject.xml'
+
+Section: 'SYSTEM_METADATA'(22) was successfully added.
+Size   : 10734 bytes
+Format : RAW
+File   : '/work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json'
+Successfully wrote (7820844 bytes) to the output file: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin
+Leaving xclbinutil.
+INFO: [v++ 60-1441] [15:37:25] Run run_link: Step xclbinutil: Completed
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.12 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 16393 ; free virtual = 38406
+INFO: [v++ 60-1443] [15:37:25] Run run_link: Step xclbinutilinfo: Started
+INFO: [v++ 60-1453] Command Line: xclbinutil --quiet --force --info /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin.info --input /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin
+INFO: [v++ 60-1454] Run Directory: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1441] [15:37:25] Run run_link: Step xclbinutilinfo: Completed
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.14 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 16347 ; free virtual = 38361
+INFO: [v++ 60-2397] Platform default or user specified output type sd_card detected but is not a supported output for v++ --link. Use the v++ --package option instead to create SD card output.
+INFO: [v++ 60-586] Created myproject.xclbin
+INFO: [v++ 60-1307] Run completed. Additional information can be found in:
+	Guidance: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html
+	Timing Report: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpt
+	Vivado Log: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/link/vivado.log
+	Steps Log File: /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/link/link.steps.log
+
+INFO: [v++ 60-2343] Use the Vitis Unified IDE to visualize and navigate the reports. Run the following command. 
+    vitis -a/ --analyze /work/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7512_ebops=2895_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin.link_summary 
+INFO: [v++ 60-791] Total elapsed time: 0h 6m 54s
+INFO: [v++ 60-1653] Closing dispatch client.

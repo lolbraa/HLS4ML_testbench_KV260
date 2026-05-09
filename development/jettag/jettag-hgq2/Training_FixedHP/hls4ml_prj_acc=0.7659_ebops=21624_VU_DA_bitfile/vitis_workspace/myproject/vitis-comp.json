@@ -1,0 +1,9 @@
+{
+  "name": "myproject",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["/work/development/jettag/jettag-hgq2/Training_FixedHP/hls4ml_prj_acc=0.7659_ebops=21624_VU_DA_bitfile/hls_kernel_config.cfg"],
+    "work_dir": "vitis_unified_project"
+  }
+}

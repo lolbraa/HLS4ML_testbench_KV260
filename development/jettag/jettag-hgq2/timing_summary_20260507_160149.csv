@@ -1,0 +1,6 @@
+model,time_seconds,time_minutes
+AdaptiveHP acc=0.7117 ebops=303 Distributed Arithmetic,504.18701457977295,8.403116909662883
+AdaptiveHP acc=0.7426 ebops=1001 Distributed Arithmetic,531.0314404964447,8.850524008274078
+AdaptiveHP acc=0.7512 ebops=2895 Distributed Arithmetic,569.8398432731628,9.497330721219381
+FixedHP acc=0.7590 ebops=11634 Distributed Arithmetic,697.5689778327942,11.62614963054657
+FixedHP acc=0.7659 ebops=21624 Distributed Arithmetic,766.6106905937195,12.776844843228657

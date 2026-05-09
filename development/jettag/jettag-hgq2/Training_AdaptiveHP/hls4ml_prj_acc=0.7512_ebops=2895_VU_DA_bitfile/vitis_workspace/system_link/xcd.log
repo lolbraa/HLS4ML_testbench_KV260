@@ -42,3 +42,18 @@ Thu May  7 15:33:40 2026: Dispatch Server: Accepted socket connection from clien
 Thu May  7 15:33:40 2026: Starting Socket connection
 Thu May  7 15:34:19 2026: Dispatch Server: Accepted socket connection from client
 Thu May  7 15:34:19 2026: Starting Socket connection
+Thu May  7 15:37:25 2026: SESSION_MGR: closing session for UUID '02a2cbcd-68c5-4b24-a47d-5c02fd7ae788' with name 'v++_link_myproject'
+Thu May  7 15:37:25 2026: KERNEL_SVC: closing session for UUID '02a2cbcd-68c5-4b24-a47d-5c02fd7ae788' with name 'v++_link_myproject'
+Thu May  7 15:37:25 2026: GUIDANCE_SMGR: closing session for UUID '02a2cbcd-68c5-4b24-a47d-5c02fd7ae788' with name 'v++_link_myproject'
+Thu May  7 15:37:25 2026: SYSTEM_DIAGRAM: closing session for UUID '02a2cbcd-68c5-4b24-a47d-5c02fd7ae788' with name 'v++_link_myproject'
+Thu May  7 15:37:25 2026: STOP_SERVER received, server token: a10d50c6-dd07-413d-a1d3-92a5bff108be, passed token: a10d50c6-dd07-413d-a1d3-92a5bff108be
+Thu May  7 15:37:25 2026: Socket received request to stop server.
+Thu May  7 15:37:25 2026: Dispatch Server: do_await_stop
+Thu May  7 15:37:25 2026: Dispatch Server: stopping mainFifo_
+Thu May  7 15:37:25 2026: XCD main fifo: Stopping
+Thu May  7 15:37:25 2026: XCD main fifo: do_read error code: Operation canceled
+Thu May  7 15:37:25 2026: XCD main fifo: bytes_transferred: 0
+Thu May  7 15:37:25 2026: SERVER: destructor for server bound to port 38007
+Thu May  7 15:37:25 2026: XCD main fifo: Good unlink of /tmp/xcdmaina10d50c6-dd07-413d-a1d3-92a5bff108be
+Thu May  7 15:37:25 2026: Server exiting with status 0.
+Thu May  7 15:37:25 2026: Closing log file.
