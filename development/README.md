@@ -10,13 +10,25 @@ The directory follows the structure of a unique
 
 ### Notes on architectures
 
+When designing the architecture to be deployed on FPGA, you should always keep in mind the initial layer width and depth plays a major part in the resource usage in the end, even when quantitized.
+
 With a large dataset for HGQ, finetune hyperparameters with only a small subset of the data (e.g. 5%) for rapid iterations.
 
 While the defaults are often quite good, sometimes they cause weird cases.
 
 Vitis Unified only supports [IO_Stream](https://fastmachinelearning.org/hls4ml/api/concepts.html#i-o-types), ensuing: HGQ2 activation layer may not be [heteregenous](https://calad0i.github.io/HGQ2/getting_started.html#heterogeneous-vs-homogeneous-quantization) (our understanding is the bus width, following IO_Stream, may not be quantized heteregenously). 
 
-When designing the architecture to be deployed on FPGA, you should always keep in mind the layer width and depth is important. 
+Make sure the HLS4ML-compilation is with right dtypes, i.e. `input_type` and `output_type` in config.
+
+### Datasets
+
+In this repository we have developed models for three datasets, researching different aspects of developing and deploying models for FPGA. 
+
+[Jet Tagging](https://iopscience.iop.org/article/10.1088/1748-0221/13/07/P07027) is a benchmark for neural networks in high-energy physics, with multiple datasets and examples publicly available. The aim is to classify what particle decays into a jet substructure based on sensor-information, or in this case, high-level information of the event.
+
+[Pixel Cluster Splitting](https://iopscience.iop.org/article/10.1088/1748-0221/9/09/P09009) is a classification task, identifying and splitting particles passing through the ATLAS pixel detector. The dataset is closed source, though our work and implementation are available.
+
+[MNIST](http://yann.lecun.com/exdb/mnist) is handwritten digits, and in our case the test for deploying convolutional networks.
 
 
 ## HLS4ML and Synthesis
@@ -65,22 +77,27 @@ os.environ['LD_PRELOAD'] = '/lib/x86_64-linux-gnu/libudev.so.1'
 
 ### Notes on synthesis
 
-Some key logfiles loacated in the HLS4ML-project directory:
-- `vitis_workspace/system_link/_x/logs/link/vivado.log`
-- `vitis_workspace/system_link/v++_myproject.log`
 
-
-Reports:
+Reports Vitis Unified
 - Final reports from Vivado `final_reports/`
 - Guidance: `vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html`
 - Timing Report: `vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpt`
 - HLS compile report with timing/resource estimates: `vitis_workspace/myproject/vitis_unified_project/reports/hls_compile.rpt`
+- Synthesis: `vitis_workspace/myproject/vitis_unified_project/hls/syn/report`
 
+Reports Vitis
+- Synthesis: `myproject_prj/solution1/syn/report/myproject_csynth.rpt` and `csynth.rpt`
+
+There are many more in which you may find useful information.
 
 The process flow is synthesis, place, route, bitfile.
 
 In kernel-reports, platform is the 
 
+
+Some key logfiles loacated in the HLS4ML-project directory:
+- `vitis_workspace/system_link/_x/logs/link/vivado.log`
+- `vitis_workspace/system_link/v++_myproject.log`
 
 
 
