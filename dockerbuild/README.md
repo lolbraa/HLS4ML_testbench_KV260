@@ -14,7 +14,7 @@ Docker internal path for work is /work. Please mount development-folders from lo
 
 Conda Environments may be set up by mounting a directory with files with the filename-pattern environment-*.yml into /work/environments/ (see example above). The entrypoint is configured to install environments when initiating. You may install the environments in buildtime, however to keep the size small and allow more flexibility, we've chosen to default to install at runtime.
 
-### Import Image
+### Import/Load Image
 
 With the physical testbench, a prebuilt image is provided. It may be loaded by 
 ([documentation](https://docs.docker.com/reference/cli/docker/image/load/))
