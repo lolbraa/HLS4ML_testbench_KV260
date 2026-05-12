@@ -1,0 +1,9 @@
+{
+  "name": "myproject",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": ["/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/hls_kernel_config.cfg"],
+    "work_dir": "vitis_unified_project"
+  }
+}

@@ -1,0 +1,186 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/reports/link
+	Log files: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/myproject.xclbin.link_summary, at Sun May 10 16:17:12 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html', at Sun May 10 16:17:12 2026
+INFO: [v++ 60-895]   Target platform: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa'
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
+INFO: [v++ 82-31] Launching aie baremetal script for: link
+WARNING: [v++ 82-11894] The baremetal_metadata.cpp file was not created successfully.
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [16:17:13] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int --temp_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/run_link
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [16:17:14] build_xd_ip_db started: /opt/Xilinx/2025.2/Vitis/bin/build_xd_ip_db -ip_search 0  -sds-pf /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/kv260_axi_all_platform.hpfm -clkid 0 -ip /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/iprepo/xilinx_com_hls_myproject_axi_master_1_0,myproject_axi_master -o /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [16:17:14] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 2193 ; free virtual = 49449
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [16:17:14] cfgen started: /opt/Xilinx/2025.2/Vitis/bin/cfgen  -dpa_mem_offload false -dpa_aie_mem_offload false -dmclkid 0 -r /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: myproject_axi_master, num: 1  {myproject_axi_master_1}
+INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_in0_ptr_linput to HP0
+INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_out0_ptr_layer5_out to HP0
+INFO: [SYSTEM_LINK 82-37] [16:17:14] cfgen finished successfully
+Time (s): cpu = 00:00:00.54 ; elapsed = 00:00:00.58 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 2182 ; free virtual = 49439
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [16:17:14] cf2bd started: /opt/Xilinx/2025.2/Vitis/bin/cf2bd  --linux --trace_buffer 1024 --input_file /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd --temp_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link --output_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -dn dr -dp /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [16:17:15] cf2bd finished successfully
+Time (s): cpu = 00:00:00.73 ; elapsed = 00:00:00.86 . Memory (MB): peak = 521.422 ; gain = 0.000 ; free physical = 2165 ; free virtual = 49422
+INFO: [v++ 60-1441] [16:17:15] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 2196 ; free virtual = 49453
+INFO: [v++ 60-1443] [16:17:15] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1441] [16:17:16] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.65 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 2200 ; free virtual = 49457
+INFO: [v++ 60-1443] [16:17:16] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1441] [16:17:16] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.04 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 2200 ; free virtual = 49457
+INFO: [v++ 60-1443] [16:17:16] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/.ipcache --output_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int --log_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/logs/link --report_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/reports/link --config /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link --no-info --iprepo /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/run_link/vpl.pb /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/run_link
+
+****** vpl v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-01:29:13
+  **** Start of session at: Sun May 10 16:17:17 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/int/kernel_info.dat'.
+INFO: [VPL 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
+INFO: [VPL 60-1032] Extracting hardware platform to /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform
+[16:17:20] Run vpl: Step create_project: Started
+Creating Vivado project.
+[16:17:25] Run vpl: Step create_project: Completed
+[16:17:25] Run vpl: Step create_bd: Started
+[16:17:28] Run vpl: Step create_bd: Completed
+[16:17:28] Run vpl: Step update_bd: Started
+[16:17:28] Run vpl: Step update_bd: Completed
+[16:17:28] Run vpl: Step generate_target: Started
+[16:17:45] Run vpl: Step generate_target: Completed
+[16:17:45] Run vpl: Step config_hw_runs: Started
+[16:17:48] Run vpl: Step config_hw_runs: Completed
+[16:17:48] Run vpl: Step synth: Started
+[16:18:18] Block-level synthesis in progress, 1 of 1 jobs complete, 0 jobs running.
+[16:18:18] Run vpl: Step synth: Completed
+[16:18:18] Run vpl: Step impl: Started
+[16:19:20] Finished 2nd of 6 tasks (FPGA linking synthesized kernels to platform). Elapsed time: 00h 02m 02s 
+
+[16:19:20] Starting logic optimization..
+[16:19:20] Phase 1 Initialization
+[16:19:20] Phase 1.1 Core Generation And Design Setup
+[16:19:20] Phase 1.2 Setup Constraints And Sort Netlist
+[16:19:20] Phase 2 Timer Update And Timing Data Collection
+[16:19:20] Phase 2.1 Detect if minReqCache needed
+[16:19:20] Phase 2.2 Timer Update
+[16:19:20] Phase 2.3 Timing Data Collection
+[16:19:20] Phase 3 Retarget
+[16:19:20] Phase 4 Constant propagation
+[16:19:20] Phase 5 Sweep
+[16:19:20] Phase 6 BUFG optimization
+[16:19:20] Phase 7 Shift Register Optimization
+[16:19:20] Phase 8 Post Processing Netlist
+[16:19:20] Phase 9 Finalization
+[16:19:20] Phase 9.1 Finalizing Design Cores and Updating Shapes
+[16:19:20] Phase 9.2 Verifying Netlist Connectivity
+[16:19:50] Finished 3rd of 6 tasks (FPGA logic optimization). Elapsed time: 00h 00m 30s 
+
+[16:19:50] Starting logic placement..
+[16:19:50] Phase 1 Placer Initialization
+[16:19:50] Phase 1.1 Placer Initialization Netlist Sorting
+[16:19:50] Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+[16:19:50] Phase 1.3 Build Placer Netlist Model
+[16:20:20] Phase 1.4 Constrain Clocks/Macros
+[16:20:20] Phase 2 Global Placement
+[16:20:20] Phase 2.1 Floorplanning
+[16:20:20] Phase 2.1.1 Partition Driven Placement
+[16:20:20] Phase 2.1.1.1 PBP: Partition Driven Placement
+[16:20:20] Phase 2.1.1.2 PBP: Clock Region Placement
+[16:20:20] Phase 2.1.1.3 PBP: Discrete Incremental
+[16:20:50] Phase 2.1.1.4 PBP: Compute Congestion
+[16:20:50] Phase 2.1.1.5 PBP: Macro Placement
+[16:20:50] Phase 2.1.1.6 PBP: UpdateTiming
+[16:20:50] Phase 2.1.1.7 PBP: Add part constraints
+[16:20:50] Phase 2.2 Update Timing before SLR Path Opt
+[16:20:50] Phase 2.3 Post-Processing in Floorplanning
+[16:20:50] Phase 2.4 Global Place Phase1
+[16:21:20] Phase 2.5 Global Place Phase2
+[16:21:20] Phase 2.5.1 UpdateTiming Before Physical Synthesis
+[16:21:20] Phase 2.5.2 Physical Synthesis In Placer
+[16:21:20] Phase 3 Detail Placement
+[16:21:20] Phase 3.1 Commit Multi Column Macros
+[16:21:20] Phase 3.2 Commit Most Macros & LUTRAMs
+[16:21:50] Phase 3.3 Small Shape DP
+[16:21:50] Phase 3.3.1 Small Shape Clustering
+[16:21:50] Phase 3.3.2 Slice Area Swap
+[16:21:50] Phase 3.3.2.1 Slice Area Swap Initial
+[16:21:50] Phase 3.4 Re-assign LUT pins
+[16:21:50] Phase 3.5 Pipeline Register Optimization
+[16:21:50] Phase 4 Post Placement Optimization and Clean-Up
+[16:21:50] Phase 4.1 Post Commit Optimization
+[16:21:50] Phase 4.1.1 Post Placement Optimization
+[16:21:50] Phase 4.1.1.1 BUFG Insertion
+[16:21:50] Phase 1 Physical Synthesis Initialization
+[16:22:20] Phase 4.1.1.2 Post Placement Timing Optimization
+[16:22:20] Phase 4.2 Post Placement Cleanup
+[16:22:20] Phase 4.3 Placer Reporting
+[16:22:20] Phase 4.3.1 Print Estimated Congestion
+[16:22:20] Phase 4.4 Final Placement Cleanup
+[16:22:20] Finished 4th of 6 tasks (FPGA logic placement). Elapsed time: 00h 02m 30s 
+
+[16:22:20] Starting logic routing..
+[16:22:20] Phase 1 Build RT Design
+[16:22:20] Phase 2 Router Initialization
+[16:22:20] Phase 2.1 Fix Topology Constraints
+[16:22:20] Phase 2.2 Pre Route Cleanup
+[16:22:20] Phase 2.3 Global Clock Net Routing
+[16:22:20] Phase 2.4 Update Timing
+[16:22:50] Phase 2.5 Soft Constraint Pins - Fast Budgeting
+[16:22:50] Phase 3 Global Routing
+[16:22:50] Phase 4 Initial Routing
+[16:22:50] Phase 4.1 Initial Net Routing Pass
+[16:22:50] Phase 5 Rip-up And Reroute
+[16:22:50] Phase 5.1 Global Iteration 0
+[16:24:20] Phase 5.2 Global Iteration 1
+[16:24:20] Phase 6 Delay and Skew Optimization
+[16:24:20] Phase 6.1 Delay CleanUp
+[16:24:50] Phase 6.2 Clock Skew Optimization
+[16:24:50] Phase 7 Post Hold Fix
+[16:24:50] Phase 7.1 Hold Fix Iter
+[16:24:50] Phase 8 Route finalize
+[16:24:50] Phase 9 Verifying routed nets
+[16:24:50] Phase 10 Depositing Routes
+[16:24:50] Phase 11 Resolve XTalk
+[16:24:50] Phase 12 Post Process Routing
+[16:24:50] Phase 13 Post Router Timing
+[16:24:50] Phase 14 Post-Route Event Processing
+[16:24:50] Finished 5th of 6 tasks (FPGA routing). Elapsed time: 00h 02m 30s 
+
+[16:24:50] Starting bitstream generation..
+[16:24:51] Run vpl: Step impl: Failed
+[16:24:51] Run vpl: FINISHED. Run Status: impl ERROR
+
+===>The following messages were generated while  creating FPGA bitstream. Log file: /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/vivado/vpl/runme.log :
+ERROR: [VPL 12-13638] Failed runs(s) : 'impl_1'
+ERROR: [VPL 60-773] In '/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_from_docker_testafterremoval/vitis_workspace/system_link/_x/link/vivado/vpl/runme.log', caught Tcl error:  ERROR: [Common 17-39] 'wait_on_runs' failed due to earlier errors.
+WARNING: [VPL 60-732] Link warning: No monitor points found for BD automation.
+ERROR: [VPL 60-704] Integration error, Failed to complete hardware generation. The run name is 'impl_1'. An error stack with function names and arguments may be available in the 'vivado.log'.
+ERROR: [VPL 60-1328] Vpl run 'vpl' failed
+ERROR: [VPL 60-806] Failed to finish platform linker
+INFO: [v++ 60-1442] [16:24:52] Run run_link: Step vpl: Failed
+Time (s): cpu = 00:16:49 ; elapsed = 00:07:36 . Memory (MB): peak = 528.875 ; gain = 0.000 ; free physical = 6871 ; free virtual = 49833
+ERROR: [v++ 60-661] v++ link run 'run_link' failed
+ERROR: [v++ 60-626] Kernel link failed to complete
+ERROR: [v++ 60-703] Failed to finish linking
+INFO: [v++ 60-1653] Closing dispatch client.
