@@ -1,0 +1,8 @@
+  CREATE_STREAM @0 {NAME:myproject_axi_stream_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.myproject_axi_stream_virtual_sqr STREAM:2401}
+  CREATE_STREAM @113000 {NAME:myproject_axi_stream_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_axi_input_stream.m_agt.sqr STREAM:2643}
+  CREATE_STREAM @113000 {NAME:myproject_axi_stream_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_axi_output_stream.s_agt.sqr STREAM:2653}
+  CREATE_STREAM @113000 {NAME:myproject_axi_stream_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control.vsqr STREAM:2662}
+  CREATE_STREAM @0 {NAME:myproject_axi_stream_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.myproject_axi_stream_virtual_sqr STREAM:2401}
+  CREATE_STREAM @113000 {NAME:myproject_axi_stream_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_master_svr_axi_input_stream.m_agt.sqr STREAM:2643}
+  CREATE_STREAM @113000 {NAME:myproject_axi_stream_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.env_slave_svr_axi_output_stream.s_agt.sqr STREAM:2653}
+  CREATE_STREAM @113000 {NAME:myproject_axi_stream_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control.vsqr STREAM:2662}

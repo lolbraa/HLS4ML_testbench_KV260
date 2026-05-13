@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed May 13 18:32:29 2026
+# Process ID         : 24496
+# Current directory  : /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/ip_tmp
+# Command line       : vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file           : /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/ip_tmp/vivado.log
+# Journal file       : /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/ip_tmp/vivado.jou
+# Running On         : d447f2a7dc51
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 1107.196 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16346 MB
+# Swap memory        : 37821 MB
+# Total Virtual      : 54168 MB
+# Available Virtual  : 30942 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_axi_stream_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_stream_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 18:32:35 2026...

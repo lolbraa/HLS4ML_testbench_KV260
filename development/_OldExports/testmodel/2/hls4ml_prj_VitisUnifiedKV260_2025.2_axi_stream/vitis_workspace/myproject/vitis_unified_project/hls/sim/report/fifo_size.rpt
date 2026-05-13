@@ -1,0 +1,83 @@
+
+This result is generated under the condition there is no block from testbench side.
+So in real working environment, the suggested depth may need some margin.
+
+After FIFO sizing, module total executing time has no change.(still 4595 cycles)
+The detailed FIFO info are listed below.
+    FIFO(AESL_inst_myproject_axi_stream.batch_size_c1_U):
+    {
+        The user setting depth:       2.
+        The smallest suggest depth:       2.
+        Involved in deadlock path:        No.
+        Work mode:
+            FIFO always blocks its consumer.
+            FIFO may sometimes or never block its producer.
+            The possible reason is the producer works slowly for this channel.
+    }
+
+    FIFO(AESL_inst_myproject_axi_stream.model_input_stream_U):
+    {
+        The user setting depth:       1.
+        The smallest suggest depth:       1.
+        Involved in deadlock path:        No.
+        Work mode:
+            FIFO always blocks its consumer.
+            FIFO may sometimes or never block its producer.
+            The possible reason is the producer works slowly for this channel.
+    }
+
+    FIFO(AESL_inst_myproject_axi_stream.batch_size_c_U):
+    {
+        The user setting depth:       2.
+        The smallest suggest depth:       2.
+        Involved in deadlock path:        No.
+        Work mode:
+            FIFO always blocks its consumer.
+            FIFO may sometimes or never block its producer.
+            The possible reason is the producer works slowly for this channel.
+    }
+
+    FIFO(AESL_inst_myproject_axi_stream.model_output_stream_U):
+    {
+        The user setting depth:       1.
+        The smallest suggest depth:       1.
+        Involved in deadlock path:        No.
+        Work mode:
+            FIFO always blocks its consumer.
+            FIFO may sometimes or never block its producer.
+            The possible reason is the producer works slowly for this channel.
+    }
+
+    FIFO(AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_66.layer2_out_U):
+    {
+        The user setting depth:       1.
+        The smallest suggest depth:       1.
+        Involved in deadlock path:        No.
+        Work mode:
+            FIFO always blocks its consumer.
+            FIFO may sometimes or never block its producer.
+            The possible reason is the producer works slowly for this channel.
+    }
+
+    FIFO(AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_66.layer3_out_U):
+    {
+        The user setting depth:       1.
+        The smallest suggest depth:       1.
+        Involved in deadlock path:        No.
+        Work mode:
+            FIFO always blocks its consumer.
+            FIFO may sometimes or never block its producer.
+            The possible reason is the producer works slowly for this channel.
+    }
+
+    FIFO(AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_66.layer4_out_U):
+    {
+        The user setting depth:       1.
+        The smallest suggest depth:       1.
+        Involved in deadlock path:        No.
+        Work mode:
+            FIFO always blocks its consumer.
+            FIFO may sometimes or never block its producer.
+            The possible reason is the producer works slowly for this channel.
+    }
+

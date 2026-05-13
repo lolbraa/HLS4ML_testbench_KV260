@@ -1,0 +1,7 @@
+,batch_size_c1_U,,chan_status1.csv
+,model_input_stream_U,,chan_status2.csv
+,batch_size_c_U,,chan_status3.csv
+,model_output_stream_U,,chan_status4.csv
+compute_U0.grp_myproject_fu_66,layer2_out_U,,chan_status5.csv
+compute_U0.grp_myproject_fu_66,layer3_out_U,,chan_status6.csv
+compute_U0.grp_myproject_fu_66,layer4_out_U,,chan_status7.csv

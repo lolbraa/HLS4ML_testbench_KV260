@@ -1,0 +1,60 @@
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:29289:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:29289:5: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:29303:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:29303:5: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:29317:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:29317:5: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:32794:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:32794:7: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:47624:9: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_27_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:47624:9: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:47636:9: remark: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_39_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:47636:9: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:47653:9: remark: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_56_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:47653:9: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50184:9: remark: Added loop label VITIS_LOOP_8_1:   [xilinx-label-all-loops]
+        for (unsigned chunk_idx = 0; chunk_idx < N_IN / input_t::size; ++chunk_idx) {
+        ^
+        VITIS_LOOP_8_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50184:9: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50186:13: remark: Added loop label VITIS_LOOP_10_2:   [xilinx-label-all-loops]
+            for (unsigned elem_idx = 0; elem_idx < input_t::size; elem_idx++) {
+            ^
+            VITIS_LOOP_10_2: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50186:13: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50201:9: remark: Added loop label VITIS_LOOP_25_1:   [xilinx-label-all-loops]
+        for (unsigned chunk_idx = 0; chunk_idx < N_OUT / result_t::size; ++chunk_idx) {
+        ^
+        VITIS_LOOP_25_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50201:9: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50203:13: remark: Added loop label VITIS_LOOP_27_2:   [xilinx-label-all-loops]
+            for (unsigned elem_idx = 0; elem_idx < result_t::size; elem_idx++) {
+            ^
+            VITIS_LOOP_27_2: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50203:13: note: FIX-IT applied suggested code changes
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50216:5: remark: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+    for (int q = 0; q < batch_size; q++) {
+    ^
+    VITIS_LOOP_40_1: 
+/work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp:50216:5: note: FIX-IT applied suggested code changes

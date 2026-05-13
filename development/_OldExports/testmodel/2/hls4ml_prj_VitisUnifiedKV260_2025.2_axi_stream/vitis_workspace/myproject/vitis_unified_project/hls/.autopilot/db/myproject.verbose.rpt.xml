@@ -1,0 +1,125 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Wed May 13 18:30:51 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">vitis_unified_project</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.291 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">14, 14, 70.000 ns, 70.000 ns, 6, 6, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0">dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s, 2, 2, 10.000 ns, 10.000 ns, 2, 2, no</column>
+<column name="relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0">relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s, 1, 1, 5.000 ns, 5.000 ns, 1, 1, no</column>
+<column name="dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0">dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s, 3, 3, 15.000 ns, 15.000 ns, 3, 3, no</column>
+<column name="softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0">softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s, 5, 5, 25.000 ns, 25.000 ns, 5, 5, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2, -</column>
+<column name="FIFO">-, -, 297, 201, -</column>
+<column name="Instance">4, 1115, 9173, 40393, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">1, 89, 4, 34, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0">dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s, 0, 858, 5324, 28011, 0</column>
+<column name="dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0">dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s, 0, 252, 2679, 9451, 0</column>
+<column name="relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0">relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s, 0, 0, 964, 2484, 0</column>
+<column name="softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0">softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s, 4, 5, 206, 447, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="layer2_out_U">0, 99, 0, -, 1, 1024, 1024</column>
+<column name="layer3_out_U">0, 99, 0, -, 1, 1024, 1024</column>
+<column name="layer4_out_U">0, 99, 0, -, 1, 80, 80</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="model_input_stream_dout">in, 256, ap_fifo, model_input_stream, pointer</column>
+<column name="model_input_stream_empty_n">in, 1, ap_fifo, model_input_stream, pointer</column>
+<column name="model_input_stream_read">out, 1, ap_fifo, model_input_stream, pointer</column>
+<column name="model_output_stream_din">out, 80, ap_fifo, model_output_stream, pointer</column>
+<column name="model_output_stream_full_n">in, 1, ap_fifo, model_output_stream, pointer</column>
+<column name="model_output_stream_write">out, 1, ap_fifo, model_output_stream, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, myproject, return value</column>
+</table>
+</item>
+</section>
+</profile>

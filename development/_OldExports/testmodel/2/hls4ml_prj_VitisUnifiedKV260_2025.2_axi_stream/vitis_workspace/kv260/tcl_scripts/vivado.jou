@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed May 13 18:34:45 2026
+# Process ID         : 25422
+# Current directory  : /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/kv260/tcl_scripts
+# Command line       : vivado -mode batch -source create_xsa.tcl
+# Log file           : /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/kv260/tcl_scripts/vivado.log
+# Journal file       : /work/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2025.2_axi_stream/vitis_workspace/kv260/tcl_scripts/vivado.jou
+# Running On         : d447f2a7dc51
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : Intel(R) Core(TM) i7-1065G7 CPU @ 1.30GHz
+# CPU Frequency      : 3353.634 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16346 MB
+# Swap memory        : 37821 MB
+# Total Virtual      : 54168 MB
+# Available Virtual  : 31424 MB
+#-----------------------------------------------------------
+source create_xsa.tcl

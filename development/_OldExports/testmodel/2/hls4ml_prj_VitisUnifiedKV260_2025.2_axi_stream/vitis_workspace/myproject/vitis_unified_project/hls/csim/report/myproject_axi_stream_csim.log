@@ -1,0 +1,215 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../../../myproject_test.cpp in debug mode
+   Compiling ../../../../../../firmware/myproject.cpp in debug mode
+   Compiling ../../../../../../firmware/myproject_axi_stream.cpp in debug mode
+   Generating csim.exe
+Processing input 0
+input size inputs: 16
+Predictions
+0 1 0 0 0 
+Quantized predictions
+from x
+0.5 0.427734 0.0410156 0.0488281 0.104492 
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+input size inputs: 16
+from x
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 16
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,255 @@
+{
+ "system_diagram_metadata": {
+  "schema_version": {
+   "major": "2",
+   "minor": "0",
+   "patch": "0"
+  },
+  "xsa": {
+   "vendor": "vendor",
+   "board_id": "",
+   "name": "kv260pf",
+   "version_major": "",
+   "version_minor": "",
+   "description": "",
+   "generated_by": {
+    "name": "",
+    "version": "",
+    "cl": "",
+    "time_stamp": ""
+   },
+   "board": {
+    "name": "",
+    "vendor": "",
+    "part": "",
+    "board_part": ""
+   },
+   "available_resources": {
+    "LUT": "",
+    "REG": "",
+    "BRAM": "",
+    "DSP": "",
+    "URAM": ""
+   },
+   "device_topology": [
+    {
+     "id": "0",
+     "type": "Dram",
+     "used": "no",
+     "sizeKB": "0x3fffff",
+     "base_address": "0x0",
+     "tag": "HP0",
+     "slr": "",
+     "spTag": "HP0"
+    },
+    {
+     "id": "1",
+     "type": "Dram",
+     "used": "no",
+     "sizeKB": "0x3fffff",
+     "base_address": "0x0",
+     "tag": "HP1",
+     "slr": "",
+     "spTag": "HP1"
+    },
+    {
+     "id": "2",
+     "type": "Dram",
+     "used": "no",
+     "sizeKB": "0x3fffff",
+     "base_address": "0x0",
+     "tag": "HP2",
+     "slr": "",
+     "spTag": "HP2"
+    },
+    {
+     "id": "3",
+     "type": "Dram",
+     "used": "no",
+     "sizeKB": "0x3fffff",
+     "base_address": "0x0",
+     "tag": "HP3",
+     "slr": "",
+     "spTag": "HP3"
+    },
+    {
+     "id": "4",
+     "type": "Dram",
+     "used": "no",
+     "sizeKB": "0x3fffff",
+     "base_address": "0x0",
+     "tag": "HPC1",
+     "slr": "",
+     "spTag": "HPC1"
+    },
+    {
+     "id": "5",
+     "type": "DirectConnection",
+     "used": "yes",
+     "sizeKB": "",
+     "base_address": "",
+     "tag": "DMA_MM2S",
+     "slr": "",
+     "spTag": ""
+    },
+    {
+     "id": "6",
+     "type": "DirectConnection",
+     "used": "yes",
+     "sizeKB": "",
+     "base_address": "",
+     "tag": "DMA_S2MM",
+     "slr": "",
+     "spTag": ""
+    }
+   ],
+   "design_intent": [],
+   "clocks": []
+  },
+  "xclbin": {
+   "generated_by": {
+    "name": "v++",
+    "version": "2025.2",
+    "cl": "6295257",
+    "time_stamp": "2025-11-13-01:29:13",
+    "options": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_stream.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
+    "xclbin_name": "myproject",
+    "uuid": "1a3f571a-bee2-4277-91e5-38859c5b799f",
+    "link_uuid": "1a3f571a-bee2-4277-91e5-38859c5b799f",
+    "package_uuid": "",
+    "system_compile_flow": false
+   },
+   "user_regions": [
+    {
+     "name": "",
+     "type": "",
+     "instance_path": "",
+     "available_resources": {
+      "LUT": "",
+      "REG": "",
+      "BRAM": "",
+      "DSP": "",
+      "by_SLR": [],
+      "URAM": ""
+     },
+     "kernels": [
+      {
+       "name": "myproject_axi_stream",
+       "ports": [
+        {
+         "name": "AXI_INPUT_STREAM",
+         "mode": "read_only",
+         "range": "",
+         "data_width": "32",
+         "port_type": "stream",
+         "base": "",
+         "direction": "DirUnknown"
+        },
+        {
+         "name": "AXI_OUTPUT_STREAM",
+         "mode": "write_only",
+         "range": "",
+         "data_width": "32",
+         "port_type": "stream",
+         "base": "",
+         "direction": "DirUnknown"
+        },
+        {
+         "name": "S_AXI_CONTROL",
+         "mode": "slave",
+         "range": "0x18",
+         "data_width": "32",
+         "port_type": "addressable",
+         "base": "0x0",
+         "direction": "DirUnknown"
+        }
+       ],
+       "arguments": [
+        {
+         "id": "0",
+         "name": "axi_input_stream",
+         "address_qualifier": "4",
+         "port": "AXI_INPUT_STREAM",
+         "size": "0x0",
+         "offset": "0x0",
+         "host_offset": "0x0",
+         "host_size": "0x8",
+         "type": "stream\u003chls::axis\u003cfloat, 0UL, 0UL, 0UL, (unsigned char)'8', false\u003e, 0\u003e&",
+         "direction": "DirUnknown"
+        },
+        {
+         "id": "1",
+         "name": "axi_output_stream",
+         "address_qualifier": "4",
+         "port": "AXI_OUTPUT_STREAM",
+         "size": "0x0",
+         "offset": "0x0",
+         "host_offset": "0x0",
+         "host_size": "0x8",
+         "type": "stream\u003chls::axis\u003cfloat, 0UL, 0UL, 0UL, (unsigned char)'8', false\u003e, 0\u003e&",
+         "direction": "DirUnknown"
+        },
+        {
+         "id": "2",
+         "name": "batch_size",
+         "address_qualifier": "0",
+         "port": "S_AXI_CONTROL",
+         "size": "0x4",
+         "offset": "0x10",
+         "host_offset": "0x0",
+         "host_size": "0x4",
+         "type": "unsigned int",
+         "direction": "DirUnknown"
+        }
+       ],
+       "clock_name": "",
+       "clock_id": 0,
+       "clocks": [
+        {
+         "port_name": "ap_clk",
+         "id": "",
+         "requested_frequency": 200,
+         "achieved_frequency": 0,
+         "associated_busif": "",
+         "annotation": ""
+        }
+       ]
+      }
+     ],
+     "compute_units": [
+      {
+       "id": "0",
+       "kernel_name": "myproject_axi_stream",
+       "cu_name": "myproject_axi_stream_1",
+       "base_address": "",
+       "actual_resources": [],
+       "clock_name": "",
+       "clock_id": 0,
+       "clocks": [
+        {
+         "port_name": "ap_clk",
+         "id": "not_specified",
+         "requested_frequency": 0,
+         "achieved_frequency": 0,
+         "associated_busif": "",
+         "annotation": ""
+        }
+       ],
+       "reset_port_names": [],
+       "slr_resources": []
+      }
+     ],
+     "connectivity": [
+      {
+       "id": "0"
+      },
+      {
+       "id": "1"
+      }
+     ]
+    }
+   ]
+  }
+ }
+}
+

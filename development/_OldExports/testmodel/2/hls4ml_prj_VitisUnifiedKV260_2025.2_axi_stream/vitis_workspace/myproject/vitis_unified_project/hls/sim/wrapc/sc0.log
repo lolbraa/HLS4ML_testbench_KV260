@@ -1,0 +1,8 @@
+   Build using "/opt/Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang++"
+   Compiling apatb_myproject_axi_stream.cpp
+   Compiling apatb_myproject_axi_stream_util.cpp
+   Compiling myproject_axi_stream.cpp_pre.cpp.tb.cpp
+   Compiling myproject.cpp_pre.cpp.tb.cpp
+   Compiling myproject_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_myproject_axi_stream_ir.ll
+   Generating cosim.tv.exe
