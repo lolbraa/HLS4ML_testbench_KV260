@@ -14,6 +14,15 @@ Docker internal path for work is /work. Please mount development-folders from lo
 
 Conda Environments may be set up by mounting a directory with files with the filename-pattern environment-*.yml into /work/environments/ (see example above). The entrypoint is configured to install environments when initiating. You may install the environments in buildtime, however to keep the size small and allow more flexibility, we've chosen to default to install at runtime.
 
+### Prerequisite
+
+Some familiarity with Docker is probably great.
+
+Vivado/Vitis has some [system requirements](https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license/System-Memory-Recommendations), mainly in terms of RAM.
+
+Vivado compilation are heavy processes, which may render your laptop unusable under some parts of the implementation. A somewhat decent system (CPU) is highly recommended.
+
+
 ### Import/Load Image
 
 With the physical testbench, a prebuilt image is provided. It may be loaded by 
@@ -31,7 +40,7 @@ The docker may be run by using the following docker-run command (adapted to your
 ```bash
 docker run --init -it --name hls4ml-kv260-testbench -p 8443:8443  \
     -v ~/Bachelor/HLS4ML_testbench_KV260/development/:/work/development/ \
-    -v ~/Bachelor/HLS4ML_testbench_KV260/dockerbuild/environments/:/work/environments/ \
+    -v ./environments/:/work/environments/ \
     hls4ml-kv260-testbench:final
 ```
 

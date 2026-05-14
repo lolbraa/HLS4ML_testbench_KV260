@@ -3,7 +3,7 @@ services:
         container_name: hls4ml-kv260-testbench
         image: 'hls4ml-kv260-testbench:final'
         volumes:
-            - '~/Bachelor/HLS4ML_testbench_KV260/dockerbuild/environments/:/work/environments/'
+            - './environments/:/work/environments/'
             - '~/Bachelor/HLS4ML_testbench_KV260/development/:/work/development/'
         ports:
             - '8443:8443'

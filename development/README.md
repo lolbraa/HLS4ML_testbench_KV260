@@ -46,7 +46,7 @@ The [HLS4ML-tutorial](https://github.com/fastmachinelearning/hls4ml-tutorial) us
 
 ### Prerequisite for synthesizing: Vitis and Vivado
 
-To synthesize with HLS4ML backends [Vitis](https://fastmachinelearning.org/hls4ml/backend/vitis.html) and [Vitis Unified](https://github.com/fastmachinelearning/hls4ml/pull/1376) you are required to have [Vitis Unified Software Platform (includes Vivado)](https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license/Download-and-Installation) available in path. 
+To synthesize with HLS4ML backends [Vitis](https://fastmachinelearning.org/hls4ml/backend/vitis.html) and [Vitis Unified](https://github.com/fastmachinelearning/hls4ml/pull/1376) you are required to have [Vitis Unified Software Platform (includes Vivado)](https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license/Download-and-Installation) available in path. Not applicable to the Docker.
 
 It's important to initialize Vitis and Vivado (to env) for the shell spawning python-processes (e.g. VS Code or Jupyter Notebook). It looks something like this before you start jupyter:
 
@@ -83,10 +83,11 @@ Reports Vitis Unified
 - Guidance: `vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html`
 - Timing Report: `vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpt`
 - HLS compile report with timing/resource estimates: `vitis_workspace/myproject/vitis_unified_project/reports/hls_compile.rpt`
-- Synthesis: `vitis_workspace/myproject/vitis_unified_project/hls/syn/report`
+- HLS Synthesis: `vitis_workspace/myproject/vitis_unified_project/hls/syn/report` like `csynth.rpt` and `myproject_csynth.rpt`
 
 Reports Vitis
-- Synthesis: `myproject_prj/solution1/syn/report/myproject_csynth.rpt` and `csynth.rpt`
+- HLS Synthesis: `myproject_prj/solution1/syn/report/myproject_csynth.rpt` and `csynth.rpt`
+
 
 There are many more in which you may find useful information.
 

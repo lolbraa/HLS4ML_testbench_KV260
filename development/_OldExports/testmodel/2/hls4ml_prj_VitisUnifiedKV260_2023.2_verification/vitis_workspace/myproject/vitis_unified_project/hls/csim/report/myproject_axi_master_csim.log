@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Generating csim.exe
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib/x86_64-linux-gnu/libm.so.6: unknown type [0x13] section `.relr.dyn'
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib/x86_64-linux-gnu/libm.so.6 when searching for /lib/x86_64-linux-gnu/libm.so.6
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: cannot find /lib/x86_64-linux-gnu/libm.so.6
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib/x86_64-linux-gnu/libm.so.6: unknown type [0x13] section `.relr.dyn'
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib/x86_64-linux-gnu/libm.so.6 when searching for /lib/x86_64-linux-gnu/libm.so.6
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib/x86_64-linux-gnu/libmvec.so.1: unknown type [0x13] section `.relr.dyn'
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib/x86_64-linux-gnu/libmvec.so.1 when searching for /lib/x86_64-linux-gnu/libmvec.so.1
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: cannot find /lib/x86_64-linux-gnu/libmvec.so.1
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: /lib/x86_64-linux-gnu/libmvec.so.1: unknown type [0x13] section `.relr.dyn'
+/tools/Xilinx/Vivado/2023.2/tps/lnx64/binutils-2.37/bin/ld: skipping incompatible /lib/x86_64-linux-gnu/libmvec.so.1 when searching for /lib/x86_64-linux-gnu/libmvec.so.1
+collect2: error: ld returned 1 exit status
+make: *** [Makefile.rules:318: csim.exe] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,37 @@
+Backend: VitisUnified
+ClockPeriod: 5ns
+ClockUncertainty: 12.5%
+HLSConfig:
+  Model:
+    BitExact: null
+    Precision: fixed<16,6>
+    ReuseFactor: 1
+IOType: io_stream
+InputData: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/x_test_sim.npy
+InputShapes:
+  linput:
+  - 16
+KerasModel: !keras_model '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/keras_model.keras'
+OutputDir: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification
+OutputPredictions: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/y_test_sim.npy
+OutputShapes:
+  layer5_out:
+  - 5
+Part: xck26-sfvc784-2LV-c
+ProjectName: myproject
+Stamp: 6db50158
+Version: 1.0.0
+VitisUnifiedConfig:
+  Board: kv260
+  Driver: python
+  InputDtype: float
+  OutputDtype: float
+  axi_mode: axi_master
+  in_stream_buf_size: 128
+  out_stream_buf_size: 128
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteEmulationConstants: false
+  WriteTar: false
+  WriteWeightsTxt: true

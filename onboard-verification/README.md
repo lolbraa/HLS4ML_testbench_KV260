@@ -11,7 +11,7 @@ The components Vitis Unified wraps around the Neural Network-IP are described
 
 A template for rapid testing multiple synthesized models on device is provided in the inference-template. 
 
-We established two methodologies for testing on device which both rely on :
+We established two methodologies for transferring files to device:
 1. Our preferred method is pulling/pushing this repository to device, allowing for easy set up by just copying files into corresponding directory on main computer. Though it requires establishing a internet-connection on the Starter Kit, which may not be straight forward.
 2. Copying files manually with USB. Easy to get started, frustrating in the long run.
 
@@ -23,7 +23,7 @@ We established two methodologies for testing on device which both rely on :
 from axi_master_driver import NeuralNetworkOverlay
 import numpy as np
 
-# load input from .npy file
+# load input and truth from .npy file
 x_test = np.load('x_test.npy')
 y_test = np.load('y_test.npy')
 

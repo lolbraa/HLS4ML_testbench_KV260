@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May 14 23:53:39 2026
+# Process ID: 3179734
+# Current directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1
+# Command line: vivado -log vitis_design_myproject_axi_master_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_myproject_axi_master_1_0.tcl
+# Log file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vitis_design_myproject_axi_master_1_0.vds
+# Journal file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_myproject_axi_master_1_0_synth_1/vivado.jou
+# Running On: KrissDEV, OS: Linux, CPU Frequency: 4291.952 MHz, CPU Physical cores: 16, Host memory: 65838 MB
+#-----------------------------------------------------------
+source vitis_design_myproject_axi_master_1_0.tcl -notrace
