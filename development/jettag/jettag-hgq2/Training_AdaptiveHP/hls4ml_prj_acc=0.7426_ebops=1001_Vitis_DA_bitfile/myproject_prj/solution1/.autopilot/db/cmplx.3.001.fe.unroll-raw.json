@@ -1,0 +1,200 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "5 10 2 8 11 7 1",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 38,
+    "memory_accesses": 7,
+    "name": "myproject",
+    "total_instructions": 225738
+  },
+  "1": {
+    "basicblocks": 3617,
+    "calls": "9 9 9 9 9",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 8799,
+    "loads": {
+      "L": 1002
+    },
+    "memory_accesses": 1497,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, config12>",
+    "stores": {
+      "L": 490
+    },
+    "total_instructions": 8809
+  },
+  "10": {
+    "basicblocks": 836,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 4,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 1793,
+    "loads": {
+      "L": 64
+    },
+    "memory_accesses": 192,
+    "name": "relu<ap_fixed<12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, relu_config4>",
+    "stores": {
+      "L": 128
+    },
+    "total_instructions": 1793
+  },
+  "11": {
+    "basicblocks": 22733,
+    "calls": "4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 54993,
+    "loads": {
+      "L": 6240
+    },
+    "memory_accesses": 9408,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, config9>",
+    "stores": {
+      "L": 3136
+    },
+    "total_instructions": 55409
+  },
+  "2": {
+    "basicblocks": 37133,
+    "calls": "6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 6",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 101190,
+    "loads": {
+      "L": 12416
+    },
+    "memory_accesses": 18656,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>",
+    "stores": {
+      "L": 6208
+    },
+    "total_instructions": 101606
+  },
+  "3": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 13,
+    "memory_accesses": 0,
+    "name": "cast<ap_fixed<10, 5, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 13
+  },
+  "4": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 13,
+    "memory_accesses": 0,
+    "name": "cast<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, config9>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 13
+  },
+  "5": {
+    "basicblocks": 22829,
+    "calls": "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 55457,
+    "loads": {
+      "L": 6288
+    },
+    "memory_accesses": 9552,
+    "name": "dense_latency<ap_fixed<10, 5, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>",
+    "stores": {
+      "L": 3200
+    },
+    "total_instructions": 56289
+  },
+  "6": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 13,
+    "memory_accesses": 0,
+    "name": "cast<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 13
+  },
+  "7": {
+    "basicblocks": 420,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 4,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 897,
+    "loads": {
+      "L": 32
+    },
+    "memory_accesses": 96,
+    "name": "relu<ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, relu_config10>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 897
+  },
+  "8": {
+    "basicblocks": 420,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 4,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 897,
+    "loads": {
+      "L": 32
+    },
+    "memory_accesses": 96,
+    "name": "relu<ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, relu_config7>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 897
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "cast<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, config12>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
+  }
+}

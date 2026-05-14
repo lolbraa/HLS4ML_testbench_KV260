@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a53" cf:partition="0" cf:prefix="p_0_" cf:name="dr" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_myproject_axi_master">
+    <cf:port cf:name="s_axi_control" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="gmem_in0_ptr_input_layer" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="gmem_out0_ptr_layer8_out" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="batch_size" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:block cf:name="swblk_myproject_axi_master">
+    <cf:port cf:name="s_axi_control" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="gmem_in0_ptr_input_layer" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="gmem_out0_ptr_layer8_out" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="batch_size" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:comp cf:name="kv260pf" xd:componentRef="kv260pf" xd:clockId="0"/>
+  <cf:comp cf:name="myproject_axi_master_1" xd:componentRef="myproject_axi_master" xd:clockId="0">
+    <xd:clock xd:name="ap_clk" xd:frequency="99999001"/>
+  </cf:comp>
+  <cf:instance cf:name="hwinst_myproject_axi_master_1" cf:blockName="hwblk_myproject_axi_master" cf:compName="myproject_axi_master_1">
+    <cf:portMap cf:blockPort="s_axi_control" cf:compPort="s_axi_control" xd:register="0x0"/>
+    <cf:portMap cf:blockPort="gmem_in0_ptr_input_layer" cf:compPort="m_axi_gmem_in0" cf:ctrlPort="s_axi_control" xd:register="0x10"/>
+    <cf:portMap cf:blockPort="gmem_out0_ptr_layer8_out" cf:compPort="m_axi_gmem_out0" cf:ctrlPort="s_axi_control" xd:register="0x1C"/>
+    <cf:portMap cf:blockPort="batch_size" cf:compPort="s_axi_control" xd:register="0x28"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_myproject_axi_master_1" cf:blockName="swblk_myproject_axi_master" cf:compName="kv260pf">
+    <cf:portMap cf:blockPort="s_axi_control" cf:compPort="axi_interconnect_0_M02_AXI"/>
+    <cf:portMap cf:blockPort="gmem_in0_ptr_input_layer" cf:compPort="zynq_ultra_ps_e_0_S_AXI_HP0_FPD" cf:ctrlPort="axi_interconnect_0_M02_AXI" cf:sptag="HP0"/>
+    <cf:portMap cf:blockPort="gmem_out0_ptr_layer8_out" cf:compPort="zynq_ultra_ps_e_0_S_AXI_HP0_FPD" cf:ctrlPort="axi_interconnect_0_M02_AXI" cf:sptag="HP0"/>
+    <cf:portMap cf:blockPort="batch_size" cf:compPort="axi_interconnect_0_M02_AXI"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_myproject_axi_master_1" cf:srcPort="s_axi_control" cf:dstInst="hwinst_myproject_axi_master_1" cf:dstPort="s_axi_control">
+    <cf:dataMover cf:compName="kv260pf" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myproject_axi_master_1" cf:srcPort="gmem_in0_ptr_input_layer" cf:dstInst="hwinst_myproject_axi_master_1" cf:dstPort="gmem_in0_ptr_input_layer">
+    <cf:dataMover cf:compName="myproject_axi_master_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myproject_axi_master_1" cf:srcPort="gmem_out0_ptr_layer8_out" cf:dstInst="hwinst_myproject_axi_master_1" cf:dstPort="gmem_out0_ptr_layer8_out">
+    <cf:dataMover cf:compName="myproject_axi_master_1" cf:softwareLib="zero_copy"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myproject_axi_master_1" cf:srcPort="batch_size" cf:dstInst="hwinst_myproject_axi_master_1" cf:dstPort="batch_size">
+    <cf:dataMover cf:compName="kv260pf" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+</cf:model>

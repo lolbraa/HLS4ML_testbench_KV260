@@ -1,0 +1,70 @@
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29290:5: remark: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_676_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29290:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29304:5: remark: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_690_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29304:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29318:5: remark: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^
+    VITIS_LOOP_704_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:29318:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:32795:7: remark: Added loop label VITIS_LOOP_1251_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^
+      VITIS_LOOP_1251_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:32795:7: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47625:9: remark: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_27_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47625:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47637:9: remark: Added loop label VITIS_LOOP_39_1:   [xilinx-label-all-loops]
+        for (unsigned i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_39_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47637:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47654:9: remark: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+        for (size_t i = 0; i < N; i++) {
+        ^
+        VITIS_LOOP_56_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:47654:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49812:5: remark: Added loop label VITIS_LOOP_13_1:   [xilinx-label-all-loops]
+    for (int q = 0; q < batch_size; q++) {
+    ^
+    VITIS_LOOP_13_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49812:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49813:9: remark: Added loop label VITIS_LOOP_14_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < TENSOR_SIZE / INPUT_LAYER_ARR::size; i++) {
+        ^
+        VITIS_LOOP_14_2: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49813:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49815:13: remark: Added loop label VITIS_LOOP_16_3:   [xilinx-label-all-loops]
+            for (int j = 0; j < INPUT_LAYER_ARR::size; j++) {
+            ^
+            VITIS_LOOP_16_3: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49815:13: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49828:5: remark: Added loop label VITIS_LOOP_29_1:   [xilinx-label-all-loops]
+    for (int q = 0; q < batch_size; q++) {
+    ^
+    VITIS_LOOP_29_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49828:5: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49829:9: remark: Added loop label VITIS_LOOP_30_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < TENSOR_SIZE / OUT_LAYER_ARR::size; i++) {
+        ^
+        VITIS_LOOP_30_2: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49829:9: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49831:13: remark: Added loop label VITIS_LOOP_32_3:   [xilinx-label-all-loops]
+            for (int j = 0; j < OUT_LAYER_ARR::size; j++) {
+            ^
+            VITIS_LOOP_32_3: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49831:13: note: FIX-IT applied suggested code changes
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49841:5: remark: Added loop label VITIS_LOOP_42_1:   [xilinx-label-all-loops]
+    for (int q = 0; q < batch_size; q++) {
+    ^
+    VITIS_LOOP_42_1: 
+/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_master.pp.0.cpp:49841:5: note: FIX-IT applied suggested code changes

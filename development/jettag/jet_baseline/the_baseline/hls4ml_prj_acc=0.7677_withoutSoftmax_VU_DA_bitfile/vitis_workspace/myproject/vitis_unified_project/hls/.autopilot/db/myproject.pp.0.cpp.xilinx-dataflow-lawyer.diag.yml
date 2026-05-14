@@ -1,0 +1,36 @@
+---
+MainSourceFile:  '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '54:78'
+    FilePath:        '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '54:82'
+    FilePath:        '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '58:78'
+    FilePath:        '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '58:82'
+    FilePath:        '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '62:78'
+    FilePath:        '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '62:82'
+    FilePath:        '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '66:70'
+    FilePath:        '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/firmware/myproject.cpp'
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '66:74'
+    FilePath:        '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/firmware/myproject.cpp'
+...

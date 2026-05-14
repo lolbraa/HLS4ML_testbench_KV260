@@ -1,0 +1,88 @@
+INFO: [v++ 60-1306] Additional information associated with this v++ link can be found at:
+	Reports: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link
+	Log files: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/link
+INFO: [v++ 60-1548] Creating build summary session with primary output /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/myproject.xclbin.link_summary, at Thu May 14 20:28:13 2026
+INFO: [v++ 60-1315] Creating rulecheck session with output '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html', at Thu May 14 20:28:13 2026
+INFO: [v++ 60-895]   Target platform: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa
+INFO: [v++ 60-1578]   This platform contains Xilinx Shell Archive '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa'
+INFO: [v++ 60-629] Linking for hardware target
+INFO: [v++ 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
+INFO: [v++ 82-31] Launching aie baremetal script for: link
+WARNING: [v++ 82-11894] The baremetal_metadata.cpp file was not created successfully.
+INFO: [v++ 60-1332] Run 'run_link' status: Not started
+INFO: [v++ 60-1443] [20:28:13] Run run_link: Step system_link: Started
+INFO: [v++ 60-1453] Command Line: system_link --xo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link
+INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
+INFO: [SYSTEM_LINK 82-70] Extracting xo v3 file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo
+INFO: [SYSTEM_LINK 82-53] Creating IP database /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-38] [20:28:15] build_xd_ip_db started: /usr/lib/AMD/2025.2/Vitis/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/kv260_axi_all_platform.hpfm -clkid 0 -ip /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/iprepo/xilinx_com_hls_myproject_axi_master_1_0,myproject_axi_master -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml
+INFO: [SYSTEM_LINK 82-37] [20:28:15] build_xd_ip_db finished successfully
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 521.777 ; gain = 0.000 ; free physical = 3508 ; free virtual = 49081
+INFO: [SYSTEM_LINK 82-51] Create system connectivity graph
+INFO: [SYSTEM_LINK 82-102] Applying explicit connections to the system connectivity graph: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [SYSTEM_LINK 82-38] [20:28:15] cfgen started: /usr/lib/AMD/2025.2/Vitis/bin/cfgen  -dpa_mem_offload false -dpa_aie_mem_offload false -dmclkid 0 -r /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml
+INFO: [CFGEN 83-0] Kernel Specs: 
+INFO: [CFGEN 83-0]   kernel: myproject_axi_master, num: 1  {myproject_axi_master_1}
+INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_in0_ptr_input_layer to HP0
+INFO: [CFGEN 83-2226] Inferring mapping for argument myproject_axi_master_1.gmem_out0_ptr_layer8_out to HP0
+INFO: [SYSTEM_LINK 82-37] [20:28:15] cfgen finished successfully
+Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.56 . Memory (MB): peak = 521.777 ; gain = 0.000 ; free physical = 3497 ; free virtual = 49071
+INFO: [SYSTEM_LINK 82-52] Create top-level block diagram
+INFO: [SYSTEM_LINK 82-38] [20:28:15] cf2bd started: /usr/lib/AMD/2025.2/Vitis/bin/cf2bd  --linux --trace_buffer 1024 --input_file /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml --ip_db /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml --cf_name dr --working_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int
+INFO: [CF2BD 82-31] Launching cf2xd: cf2xd -linux -trace-buffer 1024 -i /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/cfgraph/cfgen_cfgraph.xml -r /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.cdb/xd_ip_db.xml -o dr.xml
+INFO: [CF2BD 82-28] cf2xd finished successfully
+INFO: [CF2BD 82-31] Launching cf_xsd: cf_xsd -disable-address-gen -dn dr -dp /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/sys_link/_sysl/.xsd
+INFO: [CF2BD 82-28] cf_xsd finished successfully
+INFO: [SYSTEM_LINK 82-37] [20:28:16] cf2bd finished successfully
+Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.76 . Memory (MB): peak = 521.777 ; gain = 0.000 ; free physical = 3512 ; free virtual = 49088
+INFO: [v++ 60-1441] [20:28:16] Run run_link: Step system_link: Completed
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 529.227 ; gain = 0.000 ; free physical = 3642 ; free virtual = 49217
+INFO: [v++ 60-1443] [20:28:16] Run run_link: Step cf2sw: Started
+INFO: [v++ 60-1453] Command Line: cf2sw -sdsl /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml
+INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1441] [20:28:17] Run run_link: Step cf2sw: Completed
+Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.62 . Memory (MB): peak = 529.227 ; gain = 0.000 ; free physical = 3642 ; free virtual = 49219
+INFO: [v++ 60-1443] [20:28:17] Run run_link: Step rtd2_system_diagram: Started
+INFO: [v++ 60-1453] Command Line: rtd2SystemDiagram
+INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
+INFO: [v++ 60-1441] [20:28:17] Run run_link: Step rtd2_system_diagram: Completed
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.03 . Memory (MB): peak = 529.227 ; gain = 0.000 ; free physical = 3642 ; free virtual = 49219
+INFO: [v++ 60-1443] [20:28:17] Run run_link: Step vpl: Started
+INFO: [v++ 60-1453] Command Line: vpl -t hw -f /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/.ipcache --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int --log_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/logs/link --report_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/reports/link --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link --no-info --iprepo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link/vpl.pb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/dr.bd.tcl
+INFO: [v++ 60-1454] Run Directory: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/run_link
+
+****** vpl v2025.2 (64-bit)
+  **** SW Build 6295257 on 2025-11-13-01:29:13
+  **** Start of session at: Thu May 14 20:28:17 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [VPL 60-839] Read in kernel information from file '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/kernel_info.dat'.
+INFO: [VPL 60-423]   Target device: vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0
+INFO: [VPL 60-1032] Extracting hardware platform to /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform
+[20:28:20] Run vpl: Step create_project: Started
+Creating Vivado project.
+[20:28:23] Run vpl: Step create_project: Completed
+[20:28:23] Run vpl: Step create_bd: Started
+[20:28:25] Run vpl: Step create_bd: Completed
+[20:28:25] Run vpl: Step update_bd: Started
+[20:28:26] Run vpl: Step update_bd: Completed
+[20:28:26] Run vpl: Step generate_target: Started
+[20:28:43] Run vpl: Step generate_target: Completed
+[20:28:43] Run vpl: Step config_hw_runs: Started
+[20:28:47] Run vpl: Step config_hw_runs: Completed
+[20:28:47] Run vpl: Step synth: Started
+[20:29:18] Block-level synthesis in progress, 2 of 10 jobs complete, 6 jobs running.
+[20:29:48] Block-level synthesis in progress, 6 of 10 jobs complete, 4 jobs running.
+[20:30:18] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:30:48] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:31:18] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:31:48] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:32:18] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:32:48] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:33:19] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:33:49] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:34:19] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:34:49] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:35:19] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.
+[20:35:49] Block-level synthesis in progress, 9 of 10 jobs complete, 1 job running.

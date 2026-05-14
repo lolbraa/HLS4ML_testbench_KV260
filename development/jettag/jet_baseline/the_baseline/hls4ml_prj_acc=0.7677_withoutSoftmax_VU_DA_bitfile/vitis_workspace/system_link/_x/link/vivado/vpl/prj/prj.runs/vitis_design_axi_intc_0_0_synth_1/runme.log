@@ -1,0 +1,22 @@
+
+*** Running vivado
+    with args -log vitis_design_axi_intc_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vitis_design_axi_intc_0_0.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu May 14 18:55:55 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source vitis_design_axi_intc_0_0.tcl -notrace
+INFO: Dispatch client connection id - 39937
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/work/development/jettag/jet_baseline/the_baseline/hls4ml_prj_acc=0.7677_withoutSoftmax_VU_DA_bitfile/vitis_workspace/system_link/_x/link/vivado/vpl/.local/hw_platform/ipcache'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/opt/Xilinx/2025.2/Vitis/data/vitis/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/2025.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP vitis_design_axi_intc_0_0, cache-ID = 5364acce3dd0d625.
+INFO: [Common 17-206] Exiting Vivado at Thu May 14 18:55:57 2026...

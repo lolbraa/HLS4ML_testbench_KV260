@@ -1,0 +1,155 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "4 7 2 6 8 5 1",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 32,
+    "memory_accesses": 7,
+    "name": "myproject",
+    "total_instructions": 65319
+  },
+  "1": {
+    "basicblocks": 247,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 8,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 1031,
+    "loads": {
+      "L": 12
+    },
+    "memory_accesses": 453,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, config12>",
+    "stores": {
+      "L": 441
+    },
+    "total_instructions": 1031
+  },
+  "2": {
+    "basicblocks": 4097,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 67,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 30932,
+    "loads": {
+      "L": 2092
+    },
+    "memory_accesses": 8331,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>",
+    "stores": {
+      "L": 6239
+    },
+    "total_instructions": 30932
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "nnet_mult.h",
+    "fileloc": 110,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "cast<ap_fixed<10, 5, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "4": {
+    "basicblocks": 2049,
+    "calls": "3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3",
+    "control_depth": 1,
+    "def_use_depth": 19,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 15605,
+    "loads": {
+      "L": 1103
+    },
+    "memory_accesses": 4366,
+    "name": "dense_latency<ap_fixed<10, 5, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>",
+    "stores": {
+      "L": 3199
+    },
+    "total_instructions": 15861
+  },
+  "5": {
+    "basicblocks": 96,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 477,
+    "loads": {
+      "L": 32
+    },
+    "memory_accesses": 95,
+    "name": "relu<ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, relu_config10>",
+    "stores": {
+      "L": 63
+    },
+    "total_instructions": 477
+  },
+  "6": {
+    "basicblocks": 96,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 477,
+    "loads": {
+      "L": 32
+    },
+    "memory_accesses": 95,
+    "name": "relu<ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, relu_config7>",
+    "stores": {
+      "L": 63
+    },
+    "total_instructions": 477
+  },
+  "7": {
+    "basicblocks": 192,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "nnet_activation.h",
+    "fileloc": 39,
+    "instructions": 957,
+    "loads": {
+      "L": 64
+    },
+    "memory_accesses": 191,
+    "name": "relu<ap_fixed<12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, relu_config4>",
+    "stores": {
+      "L": 127
+    },
+    "total_instructions": 957
+  },
+  "8": {
+    "basicblocks": 2049,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 35,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 15552,
+    "loads": {
+      "L": 1062
+    },
+    "memory_accesses": 4229,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, config9>",
+    "stores": {
+      "L": 3167
+    },
+    "total_instructions": 15552
+  }
+}

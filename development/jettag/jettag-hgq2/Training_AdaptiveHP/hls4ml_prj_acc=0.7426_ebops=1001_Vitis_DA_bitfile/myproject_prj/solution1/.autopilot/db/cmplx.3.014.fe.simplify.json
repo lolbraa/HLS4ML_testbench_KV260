@@ -1,0 +1,123 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3 7 1 4 2 5 6",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "myproject.cpp",
+    "fileloc": 7,
+    "instructions": 321,
+    "loads": {
+      "L": 153,
+      "T": 1
+    },
+    "memory_accesses": 161,
+    "name": "myproject",
+    "total_instructions": 1484
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 206,
+    "memory_accesses": 32,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, config6>",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 206
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 6,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 122,
+    "memory_accesses": 32,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<13, 10, (ap_q_mode)5, (ap_o_mode)3, 0>, config9>",
+    "stores": {
+      "L": 32
+    },
+    "total_instructions": 122
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 370,
+    "memory_accesses": 64,
+    "name": "dense_latency<ap_fixed<10, 5, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<12, 9, (ap_q_mode)5, (ap_o_mode)3, 0>, config3>",
+    "stores": {
+      "L": 64
+    },
+    "total_instructions": 370
+  },
+  "4": {
+    "basicblocks": 39,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "myproject.cpp",
+    "fileloc": 0,
+    "instructions": 87,
+    "memory_accesses": 6,
+    "name": "_Z9myprojectP8ap_fixedILi10ELi5EL9ap_q_mode0EL9ap_o_mode3ELi0EEPS_ILi14ELi8ELS0_5ELS1_3ELi0EE_",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 87
+  },
+  "5": {
+    "basicblocks": 40,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "myproject.cpp",
+    "fileloc": 0,
+    "instructions": 96,
+    "memory_accesses": 7,
+    "name": "_Z9myprojectP8ap_fixedILi10ELi5EL9ap_q_mode0EL9ap_o_mode3ELi0EEPS_ILi14ELi8ELS0_5ELS1_3ELi0EE_",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 96
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 6,
+    "file": "nnet_dense_latency.h",
+    "fileloc": 13,
+    "instructions": 109,
+    "memory_accesses": 5,
+    "name": "dense_latency<ap_ufixed<8, 6, (ap_q_mode)0, (ap_o_mode)3, 0>, ap_fixed<14, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, config12>",
+    "stores": {
+      "L": 5
+    },
+    "total_instructions": 109
+  },
+  "7": {
+    "basicblocks": 77,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 3,
+    "file": "myproject.cpp",
+    "fileloc": 0,
+    "instructions": 173,
+    "memory_accesses": 12,
+    "name": "_Z9myprojectP8ap_fixedILi10ELi5EL9ap_q_mode0EL9ap_o_mode3ELi0EEPS_ILi14ELi8ELS0_5ELS1_3ELi0EE_",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 173
+  }
+}

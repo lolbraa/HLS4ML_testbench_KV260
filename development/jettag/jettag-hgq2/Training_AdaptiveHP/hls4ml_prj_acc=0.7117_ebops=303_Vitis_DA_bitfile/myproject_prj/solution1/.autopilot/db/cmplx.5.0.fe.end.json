@@ -1,0 +1,98 @@
+{
+    "1": {
+        "name": "dense_latency<ap_ufixed<8, 6, 0, 3, 0>, ap_fixed<12, 9, 5, 3, 0>, config9>",
+        "file": "firmware\/myproject.cpp",
+        "fileloc": "54",
+        "instructions": "31",
+        "total_instructions": "31",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "3",
+        "control_depth": "0",
+        "def_use_depth": "7"
+    },
+    "2": {
+        "name": "relu<ap_fixed<12, 9, 5, 3, 0>, ap_ufixed<8, 6, 0, 3, 0>, relu_config10>",
+        "file": "firmware\/myproject.cpp",
+        "fileloc": "66",
+        "instructions": "34",
+        "total_instructions": "34",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "4",
+        "control_depth": "0",
+        "def_use_depth": "8"
+    },
+    "3": {
+        "name": "dense_latency<ap_ufixed<8, 6, 0, 3, 0>, ap_fixed<14, 8, 5, 3, 0>, config12>",
+        "file": "firmware\/nnet_utils\/nnet_dense_latency.h",
+        "fileloc": "13",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "4",
+        "control_depth": "0",
+        "def_use_depth": "9"
+    },
+    "4": {
+        "name": "relu<ap_fixed<10, 9, 5, 3, 0>, ap_ufixed<8, 6, 0, 3, 0>, relu_config7>",
+        "file": "firmware\/myproject.cpp",
+        "fileloc": "62",
+        "instructions": "20",
+        "total_instructions": "20",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "3",
+        "control_depth": "0",
+        "def_use_depth": "6"
+    },
+    "5": {
+        "name": "dense_latency<ap_ufixed<7, 5, 0, 3, 0>, ap_fixed<10, 9, 5, 3, 0>, config6>",
+        "file": "firmware\/myproject.cpp",
+        "fileloc": "54",
+        "instructions": "29",
+        "total_instructions": "29",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "5",
+        "control_depth": "0",
+        "def_use_depth": "8"
+    },
+    "6": {
+        "name": "relu<ap_fixed<13, 10, 5, 3, 0>, ap_ufixed<7, 5, 0, 3, 0>, relu_config4>",
+        "file": "firmware\/myproject.cpp",
+        "fileloc": "58",
+        "instructions": "42",
+        "total_instructions": "42",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "5",
+        "control_depth": "0",
+        "def_use_depth": "9"
+    },
+    "0": {
+        "name": "myproject",
+        "file": "myproject.cpp",
+        "fileloc": "7",
+        "instructions": "57",
+        "total_instructions": "317",
+        "calls": "7 6 5 4 1 2 3",
+        "basicblocks": "1",
+        "memory_accesses": "6",
+        "control_depth": "0",
+        "def_use_depth": "15"
+    },
+    "7": {
+        "name": "dense_latency<ap_fixed<8, 5, 0, 3, 0>, ap_fixed<13, 10, 5, 3, 0>, config3>",
+        "file": "firmware\/myproject.cpp",
+        "fileloc": "54",
+        "instructions": "61",
+        "total_instructions": "61",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "1",
+        "control_depth": "0",
+        "def_use_depth": "12"
+    }
+}

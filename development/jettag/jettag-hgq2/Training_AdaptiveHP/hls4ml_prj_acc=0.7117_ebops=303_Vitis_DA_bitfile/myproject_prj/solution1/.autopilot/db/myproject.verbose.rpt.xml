@@ -1,0 +1,157 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Thu May 14 16:51:39 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">myproject_prj</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 2.831 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3, 3, 15.000 ns, 15.000 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ret1_dense_latency_ap_fixed_8_5_0_3_0_ap_fixed_13_10_5_3_0_config3_s_fu_89">dense_latency_ap_fixed_8_5_0_3_0_ap_fixed_13_10_5_3_0_config3_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret_relu_ap_fixed_13_10_5_3_0_ap_ufixed_7_5_0_3_0_relu_config4_s_fu_95">relu_ap_fixed_13_10_5_3_0_ap_ufixed_7_5_0_3_0_relu_config4_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret2_dense_latency_ap_ufixed_7_5_0_3_0_ap_fixed_10_9_5_3_0_config6_s_fu_104">dense_latency_ap_ufixed_7_5_0_3_0_ap_fixed_10_9_5_3_0_config6_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret3_relu_ap_fixed_10_9_5_3_0_ap_ufixed_8_6_0_3_0_relu_config7_s_fu_113">relu_ap_fixed_10_9_5_3_0_ap_ufixed_8_6_0_3_0_relu_config7_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret4_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s_fu_120">dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret5_relu_ap_fixed_12_9_5_3_0_ap_ufixed_8_6_0_3_0_relu_config10_s_fu_127">relu_ap_fixed_12_9_5_3_0_ap_ufixed_8_6_0_3_0_relu_config10_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="call_ret6_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_8_5_3_0_config12_s_fu_135">dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_8_5_3_0_config12_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 4, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 998, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 36, -</column>
+<column name="Register">-, -, 225, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="call_ret1_dense_latency_ap_fixed_8_5_0_3_0_ap_fixed_13_10_5_3_0_config3_s_fu_89">dense_latency_ap_fixed_8_5_0_3_0_ap_fixed_13_10_5_3_0_config3_s, 0, 0, 0, 212, 0</column>
+<column name="call_ret2_dense_latency_ap_ufixed_7_5_0_3_0_ap_fixed_10_9_5_3_0_config6_s_fu_104">dense_latency_ap_ufixed_7_5_0_3_0_ap_fixed_10_9_5_3_0_config6_s, 0, 0, 0, 84, 0</column>
+<column name="call_ret4_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s_fu_120">dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s, 0, 0, 0, 87, 0</column>
+<column name="call_ret6_dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_8_5_3_0_config12_s_fu_135">dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_8_5_3_0_config12_s, 0, 0, 0, 167, 0</column>
+<column name="call_ret3_relu_ap_fixed_10_9_5_3_0_ap_ufixed_8_6_0_3_0_relu_config7_s_fu_113">relu_ap_fixed_10_9_5_3_0_ap_ufixed_8_6_0_3_0_relu_config7_s, 0, 0, 0, 75, 0</column>
+<column name="call_ret5_relu_ap_fixed_12_9_5_3_0_ap_ufixed_8_6_0_3_0_relu_config10_s_fu_127">relu_ap_fixed_12_9_5_3_0_ap_ufixed_8_6_0_3_0_relu_config10_s, 0, 0, 0, 168, 0</column>
+<column name="call_ret_relu_ap_fixed_13_10_5_3_0_ap_ufixed_7_5_0_3_0_relu_config4_s_fu_95">relu_ap_fixed_13_10_5_3_0_ap_ufixed_7_5_0_3_0_relu_config4_s, 0, 0, 0, 205, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="input_layer_ap_vld_in_sig">9, 2, 1, 2</column>
+<column name="input_layer_ap_vld_preg">9, 2, 1, 2</column>
+<column name="input_layer_blk_n">9, 2, 1, 2</column>
+<column name="input_layer_in_sig">9, 2, 128, 256</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 0, 1, 0</column>
+<column name="ap_block_pp0_stage0_subdone_grp0_done_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="input_layer_ap_vld_preg">1, 0, 1, 0</column>
+<column name="input_layer_preg">128, 0, 128, 0</column>
+<column name="layer10_out_1_reg_321">8, 0, 8, 0</column>
+<column name="layer10_out_2_reg_326">8, 0, 8, 0</column>
+<column name="layer10_out_3_reg_331">8, 0, 8, 0</column>
+<column name="layer10_out_reg_316">8, 0, 8, 0</column>
+<column name="layer4_out_1_reg_281">7, 0, 7, 0</column>
+<column name="layer4_out_2_reg_286">7, 0, 7, 0</column>
+<column name="layer4_out_3_reg_291">7, 0, 7, 0</column>
+<column name="layer4_out_4_reg_296">7, 0, 7, 0</column>
+<column name="layer4_out_reg_276">7, 0, 7, 0</column>
+<column name="layer7_out_1_reg_306">8, 0, 8, 0</column>
+<column name="layer7_out_2_reg_311">8, 0, 8, 0</column>
+<column name="layer7_out_reg_301">8, 0, 8, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, myproject, return value</column>
+<column name="input_layer_ap_vld">in, 1, ap_vld, input_layer, pointer</column>
+<column name="input_layer">in, 128, ap_vld, input_layer, pointer</column>
+<column name="layer12_out_0">out, 14, ap_vld, layer12_out_0, pointer</column>
+<column name="layer12_out_0_ap_vld">out, 1, ap_vld, layer12_out_0, pointer</column>
+<column name="layer12_out_1">out, 14, ap_vld, layer12_out_1, pointer</column>
+<column name="layer12_out_1_ap_vld">out, 1, ap_vld, layer12_out_1, pointer</column>
+<column name="layer12_out_2">out, 14, ap_vld, layer12_out_2, pointer</column>
+<column name="layer12_out_2_ap_vld">out, 1, ap_vld, layer12_out_2, pointer</column>
+<column name="layer12_out_3">out, 14, ap_vld, layer12_out_3, pointer</column>
+<column name="layer12_out_3_ap_vld">out, 1, ap_vld, layer12_out_3, pointer</column>
+<column name="layer12_out_4">out, 14, ap_vld, layer12_out_4, pointer</column>
+<column name="layer12_out_4_ap_vld">out, 1, ap_vld, layer12_out_4, pointer</column>
+</table>
+</item>
+</section>
+</profile>
