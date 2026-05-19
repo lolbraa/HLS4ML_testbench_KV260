@@ -1,0 +1,6 @@
+Processing input 0
+Predictions
+0 1 0 0 0 
+Quantized predictions
+0.5 0.427734 0.0410156 0.0488281 0.104492 
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log

@@ -1,0 +1,26 @@
++--------------------------------------------------------------------------------+----+---------+------+----------+------+--------+-------+-----+-------+-------------+
+|                                   Modules                                      | II |         | Trip |          |   Latency     |       |     |       |             |
+|                                   & Loops                                      |    | Interval| Count| Pipelined| (cc) |   (s)  | Slack | bram|   FF  |     LUT     |
++--------------------------------------------------------------------------------+----+---------+------+----------+------+--------+-------+-----+-------+-------------+
+|+ myproject_axi_master*                                                         |   -|        -|     -|  dataflow|     -|        |  -0.01|  15 |  6169 |  20288 (17%)|
+| + entry_proc                                                                   |   -|        0|     -|        no|     0|  0.00 n|   2.53|     |     3 |     29 (~0%)|
+| + load_input_float_array_ap_fixed_8_5_0_3_0_16u_s                              |   -|        0|     -|    rewind|     -|        |  -0.01|     |  1798 |   10074 (8%)|
+|  o VITIS_LOOP_13_1                                                             |  29|       16|     -|       yes|     -|        |   4.37|     |       |            -|
+| + compute                                                                      |   -|        -|     -|        no|     -|        |   0.09|     |  1777 |    6213 (5%)|
+|  o VITIS_LOOP_42_1                                                             |  15|        -|     -|        no|     -|        |   4.37|     |       |            -|
+|   + myproject*                                                                 |   -|        2|     -|  dataflow|    13| 65.00 n|   0.09|     |  1707 |    6076 (5%)|
+|    + dense_array_ap_fixed_16u_array_ap_fixed_13_10_5_3_0_64u_config3_s         |   -|        1|     -|        no|     1|  5.00 n|   0.09|     |    44 |    263 (~0%)|
+|     + dense_latency_ap_fixed_8_5_0_3_0_ap_fixed_13_10_5_3_0_config3_s          |   -|        1|     -|       yes|     0|  0.00 n|   1.93|     |       |    211 (~0%)|
+|    + relu_array_ap_fixed_64u_array_ap_ufixed_7_5_0_3_0_64u_relu_config4_s      |   -|        1|     -|        no|     1|  5.00 n|   1.35|     |   452 |    2676 (2%)|
+|    + dense_array_ap_ufixed_64u_array_ap_fixed_10_9_5_3_0_32u_config6_s         |   -|        1|     -|        no|     1|  5.00 n|   0.98|     |    34 |    136 (~0%)|
+|     + dense_latency_ap_ufixed_7_5_0_3_0_ap_fixed_10_9_5_3_0_config6_s          |   -|        1|     -|       yes|     0|  0.00 n|   2.82|     |       |     84 (~0%)|
+|    + relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config7_s      |   -|        1|     -|        no|     1|  5.00 n|   1.75|     |   260 |    852 (~0%)|
+|    + dense_array_ap_ufixed_32u_array_ap_fixed_12_9_5_3_0_32u_config9_s         |   -|        1|     -|        no|     1|  5.00 n|   0.95|     |    28 |    139 (~0%)|
+|     + dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_12_9_5_3_0_config9_s          |   -|        1|     -|       yes|     0|  0.00 n|   2.79|     |       |     87 (~0%)|
+|    + relu_array_ap_fixed_32u_array_ap_ufixed_8_6_0_3_0_32u_relu_config10_s     |   -|        1|     -|        no|     1|  5.00 n|   1.33|     |   260 |    1396 (1%)|
+|    + dense_array_ap_ufixed_32u_array_ap_fixed_14_8_5_3_0_5u_config12_s         |   -|        1|     -|        no|     1|  5.00 n|   0.99|     |    35 |    210 (~0%)|
+|     + dense_latency_ap_ufixed_8_6_0_3_0_ap_fixed_14_8_5_3_0_config12_s         |   -|        1|     -|       yes|     0|  0.00 n|   2.63|     |       |    167 (~0%)|
+| + store_result_float_array_ap_fixed_14_8_5_3_0_5u_s                            |   -|        -|     -|        no|     -|        |  -0.01|     |   482 |    1974 (1%)|
+|  + store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1               |   -|        -|     -|       yes|     -|        |  -0.01|     |   343 |    1614 (1%)|
+|   o VITIS_LOOP_29_1                                                            |   8|        5|     -|       yes|     -|        |   4.37|     |       |            -|
++--------------------------------------------------------------------------------+----+---------+------+----------+------+--------+-------+---- +-------+-------------+

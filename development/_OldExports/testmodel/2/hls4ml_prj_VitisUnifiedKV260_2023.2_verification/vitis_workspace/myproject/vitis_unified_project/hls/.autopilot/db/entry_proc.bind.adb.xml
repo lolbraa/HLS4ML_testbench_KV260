@@ -17,9 +17,9 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="3" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32">
+<Node id="3" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %gmem_out0_ptr_layer5_out_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0
+entry:0 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %gmem_out0_ptr_layer5_out_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -122,15 +122,19 @@ entry:3 %ret_ln0 = ret
 </dataflow>
 <dataflow id="34" from="StgValue_13" to="specinterface_ln0" fromId="13" toId="2">
 </dataflow>
-<dataflow id="36" from="_ssdm_op_Read.ap_auto.i64" to="gmem_out0_ptr_layer5_out_read" fromId="35" toId="3">
+<dataflow id="35" from="StgValue_13" to="specinterface_ln0" fromId="13" toId="2">
 </dataflow>
-<dataflow id="37" from="gmem_out0_ptr_layer5_out" to="gmem_out0_ptr_layer5_out_read" fromId="6" toId="3">
+<dataflow id="36" from="StgValue_13" to="specinterface_ln0" fromId="13" toId="2">
 </dataflow>
-<dataflow id="39" from="_ssdm_op_Write.ap_fifo.i64P0A" to="write_ln0" fromId="38" toId="4">
+<dataflow id="38" from="_ssdm_op_Read.ap_auto.i64" to="gmem_out0_ptr_layer5_out_read" fromId="37" toId="3">
 </dataflow>
-<dataflow id="40" from="gmem_out0_ptr_layer5_out_c" to="write_ln0" fromId="7" toId="4">
+<dataflow id="39" from="gmem_out0_ptr_layer5_out" to="gmem_out0_ptr_layer5_out_read" fromId="6" toId="3">
 </dataflow>
-<dataflow id="41" from="gmem_out0_ptr_layer5_out_read" to="write_ln0" fromId="3" toId="4">
+<dataflow id="41" from="_ssdm_op_Write.ap_fifo.i64P0A" to="write_ln0" fromId="40" toId="4">
+</dataflow>
+<dataflow id="42" from="gmem_out0_ptr_layer5_out_c" to="write_ln0" fromId="7" toId="4">
+</dataflow>
+<dataflow id="43" from="gmem_out0_ptr_layer5_out_read" to="write_ln0" fromId="3" toId="4">
 </dataflow>
 </dataflows>
 

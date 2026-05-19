@@ -9,13 +9,13 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Fri May 15 00:10:23 2026",
- "timestampMillis": "1778796623111",
+ "dateTimestamp": "Mon May 18 16:10:42 2026",
+ "timestampMillis": "1779113442739",
  "buildStep": {
-  "cmdId": "b8cc9ece-be36-4684-91be-6d950063cfd0",
+  "cmdId": "3c3732e7-a618-4399-b21a-51d97ff82716",
   "name": "vitis-run",
   "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/vitis_workspace/myproject/vitis_unified_project/logs/vitis_unified_project.steps.log",
-  "commandLine": "/tools/Xilinx/Vitis/2023.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/hls_kernel_config.cfg --work_dir vitis_unified_project ",
+  "commandLine": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/hls_kernel_config.cfg --work_dir vitis_unified_project ",
   "args": [
    "--mode",
    "hls",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri May 15 00:10:23 2026",
- "timestampMillis": "1778796623111",
+ "dateTimestamp": "Mon May 18 16:10:42 2026",
+ "timestampMillis": "1779113442739",
  "status": {
-  "cmdId": "b8cc9ece-be36-4684-91be-6d950063cfd0",
+  "cmdId": "3c3732e7-a618-4399-b21a-51d97ff82716",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Fri May 15 00:10:24 2026",
- "timestampMillis": "1778796624307",
+ "dateTimestamp": "Mon May 18 16:10:43 2026",
+ "timestampMillis": "1779113443998",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -74,20 +74,20 @@
     "freqUnits": ""
    }
   ],
-  "toolVersion": "2023.2"
+  "toolVersion": "2025.2"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Fri May 15 00:10:24 2026",
- "timestampMillis": "1778796624308",
+ "dateTimestamp": "Mon May 18 16:10:43 2026",
+ "timestampMillis": "1779113443998",
  "buildStep": {
-  "cmdId": "306f0a4c-cdf3-4d29-bacd-9e0ae7174356",
-  "name": "csim_design",
+  "cmdId": "3bc4ac39-4a30-4552-b688-03e62ef4b2ae",
+  "name": "",
   "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/vitis_workspace/myproject/vitis_unified_project/hls/hls.log",
-  "commandLine": "csim_design",
+  "commandLine": "",
   "args": [],
   "iniFiles": [],
   "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/vitis_workspace/myproject"
@@ -97,10 +97,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri May 15 00:10:24 2026",
- "timestampMillis": "1778796624308",
+ "dateTimestamp": "Mon May 18 16:10:43 2026",
+ "timestampMillis": "1779113443998",
  "status": {
-  "cmdId": "306f0a4c-cdf3-4d29-bacd-9e0ae7174356",
+  "cmdId": "3bc4ac39-4a30-4552-b688-03e62ef4b2ae",
   "state": "CS_RUNNING"
  }
 }
@@ -108,30 +108,30 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri May 15 00:10:24 2026",
- "timestampMillis": "1778796624444",
+ "dateTimestamp": "Mon May 18 16:10:47 2026",
+ "timestampMillis": "1779113447457",
  "status": {
-  "cmdId": "306f0a4c-cdf3-4d29-bacd-9e0ae7174356",
-  "state": "CS_FAILED"
+  "cmdId": "3bc4ac39-4a30-4552-b688-03e62ef4b2ae",
+  "state": "CS_PASSED"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Fri May 15 00:10:24 2026",
- "timestampMillis": "1778796624500",
+ "dateTimestamp": "Mon May 18 16:10:47 2026",
+ "timestampMillis": "1779113447502",
  "status": {
-  "cmdId": "b8cc9ece-be36-4684-91be-6d950063cfd0",
-  "state": "CS_FAILED"
+  "cmdId": "3c3732e7-a618-4399-b21a-51d97ff82716",
+  "state": "CS_PASSED"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri May 15 00:10:24 2026",
- "timestampMillis": "1778796624501",
+ "dateTimestamp": "Mon May 18 16:10:47 2026",
+ "timestampMillis": "1779113447502",
  "report": {
   "path": "",
   "name": "",
@@ -144,8 +144,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Fri May 15 00:10:24 2026",
- "timestampMillis": "1778796624501",
+ "dateTimestamp": "Mon May 18 16:10:47 2026",
+ "timestampMillis": "1779113447502",
  "report": {
   "path": "",
   "name": "",

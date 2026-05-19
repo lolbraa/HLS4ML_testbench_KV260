@@ -1,0 +1,38 @@
++--------------------------------------------------------------------------------+------+---------+------+----------+------+--------+-------+-----+-------+-------------+
+|                                     Modules                                    |  II  |         | Trip |          |    Latency    |       |     |       |             |
+|                                     & Loops                                    |      | Interval| Count| Pipelined| (cc) |   (s)  | Slack | BRAM|   FF  |     LUT     |
++--------------------------------------------------------------------------------+------+---------+------+----------+------+--------+-------+-----+-------+-------------+
+|+ myproject_axi_master*                                                         |     -|        -|     -|  dataflow|     -|        |  -0.01|  46 |  9407 |  38417 (32%)|
+| + entry_proc                                                                   |     -|        0|     -|        no|     0| 0.00  n|   2.53|     |     3 |     29 (~0%)|
+| + load_input_float_array_ap_ufixed_4_2_0_3_0_1u_s                              |     -|        -|     -|        no|     -|        |  -0.01|     |   346 |    1333 (1%)|
+|  + load_input_float_array_Pipeline_VITIS_LOOP_13_1_VITIS_LOOP_14_2             |     -|        -|     -|       yes|     -|        |  -0.01|     |   165 |    827 (~0%)|
+|   o VITIS_LOOP_13_1_VITIS_LOOP_14_2                                            |     6|        1|     -|       yes|     -|        |   4.37|     |       |            -|
+| + compute                                                                      |     -|        -|     -|        no|     -|        |   0.02|  35 |   6186|  31331 (26%)|
+|  o VITIS_LOOP_42_1                                                             |  2365|        -|     -|        no|     -|        |   4.37|     |       |            -|
+|   + myproject*                                                                 |     -|     2353|     -|  dataflow|  2363| 11.82 m|   0.02|  35 |   6116|  31194 (26%)|
+|    + conv_2d_cl_array_ap_ufixed_1u_array_ap_ufixed_5_3_5_3_0_16u_config3_s     |     -|     2353|     -|    rewind|  2354| 11.77 m|   1.91|     |   289 |    698 (~0%)|
+|     o ReadInputHeight_ReadInputWidth                                           |     3|        3|   784|       yes|  2352| 11.76 m|   4.37|     |       |            -|
+|      + compute_output_buffer_2d_array_array_ap_ufixed_5_3_5_3_0_16u_config3_s  |     -|        2|     -|       yes|     1|  5.00 n|   1.91|     |   273 |    588 (~0%)|
+|       + shift_line_buffer_array_ap_ufixed_4_2_0_3_0_1u_config3_s               |     -|        1|     -|       yes|     0|  0.00 n|   2.94|     |     5 |      9 (~0%)|
+|       + dense_latency_ap_ufixed_4_2_0_3_0_ap_ufixed_5_3_5_3_0_config3_mult_s   |     -|        1|     -|       yes|     0|  0.00 n|   3.57|     |       |     12 (~0%)|
+|    + relu_array_ap_ufixed_16u_array_ap_ufixed_5_3_5_3_0_16u_relu_config4_s     |     -|      677|     -|    rewind|   678|  3.39 m|   0.56|     |    14 |    107 (~0%)|
+|     o ReLUActLoop                                                              |     2|        1|   676|       yes|   676|  3.38 m|   4.37|     |       |            -|
+|    + pooling2d_cl_array_array_ap_ufixed_4_2_0_3_0_16u_config5_s                |     -|      679|     -|        no|   679|  3.39 m|   0.08|     |   735 |    2125 (1%)|
+|     o ReadInputHeight_ReadInputWidth                                           |     3|        1|   676|       yes|   677|  3.38 m|   4.37|     |       |            -|
+|    + conv_2d_cl_array_ap_ufixed_16u_array_ap_fixed_10_5_5_3_0_16u_config7_s    |     -|      677|     -|    rewind|   678|  3.39 m|   0.24|     |   491 |    1426 (1%)|
+|     o ReadInputHeight_ReadInputWidth                                           |     4|        4|   169|       yes|   676|  3.38 m|   4.37|     |       |            -|
+|      + compute_output_buffer_2d_array_array_ap_fixed_10_5_5_3_0_16u_config7_s  |     -|        3|     -|       yes|     2| 10.00 n|   0.24|     |   476 |    1314 (1%)|
+|       + shift_line_buffer_array_ap_ufixed_4_2_0_3_0_16u_config7_s              |     -|        1|     -|       yes|     0|  0.00 n|   2.94|     |   129 |    118 (~0%)|
+|       + dense_latency_ap_ufixed_4_2_0_3_0_ap_fixed_10_5_5_3_0_config7_mult_s   |     -|        1|     -|       yes|     0|  0.00 n|   0.24|     |       |    623 (~0%)|
+|    + relu_array_ap_fixed_16u_array_ap_ufixed_9_4_5_3_0_16u_relu_config8_s      |     -|      122|     -|    rewind|   124|620.00 n|   1.52|     |   157 |    515 (~0%)|
+|     o ReLUActLoop                                                              |     3|        1|   121|       yes|   122|610.00 n|   4.37|     |       |            -|
+|    + pooling2d_cl_array_array_ap_ufixed_4_2_0_3_0_16u_config9_s                |     -|      124|     -|        no|   124|620.00 n|   0.36|     |  1131 |    2774 (2%)|
+|     o ReadInputHeight_ReadInputWidth                                           |     3|        1|   121|       yes|   122|610.00 n|   4.37|     |       |            -|
+|    + dense_array_ap_ufixed_16u_array_ap_fixed_15_9_5_3_0_10u_config13_s        |     -|       32|     -|        no|    32|160.00 n|   0.02|     |  2338 |  23200 (19%)|
+|     + dense_array_array_ap_fixed_15_9_5_3_0_10u_config13_Pipeline_DataPrepare  |     -|        -|     -|       yes|    27|135.00 n|   2.59|     |   509 |     73 (~0%)|
+|      o DataPrepare                                                             |     2|        1|    25|       yes|    25|125.00 n|   4.37|     |       |            -|
+|     + dense_latency_ap_ufixed_4_2_0_3_0_ap_fixed_15_9_5_3_0_config13_s         |     -|        3|     -|       yes|     2| 10.00 n|   0.02|     |  1670 |  23070 (19%)|
+| + store_result_float_array_ap_fixed_15_9_5_3_0_10u_s                           |     -|        -|     -|        no|     -|        |  -0.01|     |   821 |    3596 (3%)|
+|  + store_result_float_array_ap_fixed_10u_Pipeline_VITIS_LOOP_29_1              |     -|        -|     -|       yes|     -|        |  -0.01|     |   682 |    3235 (2%)|
+|   o VITIS_LOOP_29_1                                                            |    13|       10|     -|       yes|     -|        |   4.37|     |       |            -|
++--------------------------------------------------------------------------------+------+---------+------+----------+------+--------+-------+-----+-------+-------------+

@@ -1,0 +1,7 @@
+Running: xsim.dir/myproject_axi_master/xsimk -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=myproject_axi_master_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb myproject_axi_master.wdb -simrunnum 0 -socket 49813
+Design successfully loaded
+Design Loading Memory Usage: 245244 KB (Peak: 245244 KB)
+Design Loading CPU Usage: 500 ms
+Simulation completed
+Simulation Memory Usage: 426040 KB (Peak: 483380 KB)
+Simulation CPU Usage: 1250 ms

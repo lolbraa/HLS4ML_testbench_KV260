@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s'" level="0">
-<item name = "Date">Fri May 15 00:09:31 2026
+<item name = "Date">Mon May 18 16:10:21 2026
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -51,7 +51,7 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, 5, 0, 25, -</column>
 <column name="Memory">4, -, 0, 0, -</column>
-<column name="Multiplexer">-, -, -, 49, -</column>
+<column name="Multiplexer">-, -, 0, 49, -</column>
 <column name="Register">-, -, 202, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
 <specialColumn name="Utilization (%)">1, ~0, ~0, ~0, 0</specialColumn>
@@ -61,11 +61,11 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_18s_11ns_26_1_1_U1226">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_18s_11ns_26_1_1_U1227">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_18s_11ns_26_1_1_U1228">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_18s_11ns_26_1_1_U1229">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_18s_11ns_26_1_1_U1230">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1239">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1240">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1241">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1242">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_18s_11ns_26_1_1_U1243">mul_18s_11ns_26_1_1, 0, 1, 0, 5, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -88,11 +88,11 @@
 <column name="add_ln51_2_fu_595_p2">+, 0, 0, 19, 12, 12</column>
 <column name="add_ln51_3_fu_605_p2">+, 0, 0, 20, 13, 13</column>
 <column name="add_ln51_fu_579_p2">+, 0, 0, 17, 12, 12</column>
-<column name="d_xi_xmax_5_fu_464_p2">-, 0, 0, 22, 15, 15</column>
-<column name="d_xi_xmax_6_fu_469_p2">-, 0, 0, 22, 15, 15</column>
-<column name="d_xi_xmax_7_fu_474_p2">-, 0, 0, 22, 15, 15</column>
-<column name="d_xi_xmax_8_fu_479_p2">-, 0, 0, 22, 15, 15</column>
-<column name="d_xi_xmax_fu_459_p2">-, 0, 0, 22, 15, 15</column>
+<column name="x_1_fu_464_p2">-, 0, 0, 22, 15, 15</column>
+<column name="x_2_fu_469_p2">-, 0, 0, 22, 15, 15</column>
+<column name="x_3_fu_474_p2">-, 0, 0, 22, 15, 15</column>
+<column name="x_4_fu_479_p2">-, 0, 0, 22, 15, 15</column>
+<column name="x_fu_459_p2">-, 0, 0, 22, 15, 15</column>
 <column name="icmp_ln66_1_fu_356_p2">icmp, 0, 0, 23, 16, 16</column>
 <column name="icmp_ln66_2_fu_376_p2">icmp, 0, 0, 23, 16, 16</column>
 <column name="icmp_ln66_3_fu_437_p2">icmp, 0, 0, 23, 16, 16</column>
@@ -117,12 +117,12 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="a_1_reg_800">11, 0, 11, 0</column>
+<column name="a_reg_790">11, 0, 11, 0</column>
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
-<column name="exp_table_load_1_reg_795">11, 0, 11, 0</column>
-<column name="exp_table_load_2_reg_800">11, 0, 11, 0</column>
-<column name="exp_table_load_3_reg_805">11, 0, 11, 0</column>
-<column name="exp_table_load_4_reg_810">11, 0, 11, 0</column>
-<column name="exp_table_load_reg_790">11, 0, 11, 0</column>
+<column name="b_1_reg_805">11, 0, 11, 0</column>
+<column name="b_2_reg_810">11, 0, 11, 0</column>
+<column name="b_reg_795">11, 0, 11, 0</column>
 <column name="icmp_ln66_2_reg_734">1, 0, 1, 0</column>
 <column name="inv_exp_sum_reg_820">18, 0, 18, 0</column>
 <column name="select_ln66_1_reg_729">16, 0, 16, 0</column>
@@ -149,15 +149,15 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config5&gt;, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, softmax_stable&lt;array,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,5u&gt;,softmax_config5&gt;, return value</column>
 <column name="layer4_out_dout">in, 80, ap_fifo, layer4_out, pointer</column>
-<column name="layer4_out_num_data_valid">in, 2, ap_fifo, layer4_out, pointer</column>
-<column name="layer4_out_fifo_cap">in, 2, ap_fifo, layer4_out, pointer</column>
 <column name="layer4_out_empty_n">in, 1, ap_fifo, layer4_out, pointer</column>
 <column name="layer4_out_read">out, 1, ap_fifo, layer4_out, pointer</column>
+<column name="layer4_out_num_data_valid">in, 2, ap_fifo, layer4_out, pointer</column>
+<column name="layer4_out_fifo_cap">in, 2, ap_fifo, layer4_out, pointer</column>
 <column name="stream_out0_layer5_out_din">out, 80, ap_fifo, stream_out0_layer5_out, pointer</column>
-<column name="stream_out0_layer5_out_num_data_valid">in, 8, ap_fifo, stream_out0_layer5_out, pointer</column>
-<column name="stream_out0_layer5_out_fifo_cap">in, 8, ap_fifo, stream_out0_layer5_out, pointer</column>
 <column name="stream_out0_layer5_out_full_n">in, 1, ap_fifo, stream_out0_layer5_out, pointer</column>
 <column name="stream_out0_layer5_out_write">out, 1, ap_fifo, stream_out0_layer5_out, pointer</column>
+<column name="stream_out0_layer5_out_num_data_valid">in, 8, ap_fifo, stream_out0_layer5_out, pointer</column>
+<column name="stream_out0_layer5_out_fifo_cap">in, 8, ap_fifo, stream_out0_layer5_out, pointer</column>
 </table>
 </item>
 </section>

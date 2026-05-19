@@ -15,20 +15,12 @@
 <ModuleName>load_input_float_array_ap_fixed_16_6_5_3_0_16u_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>137</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1_fu_80</InstName>
-<ModuleName>load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>80</ID>
-</Instance>
-</InstancesList>
 </Instance>
 <Instance>
 <InstName>compute_U0</InstName>
 <ModuleName>compute</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>148</ID>
+<ID>150</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_myproject_fu_66</InstName>
@@ -43,10 +35,10 @@
 <ID>54</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s_fu_97</InstName>
-<ModuleName>dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s</ModuleName>
+<InstName>grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s_fu_67</InstName>
+<ModuleName>dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>97</ID>
+<ID>67</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -63,8 +55,8 @@
 <ID>67</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s_fu_289</InstName>
-<ModuleName>dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s</ModuleName>
+<InstName>grp_dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s_fu_289</InstName>
+<ModuleName>dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s</ModuleName>
 <IsCompInst>true</IsCompInst>
 <ID>289</ID>
 </Instance>
@@ -92,13 +84,13 @@
 <InstName>store_result_float_array_ap_fixed_16_6_5_3_0_5u_U0</InstName>
 <ModuleName>store_result_float_array_ap_fixed_16_6_5_3_0_5u_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>162</ID>
+<ID>164</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1_fu_71</InstName>
+<InstName>grp_store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1_fu_81</InstName>
 <ModuleName>store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>71</ID>
+<ID>81</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -124,6 +116,7 @@
 <Worst-caseRealTimeLatency>0 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>0</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
@@ -284,28 +277,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>gmem_out0_ptr_layer5_out_c_num_data_valid</name>
-<Object>gmem_out0_ptr_layer5_out_c</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>3</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>gmem_out0_ptr_layer5_out_c_fifo_cap</name>
-<Object>gmem_out0_ptr_layer5_out_c</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>3</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>gmem_out0_ptr_layer5_out_c_full_n</name>
 <Object>gmem_out0_ptr_layer5_out_c</Object>
 <Type>pointer</Type>
@@ -327,10 +298,32 @@
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
+<RtlPorts>
+<name>gmem_out0_ptr_layer5_out_c_num_data_valid</name>
+<Object>gmem_out0_ptr_layer5_out_c</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>3</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>gmem_out0_ptr_layer5_out_c_fifo_cap</name>
+<Object>gmem_out0_ptr_layer5_out_c</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>3</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>load_input_float_array_ap_fixed_16u_Pipeline_VITIS_LOOP_13_1</Name>
+<Name>load_input_float_array_ap_fixed_16_6_5_3_0_16u_s</Name>
 <Loops>
 <VITIS_LOOP_13_1></VITIS_LOOP_13_1>
 </Loops>
@@ -347,19 +340,22 @@
 <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>undef</PipelineInitiationInterval>
-<PipelineType>no</PipelineType>
+<PipelineInitiationInterval>0</PipelineInitiationInterval>
+<PipelineType>loop auto-rewind stp (delay=0 clock cycles(s))stp (delay=0 clock cycles(s))</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_13_1>
 <Name>VITIS_LOOP_13_1</Name>
 <Slack>4.37</Slack>
 <TripCount>undef</TripCount>
+<isPerfectNested>0</isPerfectNested>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>16</PipelineII>
-<PipelineDepth>20</PipelineDepth>
+<PipelineDepth>28</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
 </VITIS_LOOP_13_1>
@@ -367,719 +363,23 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:13</SourceLocation>
+<SourceLocation>firmware/myproject_axi_master.cpp:10</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_13_1>
 <Name>VITIS_LOOP_13_1</Name>
-<IssueType>II Violation</IssueType>
-<ViolationType>Memory Dependency</ViolationType>
-<IterationDistance>1</IterationDistance>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:13</SourceLocation>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>firmware/myproject_axi_master.cpp:13</SourceLocation>
 </VITIS_LOOP_13_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>1485</FF>
+<FF>1543</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>10011</LUT>
-<AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>8</UTIL_LUT>
-<BRAM_18K>0</BRAM_18K>
-<AVAIL_BRAM>288</AVAIL_BRAM>
-<UTIL_BRAM>0</UTIL_BRAM>
-<DSP>0</DSP>
-<AVAIL_DSP>1248</AVAIL_DSP>
-<UTIL_DSP>0</UTIL_DSP>
-<URAM>0</URAM>
-<AVAIL_URAM>64</AVAIL_URAM>
-<UTIL_URAM>0</UTIL_URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>load_input&lt;float,array&lt;ap_fixed,16u&gt;&gt;_Pipeline_VITIS_LOOP_13_1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>load_input&lt;float,array&lt;ap_fixed,16u&gt;&gt;_Pipeline_VITIS_LOOP_13_1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>load_input&lt;float,array&lt;ap_fixed,16u&gt;&gt;_Pipeline_VITIS_LOOP_13_1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>load_input&lt;float,array&lt;ap_fixed,16u&gt;&gt;_Pipeline_VITIS_LOOP_13_1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>load_input&lt;float,array&lt;ap_fixed,16u&gt;&gt;_Pipeline_VITIS_LOOP_13_1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>load_input&lt;float,array&lt;ap_fixed,16u&gt;&gt;_Pipeline_VITIS_LOOP_13_1</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWVALID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWREADY</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWADDR</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWLEN</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWSIZE</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>3</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWBURST</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWLOCK</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWCACHE</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>4</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWPROT</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>3</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWQOS</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>4</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWREGION</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>4</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_AWUSER</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_WVALID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_WREADY</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_WDATA</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_WSTRB</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>4</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_WLAST</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_WID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_WUSER</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARVALID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARREADY</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARADDR</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARLEN</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>32</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARSIZE</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>3</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARBURST</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARLOCK</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARCACHE</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>4</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARPROT</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>3</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARQOS</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>4</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARREGION</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>4</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_ARUSER</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_RVALID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_RREADY</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_RDATA</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_RLAST</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_RID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_RFIFONUM</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>9</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_RUSER</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_RRESP</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_BVALID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_BREADY</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_BRESP</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_BID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_BUSER</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_din</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>256</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_num_data_valid</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>8</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_fifo_cap</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>8</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_full_n</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_write</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>batch_size</name>
-<Object>batch_size</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>sext_ln13</name>
-<Object>sext_ln13</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>62</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>load_input_float_array_ap_fixed_16_6_5_3_0_16u_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.375</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>undef</Best-caseLatency>
-<Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>undef</Worst-caseLatency>
-<Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>undef</PipelineInitiationInterval>
-<PipelineType>no</PipelineType>
-</SummaryOfOverallLatency>
-<SummaryOfViolations>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:13</SourceLocation>
-</SummaryOfViolations>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<FF>1589</FF>
-<AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<LUT>10326</LUT>
+<LUT>9578</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>8</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1205,7 +505,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWVALID</name>
+<name>m_axi_gmem_in0_0_AWVALID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1216,7 +516,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWREADY</name>
+<name>m_axi_gmem_in0_0_AWREADY</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1227,7 +527,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWADDR</name>
+<name>m_axi_gmem_in0_0_AWADDR</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1238,7 +538,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWID</name>
+<name>m_axi_gmem_in0_0_AWID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1249,7 +549,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWLEN</name>
+<name>m_axi_gmem_in0_0_AWLEN</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1260,7 +560,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWSIZE</name>
+<name>m_axi_gmem_in0_0_AWSIZE</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1271,7 +571,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWBURST</name>
+<name>m_axi_gmem_in0_0_AWBURST</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1282,7 +582,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWLOCK</name>
+<name>m_axi_gmem_in0_0_AWLOCK</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1293,7 +593,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWCACHE</name>
+<name>m_axi_gmem_in0_0_AWCACHE</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1304,7 +604,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWPROT</name>
+<name>m_axi_gmem_in0_0_AWPROT</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1315,7 +615,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWQOS</name>
+<name>m_axi_gmem_in0_0_AWQOS</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1326,7 +626,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWREGION</name>
+<name>m_axi_gmem_in0_0_AWREGION</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1337,7 +637,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_AWUSER</name>
+<name>m_axi_gmem_in0_0_AWUSER</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1348,7 +648,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_WVALID</name>
+<name>m_axi_gmem_in0_0_WVALID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1359,7 +659,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_WREADY</name>
+<name>m_axi_gmem_in0_0_WREADY</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1370,7 +670,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_WDATA</name>
+<name>m_axi_gmem_in0_0_WDATA</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1381,7 +681,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_WSTRB</name>
+<name>m_axi_gmem_in0_0_WSTRB</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1392,7 +692,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_WLAST</name>
+<name>m_axi_gmem_in0_0_WLAST</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1403,7 +703,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_WID</name>
+<name>m_axi_gmem_in0_0_WID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1414,7 +714,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_WUSER</name>
+<name>m_axi_gmem_in0_0_WUSER</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1425,7 +725,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARVALID</name>
+<name>m_axi_gmem_in0_0_ARVALID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1436,7 +736,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARREADY</name>
+<name>m_axi_gmem_in0_0_ARREADY</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1447,7 +747,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARADDR</name>
+<name>m_axi_gmem_in0_0_ARADDR</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1458,7 +758,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARID</name>
+<name>m_axi_gmem_in0_0_ARID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1469,7 +769,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARLEN</name>
+<name>m_axi_gmem_in0_0_ARLEN</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1480,7 +780,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARSIZE</name>
+<name>m_axi_gmem_in0_0_ARSIZE</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1491,7 +791,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARBURST</name>
+<name>m_axi_gmem_in0_0_ARBURST</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1502,7 +802,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARLOCK</name>
+<name>m_axi_gmem_in0_0_ARLOCK</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1513,7 +813,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARCACHE</name>
+<name>m_axi_gmem_in0_0_ARCACHE</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1524,7 +824,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARPROT</name>
+<name>m_axi_gmem_in0_0_ARPROT</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1535,7 +835,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARQOS</name>
+<name>m_axi_gmem_in0_0_ARQOS</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1546,7 +846,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARREGION</name>
+<name>m_axi_gmem_in0_0_ARREGION</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1557,7 +857,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_ARUSER</name>
+<name>m_axi_gmem_in0_0_ARUSER</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1568,7 +868,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_RVALID</name>
+<name>m_axi_gmem_in0_0_RVALID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1579,7 +879,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_RREADY</name>
+<name>m_axi_gmem_in0_0_RREADY</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1590,7 +890,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_RDATA</name>
+<name>m_axi_gmem_in0_0_RDATA</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1601,7 +901,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_RLAST</name>
+<name>m_axi_gmem_in0_0_RLAST</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1612,7 +912,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_RID</name>
+<name>m_axi_gmem_in0_0_RID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1623,7 +923,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_RFIFONUM</name>
+<name>m_axi_gmem_in0_0_RFIFONUM</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1634,7 +934,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_RUSER</name>
+<name>m_axi_gmem_in0_0_RUSER</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1645,40 +945,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_RRESP</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_BVALID</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_BREADY</name>
-<Object>gmem_in0</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>m_axi</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>m_axi_gmem_in0_BRESP</name>
+<name>m_axi_gmem_in0_0_RRESP</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1689,7 +956,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_BID</name>
+<name>m_axi_gmem_in0_0_BVALID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1700,7 +967,29 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_in0_BUSER</name>
+<name>m_axi_gmem_in0_0_BREADY</name>
+<Object>gmem_in0</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>m_axi</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>m_axi_gmem_in0_0_BRESP</name>
+<Object>gmem_in0</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>m_axi</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>m_axi_gmem_in0_0_BID</name>
 <Object>gmem_in0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -1711,30 +1000,19 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>in_r</name>
-<Object>in_r</Object>
-<Type>scalar</Type>
+<name>m_axi_gmem_in0_0_BUSER</name>
+<Object>gmem_in0</Object>
+<Type>pointer</Type>
 <Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
+<IOProtocol>m_axi</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
+<Bits>1</Bits>
+<Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>batch_size</name>
-<Object>batch_size</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>batch_size_c9_din</name>
-<Object>batch_size_c9</Object>
+<name>batch_size_c1_din</name>
+<Object>batch_size_c1</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_fifo</IOProtocol>
@@ -1744,8 +1022,30 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>batch_size_c9_num_data_valid</name>
-<Object>batch_size_c9</Object>
+<name>batch_size_c1_full_n</name>
+<Object>batch_size_c1</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>batch_size_c1_write</name>
+<Object>batch_size_c1</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>batch_size_c1_num_data_valid</name>
+<Object>batch_size_c1</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_fifo</IOProtocol>
@@ -1755,8 +1055,8 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>batch_size_c9_fifo_cap</name>
-<Object>batch_size_c9</Object>
+<name>batch_size_c1_fifo_cap</name>
+<Object>batch_size_c1</Object>
 <Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>ap_fifo</IOProtocol>
@@ -1764,28 +1064,6 @@
 <Dir>in</Dir>
 <Bits>3</Bits>
 <Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>batch_size_c9_full_n</name>
-<Object>batch_size_c9</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>batch_size_c9_write</name>
-<Object>batch_size_c9</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>stream_in0_linput_din</name>
@@ -1796,6 +1074,28 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>256</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_in0_linput_full_n</name>
+<Object>stream_in0_linput</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_in0_linput_write</name>
+<Object>stream_in0_linput</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -1821,37 +1121,37 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stream_in0_linput_full_n</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
+<name>in_r</name>
+<Object>in_r</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
+<Bits>64</Bits>
+<Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stream_in0_linput_write</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
+<name>batch_size</name>
+<Object>batch_size</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
+<Dir>in</Dir>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config2_s</Name>
+<Name>dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config2_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
-<EstimatedClockPeriod>4.236</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.169</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1</Best-caseLatency>
@@ -1863,11 +1163,12 @@
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_dense_latency.h:33~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -1875,10 +1176,10 @@
 <DSP>858</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>68</UTIL_DSP>
-<FF>5027</FF>
+<FF>5062</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>2</UTIL_FF>
-<LUT>27866</LUT>
+<LUT>27953</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>23</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -1892,7 +1193,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1903,7 +1204,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1913,8 +1214,52 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1925,7 +1270,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1936,7 +1281,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1947,7 +1292,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1958,7 +1303,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1969,7 +1314,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_5</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1980,7 +1325,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_6</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1991,7 +1336,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_7</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2002,7 +1347,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_8</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2013,7 +1358,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_9</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2024,7 +1369,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_10</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2035,7 +1380,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_11</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2046,7 +1391,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_12</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2057,7 +1402,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_13</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2068,7 +1413,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_14</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2079,7 +1424,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_15</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2090,7 +1435,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_16</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2101,7 +1446,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_17</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2112,7 +1457,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_18</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2123,7 +1468,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_19</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2134,7 +1479,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_20</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2145,7 +1490,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_21</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2156,7 +1501,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_22</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2167,7 +1512,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_23</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2178,7 +1523,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_24</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2189,7 +1534,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_25</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2200,7 +1545,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_26</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2211,7 +1556,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_27</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2222,7 +1567,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_28</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2233,7 +1578,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_29</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2244,7 +1589,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_30</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2255,7 +1600,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_31</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2266,7 +1611,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_32</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2277,7 +1622,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_33</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2288,7 +1633,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_34</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2299,7 +1644,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_35</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2310,7 +1655,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_36</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2321,7 +1666,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_37</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2332,7 +1677,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_38</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2343,7 +1688,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_39</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2354,7 +1699,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_40</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2365,7 +1710,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_41</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2376,7 +1721,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_42</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2387,7 +1732,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_43</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2398,7 +1743,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_44</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2409,7 +1754,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_45</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2420,7 +1765,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_46</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2431,7 +1776,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_47</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2442,7 +1787,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_48</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2453,7 +1798,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_49</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2464,7 +1809,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_50</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2475,7 +1820,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_51</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2486,7 +1831,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_52</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2497,7 +1842,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_53</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2508,7 +1853,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_54</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2519,7 +1864,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_55</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2530,7 +1875,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_56</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2541,7 +1886,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_57</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2552,7 +1897,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_58</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2563,7 +1908,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_59</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2574,7 +1919,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_60</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2585,7 +1930,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_61</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2596,7 +1941,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_62</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2607,7 +1952,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_63</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config2&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config2&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2617,8 +1962,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_0_val1</name>
-<Object>data_0_val1</Object>
+<name>data_0_val</name>
+<Object>data_0_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2628,8 +1973,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val2</name>
-<Object>data_1_val2</Object>
+<name>data_1_val</name>
+<Object>data_1_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2639,8 +1984,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_2_val3</name>
-<Object>data_2_val3</Object>
+<name>data_2_val</name>
+<Object>data_2_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2650,8 +1995,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_3_val4</name>
-<Object>data_3_val4</Object>
+<name>data_3_val</name>
+<Object>data_3_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2661,8 +2006,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_4_val5</name>
-<Object>data_4_val5</Object>
+<name>data_4_val</name>
+<Object>data_4_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2672,8 +2017,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val6</name>
-<Object>data_5_val6</Object>
+<name>data_5_val</name>
+<Object>data_5_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2683,8 +2028,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val7</name>
-<Object>data_6_val7</Object>
+<name>data_6_val</name>
+<Object>data_6_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2694,8 +2039,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_7_val8</name>
-<Object>data_7_val8</Object>
+<name>data_7_val</name>
+<Object>data_7_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2705,8 +2050,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_8_val9</name>
-<Object>data_8_val9</Object>
+<name>data_8_val</name>
+<Object>data_8_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2716,8 +2061,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_9_val10</name>
-<Object>data_9_val10</Object>
+<name>data_9_val</name>
+<Object>data_9_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2727,8 +2072,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_10_val11</name>
-<Object>data_10_val11</Object>
+<name>data_10_val</name>
+<Object>data_10_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2738,8 +2083,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_11_val12</name>
-<Object>data_11_val12</Object>
+<name>data_11_val</name>
+<Object>data_11_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2749,8 +2094,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_12_val13</name>
-<Object>data_12_val13</Object>
+<name>data_12_val</name>
+<Object>data_12_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2760,8 +2105,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_13_val14</name>
-<Object>data_13_val14</Object>
+<name>data_13_val</name>
+<Object>data_13_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2771,8 +2116,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val15</name>
-<Object>data_14_val15</Object>
+<name>data_14_val</name>
+<Object>data_14_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2782,8 +2127,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val16</name>
-<Object>data_15_val16</Object>
+<name>data_15_val</name>
+<Object>data_15_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -2800,7 +2145,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.236</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.169</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>2</Best-caseLatency>
@@ -2811,11 +2156,12 @@
 <Worst-caseRealTimeLatency>10.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>2</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_dense_stream.h:43~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_stream.h:43~firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -2823,10 +2169,10 @@
 <DSP>858</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>68</UTIL_DSP>
-<FF>5288</FF>
+<FF>5324</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>2</UTIL_FF>
-<LUT>27924</LUT>
+<LUT>28011</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>23</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -2960,28 +2306,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>layer2_out_num_data_valid</name>
-<Object>layer2_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>layer2_out_fifo_cap</name>
-<Object>layer2_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>layer2_out_full_n</name>
 <Object>layer2_out</Object>
 <Type>pointer</Type>
@@ -3004,6 +2328,28 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>layer2_out_num_data_valid</name>
+<Object>layer2_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer2_out_fifo_cap</name>
+<Object>layer2_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>stream_in0_linput_dout</name>
 <Object>stream_in0_linput</Object>
 <Type>pointer</Type>
@@ -3012,6 +2358,28 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>256</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_in0_linput_empty_n</name>
+<Object>stream_in0_linput</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_in0_linput_read</name>
+<Object>stream_in0_linput</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -3036,28 +2404,6 @@
 <Bits>8</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_empty_n</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_in0_linput_read</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
@@ -3077,11 +2423,12 @@
 <Worst-caseRealTimeLatency>5.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_activation_stream.h:44</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_activation_stream.h:44</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -3226,28 +2573,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>layer2_out_num_data_valid</name>
-<Object>layer2_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>layer2_out_fifo_cap</name>
-<Object>layer2_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>layer2_out_empty_n</name>
 <Object>layer2_out</Object>
 <Type>pointer</Type>
@@ -3270,6 +2595,28 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>layer2_out_num_data_valid</name>
+<Object>layer2_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer2_out_fifo_cap</name>
+<Object>layer2_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>layer3_out_din</name>
 <Object>layer3_out</Object>
 <Type>pointer</Type>
@@ -3278,6 +2625,28 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>1024</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer3_out_full_n</name>
+<Object>layer3_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer3_out_write</name>
+<Object>layer3_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -3302,32 +2671,10 @@
 <Bits>2</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>layer3_out_full_n</name>
-<Object>layer3_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>layer3_out_write</name>
-<Object>layer3_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>dense_latency_wrapper_ap_fixed_ap_fixed_16_6_5_3_0_config4_s</Name>
+<Name>dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_16_6_5_3_0_config4_s</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
@@ -3345,11 +2692,12 @@
 <PipelineInitiationInterval>1</PipelineInitiationInterval>
 <PipelineDepth>2</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_dense_latency.h:33~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_dense_stream.h:17</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_latency.h:26</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -3357,10 +2705,10 @@
 <DSP>252</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>20</UTIL_DSP>
-<FF>1522</FF>
+<FF>1568</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>9374</LUT>
+<LUT>9387</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>8</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -3374,7 +2722,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config4&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3385,7 +2733,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config4&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3395,8 +2743,52 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>ap_start</name>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>ap_return_0</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config4&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3407,7 +2799,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_1</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config4&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3418,7 +2810,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_2</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config4&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3429,7 +2821,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_3</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config4&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3440,7 +2832,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_return_4</name>
-<Object>dense_latency_wrapper&lt;ap_fixed,ap_fixed&lt;16,6,5,3,0&gt;,config4&gt;</Object>
+<Object>dense_latency&lt;ap_fixed&lt;16, 6, 5, 3, 0&gt;, ap_fixed&lt;16, 6, 5, 3, 0&gt;, config4&gt;</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -3450,8 +2842,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_0_val1</name>
-<Object>data_0_val1</Object>
+<name>data_0_val</name>
+<Object>data_0_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3461,8 +2853,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_1_val2</name>
-<Object>data_1_val2</Object>
+<name>data_1_val</name>
+<Object>data_1_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3472,8 +2864,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_2_val3</name>
-<Object>data_2_val3</Object>
+<name>data_2_val</name>
+<Object>data_2_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3483,8 +2875,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_3_val4</name>
-<Object>data_3_val4</Object>
+<name>data_3_val</name>
+<Object>data_3_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3494,8 +2886,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_4_val5</name>
-<Object>data_4_val5</Object>
+<name>data_4_val</name>
+<Object>data_4_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3505,8 +2897,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_5_val6</name>
-<Object>data_5_val6</Object>
+<name>data_5_val</name>
+<Object>data_5_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3516,8 +2908,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_6_val7</name>
-<Object>data_6_val7</Object>
+<name>data_6_val</name>
+<Object>data_6_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3527,8 +2919,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_7_val8</name>
-<Object>data_7_val8</Object>
+<name>data_7_val</name>
+<Object>data_7_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3538,8 +2930,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_8_val9</name>
-<Object>data_8_val9</Object>
+<name>data_8_val</name>
+<Object>data_8_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3549,8 +2941,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_9_val10</name>
-<Object>data_9_val10</Object>
+<name>data_9_val</name>
+<Object>data_9_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3560,8 +2952,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_10_val11</name>
-<Object>data_10_val11</Object>
+<name>data_10_val</name>
+<Object>data_10_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3571,8 +2963,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_11_val12</name>
-<Object>data_11_val12</Object>
+<name>data_11_val</name>
+<Object>data_11_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3582,8 +2974,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_12_val13</name>
-<Object>data_12_val13</Object>
+<name>data_12_val</name>
+<Object>data_12_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3593,8 +2985,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_13_val14</name>
-<Object>data_13_val14</Object>
+<name>data_13_val</name>
+<Object>data_13_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3604,8 +2996,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_14_val15</name>
-<Object>data_14_val15</Object>
+<name>data_14_val</name>
+<Object>data_14_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3615,8 +3007,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_15_val16</name>
-<Object>data_15_val16</Object>
+<name>data_15_val</name>
+<Object>data_15_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3626,8 +3018,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_16_val17</name>
-<Object>data_16_val17</Object>
+<name>data_16_val</name>
+<Object>data_16_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3637,8 +3029,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_17_val18</name>
-<Object>data_17_val18</Object>
+<name>data_17_val</name>
+<Object>data_17_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3648,8 +3040,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_18_val19</name>
-<Object>data_18_val19</Object>
+<name>data_18_val</name>
+<Object>data_18_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3659,8 +3051,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_19_val20</name>
-<Object>data_19_val20</Object>
+<name>data_19_val</name>
+<Object>data_19_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3670,8 +3062,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_20_val21</name>
-<Object>data_20_val21</Object>
+<name>data_20_val</name>
+<Object>data_20_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3681,8 +3073,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_21_val22</name>
-<Object>data_21_val22</Object>
+<name>data_21_val</name>
+<Object>data_21_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3692,8 +3084,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_22_val23</name>
-<Object>data_22_val23</Object>
+<name>data_22_val</name>
+<Object>data_22_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3703,8 +3095,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_23_val24</name>
-<Object>data_23_val24</Object>
+<name>data_23_val</name>
+<Object>data_23_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3714,8 +3106,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_24_val25</name>
-<Object>data_24_val25</Object>
+<name>data_24_val</name>
+<Object>data_24_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3725,8 +3117,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_25_val26</name>
-<Object>data_25_val26</Object>
+<name>data_25_val</name>
+<Object>data_25_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3736,8 +3128,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_26_val27</name>
-<Object>data_26_val27</Object>
+<name>data_26_val</name>
+<Object>data_26_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3747,8 +3139,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_27_val28</name>
-<Object>data_27_val28</Object>
+<name>data_27_val</name>
+<Object>data_27_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3758,8 +3150,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_28_val29</name>
-<Object>data_28_val29</Object>
+<name>data_28_val</name>
+<Object>data_28_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3769,8 +3161,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_29_val30</name>
-<Object>data_29_val30</Object>
+<name>data_29_val</name>
+<Object>data_29_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3780,8 +3172,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_30_val31</name>
-<Object>data_30_val31</Object>
+<name>data_30_val</name>
+<Object>data_30_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3791,8 +3183,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_31_val32</name>
-<Object>data_31_val32</Object>
+<name>data_31_val</name>
+<Object>data_31_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3802,8 +3194,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_32_val33</name>
-<Object>data_32_val33</Object>
+<name>data_32_val</name>
+<Object>data_32_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3813,8 +3205,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_33_val34</name>
-<Object>data_33_val34</Object>
+<name>data_33_val</name>
+<Object>data_33_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3824,8 +3216,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_34_val35</name>
-<Object>data_34_val35</Object>
+<name>data_34_val</name>
+<Object>data_34_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3835,8 +3227,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_35_val36</name>
-<Object>data_35_val36</Object>
+<name>data_35_val</name>
+<Object>data_35_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3846,8 +3238,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_36_val37</name>
-<Object>data_36_val37</Object>
+<name>data_36_val</name>
+<Object>data_36_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3857,8 +3249,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_37_val38</name>
-<Object>data_37_val38</Object>
+<name>data_37_val</name>
+<Object>data_37_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3868,8 +3260,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_38_val39</name>
-<Object>data_38_val39</Object>
+<name>data_38_val</name>
+<Object>data_38_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3879,8 +3271,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_39_val40</name>
-<Object>data_39_val40</Object>
+<name>data_39_val</name>
+<Object>data_39_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3890,8 +3282,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_40_val41</name>
-<Object>data_40_val41</Object>
+<name>data_40_val</name>
+<Object>data_40_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3901,8 +3293,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_41_val42</name>
-<Object>data_41_val42</Object>
+<name>data_41_val</name>
+<Object>data_41_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3912,8 +3304,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_42_val43</name>
-<Object>data_42_val43</Object>
+<name>data_42_val</name>
+<Object>data_42_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3923,8 +3315,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_43_val44</name>
-<Object>data_43_val44</Object>
+<name>data_43_val</name>
+<Object>data_43_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3934,8 +3326,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_44_val45</name>
-<Object>data_44_val45</Object>
+<name>data_44_val</name>
+<Object>data_44_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3945,8 +3337,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_45_val46</name>
-<Object>data_45_val46</Object>
+<name>data_45_val</name>
+<Object>data_45_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3956,8 +3348,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_46_val47</name>
-<Object>data_46_val47</Object>
+<name>data_46_val</name>
+<Object>data_46_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3967,8 +3359,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_47_val48</name>
-<Object>data_47_val48</Object>
+<name>data_47_val</name>
+<Object>data_47_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3978,8 +3370,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_48_val49</name>
-<Object>data_48_val49</Object>
+<name>data_48_val</name>
+<Object>data_48_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -3989,8 +3381,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_49_val50</name>
-<Object>data_49_val50</Object>
+<name>data_49_val</name>
+<Object>data_49_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4000,8 +3392,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_50_val51</name>
-<Object>data_50_val51</Object>
+<name>data_50_val</name>
+<Object>data_50_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4011,8 +3403,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_51_val52</name>
-<Object>data_51_val52</Object>
+<name>data_51_val</name>
+<Object>data_51_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4022,8 +3414,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_52_val53</name>
-<Object>data_52_val53</Object>
+<name>data_52_val</name>
+<Object>data_52_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4033,8 +3425,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_53_val54</name>
-<Object>data_53_val54</Object>
+<name>data_53_val</name>
+<Object>data_53_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4044,8 +3436,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_54_val55</name>
-<Object>data_54_val55</Object>
+<name>data_54_val</name>
+<Object>data_54_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4055,8 +3447,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_55_val56</name>
-<Object>data_55_val56</Object>
+<name>data_55_val</name>
+<Object>data_55_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4066,8 +3458,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_56_val57</name>
-<Object>data_56_val57</Object>
+<name>data_56_val</name>
+<Object>data_56_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4077,8 +3469,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_57_val58</name>
-<Object>data_57_val58</Object>
+<name>data_57_val</name>
+<Object>data_57_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4088,8 +3480,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_58_val59</name>
-<Object>data_58_val59</Object>
+<name>data_58_val</name>
+<Object>data_58_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4099,8 +3491,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_59_val60</name>
-<Object>data_59_val60</Object>
+<name>data_59_val</name>
+<Object>data_59_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4110,8 +3502,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_60_val61</name>
-<Object>data_60_val61</Object>
+<name>data_60_val</name>
+<Object>data_60_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4121,8 +3513,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_61_val62</name>
-<Object>data_61_val62</Object>
+<name>data_61_val</name>
+<Object>data_61_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4132,8 +3524,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_62_val63</name>
-<Object>data_62_val63</Object>
+<name>data_62_val</name>
+<Object>data_62_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4143,8 +3535,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>data_63_val64</name>
-<Object>data_63_val64</Object>
+<name>data_63_val</name>
+<Object>data_63_val</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -4172,11 +3564,12 @@
 <Worst-caseRealTimeLatency>15.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>3</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_dense_stream.h:43~/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_dense_stream.h:43~firmware/nnet_utils/nnet_dense_stream.h:93</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -4184,10 +3577,10 @@
 <DSP>252</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>20</UTIL_DSP>
-<FF>2632</FF>
+<FF>2679</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>1</UTIL_FF>
-<LUT>9438</LUT>
+<LUT>9451</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>8</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -4321,28 +3714,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>layer3_out_num_data_valid</name>
-<Object>layer3_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>layer3_out_fifo_cap</name>
-<Object>layer3_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>layer3_out_empty_n</name>
 <Object>layer3_out</Object>
 <Type>pointer</Type>
@@ -4365,6 +3736,28 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>layer3_out_num_data_valid</name>
+<Object>layer3_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer3_out_fifo_cap</name>
+<Object>layer3_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>layer4_out_din</name>
 <Object>layer4_out</Object>
 <Type>pointer</Type>
@@ -4373,6 +3766,28 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>80</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer4_out_full_n</name>
+<Object>layer4_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer4_out_write</name>
+<Object>layer4_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -4397,28 +3812,6 @@
 <Bits>2</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>layer4_out_full_n</name>
-<Object>layer4_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>layer4_out_write</name>
-<Object>layer4_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
@@ -4438,11 +3831,12 @@
 <Worst-caseRealTimeLatency>20.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>4</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_activation_stream.h:198</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_activation_stream.h:198</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -4543,28 +3937,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>layer4_out_num_data_valid</name>
-<Object>layer4_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>layer4_out_fifo_cap</name>
-<Object>layer4_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>layer4_out_empty_n</name>
 <Object>layer4_out</Object>
 <Type>pointer</Type>
@@ -4587,6 +3959,28 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>layer4_out_num_data_valid</name>
+<Object>layer4_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer4_out_fifo_cap</name>
+<Object>layer4_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>stream_out0_layer5_out_din</name>
 <Object>stream_out0_layer5_out</Object>
 <Type>pointer</Type>
@@ -4595,6 +3989,28 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>80</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_full_n</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_write</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -4619,28 +4035,6 @@
 <Bits>8</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_full_n</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_write</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
@@ -4660,11 +4054,12 @@
 <Worst-caseRealTimeLatency>25.000 ns</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>5</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/nnet_utils/nnet_activation_stream.h:359</SourceLocation>
+<SourceLocation>firmware/nnet_utils/nnet_activation_stream.h:359</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -4678,7 +4073,7 @@
 <FF>206</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>465</LUT>
+<LUT>447</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <URAM>0</URAM>
@@ -4776,28 +4171,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>layer4_out_num_data_valid</name>
-<Object>layer4_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>layer4_out_fifo_cap</name>
-<Object>layer4_out</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>2</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>layer4_out_empty_n</name>
 <Object>layer4_out</Object>
 <Type>pointer</Type>
@@ -4820,6 +4193,28 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>layer4_out_num_data_valid</name>
+<Object>layer4_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>layer4_out_fifo_cap</name>
+<Object>layer4_out</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>2</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>stream_out0_layer5_out_din</name>
 <Object>stream_out0_layer5_out</Object>
 <Type>pointer</Type>
@@ -4828,6 +4223,28 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>80</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_full_n</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_write</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -4852,28 +4269,6 @@
 <Bits>8</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_full_n</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_write</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
@@ -4882,7 +4277,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.236</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.169</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>14</Best-caseLatency>
@@ -4894,11 +4289,12 @@
 <DataflowPipelineThroughput>6</DataflowPipelineThroughput>
 <PipelineInitiationInterval>6</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject.cpp:41</SourceLocation>
+<SourceLocation>firmware/myproject.cpp:32</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
@@ -4909,10 +4305,10 @@
 <DSP>1115</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>89</UTIL_DSP>
-<FF>9387</FF>
+<FF>9470</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>4</UTIL_FF>
-<LUT>40514</LUT>
+<LUT>40596</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>34</UTIL_LUT>
 <URAM>0</URAM>
@@ -5075,7 +4471,7 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>0.62</ClockUncertainty>
-<EstimatedClockPeriod>4.236</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.169</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -5086,17 +4482,20 @@
 <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>undef</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_42_1>
 <Name>VITIS_LOOP_42_1</Name>
 <Slack>4.37</Slack>
 <TripCount>undef</TripCount>
+<isPerfectNested>0</isPerfectNested>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <IterationLatency>16</IterationLatency>
 <PipelineDepth>16</PipelineDepth>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 <InstanceList>
 <Instance>grp_myproject_fu_66</Instance>
 </InstanceList>
@@ -5105,13 +4504,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:42</SourceLocation>
+<SourceLocation>firmware/myproject_axi_master.cpp:42</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_42_1>
 <Name>VITIS_LOOP_42_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:42</SourceLocation>
+<SourceLocation>firmware/myproject_axi_master.cpp:42</SourceLocation>
 </VITIS_LOOP_42_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -5124,10 +4523,10 @@
 <DSP>1115</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>89</UTIL_DSP>
-<FF>9457</FF>
+<FF>9540</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>4</UTIL_FF>
-<LUT>40671</LUT>
+<LUT>40733</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>34</UTIL_LUT>
 <URAM>0</URAM>
@@ -5225,28 +4624,6 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>batch_size_num_data_valid</name>
-<Object>batch_size</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>3</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>batch_size_fifo_cap</name>
-<Object>batch_size</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>3</Bits>
-<Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>batch_size_empty_n</name>
 <Object>batch_size</Object>
 <Type>pointer</Type>
@@ -5269,6 +4646,28 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>batch_size_num_data_valid</name>
+<Object>batch_size</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>3</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>batch_size_fifo_cap</name>
+<Object>batch_size</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>3</Bits>
+<Attribute>unknown</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>batch_size_c_din</name>
 <Object>batch_size_c</Object>
 <Type>pointer</Type>
@@ -5277,6 +4676,28 @@
 <IOConfig></IOConfig>
 <Dir>out</Dir>
 <Bits>32</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>batch_size_c_full_n</name>
+<Object>batch_size_c</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>batch_size_c_write</name>
+<Object>batch_size_c</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -5302,28 +4723,6 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>batch_size_c_full_n</name>
-<Object>batch_size_c</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>batch_size_c_write</name>
-<Object>batch_size_c</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>stream_in0_linput_dout</name>
 <Object>stream_in0_linput</Object>
 <Type>pointer</Type>
@@ -5332,6 +4731,28 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>256</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_in0_linput_empty_n</name>
+<Object>stream_in0_linput</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_in0_linput_read</name>
+<Object>stream_in0_linput</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -5357,8 +4778,19 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stream_in0_linput_empty_n</name>
-<Object>stream_in0_linput</Object>
+<name>stream_out0_layer5_out_din</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>80</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_full_n</name>
+<Object>stream_out0_layer5_out</Object>
 <Type>pointer</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_fifo</IOProtocol>
@@ -5368,25 +4800,14 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stream_in0_linput_read</name>
-<Object>stream_in0_linput</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_din</name>
+<name>stream_out0_layer5_out_write</name>
 <Object>stream_out0_layer5_out</Object>
 <Type>pointer</Type>
 <Scope>global</Scope>
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>80</Bits>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -5411,28 +4832,6 @@
 <Bits>8</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_full_n</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_write</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
@@ -5453,19 +4852,22 @@
 <Best-caseRealTimeLatency>undef</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>undef</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>undef</PipelineInitiationInterval>
-<PipelineType>no</PipelineType>
+<PipelineInitiationInterval>0</PipelineInitiationInterval>
+<PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_29_1>
 <Name>VITIS_LOOP_29_1</Name>
 <Slack>4.37</Slack>
 <TripCount>undef</TripCount>
+<isPerfectNested>0</isPerfectNested>
 <Latency>undef</Latency>
 <AbsoluteTimeLatency>undef</AbsoluteTimeLatency>
 <PipelineII>5</PipelineII>
-<PipelineDepth>9</PipelineDepth>
+<PipelineDepth>8</PipelineDepth>
 <PipelineType>yes</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
 </VITIS_LOOP_29_1>
@@ -5473,26 +4875,25 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:29</SourceLocation>
+<SourceLocation>firmware/myproject_axi_master.cpp:29</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_29_1>
 <Name>VITIS_LOOP_29_1</Name>
-<IssueType>II Violation</IssueType>
-<ViolationType>Memory Dependency</ViolationType>
-<IterationDistance>1</IterationDistance>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:29</SourceLocation>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>firmware/myproject_axi_master.cpp:29</SourceLocation>
 </VITIS_LOOP_29_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>1092</FF>
+<FF>361</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>5020</LUT>
+<LUT>1705</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>4</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -5572,7 +4973,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWVALID</name>
+<name>m_axi_gmem_out0_0_AWVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5583,7 +4984,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWREADY</name>
+<name>m_axi_gmem_out0_0_AWREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5594,7 +4995,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWADDR</name>
+<name>m_axi_gmem_out0_0_AWADDR</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5605,7 +5006,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWID</name>
+<name>m_axi_gmem_out0_0_AWID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5616,7 +5017,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWLEN</name>
+<name>m_axi_gmem_out0_0_AWLEN</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5627,7 +5028,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWSIZE</name>
+<name>m_axi_gmem_out0_0_AWSIZE</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5638,7 +5039,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWBURST</name>
+<name>m_axi_gmem_out0_0_AWBURST</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5649,7 +5050,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWLOCK</name>
+<name>m_axi_gmem_out0_0_AWLOCK</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5660,7 +5061,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWCACHE</name>
+<name>m_axi_gmem_out0_0_AWCACHE</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5671,7 +5072,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWPROT</name>
+<name>m_axi_gmem_out0_0_AWPROT</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5682,7 +5083,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWQOS</name>
+<name>m_axi_gmem_out0_0_AWQOS</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5693,7 +5094,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWREGION</name>
+<name>m_axi_gmem_out0_0_AWREGION</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5704,7 +5105,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWUSER</name>
+<name>m_axi_gmem_out0_0_AWUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5715,7 +5116,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WVALID</name>
+<name>m_axi_gmem_out0_0_WVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5726,7 +5127,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WREADY</name>
+<name>m_axi_gmem_out0_0_WREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5737,7 +5138,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WDATA</name>
+<name>m_axi_gmem_out0_0_WDATA</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5748,7 +5149,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WSTRB</name>
+<name>m_axi_gmem_out0_0_WSTRB</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5759,7 +5160,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WLAST</name>
+<name>m_axi_gmem_out0_0_WLAST</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5770,7 +5171,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WID</name>
+<name>m_axi_gmem_out0_0_WID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5781,7 +5182,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WUSER</name>
+<name>m_axi_gmem_out0_0_WUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5792,7 +5193,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARVALID</name>
+<name>m_axi_gmem_out0_0_ARVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5803,7 +5204,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARREADY</name>
+<name>m_axi_gmem_out0_0_ARREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5814,7 +5215,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARADDR</name>
+<name>m_axi_gmem_out0_0_ARADDR</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5825,7 +5226,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARID</name>
+<name>m_axi_gmem_out0_0_ARID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5836,7 +5237,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARLEN</name>
+<name>m_axi_gmem_out0_0_ARLEN</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5847,7 +5248,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARSIZE</name>
+<name>m_axi_gmem_out0_0_ARSIZE</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5858,7 +5259,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARBURST</name>
+<name>m_axi_gmem_out0_0_ARBURST</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5869,7 +5270,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARLOCK</name>
+<name>m_axi_gmem_out0_0_ARLOCK</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5880,7 +5281,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARCACHE</name>
+<name>m_axi_gmem_out0_0_ARCACHE</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5891,7 +5292,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARPROT</name>
+<name>m_axi_gmem_out0_0_ARPROT</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5902,7 +5303,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARQOS</name>
+<name>m_axi_gmem_out0_0_ARQOS</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5913,7 +5314,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARREGION</name>
+<name>m_axi_gmem_out0_0_ARREGION</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5924,7 +5325,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARUSER</name>
+<name>m_axi_gmem_out0_0_ARUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5935,7 +5336,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RVALID</name>
+<name>m_axi_gmem_out0_0_RVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5946,7 +5347,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RREADY</name>
+<name>m_axi_gmem_out0_0_RREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5957,7 +5358,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RDATA</name>
+<name>m_axi_gmem_out0_0_RDATA</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5968,7 +5369,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RLAST</name>
+<name>m_axi_gmem_out0_0_RLAST</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5979,7 +5380,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RID</name>
+<name>m_axi_gmem_out0_0_RID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -5990,7 +5391,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RFIFONUM</name>
+<name>m_axi_gmem_out0_0_RFIFONUM</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6001,7 +5402,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RUSER</name>
+<name>m_axi_gmem_out0_0_RUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6012,7 +5413,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RRESP</name>
+<name>m_axi_gmem_out0_0_RRESP</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6023,7 +5424,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BVALID</name>
+<name>m_axi_gmem_out0_0_BVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6034,7 +5435,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BREADY</name>
+<name>m_axi_gmem_out0_0_BREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6045,7 +5446,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BRESP</name>
+<name>m_axi_gmem_out0_0_BRESP</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6056,7 +5457,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BID</name>
+<name>m_axi_gmem_out0_0_BID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6067,7 +5468,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BUSER</name>
+<name>m_axi_gmem_out0_0_BUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6076,28 +5477,6 @@
 <Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>unknown</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>batch_size_load</name>
-<Object>batch_size_load</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>32</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>sext_ln29</name>
-<Object>sext_ln29</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>62</Bits>
-<Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>stream_out0_layer5_out_dout</name>
@@ -6108,6 +5487,28 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>80</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_empty_n</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_read</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -6133,26 +5534,26 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stream_out0_layer5_out_empty_n</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
+<name>batch_size_1</name>
+<Object>batch_size_1</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
+<Bits>32</Bits>
+<Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>stream_out0_layer5_out_read</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
+<name>sext_ln29</name>
+<Object>sext_ln29</Object>
+<Type>scalar</Type>
+<Scope></Scope>
+<IOProtocol>ap_none</IOProtocol>
 <IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
+<Dir>in</Dir>
+<Bits>62</Bits>
+<Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>
 </Module>
@@ -6173,21 +5574,22 @@
 <Worst-caseRealTimeLatency>undef</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>undef</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:29</SourceLocation>
+<SourceLocation>firmware/myproject_axi_master.cpp:26</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>1229</FF>
+<FF>500</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>5386</LUT>
+<LUT>2065</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>4</UTIL_LUT>
+<UTIL_LUT>1</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
 <UTIL_BRAM>0</UTIL_BRAM>
@@ -6278,7 +5680,7 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWVALID</name>
+<name>m_axi_gmem_out0_0_AWVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6289,7 +5691,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWREADY</name>
+<name>m_axi_gmem_out0_0_AWREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6300,7 +5702,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWADDR</name>
+<name>m_axi_gmem_out0_0_AWADDR</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6311,7 +5713,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWID</name>
+<name>m_axi_gmem_out0_0_AWID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6322,7 +5724,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWLEN</name>
+<name>m_axi_gmem_out0_0_AWLEN</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6333,7 +5735,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWSIZE</name>
+<name>m_axi_gmem_out0_0_AWSIZE</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6344,7 +5746,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWBURST</name>
+<name>m_axi_gmem_out0_0_AWBURST</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6355,7 +5757,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWLOCK</name>
+<name>m_axi_gmem_out0_0_AWLOCK</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6366,7 +5768,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWCACHE</name>
+<name>m_axi_gmem_out0_0_AWCACHE</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6377,7 +5779,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWPROT</name>
+<name>m_axi_gmem_out0_0_AWPROT</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6388,7 +5790,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWQOS</name>
+<name>m_axi_gmem_out0_0_AWQOS</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6399,7 +5801,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWREGION</name>
+<name>m_axi_gmem_out0_0_AWREGION</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6410,7 +5812,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_AWUSER</name>
+<name>m_axi_gmem_out0_0_AWUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6421,7 +5823,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WVALID</name>
+<name>m_axi_gmem_out0_0_WVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6432,7 +5834,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WREADY</name>
+<name>m_axi_gmem_out0_0_WREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6443,7 +5845,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WDATA</name>
+<name>m_axi_gmem_out0_0_WDATA</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6454,7 +5856,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WSTRB</name>
+<name>m_axi_gmem_out0_0_WSTRB</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6465,7 +5867,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WLAST</name>
+<name>m_axi_gmem_out0_0_WLAST</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6476,7 +5878,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WID</name>
+<name>m_axi_gmem_out0_0_WID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6487,7 +5889,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_WUSER</name>
+<name>m_axi_gmem_out0_0_WUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6498,7 +5900,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARVALID</name>
+<name>m_axi_gmem_out0_0_ARVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6509,7 +5911,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARREADY</name>
+<name>m_axi_gmem_out0_0_ARREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6520,7 +5922,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARADDR</name>
+<name>m_axi_gmem_out0_0_ARADDR</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6531,7 +5933,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARID</name>
+<name>m_axi_gmem_out0_0_ARID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6542,7 +5944,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARLEN</name>
+<name>m_axi_gmem_out0_0_ARLEN</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6553,7 +5955,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARSIZE</name>
+<name>m_axi_gmem_out0_0_ARSIZE</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6564,7 +5966,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARBURST</name>
+<name>m_axi_gmem_out0_0_ARBURST</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6575,7 +5977,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARLOCK</name>
+<name>m_axi_gmem_out0_0_ARLOCK</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6586,7 +5988,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARCACHE</name>
+<name>m_axi_gmem_out0_0_ARCACHE</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6597,7 +5999,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARPROT</name>
+<name>m_axi_gmem_out0_0_ARPROT</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6608,7 +6010,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARQOS</name>
+<name>m_axi_gmem_out0_0_ARQOS</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6619,7 +6021,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARREGION</name>
+<name>m_axi_gmem_out0_0_ARREGION</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6630,7 +6032,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_ARUSER</name>
+<name>m_axi_gmem_out0_0_ARUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6641,7 +6043,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RVALID</name>
+<name>m_axi_gmem_out0_0_RVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6652,7 +6054,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RREADY</name>
+<name>m_axi_gmem_out0_0_RREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6663,7 +6065,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RDATA</name>
+<name>m_axi_gmem_out0_0_RDATA</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6674,7 +6076,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RLAST</name>
+<name>m_axi_gmem_out0_0_RLAST</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6685,7 +6087,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RID</name>
+<name>m_axi_gmem_out0_0_RID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6696,7 +6098,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RFIFONUM</name>
+<name>m_axi_gmem_out0_0_RFIFONUM</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6707,7 +6109,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RUSER</name>
+<name>m_axi_gmem_out0_0_RUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6718,7 +6120,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_RRESP</name>
+<name>m_axi_gmem_out0_0_RRESP</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6729,7 +6131,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BVALID</name>
+<name>m_axi_gmem_out0_0_BVALID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6740,7 +6142,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BREADY</name>
+<name>m_axi_gmem_out0_0_BREADY</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6751,7 +6153,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BRESP</name>
+<name>m_axi_gmem_out0_0_BRESP</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6762,7 +6164,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BID</name>
+<name>m_axi_gmem_out0_0_BID</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6773,7 +6175,7 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>m_axi_gmem_out0_BUSER</name>
+<name>m_axi_gmem_out0_0_BUSER</name>
 <Object>gmem_out0</Object>
 <Type>pointer</Type>
 <Scope></Scope>
@@ -6792,6 +6194,28 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>64</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_empty_n</name>
+<Object>out_r</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>out_r_read</name>
+<Object>out_r</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -6817,28 +6241,6 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>out_r_empty_n</name>
-<Object>out_r</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>out_r_read</name>
-<Object>out_r</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>batch_size_dout</name>
 <Object>batch_size</Object>
 <Type>pointer</Type>
@@ -6847,6 +6249,28 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>32</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>batch_size_empty_n</name>
+<Object>batch_size</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>batch_size_read</name>
+<Object>batch_size</Object>
+<Type>pointer</Type>
+<Scope></Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -6872,28 +6296,6 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>batch_size_empty_n</name>
-<Object>batch_size</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>batch_size_read</name>
-<Object>batch_size</Object>
-<Type>pointer</Type>
-<Scope></Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>stream_out0_layer5_out_dout</name>
 <Object>stream_out0_layer5_out</Object>
 <Type>pointer</Type>
@@ -6902,6 +6304,28 @@
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>80</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_empty_n</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>stream_out0_layer5_out_read</name>
+<Object>stream_out0_layer5_out</Object>
+<Type>pointer</Type>
+<Scope>global</Scope>
+<IOProtocol>ap_fifo</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -6926,28 +6350,6 @@
 <Bits>8</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_empty_n</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>stream_out0_layer5_out_read</name>
-<Object>stream_out0_layer5_out</Object>
-<Type>pointer</Type>
-<Scope>global</Scope>
-<IOProtocol>ap_fifo</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
 </InterfaceSummary>
 </Module>
 <Module>
@@ -6968,27 +6370,28 @@
 <DataflowPipelineThroughput>undef</DataflowPipelineThroughput>
 <PipelineInitiationInterval>undef</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:66</SourceLocation>
+<SourceLocation>firmware/myproject_axi_master.cpp:66</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>32</BRAM_18K>
+<BRAM_18K>26</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
-<UTIL_BRAM>11</UTIL_BRAM>
+<UTIL_BRAM>9</UTIL_BRAM>
 <DSP>1115</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>89</UTIL_DSP>
-<FF>14765</FF>
+<FF>13695</FF>
 <AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>6</UTIL_FF>
-<LUT>58495</LUT>
+<UTIL_FF>5</UTIL_FF>
+<LUT>54403</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>49</UTIL_LUT>
+<UTIL_LUT>46</UTIL_LUT>
 <URAM>0</URAM>
 <AVAIL_URAM>64</AVAIL_URAM>
 <UTIL_URAM>0</UTIL_URAM>
@@ -8301,7 +7704,7 @@
 
 <FIFOInformation>
 <FIFOInst>
-<Name>layer2_out_i_U</Name>
+<Name>layer2_out_U</Name>
 <ParentInst>grp_myproject_fu_66</ParentInst>
 <StaticDepth>1</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
@@ -8316,7 +7719,7 @@
 </InterfaceList>
 </FIFOInst>
 <FIFOInst>
-<Name>layer3_out_i_U</Name>
+<Name>layer3_out_U</Name>
 <ParentInst>grp_myproject_fu_66</ParentInst>
 <StaticDepth>1</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>
@@ -8331,7 +7734,7 @@
 </InterfaceList>
 </FIFOInst>
 <FIFOInst>
-<Name>layer4_out_i_U</Name>
+<Name>layer4_out_U</Name>
 <ParentInst>grp_myproject_fu_66</ParentInst>
 <StaticDepth>1</StaticDepth>
 <RuntimeDepth>mOutPtr</RuntimeDepth>

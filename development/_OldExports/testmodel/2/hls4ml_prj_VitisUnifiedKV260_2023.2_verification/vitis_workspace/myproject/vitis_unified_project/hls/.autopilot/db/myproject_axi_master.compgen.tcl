@@ -6,7 +6,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler myproject_axi_master_fifo_w32_d2_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {batch_size_c9_U}
+	::AP::rtl_comp_handler myproject_axi_master_fifo_w32_d2_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {batch_size_c1_U}
 }
 
 
@@ -92,7 +92,7 @@ dict set axilite_register_dict control $port_control
 if {${::AESL::PGuard_simmodel_gen}} {
 	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
 		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 1265 \
+			id 1284 \
 			corename myproject_axi_master_control_axilite \
 			name myproject_axi_master_control_s_axi \
 			ports {$port_control} \
@@ -102,6 +102,7 @@ if {${::AESL::PGuard_simmodel_gen}} {
 			is_flushable 0 \
 			is_datawidth64 0 \
 			is_addrwidth64 1 \
+			enable_mem_auto_widen 1 \
 		} "
 	} else {
 		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'control'"

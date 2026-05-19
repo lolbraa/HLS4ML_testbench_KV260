@@ -1,0 +1,16 @@
+{
+"fifo_info" : [
+{"inst" : "AESL_inst_myproject_axi_master.gmem_out0_ptr_layer13_out_c_U", "depth" : 1, "input_block" : 0, "output_block" : 0, "work_scenario" : 5, "chan_type" : 2},
+{"inst" : "AESL_inst_myproject_axi_master.batch_size_c1_U", "depth" : 1, "input_block" : 0, "output_block" : 0, "work_scenario" : 5, "chan_type" : 2},
+{"inst" : "AESL_inst_myproject_axi_master.stream_in0_input_layer_U", "depth" : 392, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 0},
+{"inst" : "AESL_inst_myproject_axi_master.batch_size_c_U", "depth" : 1, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 2},
+{"inst" : "AESL_inst_myproject_axi_master.stream_out0_layer13_out_U", "depth" : 1, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 0},
+{"inst" : "AESL_inst_myproject_axi_master.compute_U0.grp_myproject_fu_378.layer3_out_U", "depth" : 1, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 0},
+{"inst" : "AESL_inst_myproject_axi_master.compute_U0.grp_myproject_fu_378.layer4_out_U", "depth" : 1, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 0},
+{"inst" : "AESL_inst_myproject_axi_master.compute_U0.grp_myproject_fu_378.layer5_out_U", "depth" : 1, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 0},
+{"inst" : "AESL_inst_myproject_axi_master.compute_U0.grp_myproject_fu_378.layer7_out_U", "depth" : 1, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 0},
+{"inst" : "AESL_inst_myproject_axi_master.compute_U0.grp_myproject_fu_378.layer8_out_U", "depth" : 2, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 0},
+{"inst" : "AESL_inst_myproject_axi_master.compute_U0.grp_myproject_fu_378.layer9_out_U", "depth" : 1, "input_block" : 0, "output_block" : 1, "work_scenario" : 3, "chan_type" : 0}
+],
+"lat_total" : 8034
+}

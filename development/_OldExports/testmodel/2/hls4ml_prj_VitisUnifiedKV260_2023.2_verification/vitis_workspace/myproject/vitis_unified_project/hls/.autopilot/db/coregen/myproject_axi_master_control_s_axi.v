@@ -1,12 +1,12 @@
 // ==============================================================
-// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
-// Tool Version Limit: 2023.10
+// Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+// Tool Version Limit: 2025.11
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-// Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+// Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // 
 // ==============================================================
 `timescale 1ns/1ps
-module myproject_axi_master_control_s_axi
+(* DowngradeIPIdentifiedWarnings="yes" *) module myproject_axi_master_control_s_axi
 #(parameter
     C_S_AXI_ADDR_WIDTH = 6,
     C_S_AXI_DATA_WIDTH = 32
@@ -113,7 +113,7 @@ localparam
     wire                          ar_hs;
     wire [ADDR_BITS-1:0]          raddr;
     // internal registers
-    reg                           int_ap_idle;
+    reg                           int_ap_idle = 1'b0;
     reg                           int_ap_ready = 1'b0;
     wire                          task_ap_ready;
     reg                           int_ap_done = 1'b0;
@@ -137,8 +137,8 @@ localparam
 //------------------------AXI write fsm------------------
 assign AWREADY = (wstate == WRIDLE);
 assign WREADY  = (wstate == WRDATA);
-assign BRESP   = 2'b00;  // OKAY
 assign BVALID  = (wstate == WRRESP);
+assign BRESP   = 2'b00;  // OKAY
 assign wmask   = { {8{WSTRB[3]}}, {8{WSTRB[2]}}, {8{WSTRB[1]}}, {8{WSTRB[0]}} };
 assign aw_hs   = AWVALID & AWREADY;
 assign w_hs    = WVALID & WREADY;
@@ -165,7 +165,7 @@ always @(*) begin
             else
                 wnext = WRDATA;
         WRRESP:
-            if (BREADY)
+            if (BREADY & BVALID)
                 wnext = WRIDLE;
             else
                 wnext = WRRESP;
@@ -178,7 +178,7 @@ end
 always @(posedge ACLK) begin
     if (ACLK_EN) begin
         if (aw_hs)
-            waddr <= AWADDR[ADDR_BITS-1:0];
+            waddr <= {AWADDR[ADDR_BITS-1:2], {2{1'b0}}};
     end
 end
 
@@ -341,7 +341,7 @@ always @(posedge ACLK) begin
         int_auto_restart <= 1'b0;
     else if (ACLK_EN) begin
         if (w_hs && waddr == ADDR_AP_CTRL && WSTRB[0])
-            int_auto_restart <=  WDATA[7];
+            int_auto_restart <= WDATA[7];
     end
 end
 

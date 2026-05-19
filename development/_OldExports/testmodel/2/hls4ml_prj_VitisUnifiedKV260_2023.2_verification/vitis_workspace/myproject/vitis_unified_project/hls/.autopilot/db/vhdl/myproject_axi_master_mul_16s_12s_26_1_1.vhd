@@ -18,10 +18,11 @@ port (
     dout: out std_logic_vector(dout_WIDTH - 1 downto 0));
 
 
-
 end entity;
 
 architecture behav of myproject_axi_master_mul_16s_12s_26_1_1 is
+attribute DowngradeIPIdentifiedWarnings : string;
+attribute DowngradeIPIdentifiedWarnings of behav: architecture is "yes";
     signal tmp_product : std_logic_vector(dout_WIDTH - 1 downto 0);
     signal a_i : std_logic_vector(din0_WIDTH - 1 downto 0);
     signal b_i : std_logic_vector(din1_WIDTH - 1 downto 0);
@@ -31,6 +32,20 @@ architecture behav of myproject_axi_master_mul_16s_12s_26_1_1 is
     
     
     
+    
+    
+    
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+              
 begin
     a_i <= din0;
     b_i <= din1;
@@ -48,6 +63,20 @@ begin
 
 
     dout <= tmp_product;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

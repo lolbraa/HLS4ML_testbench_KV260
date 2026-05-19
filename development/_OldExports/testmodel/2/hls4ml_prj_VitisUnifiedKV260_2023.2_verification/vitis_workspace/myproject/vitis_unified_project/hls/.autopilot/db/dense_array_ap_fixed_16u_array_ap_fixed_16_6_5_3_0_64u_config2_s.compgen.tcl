@@ -10,7 +10,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 904 \
+    id 917 \
     name layer2_out \
     type fifo \
     dir O \
@@ -18,14 +18,14 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_layer2_out \
     op interface \
-    ports { layer2_out_din { O 1024 vector } layer2_out_num_data_valid { I 2 vector } layer2_out_fifo_cap { I 2 vector } layer2_out_full_n { I 1 bit } layer2_out_write { O 1 bit } } \
+    ports { layer2_out_din { O 1024 vector } layer2_out_full_n { I 1 bit } layer2_out_write { O 1 bit } layer2_out_num_data_valid { I 2 vector } layer2_out_fifo_cap { I 2 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 905 \
+    id 918 \
     name stream_in0_linput \
     type fifo \
     dir I \
@@ -33,7 +33,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_stream_in0_linput \
     op interface \
-    ports { stream_in0_linput_dout { I 256 vector } stream_in0_linput_num_data_valid { I 8 vector } stream_in0_linput_fifo_cap { I 8 vector } stream_in0_linput_empty_n { I 1 bit } stream_in0_linput_read { O 1 bit } } \
+    ports { stream_in0_linput_dout { I 256 vector } stream_in0_linput_empty_n { I 1 bit } stream_in0_linput_read { O 1 bit } stream_in0_linput_num_data_valid { I 8 vector } stream_in0_linput_fifo_cap { I 8 vector } } \
 } "
 }
 

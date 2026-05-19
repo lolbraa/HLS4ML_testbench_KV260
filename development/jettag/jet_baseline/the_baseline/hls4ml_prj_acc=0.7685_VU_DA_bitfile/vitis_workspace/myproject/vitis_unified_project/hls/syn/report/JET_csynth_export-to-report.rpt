@@ -1,0 +1,30 @@
++----------------------------------------------------------------------------+----+---------+------+----------+------+-------+-------+----+------+-------+---------------+
+|                                   Modules                                  | II |         | Trip |          |   Latency    |       |    |      |       |               |
+|                                   & Loops                                  |    | Interval| Count| Pipelined| (cc) |  (s)  | Slack |BRAM|  DSP |   FF  |      LUT      |
++----------------------------------------------------------------------------+----+---------+------+----------+------+-------+-------+----+------+-------+---------------+
+|+ myproject_axi_master*                                                     |   -|        -|     -|  dataflow|     -|       |  -0.01| 24 |  3478|  34039|  145641 (124%)|
+| + entry_proc                                                               |   -|        0|     -|        no|     0|  0.00n|   2.53|    |      |      3|       29 (~0%)|
+| + load_input_float_array_ap_fixed_16_6_5_3_0_16u_s                         |   -|        0|     -|    rewind|     -|      -|  -0.01|    |      |   1543|      9578 (8%)|
+|  o VITIS_LOOP_13_1                                                         |  28|       16|     -|       yes|     -|      -|   4.37|    |      |       |              -|
+| + compute                                                                  |   -|        -|     -|        no|     -|      -|   0.05|  2 |  3478|  29884|  131971 (112%)|
+|  o VITIS_LOOP_42_1                                                         |1069|        -|     -|        no|     -|      -|   4.37|    |      |       |              -|
+|   + myproject*                                                             |   -|     1049|     -|  dataflow|  1067|  5.34m|   0.05|  2 |  3478|  29814|  131834 (112%)|
+|    + dense_array_ap_fixed_16u_array_ap_fixed_37_17_5_3_0_64u_config2_s     |   -|        2|     -|        no|     2| 10.00n|   0.17|    |   804|   5023|    29147 (24%)|
+|     + dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_37_17_5_3_0_config2_s     |   -|        1|     -|       yes|     1|  5.00n|   0.32|    |   804|   4761|    29089 (24%)|
+|    + relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s  |   -|        1|     -|        no|     1|  5.00n|   1.15|    |      |   1028|      3892 (3%)|
+|    + dense_array_ap_fixed_64u_array_ap_fixed_39_19_5_3_0_32u_config4_s     |   -|        3|     -|        no|     3| 15.00n|   0.32|    |  1672|  12186|    57698 (49%)|
+|     + dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_39_19_5_3_0_config4_s     |   -|        1|     -|       yes|     1|  5.00n|   0.32|    |  1672|   9907|    57634 (49%)|
+|    + relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config5_s  |   -|        1|     -|        no|     1|  5.00n|   1.14|    |      |    516|      2036 (1%)|
+|    + dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_32u_config6_s     |   -|        3|     -|        no|     3| 15.00n|   0.32|    |   849|   7226|    28554 (24%)|
+|     + dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_38_18_5_3_0_config6_s     |   -|        1|     -|       yes|     1|  5.00n|   0.32|    |   849|   5491|    28490 (24%)|
+|    + relu_array_ap_fixed_32u_array_ap_fixed_16_6_5_3_0_32u_relu_config7_s  |   -|        1|     -|        no|     1|  5.00n|   1.15|    |      |    516|      2004 (1%)|
+|    + dense_array_ap_fixed_32u_array_ap_fixed_38_18_5_3_0_5u_config8_s      |   -|        2|     -|        no|     2| 10.00n|   0.32|    |   141|   1360|      4267 (3%)|
+|     + dense_latency_ap_fixed_16_6_5_3_0_ap_fixed_38_18_5_3_0_config8_s     |   -|        1|     -|       yes|     1|  5.00n|   0.32|    |   141|    842|      4209 (3%)|
+|    + softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s          |   -|     1048|     -|        no|  1048|  5.24m|   0.05|  2 |    12|   1266|      3765 (3%)|
+|     + softmax_stable_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config9_s  |   -|     1047|     -|        no|  1047|  5.23m|   0.05|  2 |    12|   1262|      3740 (3%)|
+|      + init_exp_table_ap_ufixed_37_17_5_3_0_softmax_config9_s              |   -|        -|     -|       yes|  1040|  5.20m|   0.05|    |     7|    753|      2976 (2%)|
+|       o VITIS_LOOP_151_1                                                   |  16|        1|  1024|       yes|  1038|  5.19m|   4.37|    |      |       |              -|
+| + store_result_float_array_ap_fixed_16_6_5_3_0_5u_s                        |   -|        -|     -|        no|     -|      -|  -0.01|    |      |    500|      2065 (1%)|
+|  + store_result_float_array_ap_fixed_5u_Pipeline_VITIS_LOOP_29_1           |   -|        -|     -|       yes|     -|      -|  -0.01|    |      |    361|      1705 (1%)|
+|   o VITIS_LOOP_29_1                                                        |   8|        5|     -|       yes|     -|      -|   4.37|    |      |       |              -|
++----------------------------------------------------------------------------+----+---------+------+----------+------+-------+-------+----+------+-------+---------------+

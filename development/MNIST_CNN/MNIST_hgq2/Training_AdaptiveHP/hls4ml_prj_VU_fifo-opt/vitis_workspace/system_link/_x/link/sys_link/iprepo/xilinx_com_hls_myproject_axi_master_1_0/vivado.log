@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon May 18 15:27:04 2026
+# Process ID         : 3553132
+# Current directory  : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip
+# Command line       : vivado -notrace -mode batch -source run_ippack.tcl
+# Log file           : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/vivado.log
+# Journal file       : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/vivado.jou
+# Running On         : KrissDEV
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.952 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 65838 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 65838 MB
+# Available Virtual  : 45531 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/hls_data.json outdir=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip srcdir=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls ippack_options_dict= ippack_options_dict=
+INFO: Copied 1 ipmisc file(s) to /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/misc
+INFO: Copied 54 verilog file(s) to /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/verilog
+INFO: Copied 51 vhdl file(s) to /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/drivers
+Generating 1 subcores in /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/subcore_prj:
+impl/misc/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: Using COE_DIR=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/verilog
+INFO: Generating myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/lib/AMD/2025.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: Done generating myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip via file impl/misc/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.tcl
+INFO: Found 1 unique subcore IP: xilinx.com:ip:floating_point:7.1
+INFO: Copied 1 subcore files: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip/myproject_axi_master_fpext_32ns_64_2_no_dsp_1_ip.xci
+INFO: Import ports from HDL: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/hdl/vhdl/myproject_axi_master.vhd (myproject_axi_master)
+INFO: Add axi4lite interface s_axi_control
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/lib/AMD/2025.2/data/ip'.
+INFO: Add axi4full interface m_axi_gmem_in0
+INFO: Add axi4full interface m_axi_gmem_out0
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip/component.xml
+Generating XO file: myproject_axi_master.xo in directory /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/..
+Running: package_xo -xo_path /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/../myproject_axi_master.xo -kernel_xml /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/kernel.xml -kernel_name myproject_axi_master -ip_directory /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/ip -kernel_files {/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/../../../../firmware/myproject_axi_master.cpp /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/../../../../firmware/myproject.cpp} -hls_directory /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/impl/misc/hls_files -kernel_json /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_fifo-opt/vitis_workspace/myproject/vitis_unified_project/hls/hls_data.json

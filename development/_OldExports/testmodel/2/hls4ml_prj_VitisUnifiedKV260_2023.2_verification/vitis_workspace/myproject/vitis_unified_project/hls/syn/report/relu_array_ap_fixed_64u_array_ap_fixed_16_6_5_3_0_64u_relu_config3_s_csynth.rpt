@@ -3,9 +3,9 @@
 ================================================================
 == Vitis HLS Report for 'relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s'
 ================================================================
-* Date:           Fri May 15 00:09:30 2026
+* Date:           Mon May 18 16:10:21 2026
 
-* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        vitis_unified_project
 * Solution:       hls (Vivado IP Flow Target)
 * Product family: zynquplus
@@ -53,7 +53,7 @@
 |FIFO             |        -|     -|       -|       -|    -|
 |Instance         |        -|     -|       -|       -|    -|
 |Memory           |        -|     -|       -|       -|    -|
-|Multiplexer      |        -|     -|       -|      50|    -|
+|Multiplexer      |        -|     -|       0|      50|    -|
 |Register         |        -|     -|     964|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
 |Total            |        0|     0|     964|    2484|    0|
@@ -321,14 +321,14 @@
 |start_out                  |  out|     1|  ap_ctrl_hs|  relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>|  return value|
 |start_write                |  out|     1|  ap_ctrl_hs|  relu<array<ap_fixed,64u>,array<ap_fixed<16,6,5,3,0>,64u>,relu_config3>|  return value|
 |layer2_out_dout            |   in|  1024|     ap_fifo|                                                              layer2_out|       pointer|
-|layer2_out_num_data_valid  |   in|     2|     ap_fifo|                                                              layer2_out|       pointer|
-|layer2_out_fifo_cap        |   in|     2|     ap_fifo|                                                              layer2_out|       pointer|
 |layer2_out_empty_n         |   in|     1|     ap_fifo|                                                              layer2_out|       pointer|
 |layer2_out_read            |  out|     1|     ap_fifo|                                                              layer2_out|       pointer|
+|layer2_out_num_data_valid  |   in|     2|     ap_fifo|                                                              layer2_out|       pointer|
+|layer2_out_fifo_cap        |   in|     2|     ap_fifo|                                                              layer2_out|       pointer|
 |layer3_out_din             |  out|  1024|     ap_fifo|                                                              layer3_out|       pointer|
-|layer3_out_num_data_valid  |   in|     2|     ap_fifo|                                                              layer3_out|       pointer|
-|layer3_out_fifo_cap        |   in|     2|     ap_fifo|                                                              layer3_out|       pointer|
 |layer3_out_full_n          |   in|     1|     ap_fifo|                                                              layer3_out|       pointer|
 |layer3_out_write           |  out|     1|     ap_fifo|                                                              layer3_out|       pointer|
+|layer3_out_num_data_valid  |   in|     2|     ap_fifo|                                                              layer3_out|       pointer|
+|layer3_out_fifo_cap        |   in|     2|     ap_fifo|                                                              layer3_out|       pointer|
 +---------------------------+-----+------+------------+------------------------------------------------------------------------+--------------+
 

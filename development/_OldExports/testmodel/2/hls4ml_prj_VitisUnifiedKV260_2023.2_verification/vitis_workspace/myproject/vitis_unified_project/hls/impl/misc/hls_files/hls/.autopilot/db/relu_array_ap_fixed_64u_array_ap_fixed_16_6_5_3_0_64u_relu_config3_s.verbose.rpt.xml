@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s'" level="0">
-<item name = "Date">Fri May 15 00:09:30 2026
+<item name = "Date">Mon May 18 16:10:21 2026
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -51,7 +51,7 @@
 <column name="FIFO">-, -, -, -, -</column>
 <column name="Instance">-, -, -, -, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 50, -</column>
+<column name="Multiplexer">-, -, 0, 50, -</column>
 <column name="Register">-, -, 964, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 2, 0</specialColumn>
@@ -306,15 +306,15 @@
 <column name="start_out">out, 1, ap_ctrl_hs, relu&lt;array&lt;ap_fixed,64u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,64u&gt;,relu_config3&gt;, return value</column>
 <column name="start_write">out, 1, ap_ctrl_hs, relu&lt;array&lt;ap_fixed,64u&gt;,array&lt;ap_fixed&lt;16,6,5,3,0&gt;,64u&gt;,relu_config3&gt;, return value</column>
 <column name="layer2_out_dout">in, 1024, ap_fifo, layer2_out, pointer</column>
-<column name="layer2_out_num_data_valid">in, 2, ap_fifo, layer2_out, pointer</column>
-<column name="layer2_out_fifo_cap">in, 2, ap_fifo, layer2_out, pointer</column>
 <column name="layer2_out_empty_n">in, 1, ap_fifo, layer2_out, pointer</column>
 <column name="layer2_out_read">out, 1, ap_fifo, layer2_out, pointer</column>
+<column name="layer2_out_num_data_valid">in, 2, ap_fifo, layer2_out, pointer</column>
+<column name="layer2_out_fifo_cap">in, 2, ap_fifo, layer2_out, pointer</column>
 <column name="layer3_out_din">out, 1024, ap_fifo, layer3_out, pointer</column>
-<column name="layer3_out_num_data_valid">in, 2, ap_fifo, layer3_out, pointer</column>
-<column name="layer3_out_fifo_cap">in, 2, ap_fifo, layer3_out, pointer</column>
 <column name="layer3_out_full_n">in, 1, ap_fifo, layer3_out, pointer</column>
 <column name="layer3_out_write">out, 1, ap_fifo, layer3_out, pointer</column>
+<column name="layer3_out_num_data_valid">in, 2, ap_fifo, layer3_out, pointer</column>
+<column name="layer3_out_fifo_cap">in, 2, ap_fifo, layer3_out, pointer</column>
 </table>
 </item>
 </section>

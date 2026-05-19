@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.2</Version>
+<Version>2025.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -31,20 +31,21 @@
 <DataflowPipelineThroughput>undef</DataflowPipelineThroughput>
 <Interval-min>undef</Interval-min>
 <Interval-max>undef</Interval-max>
+<PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/_OldExports/testmodel/2/hls4ml_prj_VitisUnifiedKV260_2023.2_verification/firmware/myproject_axi_master.cpp:66</SourceLocation>
+<SourceLocation>firmware/myproject_axi_master.cpp:66</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<BRAM_18K>32</BRAM_18K>
+<BRAM_18K>26</BRAM_18K>
 <DSP>1115</DSP>
-<FF>14765</FF>
-<LUT>58495</LUT>
+<FF>13695</FF>
+<LUT>54405</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

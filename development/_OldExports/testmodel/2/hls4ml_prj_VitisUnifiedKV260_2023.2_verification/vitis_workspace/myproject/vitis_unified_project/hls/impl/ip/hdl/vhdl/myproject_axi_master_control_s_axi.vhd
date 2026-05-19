@@ -1,8 +1,8 @@
 -- ==============================================================
--- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
--- Tool Version Limit: 2023.10
+-- Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2025.2 (64-bit)
+-- Tool Version Limit: 2025.11
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
--- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- 
 -- ==============================================================
 library IEEE;
@@ -83,6 +83,8 @@ end entity myproject_axi_master_control_s_axi;
 -- (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 architecture behave of myproject_axi_master_control_s_axi is
+attribute DowngradeIPIdentifiedWarnings : STRING;
+attribute DowngradeIPIdentifiedWarnings of behave : architecture is "yes";
     type states is (wridle, wrdata, wrresp, wrreset, rdidle, rddata, rdreset);  -- read and write fsm states
     signal wstate  : states := wrreset;
     signal rstate  : states := rdreset;
@@ -101,6 +103,11 @@ architecture behave of myproject_axi_master_control_s_axi is
     constant ADDR_BATCH_SIZE_CTRL                 : INTEGER := 16#2c#;
     constant ADDR_BITS         : INTEGER := 6;
 
+    signal AWREADY_t           : STD_LOGIC;
+    signal WREADY_t            : STD_LOGIC;
+    signal ARREADY_t           : STD_LOGIC;
+    signal RVALID_t            : STD_LOGIC;
+    signal BVALID_t            : STD_LOGIC;
     signal waddr               : UNSIGNED(ADDR_BITS-1 downto 0);
     signal wmask               : UNSIGNED(C_S_AXI_DATA_WIDTH-1 downto 0);
     signal aw_hs               : STD_LOGIC;
@@ -108,10 +115,6 @@ architecture behave of myproject_axi_master_control_s_axi is
     signal rdata_data          : UNSIGNED(C_S_AXI_DATA_WIDTH-1 downto 0);
     signal ar_hs               : STD_LOGIC;
     signal raddr               : UNSIGNED(ADDR_BITS-1 downto 0);
-    signal AWREADY_t           : STD_LOGIC;
-    signal WREADY_t            : STD_LOGIC;
-    signal ARREADY_t           : STD_LOGIC;
-    signal RVALID_t            : STD_LOGIC;
     -- internal registers
     signal int_ap_idle         : STD_LOGIC := '0';
     signal int_ap_ready        : STD_LOGIC := '0';
@@ -141,8 +144,9 @@ begin
     AWREADY   <=  AWREADY_t;
     WREADY_t  <=  '1' when wstate = wrdata else '0';
     WREADY    <=  WREADY_t;
+    BVALID_t  <=  '1' when wstate = wrresp else '0';
+    BVALID    <=  BVALID_t;
     BRESP     <=  "00";  -- OKAY
-    BVALID    <=  '1' when wstate = wrresp else '0';
     wmask     <=  (31 downto 24 => WSTRB(3), 23 downto 16 => WSTRB(2), 15 downto 8 => WSTRB(1), 7 downto 0 => WSTRB(0));
     aw_hs     <=  AWVALID and AWREADY_t;
     w_hs      <=  WVALID and WREADY_t;
@@ -159,7 +163,7 @@ begin
         end if;
     end process;
 
-    process (wstate, AWVALID, WVALID, BREADY)
+    process (wstate, AWVALID, WVALID, BREADY, BVALID_t)
     begin
         case (wstate) is
         when wridle =>
@@ -175,7 +179,7 @@ begin
                 wnext <= wrdata;
             end if;
         when wrresp =>
-            if (BREADY = '1') then
+            if (BREADY = '1' and BVALID_t = '1') then
                 wnext <= wridle;
             else
                 wnext <= wrresp;
@@ -190,7 +194,7 @@ begin
         if (ACLK'event and ACLK = '1') then
             if (ACLK_EN = '1') then
                 if (aw_hs = '1') then
-                    waddr <= UNSIGNED(AWADDR(ADDR_BITS-1 downto 0));
+                    waddr <= UNSIGNED(AWADDR(ADDR_BITS-1 downto 2) & (1 downto 0 => '0'));
                 end if;
             end if;
         end if;
@@ -459,7 +463,9 @@ begin
     process (ACLK)
     begin
         if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
+            if (ARESET = '1') then
+                int_gmem_in0_ptr_linput(31 downto 0) <= (others => '0');
+            elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_GMEM_IN0_PTR_LINPUT_DATA_0) then
                     int_gmem_in0_ptr_linput(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_gmem_in0_ptr_linput(31 downto 0));
                 end if;
@@ -470,7 +476,9 @@ begin
     process (ACLK)
     begin
         if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
+            if (ARESET = '1') then
+                int_gmem_in0_ptr_linput(63 downto 32) <= (others => '0');
+            elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_GMEM_IN0_PTR_LINPUT_DATA_1) then
                     int_gmem_in0_ptr_linput(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_gmem_in0_ptr_linput(63 downto 32));
                 end if;
@@ -481,7 +489,9 @@ begin
     process (ACLK)
     begin
         if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
+            if (ARESET = '1') then
+                int_gmem_out0_ptr_layer5_out(31 downto 0) <= (others => '0');
+            elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_GMEM_OUT0_PTR_LAYER5_OUT_DATA_0) then
                     int_gmem_out0_ptr_layer5_out(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_gmem_out0_ptr_layer5_out(31 downto 0));
                 end if;
@@ -492,7 +502,9 @@ begin
     process (ACLK)
     begin
         if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
+            if (ARESET = '1') then
+                int_gmem_out0_ptr_layer5_out(63 downto 32) <= (others => '0');
+            elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_GMEM_OUT0_PTR_LAYER5_OUT_DATA_1) then
                     int_gmem_out0_ptr_layer5_out(63 downto 32) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_gmem_out0_ptr_layer5_out(63 downto 32));
                 end if;
@@ -503,7 +515,9 @@ begin
     process (ACLK)
     begin
         if (ACLK'event and ACLK = '1') then
-            if (ACLK_EN = '1') then
+            if (ARESET = '1') then
+                int_batch_size(31 downto 0) <= (others => '0');
+            elsif (ACLK_EN = '1') then
                 if (w_hs = '1' and waddr = ADDR_BATCH_SIZE_DATA_0) then
                     int_batch_size(31 downto 0) <= (UNSIGNED(WDATA(31 downto 0)) and wmask(31 downto 0)) or ((not wmask(31 downto 0)) and int_batch_size(31 downto 0));
                 end if;

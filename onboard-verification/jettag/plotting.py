@@ -22,7 +22,7 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
     plt.imshow(cm, interpolation='nearest', cmap=cmap)
     plt.title(title)
-    cbar = plt.colorbar()
+    #cbar = plt.colorbar()
     plt.clim(0, 1)
     #cbar.set_label(title)
     tick_marks = np.arange(len(classes))
@@ -55,8 +55,8 @@ def plotRoc(fpr, tpr, auc, labels, linestyle, linewidth, legend=True, semilogx=T
         )
     if semilogx:
         plt.semilogx()
-    plt.xlabel("False Positive Rate", size='large')
-    plt.ylabel("True Positive Rate", size='large')
+    plt.xlabel("False Positive Rate")
+    plt.ylabel("True Positive Rate")
     plt.ylim(0,1)
     plt.xlim(0.001, 1)
     plt.grid(True,which="both")

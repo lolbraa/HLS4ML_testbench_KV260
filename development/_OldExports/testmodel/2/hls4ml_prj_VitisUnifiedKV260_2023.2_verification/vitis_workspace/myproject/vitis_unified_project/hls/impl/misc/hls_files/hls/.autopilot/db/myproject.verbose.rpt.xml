@@ -1,9 +1,9 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'myproject'" level="0">
-<item name = "Date">Fri May 15 00:09:31 2026
+<item name = "Date">Mon May 18 16:10:21 2026
 </item>
-<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">vitis_unified_project</item>
 <item name = "Solution">hls (Vivado IP Flow Target)</item>
 <item name = "Product family">zynquplus</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 4.236 ns, 0.62 ns</column>
+<column name="ap_clk">5.00 ns, 4.169 ns, 0.62 ns</column>
 </table>
 </item>
 </section>
@@ -53,7 +53,7 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 2, -</column>
 <column name="FIFO">-, -, 297, 201, -</column>
-<column name="Instance">4, 1115, 9090, 40311, -</column>
+<column name="Instance">4, 1115, 9173, 40393, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, -, -</column>
 <column name="Register">-, -, -, -, -</column>
@@ -65,10 +65,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0">dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s, 0, 858, 5288, 27924, 0</column>
-<column name="dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0">dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s, 0, 252, 2632, 9438, 0</column>
+<column name="dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_U0">dense_array_ap_fixed_16u_array_ap_fixed_16_6_5_3_0_64u_config2_s, 0, 858, 5324, 28011, 0</column>
+<column name="dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_U0">dense_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_5u_config4_s, 0, 252, 2679, 9451, 0</column>
 <column name="relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_U0">relu_array_ap_fixed_64u_array_ap_fixed_16_6_5_3_0_64u_relu_config3_s, 0, 0, 964, 2484, 0</column>
-<column name="softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0">softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s, 4, 5, 206, 465, 0</column>
+<column name="softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_U0">softmax_array_array_ap_fixed_16_6_5_3_0_5u_softmax_config5_s, 4, 5, 206, 447, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -81,9 +81,9 @@
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">
 <keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
-<column name="layer2_out_i_U">0, 99, 0, -, 1, 1024, 1024</column>
-<column name="layer3_out_i_U">0, 99, 0, -, 1, 1024, 1024</column>
-<column name="layer4_out_i_U">0, 99, 0, -, 1, 80, 80</column>
+<column name="layer2_out_U">0, 99, 0, -, 1, 1024, 1024</column>
+<column name="layer3_out_U">0, 99, 0, -, 1, 1024, 1024</column>
+<column name="layer4_out_U">0, 99, 0, -, 1, 80, 80</column>
 </table>
 </item>
 <item name = "Expression"><table name="" hasTotal="1">

@@ -215,6 +215,11 @@ hls4ml-kv260.code-workspace
 #PixSplit data
 nparticles_resampled.h5
 processed_data
+x_test*
+X_test*
+y_test*
+x_train*
+y_train*
 
 
 # Vitis - for store filer for GitHub

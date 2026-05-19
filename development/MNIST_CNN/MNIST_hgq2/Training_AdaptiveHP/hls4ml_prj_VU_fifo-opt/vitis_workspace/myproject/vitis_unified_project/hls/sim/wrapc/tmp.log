@@ -1,0 +1,8 @@
+INFO: Unable to open input/predictions file, using default input.
+1 2.5 -0.75 -1.75 -0.5 -0.75 0.25 -0.875 1.25 -0.125 
+1 2.5 -0.75 -1.75 -0.5 -0.75 0.25 -0.875 1.25 -0.125 
+1 2.5 -0.75 -1.75 -0.5 -0.75 0.25 -0.875 1.25 -0.125 
+1 2.5 -0.75 -1.75 -0.5 -0.75 0.25 -0.875 1.25 -0.125 
+1 2.5 -0.75 -1.75 -0.5 -0.75 0.25 -0.875 1.25 -0.125 
+INFO: Saved inference results to file: tb_data/rtl_cosim_results.log
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 784
