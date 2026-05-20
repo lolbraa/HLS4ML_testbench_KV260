@@ -25,7 +25,7 @@ Vivado compilation are heavy processes, which may render your laptop unusable un
 
 ### Import/Load Image
 
-With the physical testbench, a prebuilt image is provided. It may be loaded by 
+A prebuilt image may be loaded by 
 ([documentation](https://docs.docker.com/reference/cli/docker/image/load/))
 
 ```bash
@@ -50,6 +50,8 @@ After initial run, it may be started again by `docker start hls4ml-kv260-testben
 Follow the logs with `docker logs hls4ml-kv260-testbench  -f`.
 Exec into running container: `docker exec -ti hls4ml-kv260-testbench bash`
 Restart (e.g. to install new environment) `docker restart hls4ml-kv260-testbench`
+Stop `docker stop hls4ml-kv260-testbench`
+
 
 
 
@@ -94,19 +96,6 @@ Exporting image for others to import ([documentation](https://docs.docker.com/re
 ```bash
 docker save hls4ml-kv260-testbench:final | gzip > hls4ml-kv260-testbench.tar.gz
 ```
-
-#### Time and Space
-
-| Step                        | Est        |
-| --------------------------- | ---------- |
-| Loading base image          |            |
-| Installing apt-dependencies | 5 minutes  |
-| Transferring installer      | 10 minutes |
-| Extracting installer        |            |
-|                             |            |
-|                             |            |
-|                             |            |
-|                             |            |
 
 
 ## Problems encountered

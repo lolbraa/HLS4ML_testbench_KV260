@@ -1,7 +1,7 @@
 services:
     hls4ml-kv260-testbench:
         container_name: hls4ml-kv260-testbench
-        image: 'hls4ml-kv260-testbench:final'
+        image: 'hls4ml-kv260-testbench:v2025.2'
         volumes:
             - './environments/:/work/environments/'
             - '~/Bachelor/HLS4ML_testbench_KV260/development/:/work/development/'

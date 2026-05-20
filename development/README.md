@@ -118,5 +118,3 @@ and if changes to the environment are required:
 ```bash
 conda env update -f environment-HGQ.yml
 ```
-
-# Training (Sergeys tips)

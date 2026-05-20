@@ -91,23 +91,20 @@ RUN --mount=target=/var/lib/apt/lists,type=cache,sharing=locked \
 
 
 ##### Vivado/Vitis installation
+# Import config file for installation
+COPY $HOST_TOOL_INSTALLER_CONFIG $TOOL_INSTALLER_CONFIG
 # Bind mounts the ./installer-directory under building so they are not redundantly 
 # copied into the containers filesystem from the build context.
-# The unarchive-process is split from installation to speed up cancelled builds
 # You may want to skip importing and extracting an archive, and instead mount the extracted folder.
 # I've chosen to do it like this for maximum compatibility with e.g. the downloadable complete unified installer archive 
+# Install Vitis and Vivado. 
+# https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license
 RUN --mount=type=bind,source=${HOST_TOOL_INSTALLER_ARCHIVE},target=${TOOL_INSTALLER_ARCHIVE} \
     echo "Extracting archive (this takes quite a while)..." \
     && mkdir -p /tmp/installer-extract \
-    && unzip -q ${TOOL_INSTALLER_ARCHIVE} -d /tmp/installer-extract
+    && unzip -q ${TOOL_INSTALLER_ARCHIVE} -d /tmp/installer-extract \
     #&& tar -xf ${TOOL_INSTALLER_ARCHIVE} -C /tmp/installer-extract # .tar installation archive
-
-# Import config file for installation
-COPY $HOST_TOOL_INSTALLER_CONFIG $TOOL_INSTALLER_CONFIG
-
-# Install Vitis and Vivado. 
-# https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license
-RUN echo "Running xsetup batch install..." \
+    && echo "Running xsetup batch install..." \
     && cd "/tmp/installer-extract/" \
 #    && cd "/tmp/installer-extract/$(ls /tmp/installer-extract)" \ # .tar installation archive
     && ./xsetup \
@@ -116,7 +113,7 @@ RUN echo "Running xsetup batch install..." \
       --config ${TOOL_INSTALLER_CONFIG} \
       --agree XilinxEULA,3rdPartyEULA \
     && echo "Cleaning up extracted archive..." \
-    && rm -rf /tmp/installer*
+    && rm -rf /tmp/installer-extract/
 
 # Check dependencies missing for running Vivado and Vitis
 # This' the official method, however, we extracted the packages and installed them initially
@@ -140,7 +137,7 @@ RUN  if [ -z ${CODE_RELEASE+x} ]; then \
       /var/tmp/*
 RUN ${CODE_PATH}/bin/code-server --install-extension ms-python.python \
     #&& ${CODE_PATH}/bin/code-server --install-extension ms-python.vscode-pylance \
-    && ${CODE_PATH}/bin/code-server --install-extension ms-toolsai.jupyter
+    && ${CODE_PATH}/bin/code-server --install-extension ms-toolsai.jupyter || true
 RUN mkdir -p /root/.local/share/code-server/User && \
     echo '{"python.defaultInterpreterPath": "/opt/miniconda3/bin/python"}' > /root/.local/share/code-server/User/settings.json
 EXPOSE 8443

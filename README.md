@@ -1,19 +1,12 @@
-# Workflow for developing and testing Deep Learning-algorithms on KV260
+# Testbench for Developing and Testing Deep Learning-algorithms on KV260 with HLS4ML
 
-This is the repository affiliated with an bachelor's thesis, establishing a testbench for the ATLAS-group at HVL
+This is the repository affiliated with an bachelor's thesis establishing a testbench for the ATLAS-group at HVL.
 
-Delivery of a testbench...
+The main purpose of the testbench is to facilitate future research in machine learning-algorithms targetting the ATLAS-detector. By utilising FPGAs, inference can run ultra fast with large throughput, enabling new cases for advanced algorithms on the edge. Though, FPGAs are notorious for its introduction threshold. Our work is mainly establishing a low-threshold solution for rapid iterating model-development with testing on-device. Additionaly, we've done research ourselves into different architectures and quantization techniques.
 
-The workflow is based on [HLS4ML](https://github.com/fastmachinelearning/hls4ml) for the KV260-platform, i.e. using Vivado and Vitis v2025.2. To bridge the gap between HLS4MLs Vitis-backend and final deployment, we deployed the bleeding endge Vitis Unified-backend
+The workflow is based on [HLS4ML](https://github.com/fastmachinelearning/hls4ml) for the KV260-platform, i.e. using Vivado and Vitis v2025.2. To bridge the gap between HLS4MLs Vitis-backend and final deployment, we deployed the still-in-development Vitis Unified-backend.
 
 [AMD Xilinx Kria KV260](https://docs.amd.com/r/en-US/ug1089-kv260-starter-kit) is a Starter Kit based on the [K26-SOM](https://docs.amd.com/r/en-US/ds987-k26-som/Overview) (System On Modules), featuring an adopted version of Zynq UltraScale+ MPSoC (XCK26). It's geared towards Deep Learning-application with an accelerator IP and spesification making its price-to-performance pretty solid. The part number is 
-
-
-## Motivation
-
-Getting started developing for FPGAs is not straight forward. 
-
-
 
 
 ## Directory structure 
