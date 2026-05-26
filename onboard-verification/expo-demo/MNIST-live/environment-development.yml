@@ -1,0 +1,17 @@
+name: devenv-expo
+dependencies:
+  - python=3.12
+  - numpy
+  - notebook
+  - ipywidgets
+  - jupyterlab
+  - jupyterlab_widgets
+  - tensorflow
+  - scikit-learn
+  - pip
+  - matplotlib
+  - pillow
+  - opencv
+  - pip:
+      - HGQ2
+#    - "hls4ml[profiling, hgq2] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
