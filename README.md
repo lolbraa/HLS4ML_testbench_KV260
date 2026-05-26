@@ -23,9 +23,10 @@ The workflow is based on [HLS4ML](https://github.com/fastmachinelearning/hls4ml)
 The work in this project has only been done in Linux environment, native, in a VM/container, or through WSL. 
 
 Some jargon/glossaries we keep using throughout the project:
-- VU is Vitis Unified, the HLS4ML backend that leveragin Vitis' system design flow to easily create a complete bitfile.
-- Bitfile is what programs the logic blocks on the FPGA.
+- VU is [Vitis Unified](http://github.com/fastmachinelearning/hls4ml/pull/1376), the HLS4ML backend that leveragin Vitis' system design flow to easily create a complete bitfile.
 - DA stands for [Distributed Arithmetic](https://fastmachinelearning.org/hls4ml/advanced/da.html), an implementation of optimized operations in layers.
 - [HGQ/HGQ2](https://calad0i.github.io/HGQ2/) (we use both interchangebly for HGQ2) is an quantization technique under training, yielding really good performance 
-- Jet Tagging/jettag is a classification problem from CERN, often used as a benchmark in affiliated research
-- Pixel Cluster Splitting/pixsplit is another, more niche problem which we've researched to diversify our effort.
+- [Jet Tagging](https://iopscience.iop.org/article/10.1088/1748-0221/13/07/P07027)/jettag is a classification problem from CERN, often used as a benchmark in affiliated research
+- [Pixel Cluster Splitting](https://iopscience.iop.org/article/10.1088/1748-0221/9/09/P09009)/pixsplit is another, more niche problem which we've researched to diversify our effort.
+- Bitfile (.bit) is the resulting file of a HLS4ML-build ready for deployment. The file is what actually programs the logic blocks on the FPGA, though, in the cases of Vitis Unified and PYNQ, a .hwh is also generated, describing the design.
+- Synthesis carries different sentiments depending on the context. HLS synthesis, which we mainly refer to as synthesis, means compiling HLS-syntax (C/C++) into RTL (Verilog/VHDL). Logic synthesis means compiling the RTL into a gate-level netlist using FPGA primitives (LUTs, DSPs, BRAMs, flip-flops, etc.). Implementation means placing and routing that synthesized netlist onto the FPGA fabric and generating the final bitstream. More information can be found in Xilinx' [UG902](https://www.amd.com/content/dam/xilinx/support/documents/sw_manuals/xilinx2020_2/ug902-vivado-high-level-synthesis.pdf) and [UG904](https://docs.amd.com/r/en-US/ug904-vivado-implementation), among other resources.
