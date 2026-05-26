@@ -137,9 +137,10 @@ RUN  if [ -z ${CODE_RELEASE+x} ]; then \
       /var/tmp/*
 RUN ${CODE_PATH}/bin/code-server --install-extension ms-python.python \
     #&& ${CODE_PATH}/bin/code-server --install-extension ms-python.vscode-pylance \
-    && ${CODE_PATH}/bin/code-server --install-extension ms-toolsai.jupyter || true
-RUN mkdir -p /root/.local/share/code-server/User && \
-    echo '{"python.defaultInterpreterPath": "/opt/miniconda3/bin/python"}' > /root/.local/share/code-server/User/settings.json
+    && ${CODE_PATH}/bin/code-server --install-extension ms-toolsai.jupyter \
+    #|| true # VS Code failed to retrieve because of server error, this will try but keep going if it is down
+    && mkdir -p /root/.local/share/code-server/User \
+    && echo '{"python.defaultInterpreterPath": "/opt/miniconda3/bin/python"}' > /root/.local/share/code-server/User/settings.json
 EXPOSE 8443
 
 

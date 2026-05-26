@@ -8,3 +8,8 @@ services:
         ports:
             - '8443:8443'
         init: true # Needed for proper handling of Vivado-processes during synthesis
+        # For finer granularity over memory management
+#        deploy:
+#            resources:
+#                limits:
+#                    memory: 10G

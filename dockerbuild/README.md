@@ -18,7 +18,7 @@ Conda Environments may be set up by mounting a directory with files with the fil
 
 Some familiarity with Docker is probably great.
 
-Vivado/Vitis has some [system requirements](https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license/System-Memory-Recommendations), mainly in terms of RAM.
+Vivado/Vitis has some [system requirements](https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license/System-Memory-Recommendations), mainly [in terms of RAM](https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado/vivado-buy.html#tabs-413944f675-item-9598720e6a-tab). The KV260 (xck26-sfvc784-2LV-c) is not listed, nevertheless, from our experience around 8-12 GB is sufficient. That is completely context dependent.
 
 Vivado compilation are heavy processes, which may render your laptop unusable under some parts of the implementation. A somewhat decent system (CPU) is highly recommended.
 
@@ -54,11 +54,27 @@ Stop `docker stop hls4ml-kv260-testbench`
 
 
 
+## Notes on Windows
+Doker on Windows utilizes two underlying stacks for virtualization. Our testing has been done on Windows 11 25H2 and WSL 2.7.3.0 installed using official instructions of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (`wsl --install`) and [Docker](https://docs.docker.com/desktop/setup/install/windows-install/) (installation .exe from website). We've not tried building in a Windows environment.
 
-## Notes on the Docker-structure
-The user inside runs as root. Hence, files written by the container is owned by root. You may want to fix this.
+WSL is configured to only use 50% of the RAM by default, often leading to Out of Memory exceptions when runninng the heavy implementation or synthesis process. The process usually
+Remedies:
+- [Configure higher target percentage for WSL](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#main-wsl-settings), but keep in mind the overhead of OS. There is both a GUI and config file.
+    - Our testing show that enlargin the SWAP-parition (or in Norwegian GUI, "byttefil") eleviates the crashing during spikes in memory usage. Though it affects performance, it may be the best solution in cases where using more RAM is difficult.
+    - The threshold in our case was 9-10GB RAM and 5-6GB swap.
+- The underlying problem is in a sense the spawning of too many processes to utilize multiple threads of the CPU. In theory, this could be limited globally through init.tcl-configurations, though this did not prove fruitful in our attempts. [Limit parallel processes spawned by Vivado and Vitis under synthesis](https://docs.amd.com/r/en-US/ug835-vivado-tcl-commands/Tcl-Initialization-Scripts).
+- Further memory control may be imposed by [limit a container's access to memory](https://docs.docker.com/engine/containers/resource_constraints/#limit-a-containers-access-to-memory). This is system specific, but may be done with `--memory=10G` or configuring the `docker-compose.yml`.
+
+
+
+## Notes on the implementation
+The user inside runs as root. Hence, files written by the container is owned by root. You may want to fix this. The hotfix is to chown files to the hosts local user.
 
 Jupyter notebook may be configured by either installing at runtime (setting up an environment and passing `-p 8888:8888' with appropriate command at start) or uncommenting lines in dockerfile and building.
+
+VS Code may become unresponsive under load, reporting "reconnecting". However, looking at the background tasks with top/htop or Task Manager reveals the processes still running. If processes are running in the background, leave the browser as is.
+
+A full HLS4ML build with Vitis Unified (synthesis + implementation/bitfile generation) will take a long time, though that highly depends on the scale of the design and the computational hardware. Our most basic models usually only took 20 minutes, and more complicated took multiple hours, though with competent hardware. Our experience is that on less performant hardware, it will take much longer. A normal laptop took over an hour on the most basic model, increasing with the reliance on swap or lower memory limits.
 
 
 
@@ -99,18 +115,12 @@ docker save hls4ml-kv260-testbench:final | gzip > hls4ml-kv260-testbench.tar.gz
 
 
 ## Problems encountered
-
-
-When running in the Docker, we encoountered problems with crashes of the vpl-engine during compilation of the project to blockdiagram, seemingly with a webtalk-/telemetry-
-Hotfix for libudev-crashes during synthesis ([post1](https://adaptivesupport.amd.com/s/article/000034450?language=en_US), [post2](https://community.revenera.com/s/question/0D5PL00000NwuKu0AJ/issues-when-running-xilinx-tools-or-other-vendor-tools-in-docker-environment))
-Should be applied per process, in our cases in notebook when running hls4ml.build()
+- When running in the Docker, we encoountered problems with crashes of the vpl-engine during compilation of the project to blockdiagram. Hotfix for libudev-crashes during synthesis ([post1](https://adaptivesupport.amd.com/s/article/000034450?language=en_US), [post2](https://community.revenera.com/s/question/0D5PL00000NwuKu0AJ/issues-when-running-xilinx-tools-or-other-vendor-tools-in-docker-environment)). Should be applied per process, in our cases in notebook when running hls4ml.build()
 ```python
 import os
 os.environ['LD_PRELOAD'] = '/lib/x86_64-linux-gnu/libudev.so.1'
 ```
-
-Processes hung without ending properly when running block-level synthesis, silently stopping the synthesis. After some troubleshooting we figured we needed a [init process](https://docs.docker.com/reference/cli/docker/container/run/#init) (`--init` flag).
-
-The user inside is root, so `chown` may be needed to fix permissions when working with host OS' user.
-
-Dependency issues. After a lot of trial and error, the current buildfile works for Vitis Unified Software Platform, though no guarantees for the future. This is the main motivation for using Docker in the first place, trying to eliminating platform-specific dependency issues.
+- Processes hung without ending properly when running block-level synthesis, silently stopping the synthesis. After some troubleshooting we figured we needed a [init process](https://docs.docker.com/reference/cli/docker/container/run/#init) (`--init` flag).
+- The user inside is root, so `chown` may be needed to fix permissions when working with host OS' user.
+- Dependency issues. After a lot of trial and error, the current buildfile works for Vitis Unified Software Platform, though no guarantees for the future. This is the main motivation for using Docker in the first place, trying to eliminating platform-specific dependency issues.
+- Out of Memory issues, especially in WSL with default memory limits. If build fails silently or unexpectedly, check `dmesg -w` if the process was killed by the OOM-killer.

@@ -220,6 +220,7 @@ X_test*
 y_test*
 x_train*
 y_train*
+development/pixsplit/Data
 
 
 # Vitis - for store filer for GitHub
