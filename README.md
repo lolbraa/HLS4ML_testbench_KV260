@@ -6,7 +6,7 @@ The main purpose of the testbench is to facilitate future research in machine le
 
 The workflow is based on [HLS4ML](https://github.com/fastmachinelearning/hls4ml) for the KV260-platform, i.e. using Vivado and Vitis v2025.2. To bridge the gap between HLS4MLs Vitis-backend and final deployment, we deployed the still-in-development Vitis Unified-backend.
 
-[AMD Xilinx Kria KV260](https://docs.amd.com/r/en-US/ug1089-kv260-starter-kit) is a Starter Kit based on the [K26-SOM](https://docs.amd.com/r/en-US/ds987-k26-som/Overview) (System On Modules), featuring an adopted version of Zynq UltraScale+ MPSoC (XCK26). It's geared towards Deep Learning-application with an accelerator IP and spesification making its price-to-performance pretty solid. The part number is 
+[AMD Xilinx Kria KV260](https://docs.amd.com/r/en-US/ug1089-kv260-starter-kit) is a Starter Kit based on the [K26-SOM](https://docs.amd.com/r/en-US/ds987-k26-som/Overview) (System On Modules), featuring an adopted version of Zynq UltraScale+ MPSoC (XCK26). It's geared towards Deep Learning-application with an accelerator IP and spesification making its price-to-performance pretty solid. The part number is `xck26-sfvc784-2LV-c`.
 
 
 ## Directory structure 
@@ -16,6 +16,8 @@ The workflow is based on [HLS4ML](https://github.com/fastmachinelearning/hls4ml)
 [`onboard-verification/`](onboard-verification/) is for testing onboard the FPGA by using PYNQ.
 
 [`dockerbuild/`](dockerbuild/) contains resources to build and run a docker image with the required software for a runing start. The software (Vivado/Vitis) is required to synthesize the models with HLS4ML.
+
+[`manuell .xsa conversion to 2025/`](manuell .xsa conversion to 2025/) is the directory in which we converted Vitis Unified .xsa-script for KV260 and Vivado 2023.2 to Vivado 2025.2.
 
 
 ## Notes
