@@ -1,0 +1,11 @@
+
+defparam AESL_inst_myproject_axi_stream.batch_size_c1_U.DEPTH = 2'd2;
+defparam AESL_inst_myproject_axi_stream.model_input_stream_U.DEPTH = 11'd784;
+defparam AESL_inst_myproject_axi_stream.batch_size_c_U.DEPTH = 2'd2;
+defparam AESL_inst_myproject_axi_stream.model_output_stream_U.DEPTH = 2'd1;
+defparam AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_378.layer3_out_U.DEPTH = 11'd676;
+defparam AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_378.layer4_out_U.DEPTH = 11'd676;
+defparam AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_378.layer5_out_U.DEPTH = 9'd169;
+defparam AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_378.layer7_out_U.DEPTH = 8'd121;
+defparam AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_378.layer8_out_U.DEPTH = 8'd121;
+defparam AESL_inst_myproject_axi_stream.compute_U0.grp_myproject_fu_378.layer9_out_U.DEPTH = 6'd25;

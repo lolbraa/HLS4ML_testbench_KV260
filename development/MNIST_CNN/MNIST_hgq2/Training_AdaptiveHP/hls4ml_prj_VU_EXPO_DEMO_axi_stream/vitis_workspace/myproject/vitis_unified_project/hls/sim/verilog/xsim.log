@@ -1,0 +1,335 @@
+#-----------------------------------------------------------
+# xsim v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed May 27 10:03:29 2026
+# Process ID         : 109372
+# Current directory  : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog
+# Command line       : xsim -mode tcl -source {xsim.dir/myproject_axi_stream/xsim_script.tcl}
+# Log file           : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/xsim.log
+# Journal file       : /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/vitis_workspace/myproject/vitis_unified_project/hls/sim/verilog/xsim.jou
+# Running On         : KrissDEV
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : QEMU Virtual CPU version 2.5+
+# CPU Frequency      : 4291.952 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 16
+# Host memory        : 65838 MB
+# Swap memory        : 0 MB
+# Total Virtual      : 65838 MB
+# Available Virtual  : 51074 MB
+#-----------------------------------------------------------
+source xsim.dir/myproject_axi_stream/xsim_script.tcl
+# xsim {myproject_axi_stream} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=myproject_axi_stream_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {myproject_axi_stream.tcl}
+Time resolution is 1 ps
+source myproject_axi_stream.tcl
+## run all
+UVM_INFO /usr/lib/AMD/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /usr/lib/AMD/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO /usr/lib/AMD/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18752) @ 0: reporter [UVMTOP] UVM testbench topology:
+-----------------------------------------------------------------------------------------------------------------------------------------
+Name                                                                  Type                                          Size  Value          
+-----------------------------------------------------------------------------------------------------------------------------------------
+uvm_test_top                                                          myproject_axi_stream_test_lib                 -     @370           
+  top_env                                                             myproject_axi_stream_env                      -     @381           
+    axi_lite_control                                                  uvm_env                                       -     @428           
+      item_rtr_port                                                   uvm_analysis_port                             -     @447           
+      item_wtr_port                                                   uvm_analysis_port                             -     @437           
+      master                                                          uvm_agent                                     -     @840           
+        ardrv                                                         uvm_driver #(REQ,RSP)                         -     @1515          
+          item_read_imp                                               uvm_analysis_port                             -     @1544          
+          rsp_port                                                    uvm_analysis_port                             -     @1534          
+          seq_item_port                                               uvm_seq_item_pull_port                        -     @1524          
+          m_num_sent                                                  integral                                      32    'h0            
+        arsqr                                                         axi_sequencer                                 -     @1554          
+          rsp_export                                                  uvm_analysis_export                           -     @1563          
+          seq_item_export                                             uvm_seq_item_pull_imp                         -     @1681          
+          arbitration_queue                                           array                                         0     -              
+          lock_queue                                                  array                                         0     -              
+          num_last_reqs                                               integral                                      32    'd1            
+          num_last_rsps                                               integral                                      32    'd1            
+        awdrv                                                         uvm_driver #(REQ,RSP)                         -     @987           
+          item_read_imp                                               uvm_analysis_port                             -     @1016          
+          rsp_port                                                    uvm_analysis_port                             -     @1006          
+          seq_item_port                                               uvm_seq_item_pull_port                        -     @996           
+          m_num_sent                                                  integral                                      32    'h0            
+        awsqr                                                         axi_sequencer                                 -     @1026          
+          rsp_export                                                  uvm_analysis_export                           -     @1035          
+          seq_item_export                                             uvm_seq_item_pull_imp                         -     @1153          
+          arbitration_queue                                           array                                         0     -              
+          lock_queue                                                  array                                         0     -              
+          num_last_reqs                                               integral                                      32    'd1            
+          num_last_rsps                                               integral                                      32    'd1            
+        bdrv                                                          uvm_driver #(REQ,RSP)                         -     @1339          
+          item_read_imp                                               uvm_analysis_port                             -     @1368          
+          rsp_port                                                    uvm_analysis_port                             -     @1358          
+          seq_item_port                                               uvm_seq_item_pull_port                        -     @1348          
+          m_num_sent                                                  integral                                      32    'h0            
+        bsqr                                                          axi_sequencer                                 -     @1378          
+          rsp_export                                                  uvm_analysis_export                           -     @1387          
+          seq_item_export                                             uvm_seq_item_pull_imp                         -     @1505          
+          arbitration_queue                                           array                                         0     -              
+          lock_queue                                                  array                                         0     -              
+          num_last_reqs                                               integral                                      32    'd1            
+          num_last_rsps                                               integral                                      32    'd1            
+        rdrv                                                          uvm_driver #(REQ,RSP)                         -     @1691          
+          item_read_imp                                               uvm_analysis_port                             -     @1720          
+          rsp_port                                                    uvm_analysis_port                             -     @1710          
+          seq_item_port                                               uvm_seq_item_pull_port                        -     @1700          
+          m_num_sent                                                  integral                                      32    'h0            
+        rsqr                                                          axi_sequencer                                 -     @1730          
+          rsp_export                                                  uvm_analysis_export                           -     @1739          
+          seq_item_export                                             uvm_seq_item_pull_imp                         -     @1857          
+          arbitration_queue                                           array                                         0     -              
+          lock_queue                                                  array                                         0     -              
+          num_last_reqs                                               integral                                      32    'd1            
+          num_last_rsps                                               integral                                      32    'd1            
+        wdrv                                                          uvm_driver #(REQ,RSP)                         -     @1163          
+          item_read_imp                                               uvm_analysis_port                             -     @1192          
+          rsp_port                                                    uvm_analysis_port                             -     @1182          
+          seq_item_port                                               uvm_seq_item_pull_port                        -     @1172          
+          m_num_sent                                                  integral                                      32    'h0            
+        wsqr                                                          axi_sequencer                                 -     @1202          
+          rsp_export                                                  uvm_analysis_export                           -     @1211          
+          seq_item_export                                             uvm_seq_item_pull_imp                         -     @1329          
+          arbitration_queue                                           array                                         0     -              
+          lock_queue                                                  array                                         0     -              
+          num_last_reqs                                               integral                                      32    'd1            
+          num_last_rsps                                               integral                                      32    'd1            
+      monitor                                                         uvm_monitor                                   -     @662           
+        item_ar2r_port                                                uvm_analysis_port                             -     @731           
+        item_ar_port                                                  uvm_analysis_port                             -     @701           
+        item_aw2b_port                                                uvm_analysis_port                             -     @721           
+        item_aw_port                                                  uvm_analysis_port                             -     @671           
+        item_b_port                                                   uvm_analysis_port                             -     @691           
+        item_r_port                                                   uvm_analysis_port                             -     @711           
+        item_w_port                                                   uvm_analysis_port                             -     @681           
+        checks_enable                                                 integral                                      1     'h1            
+        coverage_enable                                               integral                                      1     'h1            
+      state                                                           axi_state                                     -     @741           
+        ar2r_imp                                                      uvm_analysis_imp_ar2r                         -     @810           
+        ar_imp                                                        uvm_analysis_imp_ar                           -     @780           
+        aw2b_imp                                                      uvm_analysis_imp_aw2b                         -     @800           
+        aw_imp                                                        uvm_analysis_imp_aw                           -     @750           
+        b_imp                                                         uvm_analysis_imp_b                            -     @770           
+        item_rtr_port                                                 uvm_analysis_port                             -     @830           
+        item_wtr_port                                                 uvm_analysis_port                             -     @820           
+        r_imp                                                         uvm_analysis_imp_r                            -     @790           
+        w_imp                                                         uvm_analysis_imp_w                            -     @760           
+        avg_rate                                                      integral                                      32    'h0            
+        exp_rate                                                      integral                                      32    'h0            
+        win_size                                                      integral                                      32    'h0            
+        bqnum_for_slaseq                                              integral                                      32    'h0            
+        rq_from_model_num                                             integral                                      32    'h0            
+      vsqr                                                            axi_virtual_sequencer                         -     @849           
+        rsp_export                                                    uvm_analysis_export                           -     @858           
+        seq_item_export                                               uvm_seq_item_pull_imp                         -     @976           
+        arbitration_queue                                             array                                         0     -              
+        lock_queue                                                    array                                         0     -              
+        num_last_reqs                                                 integral                                      32    'd1            
+        num_last_rsps                                                 integral                                      32    'd1            
+      cfg                                                             axi_cfg                                       -     @400           
+        has_checker                                                   integral                                      1     'h1            
+        has_coverage                                                  integral                                      1     'h1            
+        id_num                                                        integral                                      32    'h1            
+        reset_level                                                   reset_level_enum                              32    RESET_LEVEL_LOW
+        drv_type                                                      drv_type_enum                                 32    MASTER         
+        write_latency_mode                                            latency_mode_enum                             32    CHANNEL_FIRST  
+        read_latency_mode                                             latency_mode_enum                             32    CHANNEL_FIRST  
+        clatency                                                      axi_latency                                   -     @424           
+          wr_latency                                                  integral                                      32    'h0            
+          rd_latency                                                  integral                                      32    'h0            
+    env_master_svr_axi_input_stream                                   uvm_env                                       -     @401           
+      m_agt                                                           uvm_agent                                     -     @1935          
+        drv                                                           uvm_driver #(REQ,RSP)                         -     @2083          
+          rsp_port                                                    uvm_analysis_port                             -     @2102          
+          seq_item_port                                               uvm_seq_item_pull_port                        -     @2092          
+        mon                                                           uvm_monitor                                   -     @2112          
+          item_collect_port                                           uvm_analysis_port                             -     @2123          
+        sqr                                                           uvm_sequencer                                 -     @1946          
+          rsp_export                                                  uvm_analysis_export                           -     @1955          
+          seq_item_export                                             uvm_seq_item_pull_imp                         -     @2073          
+          arbitration_queue                                           array                                         0     -              
+          lock_queue                                                  array                                         0     -              
+          num_last_reqs                                               integral                                      32    'd1            
+          num_last_rsps                                               integral                                      32    'd1            
+    env_slave_svr_axi_output_stream                                   uvm_env                                       -     @414           
+      s_agt                                                           uvm_agent                                     -     @2141          
+        drv                                                           uvm_driver #(REQ,RSP)                         -     @2289          
+          rsp_port                                                    uvm_analysis_port                             -     @2308          
+          seq_item_port                                               uvm_seq_item_pull_port                        -     @2298          
+        mon                                                           uvm_monitor                                   -     @2318          
+          item_collect_port                                           uvm_analysis_port                             -     @2329          
+        sqr                                                           uvm_sequencer                                 -     @2152          
+          rsp_export                                                  uvm_analysis_export                           -     @2161          
+          seq_item_export                                             uvm_seq_item_pull_imp                         -     @2279          
+          arbitration_queue                                           array                                         0     -              
+          lock_queue                                                  array                                         0     -              
+          num_last_reqs                                               integral                                      32    'd1            
+          num_last_rsps                                               integral                                      32    'd1            
+    myproject_axi_stream_virtual_sqr                                  myproject_axi_stream_virtual_sequencer        -     @519           
+      rsp_export                                                      uvm_analysis_export                           -     @528           
+      seq_item_export                                                 uvm_seq_item_pull_imp                         -     @646           
+      arbitration_queue                                               array                                         0     -              
+      lock_queue                                                      array                                         0     -              
+      num_last_reqs                                                   integral                                      32    'd1            
+      num_last_rsps                                                   integral                                      32    'd1            
+    refm                                                              myproject_axi_stream_reference_model          -     @457           
+      trans_num_idx                                                   integral                                      32    'h0            
+    subsys_mon                                                        myproject_axi_stream_subsystem_monitor        -     @470           
+      control_rtr_imp                                                 uvm_analysis_imp_axi_rtr_control              -     @509           
+      control_wtr_imp                                                 uvm_analysis_imp_axi_wtr_control              -     @499           
+      scbd                                                            myproject_axi_stream_scoreboard               -     @2356          
+        refm                                                          myproject_axi_stream_reference_model          -     @457           
+          trans_num_idx                                               integral                                      32    'h0            
+        file_rd_TVOUT_transaction_size                                <unknown>                                     -     @2366          
+          TV_FILE                                                     string                                        0     ""             
+          fp                                                          integral                                      32    'hxxxxxxxx     
+          TV_FILE_num                                                 integral                                      32    'h0            
+          HEX_read                                                    integral                                      32    'h0            
+          DEC_read                                                    integral                                      32    'h0            
+          is_binary                                                   integral                                      32    'h0            
+          TV_FILE_COMPARE                                             string                                        0     ""             
+          fp_compare                                                  integral                                      32    'hxxxxxxxx     
+        TVOUT_transaction_size_queue                                  da(integral)                                  0     -              
+        file_wr_port_axi_output_stream_axi_output_stream_TDATA        <unknown>                                     -     @2367          
+          TV_FILE                                                     string                                        0     ""             
+          fp                                                          integral                                      32    'hxxxxxxxx     
+          file_open                                                   integral                                      32    'h0            
+          write_file_done                                             integral                                      32    'h0            
+          write_section_done                                          integral                                      32    'h0            
+          TRANSACTION_NUM                                             integral                                      32    'h0            
+          transaction_num_idx                                         integral                                      32    'h0            
+          TRANSACTION_DEPTH                                           integral                                      32    'h0            
+          TRANSACTION_DEPTH_queue                                     da(integral)                                  0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check                     da(integral)                                  0     -              
+          transaction_depth_idx                                       integral                                      32    'h0            
+          ap_done_num_idx                                             integral                                      32    'h0            
+          is_binary                                                   integral                                      32    'h0            
+        write_file_done_axi_output_stream_axi_output_stream_TDATA     integral                                      32    'h0            
+        write_section_done_axi_output_stream_axi_output_stream_TDATA  integral                                      32    'h0            
+        file_wr_port_axi_output_stream_axi_output_stream_TKEEP        <unknown>                                     -     @2368          
+          TV_FILE                                                     string                                        0     ""             
+          fp                                                          integral                                      32    'hxxxxxxxx     
+          file_open                                                   integral                                      32    'h0            
+          write_file_done                                             integral                                      32    'h0            
+          write_section_done                                          integral                                      32    'h0            
+          TRANSACTION_NUM                                             integral                                      32    'h0            
+          transaction_num_idx                                         integral                                      32    'h0            
+          TRANSACTION_DEPTH                                           integral                                      32    'h0            
+          TRANSACTION_DEPTH_queue                                     da(integral)                                  0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check                     da(integral)                                  0     -              
+          transaction_depth_idx                                       integral                                      32    'h0            
+          ap_done_num_idx                                             integral                                      32    'h0            
+          is_binary                                                   integral                                      32    'h0            
+        write_file_done_axi_output_stream_axi_output_stream_TKEEP     integral                                      32    'h0            
+        write_section_done_axi_output_stream_axi_output_stream_TKEEP  integral                                      32    'h0            
+        file_wr_port_axi_output_stream_axi_output_stream_TSTRB        <unknown>                                     -     @2369          
+          TV_FILE                                                     string                                        0     ""             
+          fp                                                          integral                                      32    'hxxxxxxxx     
+          file_open                                                   integral                                      32    'h0            
+          write_file_done                                             integral                                      32    'h0            
+          write_section_done                                          integral                                      32    'h0            
+          TRANSACTION_NUM                                             integral                                      32    'h0            
+          transaction_num_idx                                         integral                                      32    'h0            
+          TRANSACTION_DEPTH                                           integral                                      32    'h0            
+          TRANSACTION_DEPTH_queue                                     da(integral)                                  0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check                     da(integral)                                  0     -              
+          transaction_depth_idx                                       integral                                      32    'h0            
+          ap_done_num_idx                                             integral                                      32    'h0            
+          is_binary                                                   integral                                      32    'h0            
+        write_file_done_axi_output_stream_axi_output_stream_TSTRB     integral                                      32    'h0            
+        write_section_done_axi_output_stream_axi_output_stream_TSTRB  integral                                      32    'h0            
+        file_wr_port_axi_output_stream_axi_output_stream_TLAST        <unknown>                                     -     @2370          
+          TV_FILE                                                     string                                        0     ""             
+          fp                                                          integral                                      32    'hxxxxxxxx     
+          file_open                                                   integral                                      32    'h0            
+          write_file_done                                             integral                                      32    'h0            
+          write_section_done                                          integral                                      32    'h0            
+          TRANSACTION_NUM                                             integral                                      32    'h0            
+          transaction_num_idx                                         integral                                      32    'h0            
+          TRANSACTION_DEPTH                                           integral                                      32    'h0            
+          TRANSACTION_DEPTH_queue                                     da(integral)                                  0     -              
+          TRANSACTION_DEPTH_queue_for_depth_check                     da(integral)                                  0     -              
+          transaction_depth_idx                                       integral                                      32    'h0            
+          ap_done_num_idx                                             integral                                      32    'h0            
+          is_binary                                                   integral                                      32    'h0            
+        write_file_done_axi_output_stream_axi_output_stream_TLAST     integral                                      32    'h0            
+        write_section_done_axi_output_stream_axi_output_stream_TLAST  integral                                      32    'h0            
+      svr_master_axi_input_stream_imp                                 uvm_analysis_imp_svr_master_axi_input_stream  -     @479           
+      svr_slave_axi_output_stream_imp                                 uvm_analysis_imp_svr_slave_axi_output_stream  -     @489           
+    env_master_svr_axi_input_stream                                   uvm_env                                       -     @401           
+    env_slave_svr_axi_output_stream                                   uvm_env                                       -     @414           
+    refm                                                              myproject_axi_stream_reference_model          -     @457           
+    myproject_axi_stream_virtual_sqr                                  myproject_axi_stream_virtual_sequencer        -     @519           
+    myproject_axi_stream_cfg                                          myproject_axi_stream_config                   -     @395           
+      port_axi_input_stream_cfg                                       svr_config                                    -     @396           
+        svr_type                                                      svr_inst_type                                 32    SVR_MASTER     
+        prt_type                                                      svr_protocol_type                             32    AXIS           
+        is_active                                                     svr_active_passive_enum                       1     SVR_ACTIVE     
+        reset_level                                                   svr_reset_level_enum                          1     RESET_LEVEL_LOW
+        spec_cfg                                                      svr_spec_cfg_enum                             32    NORMAL         
+        clatency                                                      svr_latency                                   -     @397           
+          transfer_latency                                            integral                                      32    'h0            
+      port_axi_output_stream_cfg                                      svr_config                                    -     @398           
+        svr_type                                                      svr_inst_type                                 32    SVR_SLAVE      
+        prt_type                                                      svr_protocol_type                             32    AXIS           
+        is_active                                                     svr_active_passive_enum                       1     SVR_ACTIVE     
+        reset_level                                                   svr_reset_level_enum                          1     RESET_LEVEL_LOW
+        spec_cfg                                                      svr_spec_cfg_enum                             32    NORMAL         
+        clatency                                                      svr_latency                                   -     @399           
+          transfer_latency                                            integral                                      32    'h0            
+      control_cfg                                                     axi_cfg                                       -     @400           
+        has_checker                                                   integral                                      1     'h1            
+        has_coverage                                                  integral                                      1     'h1            
+        id_num                                                        integral                                      32    'h1            
+        reset_level                                                   reset_level_enum                              32    RESET_LEVEL_LOW
+        drv_type                                                      drv_type_enum                                 32    MASTER         
+        write_latency_mode                                            latency_mode_enum                             32    CHANNEL_FIRST  
+        read_latency_mode                                             latency_mode_enum                             32    CHANNEL_FIRST  
+        clatency                                                      axi_latency                                   -     @424           
+          wr_latency                                                  integral                                      32    'h0            
+          rd_latency                                                  integral                                      32    'h0            
+      check_ena                                                       integral                                      32    'h0            
+      cover_ena                                                       integral                                      32    'h0            
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+UVM_INFO /usr/lib/AMD/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 5 [n/a] @ "113000"
+// RTL Simulation : 1 / 5 [n/a] @ "8018000"
+// RTL Simulation : 2 / 5 [n/a] @ "15903000"
+// RTL Simulation : 3 / 5 [n/a] @ "23788000"
+// RTL Simulation : 4 / 5 [n/a] @ "31673000"
+// RTL Simulation : 5 / 5 [n/a] @ "39558000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 39592500 ps : File "/usr/lib/AMD/2025.2/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+## quit
+INFO: xsimkernel Simulation Memory Usage: 348524 KB (Peak: 388800 KB), Simulation CPU Usage: 1050 ms
+INFO: [Common 17-206] Exiting xsim at Wed May 27 10:03:32 2026...

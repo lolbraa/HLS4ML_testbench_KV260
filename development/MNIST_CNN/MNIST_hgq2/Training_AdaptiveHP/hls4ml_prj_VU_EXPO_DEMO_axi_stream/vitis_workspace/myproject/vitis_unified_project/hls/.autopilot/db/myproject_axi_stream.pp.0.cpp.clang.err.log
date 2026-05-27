@@ -1,0 +1,79 @@
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:1:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.h:5:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject.h:8:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/defines.h:6:
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/nnet_utils/nnet_types.h:28:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=operator=_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS UNROLL
+^
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:1:
+In file included from /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.h:6:
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:38:23: warning: variable templates are a C++14 extension [-Wc++14-extensions]
+constexpr std::size_t bitwidth = sizeof(T) * 8;
+                      ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:54:23: warning: variable templates are a C++14 extension [-Wc++14-extensions]
+constexpr std::size_t bytewidth = (bitwidth<T> + 8 - 1) / 8;
+                      ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:219:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_keep) keep = -1;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:220:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_strb) strb = -1;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:221:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_user) user = 0;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:222:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_last) last = 0;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:223:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_id) id = 0;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:224:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_dest) dest = 0;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:238:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_data) data = data_init;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:239:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_keep) keep = keep_init;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:240:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_strb) strb = strb_init;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:241:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_user) user = user_init;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:242:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_last) last = last_init;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:243:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_id) id = id_init;
+       ^
+/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/ap_axi_sdata.h:244:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (has_dest) dest = dest_init;
+       ^
+directive:1:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=myproject_axi_stream_XLX_SEP_ PragmaOptions=name=myproject_axi_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=myproject_axi_stream
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:48:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_stream_XLX_SEP_ PragmaOptions=axis port=axi_input_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=axi_input_stream
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:49:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_stream_XLX_SEP_ PragmaOptions=axis port=axi_output_stream_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE axis port=axi_output_stream
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:50:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_stream_XLX_SEP_ PragmaOptions=s_axilite port=return bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=return bundle=control
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:51:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_stream_XLX_SEP_ PragmaOptions=s_axilite port=batch_size bundle=control_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite port=batch_size bundle=control
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:56:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_stream_XLX_SEP_ PragmaOptions=variable=model_input_stream depth=784_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=model_input_stream depth=784
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:57:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=stream_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_stream_XLX_SEP_ PragmaOptions=variable=model_output_stream depth=1_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS STREAM variable=model_output_stream depth=1
+^
+/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/firmware/myproject_axi_stream.cpp:59:1: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=dataflow_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=myproject_axi_stream_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS DATAFLOW
+^
+24 warnings generated.

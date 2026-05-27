@@ -1,0 +1,3 @@
+relativeroot=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/vitis_workspace/myproject
+original_argv=--mode hls --cosim --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/hls_kernel_config.cfg --work_dir vitis_unified_project 
+

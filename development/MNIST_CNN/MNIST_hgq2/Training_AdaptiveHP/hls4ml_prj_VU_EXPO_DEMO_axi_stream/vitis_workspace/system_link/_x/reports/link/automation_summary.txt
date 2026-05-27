@@ -1,0 +1,64 @@
+====================================================================
+Version:    xcd v2025.2 (64-bit)
+Copyright:  Copyright 1986-2025 Xilinx, Inc. All Rights Reserved.
+Created:    Wed May 27 10:08:54 2026
+====================================================================
+
+1. Kernel and compute unit information
+======================================
+
+Compute Unit: myproject_axi_stream_1
+Kernel: myproject_axi_stream
+Base Address: 0x80020000
+Clock Pin: ap_clk
+Reset Pin: ap_rst_n
+
+2. Interface Connections
+========================
+
+IP to Compute Unit
+------------------
+Source Pin: axi_dma_0/M_AXIS_MM2S
+Destination Pin: myproject_axi_stream_1/axi_input_stream
+
+Source Pin: axi_interconnect_0/M02_AXI
+Destination Pin: myproject_axi_stream_1/s_axi_control
+
+Compute Unit to IP
+------------------
+Source Pin: myproject_axi_stream_1/axi_output_stream
+Destination Pin: axi_dma_0/S_AXIS_S2MM
+
+3. Clock Connections
+====================
+
+Compute Unit: myproject_axi_stream_1
+Source Pin: zynq_ultra_ps_e_0/pl_clk0
+Destination Pin: myproject_axi_stream_1/ap_clk
+
+Clock Instance: zynq_ultra_ps_e_0
+Source Pin: zynq_ultra_ps_e_0/pl_clk0
+Destination Pin: zynq_ultra_ps_e_0/maxihpm0_lpd_aclk
+
+Clock Instance: zynq_ultra_ps_e_0
+Source Pin: zynq_ultra_ps_e_0/pl_clk0
+Destination Pin: zynq_ultra_ps_e_0/saxihpc0_fpd_aclk
+
+4. Reset Connections
+====================
+
+Compute Unit: myproject_axi_stream_1
+Source Pin: rst_ps8_0_99M/peripheral_aresetn
+Destination Pin: myproject_axi_stream_1/ap_rst_n
+Associated Clock Pin: myproject_axi_stream_1/ap_clk
+
+5. Clock Summary
+================
+
+PL
++------------------------+----------------------+------------+---------------+------------+
+| Instance               | Kernel               | Clock Port | Compile (MHz) | Link (MHz) |
++------------------------+----------------------+------------+---------------+------------+
+| myproject_axi_stream_1 | myproject_axi_stream | ap_clk     | 200.00        | 100.00     |
++------------------------+----------------------+------------+---------------+------------+
+

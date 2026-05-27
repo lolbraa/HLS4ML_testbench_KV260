@@ -1,0 +1,166 @@
+
+
+================================================================
+== Vitis HLS Report for 'store_result'
+================================================================
+* Date:           Wed May 27 10:02:14 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        vitis_unified_project
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  4.297 ns|     0.62 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |                                                   |                                         |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+        |                      Instance                     |                  Module                 |   min   |   max   |    min   |    max   | min | max |        Type       |
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |grp_store_result_Pipeline_store_result_loop_fu_54  |store_result_Pipeline_store_result_loop  |        ?|        ?|         ?|         ?|    0|    0|  loop pipeline stp|
+        +---------------------------------------------------+-----------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      43|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|     361|    3286|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      74|    -|
+|Register         |        -|     -|     110|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     471|    3403|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|       2|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+------+-----+
+    |                      Instance                     |                  Module                 | BRAM_18K| DSP|  FF |  LUT | URAM|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+------+-----+
+    |grp_store_result_Pipeline_store_result_loop_fu_54  |store_result_Pipeline_store_result_loop  |        0|   0|  361|  3286|    0|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+------+-----+
+    |Total                                              |                                         |        0|   0|  361|  3286|    0|
+    +---------------------------------------------------+-----------------------------------------+---------+----+-----+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                                Variable Name                               | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |add_ln31_fu_71_p2                                                           |         +|   0|  0|  39|          32|           2|
+    |grp_store_result_Pipeline_store_result_loop_fu_54_axi_output_stream_TREADY  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state1                                                             |        or|   0|  0|   2|           1|           1|
+    +----------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                       |          |   0|  0|  43|          34|           4|
+    +----------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                             |  20|          4|    1|          4|
+    |ap_done                               |   9|          2|    1|          2|
+    |axi_output_stream_TDATA_int_regslice  |   9|          2|   32|         64|
+    |axi_output_stream_TKEEP_int_regslice  |   9|          2|    4|          8|
+    |axi_output_stream_TLAST_int_regslice  |   9|          2|    1|          2|
+    |axi_output_stream_TSTRB_int_regslice  |   9|          2|    4|          8|
+    |batch_size_blk_n                      |   9|          2|    1|          2|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  74|         16|   44|         90|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |                              Name                              | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |add_ln31_reg_83                                                 |  32|   0|   32|          0|
+    |ap_CS_fsm                                                       |   3|   0|    3|          0|
+    |ap_done_reg                                                     |   1|   0|    1|          0|
+    |axi_output_stream_TDATA_reg                                     |  32|   0|   32|          0|
+    |axi_output_stream_TKEEP_reg                                     |   4|   0|    4|          0|
+    |axi_output_stream_TLAST_reg                                     |   1|   0|    1|          0|
+    |axi_output_stream_TSTRB_reg                                     |   4|   0|    4|          0|
+    |batch_size_1_reg_78                                             |  32|   0|   32|          0|
+    |grp_store_result_Pipeline_store_result_loop_fu_54_ap_start_reg  |   1|   0|    1|          0|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                           | 110|   0|  110|          0|
+    +----------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------------+-----+-----+------------+----------------------------+--------------+
+|              RTL Ports             | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
++------------------------------------+-----+-----+------------+----------------------------+--------------+
+|ap_clk                              |   in|    1|  ap_ctrl_hs|                store_result|  return value|
+|ap_rst                              |   in|    1|  ap_ctrl_hs|                store_result|  return value|
+|ap_start                            |   in|    1|  ap_ctrl_hs|                store_result|  return value|
+|ap_done                             |  out|    1|  ap_ctrl_hs|                store_result|  return value|
+|ap_continue                         |   in|    1|  ap_ctrl_hs|                store_result|  return value|
+|ap_idle                             |  out|    1|  ap_ctrl_hs|                store_result|  return value|
+|ap_ready                            |  out|    1|  ap_ctrl_hs|                store_result|  return value|
+|axi_output_stream_TDATA             |  out|   32|        axis|  axi_output_stream_V_data_V|       pointer|
+|axi_output_stream_TVALID            |  out|    1|        axis|  axi_output_stream_V_last_V|       pointer|
+|axi_output_stream_TREADY            |   in|    1|        axis|  axi_output_stream_V_last_V|       pointer|
+|axi_output_stream_TLAST             |  out|    1|        axis|  axi_output_stream_V_last_V|       pointer|
+|axi_output_stream_TKEEP             |  out|    4|        axis|  axi_output_stream_V_keep_V|       pointer|
+|axi_output_stream_TSTRB             |  out|    4|        axis|  axi_output_stream_V_strb_V|       pointer|
+|batch_size_dout                     |   in|   32|     ap_fifo|                  batch_size|       pointer|
+|batch_size_empty_n                  |   in|    1|     ap_fifo|                  batch_size|       pointer|
+|batch_size_read                     |  out|    1|     ap_fifo|                  batch_size|       pointer|
+|batch_size_num_data_valid           |   in|    3|     ap_fifo|                  batch_size|       pointer|
+|batch_size_fifo_cap                 |   in|    3|     ap_fifo|                  batch_size|       pointer|
+|model_output_stream_dout            |   in|  160|     ap_fifo|         model_output_stream|       pointer|
+|model_output_stream_empty_n         |   in|    1|     ap_fifo|         model_output_stream|       pointer|
+|model_output_stream_read            |  out|    1|     ap_fifo|         model_output_stream|       pointer|
+|model_output_stream_num_data_valid  |   in|    2|     ap_fifo|         model_output_stream|       pointer|
+|model_output_stream_fifo_cap        |   in|    2|     ap_fifo|         model_output_stream|       pointer|
++------------------------------------+-----+-----+------------+----------------------------+--------------+
+
