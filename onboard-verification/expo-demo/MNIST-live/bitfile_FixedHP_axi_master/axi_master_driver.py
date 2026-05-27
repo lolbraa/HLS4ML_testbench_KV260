@@ -24,7 +24,8 @@ class NeuralNetworkOverlay(Overlay):
 
     def calculate_performance(self, N, execution_time):
         rate = N / execution_time if execution_time > 0 else float('inf')
-        #print(f"Processed elements: {N}, Execution time: {execution_time:.4f} seconds, Performance rate: {rate:.2f} inferences/second")
+        print(
+            f"Processed elements: {N}, Execution time: {execution_time:.4f} seconds, Performance rate: {rate:.2f} inferences/second")
         return rate
 
 
@@ -50,7 +51,7 @@ class NeuralNetworkOverlay(Overlay):
                     encode_v = np.vectorize(encode) # to apply them element-wise
                     decode_v = np.vectorize(decode)
                   ```
-        - profile : boolean. Set it to `True` to #print the performance of the algorithm in term of `inference/s`.
+        - profile : boolean. Set it to `True` to print the performance of the algorithm in term of `inference/s`.
         - encode/decode: function pointers. See `dtype` section for more information.
         - return: an output array based on `np.ndarray` with a shape equal to `y_shape` and a `dtype` equal to
                   the namesake parameter.
@@ -109,24 +110,24 @@ class HLS4ML_IP(DefaultIP):
     bindto = ['xilinx.com:hls:myproject_axi_master:1.0']
 
     def enable_gie(self):
-        #print("global interrupt enable register")
+        print("global interrupt enable register")
         self.write(self.REG_ADDR_GIE, 0x01)
-        #print("enable gie successful")
+        print("enable gie successful")
 
     def disable_gie(self):
-        #print("global interrupt enable register")
+        print("global interrupt enable register")
         self.write(self.REG_ADDR_GIE, 0x01)
-        #print("disable gie successful")
+        print("disable gie successful")
 
     def enable_done_intr(self):
-        #print("ap_done interrupt enable register")
+        print("ap_done interrupt enable register")
         self.write(self.REG_ADDR_IER, 0x01)
-        #print("enable ap_done interrupt successful")
+        print("enable ap_done interrupt successful")
 
     def clear_done_status(self):
-        #print("ap_done register clear")
+        print("ap_done register clear")
         self.write(self.REG_ADDR_ISR, 0x01)
-        #print("clear ap_done interrupt successful")
+        print("clear ap_done interrupt successful")
 
     def set_single_bit(self, addr, idx):
         self.write(addr, 1 << idx)
@@ -140,33 +141,37 @@ class HLS4ML_IP(DefaultIP):
 
     def set_input(self, idx, buffer):
 
-        #print(f"input {self.INP_PORT_NAMEs[idx]} will be set to addr: {hex(buffer.physical_address)} with elements: {buffer.size}")
+        print(
+            f"input {self.INP_PORT_NAMEs[idx]} will be set to addr: {hex(buffer.physical_address)} with elements: {buffer.size}"
+        )
         self.write(self.REG_ADDR_INP_PTRs[idx], buffer.physical_address)
         self.write(self.REG_ADDR_INP_PTRs[idx] + 4, 0)
         buffer.flush()
 
     def set_output(self, idx, buffer):
 
-        #print(f"output {self.OUT_PORT_NAMEs[idx]} will be set to addr: {hex(buffer.physical_address)} with elements: {buffer.size}")
+        print(
+            f"output {self.OUT_PORT_NAMEs[idx]} will be set to addr: {hex(buffer.physical_address)} with elements: {buffer.size}"
+        )
         self.write(self.REG_ADDR_OUT_PTRs[idx], buffer.physical_address)
         self.write(self.REG_ADDR_OUT_PTRs[idx] + 4, 0)
 
     def set_amt_query(self, val):
-        #print(f"amount of queries will be set to: {val} at address: {hex(self.REG_ADDR_BATCH_SIZE)}")
+        print(f"amount of queries will be set to: {val} at address: {hex(self.REG_ADDR_BATCH_SIZE)}")
         self.write(self.REG_ADDR_BATCH_SIZE, val)
 
     def prepare_intr(self):
-        #print("prepare your interrupt")
+        print("prepare your interrupt")
         self.enable_gie()
         self.enable_done_intr()
         self.clear_done_status()
-        #print("----------------------")
+        print("----------------------")
 
     def build_event_and_run(self, intr, profile):
 
         async def wait_for_acc():
             exec_time = 0
-            #print("starting the accelerator")
+            print("starting the accelerator")
             if profile:
                 t_start = time.perf_counter()
 
@@ -177,13 +182,14 @@ class HLS4ML_IP(DefaultIP):
             # Wait for complete
             await intr.wait()
 
-            # #print porfile data
+            # print porfile data
             if profile:
                 t_end = time.perf_counter()
                 exec_time = t_end - t_start
-                #print(f"Accelerator execution time: \{(exec_time) * 1e3:.3f} ms")
+                print(f"Accelerator execution time: \
+                      {(exec_time) * 1e3:.3f} ms")
 
-            #print("accelerator has finished")
+            print("accelerator has finished")
 
             return exec_time if profile else None
 
