@@ -28,7 +28,7 @@ conda env update -f environment-HGQ.yml
 
 ### Prerequisite for synthesizing: Vitis and Vivado
 
-To synthesize with HLS4ML backends [Vitis](https://fastmachinelearning.org/hls4ml/backend/vitis.html) and [Vitis Unified](https://github.com/fastmachinelearning/hls4ml/pull/1376) you are required to have [Vitis Unified Software Platform (includes Vivado, Vitis and Vitis HLS, but requires selecting Device "Kria SOMs and Starter Kits" for installation)](https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license/Download-and-Installation) available in path. 
+To synthesize with HLS4ML backends [Vitis](https://fastmachinelearning.org/hls4ml/backend/vitis.html) and [Vitis Unified](https://github.com/fastmachinelearning/hls4ml/pull/1376) you are required to have [Vitis Unified Software Platform (includes Vivado, Vitis and Vitis HLS, but requires selecting Device "Kria SOMs and Starter Kits" for installation)](https://docs.amd.com/r/en-US/ug1400-vitis-embedded/Installing-the-Vitis-Software-Platform) available in path. 
 This is done at the entrypoint in Docker automatically, but for host-installation it's important to initialize Vitis and Vivado (to env) for the shell spawning python-processes (e.g. VS Code or Jupyter Notebook). It looks something like this before you start jupyter:
 
 ```bash

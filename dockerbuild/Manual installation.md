@@ -12,15 +12,12 @@ For an overview, such as system requirements take a look at the [official instal
 For batch (CLI) installation, there is sufficient information based on our batch installation in the Docker-container, with the prerequisites outlined in [`/dockerbuild/README.md`](./README.md) (mainly how to get the appropriate installation archive) and the installation-configurations provided in [`/dockerbuild/installer/install_config_vitis_2025.2.txt`](./installer/install_config_vitis_2025.2.txtinstall_config_vitis_2026).
 
 
-https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html
-
-
 
 ## GUI Installation
 
 1. Download the [AMD Unified Installer 2025.2 (webinstaller)](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html).
 
-*Note: There is a high chance of bitrot. [(root page)](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools.html)*
+*Note: There is a chance of bitrot. [(root page)](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools.html)*
 
 
 2. On linux, run the installation as root in terminal with `sudo <installer-file>` (if in same directory). You may need to make it executable: `chmod +x <installer file>`.
