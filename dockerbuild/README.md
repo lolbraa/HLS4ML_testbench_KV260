@@ -16,7 +16,7 @@ Conda Environments may be set up by mounting a directory with files with the fil
 
 ### Prerequisite
 
-Some familiarity with Docker is probably great.
+Some familiarity with Docker is expected.
 
 Vivado/Vitis has some [system requirements](https://docs.amd.com/r/en-US/ug973-vivado-release-notes-install-license/System-Memory-Recommendations), mainly [in terms of RAM](https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vivado/vivado-buy.html#tabs-413944f675-item-9598720e6a-tab). The KV260 (xck26-sfvc784-2LV-c) is not listed, nevertheless, from our experience around 8-12 GB is sufficient. That is completely context dependent.
 
@@ -26,7 +26,7 @@ Vivado compilation are heavy processes, which may render your laptop unusable un
 ### Import/Load Image
 
 A prebuilt image may be loaded by 
-([documentation](https://docs.docker.com/reference/cli/docker/image/load/))
+([documentation](https://docs.docker.com/reference/cli/docker/image/load/)):
 
 ```bash
 docker load -i hls4ml-kv260-testbench.tar.gz
@@ -54,7 +54,7 @@ Stop `docker stop hls4ml-kv260-testbench`
 
 
 
-## Notes on Windows
+### Notes on Windows
 Doker on Windows utilizes two underlying stacks for virtualization. Our testing has been done on Windows 11 25H2 and WSL 2.7.3.0 installed using official instructions of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (`wsl --install`) and [Docker](https://docs.docker.com/desktop/setup/install/windows-install/) (installation .exe from website). We've not tried building in a Windows environment.
 
 WSL is configured to only use 50% of the RAM by default, often leading to Out of Memory exceptions when runninng the heavy implementation or synthesis process. The process usually
@@ -80,11 +80,11 @@ A full HLS4ML build with Vitis Unified (synthesis + implementation/bitfile gener
 
 ## Building and maintaining container
 
-### Preparing Xilinx Installer Archive
+### Preparing the Xilinx Installer Archive
 
-The dockerfile installs Vivado/Vitis using the installer archive provided by Xilinx. You may want to download the complete insatller archive found on [Xilinx' download page](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html), e.g. AMD Unified Installer for FPGAs & Adaptive SoCs 2025.2 SFD (TAR/GZIP - 95.68 GB).
+The dockerfile installs Vivado/Vitis using the installer archive provided by Xilinx. You may want to download the complete installer archive found on [Xilinx' download page](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2025-2.html), e.g. AMD Unified Installer for FPGAs & Adaptive SoCs 2025.2 SFD (TAR/GZIP - 95.68 GB). The download options on the tab "Vivado (HW Developer)" and "Vitis (SW Developer)" looks the same in this regard. 
 
-However, to keep the required disk space to a minimum, use the appropriate Web Installer to only download/archive the required files. Check out the images in [`images/vitis unified software platform/`](./images/vitis%20unified%20software%20platform/)
+However, to keep the required disk space to a minimum, use the appropriate Web Installer to only download/archive the required files. Check out the images in [`images/vitis unified software platform/`](./images/vitis%20unified%20software%20platform/).
 
 
 ### Keep in mind
