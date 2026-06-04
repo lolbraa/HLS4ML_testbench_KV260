@@ -29,7 +29,7 @@ A prebuilt image may be loaded by
 ([documentation](https://docs.docker.com/reference/cli/docker/image/load/)):
 
 ```bash
-docker load -i hls4ml-kv260-testbench.tar.gz
+docker load -i hls4ml-kv260-testbench.v2025.2.tar.gz
 ```
 
 
@@ -41,7 +41,7 @@ The docker may be run by using the following docker-run command (adapted to your
 docker run --init -it --name hls4ml-kv260-testbench -p 8443:8443  \
     -v ~/Bachelor/HLS4ML_testbench_KV260/development/:/work/development/ \
     -v ./environments/:/work/environments/ \
-    hls4ml-kv260-testbench:final
+    hls4ml-kv260-testbench:v2025.2
 ```
 
 The entrypoint launches VS Code on [http://127.0.0.1:8443/login](http://127.0.0.1:8443/login) or localhost:8443. The password is printed in log.
@@ -110,7 +110,7 @@ docker image ls
 Exporting image for others to import ([documentation](https://docs.docker.com/reference/cli/docker/image/save/))
 
 ```bash
-docker save hls4ml-kv260-testbench:final | gzip > hls4ml-kv260-testbench.tar.gz
+docker save hls4ml-kv260-testbench:v2025.2 | gzip > hls4ml-kv260-testbench.v2025.2.tar.gz
 ```
 
 
