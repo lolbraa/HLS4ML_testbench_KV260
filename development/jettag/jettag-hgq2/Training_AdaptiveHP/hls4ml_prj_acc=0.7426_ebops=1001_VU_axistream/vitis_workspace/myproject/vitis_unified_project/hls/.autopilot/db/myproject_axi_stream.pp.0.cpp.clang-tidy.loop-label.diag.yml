@@ -1,0 +1,148 @@
+---
+MainSourceFile:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          1018431
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          1018906
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          1019382
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/usr/lib/AMD/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          1359041
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          2116808
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_39_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      39
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          2117057
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_39_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_56_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/firmware/nnet_utils/nnet_types.h'
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          2117552
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_56_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_8_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/firmware/myproject_axi_stream.cpp'
+      FileOffset:      8
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          2206967
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_8_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_10_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/firmware/myproject_axi_stream.cpp'
+      FileOffset:      10
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          2207102
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_10_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_25_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/firmware/myproject_axi_stream.cpp'
+      FileOffset:      25
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          2207630
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_25_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_27_2:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/firmware/myproject_axi_stream.cpp'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          2207786
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_27_2: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_40_1:  '
+      FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/firmware/myproject_axi_stream.cpp'
+      FileOffset:      40
+      Replacements:
+        - FilePath:        '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject/vitis_unified_project/hls/.autopilot/db/myproject_axi_stream.pp.0.cpp'
+          Offset:          2208330
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_40_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/jettag/jettag-hgq2/Training_AdaptiveHP/hls4ml_prj_acc=0.7426_ebops=1001_VU_axistream/vitis_workspace/myproject'
+...

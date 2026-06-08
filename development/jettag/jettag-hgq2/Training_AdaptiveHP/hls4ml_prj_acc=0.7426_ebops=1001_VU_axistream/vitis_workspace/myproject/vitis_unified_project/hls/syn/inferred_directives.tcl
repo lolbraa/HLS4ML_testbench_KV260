@@ -1,0 +1,3 @@
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline store_result/store_result_loop
+set_directive_pipeline load_input/load_input_loop
