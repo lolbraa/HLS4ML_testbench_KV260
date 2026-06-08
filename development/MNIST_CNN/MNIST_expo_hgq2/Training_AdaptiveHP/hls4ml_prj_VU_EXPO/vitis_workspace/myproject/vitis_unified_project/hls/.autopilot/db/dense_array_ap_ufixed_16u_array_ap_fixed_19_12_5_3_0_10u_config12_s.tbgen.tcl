@@ -1,0 +1,599 @@
+set moduleName dense_array_ap_ufixed_16u_array_ap_fixed_19_12_5_3_0_10u_config12_s
+set isTopModule 0
+set isCombinational 0
+set isDatapathOnly 0
+set isPipelined 0
+set isPipelined_legacy 0
+set pipeline_type none
+set FunctionProtocol ap_ctrl_hs
+set restart_counter_num 0
+set isOneStateSeq 0
+set ProfileFlag 0
+set StallSigGenFlag 0
+set isEnableWaveformDebug 1
+set hasInterrupt 0
+set DLRegFirstOffset 0
+set DLRegItemOffset 0
+set svuvm_can_support 1
+set cdfgNum 25
+set C_modelName {dense<array<ap_ufixed,16u>,array<ap_fixed<19,12,5,3,0>,10u>,config12>}
+set C_modelType { void 0 }
+set ap_memory_interface_dict [dict create]
+set C_modelArgList {
+	{ layer9_out int 80 regular {fifo 0 volatile }  }
+	{ stream_out0_layer12_out int 320 regular {fifo 1 volatile } {global 1}  }
+}
+set hasAXIMCache 0
+set l_AXIML2Cache [list]
+set AXIMCacheInstDict [dict create]
+set C_modelArgMapList {[ 
+	{ "Name" : "layer9_out", "interface" : "fifo", "bitwidth" : 80, "direction" : "READONLY"} , 
+ 	{ "Name" : "stream_out0_layer12_out", "interface" : "fifo", "bitwidth" : 320, "direction" : "WRITEONLY", "extern" : 0} ]}
+# RTL Port declarations: 
+set portNum 17
+set portList { 
+	{ ap_clk sc_in sc_logic 1 clock -1 } 
+	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
+	{ ap_start sc_in sc_logic 1 start -1 } 
+	{ ap_done sc_out sc_logic 1 predone -1 } 
+	{ ap_continue sc_in sc_logic 1 continue -1 } 
+	{ ap_idle sc_out sc_logic 1 done -1 } 
+	{ ap_ready sc_out sc_logic 1 ready -1 } 
+	{ layer9_out_dout sc_in sc_lv 80 signal 0 } 
+	{ layer9_out_empty_n sc_in sc_logic 1 signal 0 } 
+	{ layer9_out_read sc_out sc_logic 1 signal 0 } 
+	{ layer9_out_num_data_valid sc_in sc_lv 6 signal 0 } 
+	{ layer9_out_fifo_cap sc_in sc_lv 6 signal 0 } 
+	{ stream_out0_layer12_out_din sc_out sc_lv 320 signal 1 } 
+	{ stream_out0_layer12_out_full_n sc_in sc_logic 1 signal 1 } 
+	{ stream_out0_layer12_out_write sc_out sc_logic 1 signal 1 } 
+	{ stream_out0_layer12_out_num_data_valid sc_in sc_lv 8 signal 1 } 
+	{ stream_out0_layer12_out_fifo_cap sc_in sc_lv 8 signal 1 } 
+}
+set NewPortList {[ 
+	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
+ 	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
+ 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
+ 	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
+ 	{ "name": "ap_continue", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "continue", "bundle":{"name": "ap_continue", "role": "default" }} , 
+ 	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
+ 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "layer9_out_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":80, "type": "signal", "bundle":{"name": "layer9_out", "role": "dout" }} , 
+ 	{ "name": "layer9_out_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "layer9_out", "role": "empty_n" }} , 
+ 	{ "name": "layer9_out_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "layer9_out", "role": "read" }} , 
+ 	{ "name": "layer9_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer9_out", "role": "num_data_valid" }} , 
+ 	{ "name": "layer9_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "layer9_out", "role": "fifo_cap" }} , 
+ 	{ "name": "stream_out0_layer12_out_din", "direction": "out", "datatype": "sc_lv", "bitwidth":320, "type": "signal", "bundle":{"name": "stream_out0_layer12_out", "role": "din" }} , 
+ 	{ "name": "stream_out0_layer12_out_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "stream_out0_layer12_out", "role": "full_n" }} , 
+ 	{ "name": "stream_out0_layer12_out_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "stream_out0_layer12_out", "role": "write" }} , 
+ 	{ "name": "stream_out0_layer12_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "stream_out0_layer12_out", "role": "num_data_valid" }} , 
+ 	{ "name": "stream_out0_layer12_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "stream_out0_layer12_out", "role": "fifo_cap" }}  ]}
+
+set ArgLastReadFirstWriteLatency {
+	dense_array_ap_ufixed_16u_array_ap_fixed_19_12_5_3_0_10u_config12_s {
+		layer9_out {Type I LastRead 1 FirstWrite -1}
+		stream_out0_layer12_out {Type O LastRead -1 FirstWrite 7}}
+	dense_array_array_ap_fixed_19_12_5_3_0_10u_config12_Pipeline_DataPrepare {
+		layer9_out {Type I LastRead 1 FirstWrite -1}
+		p_0_15_0_0_0505_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0503_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0501_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0499_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0497_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0495_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0493_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0491_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0489_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0487_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0485_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0483_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0481_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0479_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0477_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0475_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0473_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0471_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0469_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0467_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0465_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0463_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0461_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0459_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0457_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0455_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0453_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0451_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0449_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0447_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0445_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0443_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0441_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0439_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0437_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0435_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0433_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0431_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0429_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0427_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0425_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0423_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0421_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0419_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0417_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0415_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0413_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0411_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0409_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0407_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0405_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0403_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0401_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0399_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0397_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0395_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0393_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0391_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0389_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0387_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0385_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0383_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0381_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0379_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0377_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0375_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0373_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0371_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0369_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0367_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0365_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0363_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0361_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0359_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0357_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0355_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0353_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0351_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0349_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0347_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0345_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0343_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0341_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0339_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0337_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0335_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0333_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0331_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0329_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0327_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0325_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0323_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0321_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0319_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0317_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0315_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0313_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0311_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0309_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0307_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0305_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0303_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0301_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0299_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0297_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0295_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0293_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0291_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0289_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0287_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0285_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0283_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0281_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0279_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0277_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0275_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0273_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0271_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0269_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0267_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0265_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0263_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0261_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0259_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0257_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0255_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0253_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0251_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0249_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0247_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0245_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0243_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0241_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0239_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0237_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0235_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0233_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0231_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0229_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0227_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0225_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0223_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0221_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0219_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0217_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0215_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0213_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0211_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0209_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0207_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0205_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0203_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0201_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0199_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0197_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0195_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0193_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0191_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0189_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0187_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0185_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0183_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0181_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0179_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0177_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0175_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0173_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0171_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0169_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0167_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0165_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0163_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0161_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0159_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_9_0_0_0157_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0155_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0153_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0151_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0149_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0147_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0145_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0143_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0141_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0139_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0137_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_9_0_0_0135_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0133_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0131_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0129_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0127_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0125_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0123_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0121_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_0119_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_0117_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_0115_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_0113_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_0111_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_0109_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_0107_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_0105_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_0103_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_0101_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_099_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_097_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_095_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_093_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_091_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_089_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_087_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_085_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_083_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_081_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_079_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_077_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_075_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_073_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_071_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_069_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_067_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_065_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_063_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_061_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_059_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_057_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_055_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_9_0_0_053_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_051_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_049_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_047_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_045_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_043_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_041_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_039_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_037_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_035_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_033_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_031_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_029_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_027_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_025_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_023_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_021_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_15_0_0_019_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_14_0_0_017_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_13_0_0_015_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_10_0_0_013_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_8_0_0_011_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_7_0_0_09_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_5_0_0_07_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_4_0_0_05_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_1_0_0_03_i_out {Type O LastRead -1 FirstWrite 0}
+		p_0_0_0_0_01_i_out {Type O LastRead -1 FirstWrite 0}}
+	dense_latency_ap_ufixed_5_3_0_3_0_ap_fixed_19_12_5_3_0_config12_s {
+		data_0_val {Type I LastRead 0 FirstWrite -1}
+		data_1_val {Type I LastRead 0 FirstWrite -1}
+		data_4_val {Type I LastRead 0 FirstWrite -1}
+		data_5_val {Type I LastRead 0 FirstWrite -1}
+		data_7_val {Type I LastRead 0 FirstWrite -1}
+		data_8_val {Type I LastRead 0 FirstWrite -1}
+		data_10_val {Type I LastRead 0 FirstWrite -1}
+		data_13_val {Type I LastRead 0 FirstWrite -1}
+		data_14_val {Type I LastRead 0 FirstWrite -1}
+		data_15_val {Type I LastRead 0 FirstWrite -1}
+		data_16_val {Type I LastRead 0 FirstWrite -1}
+		data_17_val {Type I LastRead 0 FirstWrite -1}
+		data_20_val {Type I LastRead 0 FirstWrite -1}
+		data_21_val {Type I LastRead 0 FirstWrite -1}
+		data_23_val {Type I LastRead 0 FirstWrite -1}
+		data_24_val {Type I LastRead 0 FirstWrite -1}
+		data_26_val {Type I LastRead 0 FirstWrite -1}
+		data_29_val {Type I LastRead 0 FirstWrite -1}
+		data_30_val {Type I LastRead 0 FirstWrite -1}
+		data_31_val {Type I LastRead 0 FirstWrite -1}
+		data_32_val {Type I LastRead 0 FirstWrite -1}
+		data_33_val {Type I LastRead 0 FirstWrite -1}
+		data_36_val {Type I LastRead 0 FirstWrite -1}
+		data_37_val {Type I LastRead 0 FirstWrite -1}
+		data_39_val {Type I LastRead 0 FirstWrite -1}
+		data_40_val {Type I LastRead 0 FirstWrite -1}
+		data_42_val {Type I LastRead 0 FirstWrite -1}
+		data_45_val {Type I LastRead 0 FirstWrite -1}
+		data_46_val {Type I LastRead 0 FirstWrite -1}
+		data_47_val {Type I LastRead 0 FirstWrite -1}
+		data_48_val {Type I LastRead 0 FirstWrite -1}
+		data_49_val {Type I LastRead 0 FirstWrite -1}
+		data_52_val {Type I LastRead 0 FirstWrite -1}
+		data_53_val {Type I LastRead 0 FirstWrite -1}
+		data_55_val {Type I LastRead 0 FirstWrite -1}
+		data_56_val {Type I LastRead 0 FirstWrite -1}
+		data_58_val {Type I LastRead 0 FirstWrite -1}
+		data_61_val {Type I LastRead 0 FirstWrite -1}
+		data_62_val {Type I LastRead 0 FirstWrite -1}
+		data_63_val {Type I LastRead 0 FirstWrite -1}
+		data_64_val {Type I LastRead 0 FirstWrite -1}
+		data_65_val {Type I LastRead 0 FirstWrite -1}
+		data_68_val {Type I LastRead 0 FirstWrite -1}
+		data_69_val {Type I LastRead 0 FirstWrite -1}
+		data_71_val {Type I LastRead 0 FirstWrite -1}
+		data_72_val {Type I LastRead 0 FirstWrite -1}
+		data_74_val {Type I LastRead 0 FirstWrite -1}
+		data_77_val {Type I LastRead 0 FirstWrite -1}
+		data_78_val {Type I LastRead 0 FirstWrite -1}
+		data_79_val {Type I LastRead 0 FirstWrite -1}
+		data_80_val {Type I LastRead 0 FirstWrite -1}
+		data_81_val {Type I LastRead 0 FirstWrite -1}
+		data_84_val {Type I LastRead 0 FirstWrite -1}
+		data_85_val {Type I LastRead 0 FirstWrite -1}
+		data_87_val {Type I LastRead 0 FirstWrite -1}
+		data_88_val {Type I LastRead 0 FirstWrite -1}
+		data_90_val {Type I LastRead 0 FirstWrite -1}
+		data_93_val {Type I LastRead 0 FirstWrite -1}
+		data_94_val {Type I LastRead 0 FirstWrite -1}
+		data_95_val {Type I LastRead 0 FirstWrite -1}
+		data_96_val {Type I LastRead 0 FirstWrite -1}
+		data_97_val {Type I LastRead 0 FirstWrite -1}
+		data_100_val {Type I LastRead 0 FirstWrite -1}
+		data_101_val {Type I LastRead 0 FirstWrite -1}
+		data_103_val {Type I LastRead 0 FirstWrite -1}
+		data_104_val {Type I LastRead 0 FirstWrite -1}
+		data_106_val {Type I LastRead 0 FirstWrite -1}
+		data_109_val {Type I LastRead 0 FirstWrite -1}
+		data_110_val {Type I LastRead 0 FirstWrite -1}
+		data_111_val {Type I LastRead 0 FirstWrite -1}
+		data_112_val {Type I LastRead 0 FirstWrite -1}
+		data_113_val {Type I LastRead 0 FirstWrite -1}
+		data_116_val {Type I LastRead 0 FirstWrite -1}
+		data_117_val {Type I LastRead 0 FirstWrite -1}
+		data_119_val {Type I LastRead 0 FirstWrite -1}
+		data_120_val {Type I LastRead 0 FirstWrite -1}
+		data_122_val {Type I LastRead 0 FirstWrite -1}
+		data_125_val {Type I LastRead 0 FirstWrite -1}
+		data_126_val {Type I LastRead 0 FirstWrite -1}
+		data_127_val {Type I LastRead 0 FirstWrite -1}
+		data_128_val {Type I LastRead 0 FirstWrite -1}
+		data_129_val {Type I LastRead 0 FirstWrite -1}
+		data_132_val {Type I LastRead 0 FirstWrite -1}
+		data_133_val {Type I LastRead 0 FirstWrite -1}
+		data_135_val {Type I LastRead 0 FirstWrite -1}
+		data_136_val {Type I LastRead 0 FirstWrite -1}
+		data_138_val {Type I LastRead 0 FirstWrite -1}
+		data_141_val {Type I LastRead 0 FirstWrite -1}
+		data_142_val {Type I LastRead 0 FirstWrite -1}
+		data_143_val {Type I LastRead 0 FirstWrite -1}
+		data_144_val {Type I LastRead 0 FirstWrite -1}
+		data_145_val {Type I LastRead 0 FirstWrite -1}
+		data_148_val {Type I LastRead 0 FirstWrite -1}
+		data_149_val {Type I LastRead 0 FirstWrite -1}
+		data_151_val {Type I LastRead 0 FirstWrite -1}
+		data_152_val {Type I LastRead 0 FirstWrite -1}
+		data_154_val {Type I LastRead 0 FirstWrite -1}
+		data_157_val {Type I LastRead 0 FirstWrite -1}
+		data_158_val {Type I LastRead 0 FirstWrite -1}
+		data_159_val {Type I LastRead 0 FirstWrite -1}
+		data_160_val {Type I LastRead 0 FirstWrite -1}
+		data_161_val {Type I LastRead 0 FirstWrite -1}
+		data_164_val {Type I LastRead 0 FirstWrite -1}
+		data_165_val {Type I LastRead 0 FirstWrite -1}
+		data_167_val {Type I LastRead 0 FirstWrite -1}
+		data_168_val {Type I LastRead 0 FirstWrite -1}
+		data_170_val {Type I LastRead 0 FirstWrite -1}
+		data_173_val {Type I LastRead 0 FirstWrite -1}
+		data_174_val {Type I LastRead 0 FirstWrite -1}
+		data_175_val {Type I LastRead 0 FirstWrite -1}
+		data_176_val {Type I LastRead 0 FirstWrite -1}
+		data_177_val {Type I LastRead 0 FirstWrite -1}
+		data_180_val {Type I LastRead 0 FirstWrite -1}
+		data_181_val {Type I LastRead 0 FirstWrite -1}
+		data_183_val {Type I LastRead 0 FirstWrite -1}
+		data_184_val {Type I LastRead 0 FirstWrite -1}
+		data_186_val {Type I LastRead 0 FirstWrite -1}
+		data_189_val {Type I LastRead 0 FirstWrite -1}
+		data_190_val {Type I LastRead 0 FirstWrite -1}
+		data_191_val {Type I LastRead 0 FirstWrite -1}
+		data_192_val {Type I LastRead 0 FirstWrite -1}
+		data_193_val {Type I LastRead 0 FirstWrite -1}
+		data_196_val {Type I LastRead 0 FirstWrite -1}
+		data_197_val {Type I LastRead 0 FirstWrite -1}
+		data_199_val {Type I LastRead 0 FirstWrite -1}
+		data_200_val {Type I LastRead 0 FirstWrite -1}
+		data_202_val {Type I LastRead 0 FirstWrite -1}
+		data_205_val {Type I LastRead 0 FirstWrite -1}
+		data_206_val {Type I LastRead 0 FirstWrite -1}
+		data_207_val {Type I LastRead 0 FirstWrite -1}
+		data_208_val {Type I LastRead 0 FirstWrite -1}
+		data_209_val {Type I LastRead 0 FirstWrite -1}
+		data_212_val {Type I LastRead 0 FirstWrite -1}
+		data_213_val {Type I LastRead 0 FirstWrite -1}
+		data_215_val {Type I LastRead 0 FirstWrite -1}
+		data_216_val {Type I LastRead 0 FirstWrite -1}
+		data_218_val {Type I LastRead 0 FirstWrite -1}
+		data_221_val {Type I LastRead 0 FirstWrite -1}
+		data_222_val {Type I LastRead 0 FirstWrite -1}
+		data_223_val {Type I LastRead 0 FirstWrite -1}
+		data_224_val {Type I LastRead 0 FirstWrite -1}
+		data_225_val {Type I LastRead 0 FirstWrite -1}
+		data_228_val {Type I LastRead 0 FirstWrite -1}
+		data_229_val {Type I LastRead 0 FirstWrite -1}
+		data_231_val {Type I LastRead 0 FirstWrite -1}
+		data_232_val {Type I LastRead 0 FirstWrite -1}
+		data_234_val {Type I LastRead 0 FirstWrite -1}
+		data_237_val {Type I LastRead 0 FirstWrite -1}
+		data_238_val {Type I LastRead 0 FirstWrite -1}
+		data_239_val {Type I LastRead 0 FirstWrite -1}
+		data_240_val {Type I LastRead 0 FirstWrite -1}
+		data_241_val {Type I LastRead 0 FirstWrite -1}
+		data_244_val {Type I LastRead 0 FirstWrite -1}
+		data_245_val {Type I LastRead 0 FirstWrite -1}
+		data_247_val {Type I LastRead 0 FirstWrite -1}
+		data_248_val {Type I LastRead 0 FirstWrite -1}
+		data_250_val {Type I LastRead 0 FirstWrite -1}
+		data_253_val {Type I LastRead 0 FirstWrite -1}
+		data_254_val {Type I LastRead 0 FirstWrite -1}
+		data_255_val {Type I LastRead 0 FirstWrite -1}
+		data_256_val {Type I LastRead 0 FirstWrite -1}
+		data_257_val {Type I LastRead 0 FirstWrite -1}
+		data_260_val {Type I LastRead 0 FirstWrite -1}
+		data_261_val {Type I LastRead 0 FirstWrite -1}
+		data_263_val {Type I LastRead 0 FirstWrite -1}
+		data_264_val {Type I LastRead 0 FirstWrite -1}
+		data_265_val {Type I LastRead 0 FirstWrite -1}
+		data_266_val {Type I LastRead 0 FirstWrite -1}
+		data_269_val {Type I LastRead 0 FirstWrite -1}
+		data_270_val {Type I LastRead 0 FirstWrite -1}
+		data_271_val {Type I LastRead 0 FirstWrite -1}
+		data_272_val {Type I LastRead 0 FirstWrite -1}
+		data_273_val {Type I LastRead 0 FirstWrite -1}
+		data_276_val {Type I LastRead 0 FirstWrite -1}
+		data_277_val {Type I LastRead 0 FirstWrite -1}
+		data_279_val {Type I LastRead 0 FirstWrite -1}
+		data_280_val {Type I LastRead 0 FirstWrite -1}
+		data_281_val {Type I LastRead 0 FirstWrite -1}
+		data_282_val {Type I LastRead 0 FirstWrite -1}
+		data_285_val {Type I LastRead 0 FirstWrite -1}
+		data_286_val {Type I LastRead 0 FirstWrite -1}
+		data_287_val {Type I LastRead 0 FirstWrite -1}
+		data_288_val {Type I LastRead 0 FirstWrite -1}
+		data_289_val {Type I LastRead 0 FirstWrite -1}
+		data_292_val {Type I LastRead 0 FirstWrite -1}
+		data_293_val {Type I LastRead 0 FirstWrite -1}
+		data_295_val {Type I LastRead 0 FirstWrite -1}
+		data_296_val {Type I LastRead 0 FirstWrite -1}
+		data_298_val {Type I LastRead 0 FirstWrite -1}
+		data_301_val {Type I LastRead 0 FirstWrite -1}
+		data_302_val {Type I LastRead 0 FirstWrite -1}
+		data_303_val {Type I LastRead 0 FirstWrite -1}
+		data_304_val {Type I LastRead 0 FirstWrite -1}
+		data_305_val {Type I LastRead 0 FirstWrite -1}
+		data_308_val {Type I LastRead 0 FirstWrite -1}
+		data_309_val {Type I LastRead 0 FirstWrite -1}
+		data_311_val {Type I LastRead 0 FirstWrite -1}
+		data_312_val {Type I LastRead 0 FirstWrite -1}
+		data_314_val {Type I LastRead 0 FirstWrite -1}
+		data_317_val {Type I LastRead 0 FirstWrite -1}
+		data_318_val {Type I LastRead 0 FirstWrite -1}
+		data_319_val {Type I LastRead 0 FirstWrite -1}
+		data_320_val {Type I LastRead 0 FirstWrite -1}
+		data_321_val {Type I LastRead 0 FirstWrite -1}
+		data_324_val {Type I LastRead 0 FirstWrite -1}
+		data_325_val {Type I LastRead 0 FirstWrite -1}
+		data_327_val {Type I LastRead 0 FirstWrite -1}
+		data_328_val {Type I LastRead 0 FirstWrite -1}
+		data_330_val {Type I LastRead 0 FirstWrite -1}
+		data_333_val {Type I LastRead 0 FirstWrite -1}
+		data_334_val {Type I LastRead 0 FirstWrite -1}
+		data_335_val {Type I LastRead 0 FirstWrite -1}
+		data_336_val {Type I LastRead 0 FirstWrite -1}
+		data_337_val {Type I LastRead 0 FirstWrite -1}
+		data_340_val {Type I LastRead 0 FirstWrite -1}
+		data_341_val {Type I LastRead 0 FirstWrite -1}
+		data_343_val {Type I LastRead 0 FirstWrite -1}
+		data_344_val {Type I LastRead 0 FirstWrite -1}
+		data_345_val {Type I LastRead 0 FirstWrite -1}
+		data_346_val {Type I LastRead 0 FirstWrite -1}
+		data_349_val {Type I LastRead 0 FirstWrite -1}
+		data_350_val {Type I LastRead 0 FirstWrite -1}
+		data_351_val {Type I LastRead 0 FirstWrite -1}
+		data_352_val {Type I LastRead 0 FirstWrite -1}
+		data_353_val {Type I LastRead 0 FirstWrite -1}
+		data_356_val {Type I LastRead 0 FirstWrite -1}
+		data_357_val {Type I LastRead 0 FirstWrite -1}
+		data_359_val {Type I LastRead 0 FirstWrite -1}
+		data_360_val {Type I LastRead 0 FirstWrite -1}
+		data_362_val {Type I LastRead 0 FirstWrite -1}
+		data_365_val {Type I LastRead 0 FirstWrite -1}
+		data_366_val {Type I LastRead 0 FirstWrite -1}
+		data_367_val {Type I LastRead 0 FirstWrite -1}
+		data_368_val {Type I LastRead 0 FirstWrite -1}
+		data_369_val {Type I LastRead 0 FirstWrite -1}
+		data_372_val {Type I LastRead 0 FirstWrite -1}
+		data_373_val {Type I LastRead 0 FirstWrite -1}
+		data_375_val {Type I LastRead 0 FirstWrite -1}
+		data_376_val {Type I LastRead 0 FirstWrite -1}
+		data_378_val {Type I LastRead 0 FirstWrite -1}
+		data_381_val {Type I LastRead 0 FirstWrite -1}
+		data_382_val {Type I LastRead 0 FirstWrite -1}
+		data_383_val {Type I LastRead 0 FirstWrite -1}
+		data_384_val {Type I LastRead 0 FirstWrite -1}
+		data_385_val {Type I LastRead 0 FirstWrite -1}
+		data_388_val {Type I LastRead 0 FirstWrite -1}
+		data_389_val {Type I LastRead 0 FirstWrite -1}
+		data_391_val {Type I LastRead 0 FirstWrite -1}
+		data_392_val {Type I LastRead 0 FirstWrite -1}
+		data_394_val {Type I LastRead 0 FirstWrite -1}
+		data_397_val {Type I LastRead 0 FirstWrite -1}
+		data_398_val {Type I LastRead 0 FirstWrite -1}
+		data_399_val {Type I LastRead 0 FirstWrite -1}}}
+
+set hasDtUnsupportedChannel 0
+
+set PerformanceInfo {[
+	{"Name" : "Latency", "Min" : "34", "Max" : "34"}
+	, {"Name" : "Interval", "Min" : "34", "Max" : "34"}
+]}
+
+set PipelineEnableSignalInfo {[
+]}
+
+set Spec2ImplPortList { 
+	layer9_out { ap_fifo {  { layer9_out_dout fifo_data_out 0 80 }  { layer9_out_empty_n fifo_status_empty 0 1 }  { layer9_out_read fifo_data_in 1 1 }  { layer9_out_num_data_valid fifo_update 0 6 }  { layer9_out_fifo_cap fifo_data 0 6 } } }
+	stream_out0_layer12_out { ap_fifo {  { stream_out0_layer12_out_din fifo_data_out 1 320 }  { stream_out0_layer12_out_full_n fifo_status_empty 0 1 }  { stream_out0_layer12_out_write fifo_data_in 1 1 }  { stream_out0_layer12_out_num_data_valid fifo_update 0 8 }  { stream_out0_layer12_out_fifo_cap fifo_data 0 8 } } }
+}

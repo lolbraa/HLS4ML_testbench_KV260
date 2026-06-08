@@ -1,0 +1,1321 @@
+<ENTRY>
+{
+ "thisFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/myproject.xclbin.link_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  8 14:38:13 2026",
+ "timestampMillis": "1780922293142",
+ "buildStep": {
+  "cmdId": "fb69254c-09cf-46ae-a813-906b958a2439",
+  "name": "v++",
+  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/link.steps.log",
+  "commandLine": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  --vivado.prop \"run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\" --advanced.misc \"report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\" -l -t hw --platform ../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa ../myproject/vitis_unified_project/myproject_axi_master.xo --config link_system.cfg -o myproject.xclbin --save-temps ",
+  "args": [
+   "-l",
+   "-t",
+   "hw",
+   "--platform",
+   "../kv260/tcl_scripts/output/kv260_axi_all_platform.xsa",
+   "../myproject/vitis_unified_project/myproject_axi_master.xo",
+   "--config",
+   "link_system.cfg",
+   "-o",
+   "myproject.xclbin",
+   "--save-temps"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/link_system.cfg",
+    "content": "\n# hls-fpga-machine-learning insert custom connection\n"
+   }
+  ],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:13 2026",
+ "timestampMillis": "1780922293142",
+ "status": {
+  "cmdId": "fb69254c-09cf-46ae-a813-906b958a2439",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Mon Jun  8 14:38:13 2026",
+ "timestampMillis": "1780922293681",
+ "buildSummary": {
+  "hardwarePlatform": "kv260_axi_all_platform.xsa",
+  "hardwareDsa": "",
+  "platformDirectory": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/kv260/tcl_scripts/output",
+  "runtime": "OpenCL",
+  "systemConfig": "Linux",
+  "flow": "BF_LINK",
+  "target": "TT_HW",
+  "binaryContainer": {
+   "base": {
+    "type": "BT_UKNOWN",
+    "name": "myproject",
+    "file": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/myproject.xclbin",
+    "reports": [],
+    "uuid": ""
+   },
+   "kernels": []
+  },
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "myproject_axi_master",
+     "file": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject.cpp",
+     "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xo/myproject_axi_master/myproject_axi_master/cpu_sources/myproject_axi_master.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [
+     "myproject_axi_master_1"
+    ],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "Vitis V++ Compiler Release 2025.2. SW Build 6295257 on 2025-11-13-01:29:13"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:38:13 2026",
+ "timestampMillis": "1780922293683",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/analyzer_input/analyzer_summary.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "AIE_ANALYZE_METADATA",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:38:13 2026",
+ "timestampMillis": "1780922293702",
+ "buildStep": {
+  "cmdId": "80e638f9-6d77-478d-b76c-8edb862a54d4",
+  "name": "system_link",
+  "logFile": "",
+  "commandLine": "system_link --xo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo -keep --xpfm /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa --target hw --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/sys_link",
+  "args": [
+   "--xo",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/myproject/vitis_unified_project/myproject_axi_master.xo",
+   "-keep",
+   "--xpfm",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa",
+   "--target",
+   "hw",
+   "--output_dir",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int",
+   "--temp_dir",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/sys_link"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:13 2026",
+ "timestampMillis": "1780922293703",
+ "status": {
+  "cmdId": "80e638f9-6d77-478d-b76c-8edb862a54d4",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:15 2026",
+ "timestampMillis": "1780922295886",
+ "status": {
+  "cmdId": "80e638f9-6d77-478d-b76c-8edb862a54d4",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:38:15 2026",
+ "timestampMillis": "1780922295888",
+ "buildStep": {
+  "cmdId": "01bcbf78-ec98-488d-9016-adddc48e78f6",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -sdsl /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/sdsl.dat -rtd /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/cf2sw.rtd -nofilter /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd -xclbin /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml",
+  "args": [
+   "-sdsl",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/sdsl.dat",
+   "-rtd",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/cf2sw.rtd",
+   "-nofilter",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/cf2sw_full.rtd",
+   "-xclbin",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml",
+   "-o",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xclbin_orig.1.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:15 2026",
+ "timestampMillis": "1780922295888",
+ "status": {
+  "cmdId": "01bcbf78-ec98-488d-9016-adddc48e78f6",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:16 2026",
+ "timestampMillis": "1780922296478",
+ "status": {
+  "cmdId": "01bcbf78-ec98-488d-9016-adddc48e78f6",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:38:16 2026",
+ "timestampMillis": "1780922296479",
+ "buildStep": {
+  "cmdId": "59b16ea5-9c62-409c-8d86-20742329fd5e",
+  "name": "rtd2_system_diagram",
+  "logFile": "",
+  "commandLine": "rtd2SystemDiagram",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:16 2026",
+ "timestampMillis": "1780922296479",
+ "status": {
+  "cmdId": "59b16ea5-9c62-409c-8d86-20742329fd5e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:38:16 2026",
+ "timestampMillis": "1780922296511",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/systemDiagramModel.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:16 2026",
+ "timestampMillis": "1780922296511",
+ "status": {
+  "cmdId": "59b16ea5-9c62-409c-8d86-20742329fd5e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:38:16 2026",
+ "timestampMillis": "1780922296512",
+ "buildStep": {
+  "cmdId": "ed1d8d3d-52e5-416b-b7c9-31fb53e2224c",
+  "name": "vpl",
+  "logFile": "",
+  "commandLine": "vpl -t hw -f /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/.ipcache --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int --log_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/logs/link --report_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link --no-info --iprepo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/run_link/vpl.pb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/dr.bd.tcl",
+  "args": [
+   "-t",
+   "hw",
+   "-f",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa",
+   "-s",
+   "--remote_ip_cache",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/.ipcache",
+   "--output_dir",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int",
+   "--log_dir",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/logs/link",
+   "--report_dir",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link",
+   "--config",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/vplConfig.ini",
+   "-k",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/kernel_info.dat",
+   "--webtalk_flag",
+   "Vitis",
+   "--temp_dir",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link",
+   "--no-info",
+   "--iprepo",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0",
+   "--messageDb",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/run_link/vpl.pb",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/dr.bd.tcl"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/vplConfig.ini",
+    "content": "[advanced]\nmisc=report=type report_timing_summary name impl_report_timing_summary_route_design_summary steps {route_design} runs {impl_1} options {-max_paths 10}\nmisc=report=type report_timing_summary name impl_report_timing_summary_post_route_phys_opt_design_summary steps {post_route_phys_opt_design} runs {impl_1} options {-max_paths 10}\nparam=compiler.enablePerformanceTrace=1\nparam=compiler.vppCurrentWorkingDir=/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link\nmisc=BinaryName=myproject\n\n[connectivity]\nnk=myproject_axi_master:1:myproject_axi_master_1\n\n[vivado]\nprop=run.__KERNEL__.{STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS}={-directive sdx_optimization_effort_high}\n\n"
+   }
+  ],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:16 2026",
+ "timestampMillis": "1780922296512",
+ "status": {
+  "cmdId": "ed1d8d3d-52e5-416b-b7c9-31fb53e2224c",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  8 14:38:17 2026",
+ "timestampMillis": "1780922297156",
+ "buildStep": {
+  "cmdId": "781bc9ca-f31b-4908-9094-a21439d3a215",
+  "name": "vpl",
+  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/link.steps.log",
+  "commandLine": "/usr/lib/AMD/2025.2/Vitis/bin/unwrapped/lnx64.o/vpl -t hw -f /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/kv260/tcl_scripts/output/kv260_axi_all_platform.xsa -s --remote_ip_cache /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/.ipcache --output_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int --log_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/logs/link --report_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link --config /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/vplConfig.ini -k /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/kernel_info.dat --webtalk_flag Vitis --temp_dir /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link --no-info --iprepo /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xo/ip_repo/xilinx_com_hls_myproject_axi_master_1_0 --messageDb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/run_link/vpl.pb /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/dr.bd.tcl ",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:17 2026",
+ "timestampMillis": "1780922297156",
+ "status": {
+  "cmdId": "781bc9ca-f31b-4908-9094-a21439d3a215",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_VivadoProject",
+ "dateTimestamp": "Mon Jun  8 14:38:17 2026",
+ "timestampMillis": "1780922297459",
+ "vivadoProject": {
+  "openDir": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/vivado/vpl",
+  "openScript": "openprj.tcl",
+  "relativeProject": "prj/prj.xpr"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:38:17 2026",
+ "timestampMillis": "1780922297460",
+ "buildStep": {
+  "cmdId": "98da5f07-ba30-4b7b-ab4e-a39afe884dfd",
+  "name": "vivado",
+  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/vivado/vpl/vivado.log",
+  "commandLine": "vivado -log vivado.log -applog -m64 -messageDb vivado.pb -mode batch -source vpl.tcl -notrace",
+  "args": [
+   "-log",
+   "vivado.log",
+   "-applog",
+   " -m64",
+   "-messageDb",
+   "vivado.pb",
+   "-mode",
+   "batch",
+   "-source",
+   "vpl.tcl",
+   "-notrace"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/run_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:38:17 2026",
+ "timestampMillis": "1780922297460",
+ "status": {
+  "cmdId": "98da5f07-ba30-4b7b-ab4e-a39afe884dfd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:38:41 2026",
+ "timestampMillis": "1780922321596",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/automation_summary_pre_synthesis.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  8 14:41:55 2026",
+ "timestampMillis": "1780922515010",
+ "buildStep": {
+  "cmdId": "fc70cb82-f687-4d78-a8dc-2ec33f34779d",
+  "name": "vivado.impl",
+  "logFile": "",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/vivado/vpl"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:41:55 2026",
+ "timestampMillis": "1780922515010",
+ "status": {
+  "cmdId": "fc70cb82-f687-4d78-a8dc-2ec33f34779d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Mon Jun  8 14:41:55 2026",
+ "timestampMillis": "1780922515011",
+ "buildStep": {
+  "cmdId": "db42b69f-0683-4866-a1f8-c6892d9d4714",
+  "name": "vivado.impl.impl_1",
+  "logFile": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/runme.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:41:55 2026",
+ "timestampMillis": "1780922515011",
+ "status": {
+  "cmdId": "db42b69f-0683-4866-a1f8-c6892d9d4714",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:14 2026",
+ "timestampMillis": "1780922654939",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/impl_1/system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:16 2026",
+ "timestampMillis": "1780922656784",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/kernel_service.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:16 2026",
+ "timestampMillis": "1780922656784",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/kernel_service.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "KERNEL_SERVICE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690038",
+ "status": {
+  "cmdId": "98da5f07-ba30-4b7b-ab4e-a39afe884dfd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690042",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690043",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_routed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690043",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690044",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_synthed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690044",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_synthed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690044",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690044",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690045",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_routed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690045",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690045",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_placed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690046",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_placed.xutil",
+  "name": "",
+  "fileType": "XUTIL",
+  "reportType": "KERNEL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690046",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_PLACEMENT",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690046",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_SLR_UTIL_ROUTED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690046",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_kernel_util_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "KERNEL_UTILIZATION_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690047",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_slr_util_placed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_SLR_UTIL_PLACED",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690047",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_full_util_synthed.pb",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_UTILIZATION_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690050",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_dma_0_0_synth_1_vitis_design_axi_dma_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690050",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_zynq_ultra_ps_e_0_0_synth_1_vitis_design_zynq_ultra_ps_e_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690051",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_rst_ps8_0_99M_0_synth_1_vitis_design_rst_ps8_0_99M_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690051",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_smc_0_synth_1_vitis_design_axi_smc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690051",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_intc_0_0_synth_1_vitis_design_axi_intc_0_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690051",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_synth_1_vitis_design_smc_ic_zynq_ultra_ps_e_0_S_AXI_HP0_FPD_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690052",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_myproject_axi_master_1_0_synth_1_vitis_design_myproject_axi_master_1_0_utilization_synth.rpt",
+  "name": "myproject_axi_master",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690052",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1_vitis_design_axi_interconnect_0_imp_auto_pc_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690052",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_interconnect_0_imp_m02_regslice_0_synth_1_vitis_design_axi_interconnect_0_imp_m02_regslice_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690052",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/syn/vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_synth_1_vitis_design_axi_interconnect_0_upgraded_ipi_imp_xbar_0_utilization_synth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_UTILIZATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690053",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_system_diagram.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": "db42b69f-0683-4866-a1f8-c6892d9d4714"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690053",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "db42b69f-0683-4866-a1f8-c6892d9d4714"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690053",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/imp/impl_1_vitis_design_wrapper_timing_summary_routed.rpx",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_REPORT_TIMING_SUMMARY",
+  "cmdId": "db42b69f-0683-4866-a1f8-c6892d9d4714"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690066",
+ "status": {
+  "cmdId": "781bc9ca-f31b-4908-9094-a21439d3a215",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690077",
+ "status": {
+  "cmdId": "ed1d8d3d-52e5-416b-b7c9-31fb53e2224c",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690079",
+ "buildStep": {
+  "cmdId": "9fe3254e-75dc-4cc4-9ea3-0877fc7012d3",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "rtdgen",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690079",
+ "status": {
+  "cmdId": "9fe3254e-75dc-4cc4-9ea3-0877fc7012d3",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690079",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "XCLBIN_INFO",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690080",
+ "buildStep": {
+  "cmdId": "e8803254-2cea-4ee4-895e-91ebdceadb27",
+  "name": "cf2sw",
+  "logFile": "",
+  "commandLine": "cf2sw -a /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/address_map.xml -sdsl /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/sdsl.dat -xclbin /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml -rtd /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.rtd -o /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.xml",
+  "args": [
+   "-a",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/address_map.xml",
+   "-sdsl",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/sdsl.dat",
+   "-xclbin",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/xclbin_orig.xml",
+   "-rtd",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.rtd",
+   "-o",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.xml"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690080",
+ "status": {
+  "cmdId": "e8803254-2cea-4ee4-895e-91ebdceadb27",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690670",
+ "status": {
+  "cmdId": "e8803254-2cea-4ee4-895e-91ebdceadb27",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690671",
+ "buildStep": {
+  "cmdId": "146e9146-b0fc-4445-9579-64759c5851bf",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeSystemDiagram",
+  "args": [
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.rtd",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690671",
+ "status": {
+  "cmdId": "146e9146-b0fc-4445-9579-64759c5851bf",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690672",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "SYSTEM_DIAGRAM_PLUS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690672",
+ "status": {
+  "cmdId": "146e9146-b0fc-4445-9579-64759c5851bf",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690673",
+ "buildStep": {
+  "cmdId": "ecac2177-1781-4953-a198-ef266351cbd2",
+  "name": "rtdgen",
+  "logFile": "",
+  "commandLine": "writeAutomationSummary",
+  "args": [
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/automation_summary.txt"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690673",
+ "status": {
+  "cmdId": "ecac2177-1781-4953-a198-ef266351cbd2",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690673",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/automation_summary.txt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "VITIS_DESIGN_FLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690673",
+ "status": {
+  "cmdId": "ecac2177-1781-4953-a198-ef266351cbd2",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690674",
+ "status": {
+  "cmdId": "9fe3254e-75dc-4cc4-9ea3-0877fc7012d3",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690675",
+ "buildStep": {
+  "cmdId": "9f2fa52e-ed3e-45d8-9a49-2a0bb145a545",
+  "name": "xclbinutil",
+  "logFile": "",
+  "commandLine": "xclbinutil --add-section BITSTREAM:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/system.bit --force --target hw --key-value SYS:dfx_enable:false --add-section :JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.rtd --add-section CLOCK_FREQ_TOPOLOGY:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd --add-section BUILD_METADATA:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject_build.rtd --add-section EMBEDDED_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.xml --add-section SYSTEM_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json --key-value SYS:PlatformVBNV:vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0 --output /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/myproject.xclbin",
+  "args": [
+   "--add-section",
+   "BITSTREAM:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/system.bit",
+   "--force",
+   "--target",
+   "hw",
+   "--key-value",
+   "SYS:dfx_enable:false",
+   "--add-section",
+   ":JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.rtd",
+   "--add-section",
+   "CLOCK_FREQ_TOPOLOGY:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject_xml.rtd",
+   "--add-section",
+   "BUILD_METADATA:JSON:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject_build.rtd",
+   "--add-section",
+   "EMBEDDED_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/myproject.xml",
+   "--add-section",
+   "SYSTEM_METADATA:RAW:/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/link/int/systemDiagramModelSlrBaseAddress.json",
+   "--key-value",
+   "SYS:PlatformVBNV:vendor_kv260_som_som240_1_connector_kv260_carrier_som240_1_connector_kv260pf_0_0",
+   "--output",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/myproject.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690675",
+ "status": {
+  "cmdId": "9f2fa52e-ed3e-45d8-9a49-2a0bb145a545",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690725",
+ "status": {
+  "cmdId": "9f2fa52e-ed3e-45d8-9a49-2a0bb145a545",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690726",
+ "buildStep": {
+  "cmdId": "cd023662-78b2-408e-a6eb-0d3e2f8f1072",
+  "name": "xclbinutilinfo",
+  "logFile": "",
+  "commandLine": "xclbinutil --quiet --force --info /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/myproject.xclbin.info --input /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/myproject.xclbin",
+  "args": [
+   "--quiet",
+   "--force",
+   "--info",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/myproject.xclbin.info",
+   "--input",
+   "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/myproject.xclbin"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690727",
+ "status": {
+  "cmdId": "cd023662-78b2-408e-a6eb-0d3e2f8f1072",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690800",
+ "status": {
+  "cmdId": "cd023662-78b2-408e-a6eb-0d3e2f8f1072",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690804",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/logs/optraceViewer.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "OPERATION_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690804",
+ "status": {
+  "cmdId": "fb69254c-09cf-46ae-a813-906b958a2439",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690816",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/reports/link/v++_link_myproject_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Mon Jun  8 14:44:50 2026",
+ "timestampMillis": "1780922690816",
+ "report": {
+  "path": "/home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_expo_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO/vitis_workspace/system_link/_x/v++_link_myproject_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

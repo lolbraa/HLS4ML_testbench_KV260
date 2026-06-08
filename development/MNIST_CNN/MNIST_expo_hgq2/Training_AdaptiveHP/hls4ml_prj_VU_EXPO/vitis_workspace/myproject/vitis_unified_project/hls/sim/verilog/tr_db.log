@@ -1,0 +1,8 @@
+  CREATE_STREAM @0 {NAME:myproject_axi_master_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.myproject_axi_master_virtual_sqr STREAM:4611}
+  CREATE_STREAM @113000 {NAME:myproject_axi_master_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem_in0.vsqr STREAM:4886}
+  CREATE_STREAM @113000 {NAME:myproject_axi_master_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem_out0.vsqr STREAM:4895}
+  CREATE_STREAM @113000 {NAME:myproject_axi_master_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control.vsqr STREAM:4904}
+  CREATE_STREAM @0 {NAME:myproject_axi_master_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.myproject_axi_master_virtual_sqr STREAM:4611}
+  CREATE_STREAM @113000 {NAME:myproject_axi_master_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem_in0.vsqr STREAM:4886}
+  CREATE_STREAM @113000 {NAME:myproject_axi_master_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_master_gmem_out0.vsqr STREAM:4895}
+  CREATE_STREAM @113000 {NAME:myproject_axi_master_subsys_test_sequence_lib T:Transactions SCOPE:uvm_test_top.top_env.axi_lite_control.vsqr STREAM:4904}

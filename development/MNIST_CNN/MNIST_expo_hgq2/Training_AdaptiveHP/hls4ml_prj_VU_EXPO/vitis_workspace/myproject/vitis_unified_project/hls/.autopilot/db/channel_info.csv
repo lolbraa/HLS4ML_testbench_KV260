@@ -1,0 +1,11 @@
+,gmem_out0_ptr_layer12_out_c_U,,chan_status1.csv
+,batch_size_c1_U,,chan_status2.csv
+,stream_in0_input_image_U,,chan_status3.csv
+,batch_size_c_U,,chan_status4.csv
+,stream_out0_layer12_out_U,,chan_status5.csv
+compute_U0.grp_myproject_fu_428,layer3_out_U,,chan_status6.csv
+compute_U0.grp_myproject_fu_428,layer4_out_U,,chan_status7.csv
+compute_U0.grp_myproject_fu_428,layer5_out_U,,chan_status8.csv
+compute_U0.grp_myproject_fu_428,layer7_out_U,,chan_status9.csv
+compute_U0.grp_myproject_fu_428,layer8_out_U,,chan_status10.csv
+compute_U0.grp_myproject_fu_428,layer9_out_U,,chan_status11.csv
