@@ -212,7 +212,7 @@ hls4ml-kv260.code-workspace
 #hls4ml-dev-testenv/testmodel/1/hls4ml_prj_VitisUnifiedKV260_1
 
 
-#PixSplit data
+#datasets
 nparticles_resampled.h5
 processed_data
 x_test*
@@ -221,6 +221,8 @@ y_test*
 x_train*
 y_train*
 development/pixsplit/Data
+*.arff
+classes.npy
 
 
 # Vitis - for store filer for GitHub

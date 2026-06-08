@@ -35,12 +35,12 @@ docker load -i hls4ml-kv260-testbench.v2025.2.tar.gz
 
 ### Run
 
-The docker may be run by using the following docker-run command (adapted to your environment), or the provided docker compose with `dokcker compose up` (append `-d` to detach)
+The docker may be run by using the following docker-run command (adapted to your environment), or the provided docker compose with `docker compose up` (append `-d` to detach)
 
 ```bash
 docker run --init -it --name hls4ml-kv260-testbench -p 8443:8443  \
-    -v ~/Bachelor/HLS4ML_testbench_KV260/development/:/work/development/ \
-    -v ./environments/:/work/environments/ \
+    -v /PATH/TO/HLS4ML_testbench_KV260/development/:/work/development/ \
+    -v /PATH/TO/environments/:/work/environments/ \
     hls4ml-kv260-testbench:v2025.2
 ```
 
@@ -55,7 +55,7 @@ Stop `docker stop hls4ml-kv260-testbench`
 
 
 ### Notes on Windows
-Doker on Windows utilizes two underlying stacks for virtualization. Our testing has been done on Windows 11 25H2 and WSL 2.7.3.0 installed using official instructions of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (`wsl --install`) and [Docker](https://docs.docker.com/desktop/setup/install/windows-install/) (installation .exe from website). We've not tried building in a Windows environment.
+Docker on Windows utilizes two underlying stacks for virtualization. Our testing has been done on Windows 11 25H2 and WSL 2.7.3.0 installed using official instructions of [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) (`wsl --install`) and [Docker](https://docs.docker.com/desktop/setup/install/windows-install/) (installation .exe from website). We've not tried building in a Windows environment.
 
 WSL is configured to only use 50% of the RAM by default, often leading to Out of Memory exceptions when runninng the heavy implementation or synthesis process. The process usually
 Remedies:
