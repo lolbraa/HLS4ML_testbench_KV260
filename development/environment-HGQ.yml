@@ -1,13 +1,18 @@
+# Environment for synthesizing HGQ-models with Vitis Unified
 name: devenv-hgq
+channels:
+  - defaults
+  - conda-forge
 dependencies:
-  - tensorflow
-  - numpy
-  - notebook
-  - scikit-learn
+  - python=3.12
+  - tensorflow=2.20
+  - numpy=1.26.*
+  - notebook=7.5.*
+  - scikit-learn=1.8.*
   - pip
-  - matplotlib
+  - matplotlib=3.10.*
   - pip:
-    - HGQ2
+    - HGQ2==0.1.8
     - "hls4ml[profiling, hgq2] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
 #     - hls4ml[profiling,hgq2]
 #     - "hls4ml[profiling,hgq2] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"

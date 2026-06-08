@@ -1,0 +1,14 @@
+# Environment we used to train models (HGQ and baselines)
+name: devenv-training
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - tensorflow=2.20
+  - numpy=1.26.*
+  - notebook=7.5.*
+  - scikit-learn=1.8.*
+  - pip
+  - pip:
+    - HGQ2==0.1.8
