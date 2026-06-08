@@ -1,0 +1,2 @@
+Compiling (synthesis checkpoint) kernel/IP: vitis_design_axi_interconnect_0_imp_auto_pc_0
+Log file: /home/ncgadmin/Bachelor/HLS4ML_testbench_KV260/development/MNIST_CNN/MNIST_hgq2/Training_AdaptiveHP/hls4ml_prj_VU_EXPO_DEMO_axi_stream/vitis_workspace/system_link/_x/link/vivado/vpl/prj/prj.runs/vitis_design_axi_interconnect_0_imp_auto_pc_0_synth_1/runme.log

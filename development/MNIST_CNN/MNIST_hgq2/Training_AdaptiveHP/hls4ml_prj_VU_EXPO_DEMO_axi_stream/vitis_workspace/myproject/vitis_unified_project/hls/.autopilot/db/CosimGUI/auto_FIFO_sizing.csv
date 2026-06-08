@@ -1,0 +1,10 @@
+,batch_size_c1_U,2,ScalarPro
+,model_input_stream_U,394,Stream
+,batch_size_c_U,2,ScalarPro
+,model_output_stream_U,1,Stream
+compute_U0.grp_myproject_fu_378,layer3_out_U,2,Stream
+compute_U0.grp_myproject_fu_378,layer4_out_U,2,Stream
+compute_U0.grp_myproject_fu_378,layer5_out_U,2,Stream
+compute_U0.grp_myproject_fu_378,layer7_out_U,2,Stream
+compute_U0.grp_myproject_fu_378,layer8_out_U,3,Stream
+compute_U0.grp_myproject_fu_378,layer9_out_U,2,Stream

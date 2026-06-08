@@ -1,0 +1,18 @@
+{
+    "kernelContainerValues": [
+        "myproject_axi_stream:xo"
+    ],
+    "compile": "false",
+    "debug": "false",
+    "exportScript": "false",
+    "gccHostCompile": "false",
+    "generateEstimateRpt": "false",
+    "keepSolution": "false",
+    "link": "false",
+    "logDir": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/MNIST_CNN\/MNIST_hgq2\/Training_AdaptiveHP\/hls4ml_prj_VU_EXPO_DEMO_axi_stream\/vitis_workspace\/system_link\/_x\/logs\/link",
+    "package": "false",
+    "reportDir": "\/home\/ncgadmin\/Bachelor\/HLS4ML_testbench_KV260\/development\/MNIST_CNN\/MNIST_hgq2\/Training_AdaptiveHP\/hls4ml_prj_VU_EXPO_DEMO_axi_stream\/vitis_workspace\/system_link\/_x\/reports\/link",
+    "saveTemps": "false",
+    "verbose": "false",
+    "vplNoIpCache": "false"
+}

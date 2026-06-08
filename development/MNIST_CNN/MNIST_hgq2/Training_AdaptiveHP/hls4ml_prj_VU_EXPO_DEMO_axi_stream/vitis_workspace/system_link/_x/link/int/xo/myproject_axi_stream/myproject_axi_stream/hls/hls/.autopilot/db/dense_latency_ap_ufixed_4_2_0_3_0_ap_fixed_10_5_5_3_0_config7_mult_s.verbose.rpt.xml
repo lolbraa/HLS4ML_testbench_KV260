@@ -1,0 +1,162 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dense_latency_ap_ufixed_4_2_0_3_0_ap_fixed_10_5_5_3_0_config7_mult_s'" level="0">
+<item name = "Date">Wed May 27 10:02:13 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">vitis_unified_project</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.151 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 679, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln58_917_fu_462_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln58_918_fu_472_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln58_919_fu_482_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln58_920_fu_496_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln58_921_fu_506_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln58_922_fu_520_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln58_923_fu_556_p2">+, 0, 0, 16, 9, 9</column>
+<column name="add_ln58_924_fu_574_p2">+, 0, 0, 18, 9, 9</column>
+<column name="add_ln58_925_fu_590_p2">+, 0, 0, 18, 9, 9</column>
+<column name="add_ln58_926_fu_604_p2">+, 0, 0, 18, 10, 10</column>
+<column name="add_ln58_927_fu_620_p2">+, 0, 0, 18, 10, 10</column>
+<column name="add_ln58_928_fu_626_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln58_929_fu_636_p2">+, 0, 0, 19, 8, 8</column>
+<column name="add_ln58_930_fu_642_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln58_931_fu_652_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln58_932_fu_658_p2">+, 0, 0, 19, 8, 8</column>
+<column name="add_ln58_933_fu_668_p2">+, 0, 0, 16, 9, 9</column>
+<column name="add_ln58_934_fu_678_p2">+, 0, 0, 14, 7, 6</column>
+<column name="add_ln58_935_fu_688_p2">+, 0, 0, 19, 8, 8</column>
+<column name="add_ln58_936_fu_694_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln58_937_fu_704_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln58_938_fu_714_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln58_939_fu_724_p2">+, 0, 0, 19, 8, 8</column>
+<column name="add_ln58_940_fu_734_p2">+, 0, 0, 17, 10, 10</column>
+<column name="add_ln58_941_fu_740_p2">+, 0, 0, 15, 8, 8</column>
+<column name="add_ln58_942_fu_750_p2">+, 0, 0, 18, 9, 9</column>
+<column name="add_ln58_943_fu_756_p2">+, 0, 0, 13, 6, 6</column>
+<column name="add_ln58_944_fu_766_p2">+, 0, 0, 14, 7, 7</column>
+<column name="add_ln58_945_fu_776_p2">+, 0, 0, 18, 9, 9</column>
+<column name="add_ln58_fu_422_p2">+, 0, 0, 13, 6, 1</column>
+<column name="mult_660_fu_122_p2">-, 0, 0, 13, 1, 6</column>
+<column name="mult_661_fu_144_p2">-, 0, 0, 14, 1, 7</column>
+<column name="mult_662_fu_170_p2">-, 0, 0, 14, 1, 7</column>
+<column name="mult_663_fu_204_p2">-, 0, 0, 14, 1, 7</column>
+<column name="mult_664_fu_262_p2">-, 0, 0, 14, 1, 7</column>
+<column name="mult_665_fu_292_p2">-, 0, 0, 14, 1, 7</column>
+<column name="mult_666_fu_348_p2">-, 0, 0, 15, 1, 8</column>
+<column name="mult_667_fu_394_p2">-, 0, 0, 14, 1, 7</column>
+<column name="mult_668_fu_412_p2">-, 0, 0, 13, 1, 6</column>
+<column name="mult_fu_96_p2">-, 0, 0, 14, 7, 7</column>
+<column name="sub_ln58_15_fu_580_p2">-, 0, 0, 14, 7, 7</column>
+<column name="sub_ln58_16_fu_610_p2">-, 0, 0, 13, 6, 6</column>
+<column name="sub_ln58_fu_546_p2">-, 0, 0, 15, 8, 8</column>
+<column name="sub_ln73_453_fu_302_p2">-, 0, 0, 13, 6, 6</column>
+<column name="sub_ln73_fu_86_p2">-, 0, 0, 13, 6, 6</column>
+<column name="xor_ln58_fu_440_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_ready">out, 1, ap_ctrl_hs, dense_latency&lt;ap_ufixed&lt;4, 2, 0, 3, 0&gt;, ap_fixed&lt;10, 5, 5, 3, 0&gt;, config7_mult&gt;, return value</column>
+<column name="ap_return_0">out, 10, ap_ctrl_hs, dense_latency&lt;ap_ufixed&lt;4, 2, 0, 3, 0&gt;, ap_fixed&lt;10, 5, 5, 3, 0&gt;, config7_mult&gt;, return value</column>
+<column name="ap_return_1">out, 10, ap_ctrl_hs, dense_latency&lt;ap_ufixed&lt;4, 2, 0, 3, 0&gt;, ap_fixed&lt;10, 5, 5, 3, 0&gt;, config7_mult&gt;, return value</column>
+<column name="ap_return_2">out, 10, ap_ctrl_hs, dense_latency&lt;ap_ufixed&lt;4, 2, 0, 3, 0&gt;, ap_fixed&lt;10, 5, 5, 3, 0&gt;, config7_mult&gt;, return value</column>
+<column name="ap_return_3">out, 10, ap_ctrl_hs, dense_latency&lt;ap_ufixed&lt;4, 2, 0, 3, 0&gt;, ap_fixed&lt;10, 5, 5, 3, 0&gt;, config7_mult&gt;, return value</column>
+<column name="ap_return_4">out, 10, ap_ctrl_hs, dense_latency&lt;ap_ufixed&lt;4, 2, 0, 3, 0&gt;, ap_fixed&lt;10, 5, 5, 3, 0&gt;, config7_mult&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, dense_latency&lt;ap_ufixed&lt;4, 2, 0, 3, 0&gt;, ap_fixed&lt;10, 5, 5, 3, 0&gt;, config7_mult&gt;, return value</column>
+<column name="void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3">in, 4, ap_none, void_compute_output_buffer_2d_array_const_ap_shift_reg_n_chan_stream_weig_3, pointer</column>
+<column name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_4">in, 4, ap_none, p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_4, pointer</column>
+<column name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_3">in, 4, ap_none, p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_3, pointer</column>
+<column name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_2">in, 4, ap_none, p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_2, pointer</column>
+<column name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_1">in, 4, ap_none, p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_1, pointer</column>
+<column name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9">in, 4, ap_none, p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9, pointer</column>
+<column name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_7">in, 4, ap_none, p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_7, pointer</column>
+<column name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_6">in, 4, ap_none, p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_6, pointer</column>
+<column name="p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_5">in, 4, ap_none, p_ZZN4nnet24compute_output_buffer_2dINS_5arrayI9ap_ufixedILi4ELi2EL9ap_q_mode0EL9_5, pointer</column>
+</table>
+</item>
+</section>
+</profile>

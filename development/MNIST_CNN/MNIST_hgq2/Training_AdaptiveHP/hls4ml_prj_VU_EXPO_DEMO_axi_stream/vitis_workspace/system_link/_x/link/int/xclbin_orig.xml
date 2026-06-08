@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="myproject">
+  <platform vendor="vendor" boardid="kv260_som_som240_1_connector_kv260_carrier_som240_1_connector" name="kv260pf" featureRomTime="0">
+    <version major="0" minor="0"/>
+    <description/>
+    <board name="xilinx.com:kv260_som:1.4" vendor="xilinx.com" fpga="xck26-sfvc784-2LV-c">
+      <interfaces/>
+      <images>
+        <image name="kv260_board.png" type="HDPI"/>
+        <image name="" type="MDPI"/>
+        <image name="" type="LDPI"/>
+      </images>
+      <id>
+        <vendor/>
+        <device/>
+        <subsystem/>
+      </id>
+    </board>
+    <build_flow/>
+    <host architecture="unknown"/>
+    <device name="fpga0" fpgaDevice="zynquplus:xck26:sfvc784:-2LV:c" addrWidth="0">
+      <core name="OCL_REGION_0" target="bitstream" type="clc_region" clockFreq="0MHz" numComputeUnits="60">
+        <kernel name="myproject_axi_stream" language="c" vlnv="xilinx.com:hls:myproject_axi_stream:1.0" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" interrupt="true" hwControlProtocol="ap_ctrl_hs" countedAutoRestart="0" deadlockDetection="local" mailbox="none" swReset="false">
+          <port name="AXI_INPUT_STREAM" mode="read_only" range="" dataWidth="32" portType="stream" base=""/>
+          <port name="AXI_OUTPUT_STREAM" mode="write_only" range="" dataWidth="32" portType="stream" base=""/>
+          <port name="S_AXI_CONTROL" mode="slave" range="0x18" dataWidth="32" portType="addressable" base="0x0"/>
+          <arg name="axi_input_stream" addressQualifier="4" id="0" port="AXI_INPUT_STREAM" size="0x0" offset="0x0" hostOffset="0x0" hostSize="0x8" type="stream&lt;hls::axis&lt;float, 0UL, 0UL, 0UL, (unsigned char)&apos;8&apos;, false>, 0>&amp;" memSize="0x4" origName="axi_input_stream" origUse="variable"/>
+          <arg name="axi_output_stream" addressQualifier="4" id="1" port="AXI_OUTPUT_STREAM" size="0x0" offset="0x0" hostOffset="0x0" hostSize="0x8" type="stream&lt;hls::axis&lt;float, 0UL, 0UL, 0UL, (unsigned char)&apos;8&apos;, false>, 0>&amp;" memSize="0x4" origName="axi_output_stream" origUse="variable"/>
+          <arg name="batch_size" addressQualifier="0" id="2" port="S_AXI_CONTROL" size="0x4" offset="0x10" hostOffset="0x0" hostSize="0x4" type="unsigned int"/>
+          <compileWorkGroupSize x="1" y="1" z="1"/>
+          <maxWorkGroupSize x="1" y="1" z="1"/>
+          <string_table/>
+          <instance name="myproject_axi_stream_1"/>
+        </kernel>
+      </core>
+    </device>
+  </platform>
+</project>

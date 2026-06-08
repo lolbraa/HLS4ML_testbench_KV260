@@ -1,0 +1,52 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'myproject'" level="0">
+<item name = "Date">Wed May 27 10:02:12 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">vitis_unified_project</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 4.290 ns, 0.62 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1580, 1580, 7.900 us, 7.900 us, 1569, 1569, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_conv_2d_cl_array_ap_ufixed_1u_array_ap_ufixed_5_3_5_3_0_16u_config3_s_fu_398">conv_2d_cl_array_ap_ufixed_1u_array_ap_ufixed_5_3_5_3_0_16u_config3_s, 1570, 1570, 7.850 us, 7.850 us, 1569, 1569, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_relu_array_ap_ufixed_16u_array_ap_ufixed_5_3_5_3_0_16u_relu_config4_s_fu_423">relu_array_ap_ufixed_16u_array_ap_ufixed_5_3_5_3_0_16u_relu_config4_s, 678, 678, 3.390 us, 3.390 us, 677, 677, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_pooling2d_cl_array_array_ap_ufixed_4_2_0_3_0_16u_config5_s_fu_429">pooling2d_cl_array_array_ap_ufixed_4_2_0_3_0_16u_config5_s, 679, 679, 3.395 us, 3.395 us, 679, 679, no</column>
+<column name="grp_conv_2d_cl_array_ap_ufixed_16u_array_ap_fixed_10_5_5_3_0_16u_config7_s_fu_539">conv_2d_cl_array_ap_ufixed_16u_array_ap_fixed_10_5_5_3_0_16u_config7_s, 341, 341, 1.705 us, 1.705 us, 340, 340, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_relu_array_ap_fixed_16u_array_ap_ufixed_9_4_5_3_0_16u_relu_config8_s_fu_635">relu_array_ap_fixed_16u_array_ap_ufixed_9_4_5_3_0_16u_relu_config8_s, 124, 124, 0.620 us, 0.620 us, 122, 122, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_pooling2d_cl_array_array_ap_ufixed_4_2_0_3_0_16u_config9_s_fu_641">pooling2d_cl_array_array_ap_ufixed_4_2_0_3_0_16u_config9_s, 124, 124, 0.620 us, 0.620 us, 124, 124, no</column>
+<column name="grp_dense_array_ap_ufixed_16u_array_ap_fixed_15_9_5_3_0_10u_config13_s_fu_751">dense_array_ap_ufixed_16u_array_ap_fixed_15_9_5_3_0_10u_config13_s, 32, 32, 0.160 us, 0.160 us, 32, 32, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

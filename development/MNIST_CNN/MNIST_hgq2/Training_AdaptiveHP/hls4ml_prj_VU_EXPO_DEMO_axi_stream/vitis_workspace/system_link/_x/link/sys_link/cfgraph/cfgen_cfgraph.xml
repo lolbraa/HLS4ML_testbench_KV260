@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a53" cf:partition="0" cf:prefix="p_0_" cf:name="dr" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_myproject_axi_stream">
+    <cf:port cf:name="s_axi_control" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="axi_input_stream" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="axi_output_stream" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="batch_size" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:block cf:name="swblk_myproject_axi_stream">
+    <cf:port cf:name="s_axi_control" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="axi_input_stream" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="axi_output_stream" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="batch_size" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:comp cf:name="kv260pf" xd:componentRef="kv260pf" xd:clockId="0"/>
+  <cf:comp cf:name="myproject_axi_stream_1" xd:componentRef="myproject_axi_stream" xd:clockId="0">
+    <xd:clock xd:name="ap_clk" xd:frequency="99999001"/>
+  </cf:comp>
+  <cf:instance cf:name="hwinst_myproject_axi_stream_1" cf:blockName="hwblk_myproject_axi_stream" cf:compName="myproject_axi_stream_1">
+    <cf:portMap cf:blockPort="s_axi_control" cf:compPort="s_axi_control" xd:register="0x0"/>
+    <cf:portMap cf:blockPort="axi_input_stream" cf:compPort="axi_input_stream"/>
+    <cf:portMap cf:blockPort="axi_output_stream" cf:compPort="axi_output_stream"/>
+    <cf:portMap cf:blockPort="batch_size" cf:compPort="s_axi_control" xd:register="0x10"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_myproject_axi_stream_1" cf:blockName="swblk_myproject_axi_stream" cf:compName="kv260pf">
+    <cf:portMap cf:blockPort="s_axi_control" cf:compPort="axi_interconnect_0_M02_AXI"/>
+    <cf:portMap cf:blockPort="axi_input_stream" cf:compPort="axi_dma_0_M_AXIS_MM2S"/>
+    <cf:portMap cf:blockPort="axi_output_stream" cf:compPort="axi_dma_0_S_AXIS_S2MM"/>
+    <cf:portMap cf:blockPort="batch_size" cf:compPort="axi_interconnect_0_M02_AXI"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_myproject_axi_stream_1" cf:srcPort="s_axi_control" cf:dstInst="hwinst_myproject_axi_stream_1" cf:dstPort="s_axi_control">
+    <cf:dataMover cf:compName="kv260pf" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myproject_axi_stream_1" cf:srcPort="axi_input_stream" cf:dstInst="hwinst_myproject_axi_stream_1" cf:dstPort="axi_input_stream"/>
+  <cf:connection cf:srcInst="hwinst_myproject_axi_stream_1" cf:srcPort="axi_output_stream" cf:dstInst="swinst_myproject_axi_stream_1" cf:dstPort="axi_output_stream"/>
+  <cf:connection cf:srcInst="swinst_myproject_axi_stream_1" cf:srcPort="batch_size" cf:dstInst="hwinst_myproject_axi_stream_1" cf:dstPort="batch_size">
+    <cf:dataMover cf:compName="kv260pf" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+</cf:model>

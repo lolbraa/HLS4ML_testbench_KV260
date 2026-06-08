@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<xd:component xd:vendor="xilinx.com" xd:library="xd" xd:name="dr" xd:version="1.00" xd:type="design" xmlns:xd="http://www.xilinx.com/xd">
+  <xd:repository>
+    <xd:file xd:name="xd_ip_db.xml"/>
+  </xd:repository>
+  <xd:instance xd:name="kv260pf" xd:componentRef="kv260pf"/>
+  <xd:instance xd:name="myproject_axi_stream_1" xd:componentRef="myproject_axi_stream">
+    <xd:clock xd:name="ap_clk" xd:frequency="99999001" xd:tolerance="4999950"/>
+  </xd:instance>
+  <xd:instance xd:name="cdc_kv260pf_axi_dma_0_M_AXIS_MM2S" xd:componentRef="axis_clock_converter">
+    <xd:clock xd:name="M_CLKIF" xd:frequency="99999001" xd:tolerance="4999950"/>
+  </xd:instance>
+  <xd:instance xd:name="cdc_myproject_axi_stream_1_axi_output_stream" xd:componentRef="axis_clock_converter">
+    <xd:clock xd:name="S_CLKIF" xd:frequency="99999001" xd:tolerance="4999950"/>
+  </xd:instance>
+  <xd:connection>
+    <xd:busInterface xd:name="axi_interconnect_0_M02_AXI" xd:instanceRef="kv260pf"/>
+    <xd:busInterface xd:name="s_axi_control" xd:instanceRef="myproject_axi_stream_1"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:busInterface xd:name="axi_dma_0_M_AXIS_MM2S" xd:instanceRef="kv260pf"/>
+    <xd:busInterface xd:name="S_AXIS" xd:instanceRef="cdc_kv260pf_axi_dma_0_M_AXIS_MM2S"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:busInterface xd:name="M_AXIS" xd:instanceRef="cdc_kv260pf_axi_dma_0_M_AXIS_MM2S"/>
+    <xd:busInterface xd:name="axi_input_stream" xd:instanceRef="myproject_axi_stream_1"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:busInterface xd:name="axi_output_stream" xd:instanceRef="myproject_axi_stream_1"/>
+    <xd:busInterface xd:name="S_AXIS" xd:instanceRef="cdc_myproject_axi_stream_1_axi_output_stream"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:busInterface xd:name="M_AXIS" xd:instanceRef="cdc_myproject_axi_stream_1_axi_output_stream"/>
+    <xd:busInterface xd:name="axi_dma_0_S_AXIS_S2MM" xd:instanceRef="kv260pf"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:port xd:name="interrupt" xd:instanceRef="myproject_axi_stream_1"/>
+    <xd:port xd:name="customIntr_0_In1" xd:instanceRef="kv260pf"/>
+  </xd:connection>
+</xd:component>
