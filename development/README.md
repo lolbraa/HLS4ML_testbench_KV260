@@ -154,6 +154,8 @@ File  : '../../export/system.bit'
 Leaving xclbinutil.
 ```
 
+If you have Vivado installed such as you are able to open the GUI, you can open the project and visually inspect e.g. blockdiagra, netlists/RTL, physical placement in fabric, etc. In vivado, open a synthesized project (Vitis Unified) on `vitis_workspace/system_link/_x/link/vivado/vpl/prj` 
+
 
 
 ### Notes on NN architectures and 
