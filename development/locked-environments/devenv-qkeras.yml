@@ -338,4 +338,3 @@ dependencies:
       - quantizers==1.2.2
       - tensorflow-model-optimization==0.7.5
       - tqdm==4.67.3
-prefix: /home/ncgadmin/miniconda3/envs/devenv-qkeras
