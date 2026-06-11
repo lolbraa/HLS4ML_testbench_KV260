@@ -17,7 +17,7 @@ The workflow is based on [HLS4ML](https://github.com/fastmachinelearning/hls4ml)
 
 [`dockerbuild/`](dockerbuild/) contains resources to build and run a docker image with the required software for a runing start. The software (Vivado/Vitis) is required to synthesize the models with HLS4ML. It also contains instructions for manual installation of the required Xilinx' tools, under the umbrella term Vitis Unified Software Platform.
 
-[`manuell .xsa conversion to 2025/`](manuell .xsa conversion to 2025/) is the directory in which we converted Vitis Unified .xsa-script for KV260 and Vivado 2023.2 to Vivado 2025.2.
+[`manuell .xsa conversion to 2025/`](manuell%20.xsa%20conversion%20to%202025/) is the directory in which we converted Vitis Unified .xsa-script for KV260 and Vivado 2023.2 to Vivado 2025.2.
 
 
 ## Notes
