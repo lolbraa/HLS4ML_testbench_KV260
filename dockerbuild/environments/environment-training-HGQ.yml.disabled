@@ -1,0 +1,18 @@
+# Environment used to train HGQ models and baselines (minimal core packages)
+name: devenv-training-hgq
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12.*
+  - tensorflow=2.18.*
+  - keras=3.12.*
+  - numpy=2.0.*
+  - scipy=1.15.*
+  - notebook=7.5.*
+  - scikit-learn=1.7.*
+  - matplotlib=3.10.*
+  - pip
+  - pip:
+    - HGQ2==0.1.8
+    - quantizers==1.2.2

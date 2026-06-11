@@ -1,15 +1,17 @@
+# Environment for synthesizing QKeras-models with Vitis Unified
 name: devenv-qkeras
 channels:
+  - defaults
   - conda-forge
 dependencies:
   - python=3.10.16
-  - tensorflow==2.14.0
-  - numpy
-  - notebook
-  - scikit-learn
+  - tensorflow=2.14.0
+  - numpy=1.26.4
+  - notebook=7.5.*
+  - scikit-learn=1.7.*
   - pip
-  - matplotlib
-  - pandas
+  - matplotlib=3.10.*
+  - pandas=2.3.*
   - pip:
     - "hls4ml[qkeras] @ git+https://github.com/lolbraa/hls4ml-kv260.git@VitisUnifiedClean"
-    - qkeras
+    - qkeras=0.9.0
